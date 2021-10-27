@@ -152,7 +152,7 @@ Those are the things we will use, but there are even more possibilites, see [her
   Your browser does not support the video tag.
 </video>
 
-Or as the p5js reference calls them *2D primitives*. All those shapes are created in a coordinate system. The origin (0|0) of that coordinate system is in the upper left corner of our canvas. Units as always in pixels.
+Or as the p5js reference calls them *2D primitives*. All those shapes are created in a coordinate system. The origin (0/0) of that coordinate system is in the upper left corner of our canvas. Units as always in pixels.
 
 1. **Point** 1: **x-coordinate** (number), 2: **y-coordinate** (number)
 ```js
