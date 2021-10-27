@@ -24,10 +24,9 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
 
 ### p5js Reference
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/setup-draw.mp4" type="video/mp4">
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/reference.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
 If you are not sure about the name of a function or what parameters to use. You can also take a look at the p5js [reference](p5js.org/reference/).
 
 ### Sketches
@@ -222,7 +221,7 @@ strokeWidth(5);
 #### Arcs
 
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/arcs.mp4" type="video/mp4">
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/arc.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
