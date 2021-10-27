@@ -213,9 +213,10 @@ circle(30, 30, 5);
 
 Besides colors we can also modify the stroke width of the shapes we draw:
 
-3. **stroke width**: 1: width in pixels (number)
+3. **stroke weight**: 1: width in pixels (number)
+
 ```js
-strokeWidth(5);
+strokeWeight(5);
 ```
 
 #### Arcs
