@@ -1,13 +1,7 @@
 **Parametric Design**
 # Basics
 
-GENERATIVE PATTERNS!!!
-> File for SVG / PNG
-> 
->   apps for that
-> 
-
-For creating our code-based design tools, we will be using the JavaScript framework [p5js](). p5js is the successor to the java-based [Processing]() system. Why learn JavaScript? Isn't JavaScript for building websites? Yes and no. JavaScript was originally developed to allow developers build interactivity into websites (and it still is). But since then NodeJS emerged, which allows you to run JavaScript code indepently from any browser on your computer. In this context JavaScript has become a lot more powerfull. You can now use it for example to read, edit and create files on your computer. So JavaScript has become an extremely versatile programming language. In addition its rather easy to get started with and quite "flexible" (more experienced coders hate JavaScript for its "flexibility", but for getting started this is perfect, don't let them fool you).
+For creating our code-based design tools, we will be using the JavaScript framework [p5js](https://www.p5js.org). p5js is the successor to the java-based [Processing](https://processing.org/) system. Why learn JavaScript? Isn't JavaScript for building websites? Yes and no. JavaScript was originally developed to allow developers build interactivity into websites (and it still is). But since then NodeJS emerged, which allows you to run JavaScript code indepently from any browser on your computer. In this context JavaScript has become a lot more powerfull. You can now use it for example to read, edit and create files on your computer. So JavaScript has become an extremely versatile programming language. In addition its rather easy to get started with and quite "flexible" (more experienced coders hate JavaScript for its "flexibility", but for getting started this is perfect, don't let them fool you).
 
 ## p5js
 
@@ -16,14 +10,24 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
 *So let's create our first p5js project!*
 
 ### Creating a project
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/setup.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-1. Go to the `code` folder and create a new folder called `02-basics-start`.
-2. Create a copy of the `code/example/index.html` and `code/example/script.js` in your new folder (copy, don't move, you will need them later)
-3. Click on the new `index.html` and click on the Go Live button at the bottom of VS Code.
-4. Open `code/02-basics-start/script.js`
+1. Go to the `code` folder.
+2. Create a copy of the `code/example` folder and paste it into the `code` folder and rename it.
+3. Click on the new `index.html` and click on the **Go Live** button at the bottom of VS Code.
+4. Open `code/YOUR-NEW-FOLDER/script.js`
 5. Let's go!
 
-IMAGE
+
+### p5js Reference
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/reference.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+If you are not sure about the name of a function or what parameters to use. You can also take a look at the p5js [reference](p5js.org/reference/).
 
 ### Sketches
 
@@ -32,6 +36,11 @@ In the p5js documentation you will sometimes read, that a project is called a **
 For those who are interested, i have created a super [short introduction](html.md) to html. But you don't need any of this for this class.
 
 ### sketch.js
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/setup-draw.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 The `sketch.js` file is where all the magic happens. Here we will write our code to generate our designs. When you create a fresh copy from the example directory your file should look like this:
 
@@ -58,6 +67,12 @@ The **draw** function is continously called once **setup** is finished. In the b
 ### Let's draw
 
 #### createCanvas
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/createCanvas.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 First we need to create a canvas, an area we can draw upon. To do this we add the `createCanvas` command into our **setup** function:
 
 ```js
@@ -73,6 +88,12 @@ The first number defines the *width* and the second number the *height*. The siz
 [Online reference](https://p5js.org/reference/#/p5/createCanvas)
 
 #### background
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 In the begining our canvas is blank. But we can give our full canvas a uniform fill color. By using the `background` command. For now we will place it in the **draw** function:
 
 ```js
@@ -86,6 +107,11 @@ Different to the `createCanvas` command, we can use a variety of inputs to defin
 [Online reference](https://p5js.org/reference/#/p5/background)
 
 #### colors
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/colors.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 In p5js we can define colors in a variety of different forms:
 
@@ -121,9 +147,12 @@ Those are the things we will use, but there are even more possibilites, see [her
 
 #### basic shapes
 
-Or as the p5js reference calls them *2D primitives*. All those shapes are created in a coordinate system. The origin (0|0) of that coordinate system is in the upper left corner of our canvas. Units as always in pixels.
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/shapes-full.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-IMAGES!!!
+Or as the p5js reference calls them *2D primitives*. All those shapes are created in a coordinate system. The origin (0/0) of that coordinate system is in the upper left corner of our canvas. Units as always in pixels.
 
 1. **Point** 1: **x-coordinate** (number), 2: **y-coordinate** (number)
 ```js
@@ -132,7 +161,7 @@ point(20, 20);
 
 2. **Circle** 1: **x-coordinate** (number), 2: **y-coordinate** (number), 3: **radius** (number)
 ```js
-point(20, 20, 5);
+circle(20, 20, 5);
 ```
 
 3. **Ellipse** 1: **x-coordinate** (number), 2: **y-coordinate** (number), 3: **width** (number), 4: **height** (number)
@@ -184,12 +213,35 @@ circle(30, 30, 5);
 
 Besides colors we can also modify the stroke width of the shapes we draw:
 
-3. **stroke width**: 1: width in pixels (number)
+3. **stroke weight**: 1: width in pixels (number)
+
 ```js
-strokeWidth(5);
+strokeWeight(5);
 ```
 
+#### Arcs
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/arc.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+A bit more advanced shape is the arc:
+
+**Arc** 1: **x-coordinate** (number), 2: **y-coordinate** (number), 3: **width** (number), 4: **height** (number), 5: **start-angle** (number), 6: **end-angle** (number), 7: **arc-modus** (OPEN, PIE, CHORD)
+```js
+arc(100, 100, 50, 50, 0, Math.PI, OPEN);
+```
+
+The start- and end-angle are provided in rad not degrees. 360 degrees are `2 * Math.PI`. So an easy way to work with degrees, is to simply covert it: `Math.PI / 180 * YOUR_ANGLE`. 
+
 #### comments
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/comments.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 If you want to write a comment in your code or you want to temporarily disable a line of code, there are two ways:
 
 1. Single line comment
@@ -218,3 +270,10 @@ In some coding languages like python, the indenting of code has meaning. In Java
 }
 ```
 *The above code makes no sense, just for illustration purposes*
+
+## Debugging
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/debugging.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
