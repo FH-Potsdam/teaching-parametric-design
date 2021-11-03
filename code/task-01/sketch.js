@@ -11,7 +11,6 @@ const SIZE = 400;
 
 function setup() {
   createCanvas(SIZE, SIZE);
-  noLoop() //For this case re-render is deactivated
 }
 
 function draw() {
@@ -32,6 +31,7 @@ function draw() {
  * @param {boolean} [randomizeColor=false] - If true, each circle will get a random color, otherwise will keep inital color
  */
 function generateComposition( rows, columns, circleSize, distance, alignment, randomizeColor ) {
+  noLoop() //For this case re-render is deactivated
 
   distance = distance + circleSize;
 
