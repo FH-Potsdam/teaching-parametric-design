@@ -40,7 +40,7 @@ const y = radius * Math.sin(rad);
 
 > The functions above also take negative angles (see image below for an example).
 
-<img src="./assets/radius-scale.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
+<img src="./assets/polar.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
 
 We can als do the reverse to calculate `angle` and `radius` from `x, y`:
 
@@ -81,7 +81,9 @@ Curves are very complex, the following examples will provide some starting point
 
 # sin/cos
 
-Through sin/cos we can generate waves. The problem is, the normal wavelength is `Math.PI * 2` and it starts at `0`. So for one wave we would need to use the following:
+<img src="./assets/wave.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
+
+Through sin/cos we can generate waves. The problem is, the normal wavelength is `Math.PI * 2` and it starts at `0`. So for one wave across our sketch (`sketchWidth`) we would need to use the following:
 
 ```js
 const sketchHeight = 400;
@@ -98,9 +100,10 @@ But we would hardly see anything, because the amplitude is 1. But we can control
 ```js
 const sketchHeight = 400;
 const sketchWidth = 400;
+const amplitude = 200;
 beginShape();
 for (let x = 0; x < sketchWidth; x += 1) {
-  vertex(x, sin(Math.PI * 2 / sketchWidth * x) * sketchHeight / 2 + sketchHeight / 2);
+  vertex(x, sin(Math.PI * 2 / sketchWidth * x) * amplitude + sketchHeight / 2);
 }
 endShape();
 ```
