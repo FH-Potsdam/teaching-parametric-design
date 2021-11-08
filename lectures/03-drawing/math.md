@@ -51,6 +51,8 @@ const angle = Math.atan2(y, x) * 180 / Math.PI;
 
 ## Distances
 
+<img src="./assets/pythagoras.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
+
 Some of you might remember Pythagoras and his triangle `a² + b² = c²`. This is the basis for distance calculations in our two dimensional coordinate system:
 
 ```js
