@@ -9,6 +9,8 @@ See `circle` and `arc` in the [drawing basics](../02-basics/index.md).
 
 A circle is defined by it's `centre` and `radius`. A circle's diameter is `radius * 2`. The circumference of the circle is `Math.PI * 2 * radius`. The circumference kan also be described by points located at distance `radius` between 0 and 360 degrees. And the surface or area of a circle is `Math.PI * radius²`.
 
+<img src="./assets/circle.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
+
 > When you are using circles to visualise data, have in mind, that the surface of the circle increases exponentially to the radius. So do not use the radius as your scale, use the surface: `const radius = Math.sqrt(surfaceSize / Math.PI);`
 
 ## Radians
