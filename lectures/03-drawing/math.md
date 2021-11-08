@@ -22,7 +22,7 @@ In many functions you will need to use radians as an input, not degrees. The con
 const rad = Math.PI / 180 * angleInDegrees;
 ```
 
-And the reverse the whole thing:
+And then reverse the whole thing:
 
 ```js
 const angleInDegrees = rad * 180 / Math.PI;
@@ -37,6 +37,10 @@ const rad = Math.PI / 180 * angle;
 const x = radius * Math.cos(rad);
 const y = radius * Math.sin(rad);
 ```
+
+> The functions above also take negative angles (see image below for an example).
+
+<img src="./assets/radius-scale.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
 
 We can als do the reverse to calculate `angle` and `radius` from `x, y`:
 
