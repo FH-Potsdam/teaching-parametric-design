@@ -13,6 +13,8 @@ A circle is defined by it's `centre` and `radius`. A circle's diameter is `radiu
 
 > When you are using circles to visualise data, have in mind, that the surface of the circle increases exponentially to the radius. So do not use the radius as your scale, use the surface: `const radius = Math.sqrt(surfaceSize / Math.PI);`
 
+<img src="./assets/radius-scale.png" alt="circle" style="max-width: 100%; margin: 0 auto;" />
+
 ## Radians
 In many functions you will need to use radians as an input, not degrees. The conversion is quite simple: `Math.PI` equals `180°`. So if we want to calculate the radians for a specific angle, we only need the following formula:
 
