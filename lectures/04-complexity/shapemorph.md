@@ -1,3 +1,11 @@
+**Parametric Design**
+
+# Bonus: Polygons
+
+VIDEO
+
+
+```js
 const sketchWidth = 400;
 const sketchHeight = 400;
 
@@ -44,5 +52,4 @@ function polarY(radius, angle) {
   const y = radius * Math.sin(Math.PI / 180 * angle);
   return y;
 }
-    
-
+```

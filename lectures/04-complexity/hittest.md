@@ -1,3 +1,10 @@
+**Parametric Design**
+
+# Bonus: Bounding-Box Hit-Test
+
+VIDEO
+
+```js
 const sketchWidth = 400;
 const sketchHeight = 400;
 
@@ -75,3 +82,4 @@ function draw() {
     );
   }
 }
+```
