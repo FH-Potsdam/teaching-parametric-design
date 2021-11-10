@@ -4,7 +4,6 @@
 
 
 const SIZE = 400;
-const AGENTS = []
 
 function setup() {
   createCanvas(SIZE, SIZE);
