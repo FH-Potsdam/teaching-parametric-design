@@ -110,6 +110,11 @@ points[1]['vel'][0] // 1
 
 When building complex layouts it can get tricky calculating all those angles and offsets. p5js offers so called transformations. Those transforms can modify the underlying coordinate system and where things are draw. Lets start with `translate(x, y)`. When using the `translate()` command, the origin (0,0) of our coordinate system is moved. 
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/04-complexity/translate.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ```js
 point(0, 0); // position 0, 0
 translate(100, 100);
@@ -117,6 +122,11 @@ point(0, 0); // position 100, 100
 ```
 
 This is for example useful, when we are using the polar coordinate system, but we don't want to calculate the offset all the time:
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/04-complexity/translate-polar.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```js
 const sketchWidth = 400;
@@ -157,6 +167,18 @@ point(0, 0); // position 0, 0
 > push/pop do not only restore the transformations, the same goes for drawing styles (e.g. color). push/pop can also be nested.
 
 Besides offsetting the coordinate origin `translate()`, we can also `scale(zoomFactor)` and `rotate(rad)`. The center of the transformation is always the coordinate system origin (0, 0).
+
+**Rotation:**
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/04-complexity/rotation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+**Scale:**
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/04-complexity/scale.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```js
 scale(2); // 200%
