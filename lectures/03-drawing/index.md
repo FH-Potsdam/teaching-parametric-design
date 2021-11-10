@@ -128,9 +128,11 @@ The solution to share information between or across all scopes is to use the glo
 
 > Be careful when using the same variable name across multiple scopes, as it can get confusing, because while they have the same name, they might not have the same value.
 
-## For-Loops
+## Loops
 
 After the first few experiments, you have probably realized, that when you want to build more complex layouts, you have to write a lot of code. While some code will always need to be written, some repetetive layouts can be easily accomplished with a loop. Similar to our draw-cycle, a loop repeats the same code several times:
+
+### For-Loop
 
 ```js
 for(let i = 0; i < 5; i += 1) {
@@ -157,6 +159,19 @@ for(let x = 0; x < 10; x += 1) {
   }
 }
 ```
+
+### While-Loop
+
+Using the for-loop we can define a variable that we can use for counting our iterations. Sometimes we already have a variable or our iteration process is more complex. The **while-loop** works exactly like the **for-loop** but it only has one parameter, the condition under which it keeps running:
+
+```js
+while (x < 10) {
+}
+```
+
+In the example above the while function keeps iterating until x is equal or bigger than 10.
+
+> Be careful with while loops, they can potentially crash your code if they never reach their end condition.
 
 ### Loop-Examples
 
@@ -228,6 +243,31 @@ function draw () {
   }
 }
 ```
+
+The while loop can be interesting if we want to generate a number that is different to an existing number (this becomes more interesting in the next chapter when we introduce arrays):
+
+```js
+const num1 = Math.round(Math.random() * 10);
+let num2 = num1;
+while (num2 === num1) {
+  num2 = Math.round(Math.random() * 10);
+}
+```
+
+In the above example we create two numbers. If the numbers are the same. The loop will try to find a new number that is different, running another iteration.
+
+We can also use the while-loop in the same way, we use the for-loop:
+
+```js
+let i = 0;
+while (i < 10) {
+  i += 1;
+}
+// the same as:
+for (let i = 0; i < 10; i += 1) {
+}
+```
+
 
 ## Conditions (if)
 

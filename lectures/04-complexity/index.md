@@ -72,7 +72,7 @@ function draw() {
 }
 ```
 
-<img src="array.png" alt="" style="max-width:400px; width:100%; display:block; margin: 0 auto;" />
+<img src="array.png" alt="" style="max-width:400px; width:100%; display:block; margin: 0 auto; border: 5px solid black;" />
 
 > Sometimes we might not know how long our array is exactly: `array.length` returns the length of the array.
 
