@@ -1,8 +1,3 @@
-//  Dimitri Balzer
-//  03.11.2021
-//
-
-
 const SIZE = 400;
 
 function setup() {
