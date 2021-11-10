@@ -1,6 +1,6 @@
 **Parametric Design**
 
-# Bonus: Polygons
+# Indepth: Polygons
 
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/04-complexity/shape-morph.mp4" type="video/mp4">
