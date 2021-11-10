@@ -13,16 +13,16 @@ function draw() {
   background(40);
 
   noFill();
-  stroke(255, 255, 255);
+  stroke(255, 255, 199);
 
   let factor = 15;
 
-  for (let i = 0; i <= 50; i++) {
+  for (let i = 0; i <= 18; i++) {
     bezier(
-      0, 400, /* 1. Anchor */
-      100 + i * factor, 360 - i * factor, /* 1. Control */
-      150 + i * factor, 360 - i * factor, /* 2. Control */
-      100 + i * factor, 400, /* 2. Anchor */
+      30 + i * factor, 400, /* 1. Anchor */
+      30 - i * factor, 200, /* 1. Control */
+      250, 30 - i * factor, /* 2. Control */
+      400, 30 + i * factor, /* 2. Anchor */
     );
   }
 }
