@@ -72,7 +72,11 @@ function draw() {
 }
 ```
 
+<img src="array.png" alt="" style="max-width:400px; width:100%; display:block; margin: 0 auto;" />
+
 > Sometimes we might not know how long our array is exactly: `array.length` returns the length of the array.
+
+More infos on array features can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 ## objects
 Story information in arrays can get confusing at a certain level. To keep things organized we can use objects. Objects are very similar to arrays, but instead of a number-based index, objects use a string-based index:
