@@ -50,4 +50,65 @@ So for our example the final `index.html` looks like this:
 </html>
 ```
 
-You can find the full code here.
+You can find the full code [here](https://github.com/FH-Potsdam/teaching-parametric-design/tree/main/code/gif).
+
+## Quick note about GIFs
+
+[GIFs](https://de.wikipedia.org/wiki/Graphics_Interchange_Format) (Graphics Interchange Format) are an ancient format. They were once great, because they gave designers a lot of control over building animations and optimizing the file size. The problem with gifs today is, that people use them to basically build videos. And for videos we have far more superior formats like MPEG. So when you still want to create GIFs and don't want them to become to big in file size, make sure to watch out for the following things:
+
+- use a reduced color pallete, the more colors the bigger the file
+- keep the image size small, don't create 1920*1080 GIFs
+- experiment with the number of frames and the framerate
+
+Alternatively you could export a series of images and then stitch them together and export as a movie (for example using Photoshop image series feature). Further reading:
+
+- https://p5js.org/reference/#/p5/saveFrames 
+- https://github.com/spite/ccapture.js/
+
+## Building a simple GIF animation
+
+Some definitions and our polar function to get started: 
+
+```js
+const sketchWidth = 400;
+const sketchHeight = 400;
+
+function polar(radius, angle) {
+  const rad = Math.PI / 180 * angle;
+  const x = radius * Math.cos(rad);
+  const y = radius * Math.sin(rad);
+  return {x: x, y: y};
+}
+```
+
+In the setup we need to make sure that we define our framerate: `frameRate(number)`. Lower framerate equals less frames in our gif-animation. Then we setup the gif-creation witht he `createLoop()` command and provide a few attributes:
+
+```js
+function setup () {
+  createCanvas(sketchWidth, sketchHeight);
+  frameRate(30)
+  createLoop({
+    duration:3, // duration in seconds for our gif animation
+    gif:true
+  });
+}
+```
+
+Our draw function is exactly as we would write it normally:
+
+```js
+function draw() {
+  background(255);
+  fill(0);
+  translate(sketchWidth / 2, sketchHeight / 2);
+  // animLoop.progress > value between 0 and 1 showing the progress of our animation
+  const pos = polar(100, 360 * animLoop.progress);
+  circle(pos.x, pos.y, 25);
+}
+```
+
+After createLoop is done creating our gif its added to the website. You can then simply download it using *right-click > save image*.
+
+Here is the final result:
+
+![resulting gif](image.gif)
