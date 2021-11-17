@@ -136,3 +136,13 @@ const searchWidth = fullWidth / fullPercentage * searchPercentage;
 ```
 
 So we require a pair defining the relationship between two scales (pixel and percentage). And from there on, we can use other values, from either scale (pixel or percentage) to calculate the corresponding value, by dividing the the pair and multiplying by the addition value, to find this value's corresponding value.
+
+## Calculating min/max with random
+
+The p5js function `random()`, allows you to set a *min* and *max* value. But sometimes you either want more control or `random()` is not yet available. Here is a quick formula to replicate the functionality:
+
+```js
+const min = 20;
+const max = 120;
+const value = min + Math.random() * (max - min);
+```

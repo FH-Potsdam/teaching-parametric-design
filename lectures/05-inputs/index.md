@@ -2,6 +2,11 @@
 
 # Export
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/save.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Pixels
 
 The purpose of learning about how to build design with code, is so we can quickly generate complex shapes and patterns to use in other design processes. So far our output format was a pixel based image. To export our pixels into a convenient PNG format, simply call the `save()` command:
@@ -33,6 +38,11 @@ function setup() {
 # Interactions
 
 So far we have created our parameters manually or by using the `random()` function. In this section we will look at a few input options which we will turn into parameters to modify our layouts and designs.
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/input.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Text field
 
@@ -95,6 +105,11 @@ Check the corresponding documentation in the reference for more info.
 
 ## Keyboard events
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/keyboard.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 Sometimes you don't need an actual input, but you rather want to trigger something, maybe simply increase or decrease a value:
 
 ```js
@@ -134,6 +149,11 @@ function draw() {
 ```
 
 ## Mouse events
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/mouse_Trim.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 The mouse events are very similar to the keyboard events:
 

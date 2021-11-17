@@ -62,8 +62,8 @@ You can find the full code [here](https://github.com/FH-Potsdam/teaching-paramet
 
 Alternatively you could export a series of images and then stitch them together and export as a movie (for example using Photoshop image series feature). Further reading:
 
-- https://p5js.org/reference/#/p5/saveFrames 
-- https://github.com/spite/ccapture.js/
+- [https://p5js.org/reference/#/p5/saveFrames](https://p5js.org/reference/#/p5/saveFrames)
+- [https://github.com/spite/ccapture.js/](https://github.com/spite/ccapture.js/)
 
 ## Building a simple GIF animation
 
@@ -81,7 +81,7 @@ function polar(radius, angle) {
 }
 ```
 
-In the setup we need to make sure that we define our framerate: `frameRate(number)`. Lower framerate equals less frames in our gif-animation. Then we setup the gif-creation witht he `createLoop()` command and provide a few attributes:
+In the setup we need to make sure that we define our framerate: `frameRate(number)`. Lower framerate equals less frames in our gif-animation. Then we setup the gif-creation with the `createLoop()` command and provide a few attributes:
 
 ```js
 function setup () {

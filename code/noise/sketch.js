@@ -6,8 +6,10 @@ function setup () {
 }
 
 function draw() {
-  noLoop();
-  stroke('black');
-  circle(200, 200, 50);
-  save();
+  // console.log(Math.random(),Math.random());
+  console.log(noise(1), noise(2));
+}
+
+function mouseClicked() {
+  noiseSeed();
 }

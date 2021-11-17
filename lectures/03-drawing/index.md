@@ -331,6 +331,20 @@ if (i < 10) {
 
 In the above example a circle is draw if `i` is smaller 5. In addition a rectangle is draw if `i` is smaller 10. For the cases `i` smaller 5, a circle and a rectangle are draw.
 
+There is a useful command to differentiate between even and odd numbers:
+
+```js
+for (let i = 0; i < 10; i += 1) {
+  if (i%2 === 0) {
+    fill('red');
+  } else {
+    fill('green');
+  }
+}
+```
+
+The above command `i%2 === 0` checks if a number, when divided by 2, has decimal places. `6/2 = 3 > true`, `5/2 = 2.5 > false`.
+
 ## Scopes (again)
 
 Scopes cover not only functions like `setup` and `draw`, but also things like loops and if statements. Most of the times when commands are wrapped inside curly brackets (`{}`) its a new scope level. An example:

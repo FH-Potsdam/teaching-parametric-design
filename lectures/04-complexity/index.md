@@ -42,6 +42,8 @@ We create a random shape (array of `[x,y]`), in addition to the x and y, we will
 const sketchWidth = 400;
 const sketchHeight = 400;
 const numPoints = 30;
+// We use velocity to modify how fast the points move in the random directions
+// Higher velocity faster moving
 const velocity = 2;
 const points = [];
 for (let p = 0; p < numPoints; p += 1) {

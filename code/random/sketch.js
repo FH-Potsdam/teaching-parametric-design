@@ -1,5 +1,5 @@
-const done = [];
-const sketchNums = (new Array(25)).fill(null).map((a, i) => i + 1).filter(num => !done.includes(num));
+const done = [3,4,12];
+const sketchNums = [1,8,11,12,13,15,23,16,24,17]; // (new Array(25)).fill(null).map((a, i) => i + 1).filter(num => !done.includes(num));
 
 function setup() {
   createCanvas(400, 400);
@@ -14,4 +14,6 @@ function draw() {
   textAlign(CENTER);
   text(sketchNums[rand], 200, 300);
 }
+
+
 
