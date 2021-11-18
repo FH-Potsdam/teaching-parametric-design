@@ -452,7 +452,7 @@ return subtractShape;
 
 <img src="./assets/intersect.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
-Cut out shapes from the first shape in the list:
+The overlapping areas of the object in the array:
 
 ```js
 const shapes = [
@@ -462,3 +462,23 @@ const shapes = [
 const intersectShape = intersect(shapes);
 return intersectShape;
 ```
+
+### Scission
+
+Scission can cut elements apart that are not connected anymore. This requires that there is at least a little gap inbetween two elements. If one for example would use `subtract` on two shapes in both directions and afterwards `union`. The cut would be so perfect, that the edges would still touch. Here is an example where the shapes are translated before `union` is applied, thereby, creating a big gap:
+
+```js
+const cubeShape = cube({size: 4});
+const sphereShape = sphere({radius: 2, center: [2, 2, 2]});
+
+const cut1 = subtract([cubeShape, sphereShape]);
+const cut2 = subtract([sphereShape, cubeShape]);
+const unionShape = union([
+  translate([0,0,0], cut1),
+  translate([0,0,5], cut2)
+]);
+
+const scissionShapes = scission(unionShape);
+```
+
+The above `scission` returns an array with two elements, which are the object that went into the `union` command.

@@ -13,16 +13,18 @@ const getParameterDefinitions = () => {
 };
 
 const main = (parameters) => {
-  const shapes = [
-    cube({size: 4}),
-    sphere({radius: 2, center: [2, 2, 2]})
-  ];
-  const scissionShapes = scission(shapes);
-  const transformedShapes = [
-    translate([0,0,0], scissionShapes[0]),
-    translate([0,0,5], scissionShapes[1])
-  ];
-  return transformedShapes;
+  const cubeShape = cube({size: 4});
+  const sphereShape = sphere({radius: 2, center: [2, 2, 2]});
+
+  const cut1 = subtract([cubeShape, sphereShape]);
+  const cut2 = subtract([sphereShape, cubeShape]);
+  const unionShape = union([
+    translate([0,0,0], cut1),
+    translate([0,0,5], cut2)
+  ]);
+
+  const scissionShapes = scission(unionShape);
+  return scissionShapes[0];
 };
 
 module.exports = { main, getParameterDefinitions }
