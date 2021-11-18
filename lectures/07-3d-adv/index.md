@@ -12,6 +12,15 @@ return polyhedron({
       [1, 11, 7], [1, 5, 11], [1, 7, 8], [2, 1, 8], [8, 11, 2], [5, 2, 11]
     ]
   })
+### Polyhedron
 
+```js
+const shape = cylinder({
+  center: [0, 0, 0],
+  height: 2,
+  radius: 1,
+  segments: 32
+});
+```
 ## Parameters
 

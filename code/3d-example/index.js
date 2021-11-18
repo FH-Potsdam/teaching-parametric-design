@@ -1,7 +1,7 @@
 const jscad = require('@jscad/modeling')
-const { cube, cuboid, cylinder, cylinderElliptic, ellipsoid, geodesicSphere, roundedCuboid, roundedCylinder, sphere, torus } = jscad.primitives
-
-const { translate } = jscad.transforms
+const { cube, cuboid, cylinder, cylinderElliptic, ellipsoid, geodesicSphere, roundedCuboid, roundedCylinder, sphere, torus } = jscad.primitives;
+const { union } = jscad.booleans;
+const { translate } = jscad.transforms;
 
 const main = () => {
   const allPrimitives = [
@@ -18,11 +18,11 @@ const main = () => {
     cylinder({ start: [0, 0, 0], end: [3, 3, 10], radius: 1 }),
     torus({ innerRadius: 1, outerRadius: 1.2 }),
     torus({ innerRadius: 1, outerRadius: 1.5, innerSegments: 4, outerSegments: 6, innerRotation: 0 })
-  ]
+  ];
 
   return allPrimitives.map((primitive, index) => {
     return translate([(index % 4 - 2) * 6, Math.floor(index / 4 - 2) * 6, 0], primitive)
-  })
-}
+  });
+};
 
-module.exports = { main }
+module.exports = { main };

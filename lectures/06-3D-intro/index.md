@@ -20,9 +20,11 @@ IMAGE
 
 ## Inspect 3D project in the browser
 
-To create your first 3D project, the process is the same as for p5js, we just use a different boilerplate. Duplicate the `3D-example` folder. You will find a couple of commands as examples in the `index.js` file. We will go through all those commands in a moment. For now let's open the new 3D code in the browser. Navigate to the folder `/code/libraries/OpenJSCAD/` select the `index.html` and use the **Go Live** function to open this html-file in your browser. You should be presented with an empty coordinate system. In the upper left click on *Load JSCAD project*. Now you need to select the folder you created (do not select the index.js, select the whole folder). If your code did not include any errors, you should now see your 3D design. (I am working on an easier solution similar to our p5js sketches, but its sadly not done yet.)
+IMPORTANT: If you have not updated your `3d-example` folder do so [now](fix.md)!
 
-You can use your mouse-wheel or trackpad scrolling to zoom in and out. Hold your mouse-pressed and drag to rotate the coordinate system. More controls are explained under the settings button in the upper right. There you can also change language and theme. Please note that the edit button in the upper right does not fully work, best simply ignore it. The most interesting part is the Export feature. In the upper left you find a dropdown with a variety of formats. For our use cases the binary STL file is best suited.
+To create your first 3D project, the process is the same as for p5js, we just use a different boilerplate. Duplicate the `3D-example` folder. You will find a couple of commands as examples in the `index.js` file. We will go through all those commands in a moment. Open the `index.html` in your new folder with the *Go Live* extension. When you make changes to the `index.js` file and save, the website in your browser should reload automatically. (Please not that the last rotation and zoom of the camera will be reset).
+
+You can use your mouse-wheel or trackpad scrolling to zoom in and out. Hold your mouse-pressed and drag to rotate the coordinate system. More controls are explained under the settings button in the upper right. There you can also change language and theme. The most interesting part is the export feature. In the upper left you find a dropdown with a variety of formats. For our use cases the binary STL file is best suited.
 
 You can find the full reference for all JSCAD features [here](https://openjscad.xyz/docs).
 
@@ -60,44 +62,403 @@ Similar to p5js' `draw()` the main is our drawing function. Please note, that in
 
 > `const main = () => {};` stores the function in the variable `main`, so we can execute it with `main();`.
 
-The `main` function needs to return something that the system can render for us. The return is either a single 3D body or an array of bodies.
+The `main` function needs to return something that the system can render for us. The return is either a single 3D body or an array of bodies:
+
+```js
+const main = () => {
+  const shapes = [];
+  shapes.push(cube());
+  shapes.push(cube());
+  return shapes;
+};
+```
+
+## Function Paremeters vs. Objects
+
+In p5js commands like `rect` take a certain amount of parameters: `rect(x, y, width, height)`. In JSCAD most functions take a single object with several properties: `cube({center: [0,0,0], size: 2})`. This approach can have a lot of advantages, e.g. you can create a parameter object and pass it to multiple commands or modify only certain aspects of the object:
+
+```js
+const main = () => {
+  const shapes = [];
+  const cubeProps = {
+    size: 1,
+    center: [0, 0, 0]
+  };
+  for (let c = 0; c < 10; c += 1) {
+    shapes.push(translate([0, 0, c * 2], cube(cubeProps));
+  }
+  return shapes;
+};
+```
+
+
+## 2D-Primitives
+
+```js
+const {line, arc, circle, ellipse, rectangle} = jscad.primitives;
+```
+
+2D primitives are often a good start. You can use extrusion and expansion commands, to turn 2D shapes into 3D bodies (see below).
+
+A documentation of all primitives can be found [here](https://openjscad.xyz/docs/module-modeling_primitives.html). 
+
+### Line
+
+The line command takes two arrays of three numbers each:
+
+```js
+const shape = line([
+  [x1, y1, z1],
+  [x2, y2, z2]
+]);
+```
+
+### Arc
+
+The arc also produces a line and works similar to the p5js arc function:
+
+```js
+const shape = arc({
+  center: [0, 0],
+  radius: 1,
+  startAngle: 0,
+  endAngle: Math.PI * 2, //full arc
+  segments: 32 // level of detail
+});
+```
+
+> Most properties in JSCAD are optional and have default value, so you only need to provide the ones you really need.
+
+### Circle
+
+```js
+const shape = circle({
+  center: [0, 0],
+  radius: 1,
+  startAngle: 0,
+  endAngle: Math.PI * 2, //full arc
+  segments: 32 // level of detail
+});
+```
+
+> Circle looks exactly like arc, the important difference is, that arc returns a line and circle a polygon.
+
+### Ellipse
+
+Circle and ellipse take similar parameters, radius is an array for ellipse, defining the radius on x and y axis:
+
+```js
+const shape = ellipse({
+  center: [0, 0],
+  radius: [1,1],
+  startAngle: 0,
+  endAngle: Math.PI * 2, //full arc
+  segments: 32 // level of detail
+});
+```
+
+> Most round features, like ellipses, spheres or rounded corners, have a segment parameter. This defines the level of detail of curves. More segments lead to rounder curves, but also more complex objects (bigger files, longer rendering times, etc.).
+
+### Rectangle
+
+```js
+const shape = rectangle({
+  size: [2, 2],
+  center: [0, 0, 0]
+});
+```
 
 ## 3D-Primitives
+
+```js
+const {cube, sphere, cylinder} = jscad.primitives;
+```
 
 A documentation of all primitives can be found [here](https://openjscad.xyz/docs/module-modeling_primitives.html).
 
 ### Cube
 
+```js
+const shape = cube({
+  size: 1,
+  center: [0, 0, 0]
+});
+```
+
 ### Sphere
+
+```js
+const shape = sphere({
+  size: 1,
+  center: [0, 0, 0]
+});
+```
 
 ### Cylinder
 
-### Polyhedron
+```js
+const shape = cylinder({
+  center: [0, 0, 0],
+  height: 2,
+  radius: 1,
+  segments: 32
+});
+```
 
 ## From 2D to 3D 
 
-### Polygon
-
+When ever we modify something in JSCAD, not matter if extrusion or transformation, we pass the shape we want to modify into that command and the command will return the modified version of the shape, which we can then store in a new variable (or the same).
 
 ### Extruding & Expanding
 
+```js
+const {extrudeRectangular, extrudeLinear, extrudeRotate} = jscad.extrusions;
+```
+
+Extrusion is the process of taking a geometry and extending along one dimension.
+
+#### ExtrudeLinear
+
+Linear extrude allows you to extrude on the z-axis `{height: 20}`:
+
+<img src="./assets/extrudeLinear.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+```js
+const circleShape = circle({
+    radius: 5,
+    segments: 6,
+    center: [0, 0, 0]
+});
+
+const extrudeShape = extrudeLinear({height: 20}, circleShape);
+```
+
+You can add a rotation to the extrusion `twistAngle` and how many steps inbetween should be created `twistSteps`:
+
+<img src="./assets/extrudeLinear-1.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+```js
+const circleShape = circle({
+    radius: 5,
+    segments: 6,
+    center: [0, 0, 0]
+});
+
+const extrudeShape = extrudeLinear({
+  height: 20,
+  twistAngle: Math.PI * 2,
+  twistSteps: 12
+}, circleShape);
+```
+
+The rotation works along the z-axis relative to `[0,0,0]`. If an object is not located on `[0,0,0]`, the twist effect from above will look different:
+
+<img src="./assets/extrudeLinear-2.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+```js
+const circleShape = circle({
+    radius: 5,
+    segments: 6,
+    center: [0, 0, 4]
+});
+
+const extrudeShape = extrudeLinear({
+  height: 20,
+  twistAngle: Math.PI * 2,
+  twistSteps: 12
+}, circleShape);
+```
+
+
+#### extrudeRectangular
+
+For this extrusion imagine a cube walking along the outline of the shape and, thereby, creating the extrusion. You can define size and heigth of the rectangle and result ing extrusion:
+
+<img src="./assets/extrudeRectangular.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+```js
+const circleShape = circle({
+    radius: 5,
+    segments: 6,
+    center: [0, 0, 0]
+});
+
+const extrudeShape = extrudeRectangular({
+  size: 1,
+  height: 1
+}, circleShape);
+```
+
+#### extrudeRotate
+
+For this extrusion the shape is rotated around the z-axis, the angles define start and end, segments the amount of steps:
+
+<img src="./assets/extrudeRotate-1.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+```js
+const circleShape = circle({
+    radius: 5,
+    segments: 6,
+    center: [0, 0, 0]
+});
+
+const extrudeShape = extrudeRotate({
+  angle: Math.PI / 180 * parameters.end,
+  startAngle: Math.PI / 180 * parameters.start,
+  segments: parameters.segments
+}, circleShape);
+```
+
+In the above example the shape is located on `[0,0,0]` and, therefore, rotated around itself. Similar to `extrudeLinear`, adding an offset, the shape rotates differentyl:
+
+<img src="./assets/extrudeRotate-2.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+```js
+const circleShape = circle({
+    radius: 5,
+    segments: 6,
+    center: [0, 0, 4]
+});
+
+const extrudeShape = extrudeRotate({
+  angle: Math.PI / 180 * parameters.end,
+  startAngle: Math.PI / 180 * parameters.start,
+  segments: parameters.segments
+}, circleShape);
+```
 
 ## Colors
 
+```js
+const {colorize, colorNameToRgb} = jscad.colors;
+```
 
+Colors can help us for prototyping and design our shapes. But have in mind, that depending on what you are going to do with your 3D object, you will likely have to reassign materials to your shapes.
 
+We can either use RGB values:
 
-## Coordinate system transformations
+```js
+const shape = colorize([R, G, B], cube());
+```
+
+Or use color names:
+
+```js
+const shape = colorize(colorNameToRgb('black'), cube());
+```
+
+## Transformations
+
+```js
+const {translate, rotate, scale, center, align} = jscad.transforms;
+```
+
 
 A documentation of all transformations can be found [here](https://openjscad.xyz/docs/module-modeling_transforms.html).
 
-p5js
+Similar to the p5js coordinate system transformations, we can transform individual objects. In contrast to p5js we don't transform the whole coordinate system, but only individual objects.
 
 ### Translate
 
+Move object along three dimensions:
+
+```js
+const shape = translate([0, 0, 5], cube());
+```
+
 ### Rotate
+
+Rotate object along x/y/z-axis:
+
+```js
+const shape = rotate([0, 0, Math.PI / 2], cube());
+```
 
 ### Scale
 
+Resize (multiply) along dimensions:
+
+```js
+const shape = scale([0, 2, 0], cube());
+```
+
+### Center
+
+The center function allows us to center an object on one or multiple axis. If all set to `true` its placed on the center at `[0,0,0]`:
+
+```js
+const shape = center([true, true, true], cube());
+```
+
+### Align
+
+After creating multiple objects, `align` allows you to align an array of objects:
+
+```js
+const shapes = [
+  cube({center: [0, 0, 10]}),
+  cube({center: [0, 10, 20]}),
+  cube({center: [10, 0, 30]})
+];
+
+const alignedShapes = align(
+  {
+    modes: ['center', 'max', 'none'], // align along axis: center, min, max, none
+    realtiveTo: [0,0,0]
+  },
+  shapes
+);
+```
 
 ## Boolean Operations 
+
+```js
+const {union, subtract, intersect, scission} = jscad.booleans;
+```
+
+<img src="./assets/boolean.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+### Union
+
+<img src="./assets/union.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+Combines an array of geometries into one new geometry:
+
+```js
+const shapes = [
+  cube({size: 4}),
+  sphere({radius: 2, center: [2, 2, 2]})
+];
+const unionShape = union(shapes);
+return unionShape;
+```
+
+### Subtract
+
+<img src="./assets/subtract.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+Cut out shapes from the first shape in the list:
+
+```js
+const shapes = [
+  cube({size: 4}),
+  sphere({radius: 2, center: [2, 2, 2]})
+];
+const subtractShape = subtract(shapes);
+return subtractShape;
+```
+
+### Intersect
+
+<img src="./assets/intersect.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+Cut out shapes from the first shape in the list:
+
+```js
+const shapes = [
+  cube({size: 4}),
+  sphere({radius: 2, center: [2, 2, 2]})
+];
+const intersectShape = intersect(shapes);
+return intersectShape;
+```
