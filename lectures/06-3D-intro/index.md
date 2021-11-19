@@ -22,7 +22,7 @@ IMAGE
 
 IMPORTANT: If you have not updated your `3d-example` folder do so [now](fix.md)!
 
-To create your first 3D project, the process is the same as for p5js, we just use a different boilerplate. Duplicate the `3D-example` folder. You will find a couple of commands as examples in the `index.js` file. We will go through all those commands in a moment. Open the `index.html` in your new folder with the *Go Live* extension. When you make changes to the `index.js` file and save, the website in your browser should reload automatically. (Please not that the last rotation and zoom of the camera will be reset).
+To create your first 3D project, the process is the same as for p5js, we just use a different boilerplate. Duplicate the `3D-example` folder. You will find a couple of commands as examples in the `index.js` file. We will go through all those commands in a moment. Open the `index.html` in your new folder with the *Go Live* extension. When you make changes to the `index.js` file and save, the website in your browser should reload automatically. (Please note that the last rotation and zoom of the camera will be reset).
 
 You can use your mouse-wheel or trackpad scrolling to zoom in and out. Hold your mouse-pressed and drag to rotate the coordinate system. More controls are explained under the settings button in the upper right. There you can also change language and theme. The most interesting part is the export feature. In the upper left you find a dropdown with a variety of formats. For our use cases the binary STL file is best suited.
 
@@ -56,7 +56,7 @@ const main = () => {
 };
 ```
 
-Similar to p5js' `draw()` the main is our drawing function. Please note, that in contrast to p5js this function is only called once and not as a loop.
+Similar to p5js' `draw()` the `main()` is our drawing function. Please note, that in contrast to p5js this function is only called once and not as a loop.
 
 > `() => {}` is short for `function () {}`
 
@@ -127,7 +127,7 @@ const shape = arc({
 });
 ```
 
-> Most properties in JSCAD are optional and have default value, so you only need to provide the ones you really need.
+> Most properties in JSCAD are optional and have a default value, so you only need to provide the ones you really need.
 
 ### Circle
 
