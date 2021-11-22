@@ -198,6 +198,7 @@ const shape = rectangle({
 });
 ```
 
+
 ## 3D-Primitives
 
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
@@ -240,11 +241,21 @@ const shape = cylinder({
 });
 ```
 
+There are a few more 3D primitives to explore, examples for how to construct them are included in the boilerplate:
+
+- [cuboid](https://openjscad.xyz/docs/module-modeling_primitives.html#.cuboid)
+- [roundedCuboid](https://openjscad.xyz/docs/module-modeling_primitives.html#.roundedCuboid)
+- [geodesicSphere](https://openjscad.xyz/docs/module-modeling_primitives.html#.geodesicSphere)
+- [ellipsoid](https://openjscad.xyz/docs/module-modeling_primitives.html#.ellipsoid)
+- [roundedCylinder](https://openjscad.xyz/docs/module-modeling_primitives.html#.roundedCylinder)
+- [cylinderElliptic](https://openjscad.xyz/docs/module-modeling_primitives.html#.cylinderElliptic)
+- [torus](https://openjscad.xyz/docs/module-modeling_primitives.html#.torus)
+
 ## From 2D to 3D 
 
 When ever we modify something in JSCAD, not matter if extrusion or transformation, we pass the shape we want to modify into that command and the command will return the modified version of the shape, which we can then store in a new variable (or the same).
 
-### Extruding & Expanding
+### Extruding
 
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/extrude-final.mp4" type="video/mp4">
