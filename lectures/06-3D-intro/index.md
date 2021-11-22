@@ -134,14 +134,16 @@ A documentation of all primitives can be found [here](https://openjscad.xyz/docs
 
 ### Line
 
-The line command takes two arrays of three numbers each:
+The line command takes two arrays of two numbers each:
 
 ```js
 const shape = line([
-  [x1, y1, z1],
-  [x2, y2, z2]
+  [x1, y1],
+  [x2, y2]
 ]);
 ```
+
+> You can also pass an array with more points to create a path.
 
 ### Arc
 
