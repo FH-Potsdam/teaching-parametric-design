@@ -6,7 +6,23 @@
 
 Working with 3D-objects is a bit more complex than dealing with 2D designs. But in many cases, it is not even neccessary to directly switch to 3D, but remain in 2D and then use the 2D export (SVG) as a basis to continue working in a GUI-based 3D software like [Fusion 360](https://www.autodesk.com/products/fusion-360/overview), [Rhino](https://www.rhino3d.com/) or [Blender](https://www.blender.org/). Following an example of importing an SVG into Fusion and using the extrusion tool to turn a 2D shape into a 3D form:
 
-VIDEO
+### Blender
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/blender.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### Fusion 360
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/fusion.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### Rhino
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/rhino.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 3D object from code
 
@@ -14,7 +30,11 @@ But sometimes we want to directly create a 3D shape from code. 2D pixel and vect
 
 The open source community has developed the [OpenSCAD](https://openscad.org/) software. In contrast to tools like Fusion 360, OpenSCAD's focus is script/code-based design, which makes this tool great for parametric design. Over the years developers have ported the OpenSCAD programming language to other languages like [JavaScript](https://github.com/jscad/OpenJSCAD.org) or [Python](https://github.com/CadQuery/cadquery). Thanks to this work, we can continue using our JavaScript skills to build our own 3D objects. Similar to p5js' online editor, there is a new platform with similar capabilities for OpenSCAD: [cadhub.xyz](https://cadhub.xyz/) (this website is a community project still under development).
 
-IMAGE
+### OpenSCAD
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/openscad-final.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 # OpenJSCAD / JSCAD
 
@@ -29,6 +49,11 @@ You can use your mouse-wheel or trackpad scrolling to zoom in and out. Hold your
 You can find the full reference for all JSCAD features [here](https://openjscad.xyz/docs).
 
 ## Boilerplate
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/basics.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```js
 // importing jscad functions
@@ -93,6 +118,11 @@ const main = () => {
 
 
 ## 2D-Primitives
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/2d-primitives-final.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```js
 const {line, arc, circle, ellipse, rectangle} = jscad.primitives;
@@ -170,6 +200,11 @@ const shape = rectangle({
 
 ## 3D-Primitives
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/3d-primitives.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ```js
 const {cube, sphere, cylinder} = jscad.primitives;
 ```
@@ -189,7 +224,7 @@ const shape = cube({
 
 ```js
 const shape = sphere({
-  size: 1,
+  radius: 1,
   center: [0, 0, 0]
 });
 ```
@@ -210,6 +245,11 @@ const shape = cylinder({
 When ever we modify something in JSCAD, not matter if extrusion or transformation, we pass the shape we want to modify into that command and the command will return the modified version of the shape, which we can then store in a new variable (or the same).
 
 ### Extruding & Expanding
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/extrude-final.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```js
 const {extrudeRectangular, extrudeLinear, extrudeRotate} = jscad.extrusions;
@@ -329,6 +369,11 @@ const extrudeShape = extrudeRotate({
 
 ## Colors
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/3d-colors.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ```js
 const {colorize, colorNameToRgb} = jscad.colors;
 ```
@@ -348,6 +393,11 @@ const shape = colorize(colorNameToRgb('black'), cube());
 ```
 
 ## Transformations
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transforms.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```js
 const {translate, rotate, scale, center, align} = jscad.transforms;
@@ -410,7 +460,19 @@ const alignedShapes = align(
 );
 ```
 
-## Boolean Operations 
+### Combining multiple transforms
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transform-combinations.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### Transforms and Loops example
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transform-example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## Boolean Operations
 
 ```js
 const {union, subtract, intersect, scission} = jscad.booleans;
@@ -419,6 +481,11 @@ const {union, subtract, intersect, scission} = jscad.booleans;
 <img src="./assets/boolean.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 ### Union
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/union.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <img src="./assets/union.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
@@ -435,6 +502,11 @@ return unionShape;
 
 ### Subtract
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/subtract.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <img src="./assets/subtract.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 Cut out shapes from the first shape in the list:
@@ -450,6 +522,11 @@ return subtractShape;
 
 ### Intersect
 
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/intersect.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <img src="./assets/intersect.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 The overlapping areas of the object in the array:
@@ -464,6 +541,11 @@ return intersectShape;
 ```
 
 ### Scission
+
+<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
+  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/scission.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Scission can cut elements apart that are not connected anymore. This requires that there is at least a little gap inbetween two elements. If one for example would use `subtract` on two shapes in both directions and afterwards `union`. The cut would be so perfect, that the edges would still touch. Here is an example where the shapes are translated before `union` is applied, thereby, creating a big gap:
 
