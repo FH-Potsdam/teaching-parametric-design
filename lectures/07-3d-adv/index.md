@@ -160,12 +160,12 @@ When we want to build complex custom objects ourselves, we have to think in tria
 
 ```json
 {
-  points: [
+  "points": [
     [-10, -10, 0],
     [10, -10, 0],
     [10, 10, 0]
   ],
-  faces: [
+  "faces": [
     [0, 1, 2]
   ]
 }
@@ -175,13 +175,13 @@ A rectangle:
 
 ```json
 {
-  points: [
+  "points": [
     [-10, -10, 0],
     [10, -10, 0],
     [10, 10, 0],
     [-10, 10, 0]
   ],
-  faces: [
+  "faces": [
     [0, 1, 2],
     [2, 3, 1]
   ]
@@ -192,7 +192,7 @@ Notice that the above faces use the points multiple times. So instead of having 
 
 ```json
 {
-  points: [
+  "points": [
     [-10, -10, 0],
     [10, -10, 0],
     [10, 10, 0],
@@ -200,7 +200,7 @@ Notice that the above faces use the points multiple times. So instead of having 
     [-10, 10, 0],
     [-10, -10, 0]
   ],
-  faces: [
+  "faces": [
     [0, 1, 2],
     [3, 4, 5]
   ]
