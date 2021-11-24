@@ -213,6 +213,8 @@ To make it even more tricky, the order of points needs to be clockwise if you lo
 
 This is a lot to take in, but it gives you the ultimate power over any 3D shape that you would like to create. Its usually best to start with a sketch and figuring out, how to best structure our faces:
 
+<img src="./assets/kreisel.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
 ```js
 function polar(radius, angle) {
   const rad = Math.PI / 180 * angle;
@@ -259,7 +261,11 @@ let shape = polyhedron({
 
 return shape;
 ```
+<img src="./assets/example-1.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
+Here is another example which introduces some randomness to generate a rugged surface:
+
+<img src="./assets/wave.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 ```js
 const jscad = require('@jscad/modeling');
@@ -334,6 +340,10 @@ const main = () => {
 module.exports = { main };
 ```
 
+<img src="./assets/example-2.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+
+Last slightly more complex. Building upon the polar coordinate system, the following takes this a step further and introduces a spherical coodinate system. Generating points on a spherical surface and then connects those.
+
 ```js
 function polar(radius, angle) {
   const rad = Math.PI / 180 * angle;
@@ -391,5 +401,6 @@ let shape = polyhedron({
   orientation: 'outward'
 });
 ```
+<img src="./assets/example-3.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 
