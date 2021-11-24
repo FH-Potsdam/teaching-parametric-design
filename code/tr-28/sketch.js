@@ -1,35 +1,49 @@
-//  Dimitri Balzer
-//  03.11.2021
-//
-
-
-const SIZE = 400;
+const sketchHeight = 400;
+const sketchWidth = 400;
 
 function setup() {
-  createCanvas(SIZE, SIZE);
+  createCanvas(sketchWidth, sketchHeight);
 }
 
 function draw() {
-  // noLoop();
-  frameRate(24)
+  noLoop();
   background(255);
 
-  noFill()
-  stroke('black')
+  noFill();
+  stroke("black");
 
-  let radius = 100;
-  let maxCount = 20;
+  let radius = 50;
 
-  for ( let circleCount = 0; circleCount <= maxCount; circleCount++) {
-    let theta = (Math.PI / 180) * (360 / maxCount * circleCount);
-    
+  circle(sketchWidth / 2, sketchHeight / 2, 50);
+
+  let maxCount = 30;
+  for (let circleCount = 0; circleCount < maxCount; circleCount += 1) {
+    let theta = (Math.PI / 180) * (360 / maxCount * circleCount + 90);
+
     let x = radius / 2 * cos(theta);
     let y = radius / 2 * sin(theta);
 
     circle(
-      x + SIZE / 2, 
-      y + SIZE / 2, 
+      x + sketchWidth / 2,
+      y + sketchHeight / 2,
+      radius
+    );
+  }
+
+
+  radius = 70
+  maxCount = 20;
+  for (let circleCount = 0; circleCount < maxCount; circleCount += 1) {
+    let theta = (Math.PI / 180) * (360 / maxCount * circleCount + 90);
+
+    let x = radius / 2 * cos(theta);
+    let y = radius / 2 * sin(theta);
+
+    rect(
+      x + sketchWidth / 2 - radius / 2,
+      y + sketchHeight / 2 - radius / 2,
       radius
     );
   }
 }
+

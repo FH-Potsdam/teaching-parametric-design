@@ -1,40 +1,41 @@
-//  Dimitri Balzer
-//  03.11.2021
-//
-
-
-const SIZE = 400;
+const sketchHeight = 400;
+const sketchWidth = 400;
 
 function setup() {
-  createCanvas(SIZE, SIZE);
+  createCanvas(sketchWidth, sketchHeight);
 }
 
 function draw() {
   noLoop();
   background(255);
 
-  fill('black')
-
-  for(
+  fill(50);
+  for (
     let rectY = 0;
-    rectY <= SIZE;
+    rectY < sketchHeight;
     rectY += random(30, 40)
-  ) {
-    rect(0, rectY, SIZE, random(20, 25))
+    ) {
+    rect(
+      0,
+      rectY,
+      sketchWidth,
+      random(20, 25)
+    );
   }
 
-  for ( let layer = 0; layer <= 3; layer++) {
+  for (let layer = 0; layer < 3; layer += 1) {
     let layerColor = 100 + layer * 50;
-    fill(layerColor)
-
-    for ( let x = 0; x <= SIZE + 50; x += 60 ) {
-      for ( let y = 0; y <= SIZE + 50; y += 60 ) {
-        rect (
-          -100 + y + 20 + random(0, 30),
-          -100 + x + 20 + random(0, 30),
-          20
-        )
+    fill(layerColor);
+    for (let y = 0; y < sketchHeight + 50; y += 40) {
+      for (let x = 0; x < sketchWidth + 100; x += 50) {
+        rect(
+          -100 + x + y/6 + random(0, 20),
+          -20 + y + random(0, 20),
+          random(20, 30),
+          random(20, 30),
+        );
       }
-    }
+    } 
   }
 }
+

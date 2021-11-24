@@ -2,12 +2,15 @@
 <html  xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-
-    <title>JSCAD.xyz</title>
-
-    <link rel="stylesheet" type="text/css" href="./css/demo.css">
-    <link rel="stylesheet" type="text/css" href="./css/editor.css">
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-png">
+    <script language="javascript">
+      const oldUri = window.location.href;
+      if(oldUri.indexOf('?uri=')===-1) {
+        let newUri = (oldUri.replace('/index.html', '') + '/index.json').replace('//index.json', '/index.json');
+        window.location.href = window.location.href + '?uri=' + newUri;
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../libraries/OpenJSCAD/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="../libraries/OpenJSCAD/css/editor.css">
     <style>
         body{
           height: 100%;
@@ -23,6 +26,9 @@
           width: 100%;
           height: 100%;
         }
+        #toggleHelp, #toggleEditor, #io>*:not(#exports){
+          display: none;
+        }
       </style>
   </head>
 
@@ -30,8 +36,8 @@
     <noscript>
       <h1>Please enable JavaScript to use this website</h1>
     </noscript>
-    <div id='jscad' design-url="http://localhost:5500/code/libraries/OpenJSCAD/index.js"></div>
-    <script language="javascript" src="./dist/jscad-web.min.js"></script> 
+    <div id='jscad'></div>
+    <script language="javascript" src="../libraries/OpenJSCAD/dist/jscad-web-hack.min.js"></script> 
     <script language="javascript">
       const el = document.getElementById('jscad');
       const jscadInst1 = jscadWeb(el, {name: 'jscad1'});
