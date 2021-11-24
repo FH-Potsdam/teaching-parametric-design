@@ -27,7 +27,7 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/reference.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-If you are not sure about the name of a function or what parameters to use. You can also take a look at the p5js [reference](p5js.org/reference/).
+If you are not sure about the name of a function or what parameters to use. You can also take a look at the p5js [reference](https://p5js.org/reference/).
 
 ### Sketches
 
