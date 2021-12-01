@@ -399,6 +399,8 @@ We can either use RGB values:
 const shape = colorize([R, G, B], cube());
 ```
 
+> Important: RGB are not 
+
 Or use color names:
 
 ```js
