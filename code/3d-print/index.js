@@ -1,20 +1,11 @@
-/**
- * 3D Primitives Demonstration
- * @category Creating Shapes
- * @skillLevel 1
- * @description Demonstrating the basics of a variety of 3D primitives
- * @tags cube, cuboid, sphere, ellipsoid, cylinder, torus, shape, 3d
- * @authors Rene K. Mueller, Moissette Mark, Simon Clark
- * @licence MIT License
- */
+const jscad = require('@jscad/modeling');
+const { polygon, cylinder } = jscad.primitives;
+const { extrudeLinear } = jscad.extrusions;
+const { translate } = jscad.transforms;
+const { union, subtract } = jscad.booleans;
+const { colorize } = jscad.colors;
 
- const jscad = require('@jscad/modeling')
- const { polygon, cylinder } = jscad.primitives
- const { extrudeRectangular, extrudeLinear } = jscad.extrusions
- const { translate } = jscad.transforms
- const { union, subtract } = jscad.booleans
- 
- function polarX(radius, angle) {
+function polarX(radius, angle) {
   const x = radius * Math.cos(Math.PI / 180 * angle);
   return x;
 }
@@ -25,7 +16,6 @@ function polarY(radius, angle) {
 }
 
 const main = () => {
-
   const edgeNumStart = 16;
   const edgeLayers = 4;
   const radiusStart = 8;
@@ -62,9 +52,6 @@ const main = () => {
   let finalShape = subtract(combinedPoly, holeCylinder);
 
   return finalShape;
-
-  
-}
+};
  
-module.exports = { main }
-//  const anExpandedExtrude = extrudeLinear({ height: 1 }, expand({ delta: 1, corners: 'round', segments: 32 }, aLine))
+module.exports = { main };

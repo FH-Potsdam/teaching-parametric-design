@@ -59,6 +59,10 @@ const getParameterDefinitions = () => {
 
 ## Polygon
 
+```js
+const {polygon} = jscad.primitives;
+```
+
 The previous session introduced the simple 2D primitives like rectangle and circle. When we want to draw more complex shapes we can use the polygon function. Think of it as the p5js' vertex function for JSCAD:
 
 ```js
@@ -99,6 +103,10 @@ const poly = polygon({
 ```
 
 ## Expand & Offset
+
+```js
+const {expand, offset} = jscad.expansions;
+```
 
 In the last session we look at extrusion. Taking a shape and extending it along an axis. Another similar method is `expand` and `offset`.
 
@@ -144,6 +152,10 @@ const offsetShape1 = expand({
 ```
 
 ## Polyhedrons
+
+```js
+const {polyhedron} = jscad.primitives;
+```
 
 The last bodies we will discuss are the polyhedrons. But before a little bit of context on the construction and rendering of 3D objects. If you have used any 3D software or 3D rendered objects (e.g. in computer games), you will have noticed, if you get very close, the surfaces of objects are not very smooth, but consist of rough geometric shapes:
 
@@ -223,8 +235,10 @@ function polar(radius, angle) {
   return {x, y};
 }
 
-const top = [0, 0, 5];
-const bottom = [0, 0, -5];
+const height = 50;
+
+const top = [0, 0, height];
+const bottom = [0, 0, -height];
 
 const numPoints = 5;
 const radius = 4;
