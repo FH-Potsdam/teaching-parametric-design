@@ -12,6 +12,8 @@ For using sound you need to add a library to your folder structure. [Download](h
 <script src="../libraries/p5js/libraries/p5.sound.min.js"></script>
 ```
 
+The example sound can be found [here](https://github.com/FH-Potsdam/teaching-parametric-design/tree/main/code/testing).
+
 ### Modes
 
 With the sound library we can also generate sounds, this document will focus on analysing sounds. Check the [documentation](https://p5js.org/reference/#/libraries/p5.sound) for all features.

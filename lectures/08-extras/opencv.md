@@ -16,6 +16,8 @@ For using OpenCV you need to add two libraries to your folder structure. From th
 <script src="../libraries/p5js/libraries/p5.cv.min.js"></script>
 ```
 
+The example image can be found [here](https://github.com/FH-Potsdam/teaching-parametric-design/tree/main/code/testing).
+
 ### Inputs
 
 We can apply opencv commands to images and videos. To actually work witht he input, the inputs are transformed into matrices, a matrix is basically a multidimensional array (in opencv in short: mat).

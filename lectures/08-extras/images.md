@@ -70,7 +70,7 @@ function draw() {
 
 The following example takes an image and sorts the pixels through a certain sorting function (three possible examples below) and then draws those pixels in order.
 
-The example image can be found here.
+The example image can be found [here](https://github.com/FH-Potsdam/teaching-parametric-design/tree/main/code/testing).
 
 ```js
 const sketchWidth = 400;

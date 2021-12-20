@@ -14,6 +14,8 @@ For using ml5js you need to add a library to your folder structure. Download [th
 <script src="../libraries/ml5.min.js" type="text/javascript"></script>
 ```
 
+The example image can be found [here](https://github.com/FH-Potsdam/teaching-parametric-design/tree/main/code/testing).
+
 ### A few words on ml5js
 
 #### 1. Models
