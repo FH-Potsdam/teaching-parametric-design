@@ -9,6 +9,9 @@ let pMax = 10;
 let rotation = 0;
 
 function draw() {
+
+  // const value = document.getElementById('input').attr('value');
+
   background(0);
   fill('white');
   translate(sketchWidth/2, sketchHeight/2);
