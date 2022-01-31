@@ -1,0 +1,5 @@
+- add URL origin security 
+- next/previous section links > macro
+- header
+- command > function
+- editor errors

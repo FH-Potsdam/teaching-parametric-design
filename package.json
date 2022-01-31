@@ -1,0 +1,49 @@
+{
+  "name": "teaching-parametric-design",
+  "version": "1.0.0",
+  "description": "teaching parametric design at university of applied sciences potsdam",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy",
+    "seed": "cross-env ELEVENTY_ENV=seed eleventy",
+    "serve": "http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FH-Potsdam/teaching-parametric-design.git"
+  },
+  "keywords": [
+    "parametric",
+    "generative",
+    "design",
+    "p5js"
+  ],
+  "author": "sebastian-meier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FH-Potsdam/teaching-parametric-design/issues"
+  },
+  "homepage": "https://github.com/FH-Potsdam/teaching-parametric-design#readme",
+  "devDependencies": {
+    "cross-env": "5.2.0",
+    "fast-xml-parser": "^4.0.1",
+    "http-server": "^14.1.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
+    "cssnano": "^5.0.16",
+    "eleventy-plugin-toc": "^1.1.5",
+    "moment": "^2.29.1",
+    "postcss": "^8.4.5",
+    "postcss-color-mix": "^1.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^9.0.1",
+    "postcss-normalize": "^10.0.1",
+    "precss": "^4.0.0",
+    "uglify-js": "^3.14.5"
+  }
+}

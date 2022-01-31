@@ -1,0 +1,67 @@
+/* customization of codemirror */
+.cm-editor { height: 400px; }
+.cm-scroller { overflow: auto; }
+
+iframe {
+  border: none;
+  width:400px;
+  max-height:400px;
+}
+
+#editor{
+  height: 400px;
+  max-width: 100%;
+  flex-grow:1;
+}
+
+#container {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  align-content:stretch;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction:column;
+    height: 100vh;
+  }
+  iframe {
+    width: 100%;
+    max-height: 50%;
+    border-bottom: 1px solid rgba(200, 200, 200, 1);
+  }
+  #editor{
+    height: auto;
+  }
+  .cm-editor {
+    height: 100%; 
+  }
+}
+
+button{
+  position: fixed;
+  top:8px;
+  right:8px;
+  background:rgba(255,255,255,0.8);
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius:5px;
+  padding: 5px 7px 5px 29px;
+  background-image:url('/images/icons/refresh-double.svg');
+  background-repeat: no-repeat;
+  background-position: 8px 5.5px;
+  background-size: 14px 14px;
+  cursor:pointer;
+}
+
+button:hover {
+  background-color: rgba(5, 139, 209, 0.3);
+  border: 2px solid rgba(0,0,0,1);
+}
