@@ -1,6 +1,6 @@
 /* customization of codemirror */
 .cm-editor { height: 400px; }
-.cm-scroller { overflow: auto; }
+.cm-scroller { overflow: auto; overflow-y:scroll; }
 
 iframe {
   border: none;
@@ -49,7 +49,7 @@ html, body {
 button{
   position: fixed;
   top:8px;
-  right:8px;
+  right:23px;
   background:rgba(255,255,255,0.8);
   border: 2px solid rgba(0,0,0,0.5);
   border-radius:5px;
@@ -59,9 +59,38 @@ button{
   background-position: 8px 5.5px;
   background-size: 14px 14px;
   cursor:pointer;
+  &#copyBtn{
+    background-image:url('/images/icons/copy.svg');
+    background-position: 7px 5.5px;
+    padding-left: 21px;
+    text-indent: -2999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    &:hover{
+      border-left: 2px solid black;
+    }
+    &:focus{
+      animation: 1s multicolor;
+    }
+  }
+  &#updateBtn{
+    right: 53px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 button:hover {
   background-color: rgba(5, 139, 209, 0.3);
   border: 2px solid rgba(0,0,0,1);
+}
+
+@keyframes multicolor {
+  0% {
+      background-color: rgba(5, 139, 209, 1);
+  }
+  100% {
+      background-color: rgba(255,255,255,0.8);
+  }
 }

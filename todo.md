@@ -1,5 +1,7 @@
 - add URL origin security 
 - next/previous section links > macro
-- header
 - command > function
 - editor errors
+- skip to content link
+- copy animation
+- landing page

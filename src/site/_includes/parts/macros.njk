@@ -1,10 +1,13 @@
-{% macro editor(path) %}
+{% macro editor(path, github) %}
 <iframe
   width="100%"
   height="400"
   class="responsive-frame"
   src="{{path}}"></iframe>
 <button class="scroll-btn">Continue scrolling</button>
+{% if github %}
+<a href="{{github}}" class="github-btn">View on GitHub</a>
+{% endif %}
 {% endmacro %}
 
 {% macro renderNavListItem(entry, page, content, level) %}
@@ -26,7 +29,7 @@
 {%- endmacro %}
 
 {% macro renderNav(collections, page, locale, content) %}
-<h5 class="navTitle">Navigation</h5>
+<h5 tabindex="99999" class="navTitle">Navigation</h5>
 <ol class="mainNav">
 {% for entry in collections.all | eleventyNavigation %}
   {% if entry.key == locale %}
@@ -40,7 +43,7 @@
 {% set baseUrl = url.slice(3, -1) %}
 {% set lang = url.slice(1, 3) %}
 
-<h5 class="langTitle">Languages</h5>
+<h5 tabindex="99999" class="langTitle">Languages</h5>
 <ul class="langNav">
   <li><a title="Deutsch"{% if lang == 'de' %} class="active"{% endif %} href="/de/{{ baseUrl }}">DE</a></li>
   <li><a title="English"{% if lang == 'en' %} class="active"{% endif %} href="/en/{{ baseUrl }}">EN</a></li>

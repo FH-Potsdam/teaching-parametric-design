@@ -18,7 +18,7 @@
     </iframe>
     <div id="editor"></div>
   </div>
-  <button id="updateBtn">Update</button>
+  <button id="updateBtn">Run Code</button>
   <button id="copyBtn">Copy</button>
   <script src="/js/editor.bundle.js"></script>
   <script>
@@ -29,7 +29,7 @@
     });
 
     document.querySelector('#copyBtn').addEventListener('click', () => {
-      copy(getCode());
+      navigator.clipboard.writeText(getCode());
       const btn = document.getElementById('#copyBtn');
       const classes = btn.classList.split(' ');
       classes = classes.filter(c => c.trim() !== 'activated');

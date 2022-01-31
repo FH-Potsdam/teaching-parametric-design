@@ -161,7 +161,7 @@ square(10, 10, 40);
 rect(10, 10, 40, 20);
 ```
 
-{{editor('/code/shapes')}}
+{{editor('/code/shapes', 'https://...')}}
 
 {{h2('Fills & Strokes')}}
 
@@ -192,7 +192,7 @@ Besides colors we can also modify the stroke width of the shapes we draw:
 strokeWeight(5);
 ```
 
-{{editor('/code/fill')}}
+{{editor('/code/fill', 'https://...')}}
 
 {{h2('Arcs')}}
 
@@ -215,4 +215,4 @@ arc(100, 100, 50, 50, 0, Math.PI, OPEN);
 
 > The **startAngle** and **endAngle** are provided in rad not degrees. 360 degrees are `2 * Math.PI`. So an easy way to work with degrees, is to simply convert it:<br />`Math.PI / 180 * YOUR_ANGLE`.
 
-{{editor('/code/arc')}}
+{{editor('/code/arc', 'https://...')}}

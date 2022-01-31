@@ -77,6 +77,23 @@ header {
   }
 }
 
+@media screen and (max-width: 768px) {
+  header{
+    margin-bottom: 30px; 
+
+    &>div {
+      flex-direction: column-reverse;
+    }
+
+    .page-title{
+      margin-top:15px;
+    }
+
+    img#header-illu{
+      display:none;
+    }
+  }
+}
 
 /* CODE-EDITOR FRAME */
 
@@ -84,9 +101,60 @@ iframe {
   border: 1px solid rgba(200, 200, 200, 1);
 }
 
+a.github-btn {
+  margin-top: 4px;
+  background: #fff;
+  background-image: url(/images/icons/github.svg);
+  background-repeat: no-repeat;
+  background-position: left 4px center;
+  background-size: 14px 14px;
+  border-radius: 3px;
+  padding: 2px 5px 2px 22px;
+  border: 1px solid rgba(200, 200, 200, 1);
+  color: black;
+  font-size: 14px;
+  clear: both;
+  &[href*=http]:after {
+    display:none;
+  }
+  &:hover {
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgba(220, 220, 220, 1);
+  }
+}
+
+.scroll-btn{
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(200, 200, 200, 1);
+  border-bottom: none;
+  background: white;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  float:right;
+  margin-top: -43px;
+  margin-right: 20px;
+  z-index: 99;
+  position: relative;
+  background-image: url(/images/icons/fast-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  &:hover {
+    cursor: pointer;
+  }
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   iframe {
     height: 90vh;
+  }
+  .scroll-btn{
+    display: block;
   }
 }
 
@@ -233,6 +301,45 @@ ol.mainNav>li, ol.mainNav>li>ol>li {
   margin: 5px 0 5px 0;
   li {
     padding-bottom:8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    min-width: 100%;
+    padding-top: 0;
+    margin-bottom:30px;
+
+    h5 {
+      background-color: rgba(0,0,0,0.2);
+      padding: 8px 10px;
+      background-image: url(/images/icons/menu.svg);
+      background-position: right 7px center;
+      background-repeat: no-repeat;
+      cursor:pointer;
+      &:hover {
+        background-color: rgba(0,0,0,0.4);
+      }
+      &.langTitle{
+        margin-top:5px;
+      }
+      &:focus+ul {
+        display:flex;
+      }
+      &:focus+ol {
+        display:block;
+      }
+    }
+
+    &>ol.mainNav {
+      display:none;
+      margin-left: 30px;
+    }
+    &>ul.langNav {
+      display:none;
+      margin-left: 12px;
+    }
+    
   }
 }
 
