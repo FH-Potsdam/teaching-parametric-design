@@ -136,8 +136,8 @@ a.github-btn {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   float:right;
-  margin-top: -43px;
-  margin-right: 20px;
+  margin-top: -44px;
+  margin-right: 25px;
   z-index: 99;
   position: relative;
   background-image: url(/images/icons/fast-arrow-down.svg);
@@ -153,10 +153,14 @@ a.github-btn {
   iframe {
     height: 90vh;
   }
+}
+
+@media screen and (max-width: 1061px) {
   .scroll-btn{
     display: block;
   }
 }
+
 
 /* VIDEO */
 
