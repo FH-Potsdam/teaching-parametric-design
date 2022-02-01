@@ -1,8 +1,8 @@
 ---
-title: Basics
+title: Intro
 eleventyNavigation:
-  title: Basics
-  key: de_2d_basics
+  title: Intro
+  key: de_2d_intro
   parent: de_2d
   order: 1
 ---
@@ -10,10 +10,13 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import video %}
 {% from "../../_includes/parts/macros.njk" import h2 %}
 {% from "../../_includes/parts/macros.njk" import definition %}
+{% from "../../_includes/parts/macros.njk" import img %}
 
 {{h2('p5js')}}
 
-For creating our code-based design tools, we will be using the JavaScript framework [p5js](https://www.p5js.org). p5js is the successor to the java-based [Processing](https://processing.org/) system. Why learn JavaScript? Isn't JavaScript for building websites? Yes and no. JavaScript was originally developed to allow developers build interactivity into websites (and it still is). But since then NodeJS emerged, which allows you to run JavaScript code indepently from any browser on your computer. In this context JavaScript has become a lot more powerfull. You can now use it for example to read, edit and create files on your computer. So JavaScript has become an extremely versatile programming language. In addition, its rather easy to get started with and quite "flexible" (more experienced coders hate JavaScript for its "flexibility", but for getting started, this is perfect, don't let them fool you).
+{{ img('p5js-logos.png', 'Logos of p5js (JavaScript) and the Java Processing ide / library.') }}
+
+For creating our code-based design tools, we will be using the JavaScript framework [p5js](https://www.p5js.org). p5js is an offspring of the java-based [Processing](https://processing.org/) system. Why learn JavaScript? Isn't JavaScript for building websites? Yes and no. JavaScript was originally developed to allow developers build interactivity into websites (and it still is). But since then NodeJS emerged, which allows you to run JavaScript code indepently from any browser on your computer. In this context JavaScript has become a lot more powerfull. You can now use it for example to read, edit and create files on your computer. So JavaScript has become an extremely versatile programming language. In addition, its rather easy to get started with and quite "flexible" (more experienced coders hate JavaScript for its "flexibility", but for getting started, this is perfect, don't let them fool you).
 
 There are a lots of frameworks / libraries / packages for JavaScript out there. Those tools are collections of so called functions, other people have written, so we can use them to do certain things, in the case of **p5js** for example the drawing and creation of shapes. You can think of libraries as little toolboxes. So every time you need to put a nail into a wall, you don't need to create a hammer from scratch, but instead you can simple take the hammer from the box and use it.
 
@@ -65,6 +68,8 @@ function draw() {
 ```
 
 There is already a lot going on. Above you see three so called functions (we will talk about functions more later). The **preload**, **setup** and the **draw** function. Everything that is written inside the two curly brackets `{` and `}` belongs to that function.
+
+{{ img('p5js-cycle.svg', 'p5js\' program cycle') }}
 
 ### preload function
 

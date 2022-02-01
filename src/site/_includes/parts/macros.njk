@@ -100,3 +100,10 @@
   	</div>
 </div>
 {% endmacro %}
+
+{% macro img(fileName, title) %}
+<figure>
+    <img src="/images/material/{{fileName}}" alt="{{title}}" />
+    <figcaption><span>{{title}}</span></figcaption>
+</figure>
+{% endmacro %}

@@ -1,8 +1,8 @@
 ---
-title: Drawing
+title: Basics
 eleventyNavigation:
-  title: Drawing
-  key: de_2d_drawing
+  title: Basics
+  key: de_2d_Basics
   parent: de_2d
   order: 2
 ---
