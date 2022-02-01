@@ -115,5 +115,3 @@ function setup() {
 {{h2('Debugging')}}
 
 {{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/debugging.mp4", "/images/video-thumb.png")}}
-
-Next section: [Drawing](../02-drawing)

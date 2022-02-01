@@ -25,6 +25,40 @@ module.exports = function(config) {
     ul: true
   });
 
+  config.addFilter("pageNav", function(navigation, page, locale) {
+    const pageNav = {
+      back: null,
+      next: null
+    };
+
+    let foundPage = false;
+
+    const check = (entry) => {
+      if (entry.url !== page.url && !foundPage) {
+        pageNav.back = entry;
+      }
+      if (foundPage && pageNav.next === null) {
+        pageNav.next = entry;
+      }
+      if (entry.url === page.url) {
+        foundPage = true;
+      }
+    };
+
+    navigation.forEach(nav => {
+      if (nav.key === locale){
+        nav.children.forEach(child => {
+          check(child);
+          child.children.forEach(entry => {
+            check(entry);
+          });
+        });
+      }
+    });
+
+    return pageNav;
+  });
+
   // compress and combine js files
   config.addFilter("jsmin", function(code) {
     const UglifyJS = require("uglify-js");

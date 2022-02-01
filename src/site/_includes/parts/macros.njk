@@ -84,3 +84,19 @@
 <strong>{{name}}</strong>({% for param in params %}<strong>{{param.name}}</strong>:{{param.type}}{% if loop.index != params.length %}, {% endif %}{% endfor %});
 </div>
 {% endmacro %}
+
+{% macro renderPageNav(collections, page, locale) %}
+{% set nav = collections.all | eleventyNavigation | pageNav(page, locale) %}
+<div id="pageNav">
+  <div>
+{% if nav.back %}
+    <a href="{{nav.back.url}}">{{nav.back.title}}</a>
+{% endif %}
+  </div>
+  <div>
+{% if nav.next %}
+    <a href="{{nav.next.url}}">{{nav.next.title}}</a>
+{% endif %}
+  	</div>
+</div>
+{% endmacro %}

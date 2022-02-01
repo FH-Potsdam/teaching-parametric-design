@@ -1,6 +1,7 @@
 {% from '../parts/macros.njk' import renderNav %}
 {% from '../parts/macros.njk' import renderLang %}
 {% from '../parts/macros.njk' import renderCrumbs %}
+{% from '../parts/macros.njk' import renderPageNav %}
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -43,6 +44,7 @@
         {% endif %}
         <h1>{{ title }}</h1>
         {{ content | safe }}
+        {{ renderPageNav(collections, page, locale) }}
         <p class="backtotop">
           <a title="{{translations.top[locale]}}" href="#header">{{translations.top[locale]}}</a>
         </p>
