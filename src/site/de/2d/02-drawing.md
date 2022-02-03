@@ -14,7 +14,7 @@ eleventyNavigation:
 
 {{h2('Canvas')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/createCanvas.mp4", "/images/video-thumb.png")}}
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/createCanvas.mp4", "/images/thumbnails/de_2d_drawing_1_createcanvas.png")}}
 
 First we need to create a canvas, an area we can draw upon. To do this we add the `createCanvas` command into our **setup** function. All sizes in p5js are always pixel sizes:
 
@@ -34,7 +34,7 @@ function setup() {
 
 {{h2('Background')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/background.mp4", "/images/video-thumb.png")}}
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/background.mp4", "/images/thumbnails/de_2d_drawing_2_background.png")}}
 
 In the begining our canvas is blank. But we can give our full canvas a uniform fill color. By adding the `background` command to the `draw` function:
 
@@ -51,7 +51,7 @@ Different to the `createCanvas` command, we can use a variety of inputs to defin
 
 {{h2('Colors')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/colors.mp4", "/images/video-thumb.png")}}
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/colors.mp4", "/images/thumbnails/de_2d_drawing_3_colors.png")}}
 
 In p5js we can define colors in a variety of different forms:
 
@@ -87,7 +87,7 @@ Those are the things we will use, but there are even more possibilites to define
 
 {{h2('Shapes')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/shapes-full.mp4", "/images/video-thumb.png")}}
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/shapes-full.mp4", "/images/thumbnails/de_2d_drawing_4_shapes.png")}}
 
 Or as the p5js reference calls them *2D primitives*. All those shapes are created in a coordinate system. The origin (0/0) of that coordinate system is in the upper left corner of our canvas. Units as always in pixels.
 
@@ -196,7 +196,7 @@ strokeWeight(5);
 
 {{h2('Arcs')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/arc.mp4", "/images/video-thumb.png")}}
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/arc.mp4", "/images/thumbnails/de_2d_drawing_5_arc.png")}}
 
 A bit more advanced shape is the arc:
 

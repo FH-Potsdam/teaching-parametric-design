@@ -609,3 +609,9 @@ p>code{
   border-right: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
 }
+
+/* VIDEO PLAYER */
+
+video::-webkit-media-controls:not(.audio-only) div[pseudo="-webkit-media-controls-panel" i] {
+  background:red !important;
+}
