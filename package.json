@@ -26,6 +26,10 @@
     "url": "https://github.com/FH-Potsdam/teaching-parametric-design/issues"
   },
   "homepage": "https://github.com/FH-Potsdam/teaching-parametric-design#readme",
+  "engines" : { 
+    "npm": ">=8.3.0",
+    "node": ">=16.13.1"
+  },
   "devDependencies": {
     "cross-env": "5.2.0",
     "fast-xml-parser": "^4.0.1",

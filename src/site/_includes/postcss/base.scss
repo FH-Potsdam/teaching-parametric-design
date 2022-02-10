@@ -612,6 +612,6 @@ p>code{
 
 /* VIDEO PLAYER */
 
-video::-webkit-media-controls:not(.audio-only) div[pseudo="-webkit-media-controls-panel" i] {
-  background:red !important;
+video::-webkit-media-controls-panel {
+  background: linear-gradient(0deg, rgba(7, 56, 85, 0.5) 0%, rgba(7, 56, 85,0) 20%);
 }
