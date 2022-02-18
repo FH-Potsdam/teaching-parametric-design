@@ -6,6 +6,8 @@
 
 - update graphics (math.md)
 
+- todo: required in definitions
+
 - finish setup
 - split complexity
 - more drawing editor

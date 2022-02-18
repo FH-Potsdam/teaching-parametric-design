@@ -56,6 +56,27 @@ header {
     &>div {
       flex-grow:1;
     }
+    &#header-sketch{
+      width:100%;
+      max-width:100%;
+      &>canvas{
+        max-width:100%;
+      }
+    }
+    &#home-header{
+      padding-top:50px;
+      width:90%;
+      max-width:1024px;
+      margin:0 auto;
+      display:block;
+      text-align:center;
+      h1 {
+        padding-bottom:0;
+      }
+      h2{
+        padding-bottom:20px;
+      }
+    }
   }
   img {
     flex-grow: 0;
@@ -253,6 +274,64 @@ p.backtotop {
     background-position: right;
     &:hover {
       opacity: 0.6;
+    }
+  }
+}
+
+p.centred {
+  text-align:center;
+}
+
+p.start-button-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a.start-button{
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight:bold;
+  padding: 7px 10px 7px 10px;
+  color: rgb(20,168,115);
+  border-radius: 3px;
+  border: 2px solid rgba(20,168,115,1);
+  background-color: rgba(20,168,115,0.05);
+  margin-bottom:40px;
+
+  &:before {
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
+    content: "";
+    display: inline-block;
+    background-color: rgb(20,168,115);
+    -webkit-mask-image: url("../images/icons/design-pencil.svg");
+    mask-image: url("../images/icons/design-pencil.svg");
+    mask-size:contain;
+    mask-position:0 0;
+    width:24px;
+    height:24px;
+    margin-right:5px;
+  }
+
+  span{
+    display: inline-block;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: rgb(16,139,208);
+    border: 2px solid rgba(16,139,208,1);
+    background-color: rgba(16,139,208,0.05);
+    &:before {
+      background-color: rgb(16,139,208);
     }
   }
 }
@@ -469,7 +548,7 @@ ul.breadcrumbs{
       text-decoration: underline;
     }
   }
-  &>div:first-child::before{
+  &>div.back-link::before{
     display: inline-block;
     content: "";
     width: 10px;
@@ -478,7 +557,7 @@ ul.breadcrumbs{
     background-position: center center;
     background-image: url(/images/icons/nav-arrow-left.svg);
   }
-  &>div:last-child::after{
+  &>div.next-link::after{
     display: inline-block;
     content: "";
     width: 10px;
@@ -486,6 +565,11 @@ ul.breadcrumbs{
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(/images/icons/nav-arrow-right.svg);
+  }
+
+  &>div.next-link:first-child{
+    text-align: right;
+    width:100%;
   }
 }
 

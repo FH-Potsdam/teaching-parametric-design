@@ -102,29 +102,6 @@ point(20, 20);
 ```
 > A point has no radius. To increase the size of a point, set a higher **strokeWeight** (see below).
 
-### Circle
-
-{{ definition('circle', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'diameter', type: 'number' }
-]) }}
-```js
-circle(20, 20, 5);
-```
-> **x** and **y** describe the center of the circle
-
-### Ellipse
-
-{{ definition('ellipse', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' }
-]) }}
-```js
-ellipse(20, 20, 5, 10);
-```
 
 ### Line
 
@@ -138,15 +115,29 @@ ellipse(20, 20, 5, 10);
 line(10, 10, 40, 40);
 ```
 
-### Square
 
-{{ definition('square', [
+### Ellipse
+
+{{ definition('ellipse', [
   { name: 'x', type: 'number' },
   { name: 'y', type: 'number' },
-  { name: 'size', type: 'number' }
+  { name: 'width', type: 'number' },
+  { name: 'height', type: 'number' }
 ]) }}
 ```js
-square(10, 10, 40);
+ellipse(20, 20, 5, 10);
+```
+> **x** and **y** describe the center of the ellipse and circle
+
+### Circle
+
+{{ definition('circle', [
+  { name: 'x', type: 'number' },
+  { name: 'y', type: 'number' },
+  { name: 'diameter', type: 'number' }
+]) }}
+```js
+circle(20, 20, 5);
 ```
 
 ### Rectangle
@@ -160,6 +151,18 @@ square(10, 10, 40);
 ```js
 rect(10, 10, 40, 20);
 ```
+
+### Square
+
+{{ definition('square', [
+  { name: 'x', type: 'number' },
+  { name: 'y', type: 'number' },
+  { name: 'size', type: 'number' }
+]) }}
+```js
+square(10, 10, 40);
+```
+
 
 {{editor('/code/shapes', 'https://...')}}
 

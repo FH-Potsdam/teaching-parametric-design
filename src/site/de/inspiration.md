@@ -6,3 +6,5 @@ eleventyNavigation:
   order: 2
   parent: de
 ---
+
+List of digital and analog artists for inspiration

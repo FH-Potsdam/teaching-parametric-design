@@ -88,22 +88,22 @@
 {% macro renderPageNav(collections, page, locale) %}
 {% set nav = collections.all | eleventyNavigation | pageNav(page, locale) %}
 <div id="pageNav">
-  <div>
 {% if nav.back %}
+  <div class="back-link">
     <a href="{{nav.back.url}}">{{nav.back.title}}</a>
-{% endif %}
   </div>
-  <div>
-{% if nav.next %}
-    <a href="{{nav.next.url}}">{{nav.next.title}}</a>
 {% endif %}
-  	</div>
+{% if nav.next %}
+  <div class="next-link">
+    <a href="{{nav.next.url}}">{{nav.next.title}}</a>
+  </div>
+{% endif %}
 </div>
 {% endmacro %}
 
-{% macro img(fileName, title) %}
+{% macro img(fileName, title, maxWidth) %}
 <figure>
-    <img src="/images/material/{{fileName}}" alt="{{title}}" />
+    <img src="/images/material/{{fileName}}" alt="{{title}}"{% if maxWidth %} style="max-width:{{maxWidth}};"{% endif %} />
     <figcaption><span>{{title}}</span></figcaption>
 </figure>
 {% endmacro %}

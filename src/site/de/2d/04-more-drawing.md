@@ -12,6 +12,36 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import definition %}
 {% from '../../_includes/parts/macros.njk' import editor %}
 
+{{h2('Stop the draw-loop')}}
+
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/noloop.mp4", "/images/video-thumb.png")}}
+
+When you are using random values, you often don't want your layout to be continously redrawn. To stop the draw-cycle, simply call the `noLoop()` command.
+
+```js
+function draw() {
+  noLoop();
+  // your code
+}
+```
+
+{{h2('Draw speed')}}
+
+{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/framerate.mp4", "/images/video-thumb.png")}}
+
+Normally the draw-cycle is called every 60 seconds. You can slow this down to a so called framerate of your choice:
+
+{{ definition('frameRate', [
+  { name: 'frames per second', type: 'number' }
+]) }}
+```js
+function setup() {
+  frameRate(10);
+}
+```
+
+> While the default framerate is 60, complex visuals can reduce the actual framerate. For smooth animations a framerate of at least 24 should be achieved.
+
 {{h2('Polygons')}}
 
 {{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/vertex.mp4', "/images/video-thumb.png")}}
@@ -28,6 +58,11 @@ point(0,20);
 
 The rectangle consists of four points. We could also create our rectangle shape manually:
 
+{{ definition('vertex', [
+  { name: 'x', type: 'number' },
+  { name: 'y', type: 'number' },
+  { name: 'z', type: 'number', optional: true }
+]) }}
 ```js
 beginShape();
 vertex(0, 0);
@@ -60,8 +95,29 @@ endShape();
 
 If you only want to draw a polygon with 3 or 4 points, you can use the `quad` and `triangle` command. Both take a series of x,y parameters to define the points:
 
+{{ definition('quad', [
+  { name: 'x1', type: 'number' },
+  { name: 'y1', type: 'number' },
+  { name: 'x2', type: 'number' },
+  { name: 'y2', type: 'number' },
+  { name: 'x3', type: 'number' },
+  { name: 'y3', type: 'number' },
+  { name: 'x4', type: 'number' },
+  { name: 'y4', type: 'number' }
+]) }}
 ```js
 quad(0, 0, 40, 0, 40, 20, 0, 20);
+```
+
+{{ definition('triangle', [
+  { name: 'x1', type: 'number' },
+  { name: 'y1', type: 'number' },
+  { name: 'x2', type: 'number' },
+  { name: 'y2', type: 'number' },
+  { name: 'x3', type: 'number' },
+  { name: 'y3', type: 'number' }
+]) }}
+```js
 triangle(0, 0, 40, 0, 40, 20);
 ```
 
@@ -71,6 +127,10 @@ triangle(0, 0, 40, 0, 40, 20);
 
 If we want to go beyond straight lines, we can also use curves. There are three type of curve commands:
 
+{{ definition('curve', [
+  { name: 'x', type: 'number' },
+  { name: 'y', type: 'number' }
+]) }}
 ```js
 beginShape();
 curveVertex(0, 0);
@@ -84,6 +144,12 @@ endShape(CLOSE);
 
 {{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/quadricVertex.mp4', "/images/video-thumb.png")}}
 
+{{ definition('quadraticVertex', [
+  { name: 'mid-curve-x', type: 'number' },
+  { name: 'mid-curve-y', type: 'number' },
+  { name: 'target-x', type: 'number' },
+  { name: 'target-y', type: 'number' }
+]) }}
 ```js
 beginShape();
 vertex(0, 0); // we need to add a startpoint
@@ -95,6 +161,14 @@ endShape();
 
 {{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/bezierVertex.mp4', "/images/video-thumb.png")}}
 
+{{ definition('bezierVertex', [
+  { name: 'control-x1', type: 'number' },
+  { name: 'control-y1', type: 'number' },
+  { name: 'control-x2', type: 'number' },
+  { name: 'control-y2', type: 'number' },
+  { name: 'target-x', type: 'number' },
+  { name: 'target-y', type: 'number' }
+]) }}
 ```js
 beginShape();
 vertex(0, 0); // we need to add a startpoint

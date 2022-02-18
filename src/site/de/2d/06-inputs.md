@@ -7,16 +7,16 @@ eleventyNavigation:
   order: 6
 ---
 
-# Interactions
+{% from "../../_includes/parts/macros.njk" import video %}
+{% from "../../_includes/parts/macros.njk" import h2 %}
+{% from "../../_includes/parts/macros.njk" import definition %}
+{% from '../../_includes/parts/macros.njk' import editor %}
 
 So far we have created our parameters manually or by using the `random()` function. In this section we will look at a few input options which we will turn into parameters to modify our layouts and designs.
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/input.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/input.mp4', "/images/video-thumb.png")}}
 
-## Text field
+{{h2('Form input')}}
 
 The easiest input is a simple text field.
 
@@ -75,12 +75,9 @@ We can add as many text fields as we want. There are a few other input elements,
   
 Check the corresponding documentation in the reference for more info. 
 
-## Keyboard events
+{{h2('Keyboard')}}
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/keyboard.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/keyboard.mp4', "/images/video-thumb.png")}}
 
 Sometimes you don't need an actual input, but you rather want to trigger something, maybe simply increase or decrease a value:
 
@@ -120,12 +117,9 @@ function draw() {
 }
 ```
 
-## Mouse events
+{{h2('Mouse')}}
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/mouse_Trim.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/mouse_Trim.mp4', "/images/video-thumb.png")}}
 
 The mouse events are very similar to the keyboard events:
 
@@ -144,7 +138,7 @@ function draw() {
 }
 ```
 
-### Application
+{{h2('Examples')}}
 
 First off, let's combine the array from the last section with the mouse and create a trail:
 
@@ -173,7 +167,7 @@ function draw() {
 }
 ```
 
-# This is just the beginning
+{{h2('Further reading')}}
 
 In the last few sessions we have covered the basics of p5js, but there is a lot more to discover and do:
 

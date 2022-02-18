@@ -7,14 +7,14 @@ eleventyNavigation:
   order: 7
 ---
 
-# Export
+{% from "../../_includes/parts/macros.njk" import video %}
+{% from "../../_includes/parts/macros.njk" import h2 %}
+{% from "../../_includes/parts/macros.njk" import definition %}
+{% from '../../_includes/parts/macros.njk' import editor %}
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/save.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/save.mp4', "/images/video-thumb.png")}}
 
-## Pixels
+{{h2('Pixels')}}
 
 The purpose of learning about how to build design with code, is so we can quickly generate complex shapes and patterns to use in other design processes. So far our output format was a pixel based image. To export our pixels into a convenient PNG format, simply call the `save()` command:
 
@@ -28,7 +28,7 @@ function draw() {
 
 > When calling the save command, make sure you use `noLoop()` or an event. Otherwise the save function will be called continously.
 
-## Vectors
+{{h2('Vectors')}}
 
 While pixels are a good start,  we cannot easily modify our designs once they are stored in pixels. The best alternative are vectors, which we can export as **SVGs**. SVGs are a standard for vector graphics and they can be displayed in the browser and easily imported into any graphics software (e.g. Illustrator, Sketch, Figma, etc.). To do so, we need to tell p5js that we want to switch from pixels to vectors. So upon initializing our canvas, we need to define the correct render-engine:
 
