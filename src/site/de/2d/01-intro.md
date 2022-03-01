@@ -7,10 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from "../../_includes/parts/macros.njk" import img %}
+{% from "../../_includes/parts/macros.njk" import video, task, h2, definition, img %}
 
 {{h2('p5js')}}
 
@@ -24,7 +21,11 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
 
 {{h2('New Project')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/setup.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4", "/images/thumbnails/de_2d_intro_new.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4
+en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4
+-->
 
 1. Go to the `code` folder.
 2. Create a copy of the `code/example` folder and paste it into the `code` folder and rename it.
@@ -35,7 +36,11 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
 
 {{h2('Reference')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/reference.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4", "/images/thumbnails/de_2d_intro_ref.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4
+en:https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/en_reference.mp4
+-->
 
 If you are not sure about the name of a function or what parameters to use. You can also take a look at the p5js [reference](https://p5js.org/reference/).
 
@@ -47,7 +52,11 @@ For those who are interested, i have created a super [short introduction](html.m
 
 ### sketch.js
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/setup-draw.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
+en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4
+-->
 
 The `sketch.js` file is where all the magic happens. Here we will write our code to generate our designs. When you create a fresh copy from the example directory your file should look like this:
 
@@ -86,7 +95,11 @@ The **draw** function is continously called once **setup** is finished. In the b
 
 {{h2('Comments')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/comments.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4", "/images/thumbnails/de_2d_intro_comments.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4
+en:https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/en_comments.mp4
+-->
 
 If you want to write a comment in your code or you want to temporarily disable a line of code, there are two ways:
 
@@ -105,6 +118,13 @@ as we like
 ```
 
 {{h2('Indenting')}}
+
+{{video("https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4", "/images/thumbnails/de_2d_intro_indent.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4
+en:https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/en_indent.mp4
+-->
+
 In some coding languages like python, the indenting of code has meaning. In JavaScript it has not. You could write everything in one line. But indenting code helps keeps things organized. Especially later when have more `{}` brackets, its easy to loose track, so try to indent your code. For now, simple rule, after every open `{` indent and reverse when it closes `}`. If you are using VS Code the indenting will likely happen automatically.
 
 ```js
@@ -119,4 +139,21 @@ function setup() {
 
 {{h2('Debugging')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/debugging.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4", "/images/thumbnails/de_2d_intro_debug.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4
+en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4
+-->
+
+<script>
+console.log('Congrats. You found the secret message. 🎉');
+console.log('');
+console.log('%c...@@@@@@...@@@...@@@...@@@@@@@@@...', 'color: #D12229;');
+console.log('%c...@@@......@@@...@@@...@@@...@@@...', 'color: #F68A1E;');
+console.log('%c...@@@@@@...@@@@@@@@@...@@@@@@@@@...', 'color: #FDE01A;');
+console.log('%c...@@@......@@@...@@@...@@@.........', 'color: #007940;');
+console.log('%c...@@@......@@@...@@@...@@@.........', 'color: #24408E;');
+console.log('%c------------------------------------', 'color: #732982;');
+</script>
+
+{{task('Task: Debugging', 'Try debugging this website and see if you can find the <strong>secret message</strong>.')}}

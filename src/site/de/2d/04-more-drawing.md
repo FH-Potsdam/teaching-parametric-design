@@ -4,7 +4,7 @@ eleventyNavigation:
   title: More Drawing
   key: de_2d_more_drawing
   parent: de_2d
-  order: 4
+  order: 6
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}

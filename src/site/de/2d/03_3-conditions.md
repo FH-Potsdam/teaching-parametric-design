@@ -4,7 +4,7 @@ eleventyNavigation:
   title: Conditions
   key: de_2d_conditions
   parent: de_2d
-  order: 3.2
+  order: 5
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}
@@ -14,7 +14,11 @@ eleventyNavigation:
 
 {{h2('Comparisons')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/conditions.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4
+en:https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/en_conditions.mp4
+-->
 
 We already learned one condition, inside the for-loop, the second parameter is a condition. We tell the system when it should end the loop. There are several options how to define a condition:
 
@@ -94,7 +98,11 @@ The above command `i%2 === 0` checks if a number, when divided by 2, has decimal
 
 {{h2('Scopes (again)')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/more-scopes.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4
+en:https://fhpcloud.fh-potsdam.de/s/i4n7ETnjWjMqijH/download/en_scopes2.mp4
+-->
 
 Scopes cover not only functions like `setup` and `draw`, but also things like loops and if statements. Most of the times when commands are wrapped inside curly brackets (`{}`) its a new scope level. An example:
 

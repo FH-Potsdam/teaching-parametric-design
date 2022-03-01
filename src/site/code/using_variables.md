@@ -1,4 +1,4 @@
-// define it in the global scope
+<pre>// define it in the global scope
 let backgroundColor;
 
 function setup () {
@@ -13,4 +13,4 @@ function draw () {
 
   // everytime the draw cycle is repeated 1 is added to the color
   backgroundColor += 1;
-}
+}</pre>

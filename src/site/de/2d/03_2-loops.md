@@ -4,7 +4,7 @@ eleventyNavigation:
   title: Loops
   key: de_2d_loops
   parent: de_2d
-  order: 3.1
+  order: 4
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}
@@ -16,7 +16,12 @@ After the first few experiments, you have probably realized, that when you want 
 
 {{h2('While loop')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/while-loop.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4", "/images/thumbnails/de_2d_loops_while.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4
+en:https://fhpcloud.fh-potsdam.de/s/2YGT8gYzyZdWg5D/download/en_while.mp4
+-->
+
 
 Using the for-loop we can define a variable that we can use for counting our iterations. Sometimes we already have a variable or our iteration process is more complex. The **while-loop** works exactly like the **for-loop** but it only has one parameter, the condition under which it keeps running:
 
@@ -34,7 +39,11 @@ We can nest as many loops as we want. If we want to build a grid of circles, we 
 
 {{h2('For-Loop')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/for-loop.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/2e55m4LqkzpYKPy/download/de_for.mp4", "/images/thumbnails/de_2d_loops_for.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/2e55m4LqkzpYKPy/download/de_for.mp4
+en:https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/en_for.mp4
+-->
 
 {{editor('/code/for', 'https://...')}}
 

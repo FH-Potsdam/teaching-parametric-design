@@ -4,7 +4,7 @@ eleventyNavigation:
   title: Export
   key: de_2d_more_export
   parent: de_2d
-  order: 7
+  order: 11
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}

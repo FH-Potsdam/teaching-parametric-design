@@ -9,6 +9,11 @@
     "en": "Back to top",
     "cn": "滚动回到顶部"
   },
+  "subtitles": {
+    "de": "Untertitel",
+    "en": "Subtitles",
+    "cn": "字幕"
+  },
   "footer": {
     "about": {
       "de": "Über uns",

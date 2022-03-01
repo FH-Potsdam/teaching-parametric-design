@@ -4,7 +4,7 @@ eleventyNavigation:
   title: More Complexity
   key: de_2d_more_complexity
   parent: de_2d
-  order: 3
+  order: 7
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}

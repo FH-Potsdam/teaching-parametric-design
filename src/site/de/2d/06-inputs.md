@@ -4,7 +4,7 @@ eleventyNavigation:
   title: Input
   key: de_2d_more_input
   parent: de_2d
-  order: 6
+  order: 10
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}

@@ -12,7 +12,11 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import definition %}
 {% from '../../_includes/parts/macros.njk' import editor %}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/variables.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4
+en:https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/en_variables.mp4
+-->
 
 Sometimes we want to reuse a certain information in our code, for example a color or a size value for a shape. To help us with that, JavaScript has **variables**. Variables are like containers we can use for storing information, so we can later use or modify them.
 
@@ -49,7 +53,7 @@ When naming our variables we need to watch out for a couple of things:
 2. Write them in english, so you don't get tempted using special german or other characters.
 3. Variable names cannot contain spaces, a space tells the system that something else is coming afterwards.
 4. A variable name should not start with a number.
-5. Use only letters, numbers, - and _.
+5. Use only letters, numbers and _.
 
 In JavaScript, most developers are using the so called camel case 🐪 writing style. Multiple words are connected by using a capital for each first letter of a word:
 
@@ -58,7 +62,7 @@ let colorValue;
 let myFirstVariable;
 ```
 
-> In other programming languages, other styles are preferred. Python for example uses so called snake case 🐍, where each word is combined by a "_" : `my_first_variable`
+> In other programming languages, other styles are preferred. Python for example uses so called snake case 🐍, where each word is connected through a "_" : `my_first_variable`
 
 {{h2('Using variables')}}
 
@@ -66,13 +70,17 @@ Once we have defined a variable we can use it and also modify the content:
 
 {{editor('/code/using_variables', 'https://...')}}
 
-In the above example we define `backgroundColor` in the global scope (see below), outside `setup()` and `draw()`, so we can access it everywhere. We define it with `let` so we can modify it later on. In `setup()` we set `backgroundColor` to a random value between 0 and 100. In `draw()` we use the variable to draw the `background`, then we add 1 to the current value. This results in the number getting bigger and, thereby, the color getting brighter, until the number reaches 255. While our code will still increase the number, anything above 255 is still white.
+In the above example we define `backgroundColor` in the global scope (see below), outside `setup()` and `draw()`, so we can access it everywhere. We define it with `let` so we can modify it later on. In `setup()` we set `backgroundColor` to be **0**. In `draw()` we use the variable to draw the `background`, then we add 1 to the current value. This results in the number getting bigger and, thereby, the color getting brighter, until the number reaches 255. While our code will still increase the number, anything above 255 is still white.
 
 > `variable += i` is short for `variable = variable + 1`. The same works for other math operations `variable -= 1`
 
 {{h2('Scopes')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/scopes.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4
+en:https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/en_scopes.mp4
+-->
 
 In our first session learned about `setup()` and `draw()`. Those two functions encapsulate their content with curly brackets `{}`. Everything inside those brackets belongs to the function. This is also called the scope of the function. Scoping makes sure that what you do in a certain context, does not mess with something in your code somewhere else. But it also introduces the problem, that we sometimes want to pass information between different scopes:
 
@@ -98,6 +106,12 @@ The solution to share information between or across all scopes is to use the glo
 
 {{h2('Random')}}
 
+{{video("https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png")}}
+<!--
+de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4
+en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4
+-->
+
 We use numbers to define colors, positions and sizes. But sometimes, we want to slightly alter our objects and layout without us defining all those alterations in detail. An option to achive such things is the random command, random generates a value between **0** and **1** or a value between the **min** and **max** value provided as first and second parameter:
 
 {{ definition('random', [
@@ -110,5 +124,3 @@ const backgroundColor = random(0, 255);
 ```
 
 > `random()` is a p5js function. If you are using JavaScript without p5js, you can use `Math.random()`.
-
-TODO BEISPIEL

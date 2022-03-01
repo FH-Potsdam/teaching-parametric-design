@@ -537,7 +537,7 @@ ul.breadcrumbs{
 /* PAGENAV */
 
 #pageNav {
-  margin-top: 15px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -698,4 +698,51 @@ p>code{
 
 video::-webkit-media-controls-panel {
   background: linear-gradient(0deg, rgba(7, 56, 85, 0.5) 0%, rgba(7, 56, 85,0) 20%);
+}
+
+/* TASKS */
+
+.task {
+  border:none;
+  border-top: 4px solid rgb(61, 180, 174);
+  margin-top: 25px;
+  padding: 7px 10px;
+  background: rgba(61, 180, 174, 0.1);
+  h3 {
+    color: rgb(61, 180, 174);
+    padding-bottom:4px;
+    &::before {
+      content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        background: rgb(61, 180, 174);
+        -webkit-mask-image: url("../images/icons/trophy.svg");
+        mask-image: url("../images/icons/trophy.svg");
+        mask-size:contain;
+        mask-position:0 3px;
+    }
+  }
+  p {
+    padding: 0 0 5px 0 ;
+  }
+}
+
+/* INSPIRATION */
+
+h3.inspiration {
+  margin-top:30px;
+  &::before {
+    content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      background: black;
+      -webkit-mask-image: url("../images/icons/star-outline.svg");
+      mask-image: url("../images/icons/star-outline.svg");
+      mask-size:contain;
+      mask-position:0 1px;
+  }
 }
