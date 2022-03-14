@@ -7,10 +7,7 @@ eleventyNavigation:
   order: 4
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from '../../_includes/parts/macros.njk' import editor %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
 After the first few experiments, you have probably realized, that when you want to build more complex layouts, you have to write a lot of code. While some code will always need to be written, some repetetive layouts can be easily accomplished with a loop. Similar to our draw-cycle, a loop repeats the same code several times:
 
@@ -115,31 +112,6 @@ function draw () {
 }
 ```
 
-Nested loops and the polar-coordinate system (see [math](../extras/math.md)):
-
-```js
-const sketchWidth = 400;
-const sketchHeight = 400;
-const angleDistance = 3;
-const maxAngle = 720; // two complete circles
-
-function setup () {
-  createCanvas(sketchWidth, sketchHeight);
-}
-
-function draw () {
-  for (let layer = 0; layer < 10; layer += 1) {
-    for(let angle = 0; angle < maxAngle; angle += angleDistance) {
-      const rad = Math.PI / 180 * (angle + layer * 2); // each layer the angle is offset
-      // const x = radius * cos(angle);
-      const x = angle * cos(rad); // we use the angle also as a radius in the polar function
-      const y = angle * sin(rad);
-      circle(x, y, angle / 100);
-    }
-  }
-}
-```
-
 The while loop can be interesting if we want to generate a number that is different to an existing number (this becomes more interesting in the next chapter when we introduce arrays):
 
 ```js
@@ -151,3 +123,9 @@ while (num2 === num1) {
 ```
 
 In the above example we create two numbers. If the numbers are the same. The loop will try to find a new number that is different, running another iteration.
+
+{{task("Task: Loops", "Try combining the random command from the last section, with the loops to create a grid of shapes.")}}
+
+{{inspiration('Color variations II', 'Try changing the size or the fill command (and re-run the code) to see how it affects the outcome.')}}
+
+{{editor('/code/randomcolor2', 'https://...', true)}}

@@ -7,10 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from '../../_includes/parts/macros.njk' import editor %}
+{% from "../../_includes/parts/macros.njk" import video, task, inspiration, h2, definition, editor %}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png")}}
 <!--
@@ -74,6 +71,24 @@ In the above example we define `backgroundColor` in the global scope (see below)
 
 > `variable += i` is short for `variable = variable + 1`. The same works for other math operations `variable -= 1`
 
+{{h2('Storing color values')}}
+
+A color consists of three or four values (RGB + opacity). You could store a color in multiple variables, but that means a lot of writing. In a later chapter we will meet arrays and objects, which will be more suitable. But, there is a helper function from p5js, allowing us, to store a color in a single variable: color.
+
+{{ definition('color', [
+  { name: 'R', type: 'number' },
+  { name: 'G', type: 'number' },
+  { name: 'B', type: 'number' },
+  { name: 'opacity', type: 'number', optional: true }
+]) }}
+```js
+const backgroundColor = color(255, 0, 100, 150);
+```
+
+> You can also use color with other parameters, similar to fill, stroke and background (see last [section](02-drawing.md)).
+
+
+
 {{h2('Scopes')}}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png")}}
@@ -120,7 +135,13 @@ We use numbers to define colors, positions and sizes. But sometimes, we want to 
 ]) }}
 ```js
 const backgroundColor = random() * 255;
-const backgroundColor = random(0, 255);
+const otherColor = random(0, 255);
 ```
 
 > `random()` is a p5js function. If you are using JavaScript without p5js, you can use `Math.random()`.
+
+{{task("Task: Random", "Random values can be used for everything. Try exploring the possibilities to use it in the various shape commands we already learned about.")}}
+
+{{inspiration('Color variations I', 'Try re-running the code, to get a different color variation.')}}
+
+{{editor('/code/randomcolor', 'https://...', true)}}

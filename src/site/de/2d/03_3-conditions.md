@@ -7,10 +7,7 @@ eleventyNavigation:
   order: 5
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from '../../_includes/parts/macros.njk' import editor %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
 {{h2('Comparisons')}}
 
@@ -22,14 +19,15 @@ en:https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/en_conditions.mp4
 
 We already learned one condition, inside the for-loop, the second parameter is a condition. We tell the system when it should end the loop. There are several options how to define a condition:
 
-1. `a === b` a and b are the same
-2. `a !== b` a and b are not the same
-3. `a > b` a is bigger than b
-4. `a < b` a is smaller than b
-5. `a >= b` a is bigger or equal b
-6. `a <= b` a is smaller or equal b
-
-> You will also find `==` instead of `===`. `===` is a more strict comparison it compares the data type and the data value.
+|Operator|Example|Explanation|
+|---|---|---|
+|===|1 === 1|Exactly the same|
+|==|1 == '1'|The same, but variable type is ignored.|
+|!==|1 != 2 |Not the same|
+|<|1 < 2|Smaller than|
+|>|2 > 1|Bigger than|
+|<=|1 <= 2|Smaller than or eqal|
+|>=|2 >= 1|Bigger than or eqal|
 
 We can combine multiple conditions with either `&&` (and) or `||` (or):
 
@@ -118,3 +116,9 @@ function setup () {
   }
 }
 ```
+
+{{task("Task: Conditions & Random", "Create a random value and use it in a condition, to switch between drawing commands (shapes, colors, etc.).")}}
+
+{{inspiration('Shape switch')}}
+
+{{editor('/code/randomshape', 'https://...', true)}}

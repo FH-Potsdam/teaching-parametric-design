@@ -174,13 +174,10 @@ a.github-btn {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   iframe {
     height: 90vh;
   }
-}
-
-@media screen and (max-width: 1061px) {
   .scroll-btn{
     display: block;
   }
@@ -259,6 +256,30 @@ main p a[href*="http"]:after {
   mask-position:0 -3px;
   width:12px;
   height:12px;
+}
+
+main table {
+  margin-bottom: 15px;
+  border-spacing: 0;
+  th, td {
+    border: none;
+    padding: 5px 10px;
+    margin:0;
+  }
+  th, td {
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  th {
+    border-bottom: 2px solid black;
+  }
+  tr:last-child td{
+    border-bottom: none;
+  }
 }
 
 p.backtotop {

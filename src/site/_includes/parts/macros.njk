@@ -133,6 +133,9 @@
 </div>
 {% endmacro %}
 
-{% macro inspiration(title) %}
+{% macro inspiration(title, description) %}
 <h3 class="inspiration">Inspiration: {{title}}</h3>
+{% if description %}
+<p>{{description}}</p>
+{% endif %}
 {% endmacro %}

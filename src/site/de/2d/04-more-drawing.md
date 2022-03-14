@@ -7,10 +7,7 @@ eleventyNavigation:
   order: 6
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from '../../_includes/parts/macros.njk' import editor %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
 {{h2('Stop the draw-loop')}}
 
@@ -224,3 +221,33 @@ line(x1, y1, cx1, cy1);
 line(x2, y2, cx2, cy2);
 ```
 
+Nested loops and the polar-coordinate system (see [math](../extras/math.md)):
+
+```js
+const sketchWidth = 400;
+const sketchHeight = 400;
+const angleDistance = 3;
+const maxAngle = 720; // two complete circles
+
+function setup () {
+  createCanvas(sketchWidth, sketchHeight);
+}
+
+function draw () {
+  for (let layer = 0; layer < 10; layer += 1) {
+    for(let angle = 0; angle < maxAngle; angle += angleDistance) {
+      const rad = Math.PI / 180 * (angle + layer * 2); // each layer the angle is offset
+      // const x = radius * cos(angle);
+      const x = angle * cos(rad); // we use the angle also as a radius in the polar function
+      const y = angle * sin(rad);
+      circle(x, y, angle / 100);
+    }
+  }
+}
+```
+
+{{task("Task: Polygon", "Create a custom polygon, making use of the various vertex commands.")}}
+
+{{inspiration('Chaotic Curves')}}
+
+{{editor('/code/growingcurve', 'https://...', true)}}

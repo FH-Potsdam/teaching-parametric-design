@@ -78,6 +78,8 @@ function draw() {
 
 There is already a lot going on. Above you see three so called functions (we will talk about functions more later). The **preload**, **setup** and the **draw** function. Everything that is written inside the two curly brackets `{` and `}` belongs to that function.
 
+> In the videos and descriptions i sometimes use **function** and **command** interchangeably.
+
 {{ img('p5js-cycle.svg', 'p5js\' program cycle') }}
 
 ### preload function
@@ -125,6 +127,8 @@ de:https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4
 en:https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/en_indent.mp4
 -->
 
+> To indent code, simply use the tab-key. In VS Code you can also select multiple lines and indent them all at once. In the VS Code settings, you can set if a tab is 2 spaces or 4 spaces. The examples use 2 spaces.
+
 In some coding languages like python, the indenting of code has meaning. In JavaScript it has not. You could write everything in one line. But indenting code helps keeps things organized. Especially later when have more `{}` brackets, its easy to loose track, so try to indent your code. For now, simple rule, after every open `{` indent and reverse when it closes `}`. If you are using VS Code the indenting will likely happen automatically.
 
 ```js
@@ -144,6 +148,8 @@ function setup() {
 de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4
 en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4
 -->
+
+> It is generally recommended to use Firefox, Chrome, Edge or browsers based on similar engines. Safari and Internet Explorer are not recommended. If you are using Safari and you want to use the debugging features, you need to first [enable](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html) the developer tools. In Safari's settings is checkbox at the bottom, allowing you to activate the developer menu. Afterwards you can right-click inspect all websites.
 
 <script>
 console.log('Congrats. You found the secret message. 🎉');
