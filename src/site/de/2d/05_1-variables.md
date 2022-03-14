@@ -7,10 +7,7 @@ eleventyNavigation:
   order: 7
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from '../../_includes/parts/macros.njk' import editor %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor %}
 
 {{h2('Arrays')}}
 
