@@ -13,18 +13,15 @@ After the first few experiments, you have probably realized, that when you want 
 
 {{h2('While loop')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4", "/images/thumbnails/de_2d_loops_while.png")}}
+{{video("MISSING", "/images/thumbnails/en_2d_loops_while.png", "en_2d_loops_while", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4
-en:https://fhpcloud.fh-potsdam.de/s/2YGT8gYzyZdWg5D/download/en_while.mp4
+en:MISSING
 -->
 
+For using the while-loop, we need to define a condition, as long as this condition is met, the loop continues running. In the example below, the while-loop keeps iterating until the variable `x` is equal or bigger than 10:
 
-Using the for-loop we can define a variable that we can use for counting our iterations. Sometimes we already have a variable or our iteration process is more complex. The **while-loop** works exactly like the **for-loop** but it only has one parameter, the condition under which it keeps running:
-
-{{editor('/code/while', 'https://...')}}
-
-In the example above the while function keeps iterating until x is equal or bigger than 10.
+{{editor('/code/while', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/loops/while/sketch.js')}}
 
 > Be careful with while loops, they can potentially crash your code if they never reach their end condition.
 
@@ -32,21 +29,17 @@ In the example above the while function keeps iterating until x is equal or bigg
 
 We can nest as many loops as we want. If we want to build a grid of circles, we could use two nested loops:
 
-{{editor('/code/while_nested', 'https://...')}}
+{{editor('/code/while_nested', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/loops/whilenested/sketch.js')}}
 
 {{h2('For-Loop')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/2e55m4LqkzpYKPy/download/de_for.mp4", "/images/thumbnails/de_2d_loops_for.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/en_for.mp4", "/images/thumbnails/en_2d_loops_for.png", "en_2d_loops_for", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/2e55m4LqkzpYKPy/download/de_for.mp4
 en:https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/en_for.mp4
 -->
 
-{{editor('/code/for', 'https://...')}}
-
-TODODODOD:
-
-We can also use the while-loop in the same way, we use the for-loop:
+The for-loop is very similar to the while-loop:
 
 ```js
 let i = 0;
@@ -64,53 +57,23 @@ To initiate a for-loop, we need to define 3 things:
 2. Under what condition should our loop continue: `i < 5;`
 3. What should happen at the end of each loop interval: `i += 1`
 
-In our case, we set the variable `i` to be `0` when we start our loop. And the loop should be continued as long as `i < 5`, if `i` is `5` or bigger than `5` the loop will stop. At each interval we than add `1` to `i`. The result of this loop, is that our loop runs 5 times. Inside the loop (curly brackets > another nested scope), we can use the variable `i`. In the example above, we increase the x-value of our circle 
+In many cases, the for-loop is the quicker way of defining a loop, as we can define the start value of our loop variable, the condition, as well, as what happens at the end of each loop, in one simple line:
+
+{{editor('/code/for', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/loops/for/sketch.js')}}
+
+In the case above, we set the variable `x` to be `1` when we start our loop. And the loop should be continued as long as `x < 20`, if `x` is bigger than `20` the loop will stop. At each interval we than add `1` to `x`. The result of this loop, is that our loop runs 19 (!) times. Inside the loop (curly brackets > another nested scope), we can use the variable `x`. In the example above, we increase the x-value of our circle.
 
 {{h2('Examples')}}
 
-Following a couple of examples for loops.
+Following two of examples for loops.
 
 Generating a grid, that fills the whole canvas area:
 
-```js
-const sketchWidth = 400;
-const sketchHeight = 400;
-const circleSize = 20;
-const circleDistance = 20;
+{{editor('/code/forfilling', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/loops/forfilling/sketch.js')}}
 
-function setup () {
-  createCanvas(sketchWidth, sketchHeight);
-}
+We can also modify the loop-variable inside the loop (try re-running the code):
 
-function draw () {
-  for(let x = 0; x <= sketchWidth; x += (circleSize + circleDistance)) {
-    for(let y = 0; y <= sketchHeight; y += (circleSize + circleDistance)) {
-      circle(x, y, circleSize);
-    }
-  }
-}
-```
-
-We can also modify the loop-variable inside the loop:
-
-```js
-const sketchWidth = 400;
-const sketchHeight = 400;
-
-function setup () {
-  createCanvas(sketchWidth, sketchHeight);
-}
-
-function draw () {
-  // we add a random number as the distance to the next rectangle
-  for(let y = 0; y < sketchHeight; y += random(10, 20)) {
-    const rectHeight = random(10, 20);
-    rect(0, y, sketchWidth, rectHeight);
-    // next we add the random height of the last rectangle
-    i += rectHeight;
-  }
-}
-```
+{{editor('/code/forrandom', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/loops/forrandom/sketch.js')}}
 
 The while loop can be interesting if we want to generate a number that is different to an existing number (this becomes more interesting in the next chapter when we introduce arrays):
 
@@ -128,4 +91,4 @@ In the above example we create two numbers. If the numbers are the same. The loo
 
 {{inspiration('Color variations II', 'Try changing the size or the fill command (and re-run the code) to see how it affects the outcome.')}}
 
-{{editor('/code/randomcolor2', 'https://...', true)}}
+{{editor('/code/randomcolor2', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/loops/randomcolors/sketch.js', true)}}

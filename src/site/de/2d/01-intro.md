@@ -21,7 +21,7 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
 
 {{h2('New Project')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4", "/images/thumbnails/de_2d_intro_new.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4", "/images/thumbnails/en_2d_intro_new.png", "en_2d_intro_new", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4
 en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4
@@ -36,7 +36,7 @@ en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4
 
 {{h2('Reference')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4", "/images/thumbnails/de_2d_intro_ref.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/en_reference.mp4", "/images/thumbnails/en_2d_intro_ref.png", "en_2d_intro_ref", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4
 en:https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/en_reference.mp4
@@ -52,7 +52,7 @@ For those who are interested, i have created a super [short introduction](html.m
 
 ### sketch.js
 
-{{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4", "/images/thumbnails/en_2d_intro_sketch.png", "en_2d_intro_ref", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
 en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4
@@ -97,7 +97,7 @@ The **draw** function is continously called once **setup** is finished. In the b
 
 {{h2('Comments')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4", "/images/thumbnails/de_2d_intro_comments.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/en_comments.mp4", "/images/thumbnails/en_2d_intro_comments.png", "en_2d_intro_comments", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4
 en:https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/en_comments.mp4
@@ -121,7 +121,7 @@ as we like
 
 {{h2('Indenting')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4", "/images/thumbnails/de_2d_intro_indent.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/en_indent.mp4", "/images/thumbnails/en_2d_intro_indent.png", "en_2d_intro_indent", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4
 en:https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/en_indent.mp4
@@ -143,7 +143,7 @@ function setup() {
 
 {{h2('Debugging')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4", "/images/thumbnails/de_2d_intro_debug.png")}}
+{{video("ttps://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4", "/images/thumbnails/en_2d_intro_debug.png", "en_2d_intro_debug", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4
 en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4

@@ -1,0 +1,90 @@
+WEBVTT
+
+00:00:05.520 --> 00:00:12.560
+Besides the 2D objects we can also generate 
+3d objects. I've used the same boilerplate as  
+
+00:00:12.560 --> 00:00:20.720
+before. We have an objects array here and let's 
+start with the cube. Generate a variable to store  
+
+00:00:20.720 --> 00:00:28.800
+our cube object inside. The cube command/function 
+also takes an object with parameters. Again we can  
+
+00:00:28.800 --> 00:00:34.640
+define a center. I will leave this now at the 
+default value. And then we can define the size  
+
+00:00:35.440 --> 00:00:43.840
+of our cube. Then of course we need 
+to push it into our objects array.
+
+00:00:46.240 --> 00:00:54.480
+And now we have a cube that we can further 
+work with. The next object is the sphere.  
+
+00:00:56.640 --> 00:01:01.680
+Again a variable and then the sphere 
+command. This one takes also an object  
+
+00:01:02.960 --> 00:01:08.720
+and i will simply copy the parameters from 
+before, so this time we will move the object  
+
+00:01:08.720 --> 00:01:15.840
+a little bit to the side, so that they don't 
+overlap and in this case it's a radius not size.
+
+00:01:18.480 --> 00:01:19.680
+And if i save this,
+
+00:01:22.640 --> 00:01:27.760
+oh, of course i need to add it to our 
+objects array, otherwise it's not rendered.
+
+00:01:33.520 --> 00:01:40.160
+We get our sphere and similar to the circle we had 
+before, we can also define segments if we want.  
+
+00:01:40.800 --> 00:01:46.080
+Let's use a very low number of segments 
+to really see the difference here.  
+
+00:01:48.080 --> 00:01:56.640
+And now we can see a lot less smooth circular 
+sphere-ish surface here. And the last object  
+
+00:01:56.640 --> 00:02:01.280
+i want to show you, there are actually a lot 
+more objects that you can generate a lot more 3d  
+
+00:02:01.280 --> 00:02:08.640
+primitives, i've added a list of other primitives 
+below this video with links to the reference where  
+
+00:02:08.640 --> 00:02:14.000
+you can see how they are generated. So the 
+last one i want to show you is the cylinder.  
+
+00:02:15.600 --> 00:02:22.560
+I will just abbreviate this here. And the 
+cylinder function, this one also takes an object  
+
+00:02:24.240 --> 00:02:29.760
+and i will copy this from our sphere. 
+This time we move it to the other side.
+
+00:02:32.160 --> 00:02:37.920
+And the cylinder also has a 
+radius and in addition a height.
+
+00:02:41.680 --> 00:02:47.200
+And let's increase the segments for our 
+cylinder and of course we need to push it  
+
+00:02:48.640 --> 00:02:50.480
+into our objects array.
+
+00:02:54.080 --> 00:03:03.040
+Save it and now we also have a cylinder.

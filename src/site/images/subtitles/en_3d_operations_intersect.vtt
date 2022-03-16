@@ -1,0 +1,29 @@
+WEBVTT
+
+00:00:05.360 --> 00:00:10.640
+In the last video we used the subtract 
+function to remove one element from another.  
+
+00:00:11.920 --> 00:00:18.640
+In this video we'll use the "intersect" function. 
+In intersect we can also combine multiple bodies,  
+
+00:00:18.640 --> 00:00:24.880
+but the result will be those parts of all 
+the objects that we provide in the area  
+
+00:00:24.880 --> 00:00:31.840
+that completely overlap with one another, the 
+volumes of all bodies that completely overlap.  
+
+00:00:32.800 --> 00:00:36.640
+If we just replace the subtract 
+through the intersect function,  
+
+00:00:37.680 --> 00:00:44.800
+we will now get as a result, those volumes 
+and areas, that are a complete intersection  
+
+00:00:44.800 --> 00:00:54.800
+between our two objects and you could do 
+this with more than two objects if you want.

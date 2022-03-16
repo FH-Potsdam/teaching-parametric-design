@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:13.920
+Working with JSCAD is very similar to how we work 
+with p5.js. In our code repository i provided you  
+
+00:00:13.920 --> 00:00:22.000
+two examples and two boilerplates for using JSCAD. 
+There's a normal example and a simple example. The  
+
+00:00:22.000 --> 00:00:29.360
+only difference is is that the simple example is 
+very minimal. It just contains the most important  
+
+00:00:29.360 --> 00:00:35.440
+bits. And for the beginning i recommend you use 
+the 3d-example, which is a lot more elaborate.  
+
+00:00:36.400 --> 00:00:45.440
+And to create a new project we simply use the same 
+way we used before. We copy our example folder
+
+00:00:48.160 --> 00:00:57.360
+paste it in again, rename it, 
+let's call it first-3d-example.
+
+00:00:58.400 --> 00:01:06.000
+And inside, similar to the p5.js one, we find a 
+couple of files already. The HTML file is similar  
+
+00:01:06.000 --> 00:01:12.000
+to p5.js. Simply all the things that need to be 
+loaded and done before our code can be executed  
+
+00:01:12.000 --> 00:01:20.640
+in the browser. The index.json file is an 
+informational file for the index.html. Don't  
+
+00:01:20.640 --> 00:01:27.120
+worry about that one. And the index.js is the 
+actual file that we are working with. And similar  
+
+00:01:27.120 --> 00:01:39.840
+to p5.js, we can use the live server extension 
+again to give us a preview of our 3D objects.
+
+00:01:41.840 --> 00:01:47.680
+Remember, again, JSCAD is not made to create 
+really nice renderings and these kind of things.  
+
+00:01:47.680 --> 00:01:53.440
+But it's really for creating well-structured 
+objects that we can then use for fabrication  
+
+00:01:53.440 --> 00:01:58.960
+processes. In this preview we can now see 
+the object we have created through our code.  
+
+00:01:59.680 --> 00:02:05.360
+And there's a couple of nice features you can 
+add a grid and axes. So you can get a bit of  
+
+00:02:05.360 --> 00:02:12.000
+more orientation in your object. You can zoom in 
+and out out using your mouse or your trackpad.  
+
+00:02:13.120 --> 00:02:19.360
+You can rotate your object. And there's even 
+a little function up here, a box you can take,  
+
+00:02:19.360 --> 00:02:27.600
+to auto rotate your object. To inspect it from 
+all sides. The most important bit is up here,  
+
+00:02:27.600 --> 00:02:33.440
+this is the export feature. Here we can export 
+our 3D object in a couple of different formats.  
+
+00:02:33.440 --> 00:02:40.640
+STL is probably the format you will need, because 
+it can be imported into almost any 3D application.  
+
+00:02:40.640 --> 00:02:44.160
+So you can then for example 
+prepare it for 3D printing.
+
+00:02:47.280 --> 00:02:53.680
+Have one thing in mind, as we edit our code and 
+when we save it, the website is automatically  
+
+00:02:53.680 --> 00:03:01.120
+reloaded, like we already know it from the p5.js 
+examples. But all the settings you make in the  
+
+00:03:01.120 --> 00:03:10.400
+preview system are not restored. So the rotation, 
+the zoom, anything is reset once you reload the  
+
+00:03:10.400 --> 00:03:17.520
+page. This is important to keep in mind. So 
+inside our boilerplate we have some things  
+
+00:03:17.520 --> 00:03:22.320
+that are very familiar to us, because they're very 
+similar to p5.js. But some things are different.  
+
+00:03:23.520 --> 00:03:30.000
+First off, in p5.js we had setup and draw, to 
+structure how our objects are being generated.  
+
+00:03:31.520 --> 00:03:36.880
+In JSCAD we simply have the "main" function. 
+Inside main we can create our objects  
+
+00:03:37.600 --> 00:03:42.480
+and at the end of the function we need to 
+return what should be rendered in the end.  
+
+00:03:43.600 --> 00:03:49.040
+Here we can return a single object or an array of 
+objects, that should be rendered in the preview.
+
+00:03:51.360 --> 00:03:59.520
+Then in p5.js we have global variables and global 
+functions where all the p5.js functionality is  
+
+00:03:59.520 --> 00:04:06.480
+provided for us. Here we need to import the JSCAD 
+library in the beginning of our code, so that we  
+
+00:04:06.480 --> 00:04:13.920
+can use it afterwards. After importing importing 
+the library in the first line, we can now access  
+
+00:04:13.920 --> 00:04:21.120
+all the functionality through the variable we 
+stored it in. For example to get access to a cube  
+
+00:04:21.120 --> 00:04:29.200
+object we could write jscad.primitives.cube and 
+now for example provide it with a size parameter  
+
+00:04:31.200 --> 00:04:35.360
+and now we have a 3D cube, that we 
+can use for further transformations.  
+
+00:04:36.160 --> 00:04:45.680
+But writing this long bit of code is not very 
+effective. So i added a few lines of code up here,  
+
+00:04:46.480 --> 00:04:54.880
+where i take, from the depth of the library, 
+jscard.primitives, individual functions and store  
+
+00:04:54.880 --> 00:05:01.440
+them in individual variables, so that instead of 
+jscad.primitives.cube, we can simply write "cube".  
+
+00:05:02.080 --> 00:05:07.360
+You don't need to use these shortcuts that i 
+added here in the first lines of the boilerplate,  
+
+00:05:07.360 --> 00:05:10.720
+but it makes writing the code a lot 
+more cleaner and a lot more effective.  
+
+00:05:13.520 --> 00:05:19.680
+One last bit of information regarding 
+JSCAD that is different to p5.js.  
+
+00:05:20.480 --> 00:05:26.960
+In p5js most of the functions took some kind 
+of parameters to create the objects. For  
+
+00:05:26.960 --> 00:05:31.120
+example for a rectangle we were providing 
+the x and y parameter for the position  
+
+00:05:31.680 --> 00:05:38.320
+and we were providing width and height 
+to define how big our rectangle is. JSCAD  
+
+00:05:38.320 --> 00:05:45.520
+instead of several parameters, we just provide 
+one object and inside the object we can have one  
+
+00:05:45.520 --> 00:05:52.080
+or multiple attributes and values to generate then 
+the objects. In this case here, we have one object  
+
+00:05:52.080 --> 00:05:58.480
+with the size key and a value 50. And in the next 
+line for the sphere object, we have an object  
+
+00:05:59.520 --> 00:06:06.800
+with three different keys and according values. 
+This is somehow different to how we generated the  
+
+00:06:06.800 --> 00:06:14.000
+object or called our functions in p5.js. Although 
+the functionality and how these functions are  
+
+00:06:14.000 --> 00:06:26.720
+built is actually the same, it's just different 
+design idea of how to generate those functions.

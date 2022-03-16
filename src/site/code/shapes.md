@@ -8,9 +8,9 @@ function draw(){
   point(20, 10);
   point(30, 10);
 
-  circle(50, 50, 40);
-  square(80, 80, 40);
-  rect(150, 150, 40, 80);
+  circle(80, 30, 40);
+  square(120, 10, 40);
+  rect(180, 10, 210, 40);
  
   line(0, 0, 400, 400);
 }</pre>

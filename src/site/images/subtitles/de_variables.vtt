@@ -1,0 +1,419 @@
+WEBVTT
+
+00:00:04.620 --> 00:00:11.910
+Bisher haben wir in unserem Code alle Angaben zu 
+Farben, Positionen immer fix gemacht. Heisst wie  
+
+00:00:11.910 --> 00:00:19.440
+in diesem Beispiel hier zu sehen, haben wir die 
+Farbe für unseren Kreis hier definiert als 255.  
+
+00:00:19.440 --> 00:00:24.780
+Danach haben wir einen Kreis gezeichnet 
+und haben auch dafür die x/y Position,  
+
+00:00:24.780 --> 00:00:31.050
+als auch den Durchmesser unseres Kreises fix durch 
+Zahlen definiert. Die Idee des parametrischen  
+
+00:00:31.050 --> 00:00:37.560
+Designs ist es aber sozusagen nicht all diese 
+Operationen manuell zu definieren, sonst könnten  
+
+00:00:37.560 --> 00:00:42.810
+wir auch einfach eine Grafik-Software benutzen 
+und alle Objekte manuell auf der Zeichenfläche  
+
+00:00:42.810 --> 00:00:50.970
+positionieren. Sondern das sich Position, Größe, 
+etc durch Parameter definieren und dadurch dann  
+
+00:00:50.970 --> 00:00:56.820
+zum Beispiel wir ganz ganz viele Objekte zeichnen 
+können und nicht für jedes einzelne Objekt alles  
+
+00:00:56.820 --> 00:01:02.160
+genau definieren müssen. Sondern das sich dies aus 
+Berechnungen ergeben. Ein ganz einfaches Beispiel.  
+
+00:01:02.160 --> 00:01:08.220
+Das erste ist sozusagen die Zeichenfläche. Die 
+Zeichenfläche könnten wir auch als Parameter  
+
+00:01:08.220 --> 00:01:13.320
+definieren. Können sagen: okay die Zeichenfläche 
+hat eine bestimmte Breite und eine bestimmte Höhe.  
+
+00:01:13.320 --> 00:01:18.630
+Und diese Zeichenfläche ist dann zum Beispiel 
+interessant, wenn wir auf dieser Zeichenfläche  
+
+00:01:18.630 --> 00:01:22.920
+etwas mittig positionieren wollen. Denn dann 
+müssen wir wissen, wie groß ist das Objekt,  
+
+00:01:22.920 --> 00:01:28.740
+wie groß ist die Zeichenfläche, um dann zu 
+berechnen wie groß der x/y Wert für unser Objekt  
+
+00:01:28.740 --> 00:01:34.980
+ist. Dann könnten wir zum Beispiel einen weiteren 
+Parameter nehmen, um die Größe eines Objektes in  
+
+00:01:34.980 --> 00:01:39.810
+diesem Fall ein Quadrat zu definieren. Und dann 
+vielleicht sogar noch einen Schritt weiter gehen  
+
+00:01:39.810 --> 00:01:45.600
+und ein weiteres Objekt definieren das gar nicht 
+mehr explizit durch uns definiert wird, sondern  
+
+00:01:45.600 --> 00:01:50.850
+dass sich durch die Abhängigkeit anderer Objekte 
+ergibt, indem wir zum Beispiel sagen: okay,  
+
+00:01:50.850 --> 00:01:57.090
+wir wollen ein weiteres Quadrat, ein weiteres 
+Rechteck haben, dass 50% in der Breite unserer  
+
+00:01:57.090 --> 00:02:05.100
+definierten Box ist und 25% in der Höhe. Um solche 
+Dinge zu machen haben wir in JavaScript sogenannte  
+
+00:02:05.100 --> 00:02:10.320
+Variablen. Variablen kann man sich vorstellen als 
+Container in denen wir Informationen abspeichern  
+
+00:02:10.320 --> 00:02:15.570
+können. Diese Container können noch nachträglich 
+verändert werden, manipuliert werden, so dass sich  
+
+00:02:15.570 --> 00:02:21.500
+die Werte innerhalb einer Variable auch durchaus 
+verändern können. Um eine Variable anzulegen,  
+
+00:02:21.500 --> 00:02:27.860
+haben wir zwei verschiedene Schreibweisen, zwei 
+verschiedene Typen von Variablen. Das eine sind  
+
+00:02:27.860 --> 00:02:32.630
+die sogenannten Konstanten, die werden mit 
+"const" definiert und dann können wir nun  
+
+00:02:32.630 --> 00:02:40.190
+einen Variablennamen nehmen, zum beispiel 
+können wir unseren sketchHeight definieren,  
+
+00:02:40.190 --> 00:02:48.500
+das als 400 und sketchWidth mit ebenfalls 400 
+definieren. Was wir hier haben ist sozusagen  
+
+00:02:48.500 --> 00:02:53.480
+einmal die Definition was für einen Variablentypen 
+wir haben in dem fall soll es eine Konstante sein  
+
+00:02:53.480 --> 00:02:58.910
+und dann geben wir der Variable einen Namen. 
+Bei den Namen seid ihr relativ frei, ihr müsst  
+
+00:02:58.910 --> 00:03:03.740
+darauf aufpassen, dass in euren Namen keine 
+Leerzeichen oder Minuszeichen auftauchen. Ich  
+
+00:03:03.740 --> 00:03:08.810
+empfehle euch generell der einfachheitshalber gar 
+keine Sonderzeichen zu benutzen, sondern nur Text,  
+
+00:03:08.810 --> 00:03:16.430
+Unterstrich und Zahlen zu benutzen. Idealerweise 
+sollten Variablen auch nicht mit einer Zahl vorne  
+
+00:03:16.430 --> 00:03:22.340
+anfangen, sondern zahlen irgendwo im Text haben. 
+Wenn ihr euch an die Standards halten wollte,  
+
+00:03:22.340 --> 00:03:29.120
+die in JavaScript genutzt werden, in JavaScript 
+nutzt man in der Regel eine Schreibweise wo man  
+
+00:03:29.120 --> 00:03:35.420
+die Wörter nicht durch Unterstreiche voneinander 
+trennt, sondern indem man sozusagen wenn ein neues  
+
+00:03:35.420 --> 00:03:40.880
+Wort anfängt, das man den ersten Buchstaben 
+groß schreibt. Das ist anders zum Beispiel  
+
+00:03:40.880 --> 00:03:46.400
+in Python. In Python benutzt man zum Beispiel 
+Unterstriche um Wörter voneinander zu trennen.
+
+00:03:49.520 --> 00:03:54.500
+Sonst seid ihr aber völlig frei wie ihr eure 
+Variablen benennt. Könnte das sozusagen ganz  
+
+00:03:54.500 --> 00:04:00.230
+frei machen. Die Konstanten, wenn wir das 
+so definieren, sind Werte die wir einmal  
+
+00:04:00.230 --> 00:04:04.520
+definieren und die wir danach nicht mehr ändern 
+können. Damit ist sozusagen sichergestellt,  
+
+00:04:04.520 --> 00:04:09.680
+egal wo wir in unserem Programm auf diese Variable 
+zugreifen, es ist immer der Wert, den wir einmal  
+
+00:04:09.680 --> 00:04:14.420
+definiert haben. Aber es gibt vielleicht auch 
+Werte die man nachträglich noch verändern möchte,  
+
+00:04:14.420 --> 00:04:18.890
+zum Beispiel soll bei jeder Operation in 
+der die "draw" Schleife durchgeführt wird,  
+
+00:04:18.890 --> 00:04:26.060
+der Wert größer werden. Dann müssen wir das 
+ganze mit "let" definieren und hier könnten wir  
+
+00:04:26.060 --> 00:04:35.120
+jetzt zum beispiel unsere Box-Größe angeben. Die 
+boxWidth setzen wir mal auf 200 und die boxHeight  
+
+00:04:35.120 --> 00:04:43.880
+ebenfalls auf 200. Jetzt haben wir auch hier zwei 
+Variablen die wir nachträglich verändern können.  
+
+00:04:43.880 --> 00:04:48.770
+Wenn wir diese Variablen irgendwo benutzen wollen, 
+können wir einfach den Namen benutzen, also damit  
+
+00:04:48.770 --> 00:04:54.650
+zum Beispiel jetzt hier bei "createCanvas" 
+auf unsere sketchHeight und sketchWidth  
+
+00:04:54.650 --> 00:05:00.620
+zugreifen wollen, können wir jetzt einfach 
+hier schreiben sketchWidth und sketchHeight
+
+00:05:00.620 --> 00:05:05.810
+und greifen so jetzt sozusagen auf die Werte zu,  
+
+00:05:05.810 --> 00:05:10.550
+die wir am Anfang definiert haben. Wenn man 
+sich irgendwann im Code nicht mehr sicher ist,  
+
+00:05:10.550 --> 00:05:15.620
+was eigentlich in den Variablen gespeichert 
+wurde, dann kann man sich die auch einfach  
+
+00:05:15.620 --> 00:05:20.420
+ausgeben lassen, zum Beispiel hier 
+mit sketchWidth. Speicher das jetzt  
+
+00:05:20.420 --> 00:05:26.360
+mal. Öffne die Developer Tools damit wir 
+es sehen können, was hier der Output ist.
+
+00:05:26.360 --> 00:05:36.290
+Und können jetzt hier zum Beispiel sehen, dass 
+400 ausgegeben wurde, also die Zahl die wir am  
+
+00:05:36.290 --> 00:05:43.460
+Anfang definiert haben. In variablen kann 
+man grundsätzlich fast alles speichern,  
+
+00:05:43.460 --> 00:05:48.170
+können Texte speichern, können Zahlen speichern. 
+Wir werden uns später auch noch komplexere Typen  
+
+00:05:48.170 --> 00:05:53.630
+von Variablen anschauen. Grundsätzlich in 
+der Programmierung unterscheidet man zwischen  
+
+00:05:53.630 --> 00:06:00.950
+erstmal vier Haupttypen an Variablen das sind 
+einmal Texte sogenannte Strings im englischen.
+
+00:06:00.950 --> 00:06:10.190
+Das hatten wir schon mal, wenn man einen text 
+irgendwo im Code benutzen will, muss man den  
+
+00:06:10.190 --> 00:06:14.300
+immer in Anführungszeichen setzen. Ihr könnt 
+dabei einfache oder doppelte Anführungszeichen  
+
+00:06:14.300 --> 00:06:19.880
+nutzen. Und können jetzt hier zum Beispiel 
+einen Text reinschreiben und können dann  
+
+00:06:19.880 --> 00:06:24.590
+auf diesen Text später zugreifen, ihn zum 
+Beispiel irgendwo als Text wieder ausgeben.  
+
+00:06:24.590 --> 00:06:32.060
+Der zweite Typ sind die Zahlen, bei den 
+Zahlen wird allerdings unterschieden,  
+
+00:06:32.060 --> 00:06:37.550
+in JavaScript ist das nicht so wichtig, weil 
+dort wird einfach nur der Zahlentyp genutzt,  
+
+00:06:37.550 --> 00:06:43.280
+aber in vielen anderen Programmiersprachen wird 
+dann ein bisschen stärker darauf geachtet. Dort  
+
+00:06:43.280 --> 00:06:49.550
+gibt es nämlich dann die sogenannten integer. 
+Integer sind einfach ganze zahlen und dann gibt  
+
+00:06:49.550 --> 00:06:58.280
+es noch die float, das sind Kommazahlen. Ganz 
+wichtig, im Deutschen werden Kommazahlen mit  
+
+00:06:58.280 --> 00:07:02.720
+einem Komma geschrieben, im Englischen aber 
+mit einem punkt .Also ganz wichtig wenn ihr  
+
+00:07:02.720 --> 00:07:09.980
+irgendwo eine Kommazahl benutzt, benutzt einen 
+Punkt, um das Ganze zu trennen. In JavaScript  
+
+00:07:09.980 --> 00:07:14.780
+ist es aber wie gesagt nicht so wichtig weil da 
+zwischen float und integer in der Regel nicht  
+
+00:07:14.780 --> 00:07:21.020
+unterschieden wird. Ein weiterer einfacher 
+Variablentyp sind die sogenannten Boolean.
+
+00:07:21.020 --> 00:07:34.070
+Booleans sind ganz einfache Variablen. Die können 
+true oder false sein. Also wahr oder falsch. Die  
+
+00:07:34.070 --> 00:07:39.650
+kann man zum Beispiel benutzen, wenn man etwas 
+ein- und ausschalten möchte, also wenn in einer  
+
+00:07:39.650 --> 00:07:46.190
+Einstellung etwas gezeichnet werden soll und in 
+einer anderen Einstellung zum Beispiel nicht. Mit  
+
+00:07:46.190 --> 00:07:51.770
+diesen Variablen können wir jetzt arbeiten. Also 
+wenn ich hier nochmal auf das Beispiel zurückgehe,  
+
+00:07:51.770 --> 00:07:59.720
+wir wollten hier eine Box zeichnen die in der 
+Mitte unseres Canvas angelegt sein soll. Wenn  
+
+00:07:59.720 --> 00:08:06.710
+ich das machen möchte, gehe ich jetzt mal hier 
+unten rein. Sagen okay, wir wollen ein Rechteck  
+
+00:08:06.710 --> 00:08:12.620
+zeichnen. Wir brauchen jetzt hier die X und 
+die Y Koordinaten und dann hatte ich hier oben  
+
+00:08:12.620 --> 00:08:24.050
+definiert boxWidth und boxHeight. Jetzt müssen 
+wir uns irgendwie das x und das y berechnen. In  
+
+00:08:24.050 --> 00:08:31.580
+dem Fall haben wir sozusagen die Größe unseres 
+gesamten Canvas. Das hatten wir oben definiert.
+
+00:08:31.580 --> 00:08:40.430
+Davon ziehe ich jetzt die boxWidth ab und 
+teile das Ganze dann noch durch zwei und  
+
+00:08:40.430 --> 00:08:46.670
+habe dann sozusagen hier den Abstand den wir 
+hier links von der Kante haben und dasselbe  
+
+00:08:46.670 --> 00:08:51.740
+muss ich dann nochmal für Y machen. Damit man 
+das jetzt noch ein bisschen besser lesen kann,  
+
+00:08:51.740 --> 00:08:56.420
+werde ich das einfach mal 
+in mehrere Zeilen setzen.
+
+00:08:56.420 --> 00:09:00.890
+Und kopiere mir das jetzt einfach von hier oben.
+
+00:09:04.700 --> 00:09:07.640
+Und muss das jetzt einfach 
+nur durch height ersetzten.
+
+00:09:07.640 --> 00:09:18.710
+Speicher das Ganze und jetzt haben wir eine 
+mittige box .Das tolle daran, dass wir jetzt  
+
+00:09:18.710 --> 00:09:25.730
+berechnen wo die X/Y Position ist, dass wir nun 
+im Code ganz einfach zum Beispiel hier die Größe  
+
+00:09:25.730 --> 00:09:32.300
+auf 100 ändern können und das Ganze trotzdem 
+wieder durch unsere mathematische Formel die wir  
+
+00:09:32.300 --> 00:09:38.600
+unten haben, automatisch in den Mitte platziert 
+wird. In unserem Beispiel sind wir noch einen  
+
+00:09:38.600 --> 00:09:43.310
+Schritt weiter gegangen. Dort haben wir noch eine 
+weitere Box erstellt, die abhängig von der ersten  
+
+00:09:43.310 --> 00:09:52.190
+Box ist. Dafür kopiere ich mir einfach mal das 
+hier. Füge das unten ein und erstelle mir jetzt  
+
+00:09:52.190 --> 00:09:56.720
+zwei neue Variablen. Ich könnte das jetzt auch 
+direkt in den Code unten reinschreiben, aber der  
+
+00:09:56.720 --> 00:10:04.700
+übersichthalber mache ich mal neue Variablen und 
+nennen das dann einfach smallWidth und smallHeight
+
+00:10:04.700 --> 00:10:13.310
+und dann nehme ich einfach dann boxWidth, 
+bei der Größe haben wir 50% gesagt,  
+
+00:10:13.310 --> 00:10:24.950
+also mal 0,5 und bei der Höhe haben wir 25% 
+gesagt, also 0.25. Das einzige was ich jetzt noch  
+
+00:10:24.950 --> 00:10:31.310
+machen muss ist einfach hier die boxWidtht durch 
+unsere smallWidth und smallHeight zu ersetzen.
+
+00:10:31.310 --> 00:10:39.320
+Und damit wir das sehen können, sollten wir 
+dem vielleicht eine andere Farbe geben. Ich  
+
+00:10:39.320 --> 00:10:46.970
+mach das jetzt einfach mal rot. Und wenn wir das 
+abspeichern, haben wir jetzt hier sozusagen in  
+
+00:10:46.970 --> 00:10:53.450
+der Mitte eine weitere Box, die abhängig ist, von 
+der größeren Box. Und da das Ganze funktioniert,  
+
+00:10:53.450 --> 00:10:57.770
+können wir auch mal hier oben andere Werte 
+eintragen. Können ja vielleicht auch mal  
+
+00:10:57.770 --> 00:11:03.230
+unterschiedliche Höhen- und Breiten-Angaben 
+machen und sehen sozusagen dass sich das jetzt  
+
+00:11:03.230 --> 00:11:08.030
+schön proportional verändert, abhängig 
+von den Werten die wir definiert haben,  
+
+00:11:08.030 --> 00:11:11.510
+dadurch dass wir sozusagen hier 
+unten diese Berechnungen durchführen

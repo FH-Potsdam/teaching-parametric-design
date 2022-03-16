@@ -1,0 +1,92 @@
+WEBVTT
+
+00:00:05.280 --> 00:00:11.280
+The last command, is the scission command. 
+Through the scission command we can divide a  
+
+00:00:11.280 --> 00:00:17.360
+union that is not connected in any place. Very 
+simple example, we have two cube objects here,  
+
+00:00:18.400 --> 00:00:24.880
+and i will create a union out of those two. 
+Let's create a variable to store our union in,  
+
+00:00:26.080 --> 00:00:32.240
+provide an array with the two objects. So we 
+have our cube object and our translated object.  
+
+00:00:33.600 --> 00:00:38.560
+And for demonstration purposes 
+push it into our objects array.
+
+00:00:42.560 --> 00:00:44.480
+And it will look the same as before,  
+
+00:00:46.160 --> 00:00:52.320
+but this is now one unified object, even though 
+it doesn't touch at any point. But imagine you're  
+
+00:00:52.320 --> 00:00:58.880
+creating very complex shapes and do multiple 
+unions multiple intersects, whatever, and at some  
+
+00:00:58.880 --> 00:01:04.960
+point you want to figure out what your main body 
+is, that you might want to send to a 3D printer  
+
+00:01:04.960 --> 00:01:11.840
+or a CNC milling machine. And you want to get rid 
+of all artifacts that fly around your main object.  
+
+00:01:12.480 --> 00:01:17.680
+Then this might be interesting. Figuring out 
+after multiple unions, which pieces are actually  
+
+00:01:17.680 --> 00:01:25.840
+connected to one another. To do this, we can use 
+the scission command. Let's create a variable  
+
+00:01:27.120 --> 00:01:36.480
+for our scission and for this we simply provide 
+an object and now the scission command will try to  
+
+00:01:36.480 --> 00:01:42.960
+figure out, if there's any objects inside this one 
+big union that are not connected to one another.  
+
+00:01:43.520 --> 00:01:48.960
+And then it will return an array of all the 
+individual objects that are not connected to  
+
+00:01:48.960 --> 00:01:53.680
+one another. And then you would need to figure 
+out which is the object that you want to keep  
+
+00:01:53.680 --> 00:01:59.760
+and which objects you might want to delete. In 
+our case, let's just check, and we will push  
+
+00:02:01.440 --> 00:02:07.840
+from our sciObj the first resulting 
+object, after the scission was done.  
+
+00:02:08.720 --> 00:02:13.040
+Exists in our area. So remember 
+again, arrays start with the index 0.  
+
+00:02:14.640 --> 00:02:18.080
+Now it returns us one of the 
+cubes because after the scission  
+
+00:02:18.880 --> 00:02:24.880
+it figured out that there are two objects, that 
+are not connected to one another. If i check if  
+
+00:02:24.880 --> 00:02:31.120
+there's a second one. And here is our second cube 
+and of course i could also push both our cubes  
+
+00:02:32.560 --> 00:02:45.840
+into our rendering list and we get both 
+our original cubes after the union process.

@@ -1,0 +1,109 @@
+WEBVTT
+
+00:00:04.620 --> 00:00:10.530
+Nachdem wir unser erstes Projekt nun aufgesetzt 
+haben geht es nun endlich ans Zeichnen. Das Erste  
+
+00:00:10.530 --> 00:00:16.230
+was wir machen müssen, ist unsere Zeichenfläche 
+definieren. Was wir hierfür benutzen ist das  
+
+00:00:16.230 --> 00:00:21.630
+"createCanvas" Command. Hiermit können wir 
+unsere Zeichenfläche erstellen lassen. Die  
+
+00:00:21.630 --> 00:00:29.250
+"createCanvas" Funktion nimmt zwei Parameter. Das 
+ist einmal die Breite und einmal die Höhe. Wenn  
+
+00:00:29.250 --> 00:00:36.240
+ich jetzt hier zum Beispiel statt 400 Pixel 600 
+eintrage und das abspeicher. Sehen wir sofort,  
+
+00:00:36.240 --> 00:00:43.890
+dass das Ganze entsprechend breiter geworden 
+ist. Zwei zusätzliche Hinweise an dieser Stelle.  
+
+00:00:43.890 --> 00:00:49.410
+Viele von euch werden vielleicht mit Displays 
+arbeiten die eine sehr hohe Auflösung haben,  
+
+00:00:49.410 --> 00:00:59.160
+wie Retina-Displays. p5js erkennt dies automatisch 
+und erstellt deswegen größere Zeichenflächen,  
+
+00:00:59.160 --> 00:01:03.300
+damit das Ganze trotzdem immer noch 
+schön hochaufgelöst auf euren Displays  
+
+00:01:03.300 --> 00:01:07.710
+aussieht. Wenn ihr das Ganze aber später 
+dann zum Beispiel als PNG exportiert,  
+
+00:01:07.710 --> 00:01:12.750
+dann werdet ihr sehen, dass die Dateien 
+größer sind als die Pixelangaben die ihr  
+
+00:01:12.750 --> 00:01:19.620
+bei der "createCanvas" Funktion gemacht habt. 
+Wenn ihr aber eine spezifische größe definitiv  
+
+00:01:19.620 --> 00:01:23.490
+haben wollte und ihr nicht daran interessiert 
+seid, dass es auf eurem hochauflösenden Display  
+
+00:01:23.490 --> 00:01:28.170
+schick aussieht, dann könnt ihr noch 
+das Kommando "pixelDensity" nutzen.
+
+00:01:32.470 --> 00:01:38.770
+Und dort eintragen wie hoch die Pixeldichte 
+sein soll. Wenn ihr sozusagen genau das raus  
+
+00:01:38.770 --> 00:01:44.800
+haben wollt was ihr eingebt, gebt ihr einfach als 
+Pixel-Density 1 an. Wenn ihr das dann speichert,  
+
+00:01:44.800 --> 00:01:49.960
+seht ihr keinen direkten Unterschied, aber 
+wenn ihr ein hochauflösendes Display habt und  
+
+00:01:49.960 --> 00:01:54.730
+später Sachen zeichnet werdet ihr sehen, dass die 
+Sachen ein ganz klein bisschen unscharf aussehen.  
+
+00:01:54.730 --> 00:02:00.730
+Wenn euch die Export-Größe nicht so stark 
+interessiert, sondern euch mehr daran gelegen ist,  
+
+00:02:00.730 --> 00:02:06.250
+dass das Ganze schick auf eurem Displays aussieht, 
+dann lasst ihr einfach die default Einstellung und  
+
+00:02:06.250 --> 00:02:13.420
+das Ganze sozusagen angepasst an die Auflösung 
+auf eurem Display. Eine weitere Option: der  
+
+00:02:13.420 --> 00:02:21.070
+Standard-Modus in dem p5js arbeitet sind raster 
+also Pixelgrafiken. Wenn ihr aber später als  
+
+00:02:21.070 --> 00:02:26.770
+Export keine Pixelgrafiken sondern Vektorgrafik 
+haben wollt, dann müsst ihr das am Anfang auch  
+
+00:02:26.770 --> 00:02:35.260
+definieren. Hierfür müsst ihr lediglich SVG am 
+Ende noch als dritten Parameter mitgeben. Ihr  
+
+00:02:35.260 --> 00:02:40.990
+werdet auch hier nicht direkt ein Unterschied 
+im Output sehen, aber habt nun Möglichkeit auch  
+
+00:02:40.990 --> 00:02:46.480
+Vektordaten später zu exportieren. Zu den 
+genauen Unterschieden zwischen dem SVG und  
+
+00:02:46.480 --> 00:02:51.730
+dem PNG rendering, werde ich dann in einem der 
+späteren Videos noch ein bisschen mehr erzählen.

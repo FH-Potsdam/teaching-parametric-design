@@ -9,9 +9,16 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{h2('Stop the draw-loop')}}
+{{h2('Draw Loop')}}
 
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/noloop.mp4", "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/tkPJJiC687k2XEp/download/en_2d_drawing2_drawloop.mp4", "/images/thumbnails/en_2d_drawing2_drawloop.png", "en_2d_drawing2_drawloop", translations.subtitles[locale], locale)}}
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/SyL8FRKWFsbXGrp
+en: https://fhpcloud.fh-potsdam.de/s/tkPJJiC687k2XEp
+-->
+
+### Stopping the draw loop
 
 When you are using random values, you often don't want your layout to be continously redrawn. To stop the draw-cycle, simply call the `noLoop()` command.
 
@@ -22,9 +29,7 @@ function draw() {
 }
 ```
 
-{{h2('Draw speed')}}
-
-{{video("https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/02-basics/framerate.mp4", "/images/video-thumb.png")}}
+### Draw Speed
 
 Normally the draw-cycle is called every 60 seconds. You can slow this down to a so called framerate of your choice:
 
@@ -41,7 +46,12 @@ function setup() {
 
 {{h2('Polygons')}}
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/vertex.mp4', "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/4kcdSTEPGGkRTJo/download/en_2d_drawing2_vertex.mp4", "/images/thumbnails/en_2d_drawing2_vertex.png", "en_2d_drawing2_vertex", translations.subtitles[locale], locale)}}
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/CA4eLGXZigSea9T
+en: https://fhpcloud.fh-potsdam.de/s/4kcdSTEPGGkRTJo
+-->
 
 After all the abstract JavaScript basics, back to the drawing functions. In the last section we learned about basic shapes like circles and rectangles. All those shapes consist of points, which are connected to one another by lines and then the last point is connected to the first. These lines do not always have to be straight. Looking ahead at our laser cutter work, those lines are the path the laser cutter will take to cut our materials. Let's start with a simple example the rectangle:
 
@@ -73,20 +83,22 @@ We tell p5js that we want to start drawing a shape with the command `beginShape(
 
 > If you are building more complex shapes, you should make sure that the points are aligned clockwise.
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/complex-verte.mp4', "/images/video-thumb.png")}}
+{{h2('Polar Coordinates')}}
+
+{{video("https://fhpcloud.fh-potsdam.de/s/Q6E37ZtiE6n8m8y/download/en_2d_drawing2_polar.mp4", "/images/thumbnails/en_2d_drawing2_polar.png", "en_2d_drawing2_polar", translations.subtitles[locale], locale)}}
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/DM5BjnxQWjfTT2M
+en: https://fhpcloud.fh-potsdam.de/s/Q6E37ZtiE6n8m8y
+-->
 
 Building a shape with the polar coordinates:
 
-```js
-beginShape();
-for(let angle = 0; angle < 360; angle += 15) {
-  const radius = random(10, 50);
-  const x = radius * cos(Math.PI / 180 * angle);
-  const y = radius * sin(Math.PI / 180 * angle);
-  vertex(x, y);
-}
-endShape();
-```
+{{editor('/code/polarsimple', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/polarsimple/sketch.js')}}
+
+Nested loops and the polar-coordinate system (see also [math](../../extras/math)):
+
+{{editor('/code/polarcomplex', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/polarcomplex/sketch.js')}}
 
 {{h2('Quad & Triangle')}}
 
@@ -120,9 +132,13 @@ triangle(0, 0, 40, 0, 40, 20);
 
 {{h2('Curves')}}
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/vertexcurve.mp4', "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB/download/en_2d_drawing2_curves.mp4", "/images/thumbnails/en_2d_drawing2_curves.png", "en_2d_drawing2_curves", translations.subtitles[locale], locale)}}
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA
+en: https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB
+-->
 
-If we want to go beyond straight lines, we can also use curves. There are three type of curve commands:
+If we want to go beyond straight lines, we can also use curves. There are three types of curve commands:
 
 {{ definition('curve', [
   { name: 'x', type: 'number' },
@@ -139,8 +155,6 @@ endShape(CLOSE);
 
 `curveVertex` is the easiest command, as it generates the curves for you. With `bezierVertex` and `quadraticVertex` you need to build the curves yourself with control points (similar to how you would do it in a vector editing software):
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/quadricVertex.mp4', "/images/video-thumb.png")}}
-
 {{ definition('quadraticVertex', [
   { name: 'mid-curve-x', type: 'number' },
   { name: 'mid-curve-y', type: 'number' },
@@ -155,8 +169,6 @@ endShape();
 ```
 
 `quadraticVertex` takes for parameters, the first two are x, y coordinates of the control point and the second two x, y are the new point for our line. `bezierVertex` requires two control points (vector software) for the start and end of the line:
-
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/bezierVertex.mp4', "/images/video-thumb.png")}}
 
 {{ definition('bezierVertex', [
   { name: 'control-x1', type: 'number' },
@@ -173,81 +185,12 @@ bezierVertex(10, 20, 30, 20, 40, 0);
 endShape();
 ```
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/bezierVertex-2.mp4', "/images/video-thumb.png")}}
+In the beginning when working with curves, it can help a lot to draw all the points and even connect normal points and control points (try editting the point coordinates and observe how the curve changes):
 
-In the beginning when working with curves, it can help a lot to draw all the points and even connect normal points and control points (make it look like in a vector editting software):
-
-```js
-beginShape();
-vertex(0, 0); // we need to add a startpoint
-bezierVertex(10, 20, 30, 20, 40, 0);
-endShape();
-
-lineWeight(5);
-point(0, 0);
-point(40, 0);
-stroke("red");
-point(10, 20);
-point(30, 20);
-line(0, 0, 10, 20);
-line(40, 0, 30, 20);
-```
-
-Or with variables:
-
-```js
-const x1 = 0;
-const y1 = 0;
-const x2 = 40;
-const y2 = 0;
-
-const cx1 = 10;
-const cy1 = 20;
-const cx2 = 30;
-const cy2 = 20;
-
-beginShape();
-vertex(x1, y1); // we need to add a startpoint
-bezierVertex(cx1, cy1, cx2, cy2, x2, y2);
-endShape();
-
-lineWeight(5);
-point(x1, y1);
-point(x2, y2);
-stroke("red");
-point(cx1, cy1);
-point(cx2, cy2);
-line(x1, y1, cx1, cy1);
-line(x2, y2, cx2, cy2);
-```
-
-Nested loops and the polar-coordinate system (see [math](../extras/math.md)):
-
-```js
-const sketchWidth = 400;
-const sketchHeight = 400;
-const angleDistance = 3;
-const maxAngle = 720; // two complete circles
-
-function setup () {
-  createCanvas(sketchWidth, sketchHeight);
-}
-
-function draw () {
-  for (let layer = 0; layer < 10; layer += 1) {
-    for(let angle = 0; angle < maxAngle; angle += angleDistance) {
-      const rad = Math.PI / 180 * (angle + layer * 2); // each layer the angle is offset
-      // const x = radius * cos(angle);
-      const x = angle * cos(rad); // we use the angle also as a radius in the polar function
-      const y = angle * sin(rad);
-      circle(x, y, angle / 100);
-    }
-  }
-}
-```
+{{editor('/code/controlpoints', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/controlpoints/sketch.js')}}
 
 {{task("Task: Polygon", "Create a custom polygon, making use of the various vertex commands.")}}
 
 {{inspiration('Chaotic Curves')}}
 
-{{editor('/code/growingcurve', 'https://...', true)}}
+{{editor('/code/growingcurve', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/growingcurve/sketch.js', true)}}

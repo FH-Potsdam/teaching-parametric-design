@@ -1,0 +1,53 @@
+WEBVTT
+
+00:00:04.800 --> 00:00:09.920
+There's a lot of different input commands that you 
+can use to generate different types of inputs and  
+
+00:00:09.920 --> 00:00:15.280
+i've added a list of the basic elements below 
+this video and the links to the references that  
+
+00:00:15.280 --> 00:00:20.080
+explain them. But there is one additional one, 
+that i want to show you and that is the slider.  
+
+00:00:21.120 --> 00:00:27.280
+Through the slider we can generate numbers on 
+a certain range. Let's add a variable again,  
+
+00:00:28.000 --> 00:00:36.160
+simply call it slider. And then we can use the 
+same commands that we used here, this time we just  
+
+00:00:37.280 --> 00:00:41.200
+use the createSlider function 
+and here we can provide a little  
+
+00:00:41.760 --> 00:00:49.360
+more parameters. The first two parameters are the 
+min and the max of our slider range, start with 0  
+
+00:00:49.360 --> 00:00:55.520
+and go to 200 and then again similar to our first 
+createInput, we can define the default value,  
+
+00:00:56.480 --> 00:01:03.600
+then we can also change the position. 
+Let's place it below our text field.
+
+00:01:05.760 --> 00:01:09.920
+And make the size a little bit 
+bigger than our text field.  
+
+00:01:11.280 --> 00:01:16.960
+And then in the code below, again, we simply 
+say "slider.value", so we get the current value  
+
+00:01:16.960 --> 00:01:24.880
+of the slider. And if i save this, i get this nice 
+slider here. And as i move the slider knob, i can  
+
+00:01:24.880 --> 00:01:35.840
+nicely see how our code is immediately updated 
+and uses the current value of our slider here.

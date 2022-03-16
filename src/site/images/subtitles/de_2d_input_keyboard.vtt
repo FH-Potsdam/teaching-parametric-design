@@ -1,0 +1,113 @@
+WEBVTT
+
+00:00:04.610 --> 00:00:08.960
+Als letzten Input möchte ich euch noch die 
+Tastatur zeigen. Diese funktioniert ähnlich wie  
+
+00:00:08.960 --> 00:00:13.700
+wir das gerade bei der Maus kennengelernt haben. 
+Wir können so zum Beispiel feststellen, ob gerade  
+
+00:00:13.700 --> 00:00:20.150
+eine Taste gedrückt wird. Ähnlich wie wir das bei 
+der Maus hatten, gibt es auch bei der Tastatur  
+
+00:00:20.150 --> 00:00:26.990
+eine booleansche Variable die keyIsPressed. Hier 
+können wir dann auch überprüfen, ob die "true" ist  
+
+00:00:26.990 --> 00:00:32.150
+und dann zum Beispiel wieder unseren Radiuss 
+anpassen. Müssen dann natürlich sicherstellen,  
+
+00:00:32.150 --> 00:00:38.240
+dass es keine Konstante ist. Und jetzt, wenn 
+ich auf das Browserfenster klicke und dann  
+
+00:00:38.240 --> 00:00:44.210
+eine Taste drücke, dann sehen wir, dass der 
+Radius angepasst wird. Das selbe können wir  
+
+00:00:44.210 --> 00:00:50.150
+auch über eine Funktion machen. Diese 
+Funktion heißt dann einfach keyPressed.
+
+00:00:51.020 --> 00:00:58.430
+Darüber können wir dann, genau wie wir es bei 
+der Maus auch gemacht haben, herausfinden,  
+
+00:00:58.430 --> 00:01:04.850
+dass eine Taste gedrückt wurde. Und bei der 
+Tastatur ist es natürlich jetzt noch interessant,  
+
+00:01:04.850 --> 00:01:10.550
+welche Taste tatsächlich gedrückt wird. Dafür gibt 
+es eine "globale" Variable, die keyCode Variable.  
+
+00:01:10.550 --> 00:01:17.030
+Und darin verbirgt sich sozusagen welche Taste 
+aktuell gedrückt wird. Diese Variable enthält eine  
+
+00:01:17.030 --> 00:01:22.400
+Zahl. Also jeder Taste ist eine Zahl zugeordnet. 
+Wir können jetzt hier zum Beispiel mal das einfach  
+
+00:01:22.400 --> 00:01:28.730
+in der Konsole ausgeben. Die öffne ich 
+jetzt mal und sobald ich jetzt eine Taste  
+
+00:01:28.730 --> 00:01:34.490
+drück... jetzt drücke ich zum Beispiel gerade die 
+Leertaste, das ist die 32 oder den links Pfeil,  
+
+00:01:34.490 --> 00:01:42.290
+die 37 oder der rechts Pfeil, die 39. So könnt 
+ihr die Zahlen herausfinden und wenn ihr dann  
+
+00:01:42.290 --> 00:01:50.900
+zurück in den Code geht, könnt ihr hier sozusagen 
+die Condition reinschreiben: if (keyCode === 37)
+
+00:01:53.550 --> 00:02:03.540
+37 war der Pfeil nach links, dann soll 
+unsere Radius 10 kleiner werden und wenn  
+
+00:02:03.540 --> 00:02:13.200
+unser keyCode === 39 ist, das war der Pfeil nach 
+rechts, dann soll der Radius um 10 größer werden.  
+
+00:02:14.250 --> 00:02:21.330
+Wenn ich das jetzt abspeichern, hier reingehen 
+kann ich sozusagen hier jetzt das ganze... Hier  
+
+00:02:21.330 --> 00:02:26.220
+oben den Code müssen wir natürlich dann raus 
+nehmen, sonst funktioniert das ganze nicht.
+
+00:02:26.220 --> 00:02:42.450
+Und kann jetzt sozusagen über die Pfeiltasten 
+den Wert Radius, die Variable Radius größer und  
+
+00:02:42.450 --> 00:02:47.100
+kleiner werden lassen. Weil man sich diese 
+Zahlen natürlich alle nicht merken kann,  
+
+00:02:47.100 --> 00:02:52.620
+gibt es netterweise von p5js ein paar 
+vorgefertigte Platzhalter-Variablen,  
+
+00:02:52.620 --> 00:02:57.930
+mit denen wir das herausfinden können. Es 
+gibt zum Beispiel die Variable LEFT_ARROW,  
+
+00:02:57.930 --> 00:03:03.960
+diese Variable enthält einfach nur den Wert 
+37, aber statt der Zahlen muss man sich dann  
+
+00:03:03.960 --> 00:03:07.710
+einfach nur merken, dass man sozusagen 
+RIGHT_ARROW schreiben kann und LEFT_ARROW  
+
+00:03:07.710 --> 00:03:12.390
+und darüber dann im Grunde genau dasselbe 
+erreichen kann wie das was wir gerade hatten.

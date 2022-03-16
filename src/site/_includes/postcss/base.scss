@@ -126,10 +126,25 @@ iframe {
   border: 1px solid rgba(200, 200, 200, 1);
 }
 
-a.github-btn {
+a.github-btn, a.download-btn, span.folder-btn {
   margin-top: 4px;
   background: #fff;
   background-image: url(/images/icons/github.svg);
+  &.download-btn{
+    background-image: url(/images/icons/journal-page.svg);
+  }
+  &.github-btn{
+    margin-right:10px;
+  }
+  &.folder-btn{
+    background-color:none;
+    background-image: url(/images/icons/folder.svg);
+    border:none;
+    &:hover{
+      border:none;
+      background-color:#fff;
+    }
+  }
   background-repeat: no-repeat;
   background-position: left 4px center;
   background-size: 14px 14px;
@@ -259,7 +274,7 @@ main p a[href*="http"]:after {
 }
 
 main table {
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
   border-spacing: 0;
   th, td {
     border: none;
@@ -732,6 +747,7 @@ video::-webkit-media-controls-panel {
   h3 {
     color: rgb(61, 180, 174);
     padding-bottom:4px;
+    margin-top:0;
     &::before {
       content: "";
         display: inline-block;

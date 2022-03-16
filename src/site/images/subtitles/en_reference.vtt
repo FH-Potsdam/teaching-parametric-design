@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:05.280 --> 00:00:09.760
+In this lecture we're really trying to give 
+you an introduction to parametric design.  
+
+00:00:09.760 --> 00:00:15.760
+But of course we cannot cover all the different 
+features and functionalities that are out there  
+
+00:00:15.760 --> 00:00:19.120
+for p5.js. There is a really 
+great documentation online  
+
+00:00:19.120 --> 00:00:24.000
+and the reference. Inside the reference you find 
+all the different functions that are available.  
+
+00:00:24.560 --> 00:00:29.040
+This is not only interesting if you're trying 
+to go beyond what we teach you in the seminar,  
+
+00:00:29.040 --> 00:00:33.600
+but this might also be useful if you 
+forget what kind of parameters you need,  
+
+00:00:33.600 --> 00:00:41.120
+to call a certain command. For example the "rect" 
+command which we're using to draw a rectangle, you  
+
+00:00:41.120 --> 00:00:48.480
+can see here. And for almost all of the commands, 
+you find good examples inside the reference,  
+
+00:00:48.480 --> 00:00:53.040
+so you can see how you can use the function, 
+but the most important bit comes down here:  
+
+00:00:53.040 --> 00:00:58.080
+the syntax. This shows you how you can call 
+this function. It shows you what parameters  
+
+00:00:58.080 --> 00:01:04.720
+go in this function and what types of parameters. 
+In this example here, you can see that the first  
+
+00:01:04.720 --> 00:01:10.960
+three parameters are mandatory, so you need to 
+provide these parameters. The parameters in these  
+
+00:01:12.240 --> 00:01:19.120
+brackets, those are not. These are optional. You 
+don't need to provide them. And below you also  
+
+00:01:19.120 --> 00:01:24.160
+find an explanation what these parameters are. 
+The most important bit being the one in the front.  
+
+00:01:24.720 --> 00:01:29.600
+This defines what kind of parameter this 
+is. In this case it's a number parameter.  
+
+00:01:29.600 --> 00:01:35.360
+And this is the X-coordinate of this rectangle, 
+so where should it be positioned on the screen.  
+
+00:01:36.640 --> 00:01:40.720
+In this reference you can really quickly 
+look up the different functions and how  
+
+00:01:40.720 --> 00:01:49.840
+you can call them and what parameters 
+are required or optional to call them.

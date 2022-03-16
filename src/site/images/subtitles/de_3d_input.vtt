@@ -1,0 +1,89 @@
+WEBVTT
+
+00:00:04.499 --> 00:00:10.160
+Wie bei p5js, wollen wir natürlich auch in JSCAD 
+mit Parametern arbeiten, um unsere Objekte während  
+
+00:00:10.160 --> 00:00:14.510
+sie sozusagen gerendert werden, noch nachträglich 
+bearbeiten zu können. Um dadurch zum Beispiel  
+
+00:00:14.510 --> 00:00:20.150
+verschiedene Varianten zu generieren. Hierfür 
+müssen wir unsere Boilerplate ein klein wenig  
+
+00:00:20.150 --> 00:00:24.860
+anpassen. Ich habe euch auch eine zusätzliche 
+Boilerplate in euren Beispiel-Ordner gelegt,  
+
+00:00:24.860 --> 00:00:29.930
+die ihr nutzen könnt, um sozusagen die 
+Boilerplate nicht manuell anpassen zu müssen.  
+
+00:00:29.930 --> 00:00:36.410
+Die erste Veränderung ist eine neue Funktion, 
+die getParameterDefinitions-Funktion. Hierin  
+
+00:00:36.410 --> 00:00:41.360
+geben wir ein Array zurück und in dem Array 
+haben wir mehrere Objekte, über die wir dann  
+
+00:00:41.360 --> 00:00:47.570
+unsere Eingabefelder definieren. Das hier ist nur 
+ein beispielhaftes Eingabefeld, das ist vom Typ:  
+
+00:00:47.570 --> 00:00:55.460
+Zahl, vom type: float. Hat den ursprünglichen 
+Wert 5, also den default Wert 5. Caption ist  
+
+00:00:55.460 --> 00:01:01.850
+was daneben steht gleich und "size" ist der 
+Variablenname, der für diesen Input gewählt wird.  
+
+00:01:01.850 --> 00:01:09.290
+Damit diese Funktion auch ausgeführt wird, müssen 
+wir die auch hier unten angeben. Und wenn ich das  
+
+00:01:09.290 --> 00:01:16.250
+jetzt abspeicher, sehen wir, dass hier unten 
+eine Eingabemaske für uns generiert wird. Und  
+
+00:01:16.250 --> 00:01:23.420
+wenn ich das jetzt verändere und dann auf "update" 
+klicke, wird das Ganze neu ausgeführt. Aber bisher  
+
+00:01:23.420 --> 00:01:28.250
+greifen wir noch gar nicht auf die Variable zu. 
+Um nämlich auf die Variable zugreifen zu können,  
+
+00:01:28.250 --> 00:01:34.880
+müssen wir diese auch an die "main"-Funktion 
+übergeben. Und jetzt können wir die Parameter  
+
+00:01:34.880 --> 00:01:42.170
+ganz einfach abrufen. Parameters also der 
+Variablennamen, den ich hier oben übergebe, Punkt  
+
+00:01:42.170 --> 00:01:51.260
+"size". Und "size" ist der Name, den ich hier 
+oben im Namen-Attribut definiert habe. Also würde  
+
+00:01:51.260 --> 00:01:57.050
+ich das jetzt hier oben z.B. "Größe" nenne, dann 
+müsste ich auch hier unten entsprechend "Größe"  
+
+00:01:57.050 --> 00:02:09.170
+angeben. Speichern das Ganze. Der default-Wert war 
+jetzt fünf, wenn ich auf instant-update drücke,  
+
+00:02:09.170 --> 00:02:14.160
+ist sobald ich irgendwas anpasse, versucht 
+er das Ganze möglichst schnell zu ändern.
+
+00:02:14.160 --> 00:02:21.810
+Und so kann ich im laufenden 
+Prozess Parameter anpassen,  
+
+00:02:21.810 --> 00:02:27.420
+das Ganze wird sofort neu gerendert, ohne 
+dass ich den Code manuell anpassen muss

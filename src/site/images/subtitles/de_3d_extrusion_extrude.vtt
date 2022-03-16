@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.270
+Wir haben den JSCAD Input mit 2D-Formen 
+angefangen. Wie ich da schon angekündigt habe,  
+
+00:00:10.270 --> 00:00:16.720
+können wir 2D- in 3D-Formen umwandeln, durch 
+sogenannte Extrusion-Funktionen. Diese Funktionen  
+
+00:00:16.720 --> 00:00:22.600
+erlauben es uns eine 2D-Fläche in die dritte 
+Dimension zu etrudieren. Und dafür haben wir  
+
+00:00:22.600 --> 00:00:27.700
+verschiedene Möglichkeiten. Dafür erstelle ich 
+jetzt erst mal wieder ein Objekt, nennen wir das  
+
+00:00:27.700 --> 00:00:35.140
+mal das extrObj und fangen wir mit der einfachsten 
+extrusion-Funktion an, das ist die "extrudeLinear"
+
+00:00:35.140 --> 00:00:44.980
+Die nimmt ein Objekt als ersten Parameter und 
+danach übergeben wird dann das Objekt das wir  
+
+00:00:44.980 --> 00:00:52.240
+extrudieren wollen und müssen danach natürlich 
+noch das Ganze in unserer objects pushen.
+
+00:00:52.240 --> 00:01:00.130
+Und in dem Parameter-Objekt, dass 
+wir an "extrudeLinear" übergeben,  
+
+00:01:00.130 --> 00:01:02.230
+müssen wir nun als allererstes die Höhe angeben,  
+
+00:01:02.230 --> 00:01:08.470
+also wie weit soll das Ganze sozusagen 
+extrudiert werden. Sagen wir mal 40.
+
+00:01:08.470 --> 00:01:17.020
+Speichern das Ganze und jetzt haben wir ein 
+3D-Objekt und nicht mehr 2D. Die Größe, die Höhe,  
+
+00:01:17.020 --> 00:01:22.960
+wie weit das Ganze extrudiert werden soll können 
+wir natürlich beliebig anpassen. Wir können  
+
+00:01:22.960 --> 00:01:28.150
+allerdings noch mehr mit der "extrudeLinear" 
+machen. Und zwar können wir während das Objekt  
+
+00:01:28.150 --> 00:01:38.230
+nach oben gezogen wird, das Objekt drehen. Hierfür 
+gibt es einmal den twistAngle. Das ist unten, ist  
+
+00:01:38.230 --> 00:01:45.250
+sozusagen 0 und oben ist dann der "twistAngle", 
+wie weit das Ganze gedreht werden soll. Das ist  
+
+00:01:45.250 --> 00:01:54.220
+natürlich auch wieder in Radians. Machen wir mal 
+90 Grad. Und nun müssen wir aber noch angeben wie  
+
+00:01:54.220 --> 00:01:59.920
+viele Zwischenschritte es nach oben geben soll. 
+Das sind die sogenannten "twistSteps". Machen  
+
+00:01:59.920 --> 00:02:07.360
+wir 12. Warum müssen wir hier die "twistSteps" 
+angeben? Das ganze ist ähnlich wie wir das auch  
+
+00:02:07.360 --> 00:02:12.580
+schon bei den Segmenten bei unserem Kreis hatten. 
+Umso mehr Zwischenschritte wir haben, umso mehr  
+
+00:02:12.580 --> 00:02:18.410
+Polygone werden generiert und umso komplexer 
+wird euer finales Objekt. Deswegen ist es hier  
+
+00:02:18.410 --> 00:02:22.700
+wichtig zu schauen: was ist die tatsächliche 
+Auflösung die ich brauche, zum Beispiel für  
+
+00:02:22.700 --> 00:02:28.310
+meinen 3D-Druck oder für die Fräse und was sind 
+einfach Punkte die überflüssig sind. Wenn wir  
+
+00:02:28.310 --> 00:02:33.080
+jetzt hier zum Beispiel mal 32 eintragen, um die 
+Auflösung bisschen hoch zu drehen. Sehen wir,  
+
+00:02:33.080 --> 00:02:38.150
+dass wir wesentlich weichere Kanten bekommen 
+und nicht mehr so stark die Zwischenschritte  
+
+00:02:39.080 --> 00:02:48.440
+sehen. Die nächste extrude-Funktion ist 
+extrudeRectangular. Hier geben wir auch  
+
+00:02:48.440 --> 00:02:57.230
+wieder eine Höhe an und zusätzlich geben wir jetzt 
+noch eine "size" an. Geben 10 an. Diese Funktion  
+
+00:02:57.230 --> 00:03:04.250
+müsst ihr euch im Grunde so vorstellen, dass ein 
+Rechteck entlang oder Grundlinie eures Körpers  
+
+00:03:04.250 --> 00:03:09.230
+entlang gezogen wird und dieses Rechteck 
+hat sozusagen eine Breite, jetzt von zehn  
+
+00:03:09.230 --> 00:03:15.890
+Einheiten und eine Höhe von 100 Einheiten. Und die 
+läuft jetzt einmal entlang der Innenkante eures  
+
+00:03:15.890 --> 00:03:20.150
+Objektes entlang. Da sieht man zum Beispiel auch 
+ganz gut, wenn jetzt einfach nur unser Rechteck  
+
+00:03:20.150 --> 00:03:24.200
+hier oben durch einen Kreis austausche, 
+der braucht natürlich dann einen Radius.
+
+00:03:24.200 --> 00:03:32.150
+Und sehen dann auch hier jetzt, 
+dass dieses Rechteck einmal  
+
+00:03:32.150 --> 00:03:36.320
+entlang der Kreislinie fährt und 
+dadurch dieses Objekt generiert.
+
+00:03:36.320 --> 00:03:49.160
+Die dritte Funktion ist extrudeRotate. 
+Die ist ein bisschen weird, finde ich  
+
+00:03:49.160 --> 00:03:57.080
+zumindest. Hier geben wir einmal den 
+"startAngel" an, auch wieder in Radians,  
+
+00:03:57.080 --> 00:04:04.280
+fangen wir mal bei 0 an. Und dann 
+müssen wir noch den endAngel eingeben,  
+
+00:04:04.280 --> 00:04:12.620
+den definieren wir einfach durch "angle". 
+Nehmen wir mal 90 Grad. Und dann können  
+
+00:04:12.620 --> 00:04:17.120
+wir, wie bei allen runden Objekten auch noch 
+die "segments" angeben. Die machen wir mal 32.
+
+00:04:17.720 --> 00:04:26.320
+Was hier nun passiert: ihr müsst euch vorstellen, 
+unser Rechteck wird auf die Seite gekippt und  
+
+00:04:26.320 --> 00:04:34.360
+dreht sich dann um die eigene Achse und generiert 
+beim Drehen den 3D-Körper. Das sieht man ganz gut,  
+
+00:04:34.360 --> 00:04:39.100
+wenn man nicht nur 90 Grad sondern 180 
+Grad macht. Dann sehen wir nämlich jetzt  
+
+00:04:39.100 --> 00:04:44.470
+hier im Querschnitt wieder unser Rechteck 
+und wenn ich das jetzt zum Beispiel mal  
+
+00:04:44.470 --> 00:04:47.680
+durch einen Circle austausche oder nehme 
+"ellipse", dann sieht man es noch besser.
+
+00:04:47.680 --> 00:04:53.290
+Geben der einen ungleichen Radius.
+
+00:04:53.290 --> 00:05:04.210
+Und sehen jetzt hier unsere Ellipse. Hier 
+nochmal die Grundform. Die jetzt hier auf  
+
+00:05:04.210 --> 00:05:10.060
+die Seite gekippt wird und sich dann um sich 
+selber dreht und dabei dieses neue 3D-Objekt  
+
+00:05:10.060 --> 00:05:15.610
+generiert. Wenn wir das Ganze zum beispiel auf 360 
+Grad, also dass es sich einmal komplett um sich  
+
+00:05:15.610 --> 00:05:21.580
+selbst dreht. Bekommen wir dann entsprechend 
+ein komplett rundes Objekt, wo wir dann im  
+
+00:05:21.580 --> 00:05:28.420
+querschnitt unsere "ellipse" haben, um das ganze 
+noch mal auf das "rectangle" zurück zu machen.
+
+00:05:28.420 --> 00:05:35.860
+Also hier, wenn wir von der Seite daraufschauen,  
+
+00:05:35.860 --> 00:05:42.550
+sehen wir wieder unser Rechteck und von oben sehen 
+wir sozusagen die Rotation unseres Rechtecks.

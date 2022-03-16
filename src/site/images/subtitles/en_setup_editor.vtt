@@ -1,0 +1,89 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:09.360
+The most important software we will 
+use in this seminar is a code editor.  
+
+00:00:10.160 --> 00:00:15.680
+You can use any code editor you want. I recommend 
+visual studio code. It's a free software from  
+
+00:00:15.680 --> 00:00:21.760
+Microsoft, that you can use to edit code. The 
+most important bit is that you use an actual  
+
+00:00:21.760 --> 00:00:27.520
+code editor. Code editors are slightly 
+different to other text editing software.  
+
+00:00:29.200 --> 00:00:32.800
+If you're using a code editor 
+and you open a text file,  
+
+00:00:33.360 --> 00:00:40.960
+you see the raw text information of that specific 
+file and this is very different to how other word  
+
+00:00:40.960 --> 00:00:48.480
+processors are working. If we switch for example 
+to a software that allows you to format text. And  
+
+00:00:48.480 --> 00:00:53.680
+in this case we have just a small bit of text and 
+i chose one word that i made bold and cursive.  
+
+00:00:55.360 --> 00:01:00.880
+If i save this now as a DOCX file for example. 
+The the standard Microsoft word format.  
+
+00:01:01.680 --> 00:01:07.920
+Then it does not only save our text here, but 
+it creates a document that also stores all the  
+
+00:01:07.920 --> 00:01:14.320
+information about the formatting in a markup 
+document. And if we want to inspect this. I've  
+
+00:01:14.320 --> 00:01:21.600
+already prepared this here. This is the DOCX file. 
+The DOCX file is actually not a text document.  
+
+00:01:21.600 --> 00:01:28.960
+It's a zip file, which contains a lot of other 
+documents. So if i just rename a DOCX file to ZIP  
+
+00:01:28.960 --> 00:01:35.920
+and unzip it. I see that there are multiple 
+folders and documents inside this folder  
+
+00:01:36.800 --> 00:01:44.080
+and the word document.xml file contains 
+our actual information about the document.  
+
+00:01:44.640 --> 00:01:52.800
+And i can now see here that the word "hello world" 
+was now encapsulated in all this additional markup  
+
+00:01:52.800 --> 00:02:00.000
+language. So now we see the actual raw document 
+and not the formatted document as it is presented  
+
+00:02:00.000 --> 00:02:05.120
+by word or other word processors. This is 
+the important difference. If you're using a  
+
+00:02:06.400 --> 00:02:13.360
+code editor you're seeing the raw text information 
+of the text file and not some formatted version  
+
+00:02:13.360 --> 00:02:18.640
+that is actually being generated into 
+a completely different file format.  
+
+00:02:19.440 --> 00:02:22.800
+So whatever code editor you 
+use, your are completely free,  
+
+00:02:22.800 --> 00:02:33.440
+but you need to use a code editor to work with 
+the tutorials that we are doing in this seminar.

@@ -19,6 +19,11 @@ eleventyNavigation:
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/wfy4LBTSbRq497D
+en: https://fhpcloud.fh-potsdam.de/s/akY5paZyjwHL8BJ
+-->
+
 ```js
 const {polygon} = jscad.primitives;
 ```
@@ -69,6 +74,11 @@ const poly = polygon({
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/NGxciZpp9xAHtnD
+en: https://fhpcloud.fh-potsdam.de/s/9TCcQPxeA3zmZSC
+-->
+
 ```js
 const {polyhedron} = jscad.primitives;
 ```
@@ -84,6 +94,7 @@ Even round shapes, when observed closely consist of segments. Today those segmen
 
 Why triangles? Triangles are the most simple shape and a triangle is always flat. You cannot bend a triangle. Think about a piece of paper. If you cut out a triangle, you can move each corner up and down, but the surface will always stay even. Do the same with a square. If you only move one corner and the other three stay the same, you will bend the piece of paper and, thereby, create two triangles. Having a flat surface is for example important when you calculate how light is reflect from that surface, or how the 3D printer should construct the surface.
 
+DELETE - IMAGE ONLY
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/07-3d-adv/polyhedron-applied.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -145,6 +156,8 @@ If we provide each point individually, we have to make sure that they are correc
 To make it even more tricky, the order of points needs to be clockwise if you look from the outside onto a face. :)
 
 This is a lot to take in, but it gives you the ultimate power over any 3D shape that you would like to create. Its usually best to start with a sketch and figuring out, how to best structure our faces:
+
+DELETE - IMAGE ONLY
 
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/07-3d-adv/3d-adv-example-1.mp4" type="video/mp4">

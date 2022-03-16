@@ -1,0 +1,216 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.600
+Im letzten Video habe ich euch gezeigt wie ihr 
+über Punkte eigene Polygone in JSCAD erstellen  
+
+00:00:10.600 --> 00:00:16.810
+könnt. Jetzt werden wir das Ganze, dasselbe 
+Prinzip ins dreidimensionale übertragen. Denn  
+
+00:00:16.810 --> 00:00:21.520
+auch im dreidimensionalen können wir nicht nur 
+diese Primitives, Spheres und Cubes erstellen,  
+
+00:00:21.520 --> 00:00:26.830
+sondern wir können unsere 3D-Objekte von Grund auf 
+selber bauen. Hierfür ist es wichtig zu wissen,  
+
+00:00:26.830 --> 00:00:32.620
+dass alle 3D-Körper, auch wenn sie Rundungen 
+haben, egal wie komplex sie sind, auf ihrer  
+
+00:00:33.160 --> 00:00:39.880
+untersten Basis, sind sie immer aus Dreiecken 
+aufgebaut. Und diese Dreiecke bauen sich dann  
+
+00:00:39.880 --> 00:00:46.420
+aus drei Punkten auf. Diese Punkte werden in der 
+Regel vertex oder vertices genannt. Dann gibt es  
+
+00:00:46.420 --> 00:00:52.630
+die edges, also sozusagen die Kanten, die diese 
+Punkte verbinden. Und immer ein einzelnes Dreieck  
+
+00:00:52.630 --> 00:00:59.410
+wird auch face genannt. Deswegen wenn wir unsere 
+3D-Körper erstellen, müssen wir als allererstes  
+
+00:00:59.410 --> 00:01:05.620
+die vertices definieren, also die Eckpunkte 
+unserer ganzen Dreiecke. Und danach definieren  
+
+00:01:05.620 --> 00:01:11.170
+wir die unterschiedlichen Faces. Ganz wichtig, 
+an dieser Stelle schon mal, die Reihenfolge ist  
+
+00:01:11.170 --> 00:01:15.910
+wieder extrem wichtig. Wir hatten das ja schon 
+bei dem Polygone, das wenn wir im Uhrzeigersinn  
+
+00:01:15.910 --> 00:01:20.860
+die Sachen angeben, die Polygone angeben, dass es 
+dann Flächen sind und gegen den Uhrzeigersinn sind  
+
+00:01:20.860 --> 00:01:26.830
+dann Löcher in den Flächen. Bei den faces ist es 
+ein ganz klein bisschen anders, wenn wir hier im  
+
+00:01:26.830 --> 00:01:32.800
+Uhrzeigersinn rumgehen, beschreibt es sozusagen 
+die Seite von der wir auf den face draufschauen.  
+
+00:01:32.800 --> 00:01:38.020
+Also wir definieren sozusagen, was außen und 
+was innen ist. Denn zum Schluss wollen wir ja  
+
+00:01:38.020 --> 00:01:44.320
+einen geschlossenen 3D-Körper haben, den wir dann 
+genau definieren können und dafür ist es wichtig  
+
+00:01:44.320 --> 00:01:50.470
+zu definieren was die Außenseite ist. Deswegen 
+stellt euch immer vor, ihr schaut von außen auf  
+
+00:01:50.470 --> 00:01:57.970
+euren face drauf und geht dann im Uhrzeigersinn 
+einmal außen rum. Hierfür haben wir in JSCAD die  
+
+00:01:57.970 --> 00:02:05.410
+"polyhedron" Funktion und als allererstes geben 
+wir unsere Punkte an. Hier ist wichtig, wir können  
+
+00:02:05.410 --> 00:02:10.060
+theoretisch auch Punkte mehrfach angeben, aber 
+normalerweise versucht man das zu vermeiden. Also  
+
+00:02:10.060 --> 00:02:15.280
+wir geben jeden Punkt nur einmal an, auch wenn 
+er dann später sozusagen von mehreren Dreiecken  
+
+00:02:15.280 --> 00:02:20.170
+gemeinsam genutzt wird. Wie hier zum Beispiel. 
+In dem Beispiel haben wir diesen Mittelpunkt  
+
+00:02:20.170 --> 00:02:25.030
+und dieser Mittelpunkt wird von allen Dreiecken 
+genutzt. Wir geben in unserer Points-Liste aber  
+
+00:02:25.030 --> 00:02:30.610
+nur einmal an und sagen dann bei den faces nur 
+den "index", welchen Punkte wir haben wollen. Also  
+
+00:02:30.610 --> 00:02:36.370
+fangen wir mit einem ganz einfachen Beispiel 
+an. Wir definieren einfach mal ein Quadrat.
+
+00:02:36.370 --> 00:02:47.170
+Dafür müssen wir dann unsere vier Punkte 
+angeben. Haben also ich hier einen Array  
+
+00:02:47.170 --> 00:02:50.110
+wo wir jetzt unsere vier Außenpunkte definieren.
+
+00:02:55.770 --> 00:03:07.320
+Von hier gehen wir nach 50/- 50, 50/50 und - 
+50/50. Das sind jetzt unsere vier Außenpunkte.  
+
+00:03:07.320 --> 00:03:12.720
+Aber wir müssen daraus jetzt Dreiecke machen, 
+damit das Ganze funktioniert. Also wir fangen  
+
+00:03:12.720 --> 00:03:17.130
+jetzt im Uhrzeigersinn oben-links in der Ecke 
+an und gehen nach rechts dann runter und dann  
+
+00:03:17.130 --> 00:03:22.050
+wieder nach oben zurück. Hierfür stellen wir 
+uns jetzt hier ein Array und müssen jetzt den  
+
+00:03:22.050 --> 00:03:29.400
+index also die Nummer aus der Reihenfolge der 
+Punkte angeben. Erinnerung Arrays fangen immer  
+
+00:03:29.400 --> 00:03:34.350
+bei 0 an. Wir fangen also mit dem ersten 
+Punkt an, gehen dann zum zweiten Punkt,  
+
+00:03:34.350 --> 00:03:43.140
+gehen dann runter zum dritten Punkt und 
+dann virtuell wieder hoch zum ersten,  
+
+00:03:43.140 --> 00:03:48.600
+um das Ganze zu schließen. Wenn ich das jetzt 
+abspeicher und mir die Vorschau anschaue,
+
+00:03:48.600 --> 00:03:54.630
+dann sehe ich, dass ich hier 
+meinen z-Value vergessen habe.
+
+00:03:54.630 --> 00:04:08.400
+Wir sind jetzt im dreidimensional. Und sehe 
+jetzt hier die Fläche die ich abgegangen bin.  
+
+00:04:08.400 --> 00:04:14.490
+Und jetzt die Reihenfolge, wenn ich das ganze 
+jetzt auf den Kopf dreh verschwindet es. Weil  
+
+00:04:14.490 --> 00:04:19.380
+ich von hinten das Objekt nicht sehen kann. 
+Ich kann es immer nur von oben aus sehen,  
+
+00:04:19.380 --> 00:04:25.590
+ganz wichtig. So jetzt wollen wir unser 
+Quadrat aber natürlich schließen. Also  
+
+00:04:25.590 --> 00:04:31.980
+brauchen wir einen zweiten face. Und der zweite 
+face beginnt unten rechts in der Ecke also bei 2,  
+
+00:04:31.980 --> 00:04:41.130
+geht dann zu 3 und dann wieder zu 0 nach 
+oben. Speicher es ab und haben jetzt hier  
+
+00:04:41.670 --> 00:04:47.130
+unsere Fläche. Und ich könnte zum Beispiel einfach 
+mal spaßeshalber jetzt die Reihenfolge umdrehen.
+
+00:04:47.130 --> 00:04:53.430
+Dann haben wir jetzt hier unser 
+Dreieck und wenn ich es umdrehen  
+
+00:04:53.430 --> 00:05:00.090
+haben wir unser anderes Dreieck. Also ganz 
+wichtig, immer an die Reihenfolge denken,  
+
+00:05:00.090 --> 00:05:04.020
+in der ihr das Ganze angebt. Und immer 
+dran denken, ihr schaut auf den face drauf,  
+
+00:05:04.020 --> 00:05:10.680
+dann im Uhrzeigersinn. Für so einfache shapes 
+ist das erst mal ganz einfach, aber dann wird  
+
+00:05:10.680 --> 00:05:15.390
+es durchaus komplex. Ich habe euch hier unter 
+dem Video einfach mal ein paar Beispiele gebaut,  
+
+00:05:15.390 --> 00:05:20.820
+wo ich zeige, wie ich selber an diesen Prozess 
+herangehe. Auch ich kann das nicht alles komplett  
+
+00:05:20.820 --> 00:05:23.820
+im Kopf machen. Auch ich mache das in der 
+Regel so, dass ich mir ein Stück Papier nehme,  
+
+00:05:23.820 --> 00:05:28.860
+ich mir meine Shape aufzeichne, dann überlege 
+wie ich die verschiedenen Dreiecke platziere,  
+
+00:05:28.860 --> 00:05:33.000
+wie ich dann eine FOR-Schleife zum Beispiel 
+machen kann, um diese Dreiecke zu generieren.  
+
+00:05:33.000 --> 00:05:37.830
+Und darüber dann mich sozusagen langsam 
+Schritt für Schritt meinem 3D-Körper nähere

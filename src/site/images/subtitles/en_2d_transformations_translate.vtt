@@ -1,0 +1,164 @@
+WEBVTT
+
+00:00:05.200 --> 00:00:09.360
+The more objects we need to draw, the more 
+complicated it becomes to write the code to  
+
+00:00:09.360 --> 00:00:14.960
+calculate where each individual object needs 
+to be placed. Let's imagine we have a very  
+
+00:00:14.960 --> 00:00:20.960
+simple pattern here and we want to repeat this 
+pattern multiple times across our canvas. We  
+
+00:00:20.960 --> 00:00:29.840
+could write a loop now and let's say we start 
+at 0 and we repeat this pattern 10 times.
+
+00:00:32.080 --> 00:00:33.760
+Now we would need to calculate  
+
+00:00:35.600 --> 00:00:44.080
+using the x variable where each of these objects 
+needs to be placed, but thanks to p5.js there is  
+
+00:00:44.080 --> 00:00:49.920
+a little tool that helps us do this a lot faster. 
+And this is the so-called translate function. The  
+
+00:00:49.920 --> 00:00:56.160
+translate function takes three parameters for 
+x y and z. And translate allows us to move our  
+
+00:00:56.160 --> 00:01:02.800
+coordinate system, the origin of our coordinate 
+system around, so changing actually where 0/0  
+
+00:01:03.520 --> 00:01:10.400
+is. When we draw something at 0/0 then translate 
+our coordinate system say 40 pixels to the right,  
+
+00:01:11.120 --> 00:01:19.120
+then the next time we draw something at 0/0, 
+it will be at 40. So just to demonstrate this,  
+
+00:01:19.120 --> 00:01:24.400
+let's say we move our coordinate system every 
+time the loop runs 40 pixel to the right.  
+
+00:01:25.520 --> 00:01:33.280
+If i save this, we now have 10 times our little 
+pattern and we can see that every time the loop  
+
+00:01:33.280 --> 00:01:40.240
+is run, it's moved 40 pixels to the right. 
+But very important as our code is running,  
+
+00:01:40.800 --> 00:01:46.000
+the translates add up to one another. The 
+first time i move it 40 pixel to the right,  
+
+00:01:46.560 --> 00:01:52.000
+the next time i say another 40 pixels, it's not 
+starting at zero, but it's starting at the last  
+
+00:01:52.000 --> 00:02:01.840
+time i use translate. So thereby, we get 40, 80, 
+etc. We could also do it the other way around,  
+
+00:02:01.840 --> 00:02:08.080
+when we want to return to our zero zero origin 
+that we had in the beginning, we can do this very  
+
+00:02:08.080 --> 00:02:15.680
+simply, we simply say "push". "Push" stores 
+our current setup of our coordinate system  
+
+00:02:16.320 --> 00:02:22.080
+and when we want to return to the state that 
+we saved using "push", we can simply say "pop".  
+
+00:02:22.800 --> 00:02:28.640
+And then we're going back to the one that we 
+saved through push. So now we have the same code,  
+
+00:02:28.640 --> 00:02:34.480
+but thanks to push and pop, we are always starting 
+back at the beginning. And you can use push  
+
+00:02:34.480 --> 00:02:41.440
+and pop multiple times inside one another, to 
+store multiple states, return to states, etc.  
+
+00:02:42.880 --> 00:02:50.560
+So in this case, if i want this to work, i would 
+need to multiply the 40 times our variable.  
+
+00:02:50.560 --> 00:02:55.360
+And now we get this pattern 40 times 
+0, 40 times 1, 40 times 2, and so on.  
+
+00:02:56.240 --> 00:03:02.480
+And of course we could also do this for the y 
+axis. Let's simply add another loop inside here  
+
+00:03:03.440 --> 00:03:11.840
+and change this to the y variable 
+and add this to our translate.
+
+00:03:15.760 --> 00:03:21.440
+And now we have drawn the pattern a lot more often 
+and we don't need to calculate the y parameter,  
+
+00:03:21.440 --> 00:03:26.160
+the x parameter for all our individual 
+objects, but instead we can simply use  
+
+00:03:26.160 --> 00:03:31.840
+the translate function and, thereby, move 
+our pattern around. And we could even,  
+
+00:03:33.120 --> 00:03:39.280
+for example, say we want to add a little triangle 
+here. And triangles are always a bit tricky. If  
+
+00:03:39.280 --> 00:03:47.200
+you need to calculate where exactly the points of 
+the triangle are. Let's add a triangle here and  
+
+00:03:47.760 --> 00:03:57.760
+let's just use 0,0 5,10 -5,10. I always find it 
+hard if i'm somewhere in the coordinate system to  
+
+00:03:58.400 --> 00:04:03.120
+actually come up with the numbers for triangles. I 
+find it a lot more easier if i'm at zero and i can  
+
+00:04:03.120 --> 00:04:13.200
+simply use this kind of mirrored coordinates for 
+the triangle. To make it easier, i can now simply  
+
+00:04:13.200 --> 00:04:20.640
+use the translate function, to move our triangle 
+around. Oh, that's a little bit far to the right.
+
+00:04:23.520 --> 00:04:28.480
+Now i don't need to actually come up with the 
+correct coordinates for the triangle, but simply  
+
+00:04:29.120 --> 00:04:35.920
+locate it around the zero point and then just use 
+translate to move it around. And as i said before,  
+
+00:04:35.920 --> 00:04:39.680
+we use push in the beginning and then 
+we can use all the translates we want  
+
+00:04:39.680 --> 00:04:43.360
+and in the end we use the pop 
+function. And this will return us  
+
+00:04:43.360 --> 00:04:52.720
+to the state of our coordinate system 
+that we saved through the push function.

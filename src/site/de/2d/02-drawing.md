@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Canvas')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4", "/images/thumbnails/de_2d_drawing_canvas.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/en_canvas.mp4", "/images/thumbnails/en_2d_drawing_canvas.png", "en_2d_drawing_canvas", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4
 en:https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/en_canvas.mp4
@@ -35,7 +35,7 @@ function setup() {
 
 {{h2('Background')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4", "/images/thumbnails/de_2d_drawing_background.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/en_background.mp4", "/images/thumbnails/en_2d_drawing_background.png", "en_2d_drawing_background", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4
 en:https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/en_background.mp4
@@ -57,7 +57,7 @@ Different to the `createCanvas` command, we can use a variety of inputs to defin
 
 {{h2('Colors')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4", "/images/thumbnails/de_2d_drawing_colors.png", "de_2d_drawing_colors", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/en_colors.mp4", "/images/thumbnails/en_2d_drawing_colors.png", "en_2d_drawing_colors", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4
 en:https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/en_colors.mp4
@@ -97,7 +97,7 @@ Those are the things we will use, but there are even more possibilites to define
 
 {{h2('Shapes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4", "/images/thumbnails/de_2d_drawing_shapes.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/en_shapes.mp4", "/images/thumbnails/en_2d_drawing_shapes.png", "en_2d_drawing_shapes", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4
 en:https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/en_shapes.mp4
@@ -178,12 +178,11 @@ rect(10, 10, 40, 20);
 square(10, 10, 40);
 ```
 
-
-{{editor('/code/shapes', 'https://...')}}
+{{editor('/code/shapes', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/shapes/sketch.js')}}
 
 {{h2('Fills & Strokes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4", "/images/thumbnails/de_2d_drawing_fills.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/en_fills.mp4", "/images/thumbnails/en_2d_drawing_fills.png", "en_2d_drawing_fills", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4
 en:https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/en_fills.mp4
@@ -216,11 +215,11 @@ Besides colors we can also modify the stroke width of the shapes we draw:
 strokeWeight(5);
 ```
 
-{{editor('/code/fill', 'https://...')}}
+{{editor('/code/fill', '[https://...](https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/fill/sketch.js)')}}
 
 {{h2('Arcs')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4", "/images/thumbnails/de_2d_drawing_arc.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/en_arc.mp4", "/images/thumbnails/en_2d_drawing_arc.png", "en_2d_drawing_arc", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4
 en:https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/en_arc.mp4
@@ -243,10 +242,10 @@ arc(100, 100, 50, 50, 0, Math.PI, OPEN);
 
 > The **startAngle** and **endAngle** are provided in rad not degrees. 360 degrees are `2 * Math.PI`. So an easy way to work with degrees, is to simply convert it:<br />`Math.PI / 180 * YOUR_ANGLE`.
 
-{{editor('/code/arc', 'https://...')}}
+{{editor('/code/arc', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/arc/sketch.js')}}
 
 {{task("Task: Abstract Art", "Only use the commands we have learned so far, to create an abstract piece of art. For inspiration see the sketch below, or checkout the art section on the inspiration <a href='/de/inspiration'>page</a>.")}}
 
 {{inspiration('Hilma af Klint')}}
 
-{{editor('/code/klint', 'https://...', true)}}
+{{editor('/code/klint', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/klint/sketch.js', true)}}

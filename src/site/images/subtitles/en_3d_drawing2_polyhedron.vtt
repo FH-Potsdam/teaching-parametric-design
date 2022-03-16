@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:10.240
+In the last video we looked at how to build 
+our custom polygons. Now we're taking it a  
+
+00:00:10.240 --> 00:00:16.640
+step further, a dimension further. We're bringing 
+these custom polygon concepts to the 3D space.  
+
+00:00:17.600 --> 00:00:22.560
+In 3D it gets slightly more complicated. To 
+build completely custom shapes beyond the  
+
+00:00:22.560 --> 00:00:30.160
+primitives like sphere and cube, that we already 
+used. The fundamental concept of 3D bodies  
+
+00:00:30.160 --> 00:00:36.640
+in these kind of software solutions is that 
+those bodies are made up of individual triangles.  
+
+00:00:37.280 --> 00:00:43.840
+And almost every 3D body that you will find 
+somewhere, no matter if it has curves or anything,  
+
+00:00:44.880 --> 00:00:50.640
+when it comes down to the rendering process and 
+to building the actual geometry of your object,  
+
+00:00:51.200 --> 00:00:59.040
+this object will have tons of little triangles 
+that make up the whole structure of your 3D body.  
+
+00:01:01.040 --> 00:01:05.600
+The idea is that we have individual points, 
+these are also called vertexes or vertices  
+
+00:01:06.320 --> 00:01:08.960
+and these points are then connected through edges  
+
+00:01:09.840 --> 00:01:17.040
+and these three edges they are building 
+one face. So we have an array of points  
+
+00:01:17.040 --> 00:01:23.680
+and then we have a list of faces and those 
+faces are defined by the indices of our points.  
+
+00:01:24.480 --> 00:01:31.040
+And we can reuse our points. In this example 
+here we have this middle point. the center point,  
+
+00:01:31.760 --> 00:01:38.480
+and the center point is used in all the individual 
+triangles over and over again. But we do not need  
+
+00:01:38.480 --> 00:01:43.840
+to redefine this point, but instead we just 
+use the index of the point in our point list.  
+
+00:01:44.400 --> 00:01:47.360
+And we can reuse this, but i will 
+show an example in just a second.  
+
+00:01:48.080 --> 00:01:52.800
+There's one little bit of information that 
+is important. In the polygons we already  
+
+00:01:52.800 --> 00:02:00.080
+learned that the order in which we provide our 
+points is very important. In polygons providing  
+
+00:02:00.080 --> 00:02:06.080
+points in clockwise order created shapes and 
+counterclockwise created holes inside of shapes.  
+
+00:02:07.040 --> 00:02:13.120
+In 3D bodies, providing our vertices in 
+clockwise order means that this is the  
+
+00:02:13.120 --> 00:02:20.480
+way we want to look at our face. So this is 
+how it is facing us. So in 3D bodies you have  
+
+00:02:20.480 --> 00:02:26.400
+an outer shell that we want to create, but if 
+you would look from the inside of your object  
+
+00:02:26.400 --> 00:02:33.760
+out of your object you couldn't see it. You can 
+only see the individual faces from the outside.  
+
+00:02:34.400 --> 00:02:39.840
+When you look from the outside on your face, you 
+need to provide the points in clockwise order.  
+
+00:02:41.120 --> 00:02:46.640
+Let's start with a very simple example here. 
+We have the polyhedron function. This helps  
+
+00:02:46.640 --> 00:02:53.040
+us create our own custom 3D bodies. We now 
+create a list of points, to create a square.  
+
+00:02:53.040 --> 00:02:58.320
+So we need the four corners of our square, 
+so we start in the upper left corner.
+
+00:03:00.400 --> 00:03:04.240
+And we need a third dimension now 
+that we are in 3D space. We will now  
+
+00:03:04.240 --> 00:03:08.720
+make a plane and so we don't need to worry 
+about the third dimension at the moment.  
+
+00:03:09.520 --> 00:03:14.400
+And then we need all the other corners of our 
+squares. So we go to the upper right corner  
+
+00:03:15.600 --> 00:03:25.040
+and the lower right and the lower left and now 
+we need to define our faces, our triangles.  
+
+00:03:25.920 --> 00:03:31.360
+We will start in the upper left corner, and 
+remember: arrays start with the index of zero,  
+
+00:03:31.360 --> 00:03:38.560
+so the first point is zero. And then now we go 
+clockwise to the second point and the third point.  
+
+00:03:39.360 --> 00:03:47.200
+And if i save this now, switch to the 
+preview, we can now see our rectangle here. So  
+
+00:03:47.200 --> 00:03:54.320
+we started in the upper left corner moved to the 
+upper right and then we moved to the bottom. But  
+
+00:03:54.320 --> 00:04:02.000
+if i rotate this now and look from the bottom 
+onto our plane, it disappears. We can only see it  
+
+00:04:02.000 --> 00:04:08.800
+from the side where the points are ordered in 
+clockwise direction. Okay so let's add the second  
+
+00:04:08.800 --> 00:04:15.280
+triangle of our square. Here we will start at the 
+second point, third point, go to the fourth and  
+
+00:04:15.280 --> 00:04:24.000
+then to the first again. And if i save this, we 
+now get our complete square. And again invisible  
+
+00:04:24.000 --> 00:04:30.160
+from the bottom. Just to demonstrate this again, 
+i will simply switch the order of points here.  
+
+00:04:32.160 --> 00:04:36.480
+And now we have one visible from here 
+and one visible from the other side.  
+
+00:04:37.600 --> 00:04:44.400
+So for simple shapes this sounds quite easy 
+to do, but obviously the more complex your  
+
+00:04:44.400 --> 00:04:49.360
+3D bodies become, the more complex it becomes 
+to set up the points, to set up the vertices,  
+
+00:04:49.360 --> 00:04:54.480
+to build loops to set up these vertices. 
+So i've provided you with a couple of  
+
+00:04:54.480 --> 00:05:01.040
+examples below this video of how i approach 
+this task of creating custom 3D bodies.  
+
+00:05:02.720 --> 00:05:08.400
+And also for me, and i've been doing this 
+for years, I still struggle creating these  
+
+00:05:08.400 --> 00:05:14.480
+3D bodies from code. So what I usually do is, 
+I start with a sketch on paper and try to set  
+
+00:05:14.480 --> 00:05:21.360
+up how I want to build my triangles, my vertices 
+and then slowly start building up the 3D body and  
+
+00:05:21.360 --> 00:05:33.600
+experiment with different ways of for-loops and 
+see how i can get to my final idea of a 3D body

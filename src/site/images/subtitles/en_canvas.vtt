@@ -1,0 +1,89 @@
+WEBVTT
+
+00:00:05.200 --> 00:00:11.360
+Now that we have set up our first project, we 
+will now start drawing. So the first thing we  
+
+00:00:11.360 --> 00:00:17.520
+need to do is create the canvas, so that we can 
+draw on something. what we do here is, we use  
+
+00:00:17.520 --> 00:00:22.000
+the "createCanvas" command. The "createCanvas" 
+command allows us to create the drawing canvas.  
+
+00:00:22.560 --> 00:00:28.640
+the "createCanvas" command takes two parameters. 
+The "width" and the "height" of our canvas.  
+
+00:00:29.360 --> 00:00:33.920
+The first parameter is the width the second is 
+the height. If i change the width for example  
+
+00:00:34.480 --> 00:00:41.120
+to 600 pixels and save it, we can immediately 
+see that the width of our canvas has changed.  
+
+00:00:42.880 --> 00:00:49.760
+There is one additional advice here. Many of you 
+might be working on a high pixel density displays,  
+
+00:00:49.760 --> 00:00:56.480
+like a retina display. In this case p5.js 
+automatically detects the pixel density and  
+
+00:00:56.480 --> 00:01:04.080
+increases the size of your canvas. The idea 
+is here that the graphics you draw always  
+
+00:01:04.080 --> 00:01:10.640
+look super crisp and nice on a high resolution 
+display, but if you're trying to export later  
+
+00:01:10.640 --> 00:01:15.920
+on something that needs to have an exact pixel 
+width and height, this is counter-productive.  
+
+00:01:17.680 --> 00:01:24.240
+What we can do is to achieve this, we can 
+simply define the pixel density ourself,  
+
+00:01:25.200 --> 00:01:31.600
+for example if we want something as an 
+output that has exactly 600 times 400 pixels.  
+
+00:01:32.240 --> 00:01:37.360
+We can just say "pixelDensity" one 
+and with if we save this now you,  
+
+00:01:37.360 --> 00:01:43.920
+might not see an immediate change, but 
+this graphic is now actually 600 times 400,  
+
+00:01:43.920 --> 00:01:47.520
+independent of what the actual 
+pixel density of your device is.
+
+00:01:49.600 --> 00:01:57.280
+The last thing: the default mode in which p5.js 
+creates graphics for us as raster or pixel-based  
+
+00:01:57.280 --> 00:02:02.640
+graphics, but maybe you're interested in a 
+vector graphic as an output. What you need  
+
+00:02:02.640 --> 00:02:11.280
+to do then is write SVG as a third parameter, to 
+our createCanvas function. Again you will probably  
+
+00:02:11.280 --> 00:02:16.960
+not see a difference in the beginning, but now 
+you have the option to export an SVG graphic.  
+
+00:02:18.320 --> 00:02:22.400
+I will later on in another video get 
+into details what the exact differences  
+
+00:02:22.400 --> 00:02:31.360
+between the two renderers are and 
+what you need to pay attention to

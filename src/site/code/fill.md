@@ -7,11 +7,11 @@ function draw(){
 
   stroke('black');
   strokeWeight(1);
-  fill(255, 0, 0);
-  circle(150, 150, 150);
+  fill(200, 0, 0);
+  circle(200, 200, 150);
 
-  stroke('red');
+  stroke(0);
   strokeWeight(5);
-  fill('rgba(0, 255, 0, 0.5)');
+  fill('rgba(100, 200, 100, 0.5)');
   circle(250, 250, 50);
 }</pre>

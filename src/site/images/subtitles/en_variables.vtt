@@ -1,0 +1,368 @@
+WEBVTT
+
+00:00:05.520 --> 00:00:12.720
+So far in our code we have always provided all 
+the parameters manually. In this case the fill  
+
+00:00:12.720 --> 00:00:20.720
+command, we defined 255 as a number as an input 
+for this command. The same goes for the circle  
+
+00:00:20.720 --> 00:00:26.880
+function, where we provide the x and the y as 
+well as the diameter as numbers, manually to  
+
+00:00:26.880 --> 00:00:33.840
+our function. But when we try to embrace the idea 
+of parametric design we're actually trying to go  
+
+00:00:33.840 --> 00:00:38.560
+beyond providing all these parameters manually, 
+because if we would provide them all manually, we  
+
+00:00:38.560 --> 00:00:45.280
+could also do all of this in a graphics software 
+and resize and position all the elements manually.  
+
+00:00:45.280 --> 00:00:50.800
+But the idea behind parametric design is 
+actually to define certain parameters and  
+
+00:00:50.800 --> 00:00:57.520
+then based on those parameters we generate our 
+shapes, we generate the layout that we want to  
+
+00:00:57.520 --> 00:01:06.560
+achieve. And here is a very simple example. We 
+start with our sketch, our canvas and we define  
+
+00:01:06.560 --> 00:01:13.200
+the sketch width and the sketch height. These are 
+our first two parameters. Then inside our sketch  
+
+00:01:13.200 --> 00:01:20.800
+we want to draw a rectangle and we will define the 
+width and the height for our rectangle, but the x  
+
+00:01:20.800 --> 00:01:27.680
+and the y position of our rectangle, we want to 
+calculate automatically. This will depend on the  
+
+00:01:27.680 --> 00:01:34.320
+sketch's size and the rectangle's size. And to go 
+a step further, we will draw another rectangle,  
+
+00:01:34.320 --> 00:01:41.760
+this one should as well be centered on our canvas, 
+but the size should be dependent on our original  
+
+00:01:41.760 --> 00:01:48.400
+rectangle. This rectangle, the second one, should 
+have a size 50% width of the original rectangle  
+
+00:01:48.400 --> 00:01:55.120
+and a height of 25% of our original rectangle. For 
+this rectangle we will not define any parameters  
+
+00:01:55.120 --> 00:02:00.720
+in advance, but calculate them on the fly. 
+Depending on the other parameters that we have.  
+
+00:02:02.400 --> 00:02:09.680
+If we want to apply this to our code, there is a 
+concept called variables, that we can use to store  
+
+00:02:09.680 --> 00:02:15.120
+information in. And we will use this, to store our 
+parameters, so that later on in the code, we can  
+
+00:02:15.120 --> 00:02:20.720
+use those parameters again. There's two different 
+types of variables that we need to know of,  
+
+00:02:21.360 --> 00:02:27.760
+the first one are the constants. They are defined 
+by writing the word "const", then we write a name  
+
+00:02:27.760 --> 00:02:34.160
+for our variable. Be careful not to use any kind 
+of variable names that are already defined by  
+
+00:02:34.160 --> 00:02:42.400
+p5.js or JavaScript. And you will figure this 
+out through error messages and other output.  
+
+00:02:42.400 --> 00:02:45.040
+For this one, i will use sketchHeight.
+
+00:02:47.360 --> 00:02:54.800
+define this as 400. A constant variable 
+cannot be changed in any way, throughout  
+
+00:02:54.800 --> 00:03:01.280
+the coding of our script. The idea is here to have 
+a constant variable that you can always rely on  
+
+00:03:01.280 --> 00:03:05.920
+being the same as you once defined. And you will 
+get an error message if you try to change it.  
+
+00:03:06.800 --> 00:03:11.920
+If you have a variable that will change over 
+time as you write your sketch, for example  
+
+00:03:11.920 --> 00:03:14.960
+you want the size to increase every time the draw  
+
+00:03:15.520 --> 00:03:22.480
+loop is running, then you need to define your 
+variable with "let". And now again, we define  
+
+00:03:22.480 --> 00:03:29.200
+a name for our variable and then we define 
+the input, the value, of our variable.  
+
+00:03:30.640 --> 00:03:37.600
+For the naming of variables you shouldn't use 
+any special characters, like dots or commas and  
+
+00:03:37.600 --> 00:03:44.640
+no spaces. And besides that you can use any 
+kind of number or letter from the alphabet  
+
+00:03:45.440 --> 00:03:54.160
+and just be careful not to use any spaces. 
+In JavaScript a certain style of writing  
+
+00:03:54.160 --> 00:03:59.520
+variables or functions in general or any kinds 
+of elements in general, and the idea is here,  
+
+00:03:59.520 --> 00:04:05.440
+if you have a function or variable that 
+consists of multiple words, you combine  
+
+00:04:05.440 --> 00:04:12.640
+the words by writing the first letter of each word 
+as a capital. There's different styles of writing  
+
+00:04:12.640 --> 00:04:19.280
+functions and variables in different programming 
+languages. In python for example they use  
+
+00:04:22.560 --> 00:04:28.880
+an underscore to differentiate between different 
+words and in JavaScript they use these capitals.  
+
+00:04:31.840 --> 00:04:35.760
+Now when we want to reuse 
+our variable we can simply  
+
+00:04:35.760 --> 00:04:42.400
+write the name, that we defined up here 
+in the code. I can just write sketchWidth
+
+00:04:44.560 --> 00:04:46.400
+and sketchHeight.
+
+00:04:48.720 --> 00:04:56.000
+Press on save. And see, it worked, now 
+anywhere in our code we can use the word  
+
+00:04:56.000 --> 00:05:02.880
+to refer to this value, that we defined in the 
+beginning of our sketch. And in variables we can  
+
+00:05:02.880 --> 00:05:11.360
+also store other things. We can for example 
+store text. To store text in a variable,
+
+00:05:13.680 --> 00:05:21.360
+we simply need to use the quotes again. Again it 
+doesn't matter if you use single or double quotes,  
+
+00:05:21.360 --> 00:05:26.000
+just use the same at beginning and 
+end. And now we can add some text here.  
+
+00:05:26.960 --> 00:05:33.200
+This is also referred to as a "string". 
+Then we have of course the bool.
+
+00:05:35.360 --> 00:05:41.360
+Boolean variable is simply true or 
+false. This can be helpful for example  
+
+00:05:41.360 --> 00:05:45.760
+if you're drawing something and in certain 
+instances you don't want it to be drawn.  
+
+00:05:45.760 --> 00:05:51.840
+Then you can check if the variable is true or 
+false and then draw your element or don't draw it.
+
+00:05:55.440 --> 00:05:59.520
+A quick add-on to the numeric 
+variable. In JavaScript  
+
+00:06:00.880 --> 00:06:04.480
+there's only numeric variables. 
+But in other programming  
+
+00:06:04.480 --> 00:06:10.160
+languages there is a differentiation 
+between integers and float. Integers are
+
+00:06:18.960 --> 00:06:23.040
+round numbers without any decimals. And the floats
+
+00:06:25.600 --> 00:06:31.040
+have decimals like 1.5. In JavaScript 
+this doesn't really matter,  
+
+00:06:31.040 --> 00:06:35.120
+but if you're later on maybe switching to 
+Python or any other programming languages,  
+
+00:06:35.120 --> 00:06:40.240
+you have to really watch out for if there is an 
+integer or a float that is being required here.  
+
+00:06:42.960 --> 00:06:49.360
+Now let's make use of our variables. First 
+off, we need two more variables. If we look at  
+
+00:06:49.360 --> 00:07:01.840
+our little drawing here, we have the box width 
+and the box height so let's also define those.
+
+00:07:06.880 --> 00:07:15.840
+Now i will change this to a rectangle down here 
+and then we have the boxWidth and boxHeight.
+
+00:07:18.160 --> 00:07:23.200
+And if i draw this, i now have the box here, 
+but we actually want it in the center so how  
+
+00:07:23.200 --> 00:07:29.600
+can we get it there. Now comes a little bit 
+of math into play. If we look at our sketch,  
+
+00:07:29.600 --> 00:07:36.960
+we have the sketchWidth and we have the boxWidth. 
+What is the x position of our box? It's the  
+
+00:07:36.960 --> 00:07:43.840
+sketchWidth minus the boxWidth, divided by two. 
+Because we have the same spacing on each side.  
+
+00:07:44.720 --> 00:07:53.040
+What we simply need to write here is: 
+sketchWidth minus boxWidth, divided by two.  
+
+00:07:53.680 --> 00:08:01.360
+And to make it mathematically correct, we need 
+to put some brackets around here. And then we  
+
+00:08:01.360 --> 00:08:08.400
+can do the same for the y position. I will just 
+organize this a little bit more neatly here,  
+
+00:08:09.280 --> 00:08:17.760
+by adding some line breaks. Again line breaks have 
+no effect in JavaScript on these kind of things.  
+
+00:08:19.280 --> 00:08:25.840
+And now we need to replace sketchHeight.
+
+00:08:26.960 --> 00:08:33.600
+And let's see if it worked out? Now 
+it's centered. What is nice about using  
+
+00:08:33.600 --> 00:08:39.200
+variables to define these kind of things and 
+calculate these kind of visual dependencies,  
+
+00:08:39.200 --> 00:08:46.160
+is that we can now simply change the parameters. 
+For example we can make our sketchWidth 700  
+
+00:08:47.600 --> 00:08:52.160
+and automatically everything is calculated. The 
+box is still in the middle, because we have this  
+
+00:08:52.160 --> 00:08:58.240
+mathematical function that calculates the correct 
+position automatically for us, which is great.  
+
+00:09:00.000 --> 00:09:02.800
+Let's take it a step further. 
+We have this additional box,  
+
+00:09:03.440 --> 00:09:09.840
+which should be dependent on the first one. We 
+will draw this in red, so that we can see it.  
+
+00:09:11.600 --> 00:09:18.480
+And i would simply copy the 
+code from here and now i will  
+
+00:09:19.120 --> 00:09:26.160
+add some additional variables. I could also 
+write all the calculations in the rect function,  
+
+00:09:26.160 --> 00:09:32.320
+but i usually find it a little bit more cleaner 
+and easier to read if you don't write super long  
+
+00:09:32.320 --> 00:09:37.200
+mathematical functions, but try to split it 
+up into smaller chunks, that you can reuse.  
+
+00:09:38.000 --> 00:09:48.160
+So for this, i will simply name it smallWidth 
+and smallHeight. The idea was, that we have the  
+
+00:09:48.160 --> 00:10:03.840
+boxWidth and we have 50%, so times 0.5 and the 
+boxHeight should be 25%, so it's times 0.25.
+
+00:10:05.200 --> 00:10:10.960
+I save this and then i simply need 
+to place my new variables in here.
+
+00:10:15.600 --> 00:10:20.880
+And of course they also need to go 
+here. And now you can already see  
+
+00:10:20.880 --> 00:10:26.400
+why it was useful to place the smallWidth 
+and smallHeight into additional variables,  
+
+00:10:27.040 --> 00:10:32.400
+because if you wouldn't have done this, we would 
+need to run the calculations in two places,  
+
+00:10:32.400 --> 00:10:37.520
+so twice. It's better to have them in a variable 
+here. We only need to do the calculations once.  
+
+00:10:38.480 --> 00:10:42.320
+Let's save this and see what happens. 
+Now we can see, we have this nicely  
+
+00:10:43.680 --> 00:10:50.240
+organized smaller rectangle in our bigger 
+rectangle. And again what is great about this,  
+
+00:10:50.240 --> 00:10:57.920
+i can now for example change the boxWidth to 
+100 and automatically, our boxes are resized  
+
+00:10:57.920 --> 00:11:04.000
+depending on one another. Now you can build upon 
+this and build more complex layouts that are being  
+
+00:11:04.000 --> 00:11:13.840
+generated based on the variables you define in one 
+place that are then being used all over your code.

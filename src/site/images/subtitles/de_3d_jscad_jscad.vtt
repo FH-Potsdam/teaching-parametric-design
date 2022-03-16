@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00:10.010 --> 00:00:17.150
+Das Prototypen mit OpenJSCAD funktioniert im 
+Grunde genauso wie wir es bei p5js kennen. Wenn  
+
+00:00:17.150 --> 00:00:21.410
+wir ein neues Projekt anlegen wollen, habe ich 
+euch zwei Boilerplates zur Verfügung gestellt.  
+
+00:00:21.410 --> 00:00:29.870
+Einmal 3d-exmample und einmal 3d-exmple-simple. 
+Simple ist ein bisschen weniger Basis-Code. Ich  
+
+00:00:29.870 --> 00:00:36.290
+empfehle euch das normale 3D-example für den 
+Anfang zu nehmen. Wir machen das genauso wie wir  
+
+00:00:36.290 --> 00:00:42.530
+es vorher gemacht haben bei p5js. Kopieren uns 
+einfach den Ordner, benennen das ganze dann um
+
+00:00:48.770 --> 00:00:53.330
+und innerhalb dieses Ordners finden wir 
+jetzt auch ähnliche wie bei p5js einige  
+
+00:00:53.330 --> 00:00:58.490
+Dateien. Die Index.html Datei ist 
+genauso wie wir das bei p5js kennen,  
+
+00:00:58.490 --> 00:01:03.890
+da werden sozusagen die verschiedenen Libraries 
+geladen, da wird unsere JS-Datei geladen und  
+
+00:01:03.890 --> 00:01:10.190
+die Index.json Datei das ist eine kleine 
+Information für die Index.html Datei die  
+
+00:01:10.190 --> 00:01:16.490
+am Anfang geladen wird und die Datei die wird 
+tatsächlich bearbeiten ist die index.js-Datei.
+
+00:01:17.690 --> 00:01:23.930
+Hier werden wir unseren eigentlichen 
+JS-Code schreiben. Diese Datei können  
+
+00:01:23.930 --> 00:01:31.190
+wir auch wieder genauso wie wir das vorher bei 
+p5js gemacht haben, mit dem Live-Server starten.  
+
+00:01:33.110 --> 00:01:38.930
+Einfach auf die Index.html Datei klicken, auf 
+Preview drücken und dann wird das Ganze hier  
+
+00:01:38.930 --> 00:01:46.010
+im Browser für uns geladen. Nachdem wir das 
+dann über den Live-Server gestartet haben,  
+
+00:01:46.010 --> 00:01:54.350
+bekommen wir im Browser eine Preview angezeigt. 
+Wie ich gesagt habe, mit OpenSCAD geht es primär  
+
+00:01:54.350 --> 00:01:59.150
+um das Erstellen der Objekte. Die Darstellung 
+ist eigentlich zweitrangig. Deswegen auch sowas  
+
+00:01:59.150 --> 00:02:04.970
+wie Farben etc spielen keine große Rolle. Wenn 
+wir das Ganze nachher 3D-Drucken wollen oder so,  
+
+00:02:04.970 --> 00:02:10.010
+brauchen wir individuelle 3D-Objekte und die 
+Farben definieren wir durch andere Systeme.  
+
+00:02:11.450 --> 00:02:17.450
+Deswegen, wenn wir hier jetzt z.B unseren Code 
+abspeichern, was wir nicht z.B hier mitgeben  
+
+00:02:17.450 --> 00:02:23.570
+können, ist die Einstellung wie das ganze jetzt 
+dargestellt wird. Dieses Preview Tool, um unsere  
+
+00:02:23.570 --> 00:02:27.830
+3D-Objekte anzuzeigen, hat sozusagen immer diese 
+Standardausrichtung. Also nicht wundern, wenn das  
+
+00:02:27.830 --> 00:02:33.050
+immer wieder zurückspringt. Im Preview-System 
+haben wir ein paar Optionen. Wir können uns zum  
+
+00:02:33.050 --> 00:02:38.330
+einen am Nullpunkt ein Grid anzeigen lassen, 
+was uns ein bisschen als Orientierung hilft,  
+
+00:02:38.330 --> 00:02:44.270
+genauso können wir uns diese kleinen Achsen 
+hier in der Mitte an- und ausschalten. Es gibt  
+
+00:02:44.270 --> 00:02:49.610
+noch ein Auto-Rotate, darüber wird das Ganze 
+dann sozusagen einfach automatisch gedreht.  
+
+00:02:51.110 --> 00:02:57.470
+Und das Interessanteste ist dann hier oben. Hier 
+können wir das Ganze nämlich jetzt exportieren und  
+
+00:02:57.470 --> 00:03:03.890
+zwar das Interessanteste ist das STL-Format. 
+Das können wir nämlich dann in jeder anderen  
+
+00:03:03.890 --> 00:03:09.530
+3D Software wieder öffnen und können das dann 
+z.B benutzen um das Ganze für den 3D Drucker  
+
+00:03:09.530 --> 00:03:16.550
+vorzubereiten oder die Fräse. Alles was ihr in 
+den letzten Einheiten im Rahmen von p5js bereits  
+
+00:03:16.550 --> 00:03:24.350
+gelernt habt: Variablen, Schleifen, etc. könnt 
+ihr alles nun wieder einsetzen. Es gibt ein paar  
+
+00:03:24.350 --> 00:03:32.510
+kleine Unterschiede. Das eine, wir hatten vorher 
+unsere Setup und unsere Draw-Funktion. Wir haben  
+
+00:03:32.510 --> 00:03:37.850
+jetzt lediglich noch diese Main-Funktion, dass ist 
+im Grunde dasselbe was wir vorher mit Draw hatten.  
+
+00:03:37.850 --> 00:03:44.090
+Also alles was wir in Main generieren, wird dann 
+sozusagen für uns gezeichnet und wir müssen am  
+
+00:03:44.090 --> 00:03:51.350
+Ende der Main-Funktion das zurückgeben was wir 
+dann als Objekt gerendert haben wollen. Das kann  
+
+00:03:51.350 --> 00:03:55.550
+ein einzelnes Objekt sein oder auch ein Array von 
+ganz vielen Objekten die wir hier zurückgeben.  
+
+00:04:00.530 --> 00:04:06.170
+In der ersten Zeile wird sozusagen diese JSCAD 
+Library für uns importiert und man kann dann  
+
+00:04:06.170 --> 00:04:11.570
+theoretisch die nächsten Zeilen auch weglassen, 
+aber die erleichtern uns die Schreibarbeit. Denn  
+
+00:04:11.570 --> 00:04:21.230
+wenn wir z.B jetzt einen Cube zeichnen wollen, 
+dann müssten wir JSCAD und dann die PRIMITIVES  
+
+00:04:21.230 --> 00:04:28.130
+und dann könnten wir jetzt z.B den Cube zeichnen. 
+Das ist ziemlich viel Schreibarbeit wenn wir jedes  
+
+00:04:28.130 --> 00:04:33.170
+Mal diesen ganzen Text hinschreiben müssen. Und 
+deswegen habe ich euch in der Boilerplate hier  
+
+00:04:33.170 --> 00:04:40.190
+bereits etwas vorbereitet, wo sozusagen diese 
+einzelnen Befehle aus den unterschiedlichen  
+
+00:04:40.190 --> 00:04:47.450
+Ebenen dieser Library für euch importiert werden 
+und weil diese Zeile hier das sozusagen für euch  
+
+00:04:47.450 --> 00:04:52.670
+importiert, kann man danach sozusagen den ersten 
+Teil einfach weglassen und direkt Cube schreiben.  
+
+00:04:53.990 --> 00:04:58.970
+Ihr könnt es natürlich auch weglassen und immer 
+diese langen Zeichenketten benutzen, das ist ann  
+
+00:04:58.970 --> 00:05:06.290
+diser Stelle euch überlassen. Ein Unterschied in 
+der Art und Weise wie die Funktion hier ausgeführt  
+
+00:05:06.290 --> 00:05:13.850
+werden oder designt sind: Denn die Funktionen sind 
+genauso Funktionen wie sie es p5js sind. In p5js  
+
+00:05:13.850 --> 00:05:19.970
+gab es immer unterschiedliche Parameter die wir 
+einer Funktion mitgegeben haben. In OpenJSCAD  
+
+00:05:20.570 --> 00:05:25.490
+ist es so gelöst, dass wir nicht verschiedene 
+Parameter einzeln übergeben, sondern wir übergeben  
+
+00:05:25.490 --> 00:05:31.310
+ein Objekt was dann verschiedene Attribute 
+enthält. Wie in diesem Beispiel hier übergeben  
+
+00:05:31.310 --> 00:05:37.130
+wir ein Objekt, das sieht man an den geschweiften 
+Klammern und das hat das Attribut "size" mit dem  
+
+00:05:37.130 --> 00:05:43.670
+Wert 50. Beim nächsten beim Sphere-Objekt haben 
+wir auch wieder ein Objekt das wir als Parameter  
+
+00:05:43.670 --> 00:05:49.130
+übergeben und in dem Fall haben wir drei Attribute 
+die innerhalb dieses Objekts enthalten sind.  
+
+00:05:50.510 --> 00:05:54.530
+Das ist sozusagen an der Stelle ein bisschen 
+anders. Also das man nicht sozusagen mehrere  
+
+00:05:54.530 --> 00:05:57.770
+einzelne Werte übergibt, sondern man 
+übergibt ein Objekt mit verschiedenen  
+
+00:05:57.770 --> 00:06:01.670
+Keys und entsprechenden Values. Ich 
+finde das auch ein bisschen eleganter,  
+
+00:06:01.670 --> 00:06:07.850
+weil dadurch kann manden ganzen Code besser 
+strukturieren und wir können uns z.B auch ein  
+
+00:06:07.850 --> 00:06:14.330
+Objekt mit den ganzen Parametern generieren und 
+dann an verschiedene Funktionen später übergeben

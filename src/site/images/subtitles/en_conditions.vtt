@@ -1,0 +1,149 @@
+WEBVTT
+
+00:00:05.600 --> 00:00:11.520
+In the last part i explained the different 
+types of loops. In this part i will talk about  
+
+00:00:11.520 --> 00:00:16.640
+conditions. We actually already talked about 
+conditions, when we talked about the loops,  
+
+00:00:16.640 --> 00:00:22.560
+because the middle part of our loop, the part 
+that defines how long the loop is running,  
+
+00:00:22.560 --> 00:00:30.560
+is a condition. In this case the condition is x 
+should be smaller or equal 10. And these kinds  
+
+00:00:30.560 --> 00:00:37.360
+of conditions can help us run certain bits of our 
+code only when certain criteria are met. And to do  
+
+00:00:37.360 --> 00:00:44.720
+this, we have the IF command, inside the brackets 
+here we can now define the condition that needs to  
+
+00:00:44.720 --> 00:00:52.320
+be met before the code inside the curly brackets 
+is run. For example we could say, okay, everytime  
+
+00:00:53.200 --> 00:01:03.920
+when x is equal 1, we want to fill our circle red. 
+If i would save this, everything would become red,  
+
+00:01:03.920 --> 00:01:10.320
+because x is met at the first circle and we know 
+the code runs from top to bottom, and as we don't  
+
+00:01:10.320 --> 00:01:17.760
+change the fill color afterwards, it stays red. 
+So what we need in this case, is we want to match  
+
+00:01:17.760 --> 00:01:26.080
+everything else besides our first condition, to do 
+this, there is the ELSE command. Now inside those  
+
+00:01:26.080 --> 00:01:34.080
+curly brackets we can target all elements that 
+are not equal one, here we can now say fill zero.
+
+00:01:36.160 --> 00:01:40.080
+And now only the first circle is filled 
+red and all the others are filled black.  
+
+00:01:41.520 --> 00:01:47.280
+There's another version, if we for example 
+want an additional condition on our x,  
+
+00:01:48.880 --> 00:01:55.440
+then we can write ELSE IF. Again we can define 
+a condition and we have some curly brackets to  
+
+00:01:55.440 --> 00:02:03.280
+define our filling here, we want to fill it green 
+and this time we want to target the last element  
+
+00:02:03.280 --> 00:02:13.440
+in our line here. So we want where x is equal 
+10. This should become green. Now we have two  
+
+00:02:13.440 --> 00:02:18.240
+conditions and something that matches everything 
+that hasn't been matched by the conditions before.  
+
+00:02:19.360 --> 00:02:25.840
+And of course there are other conditional 
+operators than equal. We already had the smaller  
+
+00:02:26.960 --> 00:02:34.240
+or equal sign, let's use five here, so we want 
+everything to become red that is smaller or equal  
+
+00:02:34.240 --> 00:02:40.480
+five. Of course we can not only use the smaller 
+than sign or we can use the bigger than sign.
+
+00:02:42.880 --> 00:02:48.480
+Notice that the green circle disappeared, 
+because our conditions are run from top  
+
+00:02:48.480 --> 00:02:53.760
+to bottom and as soon as one condition is met 
+the rest of the conditions are being ignored.
+
+00:02:57.360 --> 00:03:05.360
+The last one is the NOT five, so 
+this condition says every time x IS  
+
+00:03:05.920 --> 00:03:18.080
+NOT 5, this should be used. In this case, 
+everything besides 5 should be rendered red.
+
+00:03:18.080 --> 00:03:25.040
+Okay so let's take it a step further. This is very 
+simple we have one condition, on one variable that  
+
+00:03:25.040 --> 00:03:32.480
+we are using to apply different fillings. But we 
+can also use different conditions combined with  
+
+00:03:32.480 --> 00:03:41.920
+one another. To show this, i will add our nested 
+loop that we had before and create a grid to make  
+
+00:03:41.920 --> 00:03:52.880
+it a little bit more interesting. And add the Y 
+variable here. Run this to see if it works. Nice.  
+
+00:03:55.200 --> 00:04:01.680
+For example, there is the AND operator. 
+The AND operator allows us to match  
+
+00:04:01.680 --> 00:04:07.680
+two conditions at the same time so in our case 
+i only want the middle dot in the most upper  
+
+00:04:08.560 --> 00:04:18.640
+row of points, therefore i write, i want it where 
+X is equal five and Y is equal one. And if i save  
+
+00:04:18.640 --> 00:04:27.840
+this, the red only appears in the upper row. In 
+addition to AND there is also an OR operator.  
+
+00:04:29.760 --> 00:04:36.880
+For example, we could say, we want everything 
+green that is either x equals 10 OR y equals 10.  
+
+00:04:38.320 --> 00:04:46.160
+And then we have the last column as well as the 
+last row turning green. And using these kind of  
+
+00:04:46.160 --> 00:04:52.960
+IF statements, you can now build very complex 
+drawings that have certain conditions met and,  
+
+00:04:52.960 --> 00:05:04.480
+thereby, modify certain attributes or colors 
+or values inside your drawing function

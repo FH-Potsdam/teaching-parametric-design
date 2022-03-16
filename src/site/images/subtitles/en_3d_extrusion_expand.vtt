@@ -1,0 +1,32 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:10.560
+We used offset to generate an expanded 2D 
+object. And we can do the same for 3D bodies.  
+
+00:00:11.120 --> 00:00:18.720
+Here we use the expand function. So let's create 
+a new expand variable, where we can store our  
+
+00:00:18.720 --> 00:00:26.960
+new expanded object in. And the parameter that 
+we need is delta again. And then of course we  
+
+00:00:26.960 --> 00:00:32.800
+need to provide our cube object and now push 
+the whole thing into our objects area again.
+
+00:00:36.480 --> 00:00:39.920
+Save it. And now we have an expanded 3D object.  
+
+00:00:40.960 --> 00:00:45.200
+Expansion, depending on the complexity of 
+your object, is quite computing intensive.  
+
+00:00:46.480 --> 00:00:53.600
+If you change the segments, that should be used to 
+generate the round edges, you should be careful,  
+
+00:00:53.600 --> 00:01:04.880
+because the more segments you need, the longer it 
+will take to generate those expanded 3d objects.

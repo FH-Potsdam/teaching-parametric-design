@@ -1,0 +1,617 @@
+WEBVTT
+
+00:00:04.800 --> 00:00:09.920
+Welcome to the Parametric Design introduction. 
+Before we go into the actual parametric design,  
+
+00:00:09.920 --> 00:00:14.960
+i want to quickly go into the modern design 
+process, which is nowadays completely digital.  
+
+00:00:15.520 --> 00:00:21.520
+So we have various applications, coming from 
+various providers, like Adobe or the Sketch App,  
+
+00:00:21.520 --> 00:00:28.240
+which is used by many interface designers, or 
+Figma. And all those applications come with this  
+
+00:00:28.240 --> 00:00:35.120
+kind of idea, as Figma says it here, "bring ideas 
+to life". So that we can make anything possible  
+
+00:00:35.120 --> 00:00:40.960
+and be super innovative and super efficient. 
+But when we look at how we interact with those  
+
+00:00:40.960 --> 00:00:49.360
+applications, they of course have tons of great 
+features, but as they are designed by other people  
+
+00:00:49.360 --> 00:00:56.080
+for us, we also have to use their concepts, 
+their ideas of how we construct our designs.  
+
+00:00:56.080 --> 00:01:03.200
+So there's also certain limitations, when we use 
+those applications, about how we actually turn our  
+
+00:01:03.200 --> 00:01:11.680
+ideas into actual visual artifacts. And sometimes 
+we need to take a step back from using these great  
+
+00:01:11.680 --> 00:01:18.240
+applications and really think about our ideas and 
+can those applications, that have been designed  
+
+00:01:18.240 --> 00:01:24.960
+and developed by other people for us, actually are 
+they the right tool to bring our ideas to life.  
+
+00:01:24.960 --> 00:01:32.320
+Or are we actually only using the way that they 
+have developed for us, to create our designs.  
+
+00:01:32.320 --> 00:01:40.880
+And is this not really helping us bring our our 
+own ideas to life. And of course every medium has  
+
+00:01:40.880 --> 00:01:47.360
+its limitations. Even if we work on paper we are 
+limited by the tools that we have at hand. But in  
+
+00:01:47.360 --> 00:01:54.000
+paper for example, we still are able to do so much 
+more, we can crumble our paper, we can put it on  
+
+00:01:54.000 --> 00:02:02.720
+fire, we can dip it in liquid colors, paint, we 
+can do whatever we want with this piece of paper.  
+
+00:02:02.720 --> 00:02:08.320
+But in the digital world we are really limited 
+to those tools that others have provided for us.  
+
+00:02:08.880 --> 00:02:15.280
+And we're not really able to get completely 
+creative, because we need to use those tools. So  
+
+00:02:15.280 --> 00:02:21.040
+in this seminar, we're really trying to go beyond 
+those limitations. Try to think about how can we  
+
+00:02:21.040 --> 00:02:28.240
+create our own tools and really bring our ideas to 
+life. But when we're talking about digital design,  
+
+00:02:28.240 --> 00:02:33.200
+we also need to talk about what kind of data 
+are we generating through our design process.  
+
+00:02:33.920 --> 00:02:40.160
+So it's usually starts with raw text, this is 
+like the most raw kind of output we can generate.  
+
+00:02:40.720 --> 00:02:45.600
+On the next level, we have layouted documents. 
+So here every piece of text has additional  
+
+00:02:45.600 --> 00:02:50.640
+information, on how to present it, where it's 
+positioned on a page, what kind of font, what kind  
+
+00:02:50.640 --> 00:02:56.720
+of font size, etc. So these documents are usually 
+some kind of markup documents, where every piece  
+
+00:02:56.720 --> 00:03:03.840
+of text has additional information on styling, 
+etc. And then we have image data. Image data  
+
+00:03:04.560 --> 00:03:09.760
+has individual pixels, where each pixel has some 
+color information to it and that's basically  
+
+00:03:09.760 --> 00:03:16.400
+it. And then we have the next level, which is 
+vector information. So on vector information,  
+
+00:03:16.400 --> 00:03:22.000
+they're a lot more complex than the raster 
+pixel information, here we have individual paths  
+
+00:03:22.000 --> 00:03:29.760
+that are connected and here we have the 
+two layers, on the one hand we have 2D data  
+
+00:03:29.760 --> 00:03:35.360
+and then we have 3D data. Even 3D 
+data is made up of vector information,  
+
+00:03:35.360 --> 00:03:39.120
+so here we have individual points, 
+that are connected to one another,  
+
+00:03:39.120 --> 00:03:43.440
+those create different planes and through these 
+different planes we can create our bodies.  
+
+00:03:44.560 --> 00:03:51.200
+In this seminar we will primarily work with image 
+data and vector data. We will use these two types  
+
+00:03:51.200 --> 00:03:57.840
+of output, because we can use these two types of 
+outputs in a variety of different applications.  
+
+00:03:57.840 --> 00:04:03.040
+So the things we will generate through code, we 
+can then use to import them into other types of  
+
+00:04:03.040 --> 00:04:10.080
+applications. Again so when we talk about these 
+different types of files, the applications are  
+
+00:04:10.080 --> 00:04:16.240
+then our interpreters, they help us see what is 
+inside those files, and they help us manipulate  
+
+00:04:16.240 --> 00:04:21.840
+those files, through interactions, through the 
+interactions that the developers provide for us.  
+
+00:04:22.960 --> 00:04:27.120
+And when we talk about these kind of 
+files that we open through applications,  
+
+00:04:27.120 --> 00:04:30.960
+we also need to talk about the different 
+types of file formats that are out there.  
+
+00:04:31.600 --> 00:04:36.400
+There are so called proprietary formats. 
+Proprietary formats are used by companies to limit  
+
+00:04:37.120 --> 00:04:43.760
+the kinds of applications you open a file with. 
+So a propriety format can only be opened with  
+
+00:04:43.760 --> 00:04:48.720
+a certain application, from a certain company. 
+These are the type of files we are not looking  
+
+00:04:48.720 --> 00:04:54.000
+into in this seminar. We are looking for open 
+formats, open formats can be opened by a lot  
+
+00:04:54.000 --> 00:05:01.520
+of different applications. Ideally, an open format 
+is strongly standardized. A good example for this,  
+
+00:05:01.520 --> 00:05:10.640
+is the SVG format. The SVG format is a format that 
+allows us to store vector information in it. The  
+
+00:05:10.640 --> 00:05:17.680
+the SVG format is being generated and controlled 
+by an open community, by a big open community.  
+
+00:05:17.680 --> 00:05:23.360
+So it's very well documented, it's an open format 
+and it's well standardized. So nowadays thanks  
+
+00:05:23.360 --> 00:05:30.560
+to this process, any kind of a graphics editing 
+application can open an SVG format. So these are  
+
+00:05:30.560 --> 00:05:37.200
+the kinds of formats we're trying to export, so 
+that our information, that we generate our design  
+
+00:05:37.200 --> 00:05:43.200
+files, we generate are perfectly compatible, 
+with any kinds of applications out there.  
+
+00:05:44.800 --> 00:05:51.280
+The idea again instead of only having the 
+interpreter, our applications, and the interfaces  
+
+00:05:51.280 --> 00:05:57.440
+that are provided for us, we build code or we 
+build our own applications, through code, which  
+
+00:05:57.440 --> 00:06:03.440
+are then exporting certain design files, which 
+we can then open in other design applications  
+
+00:06:03.440 --> 00:06:10.080
+and continue working on them. And we will do this 
+for 3D information, as well as 2D information.  
+
+00:06:11.120 --> 00:06:18.320
+And we will use two different kinds of libraries 
+for this. We will use JSCAD, which is a 3D design  
+
+00:06:18.320 --> 00:06:23.920
+application and p5js, which we will use for 
+the raster information as well as 2D vector  
+
+00:06:23.920 --> 00:06:31.680
+information. And the output we can really use in a 
+variety of different processes, like fabrication:  
+
+00:06:31.680 --> 00:06:37.920
+like 3D printing or cnc milling or laser cutting 
+traditional printing or working with textiles  
+
+00:06:38.480 --> 00:06:44.160
+or even a cutter service, where you can cut 
+out things from paper or fabrics or other  
+
+00:06:44.160 --> 00:06:50.480
+materials. So there's a really really big variety 
+on how to use these different types of outputs.  
+
+00:06:50.480 --> 00:06:55.600
+And of course in digital design there's even more 
+ways you can use this. And just to give you a few  
+
+00:06:55.600 --> 00:07:01.840
+examples: from web development to AR and VR to 
+video, you could generate a series of images  
+
+00:07:01.840 --> 00:07:07.360
+and turn it into a video or to go even further 
+import data and visualize the data and, thereby,  
+
+00:07:07.360 --> 00:07:12.640
+create a data visualization, or you could use 
+the generated images as textures or bump maps  
+
+00:07:12.640 --> 00:07:18.960
+in any 3D application that you use for 
+3D design. What is parametric design?  
+
+00:07:19.680 --> 00:07:23.840
+There's a lot of different definitions 
+out there. So every community has another  
+
+00:07:23.840 --> 00:07:28.000
+definition and there's also other names for 
+parametric design, like generative design.  
+
+00:07:28.800 --> 00:07:34.640
+And for example in architecture Zaha Hadid and her 
+colleagues wrote a parametric design manifesto,  
+
+00:07:34.640 --> 00:07:40.480
+where they are trying to describe their personal, 
+individual perspective on parametric design in  
+
+00:07:40.480 --> 00:07:49.280
+architecture. But what brings all those different 
+definitions together is really the basic idea of  
+
+00:07:49.280 --> 00:07:56.960
+parametric design. In traditional design we move 
+and layout and design individual objects manually,  
+
+00:07:56.960 --> 00:08:02.400
+so we select colors, we define an exact size of 
+an object, we position it on a canvas somewhere.  
+
+00:08:03.200 --> 00:08:09.680
+In parametric design we're trying to remove 
+this manual process to a certain degree and  
+
+00:08:09.680 --> 00:08:15.680
+replace it through these parameters. The 
+parameters are basically definitions.  
+
+00:08:16.240 --> 00:08:23.760
+So for example let's say we have a simple design 
+here and we want to make these different radii,  
+
+00:08:23.760 --> 00:08:30.800
+the the inner radius, the outer radius. We want 
+to design through parameters. So we could define  
+
+00:08:30.800 --> 00:08:35.440
+an outer parameter, then we can define the 
+inner parameter and even make them related  
+
+00:08:35.440 --> 00:08:40.880
+to one another. So we could say the inner radius 
+for example is 90 percent of the outer radius.  
+
+00:08:41.840 --> 00:08:46.240
+The idea is really to define these different 
+parameters and based on these parameters we  
+
+00:08:46.240 --> 00:08:50.960
+generate our design. We can design ratios, so 
+there's a certain ratio between width and height  
+
+00:08:50.960 --> 00:08:57.120
+for example. Or between different thickness of 
+different borders and lines etc. And these for  
+
+00:08:57.120 --> 00:09:04.800
+example can help us design and develop complex 
+different patterns and variations of patterns.  
+
+00:09:05.360 --> 00:09:10.720
+And throughout the next few slides i will try to 
+show you a lot of different examples where we see  
+
+00:09:10.720 --> 00:09:17.920
+parametric design being applied in 
+various different fields. A good example,  
+
+00:09:18.560 --> 00:09:26.880
+a current example, is the latest Android system. 
+In the latest Android system, they developed a  
+
+00:09:26.880 --> 00:09:33.440
+new way of how the UI is designed or how the 
+colors of the UI are applied to the system.  
+
+00:09:35.120 --> 00:09:40.000
+And so here in the latest version, you can 
+choose a background image for your home screen  
+
+00:09:40.000 --> 00:09:46.240
+and based on the background image a few dominant 
+colors are being extracted from the image and  
+
+00:09:47.520 --> 00:09:52.320
+those colors from the image are then being 
+applied to the overall UI in the whole system.  
+
+00:09:53.200 --> 00:09:58.960
+And this shows really nicely what is extremely 
+important and very different to traditional design  
+
+00:09:58.960 --> 00:10:05.760
+in parametric design, because in parametric design 
+you really need to learn how to think in systems.  
+
+00:10:05.760 --> 00:10:11.040
+So you need to move away from designing small 
+individual objects, but really think about  
+
+00:10:11.040 --> 00:10:16.560
+the relationship between different objects, for 
+example think about the relationship of contrast  
+
+00:10:16.560 --> 00:10:22.000
+between different colors. When you extract 
+dominant colors from an image, you also need to  
+
+00:10:22.000 --> 00:10:26.320
+think about that you need to have foreground and 
+background colors and you need to have contrast  
+
+00:10:26.320 --> 00:10:30.480
+between them, so that people can actually 
+differentiate between different layers and  
+
+00:10:30.480 --> 00:10:36.320
+elements. So you really need to think about rules 
+and systems when it comes to parametric design.  
+
+00:10:37.520 --> 00:10:41.280
+This is a really nice example 
+going back into the analog again.  
+
+00:10:42.080 --> 00:10:47.600
+Boris Müller, one of our professors here at the 
+interface design department, he did a poster  
+
+00:10:47.600 --> 00:10:51.840
+series. It's almost 10 years ago, so it's an old 
+project, but i think they're still beautiful.  
+
+00:10:52.800 --> 00:10:57.760
+He developed these generative designs to create 
+these really nice patterns and he actually in most  
+
+00:10:57.760 --> 00:11:04.320
+of them he actually also used data to generate 
+them. And he then uses them in a poster design.  
+
+00:11:04.320 --> 00:11:10.640
+So you can take these generative designs that 
+were create through code and bring them again  
+
+00:11:10.640 --> 00:11:17.200
+into analog designs, into print designs 
+or poster designs. There's a lot of nice  
+
+00:11:17.200 --> 00:11:21.600
+examples in the corporate design world, 
+where there are generative logos being  
+
+00:11:22.560 --> 00:11:27.840
+developed. Like this one, from onformative or 
+here an example that was developed a few years ago  
+
+00:11:28.560 --> 00:11:35.200
+for the MIT media lab. And here you can see again, 
+through parametric design there's one system being  
+
+00:11:35.200 --> 00:11:40.160
+generated, but based on those system, there's 
+a whole variation of different outputs being  
+
+00:11:40.160 --> 00:11:46.640
+generated here. Or here's a nice example from 
+a conference, that was done by some researchers  
+
+00:11:46.640 --> 00:11:52.000
+here at our university a few years back, and they 
+created this generative header for their website.  
+
+00:11:53.280 --> 00:11:57.280
+And this is also really great for 
+experimentation. You could for example  
+
+00:11:57.280 --> 00:12:01.680
+use some random values that are being generated 
+in your design, so certain parameters are fixed,  
+
+00:12:01.680 --> 00:12:06.880
+certain parameters are random and, thereby, 
+just generate some different outputs and see  
+
+00:12:06.880 --> 00:12:11.760
+how things interact with one another and really 
+explore different variations of your design.  
+
+00:12:12.320 --> 00:12:17.360
+And of course this also works in a 3D space. 
+Here's an example where designers explore  
+
+00:12:17.360 --> 00:12:23.840
+different variations of a 3D space and a 
+system to generate different 3D models.  
+
+00:12:25.200 --> 00:12:31.440
+And what is also great about generating 
+things through code, so visual artifacts,  
+
+00:12:31.440 --> 00:12:36.800
+is that you can also create very very complex 
+things, that would take ages to build manually,  
+
+00:12:37.440 --> 00:12:42.480
+through code really quickly. Like building things, 
+like this here, where you have different shapes  
+
+00:12:42.480 --> 00:12:47.520
+and different structures, but through different 
+mathematical formulas you can generate those  
+
+00:12:47.520 --> 00:12:54.080
+shapes automatically, without no need of actually 
+placing all these different vectors in 3D space.  
+
+00:12:55.600 --> 00:13:01.360
+And you can do this for all kinds of 
+products and concepts in 3D space.  
+
+00:13:02.080 --> 00:13:05.600
+And there's a lot of different 
+math formulas that we will also  
+
+00:13:06.640 --> 00:13:13.120
+look into, in this seminar. And in architecture 
+there's a lot of great examples, where generative  
+
+00:13:13.120 --> 00:13:18.400
+design or parametric design is used to explore 
+variations, but also create shapes that would  
+
+00:13:18.400 --> 00:13:24.960
+otherwise be way too complex to generate manually. 
+Zaha Hadid and her team did a lot of great  
+
+00:13:24.960 --> 00:13:31.120
+work on algorithmic design and parametric design 
+to generate new shapes that would otherwise be not  
+
+00:13:31.920 --> 00:13:38.880
+possible to generate. A good example also is the 
+Elb-philharmonie in Hamburg. Here the the windows,  
+
+00:13:38.880 --> 00:13:43.680
+that we can see, were also designed through 
+an algorithmic design process to generate  
+
+00:13:43.680 --> 00:13:50.800
+this visual scene that we can see now here. In 
+how the windows being placed on the building.  
+
+00:13:52.720 --> 00:13:58.080
+And especially in facades we can do a lot of 
+interesting things to generative design concepts,  
+
+00:13:58.080 --> 00:14:04.880
+explore different variations even have things like 
+the weather, interact with our facades, so that  
+
+00:14:04.880 --> 00:14:14.320
+our our parametric design facade is changing as 
+certain parameters in our environment change. Or  
+
+00:14:14.320 --> 00:14:20.640
+we can take it a step further and also use other 
+things from kinetic to screens to change facades  
+
+00:14:20.640 --> 00:14:25.440
+and how they interact with the environment. 
+To get started and for inspiration, there's a  
+
+00:14:25.440 --> 00:14:31.760
+really great book called Generative Design, which 
+has a lot of great mostly 2D examples to get you  
+
+00:14:31.760 --> 00:14:39.120
+started, what is nice about the book, is that you 
+also get code examples for every example showed in  
+
+00:14:39.120 --> 00:14:43.840
+the book. To give you a really nice introduction 
+and some examples to get started with.  
+
+00:14:45.520 --> 00:14:51.840
+In my personal work, i work a lot with data 
+and generative or parametric design. This is  
+
+00:14:51.840 --> 00:14:58.480
+an example here, where we used spatial data to 
+visualize the green and water spaces in Berlin.  
+
+00:14:58.480 --> 00:15:03.120
+And try to take it a step further into 
+the physical and we used a laser cutter  
+
+00:15:03.120 --> 00:15:09.760
+to create this 3D map of Berlin and then we used 
+plants to actually visualize the green spaces.  
+
+00:15:09.760 --> 00:15:16.880
+Or here, taken the third dimension even further, 
+creating 3D city maps from data in Berlin.  
+
+00:15:18.240 --> 00:15:24.160
+So from these basic examples, that we will 
+all look into, throughout the semester. Of  
+
+00:15:24.160 --> 00:15:30.560
+course you can take it even further, from data 
+visualization to other kinds of applications that  
+
+00:15:30.560 --> 00:15:36.960
+have parametric design already implemented. Like 
+Rhino 3D. They have a lot of parametric design  
+
+00:15:36.960 --> 00:15:42.640
+capabilities right built in. And so you can use 
+all the knowledge that you will gain from the  
+
+00:15:42.640 --> 00:15:47.920
+seminar, for example in other applications that 
+are already made for these kind of processes.  
+
+00:15:49.200 --> 00:15:55.520
+So parametric design is really about 
+going beyond the design capabilities that  
+
+00:15:55.520 --> 00:16:01.040
+software already provides for us and really 
+thinking about how can you bring your ideas  
+
+00:16:01.040 --> 00:16:07.840
+to life through code, through your 
+own applications that you will write.

@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:09.490 --> 00:00:18.370
+Es gibt eine sehr praktische Erweiterung von p5js: 
+p5-gui. Damit kann man sich so ein Parameter-GUI  
+
+00:00:18.370 --> 00:00:23.110
+generieren lassen, aus einem einfachen 
+Objekt, dass man an diese Funktion übergibt.  
+
+00:00:24.250 --> 00:00:27.610
+Dies ist allerdings ein bisschen 
+komplexer, aber gibt euch auch viel  
+
+00:00:27.610 --> 00:00:32.290
+mehr Möglichkeiten. Und das Ganze sieht 
+dann nachher auch noch schick aus. Ich  
+
+00:00:32.290 --> 00:00:38.110
+habe euch als Erklärung wie ihr diese 
+Erweiterung von p5js nutzen könnt und  
+
+00:00:38.110 --> 00:00:43.930
+unter dem Bonusmaterial ein kleines Tutorial 
+eingefügt wie ihr das Ganze umsetzen könnt.

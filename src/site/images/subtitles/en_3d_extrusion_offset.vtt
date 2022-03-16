@@ -1,0 +1,69 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:12.560
+In the last video we used the extrusion function 
+to turn a 2D shape into a 3D object. There's also  
+
+00:00:12.560 --> 00:00:16.320
+the so-called offset function, which 
+allows us to manipulate 2D shapes.  
+
+00:00:17.040 --> 00:00:21.520
+It is similar to offsets that you might 
+know from vector editing software.  
+
+00:00:22.320 --> 00:00:26.400
+Let's create an offset object, where 
+we can store our new object in.  
+
+00:00:27.520 --> 00:00:32.960
+And then we use the "offset" function, which 
+takes an object for parameters again, then we  
+
+00:00:32.960 --> 00:00:40.720
+provide it with our rectangle object and we push 
+the resulting object into our objects array.
+
+00:00:43.680 --> 00:00:48.480
+And here, we need to provide a so-called "delta". 
+The delta is the value by which we increase  
+
+00:00:48.480 --> 00:00:52.960
+or decrease our object size. 
+Let's say we start with 20 here.  
+
+00:00:54.560 --> 00:01:01.840
+So now we have the same object just expanded 
+by 20 units. We could also do the same in  
+
+00:01:01.840 --> 00:01:08.240
+the other direction and decrease the size. 
+And there's an additional attribute for the  
+
+00:01:08.240 --> 00:01:17.360
+corners of our object. The default is the edge 
+variant. Here we just have a sharp edge for the  
+
+00:01:18.000 --> 00:01:28.400
+corners that we create. But there is also a 
+"chamfer" variant, this creates flat edges  
+
+00:01:29.280 --> 00:01:38.160
+around our object. And the last one is "round" and 
+if you're just using the default values, this will  
+
+00:01:38.160 --> 00:01:44.160
+not look different to our previous option. 
+But if we add a different "segments" option,  
+
+00:01:44.160 --> 00:01:50.160
+let's say 32. Again if you're doing circles or 
+anything round, you need to provide the segments,  
+
+00:01:50.160 --> 00:01:56.800
+so the system knows how many sections it should 
+generate, how many segments it should use  
+
+00:01:56.800 --> 00:02:07.840
+to try and generate our round shapes. And now 
+we have round edges around our expanded object

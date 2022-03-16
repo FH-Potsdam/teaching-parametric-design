@@ -23,6 +23,11 @@ When ever we modify something in JSCAD, not matter if extrusion or transformatio
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/iWeFYYkP4qx3HTJ
+en: https://fhpcloud.fh-potsdam.de/s/y5sL6K5kfwW6CfL
+-->
+
 ```js
 const {extrudeRectangular, extrudeLinear, extrudeRotate} = jscad.extrusions;
 ```
@@ -107,6 +112,11 @@ For this extrusion the shape is rotated around the z-axis, the angles define sta
 
 <img src="./assets/extrudeRotate-1.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/yj6E3gx63bbPFwp
+en: https://fhpcloud.fh-potsdam.de/s/cqc84F3sZP3g5pb
+-->
+
 ```js
 const circleShape = circle({
     radius: 5,
@@ -154,6 +164,11 @@ In the last session we look at extrusion. Taking a shape and extending it along 
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/oMGcyBAiBTB7JQd
+en: https://fhpcloud.fh-potsdam.de/s/KWCPMqMPzf8s6t2
+-->
+
 Offset can be used on 2D shapes. It simply offsets the outline by given delta. A negative delta shrinks the shape. For the corners three different types of offsets can be achieved:
 
 <img src="./assets/offset.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
@@ -191,6 +206,11 @@ const offsetShape1 = offset({
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/07-3d-adv/expand-3d.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/8ztZLysdzqbCdq9
+en: https://fhpcloud.fh-potsdam.de/s/nDrxii2jHXXxR79
+-->
 
 
 Expand has the same `effect` as `offset` for 3D shapes. It only offers the corner method `'round'`, but you can define the segments:

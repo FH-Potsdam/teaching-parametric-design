@@ -9,7 +9,7 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, task, inspiration, h2, definition, editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/en_variables.mp4", "/images/thumbnails/en_2d_variables_variables.png", "en_2d_variables_variables", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4
 en:https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/en_variables.mp4
@@ -19,7 +19,7 @@ Sometimes we want to reuse a certain information in our code, for example a colo
 
 {{h2('Variable Types')}}
 
-In JavaScript there are two ways of declaring a function:
+In JavaScript there are two ways of declaring a variable:
 
 ```js
 const sketchWidth = 400;
@@ -33,14 +33,14 @@ With `const` we define a constant variable. This variable cannot be changed late
 A variable in JavaScript is not type-sensitive. This means you don't need to define in advance what you want to store inside a variable and you can change it at any time. For now the three data types we will mostly use are:
 
 1. number
-2. string (text), don't forget the "/'
+2. string (text), don't forget the " or '
 3. boolean (true/false)
 
 > While JavaScript is not type-sensitive, which is nice for prototyping, its bad for production code. Good code tries to only store one type of data inside a variable.
 
 #### Boolean
 
-Booleans are very simple they can be either `true` or `false`. We can use them for conditions (see below).
+Booleans are very simple they can be either `true` or `false`. We can use them for [conditions](03_3-conditions.md).
 
 ### Variabel naming
 
@@ -65,7 +65,7 @@ let myFirstVariable;
 
 Once we have defined a variable we can use it and also modify the content:
 
-{{editor('/code/using_variables', 'https://...')}}
+{{editor('/code/using_variables', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables/using/sketch.js')}}
 
 In the above example we define `backgroundColor` in the global scope (see below), outside `setup()` and `draw()`, so we can access it everywhere. We define it with `let` so we can modify it later on. In `setup()` we set `backgroundColor` to be **0**. In `draw()` we use the variable to draw the `background`, then we add 1 to the current value. This results in the number getting bigger and, thereby, the color getting brighter, until the number reaches 255. While our code will still increase the number, anything above 255 is still white.
 
@@ -88,10 +88,10 @@ const backgroundColor = color(255, 0, 100, 150);
 > You can also use color with other parameters, similar to fill, stroke and background (see last [section](02-drawing.md)).
 
 
-
 {{h2('Scopes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/en_scopes.mp4", "/images/thumbnails/en_2d_variables_scopes.png", "en_2d_variables_scopes", translations.subtitles[locale], locale)}}
+
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4
 en:https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/en_scopes.mp4
@@ -121,7 +121,7 @@ The solution to share information between or across all scopes is to use the glo
 
 {{h2('Random')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png")}}
+{{video("ttps://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4", "/images/thumbnails/en_2d_variables_random.png", "en_2d_variables_random", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4
 en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4
@@ -144,4 +144,4 @@ const otherColor = random(0, 255);
 
 {{inspiration('Color variations I', 'Try re-running the code, to get a different color variation.')}}
 
-{{editor('/code/randomcolor', 'https://...', true)}}
+{{editor('/code/randomcolor', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables/randomcolor/sketch.js', true)}}

@@ -1,0 +1,120 @@
+WEBVTT
+
+00:00:05.360 --> 00:00:11.520
+In p5.js we can define colors in a lot of 
+different ways. The most simple way of defining  
+
+00:00:11.520 --> 00:00:18.560
+a color is just a single number. This defines a 
+grayscale color value, it goes from 0 for black  
+
+00:00:18.560 --> 00:00:28.000
+to 255 for white. If i change this to 255 save 
+it, the canvas turns white. Beyond grayscale we  
+
+00:00:28.000 --> 00:00:35.840
+can also use the RGB spectrum, therefore we simply 
+define three colors, three color values, R G B.  
+
+00:00:37.440 --> 00:00:40.400
+Provide them as numbers and 
+now we can create colors  
+
+00:00:41.520 --> 00:00:46.400
+in the RGB spectrum. In addition we 
+can also provide a fourth number,  
+
+00:00:46.400 --> 00:00:56.800
+to define the alpha or the opacity. This also goes 
+from 0 to 255. If i choose a value in between,  
+
+00:00:57.760 --> 00:01:05.040
+it should be half transparent. But it becomes 
+blue again. Why is this happening. You remember,  
+
+00:01:05.040 --> 00:01:11.200
+that the draw function is called continuously, so 
+what is now happening, is that the slightly opaque  
+
+00:01:11.840 --> 00:01:19.120
+blue is now being drawn upon another 
+and so after a few milliseconds it turns  
+
+00:01:19.120 --> 00:01:26.320
+completely blue. If we actually want to see 
+this lightly blue color, what we need to do  
+
+00:01:26.320 --> 00:01:32.720
+is first draw a white background and 
+then the slightly opaque blue on top.  
+
+00:01:34.240 --> 00:01:39.840
+So what we can see here already it's very 
+important the order of your commands. What the  
+
+00:01:39.840 --> 00:01:45.920
+program does in the background, it goes from top 
+to bottom. And first it draws the white background  
+
+00:01:45.920 --> 00:01:54.160
+and then the the blue opaque background. Another 
+way to define colors, are the way we do it in  
+
+00:01:54.160 --> 00:02:01.040
+CSS. If you've worked with CSS in HTML before, 
+this will be very familiar to you. Therefore  
+
+00:02:01.680 --> 00:02:08.720
+we can use the RGB way or in this case we 
+already have an alpha value so the RGBA  
+
+00:02:10.000 --> 00:02:19.200
+format. You might notice that i have quotes 
+around this part of the input. In this case we  
+
+00:02:19.200 --> 00:02:24.960
+are not providing numeric values, but instead 
+we're providing text, a string as an input.  
+
+00:02:25.920 --> 00:02:32.880
+In order for our JavaScript application to 
+not interpret this part of the code as an  
+
+00:02:32.880 --> 00:02:38.800
+actual command, but as text, we need to put it 
+in quotes. For JavaScript it doesn't matter if  
+
+00:02:38.800 --> 00:02:44.160
+you use double or single quotes, it just needs to 
+be the same quotes at the beginning and at the end  
+
+00:02:44.160 --> 00:02:50.720
+of your string. What is also important if you 
+already have used CSS you already know this,  
+
+00:02:51.360 --> 00:02:57.680
+if you're using this format, the alpha, 
+the opacity isn't going from 0 to 255, but  
+
+00:02:57.680 --> 00:03:07.360
+instead from 0 to 1. If we want to have it half 
+transparent, we need to use 0.5 instead of 125.  
+
+00:03:08.320 --> 00:03:13.680
+Okay, the last way that i will show you, 
+there's a lot more ways to define colors  
+
+00:03:13.680 --> 00:03:20.240
+that you can look up in the reference, is the HEX 
+value. The HEX value, you can also find in most  
+
+00:03:21.280 --> 00:03:26.640
+modern graphics editing applications 
+as an input type for colors or export  
+
+00:03:26.640 --> 00:03:34.000
+type. So in this case we use the # in the 
+beginning and then we can define our color.
+
+00:03:36.080 --> 00:03:45.200
+And so we get another way of defining our colors.

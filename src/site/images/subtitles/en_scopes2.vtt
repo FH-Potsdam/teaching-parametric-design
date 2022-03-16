@@ -1,0 +1,61 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:08.160
+In one of the previous videos i talked 
+about scopes and variables. And i want  
+
+00:00:08.160 --> 00:00:13.280
+to quickly go back to this. In this example 
+here, we have a lot of different scopes.  
+
+00:00:13.280 --> 00:00:20.800
+We have the "global scope" which is kind of a root 
+layer of our code. Then we have the functions.  
+
+00:00:20.800 --> 00:00:27.440
+And remember the curly brackets usually 
+indicate that there's an additional scope  
+
+00:00:28.240 --> 00:00:34.720
+layer/level being added here. If we go into the 
+draw function, we have the first scope inside the  
+
+00:00:34.720 --> 00:00:40.880
+draw function, we now have a for-loop inside the 
+for-loop we have another for-loop. And inside the  
+
+00:00:40.880 --> 00:00:46.480
+for-loop we now have the if-conditions. And 
+the if conditions also have curly brackets,  
+
+00:00:46.480 --> 00:00:52.160
+this means there's an additional layer 
+here. If i would define something here,
+
+00:00:56.800 --> 00:01:02.640
+i could only access this variable, the variable 
+value, inside those curly brackets here.  
+
+00:01:03.360 --> 00:01:09.040
+Neither the for-loop, neither the "draw" 
+function could access the value variable,  
+
+00:01:09.040 --> 00:01:16.080
+because it's only accessible inside the if-clause. 
+If i would define something on this level here,
+
+00:01:19.440 --> 00:01:26.320
+then all the scope levels after this, 
+that go deeper, have access to the value,  
+
+00:01:27.200 --> 00:01:32.320
+but for example on the global scope, because then 
+it's one up again, we don't have access to value.  
+
+00:01:32.960 --> 00:01:37.920
+This is really important when you sometimes have 
+the problem, that a variable is for some reason  
+
+00:01:37.920 --> 00:01:47.440
+not defined, you might want to check your 
+scopes and where you defined your variable.

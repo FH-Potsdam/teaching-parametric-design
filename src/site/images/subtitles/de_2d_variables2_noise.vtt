@@ -1,0 +1,244 @@
+WEBVTT
+
+00:00:04.610 --> 00:00:10.070
+In einem der vorherigen Videos habe ich euch 
+bereits die "Random" Funktion gezeigt. Hier  
+
+00:00:10.070 --> 00:00:15.530
+ein ganz einfaches Beispiel, wo wir auf der 
+x-Achse sozusagen im Abstand von einem Pixel  
+
+00:00:15.530 --> 00:00:21.530
+Kreise zeichnen und dann die Y-Koordinaten 
+hier durch die "random" Funktion definieren.  
+
+00:00:21.530 --> 00:00:26.510
+Bei "random" wird uns immer in zufälliger Wert 
+zwischen "min" und "max" zurückgegeben. Darüber  
+
+00:00:26.510 --> 00:00:30.320
+hinaus gibt es eine weitere Funktion mit 
+der wir zufällige Zahlen generieren können,  
+
+00:00:30.320 --> 00:00:36.020
+die sogenannte "noise" Funktion. Im Gegensatz zu 
+"random" haben wir es hier aber mit etwas mehr  
+
+00:00:36.020 --> 00:00:41.120
+Struktur und System zu tun. Ihr müsst es euch so 
+vorstellen, dass wenn wir einen Sketch starten,  
+
+00:00:41.120 --> 00:00:47.000
+wird für diese "noise" Funktion eine fixe 
+Palette von Werten generiert, die nicht  
+
+00:00:47.000 --> 00:00:52.280
+komplett zufällig sind sondern wieso Art Kurven 
+angelegt sind. Und das auf mehreren Dimensionen,  
+
+00:00:52.280 --> 00:00:58.550
+wie wir gleich sehen. Um diese abzurufen, können 
+jetzt nicht einfach sagen, wir wollen einen Wert  
+
+00:00:58.550 --> 00:01:04.310
+zwischen min und max, "noise" gibt uns immer 
+einen Wert zwischen 0 und 1 zurück. Damit wir  
+
+00:01:04.310 --> 00:01:10.190
+das dann wieder auf die komplette Höhe unseres 
+Canvas ziehen können, multiplizieren wir einfach  
+
+00:01:10.190 --> 00:01:18.020
+den "noise"-Wert mal 400. Damit sozusagen von 
+0 bis 400 geht. Und der "noise" Funktion müssen  
+
+00:01:18.020 --> 00:01:23.870
+wir Parameter mitgeben. Wie gesagt, wir haben 
+sozusagen einen festgelegten Raum der am Anfang  
+
+00:01:23.870 --> 00:01:29.450
+für uns generiert wird. Und aus diesem Raum können 
+wir Zahlen abrufen. Hierfür können wir in diesem  
+
+00:01:29.450 --> 00:01:34.880
+Fall also einfach das X übergeben, dann wird 
+sozusagen für die position X=1 der Zufallswert  
+
+00:01:34.880 --> 00:01:39.560
+zurückgegeben. Wenn ich das jetzt einfach mal 
+abspeicher, dann sieht es immer noch ziemlich  
+
+00:01:39.560 --> 00:01:46.280
+zufällig aus und das liegt daran, dass wir aus 
+diesem Zufallsraum relativ weit rausgezoomt sind.  
+
+00:01:46.280 --> 00:01:53.570
+Wenn ich den X-Wert einfach mal kleiner mache, 
+indem ich den durch 100 teile. Dann sehen wir  
+
+00:01:53.570 --> 00:01:58.220
+plötzlich diese Struktur in diesem zufälligen 
+Raum. Und wenn ich das Ganze jetzt abspeicher,  
+
+00:01:58.220 --> 00:02:04.880
+sehen wir dass sozusagen jedes mal neue Werte in 
+diesem Zufallsraum für uns generiert werden. Aber  
+
+00:02:04.880 --> 00:02:11.240
+im gegensatz zu "random" haben wir sozusagen nicht 
+nur totalen Zufall, sondern ein System das für uns  
+
+00:02:11.240 --> 00:02:16.160
+generiert wird. In diesem Fall jetzt diese Kurven, 
+weil wir uns jetzt hier noch im eindimensionalen  
+
+00:02:16.160 --> 00:02:26.480
+befinden. Wenn wir innerhalb unserer "draw" 
+Schleife ein neues "noise"-Feld haben wollen, dann  
+
+00:02:26.480 --> 00:02:31.670
+können wir das ganz einfach machen. Dafür gibt 
+es die "noiseSeed" Funktion. Hier können wir dann  
+
+00:02:31.670 --> 00:02:37.730
+einfach irgendeinen Wert übergeben und dann wird 
+sozusagen, nachdem das Ganze einmal gezeichnet  
+
+00:02:37.730 --> 00:02:44.720
+wurde, ein neues "noise"-Feld generiert. Und 
+wenn man das sozusagen kontinuierlich neu  
+
+00:02:44.720 --> 00:02:51.590
+generieren möchte. Könnten wir einfach hier eine 
+Variable anlegen und übergeben die hier unten,  
+
+00:02:51.590 --> 00:03:00.890
+addieren 1 dazu und dann wird jetzt sozusagen 
+bei jeder draw-Schleife der "seed" verändert und  
+
+00:03:00.890 --> 00:03:09.980
+dadurch dann sozusagen ein neues "noise"-Feld für 
+uns generiert. Das andere ist, dieses "noise"-Feld  
+
+00:03:09.980 --> 00:03:19.640
+ist mehr oder weniger unendlich groß. Ich kann 
+zum beispiel jetzt ein "offset" hinzufügen. Zu  
+
+00:03:19.640 --> 00:03:28.010
+dem offset addiere ich auch eins dazu oder da es 
+jetzt so klein ist machen wir mal 0,01 und addiere  
+
+00:03:28.010 --> 00:03:33.380
+dann das einfach hier dazu, heißt was wir jetzt 
+machen: wir gehen in unser "noise"-Feld rein,  
+
+00:03:33.380 --> 00:03:39.050
+fangen bei 0 an und wandern dann langsam 
+nach vorne innerhalb unseres FOR-loops.
+
+00:03:39.050 --> 00:03:46.880
+Muss natürlich den "noLoop" rausnehmen. 
+Und jetzt sehen wir sozusagen, wie wir  
+
+00:03:46.880 --> 00:03:52.670
+uns langsam durch dieses "noise"-Feld bewegen 
+und wir sehen nachwievor diese kontinuierliche  
+
+00:03:52.670 --> 00:03:57.080
+"noise"-Linie die hier für uns generiert 
+wird. So etwas ist zum Beispiel interessant,  
+
+00:03:57.080 --> 00:04:04.160
+wenn man kontinuierliche animationen bauen 
+will die aber etwas zufällig sind. Genau  
+
+00:04:04.160 --> 00:04:07.760
+am anfang sagte ich dieses "noise"-Feld 
+ist mehrdimensionalen. Das ist jetzt ein  
+
+00:04:07.760 --> 00:04:12.170
+bisschen komplex. Jetzt gerade schauen wir 
+uns sozusagen eine einzige Dimension an,  
+
+00:04:12.170 --> 00:04:19.550
+heißt wir holen uns eine einzige Zahl. Wir könnten 
+aber auch theoretisch mehrere Dimensionen abrufen,  
+
+00:04:19.550 --> 00:04:22.640
+dann müssten wir jetzt hier noch Y angeben und 
+wir können auch noch Z angeben, wenn man den  
+
+00:04:22.640 --> 00:04:27.180
+dreidimensionalen Raum haben hier einfügen. 
+Ich mache das jetzt einfach nur erstmal mit  
+
+00:04:27.180 --> 00:04:33.060
+Y. Dafür erweitern wir unsere Schleife, 
+das wir uns sozusagen ein Grid generieren.
+
+00:04:33.060 --> 00:04:46.740
+Wir generieren uns jetzt einfach 400 x 400 
+Kreise und was wir uns dann zurückgeben lassen,  
+
+00:04:46.740 --> 00:04:52.140
+ist dann sozusagen der "fill" Wert für 
+unseren Kreis. Da Kreise jetzt keinen  
+
+00:04:52.140 --> 00:05:01.080
+wirklichen Sinn machen, machen wir hier einfach 
+ein Rechteck draus, das ein Pixel groß ist.
+
+00:05:07.440 --> 00:05:13.740
+Und in dem Fall rufen wir jetzt sozusagen 
+(das offsett brauchen jetzt nicht mehr)  
+
+00:05:13.740 --> 00:05:22.680
+x/y ab und multiplizieren das ganze mit 255, 
+damit wir wieder ein Grauwwert rausbekommen.
+
+00:05:22.680 --> 00:05:32.040
+Und sollten das ganze ohne loop 
+machen, sonst dauert das ewig.
+
+00:05:46.040 --> 00:05:51.590
+Man sollte auch den "stroke" ausschalten 
+bei einem ein pPxel großen Rechteck,  
+
+00:05:51.590 --> 00:05:54.050
+sonst sieht man natürlich nichts.
+
+00:05:59.660 --> 00:06:03.920
+Und jetzt können wir wieder sehen, dass 
+ist jetzt sozusagen das "noise"-Feld was  
+
+00:06:03.920 --> 00:06:07.070
+für uns gezeichnet wurde und hier 
+kann man jetzt sehr schön sehen,  
+
+00:06:07.070 --> 00:06:11.300
+dass das nicht völlig zufällig ist, sondern 
+dass wir hier sozusagen ein systematisches  
+
+00:06:11.300 --> 00:06:16.610
+rauschen haben. Was wir zum Beispiel auch 
+wieder für Visualisierungen, für Animationen,  
+
+00:06:16.610 --> 00:06:21.710
+etc. nutzen können. Genauso gut könnte man 
+das jetzt auch etwas gröber auflösen. Dann  
+
+00:06:21.710 --> 00:06:25.610
+geht das auch etwas schneller. Also das wir 
+einfach sagen, wir nehmen hier zehn Pixel große
+
+00:06:25.610 --> 00:06:33.560
+Rechtecke. Speichern das nochmal und bekommen 
+dann jetzt die etwas gröbere Auflösung des  
+
+00:06:33.560 --> 00:06:38.780
+Ganzen. Also die "noise"-Funktion ist sehr 
+interessant wenn man etwas systematischer  
+
+00:06:38.780 --> 00:06:44.420
+zufällige werte generieren möchte. Gerade für 
+animationen und Bewegung ist dies sehr spannend.

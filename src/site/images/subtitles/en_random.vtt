@@ -1,0 +1,113 @@
+WEBVTT
+
+00:00:05.200 --> 00:00:12.480
+In the previous examples we used certain numeric 
+values to define the values of our variables.  
+
+00:00:13.520 --> 00:00:19.840
+But when we are generating our parametric designs, 
+sometimes it's interesting to use random values.  
+
+00:00:20.400 --> 00:00:25.520
+Imagine for example you want to generate a 
+series of variations of a certain layout or  
+
+00:00:25.520 --> 00:00:30.880
+a certain shape, then it might be interesting 
+to use a random value, to introduce noise,  
+
+00:00:30.880 --> 00:00:36.800
+to introduce different shapes and layouts. And to 
+do this, there is a really nice helper function  
+
+00:00:36.800 --> 00:00:45.120
+from p5.js, the "random" function that we can use. 
+And inside the "random" function, if we provide no  
+
+00:00:45.120 --> 00:00:51.520
+parameters, it's a value between 0 and 1, but 
+we can also provide a "min" and "max" value for  
+
+00:00:51.520 --> 00:01:00.080
+the random number that should be generated. In our 
+case, we want a grayscale value between 0 and 255.  
+
+00:01:01.760 --> 00:01:06.080
+And if i save this, you can see that 
+now every time i save the sketch,  
+
+00:01:06.640 --> 00:01:12.320
+there's a different color being used as a 
+background. We could of course also move this  
+
+00:01:12.320 --> 00:01:21.600
+to our draw function. Which then would generate 
+different random values on each draw cycle.
+
+00:01:23.000 --> 00:01:29.200
+There is one little important thing about the 
+"random" function. The "random" function is  
+
+00:01:29.200 --> 00:01:37.280
+part of p5.js, so it's only available once all 
+the p5js setup is done. So all the setting up of  
+
+00:01:38.080 --> 00:01:43.360
+functions and features for p5.js. So 
+inside preload, inside setup, inside draw,  
+
+00:01:43.360 --> 00:01:52.320
+you can use the random function. But imagine you 
+want to define your variable in the "global scope"  
+
+00:01:52.320 --> 00:01:59.440
+at the beginning of your sketch.js file. I will 
+just paste the random function here and now,  
+
+00:01:59.440 --> 00:02:05.840
+because random is not yet available, you will 
+receive an error message, saying "random is not  
+
+00:02:05.840 --> 00:02:14.400
+defined". To overcome this you can either do the 
+setup as I did before, just define the variable  
+
+00:02:14.400 --> 00:02:19.200
+in the "global scope" and then set the value 
+of your variable inside the "setup" function.  
+
+00:02:19.200 --> 00:02:25.280
+But there's also another way, because if you're 
+using any other library than p5.js, you will have  
+
+00:02:25.280 --> 00:02:31.040
+the same problem, because there is no "random" 
+function. So there is a native "random" function  
+
+00:02:31.040 --> 00:02:38.400
+and you can get it by writing "Math.random" and 
+then brackets this will generate a value between 0  
+
+00:02:38.400 --> 00:02:44.160
+and 1. It has no parameters, so you cannot define 
+"min" and "max". So we need to do this manually,  
+
+00:02:44.720 --> 00:02:52.480
+in this case, we simply need to say, the value 
+between 0 and 1 should be multiplied by 255.  
+
+00:02:52.480 --> 00:03:00.720
+Generating us a value between 0 and 255. And if I 
+save this, it works again, because "Math.random()"  
+
+00:03:00.720 --> 00:03:06.880
+is always available. Because it's a native 
+JavaScript function. So just have this in mind,  
+
+00:03:06.880 --> 00:03:11.680
+if you're defining variables in the "global scope" 
+you don't have access to the "random" function,  
+
+00:03:11.680 --> 00:03:17.840
+yet. So either use "Math.random()" or define 
+the values inside the "setup" function.

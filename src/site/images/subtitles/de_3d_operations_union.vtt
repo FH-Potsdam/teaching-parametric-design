@@ -1,0 +1,61 @@
+WEBVTT
+
+00:00:04.610 --> 00:00:08.780
+Fangen wir mit dem Kombinieren 
+mehrerer Objekte an. Dafür  
+
+00:00:08.780 --> 00:00:14.930
+erstellen wir uns eine gedrehte 
+Instanz unseres original Cubes.
+
+00:00:14.930 --> 00:00:24.200
+Nutzen unsere rotate-Funktion, 
+drehen das Ganze um 45 Grad.
+
+00:00:24.200 --> 00:00:33.110
+Machen das Ganze mit unserem cube-object und damit 
+wird das Ganze auch sehen können, pushen wir das  
+
+00:00:33.110 --> 00:00:41.840
+Ganze in unserer objects. Haben jetzt zwei Cubes 
+und die sehen auf den ersten Blick aus, als wären  
+
+00:00:41.840 --> 00:00:46.610
+die schon ein Objekt. Wenn wir das Ganze jetzt 
+aber als STL exportieren würden und in eine andere  
+
+00:00:46.610 --> 00:00:51.770
+Software importieren. Würden wir feststellen, dass 
+wir zwei komplett unabhängige Objekte haben, die  
+
+00:00:51.770 --> 00:00:57.260
+bisher nicht miteinander verbunden worden sind. 
+Wenn wir die beiden miteinander verbinden wollen,  
+
+00:00:57.260 --> 00:01:06.290
+dann pushe ich die jetzt erstmal nicht, sondern 
+erstellen uns ein union-object. Und benutzen die  
+
+00:01:06.290 --> 00:01:10.580
+union-Funktion. Die union-Funktion ist ganz 
+einfach: hier haben wir einfach ein Array und  
+
+00:01:10.580 --> 00:01:15.140
+in das Array können wir jetzt alle Objekte 
+reinschreiben, die miteinander kombiniert  
+
+00:01:15.140 --> 00:01:21.110
+werden sollen. Und das Ganze pushen wir 
+dann anschließend in unserer objects.
+
+00:01:21.110 --> 00:01:31.550
+Speichern das Ganze und was auf den ersten 
+Blick im Grunde genauso aussieht wie das was  
+
+00:01:31.550 --> 00:01:36.890
+wir vorher hatten, ist nun aber wirklich ein 
+einzelnes Objekt. Was wir so zum Beispiel in  
+
+00:01:36.890 --> 00:01:40.850
+den 3D-Drucker schicken könnten, um 
+es dort dann fabrizieren zu lassen.

@@ -1,0 +1,113 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.010
+Neben den 2D-Objekten gibt es 
+natürlich auch 3D-Objekte die  
+
+00:00:09.010 --> 00:00:14.770
+wir generieren können. Ich benutzte hier wieder 
+das objects-array. Fangen wir an mit dem "cube",  
+
+00:00:14.770 --> 00:00:19.390
+also einem Würfel. Generieren 
+uns hier wieder eine Variable,  
+
+00:00:19.390 --> 00:00:25.180
+speichern darin unseren cube rein. Der nimmt auch 
+wieder ein Objekt als Parameter. Hier können wir  
+
+00:00:25.180 --> 00:00:30.070
+auch wieder ein center definieren. Ich lasse 
+das jetzt auch einfach mal erstmal bei 0/0 und  
+
+00:00:30.070 --> 00:00:39.250
+dann definieren wir die Größe 50. Pushen das 
+Ganze dann noch in unserer objects array rein.
+
+00:00:39.250 --> 00:00:49.150
+Und haben jetzt einen 50 Einheiten großen Würfel  
+
+00:00:49.150 --> 00:00:54.280
+hier. Das nächste Element ist 
+die Sphere hier, also die Kugel.
+
+00:00:58.300 --> 00:01:01.750
+Auch die nimmt wieder ein Objekt als Parameter.
+
+00:01:01.750 --> 00:01:11.560
+Und hier verschiebe ich das 
+jetzt einmal um 75 Einheiten,  
+
+00:01:11.560 --> 00:01:18.520
+damit die sich sozusagen nicht überlagern und 
+der kriegt dann einen Radius statt Size. Und
+
+00:01:18.520 --> 00:01:26.470
+muss das Ganze natürlich auch wieder 
+meinem objects-array hinzufügen.
+
+00:01:26.470 --> 00:01:39.310
+Und hab jetzt sozusagen neben meinem cube 
+auch noch eine sphere. Etwas kleiner machen.
+
+00:01:44.770 --> 00:01:47.530
+Es gibt darüber hinaus noch einige andere Objekte,  
+
+00:01:47.530 --> 00:01:53.890
+die habe ich euch unten als Links noch mit 
+in die Seite reingepackt, die Definition wie  
+
+00:01:53.890 --> 00:01:59.830
+ihr die anderen Objekte generiert. Als letztes 
+Objekt möchte ich euch noch den Zylinder zeigen,  
+
+00:01:59.830 --> 00:02:05.710
+wie man den generieren kann. Dafür generieren 
+wir uns auch wieder hier eine Variable.
+
+00:02:05.710 --> 00:02:13.240
+Kürz die einfach mal ab. Und mach dann auch wieder  
+
+00:02:13.240 --> 00:02:19.480
+ein Objekt und ich hole mir jetzt 
+mal die Parameter von unserer sphere.
+
+00:02:19.480 --> 00:02:26.620
+Den verschieben wir dann in die andere 
+Richtung und der hat auch wieder einen Radius,  
+
+00:02:27.970 --> 00:02:33.970
+sozusagen den Durchmesser von unserem Zylinder 
+und daneben kriegt der ganze noch eine height.
+
+00:02:37.700 --> 00:02:44.660
+Und sowohl bei "sphere" als auch "zylinder", 
+könnten wir jetzt auch noch "segments" angeben,  
+
+00:02:44.660 --> 00:02:49.340
+um sozusagen die Auflösung anzugeben. 
+Wie wir das auch schon beim circle in  
+
+00:02:49.340 --> 00:02:54.560
+2D hatten. Und fügen das Ganze 
+noch unserem "objects" hinzu.
+
+00:02:54.560 --> 00:03:04.490
+Und haben jetzt sozusagen daneben noch den 
+Zylinder. Und um einfach das mal mit den  
+
+00:03:04.490 --> 00:03:09.080
+Segments vielleicht noch beispielhaft hier 
+zu zeigen. Drehe ich mir einfach von unserer  
+
+00:03:09.080 --> 00:03:14.840
+Sphere die Segments runter, einfach nur um 
+diesen Unterschied zu zeigen. Man sieht also  
+
+00:03:14.840 --> 00:03:19.130
+jetzt eine wesentlich gröbere Auflösung. 
+Können auch noch weiter runtergehen und
+
+00:03:19.130 --> 00:03:26.240
+kann dadurch dann durchaus vielleicht 
+auch interessante Objekte generieren.

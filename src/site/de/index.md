@@ -12,7 +12,7 @@ This is the companion website for the "Parametric Design" course at the [Design 
 itself should serve as a good starting point for your code-driven design journey.
 
 <p class="start-button-container">
-  <a href="/de/intro" class="start-button"><span>Begin course &raquo;</span></a>
+  <a href="/de/introduction" class="start-button"><span>Begin course &raquo;</span></a>
 </p>
 
 The course targets all designers or creative minds, that want to explore how to design digital and physical artifacts through code. At FHP we offer Interface, Product and Communication Design, which will play a central role in this course.

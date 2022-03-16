@@ -1,0 +1,129 @@
+WEBVTT
+
+00:00:04.640 --> 00:00:11.450
+In p5js haben wir ganz viele verschiedene 
+Möglichkeiten wie wir Farben definieren. Das Erste  
+
+00:00:11.450 --> 00:00:18.290
+ist in dem einfach nur eine einzige Zahl angegeben 
+wird. In dem Fall wird ein Grauwert definierte:  
+
+00:00:18.290 --> 00:00:26.150
+von 0 schwarz bis 255 weiß reicht. Also wenn 
+ich jetzt mal 255 eintrage wird das ganze  
+
+00:00:26.150 --> 00:00:30.710
+weiß und wenn ich dann irgendwas dazwischen 
+wähle bekommen wir entsprechend einen Grauton  
+
+00:00:30.710 --> 00:00:38.180
+ausgegeben. Darüber hinaus können wir auch das 
+RGB-Spektrum nutzen, was wir auch aus anderen  
+
+00:00:38.180 --> 00:00:45.920
+Grafikanwendungen kennen. Also wenn ich jetzt 
+hier drei Werte für RGB eingebe werden die auch  
+
+00:00:45.920 --> 00:00:50.930
+wieder von null bis 255 definiert, so wie es 
+auch in fast allen anderen Programmen ist.  
+
+00:00:50.930 --> 00:00:56.540
+Darüber hinaus können wir auch einen vierten Wert 
+hinzufügen und dieser vierte Wert ist der Alpha-,  
+
+00:00:56.540 --> 00:01:02.480
+der Opacity-Wert, also wie stark deckend 
+unsere Hintergrundfarbe ist. Dieser wird  
+
+00:01:02.480 --> 00:01:10.730
+ebenfalls von null bis 255 definiert. Wenn 
+ich das jetzt hier mache, wir erinnern uns,  
+
+00:01:10.730 --> 00:01:16.160
+das Ganze wird in einem Loop abgespielt, sehe 
+ich diese Transparenz nicht, weil er ganz viele  
+
+00:01:16.160 --> 00:01:20.720
+blaue Flächen aufeinander zeichnet. Wenn ich 
+das jetzt in dem Fall tatsächlich sehen will,  
+
+00:01:20.720 --> 00:01:25.910
+dann müsste ich jetzt einmal sozusagen erst 
+eine weiße Fläche zeichnen, auf die dann  
+
+00:01:25.910 --> 00:01:31.100
+sozusagen unsere leicht transparente Fläche 
+obendrauf gezeichnet wird. An der Stelle kann  
+
+00:01:31.100 --> 00:01:35.960
+man schon mal sehr gut als beispielhaft sehen die 
+Reihenfolge in der wir unseren Code schreiben ist  
+
+00:01:35.960 --> 00:01:41.330
+natürlich total wichtig, weil der Code wird von 
+oben nach unten abgearbeitet. In diesem Fall wird  
+
+00:01:41.330 --> 00:01:46.280
+sozusagen zuerste der Hintergrund weiß gefüllt 
+und danach dann mit einem leicht transparenten  
+
+00:01:46.280 --> 00:01:53.990
+blau gefüllt das Ganze. Wir können Transparenzen 
+und Farben auch genauso angeben wie sie in CSS  
+
+00:01:53.990 --> 00:02:00.170
+angegeben werden. Zum einen, um direkt bei unserer 
+RGB-Schreibweise zu bleiben, können wir einmal die  
+
+00:02:00.170 --> 00:02:10.100
+RGB-Schreibweise nutzen, also zum Beispiel so um 
+ein Blau zu definieren, können auch zusätzlich  
+
+00:02:10.100 --> 00:02:19.610
+eine Transparenz angeben. Bei Transparenz 
+ist es dann RGBA hier ist allerdings wichtig,  
+
+00:02:19.610 --> 00:02:28.370
+dass bei CSS Alpha/Opacity nicht von 0 bis 
+255 definiert wird, sondern von 0 bis 1. Also  
+
+00:02:28.370 --> 00:02:37.070
+anders als bei der anderen Funktion ist. Hier 
+schon ganz gut zu sehen, der CSS-Farbwert wird  
+
+00:02:37.070 --> 00:02:43.310
+als Text übergeben und nicht als Zahlen. Wenn 
+irgendwo Texte übergeben werden, dann müssen  
+
+00:02:43.310 --> 00:02:49.250
+diese immer in Anführungszeichen gesetzt werden, 
+damit das was innerhalb des Textes übergeben wird,  
+
+00:02:49.250 --> 00:02:54.620
+nicht als Code interpretiert wird. Ihr könnt 
+hierbei einfache und doppelte Anführungszeichen  
+
+00:02:54.620 --> 00:02:59.600
+benutzen. Wichtig ist nur, dass am Ende und am 
+Anfang des Strings dieselben Anführungszeichen  
+
+00:02:59.600 --> 00:03:05.360
+sind, weil das Ganze sonst nicht funktioniert. 
+Neben dieser Schreibweise können wir auch die  
+
+00:03:05.360 --> 00:03:11.750
+HEX-Schreibweise nutzen. Dafür gibt man erst eine 
+Raute an und gibt dann sozusagen den HEX-Wert für  
+
+00:03:11.750 --> 00:03:16.340
+eine bestimmte Zahl an. Die findet ihr auch in 
+den meisten Grafikbearbeitungsprogramm wird das  
+
+00:03:16.340 --> 00:03:22.190
+mittlerweile angegeben als eine Möglichkeit und 
+können so dann sozusagen andere Farben generieren.  
+
+00:03:22.190 --> 00:03:27.680
+Es gibt darüber hinaus noch mehr Schreibweisen 
+die ihr dann in der p5js-Reference findet.

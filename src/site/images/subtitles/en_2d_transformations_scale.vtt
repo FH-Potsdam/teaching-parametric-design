@@ -1,0 +1,41 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:10.000
+We already used the translate and rotate 
+function to manipulate our coordinate system.  
+
+00:00:10.000 --> 00:00:15.200
+There's one last transformation that i want to 
+introduce you to. And this is the scale function.  
+
+00:00:15.200 --> 00:00:21.920
+The scale function is quite simple. It simply 
+changes the size of your object. So it scales  
+
+00:00:22.640 --> 00:00:29.280
+everything that you draw. For example if i enter 
+a 2 here everything is multiplied by 2. But this  
+
+00:00:29.280 --> 00:00:34.480
+also means that your whole coordinate system 
+is multiplied. So it's the x and y coordinates,  
+
+00:00:34.480 --> 00:00:40.880
+it's the size of objects, everything is 
+scaled times 2. Of course we can add other  
+
+00:00:40.880 --> 00:00:48.640
+numbers. Times 10 or we can also decrease 
+the size of our objects 0.5, for example, is  
+
+00:00:48.640 --> 00:00:56.320
+the half of everything. And we can make it even 
+smaller say only a fourth. So you can use this  
+
+00:00:56.320 --> 00:01:01.200
+to change the size of objects, but you have to 
+keep in mind that everything is changing. Again  
+
+00:01:01.200 --> 00:01:11.840
+you can also use the push and the pop function 
+to store a certain state and return to this.

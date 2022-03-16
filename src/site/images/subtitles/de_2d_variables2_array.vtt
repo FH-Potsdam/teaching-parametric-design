@@ -1,0 +1,237 @@
+WEBVTT
+
+00:00:05.020 --> 00:00:10.000
+In einem der vorherigen Videos haben wir 
+uns bereits mit den Grundzügen der Variablen  
+
+00:00:10.000 --> 00:00:17.110
+beschäftigt. Hier ein ganz einfaches Beispiel. 
+Hier wird eine Variable X generiert. Dem X wird  
+
+00:00:17.110 --> 00:00:22.360
+dann in der "setup" Funktion ein zufälliger Wert 
+zwischen 0 und 400 zugewiesen und dieser wird dann  
+
+00:00:22.360 --> 00:00:26.860
+in der "draw" Schleife benutzt. Dadurch das wir 
+sozusagen hier ganz am Anfang diesen zufälligen  
+
+00:00:26.860 --> 00:00:31.870
+Wert definieren, können wir sozusagen danach 
+unsere "draw"-Schleife laufen lassen, ohne dass  
+
+00:00:31.870 --> 00:00:37.390
+dann sozusagen jedes mal eine andere Position 
+auftaucht, sondern nur dann wenn ich das ganze  
+
+00:00:37.390 --> 00:00:42.370
+abspeicher, wird ein neuer random-Wert generiert 
+und sonst bleibt das Ganze an der selben Position  
+
+00:00:42.370 --> 00:00:47.710
+stehen. Das ist ganz schön solche einzelnen 
+Variablen zu definieren, wenn wir wirklich  
+
+00:00:47.710 --> 00:00:53.020
+auch nur einzelne Objekte haben. Aber stellen wir 
+uns vor, wir wollen jetzt hunderte Punkte auf der  
+
+00:00:53.020 --> 00:00:58.720
+x-Achse zeichnen, wo dann entsprechend einzelne 
+Werte durch random generiert werden. Dann wäre es  
+
+00:00:58.720 --> 00:01:05.200
+jetzt natürlich extrem anstrengen, wenn wir jetzt 
+hier irgendwie let x1 =, let x2=... und das Ganze  
+
+00:01:05.200 --> 00:01:11.410
+dann bis 100, 200, 300 durchdefinieren müssten. Um 
+sowas abbilden zu können, gibt es einen weiteren  
+
+00:01:11.410 --> 00:01:18.130
+Variablentypen. Und das sind die sogenannten 
+Arrays. Arrays sind Listen-Container in die wir  
+
+00:01:18.130 --> 00:01:24.460
+ganz viele Sachen reinwerfen können. Also lasst 
+uns für das X jetzt hier ein Array anlegen. Das  
+
+00:01:24.460 --> 00:01:31.270
+Array definieren wir einfach indem wir so zwei 
+eckige Klammern hier anlegen. Das ist sozusagen  
+
+00:01:31.270 --> 00:01:35.470
+die Initiierung für ein Array. Man kann das Ganze 
+auch so schreiben, dass findet ihr vielleicht auch  
+
+00:01:35.470 --> 00:01:41.170
+manchmal im Internet als Beispiel. Aber es ist 
+halt die längere Schreibweise. Einfacher geht  
+
+00:01:41.170 --> 00:01:46.990
+es wenn wir das einfach so macht. Wenn wir 
+jetzt was in X einfügen wollen, in unserer  
+
+00:01:46.990 --> 00:01:53.320
+Array. Dann ist das ein bisschen komplizierter. 
+Weil wir können nicht einfach = schreiben, weil,  
+
+00:01:53.320 --> 00:01:58.300
+ihr könnt euch vorstellen, dass es eine Liste ist 
+und wir müssen im System ja sagen wo es eingefügt  
+
+00:01:58.300 --> 00:02:04.390
+werden soll. Wenn wir einfach sozusagen zu unserer 
+Liste eins hinzufügen wollen, können wir einfach  
+
+00:02:04.390 --> 00:02:10.480
+sagen "push" und können dann in der Klammer 
+den Wert angeben den wir hinzufügen wollen.
+
+00:02:12.350 --> 00:02:18.050
+Und wenn wir jetzt auf diesen Wert wieder 
+zugreifen wollen, dann müssen wir dem  
+
+00:02:18.050 --> 00:02:21.950
+System auch sagen welchen Wert wir haben 
+wollen. Und dafür gibt man wieder diese zwei  
+
+00:02:21.950 --> 00:02:27.680
+eckigen Klammern an und hierin gibt man jetzt 
+den "index", also die Position des Wertes an,  
+
+00:02:27.680 --> 00:02:32.420
+den wir abrufen wollen. In unserem Fall ist nur 
+ein Wert drin, deswegen sagen wir den ersten Wert.  
+
+00:02:32.420 --> 00:02:38.120
+Und bei solchen Arrays fängt der Index immer bei 
+0 an. Der erste Wert hat also den Index 0, der  
+
+00:02:38.120 --> 00:02:44.930
+zweite 1 usw. Wenn ich jetzt auf speichern drücke, 
+sehen wir, dass das ganze wieder funktioniert.  
+
+00:02:44.930 --> 00:02:49.970
+Und weil wir jetzt halt so eine Liste haben, 
+können wir nicht nur einen Wert darin speichern,  
+
+00:02:49.970 --> 00:02:55.910
+sondern ganz viele darin speichern. Wenn ich 
+jetzt hier zum Beispiel eine Liste anlege.
+
+00:02:55.910 --> 00:03:09.950
+Mache einfach Variable "c" für "counter". Fügen 1 
+nach jeder Runde hinzu und sagen: hundert Mal soll  
+
+00:03:09.950 --> 00:03:16.640
+jeweils ein random-Wert hinzugefügt werden. Und 
+wenn ich das Ganze dann zeichnen will, kann ich  
+
+00:03:16.640 --> 00:03:24.140
+einfach sagen 40/0 und so lange "c" kleiner.. Und 
+jetzt kann ich zum Beispiel damit ich sozusagen  
+
+00:03:24.140 --> 00:03:31.010
+diese hundert an einer Stelle definieren muss. 
+Hat unsere Liste ein zusätzliches Attribut  
+
+00:03:31.010 --> 00:03:36.770
+nämlich die Länge. Wir können einfach sagen: 
+x.length und darüber bekommen wird sozusagen  
+
+00:03:36.770 --> 00:03:42.380
+die aktuelle Länge unserer Liste zurück. Also 
+sagen wir dem System jetzt:wir fangen bei 0 an  
+
+00:03:42.380 --> 00:03:50.090
+und dann soll "c" so lange hoch gezähllt werden, 
+solange "c" kleiner als die Länge von "x" ist.
+
+00:03:54.260 --> 00:04:00.440
+Und da können wir dann hier unseren "circle" 
+zeichnen. Und als Index benutzen wir jetzt  
+
+00:04:00.440 --> 00:04:04.820
+einfach das "c", das immer um eins hochgezählt 
+wird. Also in der ersten Runde ist es die 0,  
+
+00:04:04.820 --> 00:04:09.980
+i der nächsten Runde eins, zwei, drei und so 
+weiter. Und darüber können wir sozusagen von  
+
+00:04:09.980 --> 00:04:16.520
+dieser Liste die einzelnen Werte abrufen. 
+Und jetzt sehen wir sozusagen wie hier
+
+00:04:18.680 --> 00:04:27.260
+sozusagen für jeden Wert sozusagen ein 
+unterschiedlicher X-Wert abgerufen wird. Es  
+
+00:04:27.260 --> 00:04:32.330
+können aber nicht nur sozusagen eindimensionale 
+Arrays sein. Also einfach nur eine Liste,  
+
+00:04:32.330 --> 00:04:38.510
+sondern wir können sogar Arrays in 
+Arrays anlegen. Dafür benenne ich  
+
+00:04:38.510 --> 00:04:41.780
+das jetzt einfach mal um, damit dass 
+ein bisschen übersichtlicher ist. Und  
+
+00:04:41.780 --> 00:04:48.560
+nennen das einfach "coordinates" und in unsere 
+"coordinates" fügen wir jetzt ein Array ein.
+
+00:04:48.560 --> 00:04:55.040
+Dafür machen wir einfach hier 
+wieder so eine eckige Klammer.
+
+00:04:55.040 --> 00:05:02.690
+Und fügen jetzt einfach zwei Werte in diesem 
+Array ein. Also fügen jetzt ein Array,  
+
+00:05:02.690 --> 00:05:09.380
+in dem zwei zufällige Werte nämlich die X und 
+die Y-Koordinaten drin stehen. Und das Ganze  
+
+00:05:09.380 --> 00:05:15.800
+können wir dann hier unten wieder abrufen. 
+Und jetzt sagen wir "coordinates"... Und  
+
+00:05:15.800 --> 00:05:21.290
+weil das Ganze ja mehrdimensional ist, müssen 
+wir dem System jetzt sagen welches Objekt in  
+
+00:05:21.290 --> 00:05:26.090
+der Liste der Arrays willst du haben, dafür 
+nehmen wir jetzt "c" und dann wollen wir erst  
+
+00:05:26.090 --> 00:05:31.940
+den ersten Wert aus dem verschachtelten 
+Array haben und dann den zweiten Wert,  
+
+00:05:31.940 --> 00:05:36.350
+die wir dann sozusagen für x/y benutzen 
+können. Und jetzt sehen wir sozusagen,  
+
+00:05:36.350 --> 00:05:43.820
+wie wir aus dem im "setup" generierten Array, 
+mit dem Unter-Array diese ganzen zufälligen  
+
+00:05:43.820 --> 00:05:49.070
+Werte hier abgerufen werden. Am Anfang habt 
+ihr vielleicht noch keine direkte Verwendung  
+
+00:05:49.070 --> 00:05:54.380
+für Arrays. Aber später, wenn ihr komplexere 
+Layouts macht und bestimmte Einstellungen,  
+
+00:05:54.380 --> 00:05:59.420
+bestimmte Koordinaten irgendwo speichern 
+müsst, dann werden diese Arrays total wichtig,  
+
+00:05:59.420 --> 00:06:04.520
+um sozusagen dort ganz viele Informationen ablegen 
+zu können und diese auch wieder abrufen zu können.

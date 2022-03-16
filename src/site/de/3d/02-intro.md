@@ -22,6 +22,11 @@ The open source community has developed the [OpenSCAD](https://openscad.org/) so
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/s6nWEmrsK8GtXbG
+en: https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe
+-->
+
 {{h2('JSCAD')}}
 
 ## Inspect 3D project in the browser
@@ -40,6 +45,12 @@ You can find the full reference for all JSCAD features [here](https://openjscad.
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/basics.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/YnZsQTeeQgafFJy
+en: https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG
+-->
+
 
 ```js
 // importing jscad functions

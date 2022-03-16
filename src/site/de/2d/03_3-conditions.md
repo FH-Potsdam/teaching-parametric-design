@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Comparisons')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/en_conditions.mp4", "/images/thumbnails/en_2d_conditions_conditions.png", "en_2d_conditions_conditions", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4
 en:https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/en_conditions.mp4
@@ -34,6 +34,9 @@ We can combine multiple conditions with either `&&` (and) or `||` (or):
 ```js
 if (a < b && b < c) {
   // do something
+}
+if (a === b || a === c) {
+  // do something else
 }
 ```
 
@@ -65,7 +68,7 @@ if (i === 1) {
 }
 ```
 
-The commands inside `else` catch all coniditions that were not matched above.
+The commands inside `else`, catch all coniditions that were not matched above.
 
 In such a series of `if` conditions, the system works from the top to the bottom, as soon as one conidition is met, the others are ignored. If you want to catch conditions not connected to one another, don't use the `else if` command:
 
@@ -96,7 +99,7 @@ The above command `i%2 === 0` checks if a number, when divided by 2, has decimal
 
 {{h2('Scopes (again)')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/i4n7ETnjWjMqijH/download/en_scopes2.mp4", "/images/thumbnails/en_2d_conditions_scopes.png", "en_2d_conditions_scopes", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4
 en:https://fhpcloud.fh-potsdam.de/s/i4n7ETnjWjMqijH/download/en_scopes2.mp4
@@ -121,4 +124,4 @@ function setup () {
 
 {{inspiration('Shape switch')}}
 
-{{editor('/code/randomshape', 'https://...', true)}}
+{{editor('/code/randomshape', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/conditions/randomshapes/sketch.js', true)}}

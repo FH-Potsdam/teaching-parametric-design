@@ -1,0 +1,171 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.760
+Im letzten Video habe ich euch gezeigt wie ihr ein 
+Objekt einfärben könnt und nochmal zur Erinnerung:  
+
+00:00:09.760 --> 00:00:17.140
+über diese "colorize"-Funktion wird uns ein neues 
+Objekt generiert, was nun sozusagen das gefärbte  
+
+00:00:17.140 --> 00:00:23.470
+Objekt enthält. Dieses gefärbt Objekt haben 
+wir hier in unsere objects-array rein gepusht.  
+
+00:00:23.470 --> 00:00:29.500
+Und nun möchte ich euch die Transformationen 
+zeigen. Die kennen wir schon von p5js rotate,  
+
+00:00:29.500 --> 00:00:35.110
+translate, scale. Der große Unterschied zur 
+p5js: in diesem Fall verschieben wir nicht  
+
+00:00:35.110 --> 00:00:40.990
+das komplette Koordinatensystem, sondern nur ein 
+spezifisches Objekt, das wir an die entsprechende  
+
+00:00:40.990 --> 00:00:47.380
+Funktion übergeben. Also wenn wir zum Beispiel 
+ein Objekt verschieben wollen, dann nutzen wir  
+
+00:00:47.380 --> 00:00:52.870
+einfach die "translate"-Funktion. Im Array 
+wird sozusagen auf x-,y- und z-Achse angeben,  
+
+00:00:52.870 --> 00:00:58.750
+wo das ganze hin verschoben werden soll. Übergeben 
+dann das Objekt was wir verschieben wollen. Ich  
+
+00:00:58.750 --> 00:01:08.590
+nehme jetzt mal hier unser colorObject und 
+push jetzt unser neues Objekt ebenfalls in  
+
+00:01:08.590 --> 00:01:16.330
+unserer objects. Und dann sehen wir, dass wir 
+jetzt zwei Kuben haben. Einmal sozusagen den,  
+
+00:01:16.330 --> 00:01:22.600
+den wir als erstes rein gepusht haben, 
+der am center 0/0/0 liegt und dann den  
+
+00:01:22.600 --> 00:01:26.560
+zweiten den wir rein gepusht haben, 
+den wir vorher ge-translated haben.  
+
+00:01:26.560 --> 00:01:32.710
+Genausogut könnte ich jetzt noch zusätzlich 
+zum Beispiel die "rotate"-Funktion benutzen.
+
+00:01:35.200 --> 00:01:44.500
+Wieder ein Array für die drei 
+Achsen hier wieder daran denken,  
+
+00:01:44.500 --> 00:01:49.270
+dass das Ganze in Radians übergeben werden 
+muss. Ich drehe das Ding jetzt nur um 45  
+
+00:01:49.270 --> 00:02:01.180
+Grad. Übergebe das translated-object und 
+übergebe denn hier unser rotated-object.
+
+00:02:01.180 --> 00:02:07.660
+So und sehen jetzt hier, dass wir zwei Gruppen  
+
+00:02:07.660 --> 00:02:14.080
+haben. Einmal einen gedrehten 
+Kubus und einmal den normalen.
+
+00:02:14.080 --> 00:02:19.150
+Und dasselbe können wir natürlich auch mit "scale"  
+
+00:02:19.150 --> 00:02:22.930
+machen. Hierfür kopiere ich 
+mir einmal kurz das hier,
+
+00:02:29.830 --> 00:02:31.630
+verschiebe das einmal in die andere Richtung.
+
+00:02:31.630 --> 00:02:43.580
+Bei "scale" geben wir in dem Fall 
+auch wieder mit einem Array an,  
+
+00:02:43.580 --> 00:02:48.050
+um zu definieren wie das 
+ganze skaliert werden soll.
+
+00:02:48.050 --> 00:02:58.130
+Geben das scale-object zurück.
+
+00:02:58.130 --> 00:03:10.490
+Und haben jetzt drei Objekte die uns generiert 
+werden. Wir sehen hier wie das in eine Richtung  
+
+00:03:10.490 --> 00:03:17.150
+skaliert wurde. Ich kann das ja mal in zwei 
+Richtungen zum Beispiel auch skalieren. Und  
+
+00:03:17.150 --> 00:03:23.390
+sehen jetzt, dass hier unser Kubus entsprechend 
+verzerrt wird. Ganz wichtig beim "rotate", dass  
+
+00:03:23.390 --> 00:03:29.390
+kennen wir schon aus p5js, das hier rotieren wir 
+immer um den Nullpunkt. Deswegen sehen wir auch,  
+
+00:03:29.390 --> 00:03:35.960
+dass dieser würfel sozusagen hier sich um unseren 
+Nullpunkt dreht. Wenn wir wollen, dass der sich  
+
+00:03:35.960 --> 00:03:42.800
+um sich selber dreht, dann müssen wir das 
+einfach anders herum machen. Also erst drehen
+
+00:03:42.800 --> 00:03:50.600
+und danach das ganze dann translaten.
+
+00:03:50.600 --> 00:04:00.350
+Falsches Objekt übergeben.
+
+00:04:05.230 --> 00:04:10.720
+Und sehen jetzt wie er sich um sich selber dreht, 
+weil wir sozusagen während er am Nullpunkt ist,  
+
+00:04:10.720 --> 00:04:16.900
+der Würfel, ihn erst drehen und dann verschieben. 
+Vorher haben wir es verschoben und dann um den  
+
+00:04:16.900 --> 00:04:23.020
+Nullpunkt gedreht. Also das Wichtige hier draus 
+ist, immer daran denken, dass das Ganze immer  
+
+00:04:23.020 --> 00:04:28.870
+ein neues Objekt zurückgibt. Ihr müsst dafür 
+natürlich nicht immer neue Variablen erstellen.  
+
+00:04:28.870 --> 00:04:32.860
+Wenn ihr wisst, dass ihr das Objekt wirklich 
+nur einmal braucht, dann kann man das Ganze  
+
+00:04:32.860 --> 00:04:39.760
+zum Beispiel auch einfach so machen: dann nennen 
+wir das hier rotation-object und speichern danach  
+
+00:04:39.760 --> 00:04:45.340
+einfach alle zukünftigen Veränderungen 
+immer wieder in dieselbe Variable rein.
+
+00:04:45.340 --> 00:04:52.180
+Und bekommt dann natürlich auch das 
+selbe Ergebnis. Genauso könnte wir es  
+
+00:04:52.180 --> 00:04:59.020
+hier unten machen. Dann müssen wir nur daran 
+denken, dass wir hier draußen natürlich keine  
+
+00:04:59.020 --> 00:05:04.180
+Konstante daraus machen. Denn dann können 
+wir die natürlich nicht mehr verändern. Und  
+
+00:05:04.180 --> 00:05:07.810
+dann sparen wir uns sozusagen endlos 
+viele neue Variablen zu benennen.

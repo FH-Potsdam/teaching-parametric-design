@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.390
+Beim Extrudieren habe ich noch eine Sache 
+vergessen. Wir hatten ja die Variante wo das  
+
+00:00:10.390 --> 00:00:14.770
+Ganze sozusagen gekippt wird und dann sich 
+um seinen Mittelpunkt dreht und dadurch wie  
+
+00:00:14.770 --> 00:00:22.630
+hier rechts zu sehen dieser extrudierte 
+Körper entsteht. Wir können aber auch,  
+
+00:00:22.630 --> 00:00:26.500
+das hatte ich gezeigt als wir die 
+verschiedenen 2D-Objekte generiert haben,  
+
+00:00:26.500 --> 00:00:30.970
+dass wir am Anfang immer das "center" 
+definieren können, also wo unser 2D-Objekt  
+
+00:00:30.970 --> 00:00:36.580
+positioniert sein soll. Wenn wir hier nun 
+einen Offset einfügen, ich füge einfach mal  
+
+00:00:36.580 --> 00:00:44.350
+75 auf einer Ebene ein. Und führen dann unser 
+"extrudeRotate" durch. Dann sehen wir jetzt,  
+
+00:00:44.350 --> 00:00:49.390
+dass das Ganze sich nicht mehr sozusagen auf dem 
+Nullpunkt um sich selber dreht, sondern mit einem  
+
+00:00:49.390 --> 00:00:55.660
+Offset dann um den Mittelpunkt. Und dadurch 
+dann ganz neue interessante Shapes generieren  
+
+00:00:55.660 --> 00:01:03.130
+können. Wie jetzt hier gerade 90 Grad, ich kann 
+das Ganze auch mal 360 Grad rumlaufen lassen.  
+
+00:01:03.130 --> 00:01:11.380
+Sehen dann hier jetzt wie unser Rectangle einmal 
+in zwölf Schritten um den Mittelpunkt gedreht  
+
+00:01:11.380 --> 00:01:18.550
+wird. Könnte das jetzt auch mal reduzieren, dann 
+haben wir noch vier Ecken oder ganz hoch drehen.
+
+00:01:18.550 --> 00:01:27.220
+Dann wird es sozusagen schon relativ 
+rund oder ich könnte auch mal hier unser  
+
+00:01:27.220 --> 00:01:34.210
+Rectangle durch einen Kreis austauschen. Dann 
+haben wir nicht mehr "size" sondern "radius".
+
+00:01:34.210 --> 00:01:45.430
+Und bekommen dann hier entsprechend einen 
+Donut, weil wieder unser Kreis wird 90  
+
+00:01:45.430 --> 00:01:50.950
+Grad gekippt und dreht sich jetzt um den 
+Nullpunkt. Könnte das Ganze natürlich auch  
+
+00:01:50.950 --> 00:01:59.890
+noch weiter raus schieben, damit der Abstand 
+zum Mittelpunkt größer wird. Und können über  
+
+00:01:59.890 --> 00:02:04.540
+diesen Offset und dann das rotate um den 
+Mittelpunkt ganz neue Objekte generieren.

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.340
+Nachdem wir jetzt schon "translate" und "rotate" 
+hatten gibt es noch eine letzte Transformation  
+
+00:00:09.340 --> 00:00:16.270
+mit der wir unser Koordinatensystem manipulieren 
+können und das ist die scale Funktion. Mit scale,  
+
+00:00:16.270 --> 00:00:21.370
+relativ simpel, können wir einfach, man 
+kann sich das wie so ein Zoom vorstellen,  
+
+00:00:21.370 --> 00:00:27.820
+wir können sozusagen die Größe unserer Objekte 
+verändern. Und den Wert den wir in scale eingeben  
+
+00:00:27.820 --> 00:00:33.130
+ist einfach eine Multiplikation der Werte die 
+wir haben. Also zwei heißt doppelt so groß.  
+
+00:00:33.130 --> 00:00:40.870
+Wenn ich 0,5 eingebe heißt das Ganze wird durch 2 
+geteilt, also die Hälfte von Allem und kann hier  
+
+00:00:40.870 --> 00:00:48.010
+sozusagen beliebige Werte eingeben um unsere 
+Objekte und deren Größe zu manipulieren. Ganz  
+
+00:00:48.010 --> 00:00:52.480
+wichtig ist das "scale" sich sozusagen auf alles 
+auswirkt. Also es wirkt sich sozusagen auf die  
+
+00:00:52.480 --> 00:00:58.210
+x/y Koordinaten aus. Alles wird sozusagen größer 
+oder kleiner je nachdem welchen Wert wie angeben.

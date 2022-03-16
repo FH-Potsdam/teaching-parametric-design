@@ -1,17 +1,22 @@
 ---
-title: More Complexity
+title: More Variables
 eleventyNavigation:
-  title: More Complexity
-  key: de_2d_more_complexity
+  title: More Variables
+  key: de_2d_more_variables
   parent: de_2d
   order: 7
 ---
 
-{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, task, inspiration %}
 
 {{h2('Arrays')}}
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/arrays.mp4', "/images/video-thumb.png")}}
+{{video("MISSING/download/en_2d_variables2_array.mp4", "/images/thumbnails/en_2d_variables2_array.png", "en_2d_variables2_array", translations.subtitles[locale], locale)}}
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH
+en: MISSING
+-->
 
 As our concepts are getting more complex, we need to be able to store more information. Imagine your creating a shape with the vertex command. Depending on the number of points of the shape, this will take a lot of variables. To overcome this we can use arrays. Arrays are another type of variable which can hold multiple values. Arrays can also be nested. As an example, lets create an array of points, each point is stored as another array `[x,y]`:
 
@@ -45,47 +50,11 @@ for (let p = 0; p < 20; p += 1) {
 }
 ```
 
-{{h2('Array examples')}}
+{{h2('Array example')}}
 
-We create a random shape (array of `[x,y]`), in addition to the x and y, we will add a direction `dx, dy`, which we will use to modify the location inside a loop:
+We create a random shape (array of `[x,y]`), we then draw this shape multiple times, but with increasing opacity, to create the gradient effect:
 
-```js
-const sketchWidth = 400;
-const sketchHeight = 400;
-const numPoints = 30;
-// We use velocity to modify how fast the points move in the random directions
-// Higher velocity faster moving
-const velocity = 2;
-const points = [];
-for (let p = 0; p < numPoints; p += 1) {
-  points.push([
-    Math.random() * sketchWidth, // x
-    Math.random() * sketchHeight, // y
-    Math.random() * velocity, // dx
-    Math.random() * velocity // dy
-  ]);
-}
-
-const numLoops = 20;
-const minOpacity = 200;
-function draw() {
-  noLoop();
-  for (let l = 0; l < numLoops; l += 1) {
-    noFill();
-    stroke(0,minOpacity/numLoops * l)
-    beginShape();
-    for (let p = 0; p < points.length; p += 1) {
-      curveVertex(
-        points[p][0] + l * points[p][2],
-        points[p][1] + l * points[p][3]
-      );
-    }
-    endShape();
-  }
-}
-```
-
-<img src="array.png" alt="" style="max-width:400px; width:100%; display:block; margin: 0 auto; border: 5px solid black;" />
+{{editor('/code/arrayexample', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/arrayexample/sketch.js')}}
 
 > Sometimes we might not know how long our array is exactly: `array.length` returns the length of the array.
 
@@ -93,7 +62,12 @@ More infos on array features can be found [here](https://developer.mozilla.org/e
 
 {{h2('Objects')}}
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/objects.mp4', "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR/download/en_2d_variables2_objects.mp4", "/images/thumbnails/en_2d_variables2_objects.png", "en_2d_variables2_objects", translations.subtitles[locale], locale)}}
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz
+en: https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR
+-->
 
 Story information in arrays can get confusing at a certain level. To keep things organized we can use objects. Objects are very similar to arrays, but instead of a number-based index, objects use a string-based index:
 
@@ -109,7 +83,11 @@ To access the elements inside of an object we use the same syntax as for the arr
 point['x'] // 0
 ```
 
-> TODO: point.x
+And we can also use a short form (this only works if the key has no spaces or other special characters):
+
+```js
+point.x // 0
+```
 
 And to make it a bit more confusing, we can store objects in arrays, and arrays in objects:
 
@@ -123,3 +101,51 @@ const points = [
 
 points[1]['vel'][0] // 1
 ```
+
+### Object example
+
+Similar to the array example, we create a list of points, in addition to x/y, we also store a velocity, the velocity of each point, to move each point after each loop-cycle. To stop the points from leaving the canvas, we simply reverse the velocity (*-1), when the position is outside the canvas:
+
+{{editor('/code/objectexample', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/objectexample/sketch.js')}}
+
+{{h2('Noise')}}
+
+{{video("https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb/download/en_2d_variables_noise.mp4", "/images/thumbnails/en_2d_variables_noise.png", "en_2d_variables_noise", translations.subtitles[locale], locale)}}
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq
+en: https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb
+-->
+
+We already learned about the `random()` command. The noise command also returns random values. When our sketch starts a 3D-space of random values is created. We can then pick individual values from this space. Unlike the `random()` command, the values in this "random" space represent a smooth noise field (see visualisation below).
+
+{{ definition('noise', [
+  { name: 'x', type: 'number' },
+  { name: 'y', type: 'number', optional: true },
+  { name: 'z', type: 'number', optional: true }
+]) }}
+```js
+function setup() {
+  const noiseValue = noise(0,1.5,1);
+}
+```
+
+If a new random field is required, the noise values can be regenerated through the noiseSeed command:
+{{ definition('noiseSeed', [
+  { name: 'seed', type: 'number' }
+]) }}
+```js
+function setup() {
+  noiseSeed(5);
+}
+```
+
+{{editor('/code/noise', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/noise/sketch.js')}}
+
+> Reminder: The smooth curves of the noise field only become visible if you use small coordinates to retrieve the values.
+
+{{task("Task: Arrays & Objects", "Try creating a list of variables and use them in the draw loop. To go further modify the variables with each draw loop, to create an animation.")}}
+
+{{inspiration('Moving through the cloud')}}
+
+{{editor('/code/noiseani', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/noiseani/sketch.js', true)}}

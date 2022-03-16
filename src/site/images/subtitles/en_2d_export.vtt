@@ -1,0 +1,125 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:09.120
+After we've created all these nice graphics 
+we of course also want to export them  
+
+00:00:09.120 --> 00:00:14.560
+so that we can further edit them in an additional 
+software or we can use them in fabrication  
+
+00:00:14.560 --> 00:00:20.160
+processes like 3d printing or laser cutting. To 
+do so there's a very simple function called "save"  
+
+00:00:20.720 --> 00:00:28.560
+we can add an optional parameter to also define 
+the name of the exported image. And if i would  
+
+00:00:28.560 --> 00:00:33.760
+save this right now, this could potentially lead 
+to the browser crashing or the browser stopping  
+
+00:00:33.760 --> 00:00:38.320
+our script. Because, remember the draw 
+function is continuously called, so after  
+
+00:00:38.320 --> 00:00:43.360
+i save the first image the loop would start 
+again and i would have to save another image,  
+
+00:00:43.360 --> 00:00:48.480
+another, another, another image. So to overcome 
+this, we simply use our "noLoop()" command.  
+
+00:00:49.120 --> 00:00:58.880
+Save this. So now the save file panel is opening, 
+we can save the image but then the "draw"  
+
+00:00:59.920 --> 00:01:06.000
+loop is stopped. So what i like to do instead 
+of doing this directly inside the draw  
+
+00:01:06.560 --> 00:01:14.000
+function is to use one of the event functions 
+for example the keypressed function you could  
+
+00:01:14.000 --> 00:01:17.440
+also do this for a specific key, but 
+i will just do it for any key now.  
+
+00:01:18.080 --> 00:01:26.480
+so if the key function if the keypressed 
+event is called, now i want to save my image.
+
+00:01:28.560 --> 00:01:32.960
+so now the loop starts. nothing 
+happens. and if i press any key now  
+
+00:01:34.320 --> 00:01:42.000
+the save panel opens up again and i can 
+save my file. so as i said in the beginning  
+
+00:01:42.720 --> 00:01:51.200
+the normal renderer of p5.js uses pixel data, so 
+we can just export pixel images like png or jpg,  
+
+00:01:52.080 --> 00:01:58.960
+but especially if we want to edit our results 
+in a vector graphics program or we want to use  
+
+00:01:58.960 --> 00:02:05.040
+it for laser cutting we need vector data to 
+get vector data we need to change the renderer  
+
+00:02:05.040 --> 00:02:15.120
+to the SVG renderer so we simply add svg to our 
+createCanvas and now we can also export svg data.  
+
+00:02:15.120 --> 00:02:22.560
+so if i change this to svg save it again i 
+now get an actual circle as a vector path  
+
+00:02:23.120 --> 00:02:29.920
+and can use it in a vector editing software. But 
+when working with vector data there's a few things  
+
+00:02:29.920 --> 00:02:36.160
+to keep in mind. Most of the functions of p5.js 
+work for raster as well as vector data so there's  
+
+00:02:36.160 --> 00:02:41.840
+nothing much to worry about. But especially when 
+you're exporting it you have to keep in mind that  
+
+00:02:41.840 --> 00:02:48.800
+for every point for example in a polygon that 
+you create this is an extra bit of information  
+
+00:02:48.800 --> 00:02:54.320
+so for a raster image you just really have all the 
+individual pixels and a color value for each pixel  
+
+00:02:54.880 --> 00:03:00.960
+but with vector data you can provide a lot more 
+data and files can get really big and for example  
+
+00:03:00.960 --> 00:03:07.600
+if you draw a polygon with tons of individual 
+points through the vertex function at some point  
+
+00:03:07.600 --> 00:03:14.240
+if you have tens of thousands of points even some 
+of the graphics editing software will stop showing  
+
+00:03:14.240 --> 00:03:20.080
+you these paths because they're just too big. even 
+acrobat reader will not be able to show you the  
+
+00:03:20.080 --> 00:03:25.680
+full path, because it's just too much points 
+so you have to keep in mind to not make your  
+
+00:03:25.680 --> 00:03:31.840
+vector data not too complex otherwise you won't 
+be able to use it in another kind of software

@@ -1,0 +1,101 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:10.560
+Similar to what we have been doing in p5.js, 
+we can also create our custom polygons  
+
+00:00:10.560 --> 00:00:18.160
+in JSCAD. To do so, we have the so called 
+"polygon" command and this one works as all  
+
+00:00:18.160 --> 00:00:22.880
+the others, so it will return an object, that 
+we then can further use for other operations.  
+
+00:00:24.240 --> 00:00:31.040
+It takes an object as a parameter and 
+inside our object, we have a points  
+
+00:00:31.040 --> 00:00:36.080
+attribute. We will add the 
+whole thing to our objects.
+
+00:00:39.440 --> 00:00:45.840
+And now we can provide an array of 2d 
+coordinates, to create our polygon. I  
+
+00:00:45.840 --> 00:00:52.000
+will simply try to retrace the rectangle 
+that i've already drawn here. I will start  
+
+00:00:52.000 --> 00:01:01.200
+in the upper corner and then simply work my 
+way around the rectangle. We need four points.
+
+00:01:05.200 --> 00:01:14.640
+Next we go right, and then we go to the lower 
+right, and to the left, and if i save this.  
+
+00:01:15.280 --> 00:01:17.920
+And just comment out the first bits.
+
+00:01:20.000 --> 00:01:26.240
+We have a rectangle again. One thing to keep 
+in mind, if you're drawing your own polygons,  
+
+00:01:27.040 --> 00:01:32.560
+the points should be in clockwise order. 
+Why do they need to be in clockwise order?  
+
+00:01:33.120 --> 00:01:39.840
+We cannot only provide one polygon to our 
+polygon function, but instead we can add  
+
+00:01:41.120 --> 00:01:47.040
+another array around our initial array 
+and now we can provide multiple polygons,  
+
+00:01:47.040 --> 00:01:54.080
+that are being combined and all the polygons 
+that are clockwise are recognized as filled  
+
+00:01:55.120 --> 00:02:01.520
+areas and all the polygons that we 
+provide in counterclockwise order,  
+
+00:02:02.080 --> 00:02:11.360
+those are recognized as holes in our polygon. 
+If we add another polygon to our list here. I  
+
+00:02:11.360 --> 00:02:20.640
+will simply copy the original one. And now change 
+the direction of how we work our way around our  
+
+00:02:20.640 --> 00:02:36.320
+rectangle. We start in the upper left corner 
+again, but now we will go counterclockwise.
+
+00:02:36.320 --> 00:02:41.360
+Save it. And now we can see that 
+there is another polygon inside. And  
+
+00:02:41.360 --> 00:02:46.400
+right now you cannot really see if it's 
+actually a hole or not. To demonstrate,  
+
+00:02:46.400 --> 00:02:51.040
+that this is actually a hole 
+in our original polygon now,
+
+00:02:53.200 --> 00:02:57.280
+i will do a very simple linear extrude.
+
+00:03:02.560 --> 00:03:07.120
+And use our polygon. Override the polygon.
+
+00:03:09.440 --> 00:03:15.920
+And now you can see that it's actually a hole. Now 
+only the area outside the hole is being extruded,  
+
+00:03:16.720 --> 00:03:24.160
+as we use the extrudeLinear command

@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:08.020
+Als letztes nun die scission-Funktion. 
+Hier ein ganz einfaches Beispiel:  
+
+00:00:08.020 --> 00:00:16.240
+wir haben hier zwei cube-Objekte, die durch eine 
+translate Funktion sozusagen verschoben sind. Und  
+
+00:00:16.240 --> 00:00:20.980
+wenn wir die nun nicht als einzelne objekte 
+übergeben, sondern eine "union" durchführen,
+
+00:00:20.980 --> 00:00:38.020
+also beide Objekte in das Array hier packen 
+und dann das union-object zurückgeben. Dann  
+
+00:00:38.020 --> 00:00:42.340
+hätten wir jetzt tatsächlich eine 
+Geometrie die zurückgegeben wird,  
+
+00:00:42.340 --> 00:00:48.340
+die aber eigentlich nicht wirklich verbunden 
+ist miteinander. Und wenn wir sowas nachträglich  
+
+00:00:48.340 --> 00:00:55.000
+wieder voneinander lösen wollen, dann 
+haben wir dafür die scission-Funktion.
+
+00:00:55.000 --> 00:01:05.500
+Hier können wir jetzt einfach unsere union-object 
+reinwerfen. Und was wir dann zurückbekommen ist  
+
+00:01:05.500 --> 00:01:16.090
+ein Array mit allen einzelnen Objekten. Also wenn 
+ich dann zum Beispiel: push sciObj. Sagen wir:  
+
+00:01:16.090 --> 00:01:22.450
+nur das erste zeigen möchte. Dann benutze ich 
+hier, nochmal zur Erinnerung das ist ja ein Array,  
+
+00:01:22.450 --> 00:01:29.650
+wir haben also einen Index der bei 0 anfängt, mit 
+den ganzen Objekten. Haben hier unser Objekt das  
+
+00:01:29.650 --> 00:01:35.710
+auf Index:0 liegt. Und wenn ich dann mal schaue 
+was auf Index:1 liegt, müsste dann unser anderes  
+
+00:01:35.710 --> 00:01:41.350
+Rechteck... Und genauso ist es. Hier ist unser 
+anderes Quadrat. Und genauso könnten ich natürlich  
+
+00:01:41.350 --> 00:01:47.950
+auch beide Objekte wieder hinzufügen. Diese 
+Operation ist vor allem dann interessant,  
+
+00:01:47.950 --> 00:01:53.230
+wenn ihr ganz viele Operationen hintereinander 
+durchgeführt habt: Dinge voneinander abgezogen  
+
+00:01:53.230 --> 00:01:58.870
+haben, unions durchgeführt habt und zum Schluss 
+sicherstellen wollt, dass ihr wirklich nur einen  
+
+00:01:58.870 --> 00:02:04.360
+Körper habt, der komplett miteinander verbunden 
+ist und alle möglichen Artefakte die sich außenrum  
+
+00:02:04.360 --> 00:02:08.920
+gesammelt haben, einfach gelöscht werden. Dann 
+kann diese Funktion besonders hilfreich sein.

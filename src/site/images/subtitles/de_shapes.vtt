@@ -1,0 +1,141 @@
+WEBVTT
+
+00:00:04.620 --> 00:00:11.460
+In p5js haben wir Funktionen um die Basis 
+Shapes ganz einfach zu zeichnen. Hier gibt  
+
+00:00:11.460 --> 00:00:16.500
+es folgende Möglichkeiten: das einfachste 
+ist der Punkt. Dafür müssen wir einfach das  
+
+00:00:16.500 --> 00:00:23.100
+"point" command aufrufen. Müssen nun auf 
+unserem Canvas lediglich das X und die Y  
+
+00:00:23.100 --> 00:00:29.130
+Koordinaten angeben. Also wenn ich jetzt hier 
+zum beispiel 100/100 eintrage, bekommen wir auf  
+
+00:00:29.130 --> 00:00:33.990
+unserem Canvas jetzt hier einen kleinen Punkt 
+gezeichnet. Der Punkt ist ein bisschen seltsam,  
+
+00:00:33.990 --> 00:00:37.950
+weil man würde jetzt vielleicht erwarten, 
+dass der Punkt eigentlich ein Kreis ist,  
+
+00:00:37.950 --> 00:00:42.930
+mit einer Breite und Höhe und einem Radius. 
+Dafür haben wir aber spezifische Funktionen.  
+
+00:00:42.930 --> 00:00:46.380
+Der Punkt ist tatsächlich einfach nur, man 
+muss es sich wie eine Linie vorstellen,  
+
+00:00:46.380 --> 00:00:51.630
+die nur ein Pixel lang ist. Um den größer zu 
+machen, müssen wir die Linienstärke vergrößern.  
+
+00:00:51.630 --> 00:00:57.810
+Was ich euch im nächsten Video dann nochmal zeige. 
+Um diese ein Pixel lange Linie fortzusetzen,  
+
+00:00:58.500 --> 00:01:04.140
+gibt es natürlich dann auch eine "line" 
+Funktion. Damit können wir eine ganz einfache  
+
+00:01:04.140 --> 00:01:08.610
+linien zeichnen. Müssen nun einfach sozusagen 
+zwei, eine Start- und eine End-Koordinate  
+
+00:01:08.610 --> 00:01:19.620
+angeben. Jeweils mit x/y. Also hier sozusagen 
+start-x, start-y und dann end-x und end-y
+
+00:01:20.430 --> 00:01:29.550
+Haben jetzt hier sozusagen unsere Linie 
+gezeichnet. Als nächstes gibt es die Ellipse  
+
+00:01:29.550 --> 00:01:33.690
+Funktion. Damit können wir nämlich jetzt 
+tatsächlich einen richtigen Kreis zeichnen.  
+
+00:01:33.690 --> 00:01:40.020
+Auch hier müssen wir wieder die x/y-Koordinate 
+angeben, wo das ganze positioniert sein soll.
+
+00:01:40.020 --> 00:01:48.030
+Und jetzt können wir die Breite und 
+die Höhe unserer Ellipse angeben.
+
+00:01:50.190 --> 00:01:57.330
+Mache das in dem Fall rund sehen 
+jetzt hier unsere Ellipse. Ganz  
+
+00:01:57.330 --> 00:02:03.660
+wichtig unsere Ellipse wird per default so 
+positioniert, dass die X- und Y-Koordinaten,  
+
+00:02:03.660 --> 00:02:10.290
+die wir als die ersten zwei Parameter angeben 
+im Mittelpunkt unseres Kreises ist und nicht  
+
+00:02:10.290 --> 00:02:15.120
+oben links in der Ecke wie es zum Beispiel 
+beim Rechteck ist. Natürlich ist es irgendwie  
+
+00:02:15.120 --> 00:02:20.400
+ein bisschen dämlich, dass man sozusagen 
+den kreis mit zwei werten definieren muss,  
+
+00:02:20.400 --> 00:02:23.970
+deswegen gibt es hierfür auch ein 
+Shortcut. Dafür haben wir die Circle  
+
+00:02:23.970 --> 00:02:31.560
+Funktion. Können hier sozusagen dass nochmal an 
+der selben Position aber ein bisschen größer.
+
+00:02:31.560 --> 00:02:40.890
+Natürlich falsch: wir brauchen nämlich nur 
+einen Wert und haben jetzt sozusagen den  
+
+00:02:40.890 --> 00:02:46.530
+Kreis und sparen uns einen Parameter. Sonst ist 
+das vom Prinzip her genau dieselbe Funktion.  
+
+00:02:46.530 --> 00:02:52.860
+Genau neben dem Kreis brauchen wir natürlich jetzt 
+auch noch ein Rechteck. Dafür gibt es das "rect"  
+
+00:02:52.860 --> 00:03:01.830
+Command. Auch hier brauchen wir wieder ein x/y, wo 
+das Ganze positioniert sein soll. Und können dann  
+
+00:03:01.830 --> 00:03:09.210
+die Größe also die Breite und die Höhe unseres 
+Rechtecks angeben. Und genau wie beim Kreis:  
+
+00:03:09.210 --> 00:03:15.780
+wenn wir ein Quadrat zeichnen wollen, gibt 
+es auch hier wieder einen Shortcut den wir  
+
+00:03:15.780 --> 00:03:23.310
+benutzen können, um das zu definieren und zwar 
+die "square" Funktion. Müssen also hier einfach  
+
+00:03:23.310 --> 00:03:34.380
+nur "square" eintragen und machen das dann 
+auf 50 und müssen hier dann auch wieder nur  
+
+00:03:34.380 --> 00:03:41.670
+einen Wert eintragen, weil wir ja sozusagen 
+ein genaues Rechteck haben wollen. Es gibt  
+
+00:03:41.670 --> 00:03:45.150
+darüber hinaus auch noch ein paar andere 
+Shapes die ihr einfach in der Reference  
+
+00:03:45.150 --> 00:03:49.830
+nachschauen können dies hier sind sozusagen 
+die wichtigsten einfachen Shapes für den Anfang

@@ -1,0 +1,29 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:07.840
+Im letzten Beispiel haben wir 
+die subtract-Funktion benutzt,  
+
+00:00:07.840 --> 00:00:15.100
+um ein Objekt von einem anderen Objekt abzuziehen. 
+Wir werden nun die intersect-Funktion nutzen,  
+
+00:00:15.100 --> 00:00:21.940
+die ähnlich funktioniert, nur genau das Gegenteil 
+macht. Hier wird nichts abgezogen, sondern wir  
+
+00:00:21.940 --> 00:00:27.850
+bekommen die Flächen an denen beide Objekte sich 
+überlagern. Also wenn ich das jetzt speicher,  
+
+00:00:27.850 --> 00:00:33.190
+wir haben hier wieder ein Array von den Objekten, 
+wo die Überlagerung gemessen werden. Sehen wir  
+
+00:00:33.190 --> 00:00:39.370
+jetzt, dass wir hier die Sphere sehen können, 
+hier unser union-object sehen können und wenn  
+
+00:00:39.370 --> 00:00:44.080
+nun abspeichern, genau den Bereich bekommen der 
+wirklich von beiden 3D-Körpern abgedeckt wird.

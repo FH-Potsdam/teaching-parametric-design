@@ -1,0 +1,137 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:11.860
+Bisher haben wir die p5-shape Functions benutzt, 
+wie z.B. hier, diese einfache "rect" Funktion,  
+
+00:00:11.860 --> 00:00:17.260
+um ein Rechteck zu zeichnen. Wenn wir 
+aber komplexere Shapes zeichnen wollen,  
+
+00:00:17.260 --> 00:00:24.730
+müssen wir über diese Funktionen hinaus gehen. 
+Hierzu ganz kurz als Kontext: Alle oder fast  
+
+00:00:24.730 --> 00:00:29.380
+alle Objekte die wir aufbauen, sind immer so 
+konstruiert, dass wir Punkte haben, die Punkte  
+
+00:00:29.380 --> 00:00:34.570
+werden durch Linien verbunden und daraus können 
+wir dann Polygone konstruieren. Darüber hinaus  
+
+00:00:34.570 --> 00:00:38.920
+könnte man jetzt noch eine Dimension weitergehen, 
+dass man sozusagen im Dreidimensionalen daraus  
+
+00:00:38.920 --> 00:00:43.090
+dann noch dreidimensionale Körper aus 
+den verschiedenen Polygonen formen kann.  
+
+00:00:43.090 --> 00:00:47.950
+Wir bleiben aber jetzt gerade mal hier im 
+zweidimensionalen. Wenn wir uns zum Beispiel  
+
+00:00:47.950 --> 00:00:53.950
+hier unser Rechteck anschauen und wir überlegen 
+jetzt wie wird das eigentlich zusammen gesetzt?
+
+00:00:53.950 --> 00:01:00.730
+Versuche ich erst mal sozusagen 
+die Punktebenw hier abzugreifen.  
+
+00:01:00.730 --> 00:01:07.810
+Werde einfach ein paar Punkte setzen. Wir 
+haben sozusagen einmal die Ecke oben links.
+
+00:01:12.580 --> 00:01:20.800
+dann sozusagen vier weitere Punkte, 
+woraus dann sozusagen unser Polygon,  
+
+00:01:20.800 --> 00:01:28.900
+in diesem fall das Rechteck zusammengesetzt wird. 
+Also von 100/100 geben wir dann nach 300/100,  
+
+00:01:28.900 --> 00:01:38.230
+300/300, 100/300 und haben dann die vier Ecken 
+unseres Rechtecks. Und dazwischen müssen wir  
+
+00:01:38.230 --> 00:01:43.870
+jetzt noch Linien zeichnen. Und dann hätten 
+wir unser eigenes Rechteck. Und dafür gibt  
+
+00:01:43.870 --> 00:01:51.220
+es eine spezielle Schreibweise und Funktionen in 
+p5js. Wenn wir eine neue Shape zeichnen wollen,  
+
+00:01:51.220 --> 00:01:55.000
+müssen wir als erstes dem System sagen: 
+Wir möchten jetzt anfangen eine Shape zu  
+
+00:01:55.000 --> 00:02:00.190
+zeichnen "beginShape" und dann gibt es 
+die "vertex" Funktion. Und die "vertex"  
+
+00:02:00.190 --> 00:02:06.100
+Funktionen sind jetzt eigentlich genau diese 
+Punkte die wir hier oben gezeichnet haben.  
+
+00:02:06.100 --> 00:02:11.770
+Wir können die jetzt natürlich einfach mal runter 
+kopieren und benennen einfach point in "vertex"um.
+
+00:02:11.770 --> 00:02:20.830
+Und wenn wir dann fertig sind, alle unsere 
+punkte definiert haben, sagen wird dem System:  
+
+00:02:21.400 --> 00:02:29.470
+Wir sind fertig, als "endShape". Und wenn ich das 
+jetzt speicher und das Rechteck auskommentiere,  
+
+00:02:29.470 --> 00:02:33.130
+sehen wir, dass wir jetzt sozusagen 
+genau diese vier Ecken abgegangen sind,  
+
+00:02:33.130 --> 00:02:38.080
+aber sozusagen der letzte Schritt, dass 
+es wirklich ein geschlossenes Polygon ist,  
+
+00:02:38.080 --> 00:02:42.280
+in dem Fall, jetzt nicht gemacht worden. 
+Was wir hier machen können ist entweder das  
+
+00:02:42.280 --> 00:02:47.770
+manuell zu machen, indem wir einfach die 
+erste Koordinate nochmal schreiben. Dann  
+
+00:02:47.770 --> 00:02:52.690
+wird sozusagen der Schritt hochgegangen. Oder 
+wir können alternativ in das endShape command  
+
+00:02:52.690 --> 00:02:58.240
+"CLOSE" reinschreiben. Das führt dann dazu, 
+dass genau das sozusagen automatisch für uns  
+
+00:02:58.240 --> 00:03:03.700
+gemacht wird. Genau mit dieser "vertex" Funktion 
+können wir jetzt jede beliebige Shape kreieren,  
+
+00:03:03.700 --> 00:03:08.320
+indem wir einfach die Koordinaten angeben. Wir 
+können diese dann natürlich auch wie wir das  
+
+00:03:08.320 --> 00:03:15.790
+mit unseren normalen Shapes auch kennen, das 
+ganze zum Beispiel füllen und haben dann jetzt  
+
+00:03:15.790 --> 00:03:21.430
+hier sozusagen ein eigenes Polygon erstellt, mit 
+dem wir jetzt weiter arbeiten können. Natürlich  
+
+00:03:21.430 --> 00:03:24.880
+können wir nicht nur gerade Linien zeichnen, 
+sondern wir können auch Kurven zeichnen. Die  
+
+00:03:24.880 --> 00:03:28.990
+sind allerdings etwas komplexer und dazu erzähle 
+ich euch in den nächsten Videos noch mehr.

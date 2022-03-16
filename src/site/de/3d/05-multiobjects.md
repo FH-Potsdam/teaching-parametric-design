@@ -32,6 +32,7 @@ const alignedShapes = align(
 );
 ```
 
+REMOVE!!!
 ### Combining multiple transforms
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transform-combinations.mp4" type="video/mp4">
@@ -50,6 +51,11 @@ const alignedShapes = align(
 const {union, subtract, intersect, scission} = jscad.booleans;
 ```
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/H6pxGHAK3L2toz8
+en: https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4
+-->
+
 <img src="./assets/boolean.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 ### Union
@@ -58,6 +64,11 @@ const {union, subtract, intersect, scission} = jscad.booleans;
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/union.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/Qx4nJMdWEMZJcLH
+en: https://fhpcloud.fh-potsdam.de/s/W7nGNox8GxSgaZx
+-->
 
 <img src="./assets/union.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
@@ -79,6 +90,11 @@ return unionShape;
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/tNptWrS8MsR8Wgc
+en: https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4
+-->
+
 <img src="./assets/subtract.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 Cut out shapes from the first shape in the list:
@@ -99,6 +115,11 @@ return subtractShape;
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/AbTmmBszxJebZSf
+en: https://fhpcloud.fh-potsdam.de/s/aagrSLH7RxbPQnD
+-->
+
 <img src="./assets/intersect.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
 The overlapping areas of the object in the array:
@@ -118,6 +139,11 @@ return intersectShape;
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/scission.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/YsaMsWnaqQYDfQr
+en: https://fhpcloud.fh-potsdam.de/s/iPkWfwqLNzFFQyA
+-->
 
 Scission can cut elements apart that are not connected anymore. This requires that there is at least a little gap inbetween two elements. If one for example would use `subtract` on two shapes in both directions and afterwards `union`. The cut would be so perfect, that the edges would still touch. Here is an example where the shapes are translated before `union` is applied, thereby, creating a big gap:
 

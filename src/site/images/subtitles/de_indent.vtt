@@ -1,0 +1,33 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.370
+In der Sketch Datei ist euch vielleicht schon 
+aufgefallen, dass die Zeilen unterschiedlich  
+
+00:00:09.370 --> 00:00:15.100
+eingerückt sind dies nennt man auch 
+"indenting". Das macht man beim Programmieren,  
+
+00:00:15.100 --> 00:00:19.990
+um den Code für einen selber zu strukturieren. 
+JavaScript interessiert das nicht wirklich,  
+
+00:00:19.990 --> 00:00:25.150
+ob ihr die Zeilen einrückt oder nicht, es hat 
+keinen Effekt auf euer Programm. Aber es kann  
+
+00:00:25.150 --> 00:00:30.250
+den Code übersichtlicher machen. Dieses ist in 
+anderen Programmiersprachen anders. z.B "Python".  
+
+00:00:30.250 --> 00:00:35.710
+Dort muss der Code korrekt eingerückt sein, damit 
+das Programm überhaupt erst funktioniert. Die  
+
+00:00:35.710 --> 00:00:40.600
+Idee ist immer, umso weiter verschachtelt das 
+Ganze ist, umso mehr rücken wird das Ganze ein.  
+
+00:00:40.600 --> 00:00:45.370
+Und dadurch sehen wir sozusagen immer auf welcher 
+Ebene der Verschachtelung wir uns gerade befinden.

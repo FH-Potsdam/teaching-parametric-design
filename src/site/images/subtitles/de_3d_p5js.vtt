@@ -1,0 +1,149 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.360
+Im folgenden Abschnitt wo wir uns anschauen wie 
+man 3D-Objekte durch Code generiert, werden wir  
+
+00:00:10.360 --> 00:00:17.800
+eine andere Software als p5js benutzen. Man kann 
+aber auch in p5js 3D-Visualisierung generieren.  
+
+00:00:17.800 --> 00:00:22.570
+Diese sind allerdings nur für den visuellen 
+Output optimiert und nicht dafür, dass wir sie  
+
+00:00:22.570 --> 00:00:28.510
+als tatsächliche 3D-Objekte exportieren können, 
+um sie dann zum Beispiel in einen 3D-Drucker zu  
+
+00:00:28.510 --> 00:00:32.590
+schicken. Deswegen möchte ich euch in diesem 
+ganz kurzen Video einmal ganz kurz zeigen,  
+
+00:00:32.590 --> 00:00:38.890
+wie man auch in p5js 3D Objekte generieren kann. 
+Falls ihr Interesse habt sozusagen eher für das  
+
+00:00:38.890 --> 00:00:46.360
+Visuelle 3D-Funktionalitäten zu nutzen und weniger 
+dafür, dass dann tatsächlich als Vektor 3D Objekt  
+
+00:00:46.360 --> 00:00:53.140
+zu exportieren. Das erste was ihr machen müsst, 
+ist den Renderer ändern. Wir hatten bisher schon  
+
+00:00:53.140 --> 00:00:59.410
+den normalen Pixel- und den Vektor-Renderer, 
+den SVG-Renderer. Um 3D-Objekte zu generieren  
+
+00:00:59.410 --> 00:01:03.880
+müssen wir den WEBGL-Renderer nutzen. WEB-GL 
+ist die Funktionalität in eurem browser,  
+
+00:01:03.880 --> 00:01:11.950
+um 3D-Objekte möglichst effizient über die 
+Grafikkarte zu rendern. Sobald wir WEBGL hier  
+
+00:01:11.950 --> 00:01:19.510
+als Renderer aktiviert haben, können wir nun die 
+3D Funktionalitäten von p5js nutzen. Wenn wir 3D  
+
+00:01:19.510 --> 00:01:26.920
+nutzen und schöne renderings haben wollen, 
+müssen wir uns auch über die Lichtsituation  
+
+00:01:26.920 --> 00:01:31.300
+in unserem Sketch Gedanken machen. Hierfür 
+gibt es ganz viele verschiedene Funktionen.  
+
+00:01:31.300 --> 00:01:36.640
+Wenn ihr zum Beispiel so etwas wie solche 
+Reflektionen hier euch nicht wichtig sind,  
+
+00:01:36.640 --> 00:01:40.810
+dann könnt ihr einfach nur ein ambientLight 
+benutzen und alles ist schick. Wenn ihr aber  
+
+00:01:40.810 --> 00:01:45.580
+tatsächlich ein bisschen mehr ein 3D-Feeling in 
+eurem rendering haben wollt, dann müsst ihr zum  
+
+00:01:45.580 --> 00:01:49.870
+Beispiel solche pointLights noch zusätzlich 
+setzen, damit ihr entsprechend auch ein paar  
+
+00:01:49.870 --> 00:01:56.050
+Reflektionen auf eurem Objekt habt und das ganze 
+ästhetisch mehr nach einer 3D- Umgebung aussieht.  
+
+00:01:56.050 --> 00:02:03.460
+Wenn wir uns im 3D-Raum befinden können wir auch 
+sozusagen sowohl die "translate" Funktion als auch  
+
+00:02:03.460 --> 00:02:09.850
+die "rotate" Funktion in drei Dimensionen und auch 
+in drei Achsen benutzen. Deswegen gibt es hier  
+
+00:02:09.850 --> 00:02:18.090
+nicht nur die normale "rotate" Funktion sondern 
+auch eine rotateX/Y/Z Funktion. Wenn wir wollen,  
+
+00:02:18.090 --> 00:02:23.100
+dass unsere Objekte auch sozusagen, wie jetzt 
+hier in dem Beispiel zu sehen, solche Reflektionen  
+
+00:02:23.100 --> 00:02:28.770
+haben, dann müssen wir spezielle Materialien 
+statt Farben benutzen. Die Idee hierbei ist,  
+
+00:02:28.770 --> 00:02:32.610
+wenn ihr vielleicht schon mal 3D-Programme 
+benutzt habt, dann kennt ihr das, dass man solche  
+
+00:02:32.610 --> 00:02:39.750
+Materials benutzen muss, um sozusagen unseren 
+Objekten Texturen bzw. Oberflächen zu geben.  
+
+00:02:39.750 --> 00:02:44.010
+Und ähnlich ist es auch in p5js. Hier reicht es 
+also nicht nur einfach eine Farbe zu benutzen,  
+
+00:02:44.010 --> 00:02:48.570
+sonst wäre das Ding einfach nur komplett rot, 
+sondern wir müssen hier in ein Material unserem  
+
+00:02:48.570 --> 00:02:55.470
+Objekt zuweisen, damit das Ganze entsprechend 
+korrekt angezeigt wird. Unsere vertices die wir  
+
+00:02:55.470 --> 00:03:00.150
+vorher im zweidimensionalen benutzt haben, können 
+wir jetzt auch im dreidimensionalen benutzen.  
+
+00:03:00.150 --> 00:03:07.950
+Und können darüber wirklich extrem komplexe 
+Objekte/Shapes generieren, die sozusagen dann im  
+
+00:03:07.950 --> 00:03:15.090
+dreidimensionalen abgebildet werden. Das also nur 
+als wirklich ganz ganz kurze Einführung. Man kann  
+
+00:03:15.090 --> 00:03:20.580
+im dreidimensionalen auch zusätzlich noch Kameras 
+anlegen, um sich sozusagen um seine 3D-Objekte zu  
+
+00:03:20.580 --> 00:03:25.620
+bewegen. Kann theoretisch sogar diese Kameras 
+animieren. Es gibt auch eine Option wie man  
+
+00:03:25.620 --> 00:03:31.950
+mit der Maus sozusagen den 3D-Canvas rotieren und 
+bewegen kann, um sozusagen in seinen Canvas rein  
+
+00:03:31.950 --> 00:03:37.110
+und raus zu zoomen. Also wer Interesse hat tiefer 
+hier einzusteigen, sollte noch mal einen Blick  
+
+00:03:37.110 --> 00:03:42.480
+in die p5js Reference werfen. Ich werde auch ein 
+paar Links hierzu unter dem Video noch vermerken.

@@ -1,0 +1,195 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.670
+Im letzten Video habe ich euch gezeigt, wie man 
+komplexe Polygone zeichnen kann. Dort habe ich  
+
+00:00:09.670 --> 00:00:13.210
+euch schon angekündigt, dass man das Ganze auch 
+mit Kurven machen kann. In diesem Video zeige  
+
+00:00:13.210 --> 00:00:18.070
+ich euch drei verschiedenen Funktionen mit denen 
+man Kurven generieren kann. Diese werden zunehmend  
+
+00:00:18.070 --> 00:00:22.750
+komplexer, aber mit der steigenden Komplexität 
+haben wir auch mehr Kontrolle darüber wie die  
+
+00:00:22.750 --> 00:00:31.000
+Kurven genau gezeichnet werden. Die einfachste 
+Variante ist die curveVertex. Hierfür müssen wir  
+
+00:00:31.000 --> 00:00:37.630
+einfach nur vertex durch curveVertex austauschen. 
+Und dann versucht das System sozusagen eine Linie,  
+
+00:00:37.630 --> 00:00:43.420
+eine Kurve zu generieren, die durch alle Punkte 
+geht die wir dem system mit gegeben haben,  
+
+00:00:43.420 --> 00:00:49.150
+oder zumindest daran entlang gehen. Hier haben 
+wir so gut wie gar keine Kontrolle darüber,  
+
+00:00:49.150 --> 00:00:58.060
+wie diese Kurven, die Winkel genau entsprechend 
+angelegt werden. Bei den nächsten werde ich das  
+
+00:00:58.060 --> 00:01:02.620
+Ganze mal auf eine einzige Kurve reduzieren, 
+um das Ganze noch besser zu veranschaulichen.  
+
+00:01:03.160 --> 00:01:08.800
+Der erste vertex, dafür nehmen wir die normale 
+vertex Funktion, um sozusagen einen Startpunkt  
+
+00:01:08.800 --> 00:01:14.560
+herzustellen. und die Funktion die wir als 
+nächstes benutzen ist der quadraticVertex
+
+00:01:15.190 --> 00:01:23.200
+Unterschied zu den ersten beiden zu vertex 
+und curveVertex, dass wir hier zwei Punkte  
+
+00:01:23.200 --> 00:01:31.960
+mitgeben. Der erste Punkt ist der Kontrollpunkt, 
+der bestimmt wie unsere Kurve generiert wird. Ihr  
+
+00:01:31.960 --> 00:01:35.950
+könnt euch das im Grunde so vorstellen, wie es in 
+einer Grafik Software ist. Dort könnt ihr ja auch,  
+
+00:01:35.950 --> 00:01:41.980
+wenn ihr Kurven bearbeitet, über diese kleinen 
+Handles, über diese kleinen Kontrollpunkte den  
+
+00:01:41.980 --> 00:01:46.420
+Verlauf der Kurve beeinflussen. Und genau so 
+müsst ihr euch das hier auch vorstellen. Also  
+
+00:01:46.420 --> 00:01:53.470
+als erstes geben wir einen Kontrollpunkt mit, 
+den setzt sich jetzt auf 250 und dann das Ziel,  
+
+00:01:53.470 --> 00:01:59.770
+also wo die kurve hingehen sollen und das machen 
+wir genau wie vorher auf 300/100. Und wenn ich  
+
+00:01:59.770 --> 00:02:04.360
+das jetzt abspeicher. Ich nehme das CLOSE 
+mal raus hier. Sehen wie hier jetzt schön  
+
+00:02:04.360 --> 00:02:09.700
+diese Linie generiert wird. Um das nochmal 
+besser zu veranschaulichen, werde ich ein paar  
+
+00:02:09.700 --> 00:02:21.240
+Kontrollpunkte jetzt manuell reinschreiben, um das 
+noch mehr sichtbar zu machen. Dafür erhöhe ich den  
+
+00:02:21.240 --> 00:02:26.880
+strokeWeight setzte jetzt ein paar Kontrollpunkte. 
+Also haben einmal unseren Startpunkt,
+
+00:02:26.880 --> 00:02:41.700
+und unseren Endpunkt und dann haben wir 
+unseren Kontrollpunkt und der ist bei 250.
+
+00:02:45.180 --> 00:02:49.440
+Und in der Grafik software kennt man das ja,  
+
+00:02:49.440 --> 00:02:52.830
+dass die dann meistens noch mal mit 
+kleinen Linien miteinander verbunden sind.
+
+00:02:52.830 --> 00:03:11.670
+Also von 100/100 auf 250 und in die andere 
+Richtung 300/100 auf 250. Genau das zeigt  
+
+00:03:11.670 --> 00:03:16.530
+jetzt im Grunde wie diese Kurve jetzt genau 
+generiert wird. Dafür definiert noch mal  
+
+00:03:16.530 --> 00:03:23.070
+ganz kurz den Y-Punkt damit wir den gleich 
+einfach mal hin und her schieben können,  
+
+00:03:23.070 --> 00:03:26.640
+um das ein bisschen zu veranschaulichen.
+
+00:03:32.490 --> 00:03:40.080
+Wenn ich den jetzt mal zum beispiel auf 400 
+setze, sehen wir wie sich jetzt die Kurve  
+
+00:03:40.080 --> 00:03:45.030
+dadurch anders gestaltet. Also im Grunde genau 
+wie ihr es aus Grafik-Software kennt. Und sich  
+
+00:03:45.030 --> 00:03:50.190
+solche Hilfspunkte zu zeichnen, ist durchaus gut 
+um am Anfang ein Verständnis dafür zu bekommen,  
+
+00:03:50.190 --> 00:03:55.110
+wie sich diese Kurven eigentlich generieren. 
+Also gerade wenn ihr komplexere Formen vielleicht  
+
+00:03:55.110 --> 00:03:58.710
+noch mit einem FOR-Loop baut, ist es sehr 
+hilfreich sich solche Kontrollpunkte zu  
+
+00:03:58.710 --> 00:04:07.200
+setzen. Genauso können wir natürlich auch 
+die X-Position unseres Punktes verändern.
+
+00:04:15.010 --> 00:04:24.460
+Der muss natürlich nicht mittig da drin sitzen. 
+Ich mache mal das Y ein bisschen kleiner. Also  
+
+00:04:24.460 --> 00:04:29.920
+sehen, auch das ist variable möglich. Aber 
+auch wenn wir das bisher noch nicht hatten,  
+
+00:04:29.920 --> 00:04:33.700
+es kommt in einem der nächsten Videos, 
+könnten wir zum Beispiel auch, einfach  
+
+00:04:33.700 --> 00:04:40.090
+nur mal um das zu demonstrieren, das Ganze an 
+die aktuelle Maus-Koordinate dranhängen. Dann  
+
+00:04:40.090 --> 00:04:45.550
+müssen wir natürlich den noLoop unten 
+aufhören und sehen jetzt sozusagen,  
+
+00:04:45.550 --> 00:04:51.790
+wie die aktuelle Maus-Koordinate als 
+Kontrollpunkt hier dient. Es geht dann noch  
+
+00:04:51.790 --> 00:04:56.950
+einen Schritt weiter. Es gibt darüber hinaus 
+und das kennt ihr auch aus Grafik-Software,  
+
+00:04:56.950 --> 00:05:01.840
+den bezierVertex. Beim bezierVertex 
+haben wir nicht nur einen Kontrollpunkt,  
+
+00:05:01.840 --> 00:05:09.070
+sondern haben zwei Kontrollpunkte und das 
+Ganze füge ich jetzt auch mal hier hinzu.
+
+00:05:09.070 --> 00:05:27.330
+Das heißt wir haben einen Kontrollpunkt der 
+das Ende unserer Kurve definiert und einen  
+
+00:05:27.330 --> 00:05:31.800
+Kontrollpunkt der den Anfang definiert. 
+Und darüber können wir sehr sehr genau  
+
+00:05:32.400 --> 00:05:37.170
+kontrollieren wie unsere Kurve verläuft. 
+Können sehr smoothe Übergänge zwischen  
+
+00:05:37.170 --> 00:05:42.420
+verschiedenen Kurvenelementen machen und dadurch 
+ganz komplexe und interessante Formen generieren

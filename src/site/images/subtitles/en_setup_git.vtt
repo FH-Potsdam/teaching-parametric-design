@@ -1,0 +1,253 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:09.200
+If you're going to work on code projects, 
+maybe in a company or with some friends,  
+
+00:00:09.200 --> 00:00:14.560
+it's very likely that you're going to use some 
+kind of code versioning system, to keep track of  
+
+00:00:14.560 --> 00:00:18.800
+your code and to allow you to collaborate 
+with other people on the same code base.  
+
+00:00:19.600 --> 00:00:26.400
+And there's different solutions for this and one 
+is the GIT system. So GIT you can imagine, like  
+
+00:00:27.280 --> 00:00:34.320
+in its very basic functionality, like a backup 
+system, a cloud-based backup system. Similar  
+
+00:00:34.320 --> 00:00:40.080
+to like google drive or dropbox. Where you upload 
+your files and if you edit a file, there's a new  
+
+00:00:40.080 --> 00:00:46.240
+version created of that file. And through an 
+interface you can look into the older versions  
+
+00:00:46.240 --> 00:00:53.520
+of your files. This is basically what GIT is. Of 
+course GIT has a lot more functionality especially  
+
+00:00:54.080 --> 00:01:00.720
+collaboration features, that allow multiple people 
+to work on the same files, but in its very basic  
+
+00:01:01.840 --> 00:01:07.200
+functionality, you can imagine it like a 
+backup system. And so there's different  
+
+00:01:07.200 --> 00:01:14.640
+providers that allow you to use the GIT system. 
+We are going to use GitHub in this seminar.  
+
+00:01:14.640 --> 00:01:18.960
+And you can create a free account on GitHub 
+and use it for your own personal projects.  
+
+00:01:20.960 --> 00:01:26.800
+And if you have an account in one of these 
+systems, you organize your projects in so  
+
+00:01:26.800 --> 00:01:33.280
+called repositories. Each project is a repository 
+in these systems and inside the repository you  
+
+00:01:33.280 --> 00:01:42.400
+can have folders and files, that you then can 
+edit and modify. And as other backup systems,  
+
+00:01:42.400 --> 00:01:47.280
+the idea here is that you have a cloud version, 
+where you keep track of all the changes.  
+
+00:01:47.840 --> 00:01:53.760
+And then you have a local version, a copy of the 
+cloud version, that you use for actual editing.  
+
+00:01:53.760 --> 00:01:58.800
+You can also easily work offline without having 
+any access to the cloud and then as soon as you  
+
+00:01:58.800 --> 00:02:07.360
+go online, you can send your changes to the cloud 
+again. These repos, the short form for repository,  
+
+00:02:07.360 --> 00:02:11.760
+are living in the cloud in a structure, 
+like infrastructure like GitHub.  
+
+00:02:12.560 --> 00:02:18.560
+And when you want to have a copy of the online 
+version on your local machine, then the command  
+
+00:02:18.560 --> 00:02:25.680
+for this is called "cloning" a repository. 
+Through cloning you get a local copy of the  
+
+00:02:25.680 --> 00:02:33.120
+online project, but you can do more on GitHub 
+you can also "fork" a project from someone else  
+
+00:02:33.120 --> 00:02:39.840
+and create a copy project in your own account. 
+This allows you then to modify this project and  
+
+00:02:39.840 --> 00:02:45.520
+if you're working on a big open source project 
+where there are a lot of different collaborators,  
+
+00:02:45.520 --> 00:02:50.880
+you can even send the changes you've done to 
+your copy, back to the original repository.  
+
+00:02:52.080 --> 00:02:56.960
+And of course this forked project you can also 
+clone and work on it on your local machine.  
+
+00:02:58.160 --> 00:03:03.840
+How does it work creating these changes and 
+switching between the online and local version.  
+
+00:03:04.880 --> 00:03:11.760
+Imagine we have created a copy of a repository on 
+our local machine. Now we have folders and files  
+
+00:03:11.760 --> 00:03:17.040
+that we can modify. If there is a change 
+in the online version, so somebody else for  
+
+00:03:17.040 --> 00:03:23.040
+example changed the file and you want to get this 
+change into your local version of the repository.  
+
+00:03:23.600 --> 00:03:29.280
+Then the command is called "pull". Through pulling 
+we get all the changes from the online repository  
+
+00:03:29.280 --> 00:03:35.360
+into our local version. So that we can work 
+on the latest versions of our repository.  
+
+00:03:36.880 --> 00:03:42.480
+Then you start working on the files locally 
+and you do some file changes and you have a  
+
+00:03:42.480 --> 00:03:48.080
+new version on your own machine. What's then 
+happening is that we are collecting all the  
+
+00:03:48.080 --> 00:03:55.200
+changes that we did into a so-called "commit". 
+The idea behind commits is to create some kind of  
+
+00:03:56.160 --> 00:04:02.000
+system for yourself to collect changes, 
+so that you later on easily can find the  
+
+00:04:02.000 --> 00:04:08.640
+different versions. For example let's say you have 
+created a new navigation system for your website,  
+
+00:04:08.640 --> 00:04:14.160
+so this commit you would call "new navigation 
+system". You collect all these changes in these  
+
+00:04:14.160 --> 00:04:18.720
+commit packages. You give them names 
+that you can later on identify them  
+
+00:04:18.720 --> 00:04:25.520
+and now we need to send those commits back to the 
+cloud. And this command is called "push". We push  
+
+00:04:25.520 --> 00:04:31.760
+our commits to the cloud and you can do multiple 
+commits and keep them all on your local machine  
+
+00:04:31.760 --> 00:04:36.320
+before you then push them to the cloud. So 
+you don't need to push them all the time  
+
+00:04:36.320 --> 00:04:41.600
+and you can also do multiple versions on your 
+local machine that are not yet pushed to the  
+
+00:04:41.600 --> 00:04:47.680
+cloud. Again it works really like a versioning 
+system that allows you later on to switch back to  
+
+00:04:47.680 --> 00:04:53.440
+certain changes that you did in previous commits. 
+You can easily move back to a previous version.  
+
+00:04:55.040 --> 00:05:01.520
+A side note: the versioning system is 
+primarily developed for text-based files,  
+
+00:05:01.520 --> 00:05:07.200
+so code works really great in git. But 
+for example images are not that easy,  
+
+00:05:07.200 --> 00:05:13.440
+so you can commit as many images as you want, 
+but for example if you just change a few pixels  
+
+00:05:13.440 --> 00:05:19.280
+you cannot see this single individual individual 
+change, but instead you will see okay there is a  
+
+00:05:19.280 --> 00:05:24.640
+new version of this image committed. Other 
+like in code, in code you can actually see  
+
+00:05:24.640 --> 00:05:30.400
+each individual word each individual line that 
+has been edited in each individual commit.  
+
+00:05:30.400 --> 00:05:34.560
+And so it's a lot easier to track the 
+changes in text files than in images.
+
+00:05:36.800 --> 00:05:42.640
+And to use the GIT system independent of what 
+kind of provider you're using, there are different  
+
+00:05:43.760 --> 00:05:50.000
+interfaces you can use. In the seminar we will 
+primarily use GitHub Desktop, because it's the  
+
+00:05:50.000 --> 00:05:55.040
+easiest way to get started with GitHub. You 
+can get it for free on the GitHub website.  
+
+00:05:56.240 --> 00:06:01.360
+You can use the GitHub Desktop application also 
+on other providers and other infrastructures not  
+
+00:06:01.360 --> 00:06:08.240
+only the GitHub infrastructure. I will also 
+upload a video how to use GitHub through  
+
+00:06:08.240 --> 00:06:13.680
+the visual studio code interface, our code 
+editor. Because this makes it a lot faster,  
+
+00:06:13.680 --> 00:06:17.440
+because you don't need to switch to another 
+application. But do it in one application.  
+
+00:06:18.560 --> 00:06:25.600
+As you are progressing and getting more advanced 
+in GIT use, the command line is probably at some  
+
+00:06:25.600 --> 00:06:30.480
+point the solution to switch to. Through the 
+command line you have a lot more control,  
+
+00:06:30.480 --> 00:06:40.480
+a lot more different commands you can 
+use to work with the GIT infrastructures.

@@ -1,0 +1,69 @@
+WEBVTT
+
+00:00:09.730 --> 00:00:15.130
+In einem der vorherigen Videos habe ich bereits 
+das Problem der Variablen und Scopes angesprochen.  
+
+00:00:15.130 --> 00:00:20.350
+Also wo Variablen definiert werden und wo sie 
+dann verfügbar sind. An diesem Beispiel hier kann  
+
+00:00:20.350 --> 00:00:25.090
+man nochmal sehr gut sehen wie kompliziert dies 
+werden kann. Wir haben hier ganz viele Scopes.  
+
+00:00:25.090 --> 00:00:30.010
+Wir haben einmal unseren global-scope, sozusagen 
+die unterste Ebene unseres Codes. Dann haben wir  
+
+00:00:30.010 --> 00:00:36.310
+in dem Fall hier jetzt die "draw" Funktion und 
+noch mal zur Erinnerung: die Curly Brackets die  
+
+00:00:36.310 --> 00:00:41.290
+geschweiften Klammern sind ein guter Indikator 
+wo ein neuer scope beginnt. Wir haben also hier  
+
+00:00:41.290 --> 00:00:47.110
+unsere "draw" Funktion, dann haben wir die erste 
+"for" Schleife die zweite "for" Schleife und dann  
+
+00:00:47.110 --> 00:00:52.870
+noch unsere if-conditions. Heißt hier innerhalb 
+der if condition sind wir sozusagen am tiefsten  
+
+00:00:52.870 --> 00:00:58.270
+innerhalb unserer scope Level. Wenn ich hier jetzt 
+beispielsweise eine Variable definieren würde
+
+00:01:01.150 --> 00:01:09.130
+dann könnte ich nur nur innerhalb dieser Curly 
+Brackets hier auf diese Variable zugreifen. Weiter  
+
+00:01:09.130 --> 00:01:13.030
+oben innerhalb der draw-funktion innerhalb 
+der "for" Schleifen kann ich nicht auf diese  
+
+00:01:13.030 --> 00:01:19.810
+Variable zugreifen. Wenn ich das wollte, müsste 
+ich diese Variable weiter oben definieren und  
+
+00:01:19.810 --> 00:01:25.090
+könnte dann auch auf diese Variable weiter unten 
+zugreifen. Deswegen noch mal zur Erinnerung,  
+
+00:01:25.090 --> 00:01:31.030
+für dieses Scopes ist es wichtig wo werden die 
+Variablen definiert. Funktionen können immer  
+
+00:01:31.030 --> 00:01:37.210
+nach oben schauen, aber sie können nicht weiter 
+runter in den scope gehen. Weil das sozusagen  
+
+00:01:37.210 --> 00:01:41.650
+nicht möglich ist. Also wenn mal irgendwo 
+eine variabel vielleicht undefined ist auf  
+
+00:01:41.650 --> 00:01:46.450
+jeden Fall checken wo ihr diese definiert habt 
+und in welchem scope ihr euch gerade befindet

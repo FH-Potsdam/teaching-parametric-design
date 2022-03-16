@@ -1,0 +1,71 @@
+WEBVTT
+
+00:00:09.500 --> 00:00:14.960
+Im letzten Video habe ich euch die "while" 
+Schleife gezeigt. Die "for" Schleife ist  
+
+00:00:14.960 --> 00:00:21.440
+sehr ähnlich und hilft uns ein bisschen den Code 
+etwas besser zu strukturieren. Was bei der "for"  
+
+00:00:21.440 --> 00:00:26.060
+Schleife nämlich ist, dass wir nicht sozusagen 
+das alles hier separat in der Schleife machen.  
+
+00:00:26.060 --> 00:00:32.540
+Sondern in diesem Fall schreiben wir einfach statt 
+"while">"for" und dann definieren wir am Anfang  
+
+00:00:32.540 --> 00:00:41.240
+sozusagen was unsere Start-Konditionen ist. Das 
+kommt hier hin. Dann ein Semikolon. Dann haben wir  
+
+00:00:41.240 --> 00:00:48.380
+hier sozusagen wie lange soll das Ganze ausgeführt 
+werden. Wieder ein Semikolon und dann als letztes  
+
+00:00:48.380 --> 00:00:54.800
+sagen wir dem "for" Loop noch was der Loop am 
+Ende eines jeden Loops machen soll. Heißt wir  
+
+00:00:54.800 --> 00:00:58.580
+sparen uns so ein bisschen Schreibarbeit, können 
+das alles schick in eine Klammer reinschreiben.  
+
+00:00:58.580 --> 00:01:05.600
+Und dasselbe können wir auch hier machen. 
+Kopieren uns also wieder die Startkonditionen  
+
+00:01:08.180 --> 00:01:10.640
+und das was am Ende passieren soll.
+
+00:01:13.220 --> 00:01:19.460
+Kopieren das hier rein. Speichern das und 
+haben genau dasselbe Ergebnis wie vorher.  
+
+00:01:19.460 --> 00:01:25.640
+Also der erste Block bis zum ersten Semikolon 
+definiert was sozusagen der Ausgangspunkt ist.  
+
+00:01:26.840 --> 00:01:29.780
+Zweiter Teil: wie lange soll 
+die Schleife ausgeführt werden  
+
+00:01:29.780 --> 00:01:33.320
+und drittens was passiert am 
+Ende einer jeden Schleife.  
+
+00:01:34.580 --> 00:01:38.480
+Und das was am Ende passiert muss nicht bloß 
+"plus" sein. Das kann auch "minus" sein da muss  
+
+00:01:38.480 --> 00:01:43.640
+auch keine Zahl stehen. Theoretisch könnten wir 
+auch hier zum Beispiel "Math.random()" reinpacken.
+
+00:01:46.640 --> 00:01:49.640
+um einen zufälligen Wert hier hinzuzuaddieren.
+
+00:01:52.820 --> 00:01:59.360
+und würden dadurch jetzt sozusagen hier eine etwas 
+zufälligere Generierung eines Rasters bekommen.

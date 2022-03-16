@@ -7,12 +7,13 @@ eleventyNavigation:
   order: 9
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from '../../_includes/parts/macros.njk' import editor %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/03-drawing/functions.mp4', "/images/video-thumb.png")}}
+{{video("https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi/download/en_2d_functions.mp4", "/images/thumbnails/en_2d_functions.png", "en_2d_functions", translations.subtitles[locale], locale)}}
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89
+en: https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi
+-->
 
 Through the for-loop we can draw the same element multiple times. But sometimes a single for-loop is not enough and we end up writing the same code multiple times. Let's say, we want to draw little crop marks into each corner of our sketch:
 
@@ -88,7 +89,7 @@ function polarY(radius, angle) {
 point(polarX(20, 45), polarY(20, 45));
 ```
 
-The return value needs to be one value, but it can be of any kind also an array or object:
+The return value needs to be **one** value, but it can be of **any kind** also an array or object:
 
 ```js
 function polar(radius, angle) {
@@ -105,3 +106,13 @@ point(p.x, p.y);
 ```
 
 > If you are building more complex code, functions will not only help you to write less code, but they can also be used to structure your code and build reusable functions, that you can use in your next project.
+
+{{task("Task: Functions", "Take a look at your previous sketches and see if you can optimize one of them by turning repetitive code into functions.")}}
+
+{{inspiration('Fractals')}}
+
+Try changing the various variables in the example below to create different so called L-Trees or fractal trees. Start with the `max` variable and set it to `2` and then slowly increase it, to better understand how the system works. Be aware, setting it to a very high value can take a while to process (but its worth it). Don't set `max` to a value higher than 20 (20 levels already generates more than 1 Million lines).
+
+{{editor('/code/fractals2', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/functions/fractals/sketch.js', true)}}
+
+While the output looks quite magical, the code behind it, is quite simple. You are just calling the same function over and over again. Inside this function there is a loop, which creates branches at the end of the last line. Thanks to the transformation functions we don't need to calculate angles and positions, but can simple transform again from the last known location.

@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:04.640 --> 00:00:08.480
+Im letzten Video habe ich euch gezeigt 
+wie wir mit "translate" das gesamte  
+
+00:00:08.480 --> 00:00:13.280
+Koordinatensystem auf x/y Achse verschieben 
+können. Darüber hinaus können wir nicht nur  
+
+00:00:13.280 --> 00:00:17.000
+verschieben sondern wir können das 
+Koordinatensystem auch drehen. Dafür  
+
+00:00:17.000 --> 00:00:21.980
+haben wir die "rotate" Funktion. In der 
+"rotate" Funktion müssen wir auch wieder  
+
+00:00:21.980 --> 00:00:29.000
+einen Winkel angeben. Machen das auch wieder in 
+Radians. Nutzen also wieder hier unsere formel.
+
+00:00:29.000 --> 00:00:36.830
+Also hier 45 Grad. Wenn ich 
+das jetzt mache, sehen wir,  
+
+00:00:36.830 --> 00:00:42.590
+dass sich das Koordinatensystem um den 
+Nullpunkt oben links in der Ecke dreht.
+
+00:00:42.590 --> 00:00:48.980
+Das mag am Anfang ein bisschen verwirrend 
+sein, aber ihr kennt das eigentlich auch aus  
+
+00:00:48.980 --> 00:00:53.180
+Grafikprogramm, wenn ihr dort etwas dreht 
+könnt ihr häufig den Rotations-Mittelpunkt  
+
+00:00:53.180 --> 00:00:57.170
+auch verschieben, um den sich das Ganze 
+dreht. Wenn wir jetzt zum Beispiel wollen,  
+
+00:00:57.170 --> 00:01:03.500
+dass unser Quadrat sich um sich selber dreht. 
+Dann müssen wir mit der "translate" Funktion  
+
+00:01:03.500 --> 00:01:09.980
+einfach das Koordinatensystem so verschieben, 
+dass das Rechteck in dem Moment wo wir drehen  
+
+00:01:09.980 --> 00:01:16.640
+mittig auf unserem Koordinatensystem 
+sitzt. Dafür können wir einfach
+
+00:01:19.890 --> 00:01:26.550
+die "translate" Funktion benutzen, setzen 
+das ganze erstmal auf den Mittelpunkt  
+
+00:01:26.550 --> 00:01:33.960
+unserer Ebene damit dass irgendwie ein bisschen 
+hübscher ausschaut. Zum Überprüfen sehen wir,  
+
+00:01:33.960 --> 00:01:41.400
+dass das Ganze jetzt hier ist, aber unser Quadrat 
+ist jetzt noch nicht richtig auf dem Mittelpunkt,  
+
+00:01:41.400 --> 00:01:48.960
+dafür müssten wir es jetzt -50/-50 
+setzen. Jetzt ist es sozusagen ganz  
+
+00:01:48.960 --> 00:01:57.420
+mittig in unserem Canvas und wenn wir jetzt 
+das "rotate" benutzen. Weil unser Körper jetzt  
+
+00:01:57.420 --> 00:02:02.520
+mittig auf dem Nullpunkt sitz. Ich kann zum 
+veranschaulichen auch zum Beispiel noch mal  
+
+00:02:02.520 --> 00:02:09.840
+einen Kreis rot obendrüber zeichnen, damit 
+wir den Nullpunkt einfach nochmal sehen.
+
+00:02:09.840 --> 00:02:20.760
+Sehen jetzt dreht es sich sozusagen um 
+den Nullpunkt und die Rotation können  
+
+00:02:20.760 --> 00:02:23.250
+wir natürlich auch über eine Variable regeln.
+
+00:02:23.250 --> 00:02:35.640
+Und lassen die dann einfach immer größer 
+werden und haben jetzt sozusagen ein Quadrat,  
+
+00:02:35.640 --> 00:02:44.790
+dass sich um den Nullpunkt dreht. Und darüber 
+hinaus könnte man natürlich jetzt auch noch  
+
+00:02:44.790 --> 00:02:54.240
+weiter mit weiteren "translate" zum Beispiel 
+spielen. Damit man das noch besser verstehen kann,  
+
+00:02:54.240 --> 00:02:59.850
+muss ich sozusagen hier, dort wo wir 
+das "rotate" tatsächlich durchführen  
+
+00:02:59.850 --> 00:03:09.510
+den Mittelpunkt setzen. Also sehen, dort dreht 
+es sich jetzt um den Nullpunkt unserer Quadrat.  
+
+00:03:09.510 --> 00:03:14.970
+Heiß durch "translate" und "rotate" können 
+wir sozusagen ganz viele Dinge sich drehen  
+
+00:03:14.970 --> 00:03:19.920
+lassen. Wir können die Rotation von Objekten 
+anpassen und müssen nicht irgendwelche kruden  
+
+00:03:19.920 --> 00:03:24.840
+Winkel und Positionen berechnen, sondern 
+können einfach dieses "rotate" benutzen und  
+
+00:03:24.840 --> 00:03:28.320
+dadurch werden unsere Objekte entsprechend 
+dann an die korrekte Position gedreht.

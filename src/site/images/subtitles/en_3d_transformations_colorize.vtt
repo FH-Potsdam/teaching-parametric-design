@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:12.960
+In the last two videos, i showed you how to 
+create 2D and 3D shapes in JSCAD. These shapes  
+
+00:00:12.960 --> 00:00:19.040
+we can also colorize, but it's very important 
+to have in mind, as we export them later on,  
+
+00:00:19.040 --> 00:00:25.680
+for example in the STL format, we lose all the 
+color information. The colors are more to help  
+
+00:00:25.680 --> 00:00:29.840
+us during the development process, for example 
+to differentiate between different objects.  
+
+00:00:30.720 --> 00:00:36.720
+To colorize an object, we have the colorize 
+function. And the colorize function takes an array  
+
+00:00:36.720 --> 00:00:47.200
+of three numbers, from zero to one. Different from 
+p5.js 0 to 255. To get a red cube, we write one,  
+
+00:00:47.200 --> 00:00:53.840
+zero, zero. We could add a fourth number 
+to add a transparency. Also zero to one.  
+
+00:00:55.200 --> 00:01:00.640
+And then as a second parameter, after the array, 
+we provide the object that we want to colorize. In  
+
+00:01:00.640 --> 00:01:07.840
+our instance the cube object. And this is now very 
+different to p5.js. In p5.js we defined the color  
+
+00:01:07.840 --> 00:01:14.560
+and everything we drew afterwards, was colorized 
+in this color that we defined. Here every time we  
+
+00:01:14.560 --> 00:01:21.920
+use any kind of transformation function: colorize, 
+translate, rotate, a new object is created  
+
+00:01:21.920 --> 00:01:28.720
+and returned. For the colorize function, a new 
+object of the colorized object is created for us.  
+
+00:01:29.440 --> 00:01:36.240
+We can store this in another object. Let's call 
+it color object and return this color object.  
+
+00:01:38.160 --> 00:01:43.120
+In the beginning, this might be weird, that 
+there's always a new object being created,  
+
+00:01:43.120 --> 00:01:47.280
+but there's something really nice about 
+it. Because now you can use the same cube  
+
+00:01:47.280 --> 00:01:53.840
+object and use it in multiple transformations, 
+without any need of creating a new cube object.  
+
+00:01:54.960 --> 00:02:04.000
+So we save this and now we have a red cube.

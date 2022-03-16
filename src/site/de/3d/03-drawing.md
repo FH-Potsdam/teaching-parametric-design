@@ -19,6 +19,11 @@ eleventyNavigation:
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/gJSXCSgYinskq6X
+en: https://fhpcloud.fh-potsdam.de/s/6wEjNRJBkRz5Xmd
+-->
+
 ```js
 const {line, arc, circle, ellipse, rectangle} = jscad.primitives;
 ```
@@ -103,6 +108,11 @@ const shape = rectangle({
   Your browser does not support the video tag.
 </video>
 
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/LxYHETDD3QJayF9
+en: https://fhpcloud.fh-potsdam.de/s/rBCA9q9MfK7LtxB
+-->
+
 ```js
 const {cube, sphere, cylinder} = jscad.primitives;
 ```
@@ -148,12 +158,19 @@ There are a few more 3D primitives to explore, examples for how to construct the
 - [cylinderElliptic](https://openjscad.xyz/docs/module-modeling_primitives.html#.cylinderElliptic)
 - [torus](https://openjscad.xyz/docs/module-modeling_primitives.html#.torus)
 
+
+NEW CHAPTER TRANSFORMS
 ## Colors
 
 <video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/3d-colors.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/48gsXjqzbbLxGmz
+en: https://fhpcloud.fh-potsdam.de/s/J4yoWNnmawzrYQM
+-->
 
 ```js
 const {colorize, colorNameToRgb} = jscad.colors;
@@ -181,6 +198,11 @@ const shape = colorize(colorNameToRgb('black'), cube());
   <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transforms.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/QPkkPMNra3GcfJT
+en: https://fhpcloud.fh-potsdam.de/s/ycBJZ2a88Y8gc5i
+-->
 
 ```js
 const {translate, rotate, scale, center, align} = jscad.transforms;
@@ -222,3 +244,10 @@ The center function allows us to center an object on one or multiple axis. If al
 ```js
 const shape = center([true, true, true], cube());
 ```
+
+Multi Transforms in Loops!!!!
+
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/3gpzE9x3CiHFySf
+en: https://fhpcloud.fh-potsdam.de/s/HyCYdBfaWi49Lzm
+-->

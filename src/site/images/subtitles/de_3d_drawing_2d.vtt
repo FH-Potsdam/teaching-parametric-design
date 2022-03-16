@@ -1,0 +1,180 @@
+WEBVTT
+
+00:00:04.640 --> 00:00:09.020
+Viele der Funktionen die ich euch nun zeigen 
+werde, sollten euch schon aus p5js bekannt  
+
+00:00:09.020 --> 00:00:14.060
+vorkommen. In diesem ersten Video zeige ich 
+euch die 2D-Shapes. Warum brauchen wir 2D,  
+
+00:00:14.060 --> 00:00:19.850
+wenn wir 3D-Objekte generieren wollen. Später 
+werde ich euch zeigen wie wir Dinge exptrudieren  
+
+00:00:19.850 --> 00:00:25.490
+können. Also aus 2D>3D Objekte generieren. Dann 
+ist es hilfreich sozusagen erst mit 2D-Shapes zu  
+
+00:00:25.490 --> 00:00:31.700
+starten und darauf aufbauend dann die 3D Objekte 
+daraus heraus zu extrudieren. Ich habe uns hier  
+
+00:00:31.700 --> 00:00:37.070
+in unserer main Funktion einfach nur nen Array 
+erstellt, das ich "objects" genannt habe und da  
+
+00:00:37.070 --> 00:00:42.380
+kann ich nun meine ganzen 2D shapes gleich 
+rein-pushen, um sie dann rendern zu lassen.  
+
+00:00:42.380 --> 00:00:49.190
+Fangen wir mit der einfachsten Shape an, die 
+Linie. Hierfür generiere ich mal eine Variable  
+
+00:00:49.190 --> 00:00:54.680
+die nenne ich lineObj und da packe ich jetzt, 
+generiere sozusagen mein Objekt rein, in die  
+
+00:00:54.680 --> 00:01:03.080
+Variable. Die "line" Funktion nimmt ein Array 
+mit jeweils zwei Punkten: Start- und Endpunkt,  
+
+00:01:03.080 --> 00:01:12.500
+also x/y Koordinaten jeweils. Die setze ich 
+mal auf -50/-50 und 50/50. Speichere das Ganze.
+
+00:01:15.770 --> 00:01:22.580
+Muss natürlich das lineObj auch noch 
+den objects hinzufügen. Dafür pushen  
+
+00:01:22.580 --> 00:01:27.830
+wir das Ganze in unser array rein und 
+haben jetzt eine Linie gezeichnet.  
+
+00:01:27.830 --> 00:01:34.385
+Das nächste Objekt kennen wir auch 
+schon aus p5js, das ist der "arc".
+
+00:01:34.385 --> 00:01:44.780
+"arcObj". Der "arc" nimmt ein Objekt als 
+Parameter. Hier in können wir einmal das "center"  
+
+00:01:44.780 --> 00:01:49.610
+definieren, also wo das Ganze positioniert sein 
+muss. Wenn wir den weglassen, wird einfach auf  
+
+00:01:49.610 --> 00:01:55.040
+0/0/0 gelegt. Dabei lasse ich es jetzt auch 
+mal. Dann können wir den Radius definieren,  
+
+00:01:55.040 --> 00:02:01.520
+den würde ich mal auf 50 setzen. Dann können 
+wir den startAngle definieren. Der wird jetzt  
+
+00:02:01.520 --> 00:02:06.470
+auch wie wir das schon aus p5js kennen, in 
+Radians angegeben. Also wieder unsere kleine  
+
+00:02:06.470 --> 00:02:15.190
+Formel Math.PI durch 180, mal den Winkel den wir 
+haben wollen. Fangen jetzt einfach mal bei 0 an  
+
+00:02:15.190 --> 00:02:24.130
+und dann brauchen wir natürlich auch noch eine 
+end-angle und den setzen wir auf 90 Grad und  
+
+00:02:24.130 --> 00:02:31.420
+dann müssen wir noch die Segments angeben. Wenn 
+wir in 3D-Umgebungen runde Objekte haben wollen,  
+
+00:02:31.420 --> 00:02:36.370
+dann müssen wir die sozusagen über ganz viele 
+Linien oder ganz viele Flächen uns generieren  
+
+00:02:36.370 --> 00:02:43.030
+lassen. Die auch Segmente genannt werden. Umso 
+mehr Segmente ein Kreissegment hat, umso runder  
+
+00:02:43.030 --> 00:02:48.460
+wird es natürlich, aber auch umso aufwendiger 
+wird es für den Renderer, das ganze zu generieren.  
+
+00:02:48.460 --> 00:02:52.360
+Deswegen muss man jedesmal so ein bisschen so 
+einen Mittelwert wählen, sodass es einigermaßen  
+
+00:02:52.360 --> 00:02:57.580
+rund aussieht, aber gleichzeitig die Performance 
+auf Seite der 3D-Software nicht zu hoch wird.  
+
+00:02:57.580 --> 00:03:06.055
+Ich setze das ganze jetzt mal auf 32 und pushe 
+dann das Ganze noch in unserer objects array.
+
+00:03:06.055 --> 00:03:17.380
+Speicher das Ganze und jetzt haben wir hier auch 
+einen viertel Kreis, von 0 bis 90 Grad. Darüber  
+
+00:03:17.380 --> 00:03:21.370
+hinaus gibt es noch zwei weitere Funktionen 
+mit denen wir kreis-ähnliche Objekte machen  
+
+00:03:21.370 --> 00:03:26.200
+können. Das ist einmal "circle" und "ellipse". 
+Die sind sehr sehr ähnlich zu unserem "arc",  
+
+00:03:26.200 --> 00:03:32.350
+deswegen ersetze ich den jetzt einfach mal. Bei 
+"circle" ist es so, dass wir einfach im Grunde den  
+
+00:03:32.350 --> 00:03:37.750
+start- und end-angle nicht mehr angeben müssen, 
+weil es ja ein ganzer Kreis sein soll. Wenn  
+
+00:03:37.750 --> 00:03:45.340
+ich das jetzt abspeicher, sehen wir, dass 
+jetzt entsprechend... Etwas falsch gemacht,  
+
+00:03:45.340 --> 00:03:54.310
+circle falsch geschrieben. ..entsprechend 
+ein ganzer Kreis generiert wird. Und bei  
+
+00:03:54.310 --> 00:04:02.080
+der "ellipse", dort geben wir nicht nur einen 
+einfachen Radious an, sondern "ellipse" kann  
+
+00:04:02.080 --> 00:04:06.940
+ja sozusagen unterschiedliche Breiten und 
+Höhen haben, können hier ein Array angeben,  
+
+00:04:06.940 --> 00:04:12.130
+mit zwei Werten als "radius". Und bekommen 
+dementsprechend dann sozusagen einen verzerrten  
+
+00:04:12.130 --> 00:04:18.130
+Kreis ausgegeben. Das letzte Objekt was ich 
+euch noch zeigen möchte, ist das "rectangle".
+
+00:04:18.930 --> 00:04:25.440
+Dafür gibt es die "rectangle" Funktion. Die  
+
+00:04:25.440 --> 00:04:29.970
+nimmt auch wieder ein Objekt. Auch hier 
+können wir wieder ein "center" angeben.
+
+00:04:29.970 --> 00:04:38.250
+Und dann geben wir die "size" an, von 
+unserem Objekt. Und auch das ist ein Array,  
+
+00:04:38.250 --> 00:04:44.460
+denn wir haben ja Breite und Höhe. Gebe jetzt 
+auch mal dasselbe wie bei unserer "ellipse" an.  
+
+00:04:44.460 --> 00:04:52.110
+Speicher das Ganze und muss das Ganze natürlich 
+auch noch unserem objects array hinzufügen.
+
+00:04:55.990 --> 00:05:03.130
+Und dann haben wir jetzt zusätzlich auch noch 
+ein entsprechendes Rechteck hier angegeben.
