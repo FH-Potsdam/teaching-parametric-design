@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:04.560 --> 00:00:09.200
+So far, we have been drawing our objects more 
+or less manually. Like this circle here. This  
+
+00:00:09.200 --> 00:00:15.600
+circle is positioned at x:20 and y:20. But 
+the more complex our designs and generative  
+
+00:00:15.600 --> 00:00:20.560
+objects become, the more things we need to 
+draw. What we could in this case simply do,  
+
+00:00:20.560 --> 00:00:26.000
+if we want to draw multiple circles, we can 
+copy and paste the code, and then just place  
+
+00:00:26.000 --> 00:00:32.240
+them at different positions. Let's say we want to 
+place them all in a row at different x-positions.  
+
+00:00:33.120 --> 00:00:43.840
+And let's say we place this one at 40, 60, 80, 
+100 and 120. Now we have a couple of points, but  
+
+00:00:43.840 --> 00:00:50.000
+obviously this can turn into a lot of code writing 
+and especially if you want to change something.  
+
+00:00:50.000 --> 00:00:55.760
+Now we need to change it in so many different 
+places. So this is when the interesting concept  
+
+00:00:55.760 --> 00:01:00.880
+of loops comes into play. We have two types 
+of loops. I will start with the "while" loop.  
+
+00:01:02.160 --> 00:01:07.520
+The first thing you need to do when you're 
+setting up a loop, is you need to translate  
+
+00:01:07.520 --> 00:01:15.520
+your concept into something that can be done in an 
+iterative process. In our case here we have these  
+
+00:01:15.520 --> 00:01:23.040
+six circles and the only thing that is changing 
+in those six circles is the x-position. So let's  
+
+00:01:23.600 --> 00:01:29.840
+think of how we could change this by placing a 
+variable inside that we will then use to count  
+
+00:01:29.840 --> 00:01:37.760
+up inside our loop. What we could do for example 
+say the first one sits at 20 the next one sits at  
+
+00:01:39.760 --> 00:01:49.680
+40 so we could say okay we simply 
+place them, we multiply 20 times.
+
+00:01:52.480 --> 00:01:54.560
+A variable that we will use in a second.
+
+00:01:59.840 --> 00:02:07.440
+And 20 times six so now our code stays kind of 
+the same and there's only one bit of information  
+
+00:02:07.440 --> 00:02:14.560
+changing and that is a counter that is increasing. 
+Now we can simply remove all of these bits and  
+
+00:02:14.560 --> 00:02:22.160
+we replace this part here through a variable. 
+Let's call it counter. What we now need to do,  
+
+00:02:22.160 --> 00:02:31.680
+we need a start for our variable so let's 
+define it to be one in the beginning and then  
+
+00:02:31.680 --> 00:02:35.760
+as our loop is running we want to increase the 
+counter every time the loop is finished. And  
+
+00:02:35.760 --> 00:02:42.080
+count up until we reach the counter six. So for 
+this, for the beginning we use the "while"-loop.  
+
+00:02:43.680 --> 00:02:50.400
+To use a while loop, you simply write "while" 
+and then some curly brackets and inside the curly  
+
+00:02:50.400 --> 00:02:54.640
+brackets we will include the commands that 
+we want to execute each time the loop runs.  
+
+00:02:55.680 --> 00:03:01.920
+And in the brackets up here, we now need to write 
+a condition and tell our loop how long it should  
+
+00:03:01.920 --> 00:03:12.800
+run. In our case we want the loop to run as 
+long as counter is smaller or equals six. And  
+
+00:03:12.800 --> 00:03:18.320
+what we then need to do, because if we would start 
+now, the loop would start running and the loop  
+
+00:03:18.320 --> 00:03:24.240
+would check okay is the counter variable still 
+smaller or equal six, and it is, so it runs and  
+
+00:03:24.240 --> 00:03:29.280
+after the loop is completed it checks again, and 
+checks again, but the counter is not increasing  
+
+00:03:29.280 --> 00:03:36.960
+so far. So what we need to do is add one to the 
+counter variable every time the loop is completed.  
+
+00:03:37.600 --> 00:03:43.760
+At some point the counter turns seven and then the 
+while loop identifies okay this is not smaller or  
+
+00:03:43.760 --> 00:03:51.360
+equal six so i will stop running the loop. And 
+when i save this now we can see that we now have  
+
+00:03:51.360 --> 00:03:58.160
+six circles there. And what is nice now i can just 
+change the condition here. Let's change it to 10.  
+
+00:03:59.040 --> 00:04:03.200
+And i get 10 circles or i could 
+say i want the circles to be bigger  
+
+00:04:03.760 --> 00:04:08.880
+and i would just need to change the code in 
+one individual place, but it changes for all  
+
+00:04:08.880 --> 00:04:15.120
+the iterations of the loop and i don't need to 
+write the same code over and over again. And what  
+
+00:04:15.120 --> 00:04:25.680
+is also nice let's change this to x. We can nest 
+our loops. Let's say we don't only want to create  
+
+00:04:25.680 --> 00:04:34.000
+a row of points but actually a grid of points. 
+We will simply add another loop inside here,  
+
+00:04:34.800 --> 00:04:44.720
+which we will use for the "y", use it for the same 
+number of columns, of course we need to set the  
+
+00:04:45.680 --> 00:04:56.400
+y-variable and then multiply our 
+y-position. And then indent the whole thing.
+
+00:05:00.000 --> 00:05:07.360
+Add one to our y-variable. So now we 
+have the outer loop which starts running,  
+
+00:05:08.000 --> 00:05:15.120
+we are going from left to right and inside for 
+each x-position, we are also running from top  
+
+00:05:15.120 --> 00:05:25.360
+to bottom. And if i save this now, we now 
+get 10x10 circles. And so we can use these  
+
+00:05:25.360 --> 00:05:30.480
+kind of loops to create tons and tons of objects 
+really really quickly, without needing to write  
+
+00:05:30.480 --> 00:05:36.080
+a lot of code, which is very nice. In the next 
+video i will introduce you to the for-loop  
+
+00:05:36.080 --> 00:05:44.880
+which is a little bit more efficient 
+way of writing these kind of loops.

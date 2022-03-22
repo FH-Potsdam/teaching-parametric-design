@@ -371,4 +371,9 @@ let shape = polyhedron({
 ```
 <img src="./assets/example-3.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
 
+{{h2('Further Reading')}}
 
+(OpenSCAD models)[https://github.com/nophead/NopSCADlib] 
+(CADQuery (Python))[https://cadquery.readthedocs.io/en/latest/index.html]
+(GUI-App for CADQuery)[https://github.com/jmwright/cadquery-gui]
+(CadHub)[https://cadhub.xyz/u/franknoirot/chip-clip-jscad/ide]

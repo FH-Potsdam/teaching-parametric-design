@@ -12,8 +12,7 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import definition %}
 {% from '../../_includes/parts/macros.njk' import editor %}
 
-{{video('https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/05-input/save.mp4', "/images/video-thumb.png")}}
-
+{{video("https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6/download/en_2d_export.mp4", "/images/thumbnails/en_2d_export.png", "en_2d_export", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE
 en: https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6
@@ -31,7 +30,31 @@ function draw() {
 }
 ```
 
-> When calling the save command, make sure you use `noLoop()` or an event. Otherwise the save function will be called continously.
+When calling the save command from the draw-loop, make sure you use `noLoop()`. Otherwise the save function will be called continously. Otherwise you could also use an event:
+
+```js
+function keyReleased() {
+  save();
+}
+```
+
+You can also define the name of the saved file:
+```js
+save("myImage.png");
+```
+
+If you wan to export a series of images:
+```js
+let counter = 1;
+function draw() {
+  // drawing code
+  if (count < 10) {
+    // use the if to stop after 10
+    save("image" + counter + ".png");
+  }
+  counter += 1;
+} 
+```
 
 {{h2('Vectors')}}
 
@@ -49,8 +72,6 @@ function setup() {
 
 {{h2('Further reading')}}
 
-MOVE TO NEXT SESSION
-
 In the last few sessions we have covered the basics of p5js, but there is a lot more to discover and do:
 
 - Checkout the [reference](https://p5js.org/reference/) for more commands
@@ -58,4 +79,4 @@ In the last few sessions we have covered the basics of p5js, but there is a lot 
 - If you want more tutorials, the [coding train](https://thecodingtrain.com/) comes strongly recommended
 - The coding examples from the book "Generative Gestaltung", are [available online](http://www.generative-gestaltung.de/)
 
-As a fun bonus, i have written an example to show how to add other p5js-libraries and used the gif-export from [createLoop](https://github.com/mrchantey/p5.createLoop#readme) as an example: [GIF-Bonus](gif.md)
+As a fun bonus, i have written an example to show how to add other p5js-libraries and used the gif-export from [createLoop](https://github.com/mrchantey/p5.createLoop#readme) as an example: [GIF-Bonus](gif.md).

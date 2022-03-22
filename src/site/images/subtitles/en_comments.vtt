@@ -1,0 +1,77 @@
+WEBVTT
+
+00:00:04.160 --> 00:00:07.600
+In the beginning our code looks 
+quite straightforward and simple,  
+
+00:00:07.600 --> 00:00:12.080
+but the more features we add, the more lines 
+of code we write, the more messy it gets. So  
+
+00:00:12.080 --> 00:00:17.440
+it can be quite useful to add comments inside the 
+code. So that later on, you remember what you were  
+
+00:00:17.440 --> 00:00:22.560
+thinking, when you were writing this code. There 
+are two options to do this. The first one is a  
+
+00:00:22.560 --> 00:00:31.280
+so-called single line comment. This we can already 
+see here, in line two. We simply use two slashes  
+
+00:00:31.840 --> 00:00:38.720
+and then we can add our comment, but this can 
+only be one line of comments. If i add a new line,  
+
+00:00:38.720 --> 00:00:43.600
+this is not a comment anymore. We can 
+immediately see this when we use the Visual  
+
+00:00:43.600 --> 00:00:50.720
+Studio Code editor, because here in the code 
+highlighting, we can see that this line is now  
+
+00:00:50.720 --> 00:00:54.800
+marked as a green, as a comment line. And 
+the next line again is a normal code line.  
+
+00:00:55.360 --> 00:00:58.880
+But sometimes you need to write a 
+little bit longer comments. Then we have  
+
+00:00:58.880 --> 00:01:06.480
+multi-line comments. Therefore, we use the slash 
+an asterisk and another one. And then we have a  
+
+00:01:06.480 --> 00:01:13.280
+start and an end element and then inside we can 
+now write multiple lines of code of comments.
+
+00:01:16.800 --> 00:01:23.600
+And can write as long, as many comments as you 
+want. These comment features are interesting for  
+
+00:01:23.600 --> 00:01:29.520
+documenting our code, but they're also interesting 
+for developing code, because sometimes you're  
+
+00:01:29.520 --> 00:01:34.640
+adding features and then you realize there's a 
+problem inside the code or you want to experiment  
+
+00:01:34.640 --> 00:01:38.960
+with your code. And then it can be quite 
+interesting to comment out certain parts of your  
+
+00:01:38.960 --> 00:01:45.680
+code. For example if i don't want this background 
+function to be called, i can simply add these two  
+
+00:01:45.680 --> 00:01:51.360
+slashes in the front and now it's a comment and 
+not a code line anymore. And i can simply remove  
+
+00:01:51.360 --> 00:02:01.200
+this and now it's a code again. And of course 
+i can do the same with the multi-line comments.

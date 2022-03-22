@@ -1,0 +1,63 @@
+WEBVTT
+
+00:00:05.440 --> 00:00:13.040
+We can also use Rhino to turn our 2D 
+vector graphics, that we exported as SVGs  
+
+00:00:13.040 --> 00:00:19.040
+from p5.js into 3D bodies. Here, 
+again, we start with the import.
+
+00:00:21.200 --> 00:00:27.120
+Lookup our SVG file. Then you get a couple of 
+import options. You can just keep them as they  
+
+00:00:27.120 --> 00:00:35.360
+are and go to "ok". And then in this case 
+our vector graphics turned out quite big.  
+
+00:00:36.720 --> 00:00:50.800
+Let's make them a little bit smaller and move 
+them to the center again. And, voila. Right now  
+
+00:00:50.800 --> 00:00:56.800
+our imported polygons are simply curves. We need 
+to turn them into planes before we can turn them  
+
+00:00:56.800 --> 00:01:04.160
+into 3D bodies. To do this, we have the so-called 
+surface tools, that you can find up here.  
+
+00:01:05.120 --> 00:01:09.840
+And then there is this little item here, 
+which looks a little bit like a donut,  
+
+00:01:09.840 --> 00:01:16.000
+it's the surface from planar curves tool. And this  
+
+00:01:17.120 --> 00:01:23.760
+only works if you have the curves in just one 
+plane, but as we are having a 2D object here,  
+
+00:01:23.760 --> 00:01:31.440
+this is no problem for us. After clicking on 
+this tool, we now have actually planes and not  
+
+00:01:31.440 --> 00:01:37.360
+outlines anymore. We can see it by the little 
+lines that we have now in our objects here.  
+
+00:01:38.720 --> 00:01:44.800
+So we can now switch to the solid tools 
+and select the extrusion function.
+
+00:01:48.160 --> 00:01:54.160
+Select all the curves that we want to extrude,
+
+00:01:54.160 --> 00:02:04.720
+press enter when we're done and we can now nicely 
+extrude our polygons. Click enter as soon as we're  
+
+00:02:04.720 --> 00:02:17.360
+done and we now have actual 3D bodies that we 
+could start further working with it in Rhino.

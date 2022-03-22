@@ -11,11 +11,11 @@ eleventyNavigation:
 
 {{h2('Arrays')}}
 
-{{video("MISSING/download/en_2d_variables2_array.mp4", "/images/thumbnails/en_2d_variables2_array.png", "en_2d_variables2_array", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf/download/en_2d_variables2_array.mp4", "/images/thumbnails/en_2d_variables2_array.png", "en_2d_variables2_array", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH
-en: MISSING
+en: https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf
 -->
 
 As our concepts are getting more complex, we need to be able to store more information. Imagine your creating a shape with the vertex command. Depending on the number of points of the shape, this will take a lot of variables. To overcome this we can use arrays. Arrays are another type of variable which can hold multiple values. Arrays can also be nested. As an example, lets create an array of points, each point is stored as another array `[x,y]`:

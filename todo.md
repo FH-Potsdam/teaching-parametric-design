@@ -12,3 +12,5 @@
 - override noLoops in editor...
 
 - redefining functions (hmmmm puh)
+
+- screen reader test for parametric

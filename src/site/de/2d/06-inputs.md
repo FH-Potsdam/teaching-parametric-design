@@ -199,7 +199,7 @@ function draw() {
 
 If you are using keyboard input, you often need to click the page or in this case frame first, before the events register. This is a security measurement, so websites don't know what you are typing on your machine. This following is just a silly little demonstration. Click on the black frame and then go wild on your keyboard:
 
-{{editor('/code/keycolors', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/keycolors/sketch.js', true)}}
+{{editor('/code/keycolors', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/keycolors/sketch.js')}}
 
 {{h2('GUI')}}
 
@@ -218,4 +218,3 @@ In the bonus section, there is an in-depth [explanation](../../bonus/gui) of the
 Here is the same from the last section, but all variables have been replace with sliders. Be careful with the third slider. Especiall the fourth and fifth slider are intersting to create new shapes.
 
 {{editor('/code/fractals3', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/fractals/sketch.js', true)}}
-

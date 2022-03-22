@@ -13,10 +13,10 @@ After the first few experiments, you have probably realized, that when you want 
 
 {{h2('While loop')}}
 
-{{video("MISSING", "/images/thumbnails/en_2d_loops_while.png", "en_2d_loops_while", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/onmYDyYM43GAMRS/download/en_2d_loops_while.mp4", "/images/thumbnails/en_2d_loops_while.png", "en_2d_loops_while", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4
-en:MISSING
+en:https://fhpcloud.fh-potsdam.de/s/onmYDyYM43GAMRS
 -->
 
 For using the while-loop, we need to define a condition, as long as this condition is met, the loop continues running. In the example below, the while-loop keeps iterating until the variable `x` is equal or bigger than 10:

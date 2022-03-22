@@ -1,0 +1,86 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:10.960
+In this first video, i will show you how you 
+can import the SVG graphics that we created  
+
+00:00:10.960 --> 00:00:16.800
+using p5.js into the open source software 
+Blender, to turn them into 3D bodies.  
+
+00:00:18.160 --> 00:00:22.240
+The first part, obviously, we 
+need to import our SVG graphics,  
+
+00:00:23.280 --> 00:00:27.840
+therefore, we have this "scalable vector 
+graphics" format, that we can import.  
+
+00:00:28.880 --> 00:00:36.320
+I will select the curves that i previously 
+created and now we can nicely see here the SVG  
+
+00:00:37.680 --> 00:00:41.360
+polygons, that i created. And we 
+can also see up here in the right,  
+
+00:00:42.080 --> 00:00:47.360
+that we can see each individual polygon that we 
+created. And we can now select them individually,  
+
+00:00:49.200 --> 00:00:54.960
+in order to make this a little bit better 
+to see, i will turn to the wireframe format.  
+
+00:00:56.000 --> 00:00:59.920
+And now i want to turn them 
+into actual solid bodies.  
+
+00:01:00.560 --> 00:01:08.320
+For this we need to add a modifier. Use the 
+little tool here and then we use the solidify  
+
+00:01:08.320 --> 00:01:14.000
+modifier and we can immediately see that we 
+now have a 3D body and not a 2D body anymore.  
+
+00:01:15.120 --> 00:01:21.280
+Using the solidify, we can define in which 
+direction we want to extrude our body.  
+
+00:01:22.640 --> 00:01:30.800
+Here now to the top and of course you can also 
+define a few other parameters. And of course,  
+
+00:01:30.800 --> 00:01:36.560
+if you have a lot of polygons, it would be 
+a lot of work to individually modify them.  
+
+00:01:38.640 --> 00:01:44.000
+To do this a bit faster, we will 
+select the remaining three polygons  
+
+00:01:46.000 --> 00:01:56.480
+and then we will go to object and join. And 
+you can now see that we have now a join here,  
+
+00:01:56.480 --> 00:02:03.440
+with all our three previous polygons and we 
+can now simply apply the modifier to our group.
+
+00:02:06.320 --> 00:02:08.800
+Make this a little bit bigger than the first one.
+
+00:02:11.520 --> 00:02:13.440
+First one up here.
+
+00:02:16.400 --> 00:02:23.360
+And so now we have 3D bodies that 
+we could obviously also export  
+
+00:02:23.360 --> 00:02:27.120
+and for example export them back again, to the STL  
+
+00:02:27.120 --> 00:02:35.840
+format and use the STL format for example 
+into a slicer to then send it to a 3D printer
