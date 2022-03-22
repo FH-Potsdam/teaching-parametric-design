@@ -7,17 +7,11 @@ eleventyNavigation:
   order: 6
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from "../../_includes/parts/macros.njk" import img %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, img, task, inspiration, link3d, github %}
 
 ## Parameters
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/07-3d-adv/parameters.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{video("https://fhpcloud.fh-potsdam.de/s/qwwk7jico9Ek9Ew/download/en_3d_input.mp4", "/images/thumbnails/en_3d_input.png", "en_3d_input", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/5FLGs8gDXWneTE6
@@ -77,4 +71,16 @@ const getParameterDefinitions = () => {
 }
 ```
 
-<img src="./assets/parameters.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+{{img('parameters.png', 'example of input fields')}}
+
+{{task('Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
+
+{{inspiration('Parametric Frame')}}
+
+All elements in this design are controlled through parameters:
+
+{{link3d('/code/3d/radii', 'Open "Raspi Case"')}}
+
+{{img('example3d-params.png', 'Generating a frame through unions and subtracts')}}
+
+{{github('https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/3d/radii')}}

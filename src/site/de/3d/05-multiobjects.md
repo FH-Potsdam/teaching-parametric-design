@@ -7,12 +7,9 @@ eleventyNavigation:
   order: 5
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from "../../_includes/parts/macros.njk" import img %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, img, task, inspiration, link3d, github %}
 
-### Align
+{{h2('Align')}}
 
 After creating multiple objects, `align` allows you to align an array of objects:
 
@@ -32,45 +29,28 @@ const alignedShapes = align(
 );
 ```
 
-REMOVE!!!
-### Combining multiple transforms
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transform-combinations.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-### Transforms and Loops example
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/transform-example.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-## Boolean Operations
+{{h2('Boolean Operations')}}
 
 ```js
 const {union, subtract, intersect, scission} = jscad.booleans;
 ```
-
+{{video("https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4/download/en_3d_operations_intro.mp4", "/images/thumbnails/en_3d_operations_intro.png", "en_3d_operations_intro", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/H6pxGHAK3L2toz8
 en: https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4
 -->
 
-<img src="./assets/boolean.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+{{img('boolean.png', 'boolean operations')}}
 
 ### Union
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/union.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+{{video("https://fhpcloud.fh-potsdam.de/s/W7nGNox8GxSgaZx/download/en_3d_operations_union.mp4", "/images/thumbnails/en_3d_operations_union.png", "en_3d_operations_union", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/Qx4nJMdWEMZJcLH
 en: https://fhpcloud.fh-potsdam.de/s/W7nGNox8GxSgaZx
 -->
 
-<img src="./assets/union.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+{{img('union.png', 'union: combining multiple shapes or bodies')}}
 
 Combines an array of geometries into one new geometry:
 
@@ -85,17 +65,13 @@ return unionShape;
 
 ### Subtract
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/subtract.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/en_3d_operations_subtract.mp4", "/images/thumbnails/en_3d_operations_subtract.png", "en_3d_operations_subtract", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/tNptWrS8MsR8Wgc
 en: https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4
 -->
 
-<img src="./assets/subtract.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+{{img('subtract.png', 'subtract: remove one or multiple shapes/bodies from another object')}}
 
 Cut out shapes from the first shape in the list:
 
@@ -110,17 +86,13 @@ return subtractShape;
 
 ### Intersect
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/intersect.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/en_3d_operations_intersect.mp4", "/images/thumbnails/en_3d_operations_intersect.png", "en_3d_operations_intersect", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/AbTmmBszxJebZSf
 en: https://fhpcloud.fh-potsdam.de/s/aagrSLH7RxbPQnD
 -->
 
-<img src="./assets/intersect.png" alt="" style="max-width:100%; display:block; margin: 0 auto;" />
+{{img('intersect.png', 'intersect: get the overlap of multiple objects')}}
 
 The overlapping areas of the object in the array:
 
@@ -135,10 +107,7 @@ return intersectShape;
 
 ### Scission
 
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/scission.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{video("https://fhpcloud.fh-potsdam.de/s/iPkWfwqLNzFFQyA/download/en_3d_operations_scission.mp4", "/images/thumbnails/en_3d_operations_scission.png", "en_3d_operations_scission", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/YsaMsWnaqQYDfQr
@@ -162,3 +131,15 @@ const scissionShapes = scission(unionShape);
 ```
 
 The above `scission` returns an array with two elements, which are the object that went into the `union` command.
+
+{{task('Union & Subtract', 'First create an object by combining multiple 3D bodies through **union**. Then use *subtract* to remove bits from the union-object.')}}
+
+{{inspiration('Raspberry Pi Case')}}
+
+Based on the [mechanical drawings](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) of the Raspberry Pi, particularly the screw holes, this case is constructed. Using variables the size can be easily modified.
+
+{{link3d('/code/3d/case', 'Open "Raspi Case"')}}
+
+{{img('example3d-case.png', 'A Raspberry Pi case, with screw sockets and cover')}}
+
+{{github('https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/3d/case')}}

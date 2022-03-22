@@ -14,6 +14,14 @@
 <a href="{{link}}" class="download-btn">{{label}}</a>
 {% endmacro %}
 
+{% macro link3d(link, label) %}
+<a href="{{link}}" class="link3d-btn">{{label}}</a>
+{% endmacro %}
+
+{% macro github(link) %}
+<a href="{{link}}" class="github-btn">View on GitHub</a><span class="folder-btn">{{link | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span>
+{% endmacro %}
+
 {% macro renderNavListItem(entry, page, content, level) %}
 {% if entry.order != -1 %}
 <li class="level{{level}}{% if entry.url in page.url %} active{% endif %}">

@@ -7,31 +7,30 @@ eleventyNavigation:
   order: 2
 ---
 
-{% from "../../_includes/parts/macros.njk" import video %}
-{% from "../../_includes/parts/macros.njk" import h2 %}
-{% from "../../_includes/parts/macros.njk" import definition %}
-{% from "../../_includes/parts/macros.njk" import img %}
+{% from "../../_includes/parts/macros.njk" import video, h2, definition, img, inspiration, task %}
 
 But sometimes we want to directly create a 3D shape from code. 2D pixel and vector graphics are very forgiving, if objects overlap or paths are not closed, the output might not look perfect, but its still fine. When building 3D objects for rapid prototyping (e.g. 3D-printing or CNC), we need to make sure that our solid bodies are correctly constructed, otherwise the software we will use to send our design to the milling or printing machines will fail.
 
-The open source community has developed the [OpenSCAD](https://openscad.org/) software. In contrast to tools like Fusion 360, OpenSCAD's focus is script/code-based design, which makes this tool great for parametric design. Over the years developers have ported the OpenSCAD programming language to other languages like [JavaScript](https://github.com/jscad/OpenJSCAD.org) or [Python](https://github.com/CadQuery/cadquery). Thanks to this work, we can continue using our JavaScript skills to build our own 3D objects. Similar to p5js' online editor, there is a new platform with similar capabilities for OpenSCAD: [cadhub.xyz](https://cadhub.xyz/) (this website is a community project still under development).
-
 {{h2('OpenSCAD')}}
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/openscad-final.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+{{video("https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe/download/en_3d_jscad_openscad.mp4", "/images/thumbnails/en_3d_jscad_openscad.png", "en_3d_jscad_openscad", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/s6nWEmrsK8GtXbG
 en: https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe
 -->
 
+The open source community has developed the [OpenSCAD](https://openscad.org/) software. In contrast to tools like Fusion 360, OpenSCAD's focus is script/code-based design, which makes this tool great for parametric design. Over the years developers have ported the OpenSCAD programming language to other languages like [JavaScript](https://github.com/jscad/OpenJSCAD.org) or [Python](https://github.com/CadQuery/cadquery). Thanks to this work, we can continue using our JavaScript skills to build our own 3D objects. Similar to p5js' online editor, there is a new platform with similar capabilities for OpenSCAD: [cadhub.xyz](https://cadhub.xyz/) (this website is a community project still under development).
+
+
 {{h2('JSCAD')}}
 
+{{video("https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG/download/en_3d_jscad_jscad.mp4", "/images/thumbnails/en_3d_jscad_jscad.png", "en_3d_jscad_jscad", translations.subtitles[locale], locale)}}
+<!--
+de: https://fhpcloud.fh-potsdam.de/s/YnZsQTeeQgafFJy
+en: https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG
+-->
 ## Inspect 3D project in the browser
-
-IMPORTANT: If you have not updated your `3d-example` folder do so [now](fix.md)!
 
 To create your first 3D project, the process is the same as for p5js, we just use a different boilerplate. Duplicate the `3D-example` folder. You will find a couple of commands as examples in the `index.js` file. We will go through all those commands in a moment. Open the `index.html` in your new folder with the *Go Live* extension. When you make changes to the `index.js` file and save, the website in your browser should reload automatically. (Please note that the last rotation and zoom of the camera will be reset).
 
@@ -40,16 +39,6 @@ You can use your mouse-wheel or trackpad scrolling to zoom in and out. Hold your
 You can find the full reference for all JSCAD features [here](https://openjscad.xyz/docs).
 
 {{h2('Boilerplate')}}
-
-<video width="1920" height="1080" style="max-width:100%; height: auto;" controls>
-  <source src="https://fhp-video-hosting.s3.eu-central-1.amazonaws.com/06-3d-intro/basics.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<!--
-de: https://fhpcloud.fh-potsdam.de/s/YnZsQTeeQgafFJy
-en: https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG
--->
 
 
 ```js

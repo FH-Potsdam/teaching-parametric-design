@@ -27,6 +27,7 @@ body {
 
 main {
   flex-grow: 1;
+  width: 0px;
 }
 
 h1+h2{
@@ -126,12 +127,18 @@ iframe {
   border: 1px solid rgba(200, 200, 200, 1);
 }
 
-a.github-btn, a.download-btn, span.folder-btn {
+a.github-btn,
+a.download-btn,
+span.folder-btn,
+a.link3d-btn {
   margin-top: 4px;
   background: #fff;
   background-image: url(/images/icons/github.svg);
   &.download-btn{
     background-image: url(/images/icons/journal-page.svg);
+  }
+  &.link3d-btn{
+    background-image: url(/images/icons/3d-select-face.svg);
   }
   &.github-btn{
     margin-right:10px;

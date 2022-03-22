@@ -10,6 +10,11 @@ module.exports = function(config) {
   // A useful way to reference the context we are runing eleventy in
   let env = process.env.ELEVENTY_ENV;
 
+  // custom collection of 3d previews to generate index/json files
+  config.addCollection("preview3d", function(collection) {
+    return collection.getFilteredByGlob("./src/site/code/3d/*.md");
+  });
+
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
   config.addLayoutAlias('home', 'layouts/home.njk');

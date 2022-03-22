@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/3d.njk",
+  "tag": "3d",
+  "excludeFromNavigation": true
+}
