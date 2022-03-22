@@ -13,7 +13,7 @@ After the first few experiments, you have probably realized, that when you want 
 
 {{h2('While loop')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/onmYDyYM43GAMRS/download/en_2d_loops_while.mp4", "/images/thumbnails/en_2d_loops_while.png", "en_2d_loops_while", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/onmYDyYM43GAMRS/download/de_2d_loops_while.mp4", "/images/thumbnails/de_2d_loops_while.png", "de_2d_loops_while", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4
 en:https://fhpcloud.fh-potsdam.de/s/onmYDyYM43GAMRS
@@ -33,10 +33,10 @@ We can nest as many loops as we want. If we want to build a grid of circles, we 
 
 {{h2('For-Loop')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/en_for.mp4", "/images/thumbnails/en_2d_loops_for.png", "en_2d_loops_for", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/de_for.mp4", "/images/thumbnails/de_2d_loops_for.png", "de_2d_loops_for", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/2e55m4LqkzpYKPy/download/de_for.mp4
-en:https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/en_for.mp4
+en:https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/de_for.mp4
 -->
 
 The for-loop is very similar to the while-loop:

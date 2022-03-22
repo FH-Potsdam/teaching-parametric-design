@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Arrays')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf/download/en_2d_variables2_array.mp4", "/images/thumbnails/en_2d_variables2_array.png", "en_2d_variables2_array", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf/download/de_2d_variables2_array.mp4", "/images/thumbnails/de_2d_variables2_array.png", "de_2d_variables2_array", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH
@@ -62,7 +62,7 @@ More infos on array features can be found [here](https://developer.mozilla.org/e
 
 {{h2('Objects')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR/download/en_2d_variables2_objects.mp4", "/images/thumbnails/en_2d_variables2_objects.png", "en_2d_variables2_objects", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR/download/de_2d_variables2_objects.mp4", "/images/thumbnails/de_2d_variables2_objects.png", "de_2d_variables2_objects", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz
@@ -110,7 +110,7 @@ Similar to the array example, we create a list of points, in addition to x/y, we
 
 {{h2('Noise')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb/download/en_2d_variables_noise.mp4", "/images/thumbnails/en_2d_variables_noise.png", "en_2d_variables_noise", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb/download/de_2d_variables_noise.mp4", "/images/thumbnails/de_2d_variables_noise.png", "de_2d_variables_noise", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq

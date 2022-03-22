@@ -11,7 +11,7 @@ eleventyNavigation:
 
 ## 2D primitives
 
-{{video("https://fhpcloud.fh-potsdam.de/s/6wEjNRJBkRz5Xmd/download/en_3d_drawing_2d.mp4", "/images/thumbnails/en_3d_drawing_2d.png", "en_3d_drawing_2d", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/6wEjNRJBkRz5Xmd/download/de_3d_drawing_2d.mp4", "/images/thumbnails/de_3d_drawing_2d.png", "de_3d_drawing_2d", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/gJSXCSgYinskq6X
@@ -97,7 +97,7 @@ const shape = rectangle({
 
 ## 3D-Primitives
 
-{{video("https://fhpcloud.fh-potsdam.de/s/rBCA9q9MfK7LtxB/download/en_3d_drawing_3d.mp4", "/images/thumbnails/en_3d_drawing_3d.png", "en_3d_drawing_3d", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/rBCA9q9MfK7LtxB/download/de_3d_drawing_3d.mp4", "/images/thumbnails/de_3d_drawing_3d.png", "de_3d_drawing_3d", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/LxYHETDD3QJayF9

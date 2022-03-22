@@ -12,7 +12,7 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import definition %}
 {% from '../../_includes/parts/macros.njk' import editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6/download/en_2d_export.mp4", "/images/thumbnails/en_2d_export.png", "en_2d_export", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6/download/de_2d_export.mp4", "/images/thumbnails/de_2d_export.png", "de_2d_export", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE
 en: https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6

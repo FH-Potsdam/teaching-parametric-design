@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Draw Loop')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/tkPJJiC687k2XEp/download/en_2d_drawing2_drawloop.mp4", "/images/thumbnails/en_2d_drawing2_drawloop.png", "en_2d_drawing2_drawloop", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/tkPJJiC687k2XEp/download/de_2d_drawing2_drawloop.mp4", "/images/thumbnails/de_2d_drawing2_drawloop.png", "de_2d_drawing2_drawloop", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/SyL8FRKWFsbXGrp
@@ -46,7 +46,7 @@ function setup() {
 
 {{h2('Polygons')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/4kcdSTEPGGkRTJo/download/en_2d_drawing2_vertex.mp4", "/images/thumbnails/en_2d_drawing2_vertex.png", "en_2d_drawing2_vertex", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/4kcdSTEPGGkRTJo/download/de_2d_drawing2_vertex.mp4", "/images/thumbnails/de_2d_drawing2_vertex.png", "de_2d_drawing2_vertex", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/CA4eLGXZigSea9T
@@ -85,7 +85,7 @@ We tell p5js that we want to start drawing a shape with the command `beginShape(
 
 {{h2('Polar Coordinates')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/Q6E37ZtiE6n8m8y/download/en_2d_drawing2_polar.mp4", "/images/thumbnails/en_2d_drawing2_polar.png", "en_2d_drawing2_polar", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/Q6E37ZtiE6n8m8y/download/de_2d_drawing2_polar.mp4", "/images/thumbnails/de_2d_drawing2_polar.png", "de_2d_drawing2_polar", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/DM5BjnxQWjfTT2M
@@ -132,7 +132,7 @@ triangle(0, 0, 40, 0, 40, 20);
 
 {{h2('Curves')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB/download/en_2d_drawing2_curves.mp4", "/images/thumbnails/en_2d_drawing2_curves.png", "en_2d_drawing2_curves", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB/download/de_2d_drawing2_curves.mp4", "/images/thumbnails/de_2d_drawing2_curves.png", "de_2d_drawing2_curves", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA
 en: https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB

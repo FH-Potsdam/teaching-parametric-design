@@ -13,7 +13,7 @@ But sometimes we want to directly create a 3D shape from code. 2D pixel and vect
 
 {{h2('OpenSCAD')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe/download/en_3d_jscad_openscad.mp4", "/images/thumbnails/en_3d_jscad_openscad.png", "en_3d_jscad_openscad", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe/download/de_3d_jscad_openscad.mp4", "/images/thumbnails/de_3d_jscad_openscad.png", "de_3d_jscad_openscad", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/s6nWEmrsK8GtXbG
@@ -25,7 +25,7 @@ The open source community has developed the [OpenSCAD](https://openscad.org/) so
 
 {{h2('JSCAD')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG/download/en_3d_jscad_jscad.mp4", "/images/thumbnails/en_3d_jscad_jscad.png", "en_3d_jscad_jscad", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG/download/de_3d_jscad_jscad.mp4", "/images/thumbnails/de_3d_jscad_jscad.png", "de_3d_jscad_jscad", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/YnZsQTeeQgafFJy
 en: https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG

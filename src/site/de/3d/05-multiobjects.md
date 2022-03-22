@@ -34,7 +34,7 @@ const alignedShapes = align(
 ```js
 const {union, subtract, intersect, scission} = jscad.booleans;
 ```
-{{video("https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4/download/en_3d_operations_intro.mp4", "/images/thumbnails/en_3d_operations_intro.png", "en_3d_operations_intro", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4/download/de_3d_operations_intro.mp4", "/images/thumbnails/de_3d_operations_intro.png", "de_3d_operations_intro", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/H6pxGHAK3L2toz8
 en: https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4
@@ -44,7 +44,7 @@ en: https://fhpcloud.fh-potsdam.de/s/CTpg3ZoW4MeTbg4
 
 ### Union
 
-{{video("https://fhpcloud.fh-potsdam.de/s/W7nGNox8GxSgaZx/download/en_3d_operations_union.mp4", "/images/thumbnails/en_3d_operations_union.png", "en_3d_operations_union", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/W7nGNox8GxSgaZx/download/de_3d_operations_union.mp4", "/images/thumbnails/de_3d_operations_union.png", "de_3d_operations_union", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/Qx4nJMdWEMZJcLH
 en: https://fhpcloud.fh-potsdam.de/s/W7nGNox8GxSgaZx
@@ -65,7 +65,7 @@ return unionShape;
 
 ### Subtract
 
-{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/en_3d_operations_subtract.mp4", "/images/thumbnails/en_3d_operations_subtract.png", "en_3d_operations_subtract", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/de_3d_operations_subtract.mp4", "/images/thumbnails/de_3d_operations_subtract.png", "de_3d_operations_subtract", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/tNptWrS8MsR8Wgc
 en: https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4
@@ -86,7 +86,7 @@ return subtractShape;
 
 ### Intersect
 
-{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/en_3d_operations_intersect.mp4", "/images/thumbnails/en_3d_operations_intersect.png", "en_3d_operations_intersect", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/de_3d_operations_intersect.mp4", "/images/thumbnails/de_3d_operations_intersect.png", "de_3d_operations_intersect", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/AbTmmBszxJebZSf
 en: https://fhpcloud.fh-potsdam.de/s/aagrSLH7RxbPQnD
@@ -107,7 +107,7 @@ return intersectShape;
 
 ### Scission
 
-{{video("https://fhpcloud.fh-potsdam.de/s/iPkWfwqLNzFFQyA/download/en_3d_operations_scission.mp4", "/images/thumbnails/en_3d_operations_scission.png", "en_3d_operations_scission", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/iPkWfwqLNzFFQyA/download/de_3d_operations_scission.mp4", "/images/thumbnails/de_3d_operations_scission.png", "de_3d_operations_scission", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/YsaMsWnaqQYDfQr

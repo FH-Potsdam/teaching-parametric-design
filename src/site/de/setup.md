@@ -19,7 +19,7 @@ If you are working on a tablet or something similarly restricted, you can use th
 
 {{h2('Code Editor')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/2PLgW3km7y3sb92/download/en_setup_code-editor.mp4", "/images/thumbnails/en_setup_editor.png", "en_setup_editor", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/2PLgW3km7y3sb92/download/de_setup_code-editor.mp4", "/images/thumbnails/de_setup_editor.png", "de_setup_editor", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od
@@ -33,7 +33,7 @@ If your are not using VS Code, make sure you are using a proper code editor. MS 
 #### 1. Installing VS Code and live-server extension
 Go to the VS Code download [page](https://code.visualstudio.com/download). Depending on your operating system VS Code is also available in some app stores and software management tools.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4/download/en_setup_vscode.mp4", "/images/thumbnails/en_setup_vscode.png", "en_setup_vscode", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg
@@ -42,7 +42,7 @@ en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 
 {{h2('GitHub')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE/download/en_setup_git.mp4", "/images/thumbnails/en_setup_git.png", "en_setup_git", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P
@@ -59,7 +59,7 @@ There are two ways of using GitHub (git): the desktop app and the command line.
 
 #### GitHub Desktop App (recommended)
 
-{{video("https://fhpcloud.fh-potsdam.de/s/HLdw8ABZ2dHBqDq/download/en_setup_github.mp4", "/images/thumbnails/en_setup_github.png", "en_setup_github", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/HLdw8ABZ2dHBqDq/download/de_setup_github.mp4", "/images/thumbnails/de_setup_github.png", "de_setup_github", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo

@@ -11,10 +11,10 @@ eleventyNavigation:
 
 {{h2('Canvas')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/en_canvas.mp4", "/images/thumbnails/en_2d_drawing_canvas.png", "en_2d_drawing_canvas", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/de_canvas.mp4", "/images/thumbnails/de_2d_drawing_canvas.png", "de_2d_drawing_canvas", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4
-en:https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/en_canvas.mp4
+en:https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/de_canvas.mp4
 -->
 
 First we need to create a canvas, an area we can draw upon. To do this we add the `createCanvas` command into our **setup** function. All sizes in p5js are always pixel sizes:
@@ -35,10 +35,10 @@ function setup() {
 
 {{h2('Background')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/en_background.mp4", "/images/thumbnails/en_2d_drawing_background.png", "en_2d_drawing_background", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/de_background.mp4", "/images/thumbnails/de_2d_drawing_background.png", "de_2d_drawing_background", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4
-en:https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/en_background.mp4
+en:https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/de_background.mp4
 -->
 
 
@@ -57,10 +57,10 @@ Different to the `createCanvas` command, we can use a variety of inputs to defin
 
 {{h2('Colors')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/en_colors.mp4", "/images/thumbnails/en_2d_drawing_colors.png", "en_2d_drawing_colors", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/de_colors.mp4", "/images/thumbnails/de_2d_drawing_colors.png", "de_2d_drawing_colors", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4
-en:https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/en_colors.mp4
+en:https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/de_colors.mp4
 -->
 
 In p5js we can define colors in a variety of different forms:
@@ -97,10 +97,10 @@ Those are the things we will use, but there are even more possibilites to define
 
 {{h2('Shapes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/en_shapes.mp4", "/images/thumbnails/en_2d_drawing_shapes.png", "en_2d_drawing_shapes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/de_shapes.mp4", "/images/thumbnails/de_2d_drawing_shapes.png", "de_2d_drawing_shapes", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4
-en:https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/en_shapes.mp4
+en:https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/de_shapes.mp4
 -->
 
 
@@ -182,10 +182,10 @@ square(10, 10, 40);
 
 {{h2('Fills & Strokes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/en_fills.mp4", "/images/thumbnails/en_2d_drawing_fills.png", "en_2d_drawing_fills", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/de_fills.mp4", "/images/thumbnails/de_2d_drawing_fills.png", "de_2d_drawing_fills", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4
-en:https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/en_fills.mp4
+en:https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/de_fills.mp4
 -->
 
 Code in any programming language is always interpreted from top to bottom. p5js has a default color setting: fill and strokes are black. We can change the fill and stroke at any time. Everything painted after the fill or stroke command (top to bottom) is painted in the new color.
@@ -219,10 +219,10 @@ strokeWeight(5);
 
 {{h2('Arcs')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/en_arc.mp4", "/images/thumbnails/en_2d_drawing_arc.png", "en_2d_drawing_arc", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/de_arc.mp4", "/images/thumbnails/de_2d_drawing_arc.png", "de_2d_drawing_arc", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4
-en:https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/en_arc.mp4
+en:https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/de_arc.mp4
 -->
 
 A bit more advanced shape is the arc:

@@ -13,7 +13,7 @@ eleventyNavigation:
 
 When building complex layouts it can get tricky calculating all those angles and offsets. p5js offers so called transformations. Those transforms can modify the underlying coordinate system and where things are draw. Lets start with `translate(x, y)`. When using the `translate()` command, the origin (0,0) of our coordinate system is moved. 
 
-{{video("https://fhpcloud.fh-potsdam.de/s/8mdTinP63eqL4se/download/en_2d_transformations_translate.mp4", "/images/thumbnails/en_2d_transformations_translate.png", "en_2d_transformations_translate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/8mdTinP63eqL4se/download/de_2d_transformations_translate.mp4", "/images/thumbnails/de_2d_transformations_translate.png", "de_2d_transformations_translate", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8
 en: https://fhpcloud.fh-potsdam.de/s/8mdTinP63eqL4se
@@ -67,7 +67,7 @@ This is for example useful when we are using the polar coordinate system, but we
 
 {{h2('Rotation')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/9p59bc4W663fp4C/download/en_2d_transformations_rotate.mp4", "/images/thumbnails/en_2d_transformations_rotate.png", "en_2d_transformations_rotate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/9p59bc4W663fp4C/download/de_2d_transformations_rotate.mp4", "/images/thumbnails/de_2d_transformations_rotate.png", "de_2d_transformations_rotate", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa
 en: https://fhpcloud.fh-potsdam.de/s/9p59bc4W663fp4C
@@ -82,7 +82,7 @@ rotate(Math.PI / 180 * 45); // take angleMode into acount
 
 {{h2('Scale')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/AAKPPkFNZKAFS9t/download/en_2d_transformations_scale.mp4", "/images/thumbnails/en_2d_transformations_scale.png", "en_2d_transformations_scale", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/AAKPPkFNZKAFS9t/download/de_2d_transformations_scale.mp4", "/images/thumbnails/de_2d_transformations_scale.png", "de_2d_transformations_scale", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf
 en: https://fhpcloud.fh-potsdam.de/s/AAKPPkFNZKAFS9t

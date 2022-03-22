@@ -21,10 +21,10 @@ There are a lots of frameworks / libraries / packages for JavaScript out there. 
 
 {{h2('New Project')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4", "/images/thumbnails/en_2d_intro_new.png", "en_2d_intro_new", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/de_new.mp4", "/images/thumbnails/de_2d_intro_new.png", "de_2d_intro_new", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4
-en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4
+en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/de_new.mp4
 -->
 
 1. Go to the `code` folder.
@@ -36,10 +36,10 @@ en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/en_new.mp4
 
 {{h2('Reference')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/en_reference.mp4", "/images/thumbnails/en_2d_intro_ref.png", "en_2d_intro_ref", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/de_reference.mp4", "/images/thumbnails/de_2d_intro_ref.png", "de_2d_intro_ref", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4
-en:https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/en_reference.mp4
+en:https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/de_reference.mp4
 -->
 
 If you are not sure about the name of a function or what parameters to use. You can also take a look at the p5js [reference](https://p5js.org/reference/).
@@ -52,10 +52,10 @@ For those who are interested, i have created a super [short introduction](html.m
 
 ### sketch.js
 
-{{video("https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4", "/images/thumbnails/en_2d_intro_sketch.png", "en_2d_intro_ref", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png", "de_2d_intro_ref", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
-en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4
+en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/de_sketch.mp4
 -->
 
 The `sketch.js` file is where all the magic happens. Here we will write our code to generate our designs. When you create a fresh copy from the example directory your file should look like this:
@@ -97,10 +97,10 @@ The **draw** function is continously called once **setup** is finished. In the b
 
 {{h2('Comments')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/en_comments.mp4", "/images/thumbnails/en_2d_intro_comments.png", "en_2d_intro_comments", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/de_comments.mp4", "/images/thumbnails/de_2d_intro_comments.png", "de_2d_intro_comments", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4
-en:https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/en_comments.mp4
+en:https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/de_comments.mp4
 -->
 
 If you want to write a comment in your code or you want to temporarily disable a line of code, there are two ways:
@@ -121,10 +121,10 @@ as we like
 
 {{h2('Indenting')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/en_indent.mp4", "/images/thumbnails/en_2d_intro_indent.png", "en_2d_intro_indent", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/de_indent.mp4", "/images/thumbnails/de_2d_intro_indent.png", "de_2d_intro_indent", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4
-en:https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/en_indent.mp4
+en:https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/de_indent.mp4
 -->
 
 > To indent code, simply use the tab-key. In VS Code you can also select multiple lines and indent them all at once. In the VS Code settings, you can set if a tab is 2 spaces or 4 spaces. The examples use 2 spaces.
@@ -143,10 +143,10 @@ function setup() {
 
 {{h2('Debugging')}}
 
-{{video("ttps://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4", "/images/thumbnails/en_2d_intro_debug.png", "en_2d_intro_debug", translations.subtitles[locale], locale)}}
+{{video("ttps://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/de_debug.mp4", "/images/thumbnails/de_2d_intro_debug.png", "de_2d_intro_debug", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4
-en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4
+en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/de_debug.mp4
 -->
 
 > It is generally recommended to use Firefox, Chrome, Edge or browsers based on similar engines. Safari and Internet Explorer are not recommended. If you are using Safari and you want to use the debugging features, you need to first [enable](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html) the developer tools. In Safari's settings is checkbox at the bottom, allowing you to activate the developer menu. Afterwards you can right-click inspect all websites.

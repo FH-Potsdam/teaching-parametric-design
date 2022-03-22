@@ -11,7 +11,7 @@ eleventyNavigation:
 
 So far we have created our parameters manually or by using the `random()` function. In this section we will look at a few input options which we will turn into parameters to modify our layouts and designs.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/gDGSt2aPMBmpwY5/download/en_2d_input_input.mp4", "/images/thumbnails/en_2d_input_input.png", "en_2d_input_input", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/gDGSt2aPMBmpwY5/download/de_2d_input_input.mp4", "/images/thumbnails/de_2d_input_input.png", "de_2d_input_input", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi
@@ -80,7 +80,7 @@ Check the corresponding documentation in the reference for more info.
 
 ### Slider
 
-{{video("https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M/download/en_2d_input_slider.mp4", "/images/thumbnails/en_2d_input_slider.png", "en_2d_input_slider", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn
 en: https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M
@@ -112,7 +112,7 @@ function draw() {
 
 {{h2('Mouse')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/DwWqSrH3B8dDsgz/download/en_2d_input_mouse.mp4", "/images/thumbnails/en_2d_input_mouse.png", "en_2d_input_mouse", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/DwWqSrH3B8dDsgz/download/de_2d_input_mouse.mp4", "/images/thumbnails/de_2d_input_mouse.png", "de_2d_input_mouse", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy
@@ -153,7 +153,7 @@ In this next example we will do the same, but not rely on the background-hack. T
 
 {{h2('Keyboard')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/c8wXExM8MiF8R5S/download/en_2d_input_keyboard.mp4", "/images/thumbnails/en_2d_input_keyboard.png", "en_2d_input_keyboard", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/c8wXExM8MiF8R5S/download/de_2d_input_keyboard.mp4", "/images/thumbnails/de_2d_input_keyboard.png", "de_2d_input_keyboard", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob
 en: https://fhpcloud.fh-potsdam.de/s/c8wXExM8MiF8R5S
@@ -203,7 +203,7 @@ If you are using keyboard input, you often need to click the page or in this cas
 
 {{h2('GUI')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/55qdt4ofsqakodd/download/en_2d_input_gui.mp4", "/images/thumbnails/en_2d_input_gui.png", "en_2d_input_gui", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/55qdt4ofsqakodd/download/de_2d_input_gui.mp4", "/images/thumbnails/de_2d_input_gui.png", "de_2d_input_gui", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG
 en: https://fhpcloud.fh-potsdam.de/s/55qdt4ofsqakodd

@@ -9,7 +9,7 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi/download/en_2d_functions.mp4", "/images/thumbnails/en_2d_functions.png", "en_2d_functions", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi/download/de_2d_functions.mp4", "/images/thumbnails/de_2d_functions.png", "de_2d_functions", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89
 en: https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi

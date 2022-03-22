@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Introduction to Parametric Design')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL/download/en_introduction.mp4", "/images/thumbnails/en_introduction.png", "en_introduction", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL/download/de_introduction.mp4", "/images/thumbnails/de_introduction.png", "de_introduction", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x

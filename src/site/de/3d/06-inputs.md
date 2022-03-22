@@ -11,7 +11,7 @@ eleventyNavigation:
 
 ## Parameters
 
-{{video("https://fhpcloud.fh-potsdam.de/s/qwwk7jico9Ek9Ew/download/en_3d_input.mp4", "/images/thumbnails/en_3d_input.png", "en_3d_input", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/qwwk7jico9Ek9Ew/download/de_3d_input.mp4", "/images/thumbnails/de_3d_input.png", "de_3d_input", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/5FLGs8gDXWneTE6

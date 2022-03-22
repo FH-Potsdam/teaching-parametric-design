@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Polygon')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/akY5paZyjwHL8BJ/download/en_3d_drawing2_polygon.mp4", "/images/thumbnails/en_3d_drawing2_polygon.png", "en_3d_drawing2_polygon", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/akY5paZyjwHL8BJ/download/de_3d_drawing2_polygon.mp4", "/images/thumbnails/de_3d_drawing2_polygon.png", "de_3d_drawing2_polygon", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/wfy4LBTSbRq497D
@@ -63,7 +63,7 @@ const poly = polygon({
 
 ## Polyhedrons
 
-{{video("https://fhpcloud.fh-potsdam.de/s/9TCcQPxeA3zmZSC/download/en_3d_drawing2_polyhedron.mp4", "/images/thumbnails/en_3d_drawing2_polyhedron.png", "en_3d_drawing2_polyhedron", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/9TCcQPxeA3zmZSC/download/de_3d_drawing2_polyhedron.mp4", "/images/thumbnails/de_3d_drawing2_polyhedron.png", "de_3d_drawing2_polyhedron", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/NGxciZpp9xAHtnD

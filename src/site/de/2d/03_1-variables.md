@@ -9,10 +9,10 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, task, inspiration, h2, definition, editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/en_variables.mp4", "/images/thumbnails/en_2d_variables_variables.png", "en_2d_variables_variables", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png", "de_2d_variables_variables", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4
-en:https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/en_variables.mp4
+en:https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/de_variables.mp4
 -->
 
 Sometimes we want to reuse a certain information in our code, for example a color or a size value for a shape. To help us with that, JavaScript has **variables**. Variables are like containers we can use for storing information, so we can later use or modify them.
@@ -90,11 +90,11 @@ const backgroundColor = color(255, 0, 100, 150);
 
 {{h2('Scopes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/en_scopes.mp4", "/images/thumbnails/en_2d_variables_scopes.png", "en_2d_variables_scopes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png", "de_2d_variables_scopes", translations.subtitles[locale], locale)}}
 
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4
-en:https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/en_scopes.mp4
+en:https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/de_scopes.mp4
 -->
 
 In our first session learned about `setup()` and `draw()`. Those two functions encapsulate their content with curly brackets `{}`. Everything inside those brackets belongs to the function. This is also called the scope of the function. Scoping makes sure that what you do in a certain context, does not mess with something in your code somewhere else. But it also introduces the problem, that we sometimes want to pass information between different scopes:
@@ -121,10 +121,10 @@ The solution to share information between or across all scopes is to use the glo
 
 {{h2('Random')}}
 
-{{video("ttps://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4", "/images/thumbnails/en_2d_variables_random.png", "en_2d_variables_random", translations.subtitles[locale], locale)}}
+{{video("ttps://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png", "de_2d_variables_random", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4
-en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4
+en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/de_random.mp4
 -->
 
 We use numbers to define colors, positions and sizes. But sometimes, we want to slightly alter our objects and layout without us defining all those alterations in detail. An option to achive such things is the random command, random generates a value between **0** and **1** or a value between the **min** and **max** value provided as first and second parameter:

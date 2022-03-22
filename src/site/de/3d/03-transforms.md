@@ -13,7 +13,7 @@ Each **transformation** of a 2D or 3D object returns a new instance of the trans
 
 {{h2('Colors')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/J4yoWNnmawzrYQM/download/en_3d_transformations_colorize.mp4", "/images/thumbnails/en_3d_transformations_colorize.png", "en_3d_transformations_colorize", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/J4yoWNnmawzrYQM/download/de_3d_transformations_colorize.mp4", "/images/thumbnails/de_3d_transformations_colorize.png", "de_3d_transformations_colorize", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/48gsXjqzbbLxGmz
@@ -42,7 +42,7 @@ const shape = colorize(colorNameToRgb('black'), cube());
 
 ## Transformations
 
-{{video("https://fhpcloud.fh-potsdam.de/s/ycBJZ2a88Y8gc5i/download/en_3d_transformations_transformations.mp4", "/images/thumbnails/en_3d_transformations_transformations.png", "en_3d_transformations_transformations", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/ycBJZ2a88Y8gc5i/download/de_3d_transformations_transformations.mp4", "/images/thumbnails/de_3d_transformations_transformations.png", "de_3d_transformations_transformations", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/QPkkPMNra3GcfJT
@@ -94,7 +94,7 @@ const shape = center([true, true, true], cube());
 
 Saving each transformation outcome into a new variable, becomes especially complicated if you run lots of transformations in a loop for example. To overcome this, we can use arrays and we can overwrite variables.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/HyCYdBfaWi49Lzm/download/en_3d_transformations_loops.mp4", "/images/thumbnails/en_3d_transformations_loops.png", "en_3d_transformations_loops", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/HyCYdBfaWi49Lzm/download/de_3d_transformations_loops.mp4", "/images/thumbnails/de_3d_transformations_loops.png", "de_3d_transformations_loops", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/3gpzE9x3CiHFySf

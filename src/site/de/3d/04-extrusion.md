@@ -15,7 +15,7 @@ When ever we modify something in JSCAD, not matter if extrusion or transformatio
 
 {{h2('Extruding')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/y5sL6K5kfwW6CfL/download/en_3d_extrusion_extrude.mp4", "/images/thumbnails/en_3d_extrusion_extrude.png", "en_3d_extrusion_extrude", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/y5sL6K5kfwW6CfL/download/de_3d_extrusion_extrude.mp4", "/images/thumbnails/de_3d_extrusion_extrude.png", "de_3d_extrusion_extrude", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/iWeFYYkP4qx3HTJ
@@ -120,7 +120,7 @@ const extrudeShape = extrudeRotate({
 }, circleShape);
 ```
 
-{{video("https://fhpcloud.fh-potsdam.de/s/cqc84F3sZP3g5pb/download/en_3d_operations_extrude_rotate.mp4", "/images/thumbnails/en_3d_operations_extrude_rotate.png", "en_3d_operations_extrude_rotate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/cqc84F3sZP3g5pb/download/de_3d_operations_extrude_rotate.mp4", "/images/thumbnails/de_3d_operations_extrude_rotate.png", "de_3d_operations_extrude_rotate", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/yj6E3gx63bbPFwp
@@ -155,7 +155,7 @@ In the last session we look at extrusion. Taking a shape and extending it along 
 
 ### Offset
 
-{{video("https://fhpcloud.fh-potsdam.de/s/KWCPMqMPzf8s6t2/download/en_3d_extrusion_offset.mp4", "/images/thumbnails/en_3d_extrusion_offset.png", "en_3d_extrusion_offset", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/KWCPMqMPzf8s6t2/download/de_3d_extrusion_offset.mp4", "/images/thumbnails/de_3d_extrusion_offset.png", "de_3d_extrusion_offset", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/oMGcyBAiBTB7JQd
@@ -188,7 +188,7 @@ const offsetShape1 = offset({
 
 ### Expand
 
-{{video("https://fhpcloud.fh-potsdam.de/s/nDrxii2jHXXxR79/download/en_3d_extrusion_expand.mp4", "/images/thumbnails/en_3d_extrusion_expand.png", "en_3d_extrusion_expand", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/nDrxii2jHXXxR79/download/de_3d_extrusion_expand.mp4", "/images/thumbnails/de_3d_extrusion_expand.png", "de_3d_extrusion_expand", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/8ztZLysdzqbCdq9
