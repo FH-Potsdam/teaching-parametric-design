@@ -149,4 +149,4 @@ There are a few more 3D primitives to explore, examples for how to construct the
 - [cylinderElliptic](https://openjscad.xyz/docs/module-modeling_primitives.html#.cylinderElliptic)
 - [torus](https://openjscad.xyz/docs/module-modeling_primitives.html#.torus)
 
-{{task('Getting used to JSCAD', 'Explore the various 2D and 3D elements JSCAD provides, experiment with the various properties and see how it affects the output.')}}
+{{task('Task: Getting used to JSCAD', 'Explore the various 2D and 3D elements JSCAD provides, experiment with the various properties and see how it affects the output.')}}

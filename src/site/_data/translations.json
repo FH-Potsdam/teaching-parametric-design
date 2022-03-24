@@ -1,4 +1,9 @@
 {
+  "subtitle": {
+    "de": "Einführung in Code-Driven Design",
+    "en": "An introduction to code-driven design",
+    "cn": "代码驱动设计简介"
+  },
   "fhp": {
     "de": "Fachhochschule Potsdam",
     "en": "Potsdam University of Applied Scienes",

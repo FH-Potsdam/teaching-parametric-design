@@ -73,13 +73,13 @@ const getParameterDefinitions = () => {
 
 {{img('parameters.png', 'example of input fields')}}
 
-{{task('Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
+{{task('Task: Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
 
 {{inspiration('Parametric Frame')}}
 
 All elements in this design are controlled through parameters:
 
-{{link3d('/code/3d/radii', 'Open "Raspi Case"')}}
+{{link3d('/code/3d/radii', 'Open "Parametric Frame"')}}
 
 {{img('example3d-params.png', 'Generating a frame through unions and subtracts')}}
 

@@ -8,38 +8,36 @@ eleventyNavigation:
 
 {% from "../_includes/parts/macros.njk" import img %}
 
-This is the companion website for the "Parametric Design" course at the [Design department](https://www.fh-potsdam.de/design/) at the University of Applied Sciences Potsdam ([FHP](https://www.fh-potsdam.de/)). This website provides a gentle introduction to code-driven design for beginners. Only using free open source technologies. The full course is designed to be taught through a mix of online videos and group activities. But the website 
-itself should serve as a good starting point for your code-driven design journey.
+Dies ist die Website für den "Parametric Design" Kurs am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam ([FHP](https://www.fh-potsdam.de/)). Dieses Website öffnet Einsteiger*innen einen Startpunkt für das Gestalten durch Programmierung. Es werden nur kostenlose und quelloffenen Anwendungen gentutzt. Das Seminar ist so konzipiert, dass die Inhalten auf der Website untermauert werden von gemeinsamen Aktivitäten in den Vorlesungen. Die Website stellt aber auch in sich allein einen guten Einstieg in das Thema dar.
 
 <p class="start-button-container">
-  <a href="/de/introduction" class="start-button"><span>Begin course &raquo;</span></a>
+  <a href="/de/introduction" class="start-button"><span>Kurs beginnen &raquo;</span></a>
 </p>
 
-The course targets all designers or creative minds, that want to explore how to design digital and physical artifacts through code. At FHP we offer Interface, Product and Communication Design, which will play a central role in this course.
+Dieser Kurs richtet sich an alle Designer*innen und Kreative, die Herausfinden wollen, wie man durch Programmierung digitale und physische Artefakte gestalten kann. An der FHP werden die Studiengänge Interface-, Produkt- und Kommunikationsdesign angeboten, welche eine zentrale Rolle in diesem Kurs spielen werden.
 
-{{ img('potsdam-design.svg', 'Design disciplines at FHP.', '400px') }}
+{{ img('potsdam-design.svg', 'FHP Design-Studiengänge', '400px') }}
 
-## What is this course about?
+## Worum geht es in diesem Kurs?
 
-What makes this course different from other coding classes? This course has a strong focus on the interfaces between the output we generate through code and the possibilities to use this output in various fabrication or design applications (see overview below). We will use JavaScript for the whole course, as its a good language to start with. You will need no prior knowledge of coding. If you want to become a developer or computer scientics, this course might be a gentle introduction, but probably not what you are looking for. For creatives to get into coding, an important part is learning how to transfer ideas into code. In this course we primarily do this through group activities and discussions. This website will provide some excercises to get you started, but the most important part is to keep experimenting and playing with code, until it feels more natural.
+Was unterscheidet diesen Kurs von anderen Einführungen in die Programmierung? Dieser Kurs hat einen starken Fokus auf Schnittstellen zwischen Artefakten, welche wir durch Code generieren und anderen Anwendungen und Fertigungsverfahren (siehe unten). Wir werden für den gesamten Kurs JavaScript nutzen, da es eine gute Programmiersprache für den Einstieg ist. Man benötigt keinerlei Vorkenntnisse, um an diesem Kurs teilzunehmen. Wenn du Programmierer\*in oder Informatiker\*in werden möchtest, dann ist dieser Kurs vllt. eine vorsichtiger erster Einstieg, aber wahrscheinlich nicht der Kurs nach dem du suchst. Wenn man als Desginer*in programmieren lernt, ist ein wichtiger Teil, neben den technischen Grundlagen, zu lernen wie man seine Ideen in Code überträgt. In diesem Kurs beschäftigen wir uns mit diesem Teil speziell durch Gruppenaktivitäten im Seminar. Auf der Website finden sich ein paar Übungen als Startpunkt. Darüber hinaus ist das Wichtigste auf dem Weg sich sicherer im Umgang mit Code zu fühlen, zu programmieren, experimentierne und auszuprobieren.
 
-{{ img('interfaces.svg', 'Possibilities of code-driven design.', '500px') }}
+{{ img('interfaces.svg', 'Die Möglichkeiten von Code-driven Design.', '500px') }}
 
 ## Open Educational Ressources
 
-This course is licensed under CC BY-ND 4.0. This means you can reuse every part of this website, as well as the companion code repositories for your own teaching. You only need to provide attribution. Why not remix? There is a lot of video-material on this website, that we don't want remixed, as well as some of the graphics. If you are interested to remix a particular graphic get in touch. The code examples are under MIT license, so no need for attribution and you can use it for whatever you want.
+Dieses Seminar wir unter CC BY-ND 4.0 zur Verfügung gestellt. Dies bedeutet, dass die Inhalte dieser Website, sowie die Inhalte im zugehörigen GitHub-Repo auch von anderen Lehrenden eingesetzt werden können. Es muss nur die Quelle angegeben werden. Warum dürfen die Inhalte nicht verändert (remix) werden? Es gibt viel Videomaterial auf dieser Website, diese und die Grafiken wollen wir nicht verändert sehen. Falls jemand Interesse hat einen spezifischen Inhalt zu verändern, nehmt vorher bitte Kontakt mit uns auf. Die Code-Beispiele sind alle unter der MIT Lizenz veröffentlich. Entsprechend können diese ohne Einschränkungen weitergenutzt werden.
 
-## Contribute
+## Mitmachen
 
-You like this project and would like to contribute? If you find an error, [report](https://github.com/FH-Potsdam/teaching-parametric-design/issues) it on GitHub. We are always excited to welcome additional translations. If you are interested in translating the content, please get in touch. You know more projects for the [Inspiration](inspiration.md) section? Just send us an email.
+Dir gefällt dieses Projekt und du willst uns unterstützen? Wenn du einen Fehler findest, kannst du ihn hier auf GitHub [melden](https://github.com/FH-Potsdam/teaching-parametric-design/issues). Wir freuen uns auch immer über weitere Übersetzungen. Wenn du Interesse hast die Inhalte zu übersetzen, nimm Kontakt mit uns auf. Du kennst weitere Projekte für die [Inspirations-Seite](inspiration.md) ? Dann schick uns einfach eine Email.
 
-## Thank You!
+## Danke
 
-I have never studied computer sciences (even though i have a CS PhD now). More than two decades ago the internet thought my teenage self how to code (particularly [SELFHTML](https://wiki.selfhtml.org)). So i am very grateful for all the great open educational resources out there. More recently i have been particularly been inspired to work on OERs by the works of [Tamara Munzner (Data Vis)](https://www.cs.ubc.ca/~tmm/) and [Daniel Shiffman (Creative Coding)](https://shiffman.net/). Thank you all open source and open educational resource contributors!!!
+Ich habe nicht Informatik oder ähnliches studiert (auch wenn ich meinen PhD später in der Informatik gemacht habe). Vor mehr als zwei Jahrzehnten hat mir das Internet programmieren beigebracht oder besser gesagt, die Communities die ihr Wissen dort geteilt haben (zu Beginn besonders [SELFHTML](https://wiki.selfhtml.org)). Deshalb bin ich heute sehr dankbar, für alle großartigen Open Educational Resources. In den letzten Jahren haben mich besonders die OER-Initiativen von  [Tamara Munzner (Datenvisualisierung)](https://www.cs.ubc.ca/~tmm/) and [Daniel Shiffman (Creative Coding)](https://shiffman.net/) inspiriert. Ich danke allen Open Source und Open Educational Resource Contributors!!!
 
-## Privacy first!
+## Privatsphäre geht vor!
 
-This website is designed privacy first. There is no tracking or cookies or anything alike. The website is hosted through Netlify. Videos are hosted on our university server. No other external bits and pieces. This by the way means, I have no clue if anyone besides my students is using this. So drop me line if you like this.
+Diese Webseite wurde mit einem Fokus auf Privatsphäre entwickelt. Es werden keine Tracking-Mechanismen oder Cookies benutzt. Die Seite wird durch Netlify gehostet. Die Videos werden über den Hochschul-Server zur Verfügung gestellt. Keine anderen externen Komponenten. Dies bedeutet auch, dass ich keine Ahnung habe, ob jemand anders außer meinen Studierenden die Seite nutzt. Wir freuen uns über Feedback.
 
-
-<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" >Die Inhalte der Seite stehen unter der Lizenz: <a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>

@@ -9,34 +9,34 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, img, inspiration, task %}
 
-But sometimes we want to directly create a 3D shape from code. 2D pixel and vector graphics are very forgiving, if objects overlap or paths are not closed, the output might not look perfect, but its still fine. When building 3D objects for rapid prototyping (e.g. 3D-printing or CNC), we need to make sure that our solid bodies are correctly constructed, otherwise the software we will use to send our design to the milling or printing machines will fail.
+Aber manchmal wollen wir 3D-Körper direkt durch Code generieren. 2D Pixel- und Vektorgrafiken vergeben kleinere Fehler, wie Überlagerungen, nicht geschlossene Pfade oder Versätze. Auch wenn die Fehler visuell auffallen, ist es meist kein großes Problem. Bei 3D-Objekten sieht dies anders aus, z.B. wenn wir Objekte für Rapid Prototyping (wie z.B. 3D-Druck) konstruieren. Anderenfalls bekommen wir Probleme mit den Anwendungen, mit denen wir die Modelle an die Maschinen schicken.
 
 {{h2('OpenSCAD')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe/download/de_3d_jscad_openscad.mp4", "/images/thumbnails/de_3d_jscad_openscad.png", "de_3d_jscad_openscad", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/s6nWEmrsK8GtXbG/download/de_3d_jscad_openscad.mp4", "/images/thumbnails/de_3d_jscad_openscad.png", "de_3d_jscad_openscad", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/s6nWEmrsK8GtXbG
 en: https://fhpcloud.fh-potsdam.de/s/w9egGf2MQ9KdbHe
 -->
 
-The open source community has developed the [OpenSCAD](https://openscad.org/) software. In contrast to tools like Fusion 360, OpenSCAD's focus is script/code-based design, which makes this tool great for parametric design. Over the years developers have ported the OpenSCAD programming language to other languages like [JavaScript](https://github.com/jscad/OpenJSCAD.org) or [Python](https://github.com/CadQuery/cadquery). Thanks to this work, we can continue using our JavaScript skills to build our own 3D objects. Similar to p5js' online editor, there is a new platform with similar capabilities for OpenSCAD: [cadhub.xyz](https://cadhub.xyz/) (this website is a community project still under development).
+Die Open Source Community hat die Anwendung [OpenSCAD](https://openscad.org/) entwickelt. Im Unterschied zu traditionellen 3D-Anwendungen mit GUIs, wie z.B. Fusion 360, OpenSCADs Fokus liegt auf der code-basierten Gestaltung von 3D-Objekten. In den letzten Jahren wurde OpenSCAD in verschiedene andere Programmiersprachen portiert, wie z.B. [JavaScript](https://github.com/jscad/OpenJSCAD.org) und [Python](https://github.com/CadQuery/cadquery). Dank dieser Arbeite können wir unsere bisher erworbenen JavaScript-Fähigkeiten nutzen um 3D-Körper zu konstruieren. Ähnlich wie der Online-Editor von p5js, gibt es auch eine ähnliche Plattform für OpenSCAD: [cadhub.xyz](https://cadhub.xyz/) (dies ist ebenfalls ein Community-Projekt und befindet sich noch in der Entwicklung).
 
 
 {{h2('JSCAD')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG/download/de_3d_jscad_jscad.mp4", "/images/thumbnails/de_3d_jscad_jscad.png", "de_3d_jscad_jscad", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/YnZsQTeeQgafFJy/download/de_3d_jscad_jscad.mp4", "/images/thumbnails/de_3d_jscad_jscad.png", "de_3d_jscad_jscad", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/YnZsQTeeQgafFJy
 en: https://fhpcloud.fh-potsdam.de/s/aDz5aNQ2Y5gqrbG
 -->
-## Inspect 3D project in the browser
+## JSCAD Projekte im Browser
 
-To create your first 3D project, the process is the same as for p5js, we just use a different boilerplate. Duplicate the `3D-example` folder. You will find a couple of commands as examples in the `index.js` file. We will go through all those commands in a moment. Open the `index.html` in your new folder with the *Go Live* extension. When you make changes to the `index.js` file and save, the website in your browser should reload automatically. (Please note that the last rotation and zoom of the camera will be reset).
+Um unser erstes 3D-Projekt zu erstellen, nutzen wir dasselbe Prinzip wie bei p5js, wir nutzen nur eine andere Boilerplate. Zu Beginn werden wir den `3D-example` Ordner nutzen. In der `index.js` Datei befinden sich bereits ein paar Beispiel-Befehle. Diese werden wir im nächsten Abschnitt Schritt für Schritt durchgehen. Um die Vorschau zu starten, wählt die `index.html` Datei aus und nutzt wieder die *Go Live* Erweiterung, um das ganze im Browser zu öffnen. Danach können wir in der  `index.js` arbeiten und sobald wir diese speichern, wird die Vorschau neugeladen. (Die Einstellungen des Viewports im Browser (rotation, zoom, etc.) werden beim Neuladen zurückgesetzt).
 
-You can use your mouse-wheel or trackpad scrolling to zoom in and out. Hold your mouse-pressed and drag to rotate the coordinate system. More controls are explained under the settings button in the upper right. There you can also change language and theme. The most interesting part is the export feature. In the upper left you find a dropdown with a variety of formats. For our use cases the binary STL file is best suited.
+Innerhalb der Preview, kann man mit Hilfe der Maus oder das Trackpads die Vorschau rotieren, sowie rein- und raus-zoomen. Weitere Hinweis zum Interface verstecken sich unter dem Einstellungs-Button oben rechts. Über die Einstellungen kann auch die Sprache und das Theme angepasst werden. Das wichtigste Feature befindet sich oben links, die Export-Funktion. JSCAD bietet eine Auswahl an verschiedenen Export-Formaten, wir werden das binary STL format nutzen, da es von allen 3D-Anwendungen unterstützt wird.
 
-You can find the full reference for all JSCAD features [here](https://openjscad.xyz/docs).
+Die vollständige Dokumentation für JSCAD ist [hier](https://openjscad.xyz/docs) zu finden.
 
 {{h2('Boilerplate')}}
 
@@ -59,7 +59,7 @@ const main = () => {
 module.exports = { main }
 ```
 
-Let's start from the top. In our p5js boilerplate everything is ready to use. Here we need to load the JSCAD library ourselves. `const jscad = require('@jscad/modeling');` loads the JSCAD commands. Some commands are hidden deep inside the JSCAD library structure. To create a cube, we need to write `jscad.primitives.cube()`. To help us write less code, we can import specific commands and then directly use them: `const {cube} = jscad.primitives;` now we can write `cube()`. Here is another example: `jscad.transforms.translate()` > `const { translate } = jscad.transforms;` `translate();`.
+Fangen wir oben an. In unserer p5js Boilerplate sind alle Funktionen global verfügbar und ready to go. Hier müssen wir die JSCAD library erst laden: `const jscad = require('@jscad/modeling');`. Danach sind alle Befehle in der Variable `jscad` eingebettet, wie in einem großen verschachtelten Object (siehe 2D / Variablen II). Manche Befehle sind sehr tief in der Objektstruktur versteckt. Um z.B. einen Würfel zu erstellen, lautet das Kommando: `jscad.primitives.cube()`. Damit wir weniger schreiben müssen, werden einzelne Befehle am Anfang in globale Variablen geladen: `const {cube} = jscad.primitives;` dies erlaubt es uns dann einfach `cube()` zu schreiben. Ein weiteres Beispiel: `jscad.transforms.translate()` > `const { translate } = jscad.transforms;` `translate();`.
 
 ```js
 const main = () => {
@@ -67,13 +67,13 @@ const main = () => {
 };
 ```
 
-Similar to p5js' `draw()` the `main()` is our drawing function. Please note, that in contrast to p5js this function is only called once and not as a loop.
+Ähnlich wie die `draw()`-Funktion bei p5js, ist bei JSCAD die `main()`-Funktion unsere Funktion zum Zeichnen der 3D-Objekte. Wichtig: die `main`-Funktion wird nur einmal aufgerufen. JSCAD ist keine Software um Animationen oder ähnliches zu erstellen, sonder primär statische 3D-Körper.
 
-> `() => {}` is short for `function () {}`
+> `() => {}` ist kurz für `function () {}`
 
-> `const main = () => {};` stores the function in the variable `main`, so we can execute it with `main();`.
+> `const main = () => {};` speichert die Funktion in der Variable: `main`, so können wir dies dann mit `main();` ausführen.
 
-The `main` function needs to return something that the system can render for us. The return is either a single 3D body or an array of bodies:
+Die `main` Funktion muss etwas zurückgeben (siehe 2D / Funktionen). Die Rückgabe der `main`-Funktion (return) müssen die Körper und/oder Formen sein, die in der Vorschau für uns gerendert werden. Es kann sich bei der Rückgabe um einzelne Formen handeln oder Arrays mehrerer Formen:
 
 ```js
 const main = () => {
@@ -84,9 +84,9 @@ const main = () => {
 };
 ```
 
-{{h2('Function Parameters')}}
+{{h2('Funktions-Parameter')}}
 
-In p5js commands like `rect` take a certain amount of parameters: `rect(x, y, width, height)`. In JSCAD most functions take a single object with several properties: `cube({center: [0,0,0], size: 2})`. This approach can have a lot of advantages, e.g. you can create a parameter object and pass it to multiple commands or modify only certain aspects of the object:
+In p5js haben Kommandos wie z.B. `rect` mehrere Parameters erhalten: `rect(x, y, width, height)`. In JSCAD erhalten die meisten Funktionen ein Objekt. Ein Objekt das mehrere Attribute enthält: `cube({center: [0,0,0], size: 2})`. Diese Art Funktionen zu gestalten hat mehrere Vorteile, z.B. können wir ein Parameter-Objekt erstellen und mehrfach benutzen:
 
 ```js
 const main = () => {

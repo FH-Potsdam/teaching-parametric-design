@@ -12,15 +12,15 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import definition %}
 {% from '../../_includes/parts/macros.njk' import editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6/download/de_2d_export.mp4", "/images/thumbnails/de_2d_export.png", "de_2d_export", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE/download/de_2d_export.mp4", "/images/thumbnails/de_2d_export.png", "de_2d_export", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE
 en: https://fhpcloud.fh-potsdam.de/s/bpimHLjWPYDmwi6
 -->
 
-{{h2('Pixels')}}
+{{h2('Pixel')}}
 
-The purpose of learning about how to build design with code, is so we can quickly generate complex shapes and patterns to use in other design processes. So far our output format was a pixel based image. To export our pixels into a convenient PNG format, simply call the `save()` command:
+Die Idee hinter dem generieren von Designs durch Code ist diese dann auch in anderen Anwendungen weiternutzen zu können. Und so Design und Artefakte generieren zu können, die über den klassischen Gestaltungsweg nicht möglich oder nur mit sehr viel Aufwand möglich sind. Der einfachste Export sind Raster-Bild auf Pixelbasis. Um ein Bild zu exportieren müssen wir einfach nur das `save()` Kommando nutzen:
 
 ```js
 function draw() {
@@ -30,7 +30,7 @@ function draw() {
 }
 ```
 
-When calling the save command from the draw-loop, make sure you use `noLoop()`. Otherwise the save function will be called continously. Otherwise you could also use an event:
+Wenn man den `save`-Befehl aus der draw-Schleife heraus aufruft, sollte man den `noLoop()`-Befehl nicht vergessen. Anderenfalls versucht der Browser nämlich ganz viele Bilder (bei jedem Schleifendurchlauf) abzuspeichern. Alternativ ist es besser das Speichern einfach über ein Tastatur- oder Maus-Event auszulösen:
 
 ```js
 function keyReleased() {
@@ -38,12 +38,12 @@ function keyReleased() {
 }
 ```
 
-You can also define the name of the saved file:
+Wir können auch den Dateinamen unserer Datei angeben:
 ```js
 save("myImage.png");
 ```
 
-If you wan to export a series of images:
+Wenn man eine Serie von Bilder exportieren möchte, sollte man diese am besten durchnummerieren:
 ```js
 let counter = 1;
 function draw() {
@@ -56,9 +56,9 @@ function draw() {
 } 
 ```
 
-{{h2('Vectors')}}
+{{h2('Vektordaten')}}
 
-While pixels are a good start,  we cannot easily modify our designs once they are stored in pixels. The best alternative are vectors, which we can export as **SVGs**. SVGs are a standard for vector graphics and they can be displayed in the browser and easily imported into any graphics software (e.g. Illustrator, Sketch, Figma, etc.). To do so, we need to tell p5js that we want to switch from pixels to vectors. So upon initializing our canvas, we need to define the correct render-engine:
+Rasterbilder sind für viele Anwendungsfälle ein guter Start, aber gerade wenn wir die Informatione weiterverarbeiten wollen, benötigen wir in der Regel Vektordaten. Hierzu können wir aus p5js heraus auch **SVGs** exportieren. SVGs sind ein standardisiertes Vektordatenformat, welches eigentlich von allen gängigen Anwendungen genutzt werden können (z.B. Illustrator, Sketch, Figma, etc. aber auch 3D-Anwendungen wie Blender, Fusion oder Rhino). Damit wir aus p5js SVGs exportieren können, müssen wir den sogenannten "Renderer" wechseln. Dies müssen wir lediglich angeben, wenn wir unsere Zeichenfläche erstellen:
 
 ```js
 function setup() {
@@ -66,17 +66,18 @@ function setup() {
 }
 ```
 
-> Not all functions work (or make sense to use), when working with vectors. But all 2D-commands work just fine.
+> Nicht alle Funktionen funktionieren für den Vektor-Renderer (oder machen Sinn). Aber alle 2D-Befehle die wir bisher durchgenommen haben, können problemlos eingesetzt werden.
 
-> If you are creating your own p5js vector project, make sure you include the [SVG-library](https://github.com/zenozeng/p5.js-svg) in your `index.html`. Our boilerplate has this already included.
+> Falls du dein eigenes p5js-Vektor-Projekt erstellst und nicht unsere Boilerplate nutzt, dann musst du sicherstellen, dass du auch die  [SVG-library](https://github.com/zenozeng/p5.js-svg) in der `index.html` eingebunden hast.
 
-{{h2('Further reading')}}
+Als interessanten Bonus findet ihr im Bonus-Bereich ein Beispiel wie ihr auch animierte GIFs aus euren Design erstellen könnt. Hierfür wir die [createLoop](https://github.com/mrchantey/p5.createLoop#readme) library [genutzt](gif.md).
 
-In the last few sessions we have covered the basics of p5js, but there is a lot more to discover and do:
+{{h2('Mehr p5js')}}
 
-- Checkout the [reference](https://p5js.org/reference/) for more commands
-- Some people have build [additional commands](https://p5js.org/libraries/) (libraries) that you can add to your setup
-- If you want more tutorials, the [coding train](https://thecodingtrain.com/) comes strongly recommended
-- The coding examples from the book "Generative Gestaltung", are [available online](http://www.generative-gestaltung.de/)
+In den letzten Einheiten haben wir die Grundlagen von p5js kennengelernt, aber es gibt natürlich noch viel mehr zu entdecken:
 
-As a fun bonus, i have written an example to show how to add other p5js-libraries and used the gif-export from [createLoop](https://github.com/mrchantey/p5.createLoop#readme) as an example: [GIF-Bonus](gif.md).
+- Im Bonus-Bereich der Website findet ihr weitere thematische Vertiefungen
+- Mehr Befehle in der [Dokumentation](https://p5js.org/reference/)
+- Zusätzliche [Libraries](https://p5js.org/libraries/) anderer Entwickler*innen für p5js
+- Mehr und tiefergehende Tutorials gibt es beim großartigen [Coding Train](https://thecodingtrain.com/)
+- Die Beispiele aus dem Buch "Generative Gestaltung", sind auch [online](http://www.generative-gestaltung.de/) verfügbar

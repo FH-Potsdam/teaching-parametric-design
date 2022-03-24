@@ -151,7 +151,7 @@ const extrudeShape = extrudeRotate({
 const {expand, offset} = jscad.expansions;
 ```
 
-In the last session we look at extrusion. Taking a shape and extending it along an axis. Another similar method is `expand` and `offset`.
+In the last section we looked at extrusion. Taking a shape and extending it along an axis. Another similar method is `expand` and `offset`.
 
 ### Offset
 
@@ -196,7 +196,7 @@ en: https://fhpcloud.fh-potsdam.de/s/nDrxii2jHXXxR79
 -->
 
 
-Expand has the same `effect` as `offset` for 3D shapes. It only offers the corner method `'round'`, but you can define the segments:
+`Expand` has the same effect as `offset` for 3D shapes. It only offers the corner method `'round'`, but you can define the segments:
 
 {{img('segments.png', 'expand with different segment options')}}
 
@@ -209,7 +209,7 @@ const offsetShape1 = expand({
 }, rectShape); 
 ```
 
-{{task('Offset extrusions', 'Explore the various extrusions when you combine them with an offset. Create a grid of extruded objects.')}}
+{{task('Task: Offset extrusions', 'Explore the various extrusions when you combine them with an offset. Create a grid of extruded objects.')}}
 
 {{inspiration('Extruded rectangle with rounded corners')}}
 

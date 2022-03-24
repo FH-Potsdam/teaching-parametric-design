@@ -101,4 +101,4 @@ de: https://fhpcloud.fh-potsdam.de/s/3gpzE9x3CiHFySf
 en: https://fhpcloud.fh-potsdam.de/s/HyCYdBfaWi49Lzm
 -->
 
-{{task('Multiple Transformations', 'The transformations and handling of objects is quite different to p5js. Try building a loop that transforms some basic 3D bodies (e.g. translate and rotate). Try creating a 3D pattern.')}}
+{{task('Task: Multiple Transformations', 'The transformations and handling of objects is quite different to p5js. Try building a loop that transforms some basic 3D bodies (e.g. translate and rotate). Try creating a 3D pattern.')}}

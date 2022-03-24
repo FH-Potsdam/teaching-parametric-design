@@ -1,8 +1,8 @@
 ---
-title: More Drawing
+title: Drawing II
 eleventyNavigation:
-  title: More Drawing
-  key: en_2d_more_drawing
+  title: Drawing II
+  key: en_2d_drawing2
   parent: en_2d
   order: 6
 ---

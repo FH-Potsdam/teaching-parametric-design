@@ -1,8 +1,8 @@
 ---
-title: More Variables
+title: Variablen II
 eleventyNavigation:
-  title: More Variables
-  key: de_2d_more_variables
+  title: Variablen I
+  key: de_2d_variables2
   parent: de_2d
   order: 7
 ---
@@ -11,14 +11,14 @@ eleventyNavigation:
 
 {{h2('Arrays')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf/download/de_2d_variables2_array.mp4", "/images/thumbnails/de_2d_variables2_array.png", "de_2d_variables2_array", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH/download/de_2d_variables2_array.mp4", "/images/thumbnails/de_2d_variables2_array.png", "de_2d_variables2_array", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH
 en: https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf
 -->
 
-As our concepts are getting more complex, we need to be able to store more information. Imagine your creating a shape with the vertex command. Depending on the number of points of the shape, this will take a lot of variables. To overcome this we can use arrays. Arrays are another type of variable which can hold multiple values. Arrays can also be nested. As an example, lets create an array of points, each point is stored as another array `[x,y]`:
+Umso komplexer unsere Projekte werden, umso mehr Informationen müssen wir irgendwo speichern. Man stelle sich vor, man erstellt eine komplexe Form mit den Vertex-Kommandos und möchte die ganze Koordinaten in Variablen speichern. Dies würde bedeuten, dass man ganz viele Variablen erstellen müsste, was natürlich sehr mühselig wäre. Um dieses Problem zu lösen haben wir JavaScript sogenannte Arrays. Arrays sind ein weiterer Variablentyp. Arrays sind im Grunde einfach Listen, in denen wir mehrere Werte speichern können. Innerhalb Arrays können wir alle anderen Variablentypen ablegen. Auch Arrays selber können in Arrays gespeichert werden, also sozusagen als verschachtelte Listen. Als erstes Beispiel werden wir ein Array mit einer Reihe an Punkten erstellen. Jeder Punkt wird durch ein weiteres Array `[x,y]` repräsentiert:
 
 ```js
 const points = [
@@ -29,14 +29,14 @@ const points = [
 ];
 ```
 
-To access an element inside an array we use its so called index:
+Um ein Element innerhalb eines Arrays abzurufen, können wir dies über eckige Klammern und den Index des jeweiligen Elements machen:
 
 ```js
 points[0] // [0, 0]
 points[0][0] // 0
 ```
 
-The index always starts with **0** not **1**. We can also add elements programmatically:
+Ganz wichtig: der Index einer Liste beginnt bei **0** und nicht bei **1**. Wir können auch Elemente programmatisch zu einem Array hinzufügen:
 
 ```js
 const sketchWidth = 400;
@@ -50,26 +50,26 @@ for (let p = 0; p < 20; p += 1) {
 }
 ```
 
-{{h2('Array example')}}
+{{h2('Array-Beispiele')}}
 
-We create a random shape (array of `[x,y]`), we then draw this shape multiple times, but with increasing opacity, to create the gradient effect:
+Im folgenden wird eine zufällige Form erstellt (Array mit zufälligen `[x,y]` Koordinaten). Wir zeichnen dann diese Form mehrfach mit Offset und sich verändernder Transparenz um einen Verlaufseffekt zu generieren:
 
 {{editor('/code/arrayexample', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/arrayexample/sketch.js')}}
 
-> Sometimes we might not know how long our array is exactly: `array.length` returns the length of the array.
+> Manchmal wissen wir innerhalb unseres Codes vielleicht gar nicht mehr wie lang unsere Array eigentlich ist und wieviele Elemente in dem Array enthalten sind: `array.length` liefert uns immer die aktuelle Länge des Arrays.
 
-More infos on array features can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+Weitere Informationen zu allem was man mit Arrays anstellen kann, gibt es [hier](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 {{h2('Objects')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR/download/de_2d_variables2_objects.mp4", "/images/thumbnails/de_2d_variables2_objects.png", "de_2d_variables2_objects", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz/download/de_2d_variables2_objects.mp4", "/images/thumbnails/de_2d_variables2_objects.png", "de_2d_variables2_objects", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz
 en: https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR
 -->
 
-Story information in arrays can get confusing at a certain level. To keep things organized we can use objects. Objects are very similar to arrays, but instead of a number-based index, objects use a string-based index:
+Gerade wenn man Arrays verschachtelt, wird es irgendwann verwirrend. Um Elemente etwas strukturierter abzulegen, gibt es die sogenannten "Objects". Objekte sind den Arrays sehr ähnlich, statt einem numerisch-basierten Index gibt es bei Objects Attribute (keys) und denen können wir dann wieder Werte (values) zuordnen, Attributenamen werden einfach als Text (string) definiert:
 
 ```js
 const point = {
@@ -77,19 +77,19 @@ const point = {
   'y': 0
 };
 ```
-To access the elements inside of an object we use the same syntax as for the arrays, but use the strings instead of numbers:
+Um auf die Werte innerhalb eines Objects zuzugreifen, nutzen wir einfach die selbe Schreibweise wie bei den Arrays (nur Text statt Zahl):
 
 ```js
 point['x'] // 0
 ```
 
-And we can also use a short form (this only works if the key has no spaces or other special characters):
+Es gibt auch noch eine kurze Schreibweise (diese funktioniert allerdings nur, wenn ihr keine Leer- und Sonderzeichen oder Zahlen am Anfang des Attributnamen habt):
 
 ```js
 point.x // 0
 ```
 
-And to make it a bit more confusing, we can store objects in arrays, and arrays in objects:
+Und damit es noch ein bisschen komplexer wird. Wir können auch Objects in Arrays ablegen:
 
 ```js
 const points = [
@@ -102,27 +102,27 @@ const points = [
 points[1]['vel'][0] // 1
 ```
 
-### Object example
+### Objects-Beispiele
 
-Similar to the array example, we create a list of points, in addition to x/y, we also store a velocity, the velocity of each point, to move each point after each loop-cycle. To stop the points from leaving the canvas, we simply reverse the velocity (*-1), when the position is outside the canvas:
+Ähnlich zum Array-Beispiel, erstelnen wir wieder eine Liste (Array) mit Punkten (x/y). Diesmal speichern wir zusätzlich eine Geschwindigkeit (velocity) mit dem jedem Punkt. Die Geschwindigkeit nutzen wir um die Koordinaten eines jeden Punktes am Ende der Draw-Schleife zu verschieben. Um zu verhindern, dass die Punkte vom Canvas runterlaufen, drehen wir die velocity (*-1) einfach um, sobald die Position außerhalb des Canvas ist:
 
 {{editor('/code/objectexample', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/objectexample/sketch.js')}}
 
 {{h2('Noise')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb/download/de_2d_variables_noise.mp4", "/images/thumbnails/de_2d_variables_noise.png", "de_2d_variables_noise", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq/download/de_2d_variables_noise.mp4", "/images/thumbnails/de_2d_variables_noise.png", "de_2d_variables_noise", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq
 en: https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb
 -->
 
-We already learned about the `random()` command. The noise command also returns random values. When our sketch starts a 3D-space of random values is created. We can then pick individual values from this space. Unlike the `random()` command, the values in this "random" space represent a smooth noise field (see visualisation below).
+Wir haben bereits die `random()`-Funktion kennengelernt. Die `noise` Funktion liefert uns ebenfalls Zufallswerte. Wenn unser Sketch gestartet wird, wird für die `noise`-Funktion ein dreidimensionaler Zufallsraum generiert. Aus diesem Raum können wir dann Werte abfragen, indem wir die entsprechenden Koordinaten angeben. Anders als bei `random()`, ist dieser Zufallsraum nicht komplett zufällig, sondern wir finden darin ein "Rauschfeld", mit "weichen" übergängen zwischen den Werten (siehe Visualisierung unten).
 
 {{ definition('noise', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number', optional: true },
-  { name: 'z', type: 'number', optional: true }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl', optional: true },
+  { name: 'z', type: 'Zahl', optional: true }
 ]) }}
 ```js
 function setup() {
@@ -130,9 +130,10 @@ function setup() {
 }
 ```
 
-If a new random field is required, the noise values can be regenerated through the noiseSeed command:
+Wenn man ein neues "Rauschfeld" haben möchte, kann man sich mit der `noiseSeed` funktion ein neues Feld generieren lassen:
+
 {{ definition('noiseSeed', [
-  { name: 'seed', type: 'number' }
+  { name: 'Seed', type: 'Zahl' }
 ]) }}
 ```js
 function setup() {
@@ -142,10 +143,10 @@ function setup() {
 
 {{editor('/code/noise', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/noise/sketch.js')}}
 
-> Reminder: The smooth curves of the noise field only become visible if you use small coordinates to retrieve the values.
+> Erinnerung: Die weichen Übergänge (Kurven) werden nur sichtbar wenn man nah an das Feld heranzoomt (kleine Werte benutzen).
 
-{{task("Task: Arrays & Objects", "Try creating a list of variables and use them in the draw loop. To go further modify the variables with each draw loop, to create an animation.")}}
+{{task("Aufgabe: Arrays & Objects", "Versuche ein Array mit Objects in der setup-Funktion zu erstellen und diese anschließend in der draw-Funktion zu nutzen. Gehe dann einen Schritt weiter und versuche einzelne Attribute in den Objekten, innerhalb der draw-Schleife, zu verändern.")}}
 
-{{inspiration('Moving through the cloud')}}
+{{inspiration('Flug durch die Wolke')}}
 
 {{editor('/code/noiseani', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables2/noiseani/sketch.js', true)}}

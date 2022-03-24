@@ -1,5 +1,5 @@
 ---
-title: Two dimensional Drawing
+title: Zweidimensionales Zeichnen
 eleventyNavigation:
   title: 2D
   key: de_2d

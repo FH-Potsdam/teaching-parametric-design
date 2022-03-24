@@ -22,7 +22,7 @@ en: https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL
 
 The material for this course is not only offered in different languages, but also offers you the choice to choose between your preferred learning style. You can just *read* all the text, you can *watch* the videos or download the code examples and learn by *experimenting* with the code.
 
-All videos come with subtitles. Use the little button in the lower right to activate them. If you cannot activate them, switch to a different browser. For privacy reasons we are not using a video hosting service like YouTube. We are using the browser's native video player, which is slightly different depending on which browser you use. Underneath each video, you find a link to the code shown in the video.
+All videos come with subtitles. Use the little button in the lower right to activate them. If you cannot activate them, switch to a different browser. For privacy reasons we are not using a video hosting service like YouTube. We are using the browser's native video player, which is slightly different depending on which browser you use.
 
 {{ img('subtitles.png', 'Enabling subtitles.') }}
 
@@ -54,7 +54,7 @@ For p5js an inline editor allows you to quickly experiment with code directly in
 
 {{ img('editor.png', 'Inline Code Editor.') }}
 
-The JSCAD editor is a lot more resource intensive, therefore, we open the JSCAD previews in a new tab/window, instead of an inline preview.
+The JSCAD preview is a lot more resource intensive, therefore, we open the JSCAD previews in a new tab/window, instead of an inline preview.
 
 ### Extras & Bonus
 

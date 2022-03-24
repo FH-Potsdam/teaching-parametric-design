@@ -9,18 +9,18 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-So far we have created our parameters manually or by using the `random()` function. In this section we will look at a few input options which we will turn into parameters to modify our layouts and designs.
+Bisher haben wir unsere Parameter immer manuell erstellt oder haben Funktionen wie `random()` genutzt. In dieser nächsten Einheit werden wir uns verscheidene Eingabeverfahren anschauen, um die Parameter unserer Design zu verändern, während diese gezeichnet werden.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/gDGSt2aPMBmpwY5/download/de_2d_input_input.mp4", "/images/thumbnails/de_2d_input_input.png", "de_2d_input_input", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi/download/de_2d_input_input.mp4", "/images/thumbnails/de_2d_input_input.png", "de_2d_input_input", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi
 en: https://fhpcloud.fh-potsdam.de/s/gDGSt2aPMBmpwY5
 -->
 
-{{h2('Form input')}}
+{{h2('Formulare')}}
 
-The easiest input is a simple text field.
+Der einfachste Input ist ein Textfeld:
 
 ```js
 let textField; 
@@ -38,9 +38,9 @@ function draw() {
 }
 ```
 
-> This input will always return a string (although most p5js functions won't mind a string instead of a number). If you want to convert it into a number, use: `parseInt(textField.value())` or `parseFloat(textField.value())`
+> Dieser Input liefert uns immer einen Textwert (auch wenn das den meisten p5js-Funktionen egal ist, ob es eine Zahl oder Text ist). Wenn man den Wert in eine tatsächliche Zahl umwandeln will: `parseInt(textField.value())` oder `parseFloat(textField.value())`
 
-Sometimes you might not want to use the input directly but instead run a function that computes another variable:
+Manchmal möchte man nicht den Wert direkt nutzen, sondern sobald der Wert sich verändet sollen andere Einstellungen vorgenommen werden:
 
 ```js
 let myAge = 0;
@@ -64,11 +64,11 @@ function draw() {
 }
 ```
 
-The textfield does not need to be inside the canvas its independent from the canvas and when we export our canvas later (e.g. as an image), the field will not be part of it.
+Das Textfeld muss nicht innerhalb der Zeichenfläche liegen. Es ist ein ganz normales HTML-Element und unabhängig von unserer Zeichenfläche. Wenn wir später unsere Zeichenfläche z.B. als Bild exportieren, wird das Textfeld auch nicht mitexportiert.
 
-> Notice `this.value()`: This will return the current value of the input.
+> Wenn wir das input-Event an eine Funktion schicken, können wir den aktuellen Wert dieses Elements durch `this.value()` abrufen.
 
-We can add as many text fields as we want. There are a few other input elements, that work similar to the text field:
+Man kann so viele Textfelder hinzufügen wie man möchtet. Neben Textfeldern gibt es auch noch andere Formularfelder:
 
 - [Button](https://p5js.org/reference/#/p5/createButton)
 - [Checkbox](https://p5js.org/reference/#/p5/createCheckbox)
@@ -76,23 +76,23 @@ We can add as many text fields as we want. There are a few other input elements,
 - [Radio-Button](https://p5js.org/reference/#/p5/createRadio)
 - [Color Picker](https://p5js.org/reference/#/p5/createColorPicker)
   
-Check the corresponding documentation in the reference for more info. 
+Unter den Links gibt es in der Dokumentation weitere Informationen. 
 
 ### Slider
 
-{{video("https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn
 en: https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M
 -->
 
-One other input element that is very convenient and fun to use is the slider. We use it exactly as the other input fields:
+Ein weiteres Eingabeelement, welches ich an dieser Stelle noch zeigen will, ist der Slider. Wir können es genau wie die anderen Eingabefelder erstellen:
 
 {{ definition('createSlider', [
-  { name: 'min', type: 'number' },
-  { name: 'max', type: 'number' },
-  { name: 'currentValue', type: 'number', optional: true },
-  { name: 'stepSize', type: 'number', optional: true }
+  { name: 'Min', type: 'Zahl' },
+  { name: 'Max', type: 'Zahl' },
+  { name: 'Aktueller Wert', type: 'Zahl', optional: true },
+  { name: 'Schrittgröße', type: 'Zahl', optional: true }
 ]) }}
 ```js
 let slider; 
@@ -110,16 +110,16 @@ function draw() {
 }
 ```
 
-{{h2('Mouse')}}
+{{h2('Maus')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/DwWqSrH3B8dDsgz/download/de_2d_input_mouse.mp4", "/images/thumbnails/de_2d_input_mouse.png", "de_2d_input_mouse", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy/download/de_2d_input_mouse.mp4", "/images/thumbnails/de_2d_input_mouse.png", "de_2d_input_mouse", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy
 en: https://fhpcloud.fh-potsdam.de/s/DwWqSrH3B8dDsgz
 -->
 
-We can use the current coordinates of the mouse cursor:
+Wir können die aktuelle Position der Maus wie folgt abgreifen:
 
 ```js
 function draw() {
@@ -127,7 +127,7 @@ function draw() {
 }
 ```
 
-The mouse can also trigger certain event-functions:
+Mit der Maus können wir auch Events auslösen, wodurch Funktionen aufgerufen werden, die wir in unserem Code definieren können:
 
 ```js
 let counter = 0;
@@ -136,30 +136,28 @@ function mouseClicked() {
 }
 ```
 
-Other mouse event functions are: `mouseMoved`, `mouseDragged`, `mousePressed`, `mouseReleased`, `mouseClicked`, `doubleClicked`, `mouseWheel`, for more information, check the [reference](https://p5js.org/reference/#/p5/mouseMoved).
+Andere Maus-Events: `mouseMoved`, `mouseDragged`, `mousePressed`, `mouseReleased`, `mouseClicked`, `doubleClicked`, `mouseWheel`, weitere Details hierzu gibt es in der [Dokumentation](https://p5js.org/reference/#/p5/mouseMoved).
 
 
+### Beispiele
 
-### Examples
-
-In this example we draw a circle where the mouse currently is. Thanks to the slightly transparent color in the `background` command, it looks like the mouse is creating a trail, when we are moving slowly:
+Im folgenden Beispiel zeichnen wir einfach einen Kreis an der Position wo sich die Maus aktuell befindet. Weil wir den Hintergrund über `background` mit einer leicht transparenten Farbe überzeichnen, kann man die letzten Kreise noch sehen und es entsteht der Effekt eines Schweifs (wenn man die Maus langsam bewegt):
 
 {{editor('/code/mousesimple', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/mousesimple/sketch.js')}}
 
-
-In this next example we will do the same, but not rely on the background-hack. Therefore, we push the current position of the mouse at the end of the draw-loop into an array. A small function called [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) helps us make sure the array never gets bigger than 20 items. Through slice we select the last 20 items in the array and use the result to override our variable.
+Im nächsten Beispiel machen wir etwas ähnliches, hierzu überzeichnen wir aber nicht den Hintergrund, sonder fügen die aktuelle Position unserer Maus einem Array hinzu. Damit das Array nicht unendlich groß wird, nutzen wir die Funktion [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) um immer die letzten 20 Elemente unseres Array zu extrahieren und diese dann als neues Array weiterzunutzen.
 
 {{editor('/code/mouse', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/mouse/sketch.js', true)}}
 
-{{h2('Keyboard')}}
+{{h2('Tastatur')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/c8wXExM8MiF8R5S/download/de_2d_input_keyboard.mp4", "/images/thumbnails/de_2d_input_keyboard.png", "de_2d_input_keyboard", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob/download/de_2d_input_keyboard.mp4", "/images/thumbnails/de_2d_input_keyboard.png", "de_2d_input_keyboard", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob
 en: https://fhpcloud.fh-potsdam.de/s/c8wXExM8MiF8R5S
 -->
 
-The keyboard is very similar to the mouse. Its particularly nice if you want to trigger something, maybe simply increase or decrease a value or export something (see next [section](07-export.md)):
+Die Tastatur wird ähnlich wie die Maus gehandhabt. Die Tastatur ist besonders praktisch wenn man dadurch ein Event auslösen möchte, um z.B. den aktuellen Zustand als Bild zu exportieren (siehe nächster [Abschnitt](07-export.md)) oder eine Variable zu verändern:
 
 ```js
 let counter = 0;
@@ -168,7 +166,7 @@ function keyPressed() {
 }
 ```
 
-If you want to trigger different things depending on the key that is actually pressed, you can use the `keyCode` variable. `keyCode` holds a number, the id of the key being pressed. p5js has a couple of shortcuts, like `LEFT_ARROW` or `RIGHT_ARROW`. Those are simply variables that hold the number of specific keys, so we don't need to remember them:
+Wenn man unterschiedliche Abläufe ausführen möchte, abhängig davon welche Taste gedrückt wird, gibt es die globale Variable `keyCode`. In  `keyCode` ist die ID (Zahl) der zuletzt gedrückten Taste gespeichert. Damit man sich nicht alle Nummern merken muss, hat p5js ein paar Shortcuts, wie z.B. `LEFT_ARROW` und `RIGHT_ARROW`. Diese Shortcuts sind einfach auch globale Variablen, welche mit der Zahl der zugehörigen Taste gefüllt sind, sodass wir uns die für diese häufig genutzten Tasten nicht merken müssen:
 
 ```js
 let counter = 0;
@@ -183,9 +181,9 @@ function keyPressed() {
 }
 ```
 
-> If you are not sure which key has which code, simply use `console.log(keyCode);`. Open your developer tools and check the console every time you hit a certain key.
+> Wenn man sich nicht sicher ist, welcher Taste welchen Code hat, kann man sich den Code auch in der Konsole der Developer Tools einfach ausgeben lassen: `console.log(keyCode);`.
 
-Inside our draw function we can also find out, if any key is currently pressed (the `keyCode` variable is also available):
+Auch innerhalb unserer Draw-Schleife können wir herausfinden, ob gerade eine Taste gedrükct wird: `keyIsPressed`:
 
 ```js
 function draw() {
@@ -197,24 +195,24 @@ function draw() {
 }
 ```
 
-If you are using keyboard input, you often need to click the page or in this case frame first, before the events register. This is a security measurement, so websites don't know what you are typing on your machine. This following is just a silly little demonstration. Click on the black frame and then go wild on your keyboard:
+Wenn man die Tastatureingabe nutzt, muss man in der Regel immer erst einmal auf die Seite klicken, damit diese die Tastatur-Events erhält. Dies eine Sicherheitsmaßnahme, damit nicht irgendwelche Webseiten einfach eure Tastaturaktivitäten abgreifen können. Das nächste Beispiel ist eine etwas alberne Demonstration. Clickt auf den schwarzen Canvas und fangt an wild auf eure Tastatur einzutippen:
 
 {{editor('/code/keycolors', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/keycolors/sketch.js')}}
 
 {{h2('GUI')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/55qdt4ofsqakodd/download/de_2d_input_gui.mp4", "/images/thumbnails/de_2d_input_gui.png", "de_2d_input_gui", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG/download/de_2d_input_gui.mp4", "/images/thumbnails/de_2d_input_gui.png", "de_2d_input_gui", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG
 en: https://fhpcloud.fh-potsdam.de/s/55qdt4ofsqakodd
 -->
 
-In the bonus section, there is an in-depth [explanation](../../bonus/gui) of the GUI pulgin.
+Unter den Bonus-Seiten gibt es eine [Einführung](../../bonus/gui) in das GUI-Plugin.
 
-{{task("Task: Inputs", "Start with the mouseX and mouseY to build your first interactive sketch.")}}
+{{task("Aufgabe: Inputs", "Fange mit mouseX/mouseY und baue deinen ersten interaktiven Sketch.")}}
 
 {{inspiration('Fractals')}}
 
-Here is the same from the last section, but all variables have been replace with sliders. Be careful with the third slider. Especiall the fourth and fifth slider are intersting to create new shapes.
+Hier ist das selbe Beispiel aus dem letzten Abschnitt, aber nun sind alle Variablen durch Slider ersetzt worden, sodass man die Funktionsweise der Fraktale schnell durch iteratives Experimentieren untersuchen kann. Besonders der vierte und fünfte Slider generieren interessante Ergebnisse.
 
 {{editor('/code/fractals3', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/input/fractals/sketch.js', true)}}

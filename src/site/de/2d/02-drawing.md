@@ -1,27 +1,27 @@
 ---
-title: Basics
+title: Zeichnen I 
 eleventyNavigation:
-  title: Basics
-  key: de_2d_Basics
+  title: Zeichnen I
+  key: de_2d_drawing
   parent: de_2d
   order: 2
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, task, inspiration %}
 
-{{h2('Canvas')}}
+{{h2('Zeichenfläche')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/de_canvas.mp4", "/images/thumbnails/de_2d_drawing_canvas.png", "de_2d_drawing_canvas", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4", "/images/thumbnails/de_2d_drawing_canvas.png", "de_2d_drawing_canvas", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4
 en:https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/de_canvas.mp4
 -->
 
-First we need to create a canvas, an area we can draw upon. To do this we add the `createCanvas` command into our **setup** function. All sizes in p5js are always pixel sizes:
+Als erstes müssen wir unsere Zeichenfläche erstellen (canvas). Hierzu haben wir das `createCanvas` Kommando, welches wir in der **setup** Funktion ausführen können. Alle Größenangaben in p5js sind immer in Pixel:
 
 {{ definition('createCanvas', [
-  { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' }
+  { name: 'Breite', type: 'Zahl' },
+  { name: 'Höhe', type: 'Zahl' }
 ]) }}
 
 ```js
@@ -30,22 +30,21 @@ function setup() {
 }
 ```
 
-> If you finish a command, don't forget the semicolon.
+> Wenn du ein Kommando abgeschlossen hast, vergesse nicht das Semikolon nach der runden Klammer.
 
 
-{{h2('Background')}}
+{{h2('Hintergrund')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/de_background.mp4", "/images/thumbnails/de_2d_drawing_background.png", "de_2d_drawing_background", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4", "/images/thumbnails/de_2d_drawing_background.png", "de_2d_drawing_background", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4
 en:https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/de_background.mp4
 -->
 
-
-In the begining our canvas is blank. But we can give our full canvas a uniform fill color. By adding the `background` command to the `draw` function:
+Zu Beginn ist eure Zeichenfläche leer. Wir können unserer Zeichenfläche eine vollflächige Füllung geben. Hierfür nutzen wir das  `background` Kommando zu Beginn der `draw` Funktion:
 
 {{ definition('background', [
-  { name: 'fill', type: 'color' }
+  { name: 'Füllung', type: 'Farbe' }
 ]) }}
 ```js
 function draw() {
@@ -53,78 +52,77 @@ function draw() {
 }
 ```
 
-Different to the `createCanvas` command, we can use a variety of inputs to define the color (see next section for a color overview).
+Die `background` Funktion unterscheides sich dahingehend von der `createCanvas` Funktion, dass wir unterschiedliche Werte als *Farbe* angeben können (siehe nächster Abschnitt).
 
-{{h2('Colors')}}
+{{h2('Farben')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/de_colors.mp4", "/images/thumbnails/de_2d_drawing_colors.png", "de_2d_drawing_colors", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4", "/images/thumbnails/de_2d_drawing_colors.png", "de_2d_drawing_colors", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4
 en:https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/de_colors.mp4
 -->
 
-In p5js we can define colors in a variety of different forms:
+In p5js können wir Farben auf unterschiedliche Art definieren:
 
-1. Grayscale: one number from 255 (white) to 0 (black)
+1. Graustufen: Eine Zahl zwischen 255 (weiß) und 0 (schwarz)
 ```js
 background(150);
 ```
 
-2. Red, Green & Blue (RGB): three numbers from 0 to 255
+2. Rot, Grün, Blau (RGB): Drei Zahlen von 0 bis 255
 ```js
 background(255, 0, 0);
 ```
 
-3. CSS Colors: [name](https://www.w3.org/wiki/CSS/Properties/color/keywords) of the color
+3. CSS-Farben: [Name](https://www.w3.org/wiki/CSS/Properties/color/keywords) der Farbe
 ```js
 background('red');
 ```
-> Notice the single quotes around the word 'red'. Whenever we use text as a value (string) for a command, we need to set single (or double) quotes around it. Otherwise JavaScript will think **red** is also a command or variable.
+> JavaScript geht bei allem Text den wir schreiben immer davon aus, dass es sich hierbei um Kommandos handelt. Damit wir z.B. der `background` Funktionen einen wirklichen *Text* (string) übergeben können, müssen wir den *Text* in Anführungszeichen setzen. Ihr könnt dafür dopplte oder einfach Anführungszeichen nutzen, wichtig ist nur, dass am Anfang und Ende die selben Anführungszeichen stehen.
 
-4. Hexadecimal RGB: hex text
+4. Hexadezimal RGB: HEX-Text
 ```js
 background('#ff0000');
 ```
 
-5. RGB + Alpha (transparency): rgba as a text, alpha is between 0 and 1
+5. RGB + Alpha (Transparenz): rgba als Text, Alpha liegt hier zwischen 0 and 1
 ```js
 background('rgba(255,0,0,0.5)');
 ```
 
-> JavaScript uses english numbers, therefore a point is used as a decimal separator.<br />German: 0,5 > English: 0.5
+> JavaScript nutze Englische Zahlen, deshalb müssen wir einen Punkt und kein Komma nutzen.<br />Deutsch: 0,5 > Englisch: 0.5
 
-Those are the things we will use, but there are even more possibilites to define colors, see [here](https://p5js.org/reference/#/p5/background).
+Dies sind die wichtigsten Farbangaben, welche wir nutzen werden. Darüber hinaus gibt es aber noch weitere Möglichkeiten, die ihr in der [Dokumentation](https://p5js.org/reference/#/p5/background) findet.
 
-{{h2('Shapes')}}
+{{h2('Formen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/de_shapes.mp4", "/images/thumbnails/de_2d_drawing_shapes.png", "de_2d_drawing_shapes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4", "/images/thumbnails/de_2d_drawing_shapes.png", "de_2d_drawing_shapes", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4
 en:https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/de_shapes.mp4
 -->
 
+In der p5js werden diese einfachen Formen auch als *2D primitives* beschrieben. Alle Formen werden in dem Koordinatensystem unserer Zeichenfläche erstellt. Der Ursprung unseres Koordinatensystems liegt in der oberen linken Ecke (0/0). Die Einheit aller Zahlen sind immer Pixel.
 
-Or as the p5js reference calls them *2D primitives*. All those shapes are created in a coordinate system. The origin (0/0) of that coordinate system is in the upper left corner of our canvas. Units as always in pixels.
-
-### Point
+### Punkt
 
 {{ definition('point', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' }
 ]) }}
 ```js
 point(20, 20);
 ```
-> A point has no radius. To increase the size of a point, set a higher **strokeWeight** (see below).
+> Ein Punkt hat keinen Radius. Um die größe eines Punktes zu vergrößern, müssen wir den **strokeWeight** erhöhen (siehe unten).
 
 
-### Line
+### Linie
 
 {{ definition('line', [
-  { name: 'x1', type: 'number' },
-  { name: 'y1', type: 'number' },
-  { name: 'x2', type: 'number' },
-  { name: 'y2', type: 'number' }
+  { name: 'x1', type: 'Zahl' },
+  { name: 'y1', type: 'Zahl' },
+  { name: 'x2', type: 'Zahl' },
+  { name: 'y2', type: 'Zahl' }
 ]) }}
 ```js
 line(10, 10, 40, 40);
@@ -134,45 +132,45 @@ line(10, 10, 40, 40);
 ### Ellipse
 
 {{ definition('ellipse', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'Breite', type: 'Zahl' },
+  { name: 'Höhe', type: 'Zahl' }
 ]) }}
 ```js
 ellipse(20, 20, 5, 10);
 ```
-> **x** and **y** describe the center of the ellipse and circle
+> **x** und **y** beschreiben bei Ellipse und Kreis nicht die obere-rechte Ecke sondern den Mittelpunkt
 
-### Circle
+### Kreis
 
 {{ definition('circle', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'diameter', type: 'number' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'Durchmesser', type: 'Zahl' }
 ]) }}
 ```js
 circle(20, 20, 5);
 ```
 
-### Rectangle
+### Rechteck
 
 {{ definition('rect', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'Breite', type: 'Zahl' },
+  { name: 'Höhe', type: 'Zahl' }
 ]) }}
 ```js
 rect(10, 10, 40, 20);
 ```
 
-### Square
+### Quadrat
 
 {{ definition('square', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'size', type: 'number' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'Größe', type: 'Zahl' }
 ]) }}
 ```js
 square(10, 10, 40);
@@ -180,36 +178,36 @@ square(10, 10, 40);
 
 {{editor('/code/shapes', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/shapes/sketch.js')}}
 
-{{h2('Fills & Strokes')}}
+{{h2('Füllungen & Linien')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/de_fills.mp4", "/images/thumbnails/de_2d_drawing_fills.png", "de_2d_drawing_fills", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4", "/images/thumbnails/de_2d_drawing_fills.png", "de_2d_drawing_fills", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4
 en:https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/de_fills.mp4
 -->
 
-Code in any programming language is always interpreted from top to bottom. p5js has a default color setting: fill and strokes are black. We can change the fill and stroke at any time. Everything painted after the fill or stroke command (top to bottom) is painted in the new color.
+Code wird in allen Programmiersprachen immer von oben nach unten ausgeführt. p5js hat Standardeinstellungen für Farben: Füllungen und Linien sind immer schwarz. Wir können die Einstellungen für Farben und Linien jederzeit ändern. Nachdem wir z.B. die Füllung ändern, werden alle Formen die wir *danach* zeichnen mit den neuen Einstellungen gezeichnet.
 
 {{ definition('fill', [
-  { name: 'fill', type: 'color' }
+  { name: 'Füllung', type: 'Farbe' }
 ]) }}
 ```js
 fill(255, 0, 0);
 ```
 
-> **stroke** and **fill** take the same color parameters as the **background** command
+> **stroke** und **fill** akzeptieren die selben Parameter wie das **background** Kommando.
 
 {{ definition('stroke', [
-  { name: 'stroke', type: 'color' }
+  { name: 'Linienfarbe', type: 'Farbe' }
 ]) }}
 ```js
 stroke(255, 0, 0);
 ```
 
-Besides colors we can also modify the stroke width of the shapes we draw:
+Neben den Farben können wir auch die Linienstärke verändern:
 
 {{ definition('strokeWeight', [
-  { name: 'weight', type: 'number' }
+  { name: 'Linienstärke', type: 'Zahl' }
 ]) }}
 ```js
 strokeWeight(5);
@@ -217,34 +215,34 @@ strokeWeight(5);
 
 {{editor('/code/fill', '[https://...](https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/fill/sketch.js)')}}
 
-{{h2('Arcs')}}
+{{h2('Kreisbögen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/de_arc.mp4", "/images/thumbnails/de_2d_drawing_arc.png", "de_2d_drawing_arc", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4", "/images/thumbnails/de_2d_drawing_arc.png", "de_2d_drawing_arc", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4
 en:https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/de_arc.mp4
 -->
 
-A bit more advanced shape is the arc:
+Eine etwas kompliziertes Kommando ist der Kreisbogen (arc):
 
 {{ definition('arc', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' },
-  { name: 'startAngle', type: 'number' },
-  { name: 'endAngle', type: 'number' },
-  { name: 'arcMode', type: 'OPEN, PIE, CHORD' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'Breite', type: 'Zahl' },
+  { name: 'Höhe', type: 'Zahl' },
+  { name: 'Anfangswinkel', type: 'Zahl' },
+  { name: 'Endwinkel', type: 'Zahl' },
+  { name: 'Kreisbogen-Modus', type: 'OPEN, PIE, CHORD' }
 ]) }}
 ```js
 arc(100, 100, 50, 50, 0, Math.PI, OPEN);
 ```
 
-> The **startAngle** and **endAngle** are provided in rad not degrees. 360 degrees are `2 * Math.PI`. So an easy way to work with degrees, is to simply convert it:<br />`Math.PI / 180 * YOUR_ANGLE`.
+> Die Winkel werden standardmäßig nicht in Grad sondern in Radians angegeben. 360 Grad sind `2 * Math.PI`. Ein einfacher Weg sich Gradzahlen umzuwandeln ist:<br />`Math.PI / 180 * YOUR_ANGLE`.
 
 {{editor('/code/arc', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/arc/sketch.js')}}
 
-{{task("Task: Abstract Art", "Only use the commands we have learned so far, to create an abstract piece of art. For inspiration see the sketch below, or checkout the art section on the inspiration <a href='/de/inspiration'>page</a>.")}}
+{{task("Aufgabe: Abstrakte Kunst", "Nutze nur die Kommandos die wir bisher gelernt haben, um ein abstraktes Kunstwerk zu erstellen. Siehe das Beispiel unten als Inspiration. Schaue dir auch die Inspirationsseite an für weitere Künstler*innen <a href='/de/inspiration'>page</a>.")}}
 
 {{inspiration('Hilma af Klint')}}
 

@@ -7,4 +7,4 @@ eleventyNavigation:
   parent: de
 ---
 
-List of digital and analog artists for inspiration
+Liste digitaler and analoger Künstler*innen zur Inspiration

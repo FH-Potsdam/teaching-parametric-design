@@ -86,7 +86,7 @@ return subtractShape;
 
 ### Intersect
 
-{{video("https://fhpcloud.fh-potsdam.de/s/YBSTc2sotQqjjL4/download/en_3d_operations_intersect.mp4", "/images/thumbnails/en_3d_operations_intersect.png", "en_3d_operations_intersect", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/aagrSLH7RxbPQnD/download/en_3d_operations_intersect.mp4", "/images/thumbnails/en_3d_operations_intersect.png", "en_3d_operations_intersect", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/AbTmmBszxJebZSf
 en: https://fhpcloud.fh-potsdam.de/s/aagrSLH7RxbPQnD
@@ -132,7 +132,7 @@ const scissionShapes = scission(unionShape);
 
 The above `scission` returns an array with two elements, which are the object that went into the `union` command.
 
-{{task('Union & Subtract', 'First create an object by combining multiple 3D bodies through **union**. Then use *subtract* to remove bits from the union-object.')}}
+{{task('Task: Union & Subtract', 'First create an object by combining multiple 3D bodies through **union**. Then use *subtract* to remove bits from the union-object.')}}
 
 {{inspiration('Raspberry Pi Case')}}
 

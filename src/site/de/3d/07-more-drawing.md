@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {{h2('Polygon')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/akY5paZyjwHL8BJ/download/de_3d_drawing2_polygon.mp4", "/images/thumbnails/de_3d_drawing2_polygon.png", "de_3d_drawing2_polygon", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/wfy4LBTSbRq497D/download/de_3d_drawing2_polygon.mp4", "/images/thumbnails/de_3d_drawing2_polygon.png", "de_3d_drawing2_polygon", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/wfy4LBTSbRq497D
@@ -22,7 +22,7 @@ en: https://fhpcloud.fh-potsdam.de/s/akY5paZyjwHL8BJ
 const {polygon} = jscad.primitives;
 ```
 
-The previous session introduced the simple 2D primitives like rectangle and circle. When we want to draw more complex shapes we can use the polygon function. Think of it as the p5js' vertex function for JSCAD:
+In einer der ersten 3D-Sessions, haben wir die 2D "Primitives" vorgestellt, wie `rectangle` und `circle`. Wenn wir darüber hinaus komplexere 2D-Formen zeichnen wollen, können wir die `polygon`-Funktion nutzen, die ähnlich wie die `vertex` Funktion in p5js funktioniert:
 
 ```js
 const poly = polygon({
@@ -36,9 +36,9 @@ const poly = polygon({
 });
 ```
 
-As the `points` attribute we pass an array of points. If you later wanto to extrude the polygon, it is important, that the points are provided in **clockwise** order.
+Das `points`-Attribut ist ein einfaches Array mit mehreren x/y-Punkt-Arrays. Wenn man später das Polygon extruden möchte, ist es sehr wichtig, dass die Punkte im **Uhrzeigersinn** sortiert sind.
 
-You can also add holes to your polygon. Add the original shape to an array and then add the holes. Important: The holes are **counter-clockwise**:
+Wir können auch Löcher in unser Polygon schneiden. Hierzu bauen wir ein weiteres Array um unsere Punkte und können dann weitere Polygone als Löcher hinzufügen. Wichtig: Löcher sind **gegen den Uhrzeigersinn**:
 
 ```js
 const poly = polygon({
@@ -63,7 +63,7 @@ const poly = polygon({
 
 ## Polyhedrons
 
-{{video("https://fhpcloud.fh-potsdam.de/s/9TCcQPxeA3zmZSC/download/de_3d_drawing2_polyhedron.mp4", "/images/thumbnails/de_3d_drawing2_polyhedron.png", "de_3d_drawing2_polyhedron", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/NGxciZpp9xAHtnD/download/de_3d_drawing2_polyhedron.mp4", "/images/thumbnails/de_3d_drawing2_polyhedron.png", "de_3d_drawing2_polyhedron", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/NGxciZpp9xAHtnD
@@ -74,17 +74,17 @@ en: https://fhpcloud.fh-potsdam.de/s/9TCcQPxeA3zmZSC
 const {polyhedron} = jscad.primitives;
 ```
 
-The last bodies we will discuss are the polyhedrons. But before a little bit of context on the construction and rendering of 3D objects. If you have used any 3D software or 3D rendered objects (e.g. in computer games), you will have noticed, if you get very close, the surfaces of objects are not very smooth, but consist of rough geometric shapes:
+Die letzten 3D-Körper die wir uns noch anschauen sind die sogenannten Polyhedrons. Bevor wir aber damit anfangen, erst ein klein bisschen Therie dazu, wie 3D-Objekte eigentlich kunstruiert und gerendert werden. Falls du schon mal eine 3D-Software oder 3D-Objekte benutzt hast (z.B. in Computerspielen), ist dir vielleicht aufgefallen, dass wenn man ganz nah an Objekte herangeht, das die Oberflächen nicht glatt und rund sind, sondern aus vielen kleinen geometrischen Formen zusammengesetzt sind:
 
-{{img('starwars.png', 'Image of the 1998 "Star Wars: Rogue Squadron"')}}
+{{img('starwars.png', 'Bild von 1998 aus "Star Wars: Rogue Squadron"')}}
 
-Even round shapes, when observed closely consist of segments. Today those segments are harder to see, because 3D engines can easily process more segments and, therefore, generate smoother curves. At the lowest level all 3D bodies are constructed from a lot of triangles (faces). Each triangle has three points (vertices) which are connected (edges). 
+Selbst eigentlich runde Körper sind, wenn man sie genau betrachtet, aus Segementen aufgebaut. Heutzutage ist es schwieriger diese Unebenheiten zu entdecken, weil unsere Hard- und Software so leistungsstark geworden ist, dass extrem viele Segmente verarbeitet werden können, aber sie sind immer noch da. Auf der untersten Ebene sind eigentlich fast alle 3D-Körper aus ganz vielen Dreiecken aufgebaut (faces). Diese Dreiecke setzen sich aus Punkten (vertices) und den Kanten (edges) zwischen diesen zusammen. 
 
-{{img('surfaces.png', 'Construction of polyhedrons through vertices and faces')}}
+{{img('surfaces.png', 'Generierung eines Polyhedrons durch vertices und faces')}}
 
-Why triangles? Triangles are the most simple shape and a triangle is always flat. You cannot bend a triangle. Think about a piece of paper. If you cut out a triangle, you can move each corner up and down, but the surface will always stay even. Do the same with a square. If you only move one corner and the other three stay the same, you will bend the piece of paper and, thereby, create two triangles. Having a flat surface is for example important when you calculate how light is reflect from that surface, or how the 3D printer should construct the surface.
+Warum Dreiecke? Dreiecke sind die einfachste Fläche. Eine Fäche die immer komplett "flach" ist. Durch das reine verschieben von Punkte, kann eine Dreiecksfläche nicht gebogen werden. Stell dir dazu ein Stück Papier vor. Wenn man ein Papierdreieck hat, kann man jede Ecke beliebig verschieben und die Fläche bleibt eben. Macht man das selbe mit einem Quadrat und bewegt nur eine Ecke, bildet sich eine Knickkante und wir haben zwei Dreiecke. Eine gerade Oberfläche zu haben ist wichtig, um z.B. effizient Reflektion, etc. zu berechenen, oder im Fall einer CNC-Fräse, bis wohin der Fräskopf fahren darf.
 
-When we want to build complex custom objects ourselves, we have to think in triangles and how to construct them. To achieve this we pass a list of points (vertices) and then a list of faces, each face is defined by the index of three points. The simplest version, a triangle:
+Wenn wir komplexe Objekte selber generieren wollen, müssen wir in Dreiecken denken, und wie wir diese Konstruieren können. Wir erstellen hierfür als erstes ein Araray mit Punkten, unseren vertices, den Eckpunkten unserer Dreiecke. Danach generieren wir eine Liste der Dreiecke und geben die Indices der Punkte an, welche wir benutzen wollen. Hier ein einfaches Beispiel mit nur einem Dreieck:
 
 ```json
 {
@@ -99,7 +99,7 @@ When we want to build complex custom objects ourselves, we have to think in tria
 }
 ```
 
-A rectangle:
+Ein Quadrat aus zwei Dreiecken:
 
 ```json
 {
@@ -116,7 +116,7 @@ A rectangle:
 }
 ```
 
-Notice that the above faces use the points multiple times. So instead of having 6 points, 3 for each of the two triangles in the points array. We only provide the really neccessary points and than reuse them. This is not a requirement, the following would create the same shape:
+Wie man hier sieht, können wir die Punkte innerhalb unserer Punkt-Liste mehrfach verwenden. Anstatt 6 Punkte für zwei Dreiecke zu haben. Sind die 4 Eckpunkte unseres Quadrats ausreichend und wir können die Indices der Punkte einfach mehrfach nutzen. Dies ist nicht zwingend erforderlich, aber sauberer und effizienter. Folgende Variante generiert den selben Output:
 
 ```json
 {
@@ -135,13 +135,13 @@ Notice that the above faces use the points multiple times. So instead of having 
 }
 ```
 
-If we provide each point individually, we have to make sure that they are correctly aligned. Otherwise, we will have holes in the surface of our body later on, which will for example create problems when we want to send it to a 3D-printer.
+Wenn wir Punkte mehrfach in das Punkte-Array pushen, müssen wir aufpassen, dass es exakt die selben Punkte sind, anderenfalls hat unser Objekt später Löcher, was dann später in der Produktion zu Problemen führen kann.
 
-To make it even more tricky, the order of points needs to be clockwise if you look from the outside onto a face. :)
+Um das ganze noch komplizierter zu machen. Die Reihenfolge der Punkte innerhalb der Dreiecke muss im Uhrzeigersinn sein, wenn man von außen auf die Fläche darufschaut. :)
 
-This is a lot to take in, but it gives you the ultimate power over any 3D shape that you would like to create. Its usually best to start with a sketch and figuring out, how to best structure our faces:
+Das erstellen von Polyhedrons hat es in sich. Aber mit dieser Funktion kann man in Theorie jede erdenkliche Form generieren. Am besten fängt man solch ein Vorhaben immer damit an, erstmal eine Skizze zu machen und den Ablauf der Punkte und Dreiecke zu planen:
 
-{{img('kreisel.png', 'face and vertices construction')}}
+{{img('kreisel.png', 'Konstruktion der Punkte (Vertices) und Dreiecke (Faces)')}}
 
 ```js
 const jscad = require('@jscad/modeling');
@@ -201,23 +201,23 @@ const main = () => {
 
 module.exports = { main };
 ```
-{{img('example-1.png', 'rendering of above code')}}
+{{img('example-1.png', 'Rendering des obrigen Codes')}}
 
-{{task('Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
+{{task('Aufgabe: Parametric Object', 'Erstelle einen 3D-Körper und nutze Parameter für die Größen- und Transformations-Angaben.')}}
 
-{{inspiration('Data-driven Surface')}}
+{{inspiration('Daten-gestützte Oberfläche')}}
 
-Inspired by the works of [nand.io](https://nand.io/projects/emoto) who did a 3D printed data visualisation. This example generates a three-dimensional area chart. Check out the code in the learning-repo and modify the data array.
+Folgendes Beispiel ist von einer Arbeit des Büro [nand.io](https://nand.io/projects/emoto) inspiriert, die eine 3D-Daten-Visualisierung erstellt haben. Im folgenden Beispiel wird im Grunde ein dreidimensionales Area-Chart generiert. Schau dir den Code im Repo an und ändere z.B. die Werte im Daten-Array und beobachte wie sich die Visualisierung verändert.
 
-{{link3d('/code/3d/nand', 'Open "Data-driven surface"')}}
+{{link3d('/code/3d/nand', 'Open "Daten-gestützte Oberfläche"')}}
 
-{{img('example3d-nand.png', 'A 3D area chart, ready to be 3D printed.')}}
+{{img('example3d-nand.png', 'Ein 3D-Area-Chart, fertig für den 3D-Druck.')}}
 
 {{github('https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/3d/nand')}}
 
-{{h2('Further Reading')}}
+{{h2('Weitere Literatur')}}
 
-- [OpenSCAD example models](https://github.com/nophead/NopSCADlib)
+- [OpenSCAD Code für Beispiel-Modelle](https://github.com/nophead/NopSCADlib)
 - [CADQuery (Python)](https://cadquery.readthedocs.io/en/latest/index.html)
-- [GUI-App for CADQuery](https://github.com/jmwright/cadquery-gui)
+- [GUI-App für CADQuery](https://github.com/jmwright/cadquery-gui)
 - [CadHub](https://cadhub.xyz/u/franknoirot/chip-clip-jscad/ide)

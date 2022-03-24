@@ -1,26 +1,26 @@
 ---
-title: More Drawing
+title: Zeichnen II
 eleventyNavigation:
-  title: More Drawing
-  key: de_2d_more_drawing
+  title: Zeichnen II
+  key: de_2d_drawing2
   parent: de_2d
   order: 6
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{h2('Draw Loop')}}
+{{h2('Draw-Schleife')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/tkPJJiC687k2XEp/download/de_2d_drawing2_drawloop.mp4", "/images/thumbnails/de_2d_drawing2_drawloop.png", "de_2d_drawing2_drawloop", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/SyL8FRKWFsbXGrp/download/de_2d_drawing2_drawloop.mp4", "/images/thumbnails/de_2d_drawing2_drawloop.png", "de_2d_drawing2_drawloop", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/SyL8FRKWFsbXGrp
 en: https://fhpcloud.fh-potsdam.de/s/tkPJJiC687k2XEp
 -->
 
-### Stopping the draw loop
+### Die Draw-Schleife stoppen
 
-When you are using random values, you often don't want your layout to be continously redrawn. To stop the draw-cycle, simply call the `noLoop()` command.
+Wenn man z.B. zufällige Werte benutzt, dann will man häufig nicht, dass das Design andauernd neugezeichnet wird. Um die Draw-Funktion zu stopppen, gibt es das `noLoop()` Kommando.
 
 ```js
 function draw() {
@@ -29,12 +29,12 @@ function draw() {
 }
 ```
 
-### Draw Speed
+### FrameRate
 
-Normally the draw-cycle is called every 60 seconds. You can slow this down to a so called framerate of your choice:
+Normalerweise wird die Draw-Schleife ca. 60x pro Sekunde aufgerufen. Man kann die Geschwindigkeit aber auch verändern:
 
 {{ definition('frameRate', [
-  { name: 'frames per second', type: 'number' }
+  { name: 'Frames pro Sekunde', type: 'Zahl' }
 ]) }}
 ```js
 function setup() {
@@ -42,18 +42,18 @@ function setup() {
 }
 ```
 
-> While the default framerate is 60, complex visuals can reduce the actual framerate. For smooth animations a framerate of at least 24 should be achieved.
+> Die standardmäßge Framerate ist 60fs, complexe Zeichenabfolgen können die reale Framerate aber reduzieren. Für Animation, um diese z.B. in Filmen zu nutzen, sollte mindestens eine Framerate von 24fs erreicht werden.
 
 {{h2('Polygons')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/4kcdSTEPGGkRTJo/download/de_2d_drawing2_vertex.mp4", "/images/thumbnails/de_2d_drawing2_vertex.png", "de_2d_drawing2_vertex", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/CA4eLGXZigSea9T/download/de_2d_drawing2_vertex.mp4", "/images/thumbnails/de_2d_drawing2_vertex.png", "de_2d_drawing2_vertex", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/CA4eLGXZigSea9T
 en: https://fhpcloud.fh-potsdam.de/s/4kcdSTEPGGkRTJo
 -->
 
-After all the abstract JavaScript basics, back to the drawing functions. In the last section we learned about basic shapes like circles and rectangles. All those shapes consist of points, which are connected to one another by lines and then the last point is connected to the first. These lines do not always have to be straight. Looking ahead at our laser cutter work, those lines are the path the laser cutter will take to cut our materials. Let's start with a simple example the rectangle:
+Nach all den abstrakten JavaScript Basics, zurück zum Zeichnen. Im Abschnitt zu den einfachen Formen, haben wir bereits Kreise, Rechtecke, etc. kennengelernt. All diese Formen bestehen aus Punkten, welche durch Linien verbunden werden und dadurch sogenannte Polygone formen. Die zugrundeliegenden Lininen können wir z.B. auch nutzen um eine Fräse oder einen Laser-Cutter zu kontrollieren. Fangen wir mit der Dekonstruktion eines einfachen Rechtecks an:
 
 ```js
 rect(0, 0, 40, 20);
@@ -63,12 +63,12 @@ point(40,20);
 point(0,20);
 ```
 
-The rectangle consists of four points. We could also create our rectangle shape manually:
+Das Rechteck hat vier Eckpunkte. Wir könnten das Rechteck auch manuell erstellen:
 
 {{ definition('vertex', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'z', type: 'number', optional: true }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'z', type: 'Zahl', optional: true }
 ]) }}
 ```js
 beginShape();
@@ -79,70 +79,70 @@ vertex(0, 20);
 endShape(CLOSE);
 ```
 
-We tell p5js that we want to start drawing a shape with the command `beginShape();`. Then we use the `vertex(x, y)` command to add a point to our shape. `x` and `y` are provided as numbers. When our shape is complete we use the `endShape();` command. The `CLOSE` parameter tells p5js to connect the last point with the first point (if you don't use it, the shape will be open). Starting from this simple example we can build complex shapes.
+Mit dem Befehl `beginShape();` sagen wir p5js, dass wir beginnen wollen eine neue Form zu zeichnen. Danach können wir beliebig viele `vertex(x, y)` Kommandos absetzen. `x` und `y` sind die Koordinaten wo die nächste Linie hingehen soll. Wenn die Form abgeschlossen ist, können wir den Zeichenprozess mit `endShape();` abschließen. Wenn wir bei dieser Funktion `CLOSE` als Parameter übergeben, sagen wir p5js, dass der letzte Punkt mit dem ersten verbunden werden soll. 
 
-> If you are building more complex shapes, you should make sure that the points are aligned clockwise.
+> Wenn man komplexere Formen erstellt, sollte man darauf achten, dass die Punkte im Uhrzeigersinn angeordnet sind.
 
-{{h2('Polar Coordinates')}}
+{{h2('Polar Koordinaten')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/Q6E37ZtiE6n8m8y/download/de_2d_drawing2_polar.mp4", "/images/thumbnails/de_2d_drawing2_polar.png", "de_2d_drawing2_polar", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/DM5BjnxQWjfTT2M/download/de_2d_drawing2_polar.mp4", "/images/thumbnails/de_2d_drawing2_polar.png", "de_2d_drawing2_polar", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/DM5BjnxQWjfTT2M
 en: https://fhpcloud.fh-potsdam.de/s/Q6E37ZtiE6n8m8y
 -->
 
-Building a shape with the polar coordinates:
+Eine einfache Form mit dem Polar-Koordinatensystem erstellen:
 
 {{editor('/code/polarsimple', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/polarsimple/sketch.js')}}
 
-Nested loops and the polar-coordinate system (see also [math](../../extras/math)):
+Verschachtelte Schleifen kombiniert mit dem Polar-Koordinatensystem (siehe auch [extras/Mathe](../../extras/math) für mehr zum Thema Polar-Koordinatensystem):
 
 {{editor('/code/polarcomplex', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/polarcomplex/sketch.js')}}
 
 {{h2('Quad & Triangle')}}
 
-If you only want to draw a polygon with 3 or 4 points, you can use the `quad` and `triangle` command. Both take a series of x,y parameters to define the points:
+Wenn man nur ein Polygon mit drei oder vier Punkten zeichnen möchte, kann man auch `quad` und `triangle` nutzen. Bei diesen beiden Funktionen wird einfach eine Liste an x/y-Paaren übergeben:
 
 {{ definition('quad', [
-  { name: 'x1', type: 'number' },
-  { name: 'y1', type: 'number' },
-  { name: 'x2', type: 'number' },
-  { name: 'y2', type: 'number' },
-  { name: 'x3', type: 'number' },
-  { name: 'y3', type: 'number' },
-  { name: 'x4', type: 'number' },
-  { name: 'y4', type: 'number' }
+  { name: 'x1', type: 'Zahl' },
+  { name: 'y1', type: 'Zahl' },
+  { name: 'x2', type: 'Zahl' },
+  { name: 'y2', type: 'Zahl' },
+  { name: 'x3', type: 'Zahl' },
+  { name: 'y3', type: 'Zahl' },
+  { name: 'x4', type: 'Zahl' },
+  { name: 'y4', type: 'Zahl' }
 ]) }}
 ```js
 quad(0, 0, 40, 0, 40, 20, 0, 20);
 ```
 
 {{ definition('triangle', [
-  { name: 'x1', type: 'number' },
-  { name: 'y1', type: 'number' },
-  { name: 'x2', type: 'number' },
-  { name: 'y2', type: 'number' },
-  { name: 'x3', type: 'number' },
-  { name: 'y3', type: 'number' }
+  { name: 'x1', type: 'Zahl' },
+  { name: 'y1', type: 'Zahl' },
+  { name: 'x2', type: 'Zahl' },
+  { name: 'y2', type: 'Zahl' },
+  { name: 'x3', type: 'Zahl' },
+  { name: 'y3', type: 'Zahl' }
 ]) }}
 ```js
 triangle(0, 0, 40, 0, 40, 20);
 ```
 
-{{h2('Curves')}}
+{{h2('Kurven')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB/download/de_2d_drawing2_curves.mp4", "/images/thumbnails/de_2d_drawing2_curves.png", "de_2d_drawing2_curves", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA/download/de_2d_drawing2_curves.mp4", "/images/thumbnails/de_2d_drawing2_curves.png", "de_2d_drawing2_curves", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA
 en: https://fhpcloud.fh-potsdam.de/s/yQrpytWzYHDsNFB
 -->
 
-If we want to go beyond straight lines, we can also use curves. There are three types of curve commands:
+Wenn wir mal als nur gerade Linien in unseren Formen haben wollen, können wir auch Kurven zeichnen. Hierfür stehen uns drei verschiedene Kurven-Funktionen zur verfügung:
 
 {{ definition('curve', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' }
 ]) }}
 ```js
 beginShape();
@@ -153,13 +153,13 @@ curveVertex(0, 20);
 endShape(CLOSE);
 ```
 
-`curveVertex` is the easiest command, as it generates the curves for you. With `bezierVertex` and `quadraticVertex` you need to build the curves yourself with control points (similar to how you would do it in a vector editing software):
+`curveVertex` ist die einfachste Funktion, da hier die Kurven für uns generiert werden. Mit `bezierVertex` und `quadraticVertex` müssen wir die Kurven selber durch Kontrollpunkte konstruieren (ähnlich wie es auch in Grafik-Bearbeitungsprogrammen der Fall ist):
 
 {{ definition('quadraticVertex', [
-  { name: 'mid-curve-x', type: 'number' },
-  { name: 'mid-curve-y', type: 'number' },
-  { name: 'target-x', type: 'number' },
-  { name: 'target-y', type: 'number' }
+  { name: 'Kontrollpunkt-x', type: 'Zahl' },
+  { name: 'Kontrollpunkt-y', type: 'Zahl' },
+  { name: 'Ziel-x', type: 'Zahl' },
+  { name: 'Ziel-y', type: 'Zahl' }
 ]) }}
 ```js
 beginShape();
@@ -168,15 +168,15 @@ quadraticVertex(20, 20, 40, 0);
 endShape();
 ```
 
-`quadraticVertex` takes for parameters, the first two are x, y coordinates of the control point and the second two x, y are the new point for our line. `bezierVertex` requires two control points (vector software) for the start and end of the line:
+`quadraticVertex` nimmt vier Parameter, die ersten beiden x-, y-Koordinaten sind der Kontrollpunkt und das zweite Paar sind der Zielpunkt der Kurve. `bezierVertex` nimmt noch einen weiteren Kontrollpunkt, um sowohl den Anfang, als auch das Ende der Kurve unabhängig manipulieren zu können:
 
 {{ definition('bezierVertex', [
-  { name: 'control-x1', type: 'number' },
-  { name: 'control-y1', type: 'number' },
-  { name: 'control-x2', type: 'number' },
-  { name: 'control-y2', type: 'number' },
-  { name: 'target-x', type: 'number' },
-  { name: 'target-y', type: 'number' }
+  { name: 'Start-Kontrollpunkt-x', type: 'Zahl' },
+  { name: 'Start-Kontrollpunkt-y', type: 'Zahl' },
+  { name: 'End-Kontrollpunkt-x', type: 'Zahl' },
+  { name: 'End-Kontrollpunkt-y', type: 'Zahl' },
+  { name: 'Ziel-x', type: 'Zahl' },
+  { name: 'Ziel-y', type: 'Zahl' }
 ]) }}
 ```js
 beginShape();
@@ -185,12 +185,12 @@ bezierVertex(10, 20, 30, 20, 40, 0);
 endShape();
 ```
 
-In the beginning when working with curves, it can help a lot to draw all the points and even connect normal points and control points (try editting the point coordinates and observe how the curve changes):
+Am Anfang kann das Arbeiten mit Kurven verwirrend sein, wo genau die Kontrollpunkte positioniert werden müssen. Hier kann es helfen, wenn man sich die Punkte zusätzlich aufzeichnet, um ein besseres Gefühl für die Kurvenberechnung zu bekommen (verändere die Kontrollpunkte und beobachte wie sich die Kurven verändern):
 
 {{editor('/code/controlpoints', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/controlpoints/sketch.js')}}
 
-{{task("Task: Polygon", "Create a custom polygon, making use of the various vertex commands.")}}
+{{task("Aufgabe: Polygon", "Erstelle ein Polygon und versuche mit den verschiedenen Vertex-Kommandos zu arbeiten (Kurven).")}}
 
-{{inspiration('Chaotic Curves')}}
+{{inspiration('Chaotische Kurven')}}
 
 {{editor('/code/growingcurve', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing2/growingcurve/sketch.js', true)}}

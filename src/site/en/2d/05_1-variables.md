@@ -1,8 +1,8 @@
 ---
-title: More Variables
+title: Variables II
 eleventyNavigation:
-  title: More Variables
-  key: en_2d_more_variables
+  title: Variables II
+  key: en_2d_variables2
   parent: en_2d
   order: 7
 ---
@@ -69,7 +69,7 @@ de: https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz
 en: https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR
 -->
 
-Story information in arrays can get confusing at a certain level. To keep things organized we can use objects. Objects are very similar to arrays, but instead of a number-based index, objects use a string-based index:
+Storing information in arrays can get confusing at a certain level. To keep things organized we can use objects. Objects are very similar to arrays, but instead of a number-based index, objects use a string-based index:
 
 ```js
 const point = {

@@ -9,27 +9,27 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{h2('Comparisons')}}
+{{h2('Vergleichen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png", "de_2d_conditions_conditions", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png", "de_2d_conditions_conditions", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4
 en:https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/de_conditions.mp4
 -->
 
-We already learned one condition, inside the for-loop, the second parameter is a condition. We tell the system when it should end the loop. There are several options how to define a condition:
+Wir haben bereits eine "Condition" bei den Schleifen kennengelernt. Durch die "Condition" haben wir definiert wie lange eine Schleife laufen soll. Es gibt verschiedene Möglichkeiten "Conditions" zu definieren:
 
-|Operator|Example|Explanation|
+|Operator|Beispiel|Erklärung|
 |---|---|---|
-|===|1 === 1|Exactly the same|
-|==|1 == '1'|The same, but variable type is ignored.|
-|!==|1 != 2 |Not the same|
-|<|1 < 2|Smaller than|
-|>|2 > 1|Bigger than|
-|<=|1 <= 2|Smaller than or eqal|
-|>=|2 >= 1|Bigger than or eqal|
+|===|1 === 1|Genau dasselbe|
+|==|1 == '1'|Dasselbe, aber der Variablentyp wird ignoriert.|
+|!==|1 != 2 |Nicht dasselbe|
+|<|1 < 2|Kleiner als|
+|>|2 > 1|Größer als|
+|<=|1 <= 2|Kleiner oder gleich|
+|>=|2 >= 1|Größer oder gleich|
 
-We can combine multiple conditions with either `&&` (and) or `||` (or):
+Wir können mehrere Konditionen mit `&&` (und) oder `||` (oder) kombinieren:
 
 ```js
 if (a < b && b < c) {
@@ -40,9 +40,9 @@ if (a === b || a === c) {
 }
 ```
 
-{{h2('Examples')}}
+{{h2('Beispiele')}}
 
-We can use such conditions to only draw certain elements (execute certain commands):
+Wir können "Conditions" nutzen, um bestimmte Befehle auszuführen (z.B. bestimmte Dinge zu zeichnen):
 
 ```js
 for (let i = 0; i < 10; i += 1) {
@@ -54,7 +54,7 @@ for (let i = 0; i < 10; i += 1) {
 }
 ```
 
-If we want to catch different cases, we can also use one if after another:
+Wenn wir mehrere "Conditions" testen wollen, können wir dies nacheinander tun:
 
 ```js
 if (i === 1) {
@@ -68,9 +68,9 @@ if (i === 1) {
 }
 ```
 
-The commands inside `else`, catch all coniditions that were not matched above.
+Mit `else` können wir alle bis dahin nicht erfassten Fälle abgreifen.
 
-In such a series of `if` conditions, the system works from the top to the bottom, as soon as one conidition is met, the others are ignored. If you want to catch conditions not connected to one another, don't use the `else if` command:
+In solch einer Liste von `if`-Statements, arbeitet das System von oben nach unten. Sobald eine Condition zutrifft, werden alle anderen `else if`-Statements ignoriert. Wenn man dies umgehen will, muss mehrere `if`-Statements unabhängig voneinander definieren:
 
 ```js
 if (i < 5) {
@@ -81,9 +81,9 @@ if (i < 10) {
 }
 ```
 
-In the above example a circle is draw if `i` is smaller 5. In addition a rectangle is draw if `i` is smaller 10. For the cases `i` smaller 5, a circle and a rectangle are draw.
+Im obigen Beispiel wird ein Kreis gezeichnet wenn `i` kleiner 5 ist. Und wenn `i` kleiner 10 `i` ist wird ein Rechteck gezeichnet. Wenn `i` kleiner 5 ist, werden also sowohl ein Rechteck als auch ein Kreis gezeichnet.are draw.
 
-There is a useful command to differentiate between even and odd numbers:
+Es gibt eine nützliche Kondition, die uns hilft gerade und ungerade Zahlen voneinander zu unterscheiden:
 
 ```js
 for (let i = 0; i < 10; i += 1) {
@@ -95,17 +95,17 @@ for (let i = 0; i < 10; i += 1) {
 }
 ```
 
-The above command `i%2 === 0` checks if a number, when divided by 2, has decimal places. `6/2 = 3 > true`, `5/2 = 2.5 > false`.
+Die obige "Condition" `i%2 === 0` überprüft, ob eine Zahl, wenn diese durch 2 geteilt wird, keinen Rest hinterm Komma als Ergebnis hat. `6/2 = 3 > true`, `5/2 = 2.5 > false`.
 
-{{h2('Scopes (again)')}}
+{{h2('Scopes (nochmal)')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/i4n7ETnjWjMqijH/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png", "de_2d_conditions_scopes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png", "de_2d_conditions_scopes", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4
 en:https://fhpcloud.fh-potsdam.de/s/i4n7ETnjWjMqijH/download/de_scopes2.mp4
 -->
 
-Scopes cover not only functions like `setup` and `draw`, but also things like loops and if statements. Most of the times when commands are wrapped inside curly brackets (`{}`) its a new scope level. An example:
+Scopes betreffen nicht nur Funktionen wie `setup` und `draw`, sondern auch Schleifen und `if`-Statements. Genau wie bei den Funktionen, sobald wir uns innerhalb der geschweiften Klammern befinden `{}`, befinden wir uns auf einem weiteren Scope-Level:
 
 ```js
 // global scope
@@ -120,8 +120,8 @@ function setup () {
 }
 ```
 
-{{task("Task: Conditions & Random", "Create a random value and use it in a condition, to switch between drawing commands (shapes, colors, etc.).")}}
+{{task("Aufgabe: Conditions & Zufall", "Generiert euch einen zufälligen Wert in eine Vriable und nutzt diesen Wert dann in einer Serie von if-Statements, um davon abhängig innerhalb einer Schleife unterschiedliche Objekte zu zeichnen.")}}
 
-{{inspiration('Shape switch')}}
+{{inspiration('Form-Wechsel')}}
 
 {{editor('/code/randomshape', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/conditions/randomshapes/sketch.js', true)}}

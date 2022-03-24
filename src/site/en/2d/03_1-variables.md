@@ -121,7 +121,7 @@ The solution to share information between or across all scopes is to use the glo
 
 {{h2('Random')}}
 
-{{video("ttps://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4", "/images/thumbnails/en_2d_variables_random.png", "en_2d_variables_random", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4", "/images/thumbnails/en_2d_variables_random.png", "en_2d_variables_random", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4
 en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/en_random.mp4

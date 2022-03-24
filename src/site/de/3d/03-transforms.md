@@ -1,7 +1,7 @@
 ---
-title: Transformations
+title: Transformationen
 eleventyNavigation:
-  title: Transformations
+  title: Transformationen
   key: de_3d_transformations
   parent: de_3d
   order: 3.5
@@ -9,11 +9,11 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, img, task, inspiration %}
 
-Each **transformation** of a 2D or 3D object returns a new instance of the transformed object. This means, you can simply save the output of the transformation into a new variable. While its a bit counter-intuitive, this means you can send the original object into multiple transformations. At the bottom of the page is also an example for how to code multiple transformations more efficiently.
+Jede **Transformation** eines 2D- oder 3D-Objekts generiert eine neue Instanz dieses Objektes. Dies bedeutet, dass wenn wir unser Objekt an eine Funktion übergeben, gibt uns diese dann ein neues zurück, welches wir dann in eine Variable speichern können. Dies hat den Vorteil, dass wir ein und das selbe Objekte mehrfach benutzen können (siehe am Ende der Seite einen Input für effizientes Vorgehen bei vielen Transformationen).
 
-{{h2('Colors')}}
+{{h2('Farben')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/J4yoWNnmawzrYQM/download/de_3d_transformations_colorize.mp4", "/images/thumbnails/de_3d_transformations_colorize.png", "de_3d_transformations_colorize", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/48gsXjqzbbLxGmz/download/de_3d_transformations_colorize.mp4", "/images/thumbnails/de_3d_transformations_colorize.png", "de_3d_transformations_colorize", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/48gsXjqzbbLxGmz
@@ -24,25 +24,25 @@ en: https://fhpcloud.fh-potsdam.de/s/J4yoWNnmawzrYQM
 const {colorize, colorNameToRgb} = jscad.colors;
 ```
 
-> Colors can help us for prototyping and design our shapes. But have in mind, that depending on what you are going to do with your 3D object, you will likely have to reassign materials to your shapes.
+> Farben können uns bei der Entwicklung und beim Prototypen helfen, um z.B. verschiedene Teil von einander unterscheiden zu können. Dabei sollte man aber im Hinterkopf haben, dass die Farben in der Regel beim Export verloren gehen und man diese dann eventuell in einer anderen Software erneut anwenden muss.
 
-We can either use RGB values:
+Wir können entweder RGB-Werte nutzen:
 
 ```js
 const shape = colorize([R, G, B], cube());
 ```
 
-> Important: RGB are not 0 to 255, but 0 to 1.
+> Wichtig: Der RGB-Bereich geht nicht von 0 bis 255, sondern von 0 bis 1.
 
-Or use color names:
+Oder wir können auch CSS Farbnamen nutzen:
 
 ```js
 const shape = colorize(colorNameToRgb('black'), cube());
 ```
 
-## Transformations
+{{h2('Transformationen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/ycBJZ2a88Y8gc5i/download/de_3d_transformations_transformations.mp4", "/images/thumbnails/de_3d_transformations_transformations.png", "de_3d_transformations_transformations", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/QPkkPMNra3GcfJT/download/de_3d_transformations_transformations.mp4", "/images/thumbnails/de_3d_transformations_transformations.png", "de_3d_transformations_transformations", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/QPkkPMNra3GcfJT
@@ -54,51 +54,51 @@ const {translate, rotate, scale, center, align} = jscad.transforms;
 ```
 
 
-A documentation of all transformations can be found [here](https://openjscad.xyz/docs/module-modeling_transforms.html).
+Die Dokumentation aller Transformationen gibt es [hier](https://openjscad.xyz/docs/module-modeling_transforms.html).
 
-Similar to the p5js coordinate system transformations, we can transform individual objects. In contrast to p5js we don't transform the whole coordinate system, but only individual objects.
+Ähnlich zu den Transformationen die wir bereits vom p5js Koordinatensystem kennen, können wir bei JSCAD individuelle Objekte transformieren. In JSCAD beziehen sich die Transformation also immer nur auf das Objekt welches wir übergeben und nicht auf alle die wir danach generieren.
 
-### Translate
+### Verschieben
 
-Move object along three dimensions:
+Ein Objekt entlang der x/y/z-Achsen verschieben:
 
 ```js
 const shape = translate([0, 0, 5], cube());
 ```
 
-### Rotate
+### Drehung
 
-Rotate object along x/y/z-axis:
+Ähnlich wie bei p5js, wird das Objekt um den Nullpunkt gedreht (entlang der x/y/z-Achse). Soll sich das Objekt um sich selber drehen, müssen wir erst eine Rotation durchführen und danach eventuelle Verschiebungen, etc.:
 
 ```js
 const shape = rotate([0, 0, Math.PI / 2], cube());
 ```
 
-### Scale
+### Skalieren
 
-Resize (multiply) along dimensions:
+Vergrößern oder verkleinern eines Objektes, entlang der 3 Achsen. Die Werte werden mit der aktuellen Größe multipliziert (2 > doppelt so groß, 0.5 > halb so groß):
 
 ```js
 const shape = scale([0, 2, 0], cube());
 ```
 
-### Center
+### Zentrieren
 
-The center function allows us to center an object on one or multiple axis. If all set to `true` its placed on the center at `[0,0,0]`:
+Über die `center`-Funktion kann ein Objekt auf einer Achse zentriert werden. Werden entsprechend alle Achsen auf `true` gesetzt, liegt das Objekt nachher auf `[0,0,0]`:
 
 ```js
 const shape = center([true, true, true], cube());
 ```
 
-{{h2('Loops & Transforms')}}
+{{h2('Schleifen')}}
 
-Saving each transformation outcome into a new variable, becomes especially complicated if you run lots of transformations in a loop for example. To overcome this, we can use arrays and we can overwrite variables.
+Jede Transformation generiert eine neue Instanz, zu Beginn ist es am einfachsten, dies einfach in eine neue Variable zu speichern. Aber umso mehr Transformationen und Objekte generiert werden, umso unübersichtlicher wird dies. Zum einen können wir unsere Objekte natürlich in Arrays & Objects speichern und zum anderen können wir auch Variablen einfach überschreiben und ersparen uns so unnötig viele Variablen:
 
-{{video("https://fhpcloud.fh-potsdam.de/s/HyCYdBfaWi49Lzm/download/de_3d_transformations_loops.mp4", "/images/thumbnails/de_3d_transformations_loops.png", "de_3d_transformations_loops", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/3gpzE9x3CiHFySf/download/de_3d_transformations_loops.mp4", "/images/thumbnails/de_3d_transformations_loops.png", "de_3d_transformations_loops", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/3gpzE9x3CiHFySf
 en: https://fhpcloud.fh-potsdam.de/s/HyCYdBfaWi49Lzm
 -->
 
-{{task('Multiple Transformations', 'The transformations and handling of objects is quite different to p5js. Try building a loop that transforms some basic 3D bodies (e.g. translate and rotate). Try creating a 3D pattern.')}}
+{{task('Aufgabe: Mehrere Transformationen', 'Das Transformieren ist ähnlich wie bei p5js, aber doch irgendwie ganz anders. Versuche einen Loop zu generieren in dem einfache 3D-Körper transformiert werden (z.B. translate and rotate). Versuche dann aus der Schleife heraus ein Muster zu generieren.')}}

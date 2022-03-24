@@ -9,20 +9,20 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{h2('Translate')}}
+{{h2('Verschieben')}}
 
-When building complex layouts it can get tricky calculating all those angles and offsets. p5js offers so called transformations. Those transforms can modify the underlying coordinate system and where things are draw. Lets start with `translate(x, y)`. When using the `translate()` command, the origin (0,0) of our coordinate system is moved. 
+Wenn man sehr komplexe Layouts erstellt, kann es irgendwann durchaus kompliziert werden, die ganze Offsets und Winkel zu berechnen. Um dieses Problem ein wenig zu umgehen, gibt es in p5js so genannte Transformationen. Mit diesen Transformationen manipuliert man das gesamte Koordinatensystem. Dieses Konzept ist am Anfang ein wenig verwirrend, gibt uns aber großartige Möglichkeiten schnell und einfach Designs zu erstellen. Fangen wir mit der `translate(x, y)` Funktion an. Mit dem `translate()` Kommando, können wir den Nullpunkt/Ursprung (0,0) unseres Koordinatensystems verschieben. 
 
-{{video("https://fhpcloud.fh-potsdam.de/s/8mdTinP63eqL4se/download/de_2d_transformations_translate.mp4", "/images/thumbnails/de_2d_transformations_translate.png", "de_2d_transformations_translate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8/download/de_2d_transformations_translate.mp4", "/images/thumbnails/de_2d_transformations_translate.png", "de_2d_transformations_translate", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8
 en: https://fhpcloud.fh-potsdam.de/s/8mdTinP63eqL4se
 -->
 
 {{ definition('translate', [
-  { name: 'x', type: 'number' },
-  { name: 'y', type: 'number' },
-  { name: 'z', type: 'number', optional: true }
+  { name: 'x', type: 'Zahl' },
+  { name: 'y', type: 'Zahl' },
+  { name: 'z', type: 'Zahl', optional: true }
 ]) }}
 ```js
 point(0, 0); // position 0, 0
@@ -30,9 +30,9 @@ translate(100, 100);
 point(0, 0); // position 100, 100
 ```
 
-{{h2('Multiple Transforms')}}
+{{h2('Mehrere Transformationen')}}
 
-Transforms are applied from top to bottom, and multiplied on top of each other:
+Transformationen werden von oben nach unten abgearbeitet und werden aufeinander addiert. Die Transformation geht also nicht vom ursprünglichen Zustand aus, sondern von der letzten Transformation:
 
 ```js
 point(0, 0); // position 0, 0
@@ -42,7 +42,7 @@ translate(100, 100);
 point(0, 0); // position 200, 200
 ```
 
-To better keep track, you can save the current transform `push()` and if you are done, return to the last saved state `pop()`:
+Um einen besseren Überblick zu behalten, können wir den aktuellen Zustand der Transformationen speichern `push()` um dann später zu diesem Zustand wieder zurückzukehren `pop()`:
 
 ```js
 point(0, 0); // position 0, 0
@@ -55,48 +55,50 @@ pop();
 point(0, 0); // position 0, 0
 ```
 
-> push/pop do not only restore the transformations, the same goes for drawing styles (e.g. color). push/pop can also be nested.
+> push/pop stellen nicht nur Transformationen wieder auf den letzten Zustand zurück, sondern auch die Zeichenstile (wie z.B. Farben). push/pop können auch mehrfach hintereinander/verschachtelt werden.
 
-Besides offsetting the coordinate origin `translate()`, we can also `scale(zoomFactor)` and `rotate(rad)`. The center of the transformation is always the coordinate system origin (0, 0).
+Neben dem Verschieben des Ursprungs durch `translate()`, können wir unsere Zeichenfläche auch skalieren: `scale(zoomFactor)` oder das Ganze drehen: `rotate(rad)`.
 
-### Example: Polar coordinates
+> Gerade bei `scale` und `rotate` darauf achten, dass alles immer um den Mittelpunkt (0/0) herumdreht.
 
-This is for example useful when we are using the polar coordinate system, but we don't want to calculate the offset all the time:
+### Beispiel: Polar-Koordinaten
+
+Dies ist z.B. nützlich, wenn man mit dem Polar-Koordinatensystem arbeitet und man dort nicht dauernd alle Positionen einzeln berechnen will:
 
 {{editor('/code/polartranslate', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/transformations/polartranslate/sketch.js')}}
 
-{{h2('Rotation')}}
+{{h2('Drehen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/9p59bc4W663fp4C/download/de_2d_transformations_rotate.mp4", "/images/thumbnails/de_2d_transformations_rotate.png", "de_2d_transformations_rotate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa/download/de_2d_transformations_rotate.mp4", "/images/thumbnails/de_2d_transformations_rotate.png", "de_2d_transformations_rotate", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa
 en: https://fhpcloud.fh-potsdam.de/s/9p59bc4W663fp4C
 -->
 
 {{ definition('rotate', [
-  { name: 'angle', type: 'number' }
+  { name: 'Winkel (radians)', type: 'Zahl' }
 ]) }}
 ```js
 rotate(Math.PI / 180 * 45); // take angleMode into acount
 ```
 
-{{h2('Scale')}}
+{{h2('Skalieren')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/AAKPPkFNZKAFS9t/download/de_2d_transformations_scale.mp4", "/images/thumbnails/de_2d_transformations_scale.png", "de_2d_transformations_scale", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf/download/de_2d_transformations_scale.mp4", "/images/thumbnails/de_2d_transformations_scale.png", "de_2d_transformations_scale", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf
 en: https://fhpcloud.fh-potsdam.de/s/AAKPPkFNZKAFS9t
 -->
 
 {{ definition('scale', [
-  { name: 'scale-factor', type: 'number' }
+  { name: 'Skalierungsfaktor', type: 'Zahl' }
 ]) }}
 ```js
 scale(2); // 200%
 ```
 
-{{task("Task: Loops & Translate", "Try using offset and rotate in a loop to explore new possibilities for patterns.")}}
+{{task("Aufgabe: Schleifen & Translate", "Benutze translate und rotate in einer Schleife und versuche dadurch neuartige Muster zu generieren.")}}
 
-{{inspiration('Patterns')}}
+{{inspiration('Muster')}}
 
 {{editor('/code/fractals1', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/transformations/fractals/sketch.js', true)}}

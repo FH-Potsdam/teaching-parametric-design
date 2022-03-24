@@ -1,7 +1,7 @@
 ---
-title: Next Steps
+title: Nächste Schritte
 eleventyNavigation:
-  title: Next Steps
+  title: Nächste Schritte
   key: de_next
   order: 8
   parent: de

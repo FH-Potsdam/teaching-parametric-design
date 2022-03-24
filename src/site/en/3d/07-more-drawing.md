@@ -22,7 +22,7 @@ en: https://fhpcloud.fh-potsdam.de/s/akY5paZyjwHL8BJ
 const {polygon} = jscad.primitives;
 ```
 
-The previous session introduced the simple 2D primitives like rectangle and circle. When we want to draw more complex shapes we can use the polygon function. Think of it as the p5js' vertex function for JSCAD:
+In one of the previous sessions, we introduced the simple 2D primitives like rectangle and circle. When we want to draw more complex shapes we can use the polygon function. Think of it as the p5js' vertex function for JSCAD:
 
 ```js
 const poly = polygon({
@@ -203,7 +203,7 @@ module.exports = { main };
 ```
 {{img('example-1.png', 'rendering of above code')}}
 
-{{task('Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
+{{task('Task: Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
 
 {{inspiration('Data-driven Surface')}}
 

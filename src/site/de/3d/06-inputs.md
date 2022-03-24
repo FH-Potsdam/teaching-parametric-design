@@ -9,16 +9,16 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, img, task, inspiration, link3d, github %}
 
-## Parameters
+## Parameter
 
-{{video("https://fhpcloud.fh-potsdam.de/s/qwwk7jico9Ek9Ew/download/de_3d_input.mp4", "/images/thumbnails/de_3d_input.png", "de_3d_input", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/5FLGs8gDXWneTE6/download/de_3d_input.mp4", "/images/thumbnails/de_3d_input.png", "de_3d_input", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/5FLGs8gDXWneTE6
 en: https://fhpcloud.fh-potsdam.de/s/qwwk7jico9Ek9Ew
 -->
 
-Similar to the various inputs in p5js, we can also create a list of inputs to helps us build parametric designs, that we can modify while rendering. To get started with inputs, we need to extend our boilerplat:
+Ähnlich zu den Eingabefeldern bei p5js, können wir auch für JSCAD Eingabefelder generieren und diese nutzen, um flexibel unsere Modelle zu manipulieren. Hierfür müssen wir unsere Boilerplate ein wenig anpassen (oder die komplexe Boilerplate nutzen, dort ist der Code bereits angepasst):
 
 ```js
 const jscad = require('@jscad/modeling');
@@ -42,9 +42,9 @@ const main = (parameters) => {
 module.exports = { main, getParameterDefinitions }
 ```
 
-In the `getParameterDefinitions` function we define all the inputs we need. The `name` of each input must be unique, and we use it later to retrieve it from the parameters object. The `caption` is the text written in the interface next to the input. The most import `type`s are `text`, `int`, `float`, `color`, `slider`, `checkbox`, `radio` and `choice`. With `type:'group'` your can group multiple inputs. Use it before a new group starts. The `initial` value is the value when the application starts, before you change the input.
+Die neue Funktion: `getParameterDefinitions` definiert unsere Eingabefelder. Die Funktion gibt ein Object zurück, mit den entsprechenden Definitionen der Eingabefelder. Der `name` eines jeden Eingabefeldes muss eindeutig sein, damit wir darüber später auf dieses Element zugreifen können. Die `caption` steht als Label neben dem Eingabefeld. Das Wichtigste neben dem Namen ist der `type` (`text`, `int`, `float`, `color`, `slider`, `checkbox`, `radio` und `choice`). Mit dem `type:'group'` kann man mehrere Elemente gruppieren. `initial` definiert den Startwert des Inputs.
 
-Here is an example with all input types:
+Hier ein Beispiel aller Input-Typen:
 
 ```js
 const getParameterDefinitions = () => {
@@ -71,16 +71,16 @@ const getParameterDefinitions = () => {
 }
 ```
 
-{{img('parameters.png', 'example of input fields')}}
+{{img('parameters.png', 'Beispiel von Eingabefeldern')}}
 
-{{task('Parametric Object', 'Create a 3D body and use parameters for sizes and transforms.')}}
+{{task('Aufgabe: Parametrisches Objekt', 'Erstelle einen 3D-Körper, bei dem die Parameter sich durch Eingabefelder definieren.')}}
 
-{{inspiration('Parametric Frame')}}
+{{inspiration('Parametrischer Rahmen')}}
 
-All elements in this design are controlled through parameters:
+Die Generierung des Rahmens wird auf allen Dimensionen durch Parameter definiert:
 
-{{link3d('/code/3d/radii', 'Open "Raspi Case"')}}
+{{link3d('/code/3d/radii', 'Open "Parametrischer Rahmen"')}}
 
-{{img('example3d-params.png', 'Generating a frame through unions and subtracts')}}
+{{img('example3d-params.png', 'Generierung eines 3D-Objekts durch Parameter')}}
 
 {{github('https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/3d/radii')}}

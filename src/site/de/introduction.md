@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Einführung
 eleventyNavigation:
   title: Intro
   key: de_introduction
@@ -9,29 +9,29 @@ eleventyNavigation:
 
 {% from "../_includes/parts/macros.njk" import h2, definition, video, img %}
 
-{{h2('Introduction to Parametric Design')}}
+{{h2('Einführung ins Parametric Design')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL/download/de_introduction.mp4", "/images/thumbnails/de_introduction.png", "de_introduction", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x/download/de_introduction.mp4", "/images/thumbnails/de_introduction.png", "de_introduction", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x
 en: https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL
 -->
 
-{{h2('How to use the website')}}
+{{h2('Wie funktioniert diese Website')}}
 
-The material for this course is not only offered in different languages, but also offers you the choice to choose between your preferred learning style. You can just *read* all the text, you can *watch* the videos or download the code examples and learn by *experimenting* with the code.
+Das Material dieses Seminars wird nicht nur in verschiedenen Sprachen angeboten, sondern bietet auch verschiedene Zugänge, um sich die Inhalte zu erarbeiten. Man kann alle Inhalte erlernen, indem man nur die Texte und Definitionen studiert, sich alternativ die Videos anschaut oder direkt die Code-Beispiele herunterlädt und durch das Experimentieren mit den Beispielen lernt.
 
-All videos come with subtitles. Use the little button in the lower right to activate them. If you cannot activate them, switch to a different browser. For privacy reasons we are not using a video hosting service like YouTube. We are using the browser's native video player, which is slightly different depending on which browser you use. Underneath each video, you find a link to the code shown in the video.
+Alle Videos in Deutsch und Englisch haben Untertitel. Die meisten Browser bieten unten rechts einen kleinen Button, über den man zusätzliche Optionen aufrufen kann und dort auch die Untertitel aktivieren kann. Wir nutzen kein Video-Hosting-Service, um die Privatsphäre der Studierenden zu schützen, deshalb setzen wir auf den nativen Video-Player des Browsers, Aussehen und Funktionalität können leicht voneinander abweichen.
 
-{{ img('subtitles.png', 'Enabling subtitles.') }}
+{{ img('subtitles.png', 'Untertitel aktivieren.') }}
 
-Whenever a new function/command is introduced, we will provide a short definition, followed by an example:
+Wenn eine neue Funktion oder Kommando eingeführt wird, gibt es eine kurze Definition, die von einem Beispiel gefolgt wird: 
 
 {{ definition('createCanvas', [
-  { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' },
-  { name: 'renderer', type: 'string', optional: true }
+  { name: 'Breite', type: 'Zahl' },
+  { name: 'Höhe', type: 'Zahl' },
+  { name: 'Renderer', type: 'Text', optional: true }
 ]) }}
 
 ```js
@@ -40,22 +40,22 @@ function setup() {
 }
 ```
 
-The first line shows the parameters this function accepts. This definition explains how many and of which type the parameters must be. If a parameter has an **\***, then this parameter is optional. The most common parameter types are:
+Die erste Zeile zeigt die Parameter, die eine Funktion akzeptiert. Die Definition erklärt welche Parameter, welche Funktion haben. Wenn ein Parameter mit einem **\*** gekennzeichnet ist, dann handelt es sich bei dem Parameter um einen optionalen Parameter. Die meistgenutzten Parametertypen sind:
 
-- **number**: 1, 2, 0.5, -10.4
-- **string**: 'Any kind of text'
-- **boolean**: true, false
+- **Zahl (number)**: 1, 2, 0.5, -10.4
+- **Text (string)**: 'Any kind of text'
+- **Boolescher Wert (boolean)**: true, false
 
-> Additional useful coding advice is highlighted in these blue boxes.
+> Zusätzliche, nützliche Hinweis werden in blauen Boxen hervorgehoben.
 
 ### Editor
 
-For p5js an inline editor allows you to quickly experiment with code directly in the website. To execute the code, click the left button in the upper right corner. To copy the code and use it in your own project, use the button in the upper right. A link to the source code is provided below the editor. 
+Für die p5js Beispiele gibt es einen Editor, der es erlaubt Code-Beispiele direkt im Browser zu verändern. Um den Code auszuführen, muss der rechte Knopf oben links im Editor gedrückt werden. Um den Code zu kopieren und im eigenen Code-Editor weiterzunutzen, einfach den rechten Knopf oben rechts drücken. Ein Link zum Quellcode steht unter dem Editor zur Verfügung.
 
 {{ img('editor.png', 'Inline Code Editor.') }}
 
-The JSCAD editor is a lot more resource intensive, therefore, we open the JSCAD previews in a new tab/window, instead of an inline preview.
+Die Vorschau für JSCAD ist wesentlich ressourcenhungriger, deshalb werden die Previews für JSCAD in einem neuen Tab/Fenster geöffnet.
 
 ### Extras & Bonus
 
-Under [Extras](extras/index.md) you will find additional material, which might be helpful, but it is not mandatory to finish the course. The [Bonus-section](bonus/index.md) contains thematic deep dives, which were based on discussions or questions, for example how to use audio-files as input. The bonus material will likely increase over time and is only available in written German and English.
+Unter [Extras](extras/index.md) befindet sich zusätzliches Material, dass hilfreich für die Programmierung ist, aber nicht Pflicht ist. Im [Bonus-Bereich](bonus/index.md) der Seite, gibt es konkrete Beispiele und thematische Vertiefungen, diese gehen meisten zurück auf Diskussionen im Kurs (z.B. wie kann man Audio-Files einbinden und analysieren). Der Bonus-Bereich wird weiter wachsen, deshalb können wir diesen Bereich aktuell nur in Deutsch und Englisch anbieten.

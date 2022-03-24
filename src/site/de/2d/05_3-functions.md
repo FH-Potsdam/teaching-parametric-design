@@ -1,7 +1,7 @@
 ---
-title: Functions
+title: Funktionen
 eleventyNavigation:
-  title: Functions
+  title: Funktionen
   key: de_2d_more_complexity
   parent: de_2d
   order: 9
@@ -9,13 +9,13 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi/download/de_2d_functions.mp4", "/images/thumbnails/de_2d_functions.png", "de_2d_functions", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89/download/de_2d_functions.mp4", "/images/thumbnails/de_2d_functions.png", "de_2d_functions", translations.subtitles[locale], locale)}}
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89
 en: https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi
 -->
 
-Through the for-loop we can draw the same element multiple times. But sometimes a single for-loop is not enough and we end up writing the same code multiple times. Let's say, we want to draw little crop marks into each corner of our sketch:
+Mit der For-Schleife können wir einfach das selbe Object mehrfach zeichnen. Aber manchmal ist eine einzige For-Schleife nicht ausreichend und dann müssen wir mitunter den selben Code doch an mehreren Stellen schreiben. Um dies zu verhindern, können wir selber eigene Funktionen erstellen, in denen wir wiederkehrenden Code ablegen und dann einfach abrufen können. Ein einfaches Beispiel. Wir wollen vier Schnittmarken in den vier Ecken unserer Zeichenfläche anlegen. Jede Schnittmarke besteht aus zwei Linien, welche wir durch `translate` verschieben:
 
 ```js
 const sketchWidth = 400;
@@ -29,7 +29,7 @@ pop();
 // repeat the above code 3 more times
 ```
 
-Instead of writing this code four times, we could create a so called function:
+Anstatt diesen Code nun vier mal, mit unterschiedlichen `translate`-Werten zu schreiben. Können wir statt dessen eine Funktion erstellen:
 
 ```js
 const sketchWidth = 400;
@@ -48,7 +48,7 @@ pop();
 // repeat the above code 3 more times
 ```
 
-Like the p5js commands, we can now call our function inside our code. But we still have a few lines that repeat every time, because we need to set the translate parameters. To overcome this, we can pass parameters into our function, that we can use inside the function:
+Genau wie die p5js-Funktionen die wir bereits kennen, können wir diese neue Funktion innerhalb unseres Codes aufrufen. In unserem Beispiel oben haben wir aber immer noch einige Zeilen Code die wir wiederholen müssten, weil wir dort unterschiedliche Parameter für das `translate` angeben müssen. Doch genau wie bei den p5js-Funktionen können wir auch unserer Funktion Parameter übergeben, welche wir dann innerhalb der Funktion nutzen können:
 
 ```js
 const sketchWidth = 400;
@@ -69,11 +69,11 @@ cropMark(sketchWidth - margin, sketchHeight - margin);
 cropMark(margin, sketchHeight - margin);
 ```
 
-You can pass as many variables into your function as you like.
+Man kann so viele Parameter übergeben wie man möchte.
 
-> Remember the variable scopes. Variables defined inside a function are only accessible inside the function. Global variables are also accessible inside a function.
+> Auch hierbei darf man die **Scopes** nicht vergessen. Variablen die innerhalb einer Funktion definiert werden, sind nur dort verfügbar. Globale Variablen sind natürlich auch in Funktionen verfügbar.
 
-Sometimes you might not want a function to draw something but instead only calculate something. Then it is helpful when a function also returns something:
+Manchmal braucht man keine Funktion die etwas zeichnet, sondern statt dessen etwas berechnet und uns dann den neuen Wert zurückgibt. Hierfür gibt es die Möglichkeit `return` zu nutzen:
 
 ```js
 function polarX(radius, angle) {
@@ -89,7 +89,7 @@ function polarY(radius, angle) {
 point(polarX(20, 45), polarY(20, 45));
 ```
 
-The return value needs to be **one** value, but it can be of **any kind** also an array or object:
+Wir können nur **einen** Wert zurückgeben, aber es kann **jeder Variablentyp** sein, entsprechend auch ein Array oder Object:
 
 ```js
 function polar(radius, angle) {
@@ -105,14 +105,15 @@ const p = polar(20, 45);
 point(p.x, p.y);
 ```
 
-> If you are building more complex code, functions will not only help you to write less code, but they can also be used to structure your code and build reusable functions, that you can use in your next project.
+> Wenn man komplexere Anwendungen baut, können Funktionen einem nicht nur helfen weniger Code zu schreiben, sondern bestimmte Funktionalitäten auch ins nächste Projekt mitzunehmen und sich so langsam eine eigene Bibliothek an Funktionen aufzubauen.
 
-{{task("Task: Functions", "Take a look at your previous sketches and see if you can optimize one of them by turning repetitive code into functions.")}}
+{{task("Aufgabe: Funktionen", "Schau dir deine bisherigen Experimente an und untersuche wo du deinen eigenen Code durch Funktionen effizienter gestalten könntest.")}}
 
-{{inspiration('Fractals')}}
+{{inspiration('Fraktale')}}
 
-Try changing the various variables in the example below to create different so called L-Trees or fractal trees. Start with the `max` variable and set it to `2` and then slowly increase it, to better understand how the system works. Be aware, setting it to a very high value can take a while to process (but its worth it). Don't set `max` to a value higher than 20 (20 levels already generates more than 1 Million lines).
+Experimentiere mit den verschiedenen Variablen im Editor unten, um untersechiedliche sogenannte L-Trees oder Fraktal-Bäume zu generieren.
+Fange mit der `max` Variable an und setze diese auf `2` und erhöhe den Wert dann langsam, um so einen ersten Einblick in das zugrundeliegende System zu erhalten. Vorsicht: wenn du den Wert auf etwas sehr hohes stellst, kann es etwas dauern bis alles gezeichnet ist (lohnt sich aber). Die `max` Variable sollte aber nicht auf einen Wert höher als 20 gesetzt werden (20 Ebenen generieren schon über 1 Millionen Linien).
 
 {{editor('/code/fractals2', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/functions/fractals/sketch.js', true)}}
 
-While the output looks quite magical, the code behind it, is quite simple. You are just calling the same function over and over again. Inside this function there is a loop, which creates branches at the end of the last line. Thanks to the transformation functions we don't need to calculate angles and positions, but can simple transform again from the last known location.
+Auch wenn der Output faszinierend ausseiht, ist der zugrundeliegende Code recht einfach. Wir rufen lediglich die selbe Funktion immer wieder auf. Und innerhalb dieser Funktion ist eine Schleife, welche neue Ansätze generiert und darin wieder die Funktion aufruft. Dank der Transformationen müssen wir die genauen Positionen unserer Linien nicht berechnen, sondern können einfach mit `Translate` und `Rotate` arbeiten. Achtung: bei solchem Code sollte man immer durch z.B. eine maximal Tiefe sicherstellen, dass diese Verschachtelung irgendwann ein Ende findet.

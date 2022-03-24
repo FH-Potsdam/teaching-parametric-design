@@ -1,7 +1,7 @@
 ---
-title: Variables
+title: Variablen
 eleventyNavigation:
-  title: Variables
+  title: Variablen
   key: de_2d_variables
   parent: de_2d
   order: 3
@@ -9,95 +9,95 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, task, inspiration, h2, definition, editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png", "de_2d_variables_variables", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png", "de_2d_variables_variables", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4
 en:https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/de_variables.mp4
 -->
 
-Sometimes we want to reuse a certain information in our code, for example a color or a size value for a shape. To help us with that, JavaScript has **variables**. Variables are like containers we can use for storing information, so we can later use or modify them.
+Manchmal wollen wir bestimmten Informationen in unserem Code mehrfach nutzen, z.B. verschiedene Farb- oder Größenangaben. Dies können wir JavaScript mit sogenannten **Variablen** erreichen. Variablen kann man sich als Container vorstellen, die als Platzhalter für beliebige Informationen stehen, welche wir in ihnen ablegen können. Variablen können wir so immer wieder nutzen und auch nachträglich verändern.
 
-{{h2('Variable Types')}}
+{{h2('Variablentypen')}}
 
-In JavaScript there are two ways of declaring a variable:
+In JavaScript gibt es zwei Möglichkeiten Variablen zu deklarieren:
 
 ```js
 const sketchWidth = 400;
 let colorValue = 200;
 ```
 
-With `const` we define a constant variable. This variable cannot be changed later on in our code. `let` is a more flexible variable, that can be modified and changed.
+Mit `const` definieren wir eine "konstante" Variable. Diese Variable können wir später nicht mehr verändern. `let` ist flexibler, diese Variablen können wir später noch verändern und anpassen.
 
-> If you are not sure what to use, simply use `let`.
+> Wenn du dir nicht sicher bist, was du benutzten sollst, benutze einfach erstmal immer `let`.
 
-A variable in JavaScript is not type-sensitive. This means you don't need to define in advance what you want to store inside a variable and you can change it at any time. For now the three data types we will mostly use are:
+Eine Variable in JavaScript ist nicht auf einen bestimmten Typen festgelegt. Dies bedeutet, dass wir nicht im vornherein festlegen müssen, was wir später in dieser Variable ablegen und wir können den Inhalt auch nachträglich ändern (z.B. erst eine Zahl speichern dann einen Text). Fürs erste sind die drei folgenden Typen die wichtigsten für uns (später mehr):
 
-1. number
-2. string (text), don't forget the " or '
-3. boolean (true/false)
+1. Zahl (number)
+2. Text (string), nicht die Anführungszeichen vergessen
+3. Boolsche Werte (boolean): true / false
 
-> While JavaScript is not type-sensitive, which is nice for prototyping, its bad for production code. Good code tries to only store one type of data inside a variable.
+> Auch wenn JavaScript Variablen nicht auf bestimmte Typen festlegt (type-sensitive), was toll fürs Prototyping ist, ist dies nicht gut wenn ihr später mal große Projekte schreibt. Guter Code versucht in einer Variable nur einen Typen zu speichern. Dies hat den Vorteil das ihr zu jeder Zeit in eurem Code wisst, dass eine bestimmte Variable z.B. eine Zahl ist.
 
-#### Boolean
+#### Boolsche Werte
 
-Booleans are very simple they can be either `true` or `false`. We can use them for [conditions](03_3-conditions.md).
+Booleans sind sehr simpel entweder `true` oder `false`. Wir können diese später z.B. für [conditions](03_3-conditions.md) nutzen.
 
-### Variabel naming
+### Variablennamen
 
-When naming our variables we need to watch out for a couple of things:
+Wenn wir unsere Variablen benennen müssen wir auf ein paar Dinge achten:
 
-1. Don't use names of commands that are already in use (like the ones we alredy learned).
-2. Write them in english, so you don't get tempted using special german or other characters.
-3. Variable names cannot contain spaces, a space tells the system that something else is coming afterwards.
-4. A variable name should not start with a number.
-5. Use only letters, numbers and _.
+1. Auf keinen Fall die Namen von Kommandos oder Funktionen benutzen (diese werden sonst überschrieben oder ihr bekommt eine Fehlermeldung).
+2. Am einfachsten ist es, wenn ihr die Namen auf Englisch schreibt, damit verhindert ihr Probleme mit deutschen Sonderzeichen (äöüß).
+3. Variablennamen dürfen keine Leerzeichen enthalten. Ein Leerzeichen sagt JavaScript, dass danach etwas neues kommt.
+4. Ein Variablenname darf nicht mit einer Zahl anfangen.
+5. Benutzer nur Buchstaben, Zahlen und _.
 
-In JavaScript, most developers are using the so called camel case 🐪 writing style. Multiple words are connected by using a capital for each first letter of a word:
+In JavaScript benutzen die meisten Entwickler*innen die sogenannte "camel case" 🐪 Schreibweise. Mehrere Wörter werden einfach immer mit einem Großbuchstaben miteinander verbunden:
 
 ```js
 let colorValue;
 let myFirstVariable;
 ```
 
-> In other programming languages, other styles are preferred. Python for example uses so called snake case 🐍, where each word is connected through a "_" : `my_first_variable`
+> In anderen Programmiersprachen werden ander Schreibweisen genutzt, wie z.B. Python, wo "snake case" 🐍 genutzt wird. Hierbei werden Wörter durch einen Unterstrich miteinander verbunden "_" : `my_first_variable`
 
-{{h2('Using variables')}}
+{{h2('Variablen nutzen')}}
 
-Once we have defined a variable we can use it and also modify the content:
+Sobald wir Variablen definiert haben, können wir diese in unserem Code nutzen und auch verändern:
 
 {{editor('/code/using_variables', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables/using/sketch.js')}}
 
-In the above example we define `backgroundColor` in the global scope (see below), outside `setup()` and `draw()`, so we can access it everywhere. We define it with `let` so we can modify it later on. In `setup()` we set `backgroundColor` to be **0**. In `draw()` we use the variable to draw the `background`, then we add 1 to the current value. This results in the number getting bigger and, thereby, the color getting brighter, until the number reaches 255. While our code will still increase the number, anything above 255 is still white.
+In dem obigen Beispiel definieren wir die Variable `backgroundColor` in unserem "global scope" (siehe unten), außerhalb von `setup()` und `draw()`, dadurch können wir überall auf die Variable zugreifen. Wir definieren diese mit `let`, so stellen wir sicher, dass wir diese später auch noch bearbeiten können. In `setup()` speichern wir in der Variable `backgroundColor` den Wert **0**. In `draw()` benutzen wir die Variable im `background` Kommando. Danach addieren wir 1 dazu, jedes mal wenn die Draw-Schleife abgeschlossen ist. Hierdurch wird der Wert in unserer Variable immer größer und entsprechend wird auch die Hintergrundfarbe immer heller. Unser Code wird unendlich lange weiterlaufen, p5js interpretiert alle Werte die größer als 255 sind einfach als 255.
 
-> `variable += i` is short for `variable = variable + 1`. The same works for other math operations `variable -= 1`
+> `variable += i` ist kurz für `variable = variable + 1`. Dasselbe funktioniert auch für ander mathematischen Operationen `variable -= 1`
 
-{{h2('Storing color values')}}
+{{h2('Farben & Variablen')}}
 
-A color consists of three or four values (RGB + opacity). You could store a color in multiple variables, but that means a lot of writing. In a later chapter we will meet arrays and objects, which will be more suitable. But, there is a helper function from p5js, allowing us, to store a color in a single variable: color.
+Eine Farbe besteht aus mehreren Werten, z.B. RGB + Transparenz. Wir könnten nun alle diese Werte in einzelnen Variablen speichern. Dies wäre aber eine Menge Schreibarbeit, gerade wenn wir mehrere Farben habe. Deshalb gibt gibt es in p5js eine Möglichkeit Farben effizienter zu speichern. Hierzu nutzen wir das `color` Kommando. Dieses gibt uns ein Farb-Objekt zurück, welches wir dann in einer Variable speichern können:
 
 {{ definition('color', [
-  { name: 'R', type: 'number' },
-  { name: 'G', type: 'number' },
-  { name: 'B', type: 'number' },
-  { name: 'opacity', type: 'number', optional: true }
+  { name: 'R', type: 'Zahl' },
+  { name: 'G', type: 'Zahl' },
+  { name: 'B', type: 'Zahl' },
+  { name: 'Transparenz', type: 'Zahl', optional: true }
 ]) }}
 ```js
 const backgroundColor = color(255, 0, 100, 150);
 ```
 
-> You can also use color with other parameters, similar to fill, stroke and background (see last [section](02-drawing.md)).
+> Man kann die `color` Funktion auch mit anderen Werten benutzen, genauso wie im [letzten Kapitel](02-drawing.md) aufgzeigt.
 
 
 {{h2('Scopes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png", "de_2d_variables_scopes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png", "de_2d_variables_scopes", translations.subtitles[locale], locale)}}
 
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4
 en:https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/de_scopes.mp4
 -->
 
-In our first session learned about `setup()` and `draw()`. Those two functions encapsulate their content with curly brackets `{}`. Everything inside those brackets belongs to the function. This is also called the scope of the function. Scoping makes sure that what you do in a certain context, does not mess with something in your code somewhere else. But it also introduces the problem, that we sometimes want to pass information between different scopes:
+Im ersten Abschnitt haben wir `setup()` und `draw()` kennengelernt. Die Kommandos, die zu diesen beiden Funktionen gehören, werden von geschweiften Klammern eingeschloosen `{}`. Solch ein Bereich, der durch diese geschweiften Klammern definiert wird, wird auch Scope genannt. Wir befinden uns hier also im Scope von z.B. der `draw` Funktion. Solche Scopes helfen uns, dass Befehle in diesem Scope nicht mit anderen Kommandos in anderen Bereichen unseres Codes kollidieren. Genau diese Funktionalität führt aber auch zu einem Problem:
 
 ```js
 // global scope
@@ -115,33 +115,33 @@ function draw () {
 }
 ```
 
-The solution to share information between or across all scopes is to use the global scope, at the root of the document, not inside any curly brackets. Scopes can be nested. And variables from a parent scope are always accessible, but never the other way around.
+Wir können nur auf Variablen / Kommandos / etc. zugreifen, wenn diese im selben Scope definiert werden oder in einem höheren Scope. Eine einfache Lösung um dieses Problem zu umgehen, ist einfach alles im global scope zu definieren, also der untersten Ebene unserer Script-Datei.
 
-> Be careful when using the same variable name across multiple scopes, as it can get confusing, because while they have the same name, they might not have the same value.
+> Man muss vorsichtig sein, wenn man innerhalb eines Scopes eine Variable definiert und eine Variable mit dem selben Namen möglicherweise auch im global scope definiert ist. Denn dann hat man zwei unabhängige Variablen, auch wenn diese den selben Namen haben. Also am besten immer eindeutige Namen einmalig nur verwenden.
 
-{{h2('Random')}}
+{{h2('Zufall')}}
 
-{{video("ttps://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png", "de_2d_variables_random", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png", "de_2d_variables_random", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4
 en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/de_random.mp4
 -->
 
-We use numbers to define colors, positions and sizes. But sometimes, we want to slightly alter our objects and layout without us defining all those alterations in detail. An option to achive such things is the random command, random generates a value between **0** and **1** or a value between the **min** and **max** value provided as first and second parameter:
+Wir benutzen Zahlen um Farben, Positionen und Größen zu definieren. Aber manchmal wollen wir verschiedene Versionen eines Layouts generieren, ohne alle Werte manuell zu definieren. Eine Möglichkeit dies zu erreichen ist das `random` Kommando. Hiermit können wir zufällige Werte zwischen **0** und **1** bzw zwischen **Min** und **Max** generieren:
 
 {{ definition('random', [
-  { name: 'min', type: 'number', optional: true },
-  { name: 'max', type: 'number', optional: true }
+  { name: 'Min', type: 'Zahl', optional: true },
+  { name: 'Max', type: 'Zahl', optional: true }
 ]) }}
 ```js
 const backgroundColor = random() * 255;
 const otherColor = random(0, 255);
 ```
 
-> `random()` is a p5js function. If you are using JavaScript without p5js, you can use `Math.random()`.
+> `random()` ist eine p5js Funktion. Wenn du JavaScript ohne p5js benutzt, kannst du einfach `Math.random()` nutzen.
 
-{{task("Task: Random", "Random values can be used for everything. Try exploring the possibilities to use it in the various shape commands we already learned about.")}}
+{{task("Aufgabe: Zufall", "Zufällige Werte kann man für alles einsetzen. Versuche Random in den verschiedenen Zeichen-Funktionen zu nutzen die wir bereits gelernt haben.")}}
 
-{{inspiration('Color variations I', 'Try re-running the code, to get a different color variation.')}}
+{{inspiration('Farb Variationen I', 'Führe den Code mehrfach aus, um verschiedene Variationen zu erhalten.')}}
 
 {{editor('/code/randomcolor', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/variables/randomcolor/sketch.js', true)}}

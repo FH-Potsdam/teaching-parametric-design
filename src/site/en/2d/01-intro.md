@@ -143,7 +143,7 @@ function setup() {
 
 {{h2('Debugging')}}
 
-{{video("ttps://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4", "/images/thumbnails/en_2d_intro_debug.png", "en_2d_intro_debug", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4", "/images/thumbnails/en_2d_intro_debug.png", "en_2d_intro_debug", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4
 en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/en_debug.mp4

@@ -1,7 +1,7 @@
 ---
-title: Drawing
+title: Zeichnen
 eleventyNavigation:
-  title: Drawing
+  title: Zeichnen
   key: de_3d_drawing
   parent: de_3d
   order: 3
@@ -9,9 +9,9 @@ eleventyNavigation:
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, img, task, inspiration %}
 
-## 2D primitives
+## 2D Basisformen
 
-{{video("https://fhpcloud.fh-potsdam.de/s/6wEjNRJBkRz5Xmd/download/de_3d_drawing_2d.mp4", "/images/thumbnails/de_3d_drawing_2d.png", "de_3d_drawing_2d", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/gJSXCSgYinskq6X/download/de_3d_drawing_2d.mp4", "/images/thumbnails/de_3d_drawing_2d.png", "de_3d_drawing_2d", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/gJSXCSgYinskq6X
@@ -22,13 +22,13 @@ en: https://fhpcloud.fh-potsdam.de/s/6wEjNRJBkRz5Xmd
 const {line, arc, circle, ellipse, rectangle} = jscad.primitives;
 ```
 
-2D primitives are often a good start. You can use extrusion and expansion commands, to turn 2D shapes into 3D bodies (see below).
+2D-Formen (2D primitives) sind ein guter Startpunkt. Man kann später Extrusion- oder ExpansionFunktionen nutzen, um aus den 2D-Formen 3D-Körper zu generieren (siehe 3D / Extrusion).
 
-A documentation of all primitives can be found [here](https://openjscad.xyz/docs/module-modeling_primitives.html). 
+Die Dokumentation aller 2D Primitives findet sich [hier](https://openjscad.xyz/docs/module-modeling_primitives.html). 
 
-{{h2('Line')}}
+{{h2('Linie')}}
 
-The line command takes two arrays of two numbers each:
+Der `line`-Befehl benötigt ein Array mit x/y-Koordinaten:
 
 ```js
 const shape = line([
@@ -37,11 +37,11 @@ const shape = line([
 ]);
 ```
 
-> You can also pass an array with more points to create a path.
+> Man kann auch mehr Punkte übergeben, um einen Pfad zu generieren.
 
-{{h2('Arc')}}
+{{h2('Kreisbogen')}}
 
-The arc also produces a line and works similar to the p5js arc function:
+Der `arc`-Befehl generiert ebenfalls eine Linie und funktioniert ähnliche wie der `arc`-Befehl bei p5js:
 
 ```js
 const shape = arc({
@@ -53,9 +53,9 @@ const shape = arc({
 });
 ```
 
-> Most properties in JSCAD are optional and have a default value, so you only need to provide the ones you really need.
+> Fast alle Attribute der Parameter-Objekte sind optional, jede Funktion hat immer Standardwerte die bei fehlenden Attributen eingesetzt werden.
 
-{{h2('Circle')}}
+{{h2('Kreis')}}
 
 ```js
 const shape = circle({
@@ -67,11 +67,11 @@ const shape = circle({
 });
 ```
 
-> Circle looks exactly like arc, the important difference is, that arc returns a line and circle a polygon.
+> Das `circle`-Kommando sieht genauso aus, wie das `arc`-Kommando, der Unterschied ist, dass `arc` einen Pfad zurückgibt und `circle` ein Polygon.
 
 {{h2('Ellipse')}}
 
-Circle and ellipse take similar parameters, radius is an array for ellipse, defining the radius on x and y axis:
+Der `circle`-Befehl und der `ellipse`-Befehl akzeptieren ähnliche Parameter, im Gegensatz zum Kreis, kann man bei der Ellipse den Radius als Array angeben, um unterschiedliche Breiten- und Höhenangaben zu machen:
 
 ```js
 const shape = ellipse({
@@ -83,9 +83,9 @@ const shape = ellipse({
 });
 ```
 
-> Most round features, like ellipses, spheres or rounded corners, have a segment parameter. This defines the level of detail of curves. More segments lead to rounder curves, but also more complex objects (bigger files, longer rendering times, etc.).
+> Alle Formen oder Körper die Rundungen aufweisen, haben ein `segments`-Attribut. Hierüber können wir den Detailgrad / Rundung der Kurven definieren. Mehr Segmente generieren rundere Kurven, gleichzeitig führen mehr Segmente auch zu mehr Vertices (größere Dateien, längere Renderingzeiten, etc.).
 
-{{h2('Rectangle')}}
+{{h2('Rechteck')}}
 
 ```js
 const shape = rectangle({
@@ -95,9 +95,9 @@ const shape = rectangle({
 ```
 
 
-## 3D-Primitives
+## 3D-Körper (primitives)
 
-{{video("https://fhpcloud.fh-potsdam.de/s/rBCA9q9MfK7LtxB/download/de_3d_drawing_3d.mp4", "/images/thumbnails/de_3d_drawing_3d.png", "de_3d_drawing_3d", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/LxYHETDD3QJayF9/download/de_3d_drawing_3d.mp4", "/images/thumbnails/de_3d_drawing_3d.png", "de_3d_drawing_3d", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/LxYHETDD3QJayF9
@@ -108,9 +108,9 @@ en: https://fhpcloud.fh-potsdam.de/s/rBCA9q9MfK7LtxB
 const {cube, sphere, cylinder} = jscad.primitives;
 ```
 
-A documentation of all primitives can be found [here](https://openjscad.xyz/docs/module-modeling_primitives.html).
+Die Dokumentation aller Primitives gibt es [hier](https://openjscad.xyz/docs/module-modeling_primitives.html).
 
-{{h2('Cube')}}
+{{h2('Würfel')}}
 
 ```js
 const shape = cube({
@@ -119,7 +119,7 @@ const shape = cube({
 });
 ```
 
-### Sphere
+{{h2('Kugel')}}
 
 ```js
 const shape = sphere({
@@ -128,7 +128,7 @@ const shape = sphere({
 });
 ```
 
-### Cylinder
+{{h2('Zylinder')}}
 
 ```js
 const shape = cylinder({
@@ -139,7 +139,7 @@ const shape = cylinder({
 });
 ```
 
-There are a few more 3D primitives to explore, examples for how to construct them are included in the boilerplate:
+Hier sind ein paar weitere 3D primitives, Beispiele dafür wie man diese Konstruiert sind in der Boilerplate enthalten:
 
 - [cuboid](https://openjscad.xyz/docs/module-modeling_primitives.html#.cuboid)
 - [roundedCuboid](https://openjscad.xyz/docs/module-modeling_primitives.html#.roundedCuboid)
@@ -149,4 +149,4 @@ There are a few more 3D primitives to explore, examples for how to construct the
 - [cylinderElliptic](https://openjscad.xyz/docs/module-modeling_primitives.html#.cylinderElliptic)
 - [torus](https://openjscad.xyz/docs/module-modeling_primitives.html#.torus)
 
-{{task('Getting used to JSCAD', 'Explore the various 2D and 3D elements JSCAD provides, experiment with the various properties and see how it affects the output.')}}
+{{task('Aufgabe: JSCAD kennenlernen', 'Erkunde die verschiedenen 2D und 3D primitives. Experimenteire mit den veschiedenen Properties und wie diese den output verändern.')}}

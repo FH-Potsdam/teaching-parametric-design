@@ -1,5 +1,5 @@
 ---
-title: Technical Setup
+title: Technisches Setup
 eleventyNavigation:
   title: Setup
   key: de_setup
@@ -9,31 +9,31 @@ eleventyNavigation:
 
 {% from "../_includes/parts/macros.njk" import h2, video, img, download %}
 
-This setup guides you through the process of setting everything up on your computer for the next sessions. We need to install a couple of things so we can start creating our own creative tools.
+Dieser kurze Setup-Leitfaden hilft dir alles notwendige auf deinem Computer einzurichten, was wir für die nächsten Abschnitte benötigen. Hierzu müssen wir erstmal ein paar Anwendungen installieren.
 
-{{h2('Requirements')}}
+{{h2('Anforderungen')}}
 
-The requirements are pretty low, you can follow along with any recent Linux, Mac and Windows distribution. You could even use something like Raspberry Pi OS. The only thing you need is the right to install software on your system. If you don't have the rights, please ask your administrator to install the software for you. After installation we don't need admin-rights for the rest of the seminar.
+Die Anforderungen an euren Computer sind realtiv gering. So lange du einen halbwegs aktuellen Linux-, Mac- oder Windows-Rechner hast, sollte dies kein Problem darstellen. Du könntest sogar so etwas wie ein Raspberry Pi OS nutzen. Du benötigst aber die Rechte Software auf deinem Computer zu installieren. Solltest du diese Rechte nicht haben, bitte deinen Administrator dir die notwendige Software zu installieren. Nach der initialen Installation werden keine Admin-Rechte mehr benötigt.
 
-If you are working on a tablet or something similarly restricted, you can use the p5js [web editor](https://editor.p5js.org/). You will be able to complete almost all the tasks in this seminar, but you need a constant internet connection and you need to create an account.
+Falls du auf einem Tablet oder etwas ähnlichem arbeitest, kannst du den p5js [Web-Editor](https://editor.p5js.org/) nutzen. Mit diesem kannst du die meisten Aufgaben erfüllen. Du brauchst aber eine konstante Internetverbindung und musst dir einen Account erstellen, um deine Projekte zu speichern.
 
 {{h2('Code Editor')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/2PLgW3km7y3sb92/download/de_setup_code-editor.mp4", "/images/thumbnails/de_setup_editor.png", "de_setup_editor", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od/download/de_setup_code-editor.mp4", "/images/thumbnails/de_setup_editor.png", "de_setup_editor", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od
 en: https://fhpcloud.fh-potsdam.de/s/2PLgW3km7y3sb92
 -->
 
-You could use any code editor you like, but in the tutorial videos you will see us using [VS Code](https://code.visualstudio.com/download). VS Code is a free and an [open source](https://github.com/microsoft/vscode) code editor, primarily developed by Microsoft. Over the last few years it has become one of the most popular editors and thanks to that a large variety of free [extensions](https://marketplace.visualstudio.com/VSCode) exist, that make our life a lot easier creating new things.
+Du kannst jeden beliebigen Code-Editor nutzen. In den Tutorial-Videos wirst du den Editor [VS Code](https://code.visualstudio.com/download) sehen. VS Code ist kostenloser, [Open Source](https://github.com/microsoft/vscode) Code-Editor, welcher primär von Microsoft entwickelt wird. Über die letzten Jahre ist dieser zu einem der beliebtesten Code-Editor geworden. Deshalb gibt es mittlerweile eine große Pallete an zusätzlichen [Erweiterungen](https://marketplace.visualstudio.com/VSCode), die einem die Arbeit mit Code erleichtern.
 
-If your are not using VS Code, make sure you are using a proper code editor. MS Word, Mac's TextEdit or Windows' Wordpad are not code editors. Those apps allow you to "style" your text. Those visual modifications of the text are stored in a special format (depending on the app you use) and you need a special app to open and view such a file format. Code editors on the other hand show you the raw structure of a file. There is no styling, just text. This is also the reason we can use different code editors, because it's just text and you don't need an extra layer of software for interpretation and editing.
+Falls du nicht VS Code benutzt, stelle bitte sicher das du einen "richtigen" Code-Editor nutzt. Microsoft Word, Apples TextEdit oder Windows Wordpad sind keine Code-Editoren. Diese Anwendunge erlauben ihren Nutzer*innen Text zu "stylen". Diese Styling-Parameter müssen in sogenannten Markup-Dokumenten abgespeichert werden und können nur mit bestimmten Anwendungen geöffnet werden. Mit einem Code-Editor kann man den "rohen" Inhalt einer Datei sehen und bearbeiten. Deshalb können wir auch beliebige Editoren nutzen, weil nur der "rohe" Inhalt bearbeitet wird, ohne eine zusätzliche Ebene der Interpretation und Verschachtelung.
 
-#### 1. Installing VS Code and live-server extension
-Go to the VS Code download [page](https://code.visualstudio.com/download). Depending on your operating system VS Code is also available in some app stores and software management tools.
+#### 1. VS Code und die Live-Server-Erweiterung installieren
+VS Code kann [hier](https://code.visualstudio.com/download) heruntergeladen werden. Abhängig vom Betriebssystem ist VS Code auch über gängige Software-Stores kostenlos verfügbar.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg
@@ -42,7 +42,7 @@ en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 
 {{h2('GitHub')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P
@@ -51,44 +51,44 @@ en: https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE
 
 {{download('/images/downloads/git.pdf', 'GIT Introduction (PDF)')}}
 
-GitHub is the largest plattform for collaboratively working on code. It's build on top of the version control system [git](https://git-scm.com/). Alternative plattforms that make use of git are for example [bitbucket](https://bitbucket.org/product) and [GitLab](https://about.gitlab.com/). Many of you will know tools like Google Docs. The big difference is, that your are not editing files at the same time. Instead everybody downloads a copy of the file and when you are done editing you send it back into the cloud and **git** will make sure that your changes are being synchronized with the changes other people have been applying in the meantime. This can sometimes lead to so called *merge conflicts*. Then you have to help git to figure out what to keep and what to change. Each project is managed in a so called *repository* or short *repo*, In this class we use **git** primarily so that you have a copy of this repo in your own account. So you can change everything, without in fear of breaking this original repo. In addition you can still get any updates from this repo synchronized with your copy.
+GitHub ist die weltweit größte Plattform um gemeinsam an Code zu arbeiten. GitHub basiert auf dem Versionierungssystem [git](https://git-scm.com/). Alternative Plattformen die ebenfalls **git** nutzen, sind z.B. [Bitbucket](https://bitbucket.org/product) und [GitLab](https://about.gitlab.com/). Viele von euch kennen wahrscheinlich Werkzeuge wie Google Docs. Der große unterschied zu solchen Kollaborations-Werkzeugen ist, dass man nicht in echtzeit parallel an Dokumenten arbeitet. Statt dessen erstellt man eine lokale Kopie der Dateien, bearbeitet diese und sendet die Änderungen dann zurück in die Cloud und **git** stellt sicher, dass die Änderungen mit möglichen Änderungen anderer kombiniert und synchronisiert werden. Dies kann dann auch manchmal zu sogenannten *merge conflicts* führen. Dann muss man **git** unterstützen und entscheiden, welche Änderungen übernommen und welche gelöscht werden sollen. Jedes Projekt wird in einem sogenannten *Repository* oder kurz *Repo* verwaltet. In diesem Seminar nutzen wir **git** primär um eine Kopie des Code-Repos zu erstellen, damit ihr darauf aufbauen üben könnt. So könnt ihr alle Code-Beispiele nutzen und müsst euch gleichzeitig keine Sorge machen, dass ihr etwas kaputt machen könntet.
 
-*LINKLIST*
+*CLI LINKLIST*
 
-There are two ways of using GitHub (git): the desktop app and the command line.
+Es gibt zwei Möglichkeiten das **git**- bzw. GitHub-System zu nutzen: Die GitHub Desktop App und die Kommandozeile (CLI).
 
-#### GitHub Desktop App (recommended)
+#### GitHub Desktop App (empfohlen)
 
-{{video("https://fhpcloud.fh-potsdam.de/s/HLdw8ABZ2dHBqDq/download/de_setup_github.mp4", "/images/thumbnails/de_setup_github.png", "de_setup_github", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo/download/de_setup_github.mp4", "/images/thumbnails/de_setup_github.png", "de_setup_github", translations.subtitles[locale], locale)}}
 
 <!--
 de: https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo
 en: https://fhpcloud.fh-potsdam.de/s/HLdw8ABZ2dHBqDq
 -->
 
-If you are using GitHub for the first time, its strongly recommended that you use the desktop app. The graphical user interface guides you through most of the difficult bits and you don't need to remember all the commands.
+Wenn du **git** und GitHub zum ersten Mal nutzt, ist es sehr empfehlenswert erstmal mit der Desktop App zu starten. Die grafische Benutzeroberfläche leitet dich durch die verschiedenen Aufgaben, ohne dass man sich direkt alle Kommandos merken muss.
 
-##### 1. Install GitHub Desktop
-Go to the [download page](https://desktop.github.com/) and install the app. GitHub desktop also installs the git cli (see below) automatically for you.
+##### 1. GitHub Desktop installieren
+Die Anwendung kann [hier](https://desktop.github.com/) heruntergeladnen und dann installiert werden. GitHub Desktop installiert auch die **git**-CLI (siehe unten).
 
 #### GitHub Command Line (optional)
 
-The GitHub or Git command line interface (CLI) tools are a lot more powerful than the desktop app, but you need to remember or lookup the commands.
+Die GitHub oder besser **git** Kommandozeilenschnittstelle (CLI) ist noch wesentlich mächtiger als die Desktop App und hat mehr funktionen, dafür muss man sich aber alle Kommandos merken und diese manuell eingeben.
 
-##### 1. Install git cli
-Installation instructions for windows, linux and mac can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+##### 1. Die git CLI installieren
+Eine Installationsanleitung für Windows, Mac und Linux gibt es [hier](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-##### 2. Install github cli
-Github cli will help you with authentication. Installation instructions can be found [here](https://github.com/cli/cli).
+##### 2. GitHub CLI installieren
+Github hat eine erweiterte CLI, die z.B. dabei hilft sich bei GitHub zu authentifizieren. Eine Installationsanleitung gibt es [hier](https://github.com/cli/cli).
 
-### Important Note for the git fork
-The fork you created under your own account is public, which means everybody can see it. So don't push any sensitive information into it. The idea behing it being public is, that participants of the class can learn from one another and its also easier for me to check in on your progress and help you along the way. If you don't like your code being out there, simply delete the repo after you finished the seminar. There is also tutorials on how to create a private repo from a public repo on the web, but its a little bit more advanced.
+### Wichtiger Hinweis für GitHub Forks
+Den Fork den du von unserem Code-Repo erstellst ist öffentlich. Dies bedeutet, dass jeder sehen kann was du an diesem Code zurück in die Cloud pushst. Achte also bitte darauf, dass du keine geheimen Informationen in deinem Repo ablegst. Die Idee dahinter, dass das Repo öffentlich ist, ist das die Teilnehmer*innen sich im Laufe des Kurses auch gegenseitig über die Schulter schauen können. Außerdem kann ich euch so auch einfacher bei euren Projekten unterstützen. Wenn es dich stört, dass andere deinen Code sehen können, dann lösche das Repo einfach nachdem das Semester vorbei ist.
 
-#### Updating the fork
+#### Einen Fork aktualisieren
 
-**It's highly likely you won't need the following for this seminar.**
+**Es ist sehr sehr wahrscheinlich das du folgendes nicht im Rahmen dieses Seminars benötigst.**
 
-If there should be any changes to the original repo that you want to include in your personal copy, we need to use the command line. Sadly this cannot be done with the GitHub Desktop App. Open the repo in VS Code. If you are using the desktop app, you can right click on the repo to do this. Then open a new terminal in VS Code (Menu > Terminal > New Terminal). Now type the following commands (press enter after every line):
+Wir erstellen einen sogenannten "Fork" des original Code-Repos. Der "Fork" und das Original sind technisch immer noch miteinander verbunden. Sollte ich im Laufe des Seminars Änderungen am Repo vornehmen, könnt ihr euch diese Änderungen in euer persönliches Repo herunterladen. Hierfür müssen wir allerdings die oben erwähnte CLI nutzen. Um die CLI für ein Repo zu öffnen, einfach in der Desktop App, Rechts-Klick auf ein Repo klicken. In VS Code kann man auch ein neues Terminal öffenen (Menu > Terminal > New Terminal). Gebe dann folgende Kommandos ein (drücke Enter nach jeder Zeile):
 
 ```
 git fetch upstream
@@ -97,9 +97,9 @@ git merge upstream/main
 git push
 ```
 
-It can happen, that after line 3 you will receive a merge conflict. Switch back to the github desktop app and the app will let you know what files to review.
+Es kann passieren, dass es nach Zeile 3 einen "merge conflict" gibt. Wenn dem so ist, gehe zurück in die GitHub Desktop App, die App wird dir aufzeigen, welche Dateien du dir genauer anschauen musst.
 
-**Note**: If you are doing something similar on an older repo you will notice that line 2 and 3 will produce errors, because *main* does not exist. A while ago [Github changed](https://github.com/github/renaming) the default name of the primary branch from *master* to *main*. But older repos still use the old name.
+**Note**: Wenn du etwas ähnliches mit einem anderen, älteren Repo machst, wirst du feststellen, das Zeile 2 und 3 des Fork-Updates einen Fehler produzieren. Dies liegt daran, dass der Hauptstrang, früher nicht *main* sondern *master* hieß. GitHub hat diese Benamung vor einiger Zeit [geändert](https://github.com/github/renaming).
 
-### Let's go
-Sorry, for this rather boring start. From here on, its going to be a lot more fun.
+### Los gehts
+Nachdem wir nun alles eingerichtet haben, kann es nun losgehen...
