@@ -14,3 +14,5 @@
 - redefining functions (hmmmm puh)
 
 - screen reader test for parametric
+
+- reference icons: https://iconoir.com/
