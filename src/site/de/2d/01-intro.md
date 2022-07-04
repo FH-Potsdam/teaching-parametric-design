@@ -52,7 +52,7 @@ Für diejenigen die es interessiert wie die `index.html` Datei aufgebaut ist, ha
 
 ### sketch.js
 
-{{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png", "de_2d_intro_ref", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png", "de_2d_intro_sketch", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
 en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/de_sketch.mp4

@@ -524,12 +524,12 @@ ul.langNav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 160px;
+  max-width: 120px;
 }
 
 ul.langNav li {
   margin-right: 6px;
-  &.dgs, &:nth-child(3) {
+  &.dgs, &:nth-child(2) {
     margin:0;
   }
 }

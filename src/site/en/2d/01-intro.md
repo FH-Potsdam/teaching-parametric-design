@@ -52,7 +52,7 @@ For those who are interested, i have created a super [short introduction](html.m
 
 ### sketch.js
 
-{{video("https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4", "/images/thumbnails/en_2d_intro_sketch.png", "en_2d_intro_ref", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4", "/images/thumbnails/en_2d_intro_sketch.png", "en_2d_intro_sketch", translations.subtitles[locale], locale)}}
 <!--
 de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
 en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/en_sketch.mp4
