@@ -845,6 +845,10 @@ h3.inspiration {
       }
     }
 
+    &.inactive {
+      display:none;
+    }
+
     h5 {
       font-weight: normal;
       line-height: 21px;
@@ -860,5 +864,37 @@ h3.inspiration {
 }
 
 #inspiration-filter{
-  
+  padding-bottom: 40px; 
+
+  ul, li {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  li a{
+    padding: 3px 7px;
+    border: 2px solid $accent-color2;
+    border-radius: 3px;
+    color: $accent-color2;
+    &:hover {
+      text-decoration: none;
+      border-color: $accent-color;
+      color: $accent-color;
+      cursor: pointer;
+    }
+    &.active {
+      background: $accent-color2;
+      color: white;
+      &:hover {
+        background: $accent-color;
+      }
+    }
+  }
 }

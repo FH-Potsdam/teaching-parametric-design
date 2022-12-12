@@ -20,17 +20,21 @@
     "cn": "字幕"
   },
   "inspiration": {
+    "all": {
+      "de": "Alle",
+      "en": "All"
+    },
     "analog": {
       "de": "Analog",
       "en": "Analog"
     },
     "recent": {
-      "de": "Aktuell",
+      "de": "Aktuelles",
       "en": "Recent"
     },
     "early": {
-      "de": "Anfänge",
-      "en": "Early"
+      "de": "Frühe Arbeiten",
+      "en": "Early Work"
     },
     "physical": {
       "de": "Physisch",

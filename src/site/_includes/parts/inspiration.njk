@@ -1,5 +1,6 @@
 {% macro filter(inspiration, translations, locale) %}
 <ul>
+  <li><a data-class="all">{{translations.inspiration.all[locale]}}</a></li>
 {% set filters = [] %}
 {% set filterObjs = [] %}
 
@@ -17,13 +18,38 @@
 <li><a data-class="{{f[0]}}">{{f[1]}}</a></li>
 {% endfor %}
 </ul>
+<script>
+    let currentDataClass = null;
+    document.querySelectorAll('a[data-class]').forEach(el => {
+      el.addEventListener('click', (event) => {
+        const cl = event.target.getAttribute('data-class');
+        console.log(cl);
+        document.querySelectorAll('a[data-class]').forEach(el => el.className = '');
+        if (cl === 'all' || cl === currentDataClass) {
+          currentDataClass = null;
+        } else {
+          currentDataClass = cl;
+          document.querySelector('a[data-class="' + cl + '"]').className='active';
+        }
+        document.querySelectorAll('.inspiration-item').forEach(el => {
+          if (!currentDataClass) {
+            el.classList.remove('inactive');
+          } else if (!el.classList.contains('inspiration-' + currentDataClass)) {
+            el.classList.add('inactive');
+          } else {
+            el.classList.remove('inactive');
+          }
+        });
+      });
+    });
+</script>
 {% endmacro %}
 
 {% macro list(inspiration, translations, locale) %}
 <ul>
 {% for i in inspiration | sort(false, true, 'name') %}
 {% for ii in i.images %}
-<li style="background-image:url(/images/inspiration/{{ ii.src }}.jpg);">
+<li class="inspiration-item inspiration-{{i.category}}" style="background-image:url(/images/inspiration/{{ ii.src }}.jpg);">
 <div>
 {% if loop.index0 == 0 %}
 <h5>{{ translations.inspiration[i.category][locale] }}</h5><br />
