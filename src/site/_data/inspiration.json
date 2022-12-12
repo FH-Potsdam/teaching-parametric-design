@@ -4,15 +4,15 @@
     "name": "Dmitri Cherniak",
     "images":[
       {
-        "src": "cherniak.jpg",
+        "src": "cherniak",
         "credit": "Dmitri Cherniak, Ringers #29, 2021. Phillips.com"
       },
       {
-        "src": "cherniak.png",
+        "src": "cherniak3",
         "credit": "Dmitri Cherniak, Ringers #191, 2021. Phillips.com"
       },
       {
-        "src": "cherniak2.png",
+        "src": "cherniak2",
         "credit": "Dmitri Cherniak, Ringers #77, 2021. Phillips.com"
       }
     ]
@@ -22,7 +22,7 @@
     "name": "Snowfro",
     "images":[
       {
-        "src": "snowfro.png",
+        "src": "snowfro",
         "credit": "Snowfro, Chromie Squiggle #9304. 2022. Phillips.com"
       }
     ]
@@ -32,27 +32,27 @@
     "name": "Frieder Nake",
     "images":[
       {
-        "src": "nake.png",
+        "src": "nake",
         "credit": "Frieder Nake, Matrix Multiplication Series 34. 1968. Phillips.com"
       },
       {
-        "src": "nake2.png",
+        "src": "nake2",
         "credit": "Frieder Nake, Random Polygonal Train Horizontal/Vertical. 1965. Phillips.com"
       },
       {
-        "src": "nake.jpg",
+        "src": "nake3",
         "credit": "Frieder Nake, Markovketten 29 (Markov Chains). 2005. Spalter Digital. spalterdigital.com"
       },
       {
-        "src": "nake.webp",
+        "src": "nake4",
         "credit": "Frieder Nake, ‘Hommage à Paul Klee’, 50 × 50 cm, 1965, version in pink. borism.medium.com"
       },
       {
-        "src": "nake2.webp",
+        "src": "nake5",
         "credit": "Frieder Nake, ‘Walk Through Raster’, four parts, 50 × 50 cm, ink on paper, 1966. borism.medium.com"
       },
       {
-        "src": "nake3.webp",
+        "src": "nake6",
         "credit": "Frieder Nake, ‘Geradenscharen’, 70 × 50 cm, ink on paper, 1965. borism.medium.com"
       }
     ]
@@ -62,7 +62,7 @@
     "name": "Gottfried Jäger",
     "images":[
       {
-        "src": "jager.png",
+        "src": "jager",
         "credit": "Gottfried Jäger, Lochblendenstruktur 3.8.14 D 3.1. 1967. Phillips.com"
       }
     ]
@@ -72,15 +72,15 @@
     "name": "Vera Molnar",
     "images":[
       {
-        "src": "molnar2.png",
+        "src": "molnar2",
         "credit": "Vera Molnar, (Des)ordres, 1974. Phillips.com"
       },
       {
-        "src": "molnar.png",
+        "src": "molnar",
         "credit": "Vera Molnar, 8 Colonnes, 1985. Phillips.com"
       },
       {
-        "src": "molnar3.jpg",
+        "src": "molnar3",
         "credit": "Vera Molnar, Interruptions 20, 1969. digitalartarchive.siggraph.org"
       }
     ]
@@ -90,7 +90,7 @@
     "name": "Desmond Paul Henry",
     "images":[
       {
-        "src": "desmond.jpg",
+        "src": "desmond",
         "credit": "Desmond Paul Henry, Picture produced by Drawing Machine 1, 1962. wikipedia.org"
       }
     ]
@@ -100,7 +100,7 @@
     "name": "Hilma af Klint",
     "images":[
       {
-        "src": "hilma-af-klint-svanen.jpg",
+        "src": "hilma-af-klint-svanen",
         "credit": "Desmond Paul Henry, Picture produced by Drawing Machine 1, 1962. wikiart.org"
       }
     ]
@@ -110,11 +110,11 @@
     "name": "Nasreen Mohamedi",
     "images":[
       {
-        "src": "nfasreen.jpg",
+        "src": "nasreen",
         "credit": "Nasreen Mohamedi, Untitled, 1970. wikiart.org"
       },
       {
-        "src": "nfasreen2.jpg",
+        "src": "nasreen2",
         "credit": "Nasreen Mohamedi, Untitled. wikiart.org"
       }
     ]
@@ -124,7 +124,7 @@
     "name": "Lygia Clark",
     "images":[
       {
-        "src": "clark.jpg",
+        "src": "clark",
         "credit": "Lygia Clark, Modulated surface n. 20, 1956 © Courtesy The World of Lygia Clark Cultural Association, meer.com"
       }
     ]
@@ -134,7 +134,7 @@
     "name": "Carmen Herrera",
     "images":[
       {
-        "src": "carmen.jpg",
+        "src": "carmen",
         "credit": "Carmen Herrera, Untitled, 1952. MoMA, moma.org"
       }
     ]
@@ -144,11 +144,11 @@
     "name": "Agnes Martin",
     "images":[
       {
-        "src": "martin.jpg",
+        "src": "martin",
         "credit": "Agnes Martin, Untitles, 1960. MoMA, moma.org"
       },
       {
-        "src": "martin2.jpg",
+        "src": "martin2",
         "credit": "Agnes Martin, Little Sister, 1962. Guggenheim, guggenheim.org"
       }
     ]
@@ -158,19 +158,19 @@
     "name": "Jared Tarbell",
     "images":[
       {
-        "src": "tarbell.jpg",
+        "src": "tarbell",
         "credit": "Jared Tarbell, Substrate, 2004. flickr.com"
       },
       {
-        "src": "tarbell2.jpg",
+        "src": "tarbell2",
         "credit": "Jared Tarbell, Sand Dollars, 2004. flickr.com"
       },
       {
-        "src": "tarbell3.jpg",
+        "src": "tarbell3",
         "credit": "Jared Tarbell, One in the Dark, 2017. flickr.com"
       },
       {
-        "src": "tarbell4.jpg",
+        "src": "tarbell4",
         "credit": "Jared Tarbell, Metatron's Cube, 2014. flickr.com"
       }
     ]
@@ -180,15 +180,15 @@
     "name": "Georg Nees",
     "images":[
       {
-        "src": "nees.webp",
+        "src": "nees",
         "credit": "Georg Nees, silkscreen print, based on plotter drawing, 100 x 70 cm, 1970. dam.org"
       },
       {
-        "src": "nees2.webp",
+        "src": "nees2",
         "credit": "Georg Nees, Untitled, silkscreen, 38 x 50 cm (size of paper), edition of 45, 1972. dam.org"
       },
       {
-        "src": "nees3.webp",
+        "src": "nees3",
         "credit": "Georg Nees, Untitled, silkscreen, 70 x 100 cm (size of paper), unlimited, 1965. dam.org"
       }
     ]
@@ -198,20 +198,16 @@
     "name": "Kjetil Golid",
     "images":[
       {
-        "src": "golid.png",
+        "src": "golid",
         "credit": "Kjetil Golid, Archetype #581, 2021. NFT. archipelago.art"
       },
       {
-        "src": "golid2.png",
+        "src": "golid2",
         "credit": "Kjetil Golid, Archetype #240, 2021. NFT. archipelago.art"
       },
       {
-        "src": "golid3.png",
+        "src": "golid3",
         "credit": "Kjetil Golid, Archetype #3, 2021. NFT. archipelago.art"
-      },
-      {
-        "src": "golid4.png",
-        "credit": "Kjetil Golid, Archetype #20, 2021. NFT. archipelago.art"
       }
     ]
   },
@@ -220,23 +216,23 @@
     "name": "Matt DesLauriers",
     "images": [
       {
-        "src": "matt.png",
+        "src": "matt",
         "credit": "Matt DesLauriers, Main Field, 2021. behance.net"
       },
       {
-        "src": "matt2.jpg",
+        "src": "matt2",
         "credit": "Matt DesLauriers, color tests, 2021. instagram.com"
       },
       {
-        "src": "matt3.jpg",
+        "src": "matt3",
         "credit": "Matt DesLauriers, subscapes, 2021. instagram.com"
       },
       {
-        "src": "matt4.jpg",
+        "src": "matt4",
         "credit": "Matt DesLauriers, kinetic, 2021. instagram.com"
       },
       {
-        "src": "matt5.jpg",
+        "src": "matt5",
         "credit": "Matt DesLauriers, kinetic, 2021. instagram.com"
       }
     ]
@@ -246,15 +242,15 @@
     "name": "Tyler Hobbs",
     "images": [
       {
-        "src": "hobbs.png",
+        "src": "hobbs",
         "credit": "Tyler Hobbs, Fidenza, 2020. tylerxhobbs.com"
       },
       {
-        "src": "hobbs2.png",
+        "src": "hobbs2",
         "credit": "Tyler Hobbs, Clarion, 2017. tylerxhobbs.com"
       },
       {
-        "src": "hobbs3.png",
+        "src": "hobbs3",
         "credit": "Tyler Hobbs, Strength of night, 2019. tylerxhobbs.com"
       }
     ]
@@ -264,15 +260,15 @@
     "name": "Casey Reas",
     "images": [
       {
-        "src": "reas.png",
+        "src": "reas",
         "credit": "Casey Reas, Process 15, 2006. reas.com"
       },
       {
-        "src": "reas2.png",
+        "src": "reas2",
         "credit": "Casey Reas, Process 16 (Software 3), 2012. reas.com"
       },
       {
-        "src": "reas3.png",
+        "src": "reas3",
         "credit": "Casey Reas, 100% Gray Coverage, 2013. reas.com"
       }
     ]
@@ -282,15 +278,15 @@
     "name": "Refik Anadol",
     "images": [
       {
-        "src": "anadol.jpg",
+        "src": "anadol",
         "credit": "Refik Anadol, MACHINE HALLUCINATIONS — NATURE DREAMS, 2021. refikanadol.com"
       },
       {
-        "src": "anadol2.jpg",
+        "src": "anadol2",
         "credit": "Refik Anadol, Infinite Space, 2019. refikanadol.com"
       },
       {
-        "src": "anadol3.jpg",
+        "src": "anadol3",
         "credit": "Refik Anadol, Generative Sketches, 2013. refikanadol.com"
       }
     ]
@@ -300,7 +296,7 @@
     "name": "Roman Verostko",
     "images": [
       {
-        "src": "verostko.jpg",
+        "src": "verostko",
         "credit": "Roman Verostko, Gaia — Untitled, 2003. Courtesy of the artist and DAM. rightclicksave.com"
       }
     ]
@@ -310,7 +306,7 @@
     "name": "Kerry Strand",
     "images": [
       {
-        "src": "strand.jpg",
+        "src": "strand",
         "credit": "Kerry Strand, Crest, 1972. digitalartarchive.siggraph.org"
       }
     ]
@@ -320,7 +316,7 @@
     "name": "Colette Bangert",
     "images": [
       {
-        "src": "bangert.jpg",
+        "src": "bangert",
         "credit": "Colette Bangert & Charles Bangert, Circe’s Window, 1985. digitalartarchive.siggraph.org"
       }
     ]
@@ -330,7 +326,7 @@
     "name": "Hideki Mitsui",
     "images": [
       {
-        "src": "mitsui.jpg",
+        "src": "mitsui",
         "credit": "Hideki Mitsui, Cosmic Image: Transmigration, 1985. digitalartarchive.siggraph.org"
       }
     ]
@@ -340,7 +336,7 @@
     "name": "Herbert W. Franke",
     "images": [
       {
-        "src": "franke.jpg",
+        "src": "franke",
         "credit": "Herbert W. Franke, Farbraster 42, 1975. digitalartarchive.siggraph.org"
       }
     ]
@@ -350,7 +346,7 @@
     "name": "Jürgen Lit Fischer",
     "images": [
       {
-        "src": "fischer.jpg",
+        "src": "fischer",
         "credit": "Jürgen Lit Fischer, Intervals / Intervalle, 1985. digitalartarchive.siggraph.org"
       }
     ]
@@ -360,7 +356,7 @@
     "name": "Vassily Kandinsky",
     "images": [
       {
-        "src": "kandinsky.jpg",
+        "src": "kandinsky",
         "credit": "Vassily Kandinsky, Circles in a Circle, 1923. wikipedia.org"
       }
     ]
@@ -370,7 +366,7 @@
     "name": "Vickie Vainionpää",
     "images": [
       {
-        "src": "vickie.jpg",
+        "src": "vickie",
         "credit": "Vickie Vainionpää, Dark Mode, 2022. artland.com"
       }
     ]
@@ -380,17 +376,7 @@
     "name": "Rhea Myers",
     "images": [
       {
-        "src": "rhea.jpg",
-        "credit": "Rhea Myers, Blockchain Aesthetics, 2015. rhea.art"
-      }
-    ]
-  },
-  {
-    "category": "recent",
-    "name": "Rhea Myers",
-    "images": [
-      {
-        "src": "rhea.jpg",
+        "src": "rhea",
         "credit": "Rhea Myers, Blockchain Aesthetics, 2015. rhea.art"
       }
     ]
@@ -400,7 +386,7 @@
     "name": "Mario Klingemann, Quasimondo",
     "images": [
       {
-        "src": "klingemann.jpg",
+        "src": "klingemann",
         "credit": "Mario Klingemann, Sketchmaker, 2007. underdestruction.com"
       }
     ]
@@ -410,15 +396,15 @@
     "name": "Manfred Mohr",
     "images": [
       {
-        "src": "mohr.jpg",
+        "src": "mohr1",
         "credit": "Manfred Mohr, P-460a, 1989. emohr.com"
       },
       {
-        "src": "mohr2.gif",
+        "src": "mohr2",
         "credit": "Manfred Mohr, cubic limit, sequence, 1972-1975. emohr.com"
       },
       {
-        "src": "mohr3.gif",
+        "src": "mohr3",
         "credit": "Manfred Mohr, space.color, P-701/B _ enduraChrome, 1999. emohr.com"
       }
     ]
@@ -428,11 +414,11 @@
     "name": "Anna Ridler",
     "images": [
       {
-        "src": "ridler.jpg",
+        "src": "ridler",
         "credit": "Anna Ridler & Caroline Sinders, Cypress Trees: Fragmentation, 2021. annaridler.com"
       },
       {
-        "src": "ridler2.jpeg",
+        "src": "ridler2",
         "credit": "Anna Ridler, Bloemenveiling, 2019. annaridler.com"
       }
     ]
@@ -442,19 +428,19 @@
     "name": "Joshua Davis",
     "images": [
       {
-        "src": "davis.jpg",
+        "src": "davis",
         "credit": "Joshua Davis, ps2.praystation v1, 2000. joshuadavis.com"
       },
       {
-        "src": "davis2.png",
+        "src": "davis2",
         "credit": "Joshua Davis, Anderson Ranch Print, 2016. joshuadavis.com"
       },
       {
-        "src": "davis3.jpg",
+        "src": "davis3",
         "credit": "Joshua Davis, Aim High, Keep Moving, 2010. joshuadavis.com"
       },
       {
-        "src": "davis4.jpg",
+        "src": "davis4",
         "credit": "Joshua Davis, Faded no11 / no12, 2015. joshuadavis.com"
       }
     ]
@@ -464,19 +450,19 @@
     "name": "Robert Hodgin",
     "images": [
       {
-        "src": "hodgin.jpg",
+        "src": "hodgin",
         "credit": "Robert Hodgin, Written Images, 2011. roberthodgin.com"
       },
       {
-        "src": "hodgin2.jpg",
+        "src": "hodgin2",
         "credit": "Robert Hodgin, Embroidery is a procedural system, 2020. roberthodgin.com"
       },
       {
-        "src": "hodgin3.jpg",
+        "src": "hodgin3",
         "credit": "Robert Hodgin, Meander, early prototype, 2020. roberthodgin.com"
       },
       {
-        "src": "hodgin4.jpg",
+        "src": "hodgin4",
         "credit": "Robert Hodgin, Individuation, 2021-2022. roberthodgin.com"
       }
     ]
@@ -486,11 +472,11 @@
     "name": "Michael Hansmeyer",
     "images": [
       {
-        "src": "hansmeyer.webp",
+        "src": "hansmeyer",
         "credit": "Michael Hansmeyer, Subdivided Columns, 2010. michael-hansmeyer.com"
       },
       {
-        "src": "hansmeyer.webp",
+        "src": "hansmeyer2",
         "credit": "Michael Hansmeyer, Subdivided Columns, 2010. michael-hansmeyer.com"
       }
     ]
@@ -500,15 +486,15 @@
     "name": "Boris Müller",
     "images": [
       {
-        "src": "mueller.jpg",
+        "src": "mueller",
         "credit": "Boris Müller, Poetry on the Road, 2006. esono.com"
       },
       {
-        "src": "mueller2.jpg",
+        "src": "mueller2",
         "credit": "Boris Müller, Poetry on the Road, 2003. esono.com"
       },
       {
-        "src": "mueller3.jpg",
+        "src": "mueller3",
         "credit": "Boris Müller & Studio NAND, Poetry on the Road, 2006. esono.com"
       }
     ]
@@ -518,7 +504,7 @@
     "name": "Katharina Brunner",
     "images": [
       {
-        "src": "brunner.png",
+        "src": "brunner",
         "credit": "Katharina Brunner, Generative Art, 2018. katharinabrunner.de"
       }
     ]
@@ -528,7 +514,7 @@
     "name": "Larvalabs",
     "images": [
       {
-        "src": "autoglyphs.svg",
+        "src": "autoglyphs",
         "credit": "John Watkinson & Matt Hall, Autoglyphs, 2019. larvalabs.com"
       }
     ]
@@ -538,7 +524,7 @@
     "name": "Ezra Miller",
     "images": [
       {
-        "src": "ezra.avif",
+        "src": "ezra",
         "credit": "Ezra Miller, Solvency, 2021. opensea.io"
       }
     ]
@@ -548,15 +534,15 @@
     "name": "Aaron Penne",
     "images": [
       {
-        "src": "aaron.avif",
+        "src": "aaron",
         "credit": "Aaron Penne, Already Here, 2022. foundation.app"
       },
       {
-        "src": "aaron2.avif",
+        "src": "aaron2",
         "credit": "Aaron Penne, Wonderfully Silent Conversations (w/HWF), 2022. foundation.app"
       },
       {
-        "src": "aaron.png",
+        "src": "aaron3",
         "credit": "Aaron Penne, Within/Without, 2022. aaronpenne.io"
       }
     ]
@@ -566,11 +552,11 @@
     "name": "Iskra Ovelitchkova",
     "images": [
       {
-        "src": "iskra.jpg",
+        "src": "iskra",
         "credit": "Iskra Velitchkova, Prolet II, 2020. iskraovelitchkova.com"
       },
       {
-        "src": "iskra2.jpg",
+        "src": "iskra2",
         "credit": "Iskra Velitchkova, ToSolaris, Multidimensional ourselves, 2022. iskraovelitchkova.com"
       }
     ]
@@ -580,7 +566,7 @@
     "name": "Ivona Tau",
     "images": [
       {
-        "src": "ivona.jpg",
+        "src": "ivona",
         "credit": "Ivona Tau, MYTHIC LATENT GLITCHES, 2022. ivonatau.com"
       }
     ]
@@ -590,11 +576,11 @@
     "name": "Lisa Orth",
     "images": [
       {
-        "src": "orth.avif",
+        "src": "orth",
         "credit": "Lisa Orth, Channel: 32, 2022. opensea.io"
       },
       {
-        "src": "orth.webp",
+        "src": "orth2",
         "credit": "Lisa Orth, Between Stations, 2021. lisaorth.xyz"
       }
     ]
@@ -604,11 +590,11 @@
     "name": "Anna Lucia",
     "images": [
       {
-        "src": "lucia.png",
+        "src": "lucia",
         "credit": "Anna Lucia, Art For Walls in Public Spaces, 2022. fxhash.xyz"
       },
       {
-        "src": "lucia2.png",
+        "src": "lucia2",
         "credit": "Anna Lucia, Loom, 2021. artblocks.io"
       }
     ]
@@ -618,33 +604,15 @@
     "name": "Aleksandra Jovanic",
     "images": [
       {
-        "src": "jovanic.jpg",
+        "src": "jovanic",
         "credit": "Aleksandra Jovanic, Algorithmic Art, 2022. aleksandrajovanic.com"
       },
       {
-        "src": "jovanic2.jpg",
+        "src": "jovanic2",
         "credit": "Aleksandra Jovanic, Algorithmic Art, 2022. aleksandrajovanic.com"
       },
       {
-        "src": "jovanic3.jpg",
-        "credit": "Aleksandra Jovanic, Grids & Stripes & Blobs, 2022. aleksandrajovanic.com"
-      }
-    ]
-  },
-  {
-    "category": "recent",
-    "name": "Aleksandra Jovanic",
-    "images": [
-      {
-        "src": "jovanic.jpg",
-        "credit": "Aleksandra Jovanic, Algorithmic Art, 2022. aleksandrajovanic.com"
-      },
-      {
-        "src": "jovanic2.jpg",
-        "credit": "Aleksandra Jovanic, Algorithmic Art, 2022. aleksandrajovanic.com"
-      },
-      {
-        "src": "jovanic3.jpg",
+        "src": "jovanic3",
         "credit": "Aleksandra Jovanic, Grids & Stripes & Blobs, 2022. aleksandrajovanic.com"
       }
     ]
@@ -654,15 +622,15 @@
     "name": "Amy Goodchild",
     "images": [
       {
-        "src": "maplands.png",
+        "src": "maplands",
         "credit": "Amy Goodchild, Maplands, #54, 2021. amygoodchild.com"
       },
       {
-        "src": "goodchild2.jpg",
+        "src": "goodchild2",
         "credit": "Amy Goodchild, No Apologies, 2021. amygoodchild.com"
       },
       {
-        "src": "goodchild3.png",
+        "src": "goodchild3",
         "credit": "Amy Goodchild, Blend, 2020. amygoodchild.com"
       }
     ]
@@ -672,11 +640,11 @@
     "name": "Itzel Yard, ix.shells",
     "images": [
       {
-        "src": "itzel.jpg",
+        "src": "itzel",
         "credit": "Itzel Yard, sunsets are warm, 2021. instagram.com"
       },
       {
-        "src": "itzel2.jpg",
+        "src": "itzel2",
         "credit": "Itzel Yard, 1m drafts 1 project 1 algorithm, 2021. instagram.com"
       }
     ]
@@ -686,7 +654,7 @@
     "name": "Monica Rizzolli",
     "images": [
       {
-        "src": "rizzolli.webp",
+        "src": "rizzolli",
         "credit": "Monica Rizzolli, Fragments of an Infinite Field, 2021. time.com"
       }
     ]
@@ -696,7 +664,7 @@
     "name": "Aurélia Durand",
     "images": [
       {
-        "src": "durand.png",
+        "src": "durand",
         "credit": "Aurélia Durand, Black Arts Project, 2022. aurelia-studio.com, theblackarts.xyz"
       }
     ]
@@ -706,21 +674,11 @@
     "name": "Elaine Lustig Cohen",
     "images": [
       {
-        "src": "cohen.jpg",
+        "src": "cohen",
         "credit": "Elaine Lustig Cohen, The Glass House, 2015. p-exclamation.com"
       },
       {
-        "src": "cohen2.jpg",
-        "credit": "Elaine Lustig Cohen, The Glass House, 2015. p-exclamation.com"
-      }
-    ]
-  },
-  {
-    "category": "analog",
-    "name": "Elaine Lustig Cohen",
-    "images": [
-      {
-        "src": "cohen.jpg",
+        "src": "cohen2",
         "credit": "Elaine Lustig Cohen, The Glass House, 2015. p-exclamation.com"
       }
     ]
@@ -730,11 +688,11 @@
     "name": "Lillian Schwartz",
     "images": [
       {
-        "src": "schwartz.jpg",
+        "src": "schwartz",
         "credit": "Lillian Schwartz, Pixillation, 1970. artforum.com"
       },
       {
-        "src": "schwartz2.jpg",
+        "src": "schwartz2",
         "credit": "Lillian Schwartz, Pixillation, 1970. holo.mg"
       }
     ]
@@ -744,19 +702,19 @@
     "name": "Manolo Gamboa Naon",
     "images": [
       {
-        "src": "naon.jpg",
+        "src": "naon",
         "credit": "Manolo Gamboa Naon, rrbbn, 2022. behance.net"
       },
       {
-        "src": "naon2.jpg",
+        "src": "naon2",
         "credit": "Manolo Gamboa Naon, pprdd, 2022. behance.net"
       },
       {
-        "src": "naon3.jpg",
+        "src": "naon3",
         "credit": "Manolo Gamboa Naon, nnccr, 2022. behance.net"
       },
       {
-        "src": "naon4.jpg",
+        "src": "naon4",
         "credit": "Manolo Gamboa Naon, llll, 2022. behance.net"
       }
     ]
@@ -766,15 +724,15 @@
     "name": "Zach Lieberman",
     "images": [
       {
-        "src": "lieberman.jpg",
+        "src": "lieberman",
         "credit": "Zach Lieberman, daily sketches, 2022. instagram.com, zach.li"
       },
       {
-        "src": "lieberman2.jpg",
+        "src": "lieberman2",
         "credit": "Zach Lieberman, daily sketches, 2022. instagram.com, zach.li"
       },
       {
-        "src": "lieberman3.jpg",
+        "src": "lieberman3",
         "credit": "Zach Lieberman, daily sketches, 2022. instagram.com, zach.li"
       }
     ]
@@ -784,11 +742,11 @@
     "name": "Amrit Pal Singh",
     "images": [
       {
-        "src": "amrit.jpg",
+        "src": "amrit",
         "credit": "Amrit Pal Singh, 36 days of type, 2018-2020. amrit.art"
       },
       {
-        "src": "amrit2.jpg",
+        "src": "amrit2",
         "credit": "Amrit Pal Singh, messy neons, 2020. amrit.art"
       }
     ]
@@ -798,11 +756,11 @@
     "name": "Sol LeWitt",
     "images": [
       {
-        "src": "witt.jpg",
+        "src": "witt",
         "credit": "Sol LeWitt, A Square Divided Horizontally and Vertically into Four Equal Parts, Each with a Different Direction of Alternating Parallel Bands of Lines 1982. tate.org.uk"
       },
       {
-        "src": "witt2.jpg",
+        "src": "witt2",
         "credit": "Sol LeWitt, Variations of incomplete open cubes, 1974. socks-studio.com, metmuseum.org"
       }
     ]
@@ -812,11 +770,11 @@
     "name": "Pak",
     "images": [
       {
-        "src": "pak.webp",
+        "src": "pak",
         "credit": "Pak, The Fungible Collection, Complexity, 2022. sothebys.com"
       },
       {
-        "src": "pak2.webp",
+        "src": "pak2",
         "credit": "Pak, The Fungible Collection, The Switch, 2022. sothebys.com"
       }
     ]
@@ -826,11 +784,11 @@
     "name": "Munira Hamzah (Moon), Mumu the stan",
     "images": [
       {
-        "src": "mumu.png",
+        "src": "mumu",
         "credit": "Mumu, mumu_tezos4iran, woman. life. freedom, 2022. butiq.art/mumu, teia.art"
       },
       {
-        "src": "mumu2.png",
+        "src": "mumu2",
         "credit": "Mumu, kato, connections 005, 2022. butiq.art/mumu, teia.art"
       }
     ]
@@ -840,7 +798,7 @@
     "name": "CSLIM",
     "images": [
       {
-        "src": "cslim.png",
+        "src": "cslim",
         "credit": "CSLIM, Secret Garden, 2022. cslim-studio.com, teia.art"
       }
     ]
@@ -850,11 +808,11 @@
     "name": "Grace C. Hertlein",
     "images": [
       {
-        "src": "hertlein.jpg",
+        "src": "hertlein",
         "credit": "Grace C. Hertlein, The Field, 1970. data.compart-bremen.de"
       },
       {
-        "src": "hertlein2.jpg",
+        "src": "hertlein2",
         "credit": "Grace C. Hertlein, The Field, 1970. data.compart-bremen.de"
       }
     ]
@@ -864,19 +822,19 @@
     "name": "Onformative",
     "images": [
       {
-        "src": "onformative.png",
+        "src": "onformative",
         "credit": "Christopher Warnow, Credric Kiefer & Julia Laub, Immaterials, 2011. onformative.com"
       },
       {
-        "src": "onformative2.png",
+        "src": "onformative2",
         "credit": "Credric Kiefer & Julia Laub, Fragments of RGB, 2010. onformative.com"
       },
       {
-        "src": "onformative3.png",
+        "src": "onformative3",
         "credit": "Henryk Wollik, Aurélien Krieger & Credric Kiefer, Meandering River, 2018. onformative.com"
       },
       {
-        "src": "onformative4.png",
+        "src": "onformative4",
         "credit": "Mark Tiedemann & Credric Kiefer, Oi, 2016. onformative.com"
       }
     ]
@@ -886,11 +844,11 @@
     "name": "Nervous System",
     "images": [
       {
-        "src": "nervous.webp",
+        "src": "nervous",
         "credit": "Jessica Rosenkrantz & Jesse Louis-Rosenberg, Floraform, 2014. n-e-r-v-o-u-s.com"
       },
       {
-        "src": "nervous.jpg",
+        "src": "nervous2",
         "credit": "Jessica Rosenkrantz & Jesse Louis-Rosenberg, COROLLARIA, 2020. n-e-r-v-o-u-s.com"
       }
     ]
@@ -900,11 +858,11 @@
     "name": "Studio A N F",
     "images": [
       {
-        "src": "anf.jpg",
+        "src": "anf",
         "credit": "Studio A N F, VOID MMXX 02 1568418369226, NA. studioanf.com"
       },
       {
-        "src": "anf2.jpg",
+        "src": "anf2",
         "credit": "Studio A N F, momacs, generative logo, NA. n-e-r-v-o-u-s.com"
       }
     ]
@@ -914,19 +872,19 @@
     "name": "Marius Watz",
     "images": [
       {
-        "src": "watz.gif",
+        "src": "watz",
         "credit": "Marius Watz, UCracking, 2014. mariuswatz.com"
       },
       {
-        "src": "watz2.jpg",
+        "src": "watz2",
         "credit": "Marius Watz, Illumitations B, 2007. mariuswatz.com"
       },
       {
-        "src": "watz3.jpg",
+        "src": "watz3",
         "credit": "Marius Watz, Probability Lattice, 2012. mariuswatz.com"
       },
       {
-        "src": "watz4.jpg",
+        "src": "watz4",
         "credit": "Marius Watz, Object #1-3, 2007. mariuswatz.com"
       }
     ]
@@ -936,11 +894,11 @@
     "name": "Piet Mondrian",
     "images": [
       {
-        "src": "mondrian.jpg",
+        "src": "mondrian",
         "credit": "Piet Mondrian, Composition with Large Red Plane, Yellow, Black, Grey and Blue, 1921. wikipedia.org"
       },
       {
-        "src": "mondrian2.jpg",
+        "src": "mondrian2",
         "credit": "Piet Mondrian, Broadway Boogie Woogie, 1942-1943. wikipedia.org"
       }
     ]
@@ -950,11 +908,11 @@
     "name": "Waltz Binaire",
     "images": [
       {
-        "src": "waltz.jpg",
+        "src": "waltz",
         "credit": "Waltz Binaire, fabric, 2019. waltzbinaire.com"
       },
       {
-        "src": "waltz2.jpg",
+        "src": "waltz2",
         "credit": "Waltz Binaire, talk to me, 2017. waltzbinaire.com"
       }
     ]
@@ -964,15 +922,15 @@
     "name": "Yann Le Gall",
     "images": [
       {
-        "src": "gall.png",
+        "src": "gall",
         "credit": "Yann Le Gall, inverted golden spiral, 2021. ylegall.github.io"
       },
       {
-        "src": "gall2.png",
+        "src": "gall2",
         "credit": "Yann Le Gall, differential growth 1, 2021. ylegall.github.io"
       },
       {
-        "src": "gall3.png",
+        "src": "gall3",
         "credit": "Yann Le Gall, apollonian rotation, 2021. ylegall.github.io"
       }
     ]
@@ -982,7 +940,7 @@
     "name": "Michael Noll",
     "images": [
       {
-        "src": "noll.png",
+        "src": "noll",
         "credit": "Michael Noll & IBM 7094 digital computer and a General Dynamics SC-4020 microfilm plotter, Computer Composition With Lines, 1964. The Psychological Record, 1966, 16, 1-10."
       }
     ]
@@ -992,7 +950,7 @@
     "name": "Paul Haeberli",
     "images": [
       {
-        "src": "haeberli.png",
+        "src": "haeberli",
         "credit": "Paul Haeberli, Paint By Numbers: Abstract Image Representations, 1990, ACM Computer Graphics, Vol. 24, Nr. 4."
       }
     ]
@@ -1002,7 +960,7 @@
     "name": "Kazimir Malevich",
     "images": [
       {
-        "src": "malevich.jpg",
+        "src": "malevich",
         "credit": "Kazimir Malevich, Suprematism. Abstract Composition, 1915. wikimedia.org"
       }
     ]
@@ -1012,15 +970,15 @@
     "name": "Joan Truckenbrod",
     "images": [
       {
-        "src": "truckenbrod.png",
+        "src": "truckenbrod",
         "credit": "Joan Truckenbrod, Organic, Fluid, Disruptive Geometry, 1975. joantruckenbrodart.com"
       },
       {
-        "src": "truckenbrod2.png",
+        "src": "truckenbrod2",
         "credit": "Joan Truckenbrod, Depth through Color, 1975. joantruckenbrodart.com"
       },
       {
-        "src": "truckenbrod3.png",
+        "src": "truckenbrod3",
         "credit": "Joan Truckenbrod, Digital Tapestries, 1975. joantruckenbrodart.com"
       }
     ]
@@ -1030,7 +988,7 @@
     "name": "Olga Kisseleva",
     "images": [
       {
-        "src": "kisseleva.jpg",
+        "src": "kisseleva",
         "credit": "Olga Kisseleva, Greed (Series CrossWorlds – Chronography), 2015. artjaws.com"
       }
     ]
@@ -1040,11 +998,11 @@
     "name": "Dwayne Oyler & Jenny C. Wu",
     "images": [
       {
-        "src": "wu.webp",
+        "src": "wu",
         "credit": "Dwayne Oyler & Jenny C. Wu, HI RES LOW RISE, 2011. oylerwu.com"
       },
       {
-        "src": "wu.webp",
+        "src": "wu2",
         "credit": "Dwayne Oyler & Jenny C. Wu, 3DS CULINARY LAB, 2015. oylerwu.com"
       }
     ]
@@ -1054,7 +1012,7 @@
     "name": "Klein Dytham architecture",
     "images": [
       {
-        "src": "dytham.jpg",
+        "src": "dytham",
         "credit": "Klein Dytham architecture, Uniqlo, 2005. klein-dytham.com"
       }
     ]
@@ -1064,7 +1022,7 @@
     "name": "Henning Larsen",
     "images": [
       {
-        "src": "larsen.jpg",
+        "src": "larsen",
         "credit": "Henning Larse, University of Southern Denmark – Campus Kolding, 2014. danskeark.com"
       }
     ]
@@ -1074,19 +1032,19 @@
     "name": "Zaha Hadid Architects",
     "images": [
       {
-        "src": "zaha.jpg",
+        "src": "zaha",
         "credit": "ZHA, Handmade rug collections for ILLULIAN, 'Interlace' rug with the 'natural field' collection, 2022. zaha-hadid.com"
       },
       {
-        "src": "zaha2.jpg",
+        "src": "zaha2",
         "credit": "ZHA, Changsha Meixihu International Culture & Arts Centre, 2019. zaha-hadid.com"
       },
       {
-        "src": "zaha3.jpg",
+        "src": "zaha3",
         "credit": "ZHA, Alphadome, 2022. zaha-hadid.com"
       },
       {
-        "src": "zaha4.jpg",
+        "src": "zaha4",
         "credit": "ZHA, Total Fluidity: Urban Voids, 2007. zaha-hadid.com"
       }
     ]
@@ -1096,7 +1054,7 @@
     "name": "Herzog de Meuron",
     "images": [
       {
-        "src": "herzog.jpg",
+        "src": "herzog",
         "credit": "Herzog de Meuron, Elbphilharmonie Hamburg, 2016. herzogdemeuron.com"
       }
     ]
@@ -1106,11 +1064,11 @@
     "name": "Oleg Soroko",
     "images": [
       {
-        "src": "oleg.jpg",
+        "src": "oleg",
         "credit": "Oleg Soroko, parametric furniture, 2013. behance.net"
       },
       {
-        "src": "oleg2.jpg",
+        "src": "oleg2",
         "credit": "Oleg Soroko, jupiter pannels, 2016. behance.net"
       }
     ]
@@ -1120,11 +1078,11 @@
     "name": "Studio Symbiosis",
     "images": [
       {
-        "src": "symbiosis.jpg",
+        "src": "symbiosis",
         "credit": "Studio Symbiosis, Megamall, 2022. studio-symbiosis.com"
       },
       {
-        "src": "symbiosis2.jpg",
+        "src": "symbiosis2",
         "credit": "Studio Symbiosis, Plexus, 2020. studio-symbiosis.com"
       }
     ]
@@ -1134,7 +1092,7 @@
     "name": "Barbara Rehbehn",
     "images": [
       {
-        "src": "rehbehn.webp",
+        "src": "rehbehn",
         "credit": "Barbara Rehbehn, Embroidery / The Cloth Series , 2022. nft.artsy.net"
       }
     ]
@@ -1144,7 +1102,7 @@
     "name": "Shawna X",
     "images": [
       {
-        "src": "shawna.webp",
+        "src": "shawna",
         "credit": "Shawna X, Shawna X, Sing Body Electric, 2022. nft.artsy.net"
       }
     ]
@@ -1154,18 +1112,8 @@
     "name": "LIA",
     "images": [
       {
-        "src": "lia.webp",
+        "src": "lia",
         "credit": "LIA, i thought i’d used up all the colours , 2022. nft.artsy.net"
-      }
-    ]
-  },
-  {
-    "category": "recent",
-    "name": "Aleksandra Jovanic",
-    "images": [
-      {
-        "src": "jovanic.jpg",
-        "credit": "Aleksandra Jovanic, Days Like This , 2022. nft.artsy.net"
       }
     ]
   },
@@ -1174,7 +1122,7 @@
     "name": "Licia He",
     "images": [
       {
-        "src": "licia.webp",
+        "src": "licia",
         "credit": "Licia He, Where are we going?, 2021. nft.artsy.net"
       }
     ]
@@ -1184,11 +1132,11 @@
     "name": "Holger Lippmann",
     "images": [
       {
-        "src": "lippmann.jpg",
+        "src": "lippmann",
         "credit": "Holger Lippmann, Night Tree, 2019. lumicon.de"
       },
       {
-        "src": "lippmann2.jpg",
+        "src": "lippmann2",
         "credit": "Holger Lippmann, NOISE-SCAPE 22, 2021. lumicon.de"
       }
     ]
@@ -1198,11 +1146,11 @@
     "name": "LuLu XXX",
     "images": [
       {
-        "src": "lulu.png",
+        "src": "lulu",
         "credit": "LuLu XXX, pixsort, 2021. lumicon.de"
       },
       {
-        "src": "lulu2.png",
+        "src": "lulu2",
         "credit": "LuLu XXX, trypophobia, 2021. luluixixix.com"
       }
     ]
@@ -1212,7 +1160,7 @@
     "name": "Tiffany Holmes",
     "images": [
       {
-        "src": "holmes.jpg",
+        "src": "holmes",
         "credit": "Tiffany Holmes, 7000 oaks and counting, 2009. tiffanyholmes.com"
       }
     ]
@@ -1222,11 +1170,11 @@
     "name": "Rosa Menkman",
     "images": [
       {
-        "src": "menkman.jpg",
+        "src": "menkman",
         "credit": "Rosa Menkman, DCT ENCRYPTION STATION, 2022. flickr.com"
       },
       {
-        "src": "menkman2.jpg",
+        "src": "menkman2",
         "credit": "Rosa Menkman, Menkman_Rosa, 2022. flickr.com"
       }
     ]
@@ -1236,11 +1184,11 @@
     "name": "Rafaël Rozendaal",
     "images": [
       {
-        "src": "rafael.jpg",
+        "src": "rafael",
         "credit": "Rafaël Rozendaal, Portraits, 2018. newrafael.com"
       },
       {
-        "src": "rafael2.jpg",
+        "src": "rafael2",
         "credit": "Rafaël Rozendaal, Diagram, 2022. newrafael.com"
       }
     ]
@@ -1250,11 +1198,11 @@
     "name": "Copper Giloth",
     "images": [
       {
-        "src": "giloth.jpg",
+        "src": "giloth",
         "credit": "Copper Giloth, Teapot Word play, 2006. flickr.com"
       },
       {
-        "src": "giloth2.jpg",
+        "src": "giloth2",
         "credit": "Copper Giloth, Teapot Word play, 2006. flickr.com"
       }
     ]
@@ -1264,7 +1212,7 @@
     "name": "Netochka Nezvanova",
     "images": [
       {
-        "src": "nezvanova.jpg",
+        "src": "nezvanova",
         "credit": "Netochka Nezvanova, Nebula.M81 - Autonomous | NL, 1999. https://anthology.rhizome.org/m9ndfukc-0-99"
       }
     ]
@@ -1274,15 +1222,15 @@
     "name": "Leonardo Solaas",
     "images": [
       {
-        "src": "solaas.jpg",
+        "src": "solaas",
         "credit": "Leonardo Solaas, extended voronoi, 2011. flickr.com"
       },
       {
-        "src": "solaas2.jpg",
+        "src": "solaas2",
         "credit": "Leonardo Solaas, Zebra Fields 09, 2016. flickr.com"
       },
       {
-        "src": "solaas3.jpg",
+        "src": "solaas3",
         "credit": "Leonardo Solaas, Color Interference, 2017. flickr.com"
       }
     ]
@@ -1292,15 +1240,15 @@
     "name": "Julie Freeman",
     "images": [
       {
-        "src": "freeman.jpg",
+        "src": "freeman",
         "credit": "Julie Freeman, We Need Us, 2014. a-n.co.uk"
       },
       {
-        "src": "freeman2.jpg",
+        "src": "freeman2",
         "credit": "Julie Freeman, We Need Us, 2014. a-n.co.uk"
       },
       {
-        "src": "freeman3.jpg",
+        "src": "freeman3",
         "credit": "Julie Freeman, A Selfless Society, 2020. a-n.co.uk"
       }
     ]

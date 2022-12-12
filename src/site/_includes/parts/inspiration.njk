@@ -1,0 +1,38 @@
+{% macro filter(inspiration, translations, locale) %}
+<ul>
+{% set filters = [] %}
+{% set filterObjs = [] %}
+
+{% for f in inspiration %}
+{% if not f.category in filters %}
+{% set filters = (filters.push(f.category), filters) %}
+{% endif %}
+{% endfor %}
+
+{% for f in filters %}
+{% set filterObjs = (filterObjs.push([filters[loop.index0], translations.inspiration[filters[loop.index0]][locale]]), filterObjs) %}
+{% endfor %}
+
+{% for f in filterObjs | sort(false, true, 1) %}
+<li><a data-class="{{f[0]}}">{{f[1]}}</a></li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro list(inspiration, translations, locale) %}
+<ul>
+{% for i in inspiration | sort(false, true, 'name') %}
+{% for ii in i.images %}
+<li style="background-image:url(/images/inspiration/{{ ii.src }}.jpg);">
+<div>
+{% if loop.index0 == 0 %}
+<h5>{{ translations.inspiration[i.category][locale] }}</h5><br />
+<h4>{{ i.name }}</h4><br />
+{% endif %}
+<p class="credit">{{ii.credit}}</p>
+</div>
+</li>
+{% endfor %}
+{% endfor %}
+</ul>
+{% endmacro %}
