@@ -7,7 +7,7 @@ eleventyNavigation:
   parent: en
 ---
 
-List of digital and analog artists for inspiration
+This page contains a list of selected works closely realted to the content of this seminar. The following list of artists and developers does not claim to be complete, but merely a window into this world:
 
 {% from "../_includes/parts/inspiration.njk" import filter, list %}
 

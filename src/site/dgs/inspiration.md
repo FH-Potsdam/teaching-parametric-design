@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: dgs
 ---
 
-Liste digitaler and analoger Künstler*innen zur Inspiration
+Die folgende Seite enthält eine Auswahl von Arbeiten mit Beziehungen zu den Inhalten dieses Seminars. Die Liste der Künstler\*innen und Entwickler\*innen hat keinen Anspruch der Vollständigkeit.
 
 {% from "../_includes/parts/inspiration.njk" import filter, list %}
 
