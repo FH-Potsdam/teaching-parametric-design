@@ -78,6 +78,10 @@
       {
         "src": "molnar.png",
         "credit": "Vera Molnar, 8 Colonnes, 1985. Phillips.com"
+      },
+      {
+        "src": "molnar3.jpg",
+        "credit": "Vera Molnar, Interruptions 20, 1969. digitalartarchive.siggraph.org"
       }
     ]
   },
@@ -298,6 +302,66 @@
       {
         "src": "verostko.jpg",
         "credit": "Roman Verostko, Gaia — Untitled, 2003. Courtesy of the artist and DAM. rightclicksave.com"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Kerry Strand",
+    "images": [
+      {
+        "src": "strand.jpg",
+        "credit": "Kerry Strand, Crest, 1972. digitalartarchive.siggraph.org"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Colette Bangert",
+    "images": [
+      {
+        "src": "bangert.jpg",
+        "credit": "Colette Bangert & Charles Bangert, Circe’s Window, 1985. digitalartarchive.siggraph.org"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Hideki Mitsui",
+    "images": [
+      {
+        "src": "mitsui.jpg",
+        "credit": "Hideki Mitsui, Cosmic Image: Transmigration, 1985. digitalartarchive.siggraph.org"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Herbert W. Franke",
+    "images": [
+      {
+        "src": "franke.jpg",
+        "credit": "Herbert W. Franke, Farbraster 42, 1975. digitalartarchive.siggraph.org"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Jürgen Lit Fischer",
+    "images": [
+      {
+        "src": "fischer.jpg",
+        "credit": "Jürgen Lit Fischer, Intervals / Intervalle, 1985. digitalartarchive.siggraph.org"
+      }
+    ]
+  },
+  {
+    "category": "analog",
+    "name": "Vassily Kandinsky",
+    "images": [
+      {
+        "src": "kandinsky.jpg",
+        "credit": "Vassily Kandinsky, Circles in a Circle, 1923. wikipedia.org"
       }
     ]
   },
@@ -810,6 +874,10 @@
       {
         "src": "onformative3.png",
         "credit": "Henryk Wollik, Aurélien Krieger & Credric Kiefer, Meandering River, 2018. onformative.com"
+      },
+      {
+        "src": "onformative4.png",
+        "credit": "Mark Tiedemann & Credric Kiefer, Oi, 2016. onformative.com"
       }
     ]
   },
@@ -906,6 +974,334 @@
       {
         "src": "gall3.png",
         "credit": "Yann Le Gall, apollonian rotation, 2021. ylegall.github.io"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Michael Noll",
+    "images": [
+      {
+        "src": "noll.png",
+        "credit": "Michael Noll & IBM 7094 digital computer and a General Dynamics SC-4020 microfilm plotter, Computer Composition With Lines, 1964. The Psychological Record, 1966, 16, 1-10."
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Paul Haeberli",
+    "images": [
+      {
+        "src": "haeberli.png",
+        "credit": "Paul Haeberli, Paint By Numbers: Abstract Image Representations, 1990, ACM Computer Graphics, Vol. 24, Nr. 4."
+      }
+    ]
+  },
+  {
+    "category": "analog",
+    "name": "Kazimir Malevich",
+    "images": [
+      {
+        "src": "malevich.jpg",
+        "credit": "Kazimir Malevich, Suprematism. Abstract Composition, 1915. wikimedia.org"
+      }
+    ]
+  },
+  {
+    "category": "early",
+    "name": "Joan Truckenbrod",
+    "images": [
+      {
+        "src": "truckenbrod.png",
+        "credit": "Joan Truckenbrod, Organic, Fluid, Disruptive Geometry, 1975. joantruckenbrodart.com"
+      },
+      {
+        "src": "truckenbrod2.png",
+        "credit": "Joan Truckenbrod, Depth through Color, 1975. joantruckenbrodart.com"
+      },
+      {
+        "src": "truckenbrod3.png",
+        "credit": "Joan Truckenbrod, Digital Tapestries, 1975. joantruckenbrodart.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Olga Kisseleva",
+    "images": [
+      {
+        "src": "kisseleva.jpg",
+        "credit": "Olga Kisseleva, Greed (Series CrossWorlds – Chronography), 2015. artjaws.com"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Dwayne Oyler & Jenny C. Wu",
+    "images": [
+      {
+        "src": "wu.webp",
+        "credit": "Dwayne Oyler & Jenny C. Wu, HI RES LOW RISE, 2011. oylerwu.com"
+      },
+      {
+        "src": "wu.webp",
+        "credit": "Dwayne Oyler & Jenny C. Wu, 3DS CULINARY LAB, 2015. oylerwu.com"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Klein Dytham architecture",
+    "images": [
+      {
+        "src": "dytham.jpg",
+        "credit": "Klein Dytham architecture, Uniqlo, 2005. klein-dytham.com"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Henning Larsen",
+    "images": [
+      {
+        "src": "larsen.jpg",
+        "credit": "Henning Larse, University of Southern Denmark – Campus Kolding, 2014. danskeark.com"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Zaha Hadid Architects",
+    "images": [
+      {
+        "src": "zaha.jpg",
+        "credit": "ZHA, Handmade rug collections for ILLULIAN, 'Interlace' rug with the 'natural field' collection, 2022. zaha-hadid.com"
+      },
+      {
+        "src": "zaha2.jpg",
+        "credit": "ZHA, Changsha Meixihu International Culture & Arts Centre, 2019. zaha-hadid.com"
+      },
+      {
+        "src": "zaha3.jpg",
+        "credit": "ZHA, Alphadome, 2022. zaha-hadid.com"
+      },
+      {
+        "src": "zaha4.jpg",
+        "credit": "ZHA, Total Fluidity: Urban Voids, 2007. zaha-hadid.com"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Herzog de Meuron",
+    "images": [
+      {
+        "src": "herzog.jpg",
+        "credit": "Herzog de Meuron, Elbphilharmonie Hamburg, 2016. herzogdemeuron.com"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Oleg Soroko",
+    "images": [
+      {
+        "src": "oleg.jpg",
+        "credit": "Oleg Soroko, parametric furniture, 2013. behance.net"
+      },
+      {
+        "src": "oleg2.jpg",
+        "credit": "Oleg Soroko, jupiter pannels, 2016. behance.net"
+      }
+    ]
+  },
+  {
+    "category": "physical",
+    "name": "Studio Symbiosis",
+    "images": [
+      {
+        "src": "symbiosis.jpg",
+        "credit": "Studio Symbiosis, Megamall, 2022. studio-symbiosis.com"
+      },
+      {
+        "src": "symbiosis2.jpg",
+        "credit": "Studio Symbiosis, Plexus, 2020. studio-symbiosis.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Barbara Rehbehn",
+    "images": [
+      {
+        "src": "rehbehn.webp",
+        "credit": "Barbara Rehbehn, Embroidery / The Cloth Series , 2022. nft.artsy.net"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Shawna X",
+    "images": [
+      {
+        "src": "shawna.webp",
+        "credit": "Shawna X, Shawna X, Sing Body Electric, 2022. nft.artsy.net"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "LIA",
+    "images": [
+      {
+        "src": "lia.webp",
+        "credit": "LIA, i thought i’d used up all the colours , 2022. nft.artsy.net"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Aleksandra Jovanic",
+    "images": [
+      {
+        "src": "jovanic.jpg",
+        "credit": "Aleksandra Jovanic, Days Like This , 2022. nft.artsy.net"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Licia He",
+    "images": [
+      {
+        "src": "licia.webp",
+        "credit": "Licia He, Where are we going?, 2021. nft.artsy.net"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Holger Lippmann",
+    "images": [
+      {
+        "src": "lippmann.jpg",
+        "credit": "Holger Lippmann, Night Tree, 2019. lumicon.de"
+      },
+      {
+        "src": "lippmann2.jpg",
+        "credit": "Holger Lippmann, NOISE-SCAPE 22, 2021. lumicon.de"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "LuLu XXX",
+    "images": [
+      {
+        "src": "lulu.png",
+        "credit": "LuLu XXX, pixsort, 2021. lumicon.de"
+      },
+      {
+        "src": "lulu2.png",
+        "credit": "LuLu XXX, trypophobia, 2021. luluixixix.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Tiffany Holmes",
+    "images": [
+      {
+        "src": "holmes.jpg",
+        "credit": "Tiffany Holmes, 7000 oaks and counting, 2009. tiffanyholmes.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Rosa Menkman",
+    "images": [
+      {
+        "src": "menkman.jpg",
+        "credit": "Rosa Menkman, DCT ENCRYPTION STATION, 2022. flickr.com"
+      },
+      {
+        "src": "menkman2.jpg",
+        "credit": "Rosa Menkman, Menkman_Rosa, 2022. flickr.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Rafaël Rozendaal",
+    "images": [
+      {
+        "src": "rafael.jpg",
+        "credit": "Rafaël Rozendaal, Portraits, 2018. newrafael.com"
+      },
+      {
+        "src": "rafael2.jpg",
+        "credit": "Rafaël Rozendaal, Diagram, 2022. newrafael.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Copper Giloth",
+    "images": [
+      {
+        "src": "giloth.jpg",
+        "credit": "Copper Giloth, Teapot Word play, 2006. flickr.com"
+      },
+      {
+        "src": "giloth2.jpg",
+        "credit": "Copper Giloth, Teapot Word play, 2006. flickr.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Netochka Nezvanova",
+    "images": [
+      {
+        "src": "nezvanova.jpg",
+        "credit": "Netochka Nezvanova, Nebula.M81 - Autonomous | NL, 1999. https://anthology.rhizome.org/m9ndfukc-0-99"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Leonardo Solaas",
+    "images": [
+      {
+        "src": "solaas.jpg",
+        "credit": "Leonardo Solaas, extended voronoi, 2011. flickr.com"
+      },
+      {
+        "src": "solaas2.jpg",
+        "credit": "Leonardo Solaas, Zebra Fields 09, 2016. flickr.com"
+      },
+      {
+        "src": "solaas3.jpg",
+        "credit": "Leonardo Solaas, Color Interference, 2017. flickr.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
+    "name": "Julie Freeman",
+    "images": [
+      {
+        "src": "freeman.jpg",
+        "credit": "Julie Freeman, We Need Us, 2014. a-n.co.uk"
+      },
+      {
+        "src": "freeman2.jpg",
+        "credit": "Julie Freeman, We Need Us, 2014. a-n.co.uk"
+      },
+      {
+        "src": "freeman3.jpg",
+        "credit": "Julie Freeman, A Selfless Society, 2020. a-n.co.uk"
       }
     ]
   }
