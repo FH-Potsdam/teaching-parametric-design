@@ -22,7 +22,13 @@ Dieser Kurs richtet sich an alle Designer*innen und Kreative, die Herausfinden w
 
 Was unterscheidet diesen Kurs von anderen Einführungen in die Programmierung? Dieser Kurs hat einen starken Fokus auf Schnittstellen zwischen Artefakten, welche wir durch Code generieren und anderen Anwendungen und Fertigungsverfahren (siehe unten). Wir werden für den gesamten Kurs JavaScript nutzen, da es eine gute Programmiersprache für den Einstieg ist. Man benötigt keinerlei Vorkenntnisse, um an diesem Kurs teilzunehmen. Wenn du Programmierer\*in oder Informatiker\*in werden möchtest, dann ist dieser Kurs vllt. eine vorsichtiger erster Einstieg, aber wahrscheinlich nicht der Kurs nach dem du suchst. Wenn man als Desginer*in programmieren lernt, ist ein wichtiger Teil, neben den technischen Grundlagen, zu lernen wie man seine Ideen in Code überträgt. In diesem Kurs beschäftigen wir uns mit diesem Teil speziell durch Gruppenaktivitäten im Seminar. Auf der Website finden sich ein paar Übungen als Startpunkt. Darüber hinaus ist das Wichtigste auf dem Weg sich sicherer im Umgang mit Code zu fühlen, zu programmieren, experimentierne und auszuprobieren.
 
-{{ img('interfaces.svg', 'Die Möglichkeiten von Code-driven Design.', '500px') }}
+<figure>
+    <picture>
+      <source srcset="/images/material/interfaces-dark.svg" media="(prefers-color-scheme: dark)">
+      <img style="width:500px;" src="/images/material/interfaces.svg" alt="Die Möglichkeiten von Code-driven Design." />
+    </picture>
+    <figcaption><span>Die Möglichkeiten von Code-driven Design.</span></figcaption>
+</figure>
 
 ## Open Educational Ressources
 

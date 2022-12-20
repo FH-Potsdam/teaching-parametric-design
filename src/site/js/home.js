@@ -81,7 +81,7 @@ const rotationOffset = {
 };
 
 function draw() {
-  background(255);
+  clear();
   push();
 
   for (let d = 0; d < shapeCount; d += 1) {

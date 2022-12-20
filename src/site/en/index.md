@@ -23,7 +23,13 @@ The course targets all designers or creative minds, that want to explore how to 
 
 What makes this course different from other coding classes? This course has a strong focus on the interfaces between the output we generate through code and the possibilities to use this output in various fabrication or design applications (see overview below). We will use JavaScript for the whole course, as its a good language to start with. You will need no prior knowledge of coding. If you want to become a developer or computer scientics, this course might be a gentle introduction, but probably not what you are looking for. For creatives to get into coding, an important part is learning how to transfer ideas into code. In this course we primarily do this through group activities and discussions. This website will provide some excercises to get you started, but the most important part is to keep experimenting and playing with code, until it feels more natural.
 
-{{ img('interfaces.svg', 'Possibilities of code-driven design.', '500px') }}
+<figure>
+    <picture>
+      <source srcset="/images/material/interfaces-dark.svg" media="(prefers-color-scheme: dark)">
+      <img style="width:500px;" src="/images/material/interfaces.svg" alt="Possibilities of code-driven design." />
+    </picture>
+    <figcaption><span>Possibilities of code-driven design.</span></figcaption>
+</figure>
 
 ## Open Educational Ressources
 
