@@ -1,5 +1,6 @@
 - add URL origin security 
-
+- font/text examples
+- save to front
 - editor errors
 - skip to content link
 
@@ -16,3 +17,5 @@
 - screen reader test for parametric
 
 - reference icons: https://iconoir.com/
+
+- LANG (HTML)

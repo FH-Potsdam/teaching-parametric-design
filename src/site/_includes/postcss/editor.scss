@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 /* customization of codemirror */
 .cm-editor { height: 400px; }
 .cm-scroller { overflow: auto; overflow-y:scroll; }
@@ -102,5 +104,19 @@ button:hover {
     &#updateBtn{
       right: 103px;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #c8c8c8;
+    color: #000;
+  }
+  button:hover {
+    background-color: rgba(255,255,255,0.4);
+    border: 2px solid black;
+  }
+  button#copyBtn:hover{
+    border-left: 2px solid black;
   }
 }

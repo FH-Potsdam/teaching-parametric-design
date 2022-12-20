@@ -60,7 +60,13 @@
   <li><a title="Deutsch"{% if lang == 'de' %} class="active"{% endif %} href="/de/{{ baseUrl }}">DE</a></li>
   <li><a title="English"{% if lang == 'en' %} class="active"{% endif %} href="/en/{{ baseUrl }}">EN</a></li>
   <!--<li><a title="中文"{% if lang == 'cn' %} class="active"{% endif %} href="/cn/{{ baseUrl }}">中文</a></li>-->
-  <li class="dgs"><a title="Deutsche Gebärdensprache"{% if lang == 'dgs' %} class="active"{% endif %} href="/dgs/{{ baseUrl }}"><img src="/images/icons/dgs.svg" alt="Deutsche Gebärdensprache"><span>DGS</span></a></li>
+  <li class="dgs"><a title="Deutsche Gebärdensprache"{% if lang == 'dgs' %} class="active"{% endif %} href="/dgs/{{ baseUrl }}">
+  <img >
+    <picture id="header-logo">
+      <source srcset="/images/icons/dgs-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="/images/icons/dgs.svg" alt="Deutsche Gebärdensprache" />
+    </picture><span>DGS</span>
+  </a></li>
 </ul>
 
 {% endmacro %}
@@ -133,7 +139,7 @@
 
 {% macro img(fileName, title, maxWidth) %}
 <figure>
-    <img src="/images/material/{{fileName}}" alt="{{title}}"{% if maxWidth %} style="max-width:{{maxWidth}};"{% endif %} />
+    <img src="/images/material/{{fileName}}" alt="{{title}}"{% if maxWidth %} style="width:{{maxWidth}};"{% endif %} />
     <figcaption><span>{{title}}</span></figcaption>
 </figure>
 {% endmacro %}

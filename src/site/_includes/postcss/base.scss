@@ -79,12 +79,15 @@ header {
       }
     }
   }
-  img {
+  picture, img {
     flex-grow: 0;
     &#header-illu{
       width: 150px;
       margin-right:40px;
       margin-left:-20px;
+      img {
+        max-width:100%;
+      }
     }
   }
   .page-title, .page-subtitle{
@@ -98,7 +101,7 @@ header {
   .page-subtitle{
     @include font__h3;
   }
-  a:hover img{
+  a:hover picture{
     opacity:0.6;
   }
 }
@@ -387,7 +390,7 @@ h5.navTitle{
   font-size:14px;
 }
 
-nav {
+#nav {
   min-width: 170px;
   padding-top: 85px;
 }
@@ -454,41 +457,50 @@ ol.mainNav>li, ol.mainNav>li>ol>li {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
+  #nav {
     min-width: 100%;
     padding-top: 0;
     margin-bottom:30px;
+    nav {
 
-    h5 {
-      background-color: rgba(0,0,0,0.2);
-      padding: 8px 10px;
-      background-image: url(/images/icons/menu.svg);
-      background-position: right 7px center;
-      background-repeat: no-repeat;
-      cursor:pointer;
-      &:hover {
-        background-color: rgba(0,0,0,0.4);
+      h5 {
+        background-color: rgba(0,0,0,0.2);
+        padding: 8px 10px;
+        background-image: url(/images/icons/menu.svg);
+        background-position: right 7px center;
+        background-repeat: no-repeat;
+        cursor:pointer;
+        &:hover {
+          background-color: rgba(0,0,0,0.4);
+        }
+        &.langTitle{
+          margin-top:5px;
+        }
+        &:focus+ul {
+          display:flex;
+        }
+        &:focus+ol {
+          display:block;
+        }
       }
-      &.langTitle{
-        margin-top:5px;
+
+      &>ol.mainNav {
+        display:none;
+        margin-left: 30px;
       }
-      &:focus+ul {
+      &>ul.langNav {
+        display:none;
+        margin-left: 12px;
+      }
+      &:focus>ul,
+      &:focus-within>ul{
         display:flex;
       }
-      &:focus+ol {
+      &:focus>ol,
+      &:focus-within>ol{
         display:block;
       }
     }
-
-    &>ol.mainNav {
-      display:none;
-      margin-left: 30px;
-    }
-    &>ul.langNav {
-      display:none;
-      margin-left: 12px;
-    }
-    
   }
 }
 
@@ -897,5 +909,70 @@ h3.inspiration {
         background: $accent-color;
       }
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $dark-bg;
+    color: $dark-font;
+  }
+
+  header {
+    .page-title, .page-subtitle{
+      color: $dark-font;
+    }
+  }
+
+  p.backtotop a,
+  ul.langNav a,
+  .mainNav a,
+  #pageNav a,
+  ul.breadcrumbs a {
+    color: $dark-font;
+  }
+
+  .mainNav>li {
+    &>a:hover {
+      text-decoration: underline $dark-font solid 2px;
+    }
+  }
+
+  a:hover {
+    color: $dark-font;
+  }
+  
+  p.backtotop a {
+    background-image: url(../images/icons/fast-top-circle-dark.svg);
+  }
+
+  #pageNav {
+    &>div.back-link::before{
+      background-image: url(/images/icons/nav-arrow-left-dark.svg);
+    }
+    &>div.next-link::after{
+      background-image: url(/images/icons/nav-arrow-right-dark.svg);
+    }
+  }
+
+  .definition {
+    background-color: $dark-accent;
+    border-left: 10px solid $accent-color;
+  }
+  
+  .definition+.language-js{
+    border-right: 1px solid $dark-accent;
+    border-bottom: 1px solid $dark-accent;
+  }
+
+  pre[class*=language-] {
+    background-color: rgb(200,200,200);
+    background-image: linear-gradient(transparent 50%,rgba(69,142,209,.2) 0);
+    box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px $dark-accent;
+  }
+
+  blockquote p:before,
+  main li a[href*=http]:after, main p a[href*=http]:after{
+    background-color:$dark-font;
   }
 }

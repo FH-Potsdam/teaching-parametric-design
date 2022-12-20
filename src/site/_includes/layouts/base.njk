@@ -8,21 +8,33 @@
   <body>
     <header id="header">
       <div>
-        <img id="header-illu" src="/images/header/{{ [1,2,3,4,5,6] | random }}.png" alt="Illustration of a parametric shape design" />
+        <picture id="header-illu">
+          <source srcset="/images/header/{{ [1,2,3,4,5,6] | random }}-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="/images/header/{{ [1,2,3,4,5,6] | random }}.png" alt="Illustration of a parametric shape design" />
+        </picture>
         <div>
           <a href="/{{locale}}/">
             <span class="page-title">Parametric Design</span>
             <span class="page-subtitle">{{ translations.subtitle[locale] }}</span>
           </a>
         </div>
-        <a href="https://www.fh-potsdam.de"><img id="header-logo" src="/images/logo-fhp-abbrev-black.svg" alt="{{ translations.fhp[locale] }}" /></a>
+        <a href="https://www.fh-potsdam.de">
+          <picture id="header-logo">
+            <source srcset="/images/logo-fhp-abbrev-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/images/logo-fhp-abbrev-black.svg" alt="{{ translations.fhp[locale] }}" />
+          </picture>
+        </a>
       </div>
     </header>
     <div id="container">
-      <nav>
-        {{ renderNav(collections, page, locale, content) }}
-        {{ renderLang(page.url) }}
-      </nav>
+      <div id="nav">
+        <nav>
+          {{ renderNav(collections, page, locale, content) }}
+        </nav>
+        <nav>
+          {{ renderLang(page.url) }}
+        </nav>
+      </div>
       <main>
         {% if eleventyNavigation %}
         {{ renderCrumbs(collections, eleventyNavigation.key, locale) }}
