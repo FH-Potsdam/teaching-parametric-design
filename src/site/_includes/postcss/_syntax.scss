@@ -144,3 +144,14 @@ pre {
  .token.namespace {
    opacity: .7;
  }
+
+ @media (prefers-color-scheme: dark) {
+  .language-css .token.string,
+ .style .token.string,
+ .token.operator,
+ .token.entity,
+ .token.url,
+ .token.variable {
+   background: rgba(255, 255, 255, 0.2);
+ }
+}
