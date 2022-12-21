@@ -8,7 +8,7 @@ eleventyNavigation:
 
 {% from "../_includes/parts/macros.njk" import img %}
 
-Dies ist die Website für den "Parametric Design" Kurs am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam ([FHP](https://www.fh-potsdam.de/)). Dieses Website öffnet Einsteiger*innen einen Startpunkt für das Gestalten durch Programmierung. Es werden nur kostenlose und quelloffenen Anwendungen gentutzt. Das Seminar ist so konzipiert, dass die Inhalten auf der Website untermauert werden von gemeinsamen Aktivitäten in den Vorlesungen. Die Website stellt aber auch in sich allein einen guten Einstieg in das Thema dar.
+Dies ist die Website für den "Parametric Design" Kurs am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam ([FHP](https://www.fh-potsdam.de/)). Diese Website öffnet Einsteiger*innen einen Startpunkt für das Gestalten durch Programmierung. Es werden nur kostenlose und quelloffenen Anwendungen gentutzt. Das Seminar ist so konzipiert, dass die Inhalten auf der Website untermauert werden von gemeinsamen Aktivitäten in den Vorlesungen. Die Website stellt aber auch in sich allein einen guten Einstieg in das Thema dar.
 
 <p class="start-button-container">
   <a href="/de/introduction" class="start-button"><span>Kurs beginnen &raquo;</span></a>

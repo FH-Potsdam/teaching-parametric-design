@@ -6,7 +6,7 @@
   src="{{path}}{% if autoExecute %}?autoexecute=true{% endif %}"></iframe>
 <button class="scroll-btn">Continue scrolling</button>
 {% if github %}
-<a href="{{github}}" class="github-btn">View on GitHub</a><span class="folder-btn">{{github | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span>
+<span class="folder-btn">{{github | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span><a href="{{github}}" class="github-btn">View&nbsp;on&nbsp;GitHub</a>
 {% endif %}
 {% endmacro %}
 
@@ -19,7 +19,7 @@
 {% endmacro %}
 
 {% macro github(link) %}
-<a href="{{link}}" class="github-btn">View on GitHub</a><span class="folder-btn">{{link | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span>
+<a href="{{link}}" class="github-btn">View&nbsp;on&nbsp;GitHub</a><span class="folder-btn">{{link | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span>
 {% endmacro %}
 
 {% macro renderNavListItem(entry, page, content, level) %}

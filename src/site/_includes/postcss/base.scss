@@ -116,10 +116,16 @@ header {
 
     .page-title{
       margin-top:15px;
+      @include font__h1-mobile;
+      text-align: center;
     }
 
-    img#header-illu{
+    picture#header-illu{
       display:none;
+    }
+
+    &>div#home-header {
+      padding-top:0;
     }
   }
 }
@@ -134,6 +140,7 @@ a.github-btn,
 a.download-btn,
 span.folder-btn,
 a.link3d-btn {
+  display:inline-block;
   margin-top: 4px;
   background: #fff;
   background-image: url(/images/icons/github.svg);
@@ -150,6 +157,10 @@ a.link3d-btn {
     background-color:none;
     background-image: url(/images/icons/folder.svg);
     border:none;
+    max-width:100%;
+    text-overflow: ellipsis;
+    margin-right:8px;
+    margin-bottom:5px;
     &:hover{
       border:none;
       background-color:#fff;
@@ -159,7 +170,7 @@ a.link3d-btn {
   background-position: left 4px center;
   background-size: 14px 14px;
   border-radius: 3px;
-  padding: 2px 5px 2px 22px;
+  padding: 1px 5px 1px 22px;
   border: 1px solid rgba(200, 200, 200, 1);
   color: black;
   font-size: 14px;
@@ -974,5 +985,17 @@ h3.inspiration {
   blockquote p:before,
   main li a[href*=http]:after, main p a[href*=http]:after{
     background-color:$dark-font;
+  }
+
+  a.github-btn,
+  a.download-btn,
+  span.folder-btn,
+  a.link3d-btn {
+    border:none;
+    &:hover {
+      border:none;
+      color: black;
+      background-color: rgba(170, 170, 170, 1);
+    }
   }
 }

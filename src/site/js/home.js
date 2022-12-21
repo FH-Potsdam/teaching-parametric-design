@@ -37,7 +37,7 @@ function updateSize () {
   );
   colors = [];
   for (let d = 0; d < shapeCount; d += 1) {
-    colors.push(lerpColor(color1, color2, d / (shapeCount-1)));
+    colors.push(lerpColor(color1, color2, shapeCount === 1 ? 0 : d / (shapeCount-1)));
   }
 }
 
@@ -53,7 +53,7 @@ function setup () {
   noLights();
 
 
-  for (let d = 0; d < divisionSets.length; d += 1) {
+  for (let d = 0; d < divisionSets.length && d < shapeCount; d += 1) {
     spheres.push(spherePoly(radius, divisionSets[d]));
   }
 
@@ -129,24 +129,34 @@ function spherePoly (radius, divisions) {
     shapes.push(shape);
   }
 
+  const vertexMap = {};
+
+  const getVertexId = (x,y) => {
+    const id = x + '_' + y;
+    if (id in vertexMap)  {
+      return vertexMap[id];
+    }
+    const v = createVector(points[x][y].x, points[x][y].y, points[x][y].z);
+    obj.vertices.push(v);
+    const idx = obj.vertices.length - 1;
+    vertexMap[id] = idx;
+    return idx;
+  };
+
   for (let x = 0; x < points.length; x += 1) {
     for (let y = 0; y < points[x].length - 1; y += 1) {
       const nextX = x === points.length - 1 ? 0 : x + 1;
       const nextY = y === points[x].length - 1 ? 0 : y + 1;
       const face = [];
-      obj.vertices.push(createVector(points[x][y].x, points[x][y].y, points[x][y].z));
-      face.push(obj.vertices.length - 1);
-      obj.vertices.push(createVector(points[nextX][y].x, points[nextX][y].y, points[nextX][y].z));
-      face.push(obj.vertices.length - 1);
-      obj.vertices.push(createVector(points[nextX][nextY].x, points[nextX][nextY].y, points[nextX][nextY].z));
-      face.push(obj.vertices.length - 1);
-      obj.vertices.push(createVector(points[x][nextY].x, points[x][nextY].y, points[x][nextY].z));
-      face.push(obj.vertices.length - 1);
+      face.push(getVertexId(x,y));
+      face.push(getVertexId(nextX,y));
+      face.push(getVertexId(nextX,nextY));
+      face.push(getVertexId(x,nextY));
       obj.faces.push(face);
     }
   }
 
   obj.gid = 'geom_' + divisions;
-  obj.computeNormals();
+  // obj.computeNormals();
   return obj;
 }

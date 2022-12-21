@@ -9,7 +9,7 @@
     <header id="header">
       <div id="home-header">
         <h1>Parametric Design</h1>
-        <h2>{{ translations.subtitle[locale] }}</h2>
+        <h2>{{ translations.subtitle[locale] | safe }}</h2>
         <a href="https://www.fh-potsdam.de">
           <picture id="header-logo">
             <source srcset="/images/logo-fhp-abbrev-white.svg" media="(prefers-color-scheme: dark)">
