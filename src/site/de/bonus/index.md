@@ -1,12 +1,7 @@
 ---
-title: Bonus
 eleventyNavigation:
-  title: Bonus
   key: de_bonus
   order: 6
   parent: de
+template: "../en/bonus/index.md"
 ---
-
-{% from "../../_includes/parts/macros.njk" import chapter %}
-
-{{ chapter(collections, eleventyNavigation.key, locale) }}
