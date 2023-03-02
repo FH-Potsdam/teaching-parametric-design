@@ -1,8 +1,8 @@
+- noLoop in intro additional graphic
+
 - add URL origin security 
 
 - font/text examples
-
-- save to front
 
 - editor errors
 
@@ -23,3 +23,7 @@
 - reference icons: https://iconoir.com/
 
 - LANG (HTML)
+
+- 3D nurbs lib example 
+
+- extras english only and create dupes
