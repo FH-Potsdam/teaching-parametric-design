@@ -1,7 +1,9 @@
 ---
-title: Technical Setup
+title: Technisches Setup
 eleventyNavigation:
-  key: dgs_setup
+  title: Setup
+  key: dg_setup
   order: 3
-  parent: dgs
+  parent: dg
+template: "../de/setup.md"
 ---

@@ -1,5 +1,5 @@
 - noLoop in intro additional graphic
-
+- extras and bonus only in english
 - add URL origin security 
 
 - font/text examples

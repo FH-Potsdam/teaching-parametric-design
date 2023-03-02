@@ -1,7 +1,9 @@
 ---
 title: Bonus
 eleventyNavigation:
-  key: dgs_bonus
+  title: Bonus
+  key: dg_bonus
   order: 6
-  parent: dgs
+  parent: dg
+template: "../de/bonus/index.md"
 ---

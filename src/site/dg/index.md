@@ -1,6 +1,7 @@
 ---
-title: Deutsch
+title: Gebärdensprache
 eleventyNavigation:
-  key: dgs
+  key: dg
   order: 0
+layout: "../de/index.md"
 ---

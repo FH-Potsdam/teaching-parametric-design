@@ -1,7 +1,9 @@
 ---
-title: Two dimensional Drawing
+title: Zweidimensionales Zeichnen
 eleventyNavigation:
-  key: dgs_2d
+  title: 2D
+  key: dg_2d
   order: 4
-  parent: dgs
+  parent: dg
+layout: "../de/2d/index.md"
 ---

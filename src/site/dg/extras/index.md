@@ -1,7 +1,9 @@
 ---
 title: Extras
 eleventyNavigation:
-  key: dgs_extras
+  title: Extras
+  key: dg_extras
   order: 7
-  parent: dgs
+  parent: dg
+template: "../de/extras/index.md"
 ---

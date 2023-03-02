@@ -1,7 +1,9 @@
 ---
-title: Next Steps
+title: Nächste Schritte
 eleventyNavigation:
-  key: dgs_next
+  title: Nächste Schritte
+  key: dg_next
   order: 8
-  parent: dgs
+  parent: dg
+template: "../de/next.md"
 ---

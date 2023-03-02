@@ -1,7 +1,9 @@
 ---
-title: Introduction
+title: Einführung
 eleventyNavigation:
-  key: dgs_introduction
+  title: Intro
+  key: dg_introduction
   order: 0
-  parent: dgs
+  parent: dg
+template: "../de/introduction.md"
 ---
