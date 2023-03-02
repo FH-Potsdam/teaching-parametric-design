@@ -1,7 +1,11 @@
 - add URL origin security 
+
 - font/text examples
+
 - save to front
+
 - editor errors
+
 - skip to content link
 
 - update graphics (math.md)
