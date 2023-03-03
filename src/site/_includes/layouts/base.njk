@@ -3,7 +3,7 @@
 {% from '../parts/macros.njk' import renderCrumbs %}
 {% from '../parts/macros.njk' import renderPageNav %}
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{% if locale == "de" %}de-DE{% elif locale == "dg" %}sgn-DE{% else %}en-US{% endif %}">
   {% include 'parts/head.njk' %}
   <body>
     <header id="header">
