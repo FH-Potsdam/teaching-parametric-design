@@ -23,7 +23,7 @@
 {% endmacro %}
 
 {% macro renderNavListItem(entry, page, content, level) %}
-{% if entry.order != -1 %}
+{% if entry.order != -1 and entry.navHide is not defined %}
 <li class="level{{level}}{% if entry.url in page.url %} active{% endif %}">
   <a{% if entry.url == page.url %} class="active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
   {% if entry.url == page.url and level == 2 %}
