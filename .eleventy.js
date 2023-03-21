@@ -18,6 +18,7 @@ module.exports = function(config) {
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
   config.addLayoutAlias('home', 'layouts/home.njk');
+  config.addLayoutAlias('ai', 'layouts/ai.njk');
 
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
