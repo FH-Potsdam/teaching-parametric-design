@@ -14,6 +14,7 @@ Bisher haben wir unsere Parameter immer manuell erstellt oder haben Funktionen w
 {{video("https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi/download/de_2d_input_input.mp4", "/images/thumbnails/de_2d_input_input.png", "de_2d_input_input", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/Lzi5tJxL2J6A6Sy
 de: https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi
 en: https://fhpcloud.fh-potsdam.de/s/gDGSt2aPMBmpwY5
 -->
@@ -82,6 +83,7 @@ Unter den Links gibt es in der Dokumentation weitere Informationen.
 
 {{video("https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/Jb4MfEDS45ZzRmE
 de: https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn
 en: https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M
 -->
@@ -115,6 +117,7 @@ function draw() {
 {{video("https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy/download/de_2d_input_mouse.mp4", "/images/thumbnails/de_2d_input_mouse.png", "de_2d_input_mouse", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/ELzsXtESMKHLZww
 de: https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy
 en: https://fhpcloud.fh-potsdam.de/s/DwWqSrH3B8dDsgz
 -->
@@ -153,6 +156,7 @@ Im nächsten Beispiel machen wir etwas ähnliches, hierzu überzeichnen wir aber
 
 {{video("https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob/download/de_2d_input_keyboard.mp4", "/images/thumbnails/de_2d_input_keyboard.png", "de_2d_input_keyboard", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/iZqjnXyX6JtTtKw
 de: https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob
 en: https://fhpcloud.fh-potsdam.de/s/c8wXExM8MiF8R5S
 -->
@@ -203,6 +207,7 @@ Wenn man die Tastatureingabe nutzt, muss man in der Regel immer erst einmal auf 
 
 {{video("https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG/download/de_2d_input_gui.mp4", "/images/thumbnails/de_2d_input_gui.png", "de_2d_input_gui", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/LXE3sFzJ5jReCyH
 de: https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG
 en: https://fhpcloud.fh-potsdam.de/s/55qdt4ofsqakodd
 -->

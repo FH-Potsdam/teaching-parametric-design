@@ -11,6 +11,7 @@ eleventyNavigation:
 
 {{video("https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89/download/de_2d_functions.mp4", "/images/thumbnails/de_2d_functions.png", "de_2d_functions", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/nr9iGgoorqojAon
 de: https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89
 en: https://fhpcloud.fh-potsdam.de/s/L9iR9Mbkw4KGHxi
 -->

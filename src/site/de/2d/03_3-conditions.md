@@ -13,6 +13,7 @@ eleventyNavigation:
 
 {{video("https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png", "de_2d_conditions_conditions", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/WD8PxgFdpzP7qY3
 de:https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4
 en:https://fhpcloud.fh-potsdam.de/s/9JQD5NcnFeHERio/download/de_conditions.mp4
 -->
@@ -101,6 +102,7 @@ Die obige "Condition" `i%2 === 0` überprüft, ob eine Zahl, wenn diese durch 2 
 
 {{video("https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png", "de_2d_conditions_scopes", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/M3kk5L3qdCXZTM5
 de:https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4
 en:https://fhpcloud.fh-potsdam.de/s/i4n7ETnjWjMqijH/download/de_scopes2.mp4
 -->

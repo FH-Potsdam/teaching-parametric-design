@@ -13,6 +13,7 @@ eleventyNavigation:
 
 {{video("https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4", "/images/thumbnails/de_2d_drawing_canvas.png", "de_2d_drawing_canvas", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/esksLoj87XJpjCG
 de:https://fhpcloud.fh-potsdam.de/s/7Rif9aTymHobY5R/download/de_canvas.mp4
 en:https://fhpcloud.fh-potsdam.de/s/CjcYw4HxyPokZWo/download/de_canvas.mp4
 -->
@@ -37,6 +38,7 @@ function setup() {
 
 {{video("https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4", "/images/thumbnails/de_2d_drawing_background.png", "de_2d_drawing_background", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/DcGNX6MzHJFcdYY
 de:https://fhpcloud.fh-potsdam.de/s/8YfsfmB4jRf2RCY/download/de_background.mp4
 en:https://fhpcloud.fh-potsdam.de/s/tiaKGpCJWtZGwCi/download/de_background.mp4
 -->
@@ -58,6 +60,7 @@ Die `background` Funktion unterscheides sich dahingehend von der `createCanvas` 
 
 {{video("https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4", "/images/thumbnails/de_2d_drawing_colors.png", "de_2d_drawing_colors", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/97WYwp4Ng6GcBgW
 de:https://fhpcloud.fh-potsdam.de/s/5WJa8y7Yqc29sXd/download/de_colors.mp4
 en:https://fhpcloud.fh-potsdam.de/s/wYTfzgFEwB92xSN/download/de_colors.mp4
 -->
@@ -98,6 +101,7 @@ Dies sind die wichtigsten Farbangaben, welche wir nutzen werden. Darüber hinaus
 
 {{video("https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4", "/images/thumbnails/de_2d_drawing_shapes.png", "de_2d_drawing_shapes", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/tdCmCzHmss6PjBY
 de:https://fhpcloud.fh-potsdam.de/s/t6pWTGAY4m6KHTs/download/de_shapes.mp4
 en:https://fhpcloud.fh-potsdam.de/s/rJa6ZHe5e2oKPYg/download/de_shapes.mp4
 -->
@@ -182,6 +186,7 @@ square(10, 10, 40);
 
 {{video("https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4", "/images/thumbnails/de_2d_drawing_fills.png", "de_2d_drawing_fills", translations.subtitles[locale], locale)}}
 <!--
+dg:MISSING
 de:https://fhpcloud.fh-potsdam.de/s/5xTn45W62CKkwsQ/download/de_fills.mp4
 en:https://fhpcloud.fh-potsdam.de/s/WmMdRoixoGNeXxd/download/de_fills.mp4
 -->
@@ -219,6 +224,7 @@ strokeWeight(5);
 
 {{video("https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4", "/images/thumbnails/de_2d_drawing_arc.png", "de_2d_drawing_arc", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/oDGZqZzLLkHNyKT
 de:https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4
 en:https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/de_arc.mp4
 -->

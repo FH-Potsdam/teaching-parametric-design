@@ -19,6 +19,10 @@
     "en": "Subtitles",
     "cn": "字幕"
   },
+  "skipContent": {
+    "de": "Zum Inhalt springen",
+    "en": "Skip to main Content"
+  },
   "inspiration": {
     "all": {
       "de": "Alle",

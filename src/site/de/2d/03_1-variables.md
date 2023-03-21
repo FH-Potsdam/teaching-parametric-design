@@ -11,6 +11,7 @@ eleventyNavigation:
 
 {{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png", "de_2d_variables_variables", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/Wp2SwcgTBm5Koz7
 de:https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4
 en:https://fhpcloud.fh-potsdam.de/s/pRWC3RCBAkomJQc/download/de_variables.mp4
 -->
@@ -93,6 +94,7 @@ const backgroundColor = color(255, 0, 100, 150);
 {{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png", "de_2d_variables_scopes", translations.subtitles[locale], locale)}}
 
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/9mtqAwkMRiQwNC7
 de:https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4
 en:https://fhpcloud.fh-potsdam.de/s/pqPoc8X82zsY8Mn/download/de_scopes.mp4
 -->
@@ -123,6 +125,7 @@ Wir können nur auf Variablen / Kommandos / etc. zugreifen, wenn diese im selben
 
 {{video("https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png", "de_2d_variables_random", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/kX6zRRerQxB89e7
 de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4
 en:https://fhpcloud.fh-potsdam.de/s/BcpyHGz7bq5sazY/download/de_random.mp4
 -->

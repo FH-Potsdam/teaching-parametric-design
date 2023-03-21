@@ -22,6 +22,7 @@ Falls du auf einem Tablet oder etwas ähnlichem arbeitest, kannst du den p5js [W
 {{video("https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od/download/de_setup_code-editor.mp4", "/images/thumbnails/de_setup_editor.png", "de_setup_editor", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/K5ZADXCy5SgPq8a
 de: https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od
 en: https://fhpcloud.fh-potsdam.de/s/2PLgW3km7y3sb92
 -->
@@ -36,6 +37,7 @@ VS Code kann [hier](https://code.visualstudio.com/download) heruntergeladen werd
 {{video("https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/bbeAtZoYzPN7oPa
 de: https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg
 en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 -->
@@ -45,6 +47,7 @@ en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 {{video("https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/2NrzijRnERDg6Ht
 de: https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P
 en: https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE
 -->
@@ -62,6 +65,7 @@ Es gibt zwei Möglichkeiten das **git**- bzw. GitHub-System zu nutzen: Die GitHu
 {{video("https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo/download/de_setup_github.mp4", "/images/thumbnails/de_setup_github.png", "de_setup_github", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/n5KPkrfBwsipRi5
 de: https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo
 en: https://fhpcloud.fh-potsdam.de/s/HLdw8ABZ2dHBqDq
 -->

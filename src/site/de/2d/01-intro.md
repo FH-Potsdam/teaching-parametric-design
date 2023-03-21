@@ -23,6 +23,7 @@ Es gibt viele Frameworks / Libraries / Packages für JavaScript. Diese Werkzeuge
 
 {{video("https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4", "/images/thumbnails/de_2d_intro_new.png", "de_2d_intro_new", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/eypa3gfFRqGbm95
 de:https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4
 en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/de_new.mp4
 -->
@@ -38,6 +39,7 @@ en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/de_new.mp4
 
 {{video("https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4", "/images/thumbnails/de_2d_intro_ref.png", "de_2d_intro_ref", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/AKJPcs3EM9m3g6c
 de:https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4
 en:https://fhpcloud.fh-potsdam.de/s/rdnq32A7DzzttbF/download/de_reference.mp4
 -->
@@ -54,6 +56,7 @@ Für diejenigen die es interessiert wie die `index.html` Datei aufgebaut ist, ha
 
 {{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png", "de_2d_intro_sketch", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/xcbCJGYNsGpxaKa
 de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
 en:https://fhpcloud.fh-potsdam.de/s/mLDgRoAWRSiefNb/download/de_sketch.mp4
 -->
@@ -99,6 +102,7 @@ Die **draw** Funktion wird das erste mal nach Setup ausgeführt. Anders als *set
 
 {{video("https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4", "/images/thumbnails/de_2d_intro_comments.png", "de_2d_intro_comments", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/6L4cn7H4qNGmp7Y
 de:https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4
 en:https://fhpcloud.fh-potsdam.de/s/2HEDwNWoL6RNLHM/download/de_comments.mp4
 -->
@@ -123,6 +127,7 @@ as we like
 
 {{video("https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4", "/images/thumbnails/de_2d_intro_indent.png", "de_2d_intro_indent", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/4LzPBCkFgpyzzQs
 de:https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4
 en:https://fhpcloud.fh-potsdam.de/s/iHNiJ5XEs9iFGg8/download/de_indent.mp4
 -->
@@ -145,6 +150,7 @@ function setup() {
 
 {{video("https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4", "/images/thumbnails/de_2d_intro_debug.png", "de_2d_intro_debug", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/FbxacpMRkcAHGWs
 de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4
 en:https://fhpcloud.fh-potsdam.de/s/XAos9wLLNNaZ7Sb/download/de_debug.mp4
 -->

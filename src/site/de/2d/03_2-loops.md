@@ -15,6 +15,7 @@ Nach unseren ersten Experimente, werdet ihr festgestellt haben, dass wenn man ko
 
 {{video("https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_2d_loops_while.mp4", "/images/thumbnails/de_2d_loops_while.png", "de_2d_loops_while", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/yWWgw3ni8cnzM7r
 de:https://fhpcloud.fh-potsdam.de/s/Yt5xr8GX8RE6b6g/download/de_while.mp4
 en:https://fhpcloud.fh-potsdam.de/s/onmYDyYM43GAMRS
 -->
@@ -35,6 +36,7 @@ Wir können Schleifen auch ineinander verschachteln. Wenn wir z.B. ein Raster vo
 
 {{video("https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/de_for.mp4", "/images/thumbnails/de_2d_loops_for.png", "de_2d_loops_for", translations.subtitles[locale], locale)}}
 <!--
+dg:https://fhpcloud.fh-potsdam.de/s/4ogwmexL6WiDtj9
 de:https://fhpcloud.fh-potsdam.de/s/2e55m4LqkzpYKPy/download/de_for.mp4
 en:https://fhpcloud.fh-potsdam.de/s/dzWFAFiZiYes9HZ/download/de_for.mp4
 -->

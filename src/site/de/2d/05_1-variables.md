@@ -14,6 +14,7 @@ eleventyNavigation:
 {{video("https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH/download/de_2d_variables2_array.mp4", "/images/thumbnails/de_2d_variables2_array.png", "de_2d_variables2_array", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/y6wqaaqsSd3Cj6o
 de: https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH
 en: https://fhpcloud.fh-potsdam.de/s/tYFWZMsrRskSqBf
 -->
@@ -65,6 +66,7 @@ Weitere Informationen zu allem was man mit Arrays anstellen kann, gibt es [hier]
 {{video("https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz/download/de_2d_variables2_objects.mp4", "/images/thumbnails/de_2d_variables2_objects.png", "de_2d_variables2_objects", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/BzjWoaxLcdnqnzc
 de: https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz
 en: https://fhpcloud.fh-potsdam.de/s/DLRECDPmbN3T7RR
 -->
@@ -113,6 +115,7 @@ points[1]['vel'][0] // 1
 {{video("https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq/download/de_2d_variables_noise.mp4", "/images/thumbnails/de_2d_variables_noise.png", "de_2d_variables_noise", translations.subtitles[locale], locale)}}
 
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/jSjjFwTMnoFXj8r
 de: https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq
 en: https://fhpcloud.fh-potsdam.de/s/f4EmxzC38ToxGCb
 -->

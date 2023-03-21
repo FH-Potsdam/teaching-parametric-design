@@ -1,12 +1,10 @@
 - noLoop in intro additional graphic
-- extras and bonus only in english
+
 - add URL origin security 
 
 - font/text examples
 
 - editor errors
-
-- skip to content link
 
 - update graphics (math.md)
 
@@ -20,10 +18,8 @@
 
 - screen reader test for parametric
 
+- funding call
+
 - reference icons: https://iconoir.com/
 
-- LANG (HTML)
-
 - 3D nurbs lib example 
-
-- extras english only and create dupes

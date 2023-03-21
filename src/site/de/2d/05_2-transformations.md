@@ -15,6 +15,7 @@ Wenn man sehr komplexe Layouts erstellt, kann es irgendwann durchaus kompliziert
 
 {{video("https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8/download/de_2d_transformations_translate.mp4", "/images/thumbnails/de_2d_transformations_translate.png", "de_2d_transformations_translate", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/fy5yAbNccMckzwj
 de: https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8
 en: https://fhpcloud.fh-potsdam.de/s/8mdTinP63eqL4se
 -->
@@ -71,6 +72,7 @@ Dies ist z.B. nützlich, wenn man mit dem Polar-Koordinatensystem arbeitet und m
 
 {{video("https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa/download/de_2d_transformations_rotate.mp4", "/images/thumbnails/de_2d_transformations_rotate.png", "de_2d_transformations_rotate", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/45T5nN7EAEWErqH
 de: https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa
 en: https://fhpcloud.fh-potsdam.de/s/9p59bc4W663fp4C
 -->
@@ -86,6 +88,7 @@ rotate(Math.PI / 180 * 45); // take angleMode into acount
 
 {{video("https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf/download/de_2d_transformations_scale.mp4", "/images/thumbnails/de_2d_transformations_scale.png", "de_2d_transformations_scale", translations.subtitles[locale], locale)}}
 <!--
+dg: https://fhpcloud.fh-potsdam.de/s/EorFrdc5nSXpWFz
 de: https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf
 en: https://fhpcloud.fh-potsdam.de/s/AAKPPkFNZKAFS9t
 -->

@@ -43,6 +43,21 @@ h1+h2{
 
 /* HEADER */
 
+#skip-nav {
+  background: $accent-color;
+  color: black;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  z-index: 9999;
+}
+
+#skip-nav:focus {
+  transform: translateY(0%);
+}
+
 header {
   width: 100%;
   margin-bottom:50px;

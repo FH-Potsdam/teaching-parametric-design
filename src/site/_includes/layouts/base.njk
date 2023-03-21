@@ -6,7 +6,8 @@
 <html lang="{% if locale == "de" %}de-DE{% elif locale == "dg" %}sgn-DE{% else %}en-US{% endif %}">
   {% include 'parts/head.njk' %}
   <body>
-    <header id="header">
+    <a tabindex="0" id="skip-nav" href="#content-start">{{ translations.skipContent[locale]|safe }}</a>
+    <header id="header" role="banner">
       <div>
         <picture id="header-illu">
           <source srcset="/images/header/{{ [1,2,3,4,5,6] | random }}-dark.png" media="(prefers-color-scheme: dark)">
@@ -27,7 +28,7 @@
       </div>
     </header>
     <div id="container">
-      <div id="nav">
+      <div id="nav" role="navigation">
         <nav>
           {{ renderNav(collections, page, locale, content) }}
         </nav>
@@ -35,13 +36,13 @@
           {{ renderLang(page.url) }}
         </nav>
       </div>
-      <main>
+      <main role="main">
         {% if eleventyNavigation %}
         {{ renderCrumbs(collections, eleventyNavigation.key, locale) }}
         {% else %}
         {{ renderCrumbs(collections, null, locale) }}
         {% endif %}
-        <h1>{{ title }}</h1>
+        <h1 id="content-start">{{ title }}</h1>
         {{ content | safe }}
         {{ renderPageNav(collections, page, locale) }}
         <p class="backtotop">
