@@ -8,7 +8,17 @@ eleventyNavigation:
   order: 1
 ---
 
-<style></style>
+<style>
+.result table{
+  width: 100%;
+  margin: 50px auto;
+}
+
+.result table td{
+  text-overflow:ellipsis;
+  overflow-wrap: break-word;
+}
+</style>
 
 <div class="input">
 <label for="text2vec_input">Text input</label>
@@ -24,6 +34,7 @@ Dog
 </div>
 
 <div class="result">
+<h2>Embeddings</h2>
 <table>
 <thead>
   <tr>
@@ -34,8 +45,13 @@ Dog
 </thead>
 <tbody id="text2vec_tbl"></tbody>
 </table>
-<div id="text2vec_matrix"><table></table></div>
-<div id="text2vec_2d"><svg width="500" height="500" style="background:black;"></svg></div>
+<div id="text2vec_matrix">
+<h2>Distance Matrix</h2>
+<table></table>
+</div>
+<div id="text2vec_2d">
+<h2>Dimensionality Reduction - Distances</h2>
+<svg width="500" height="500" style="background:black;"></svg></div>
 </div>
 
 <script src="/js/math.min.js"></script>
@@ -66,7 +82,7 @@ btn.addEventListener("click", async () => {
       mat.innerHTML = "";
       svg.innerHTML = "";
       data.forEach((d, i) => {
-        table.innerHTML += `<tr><td>${i}</td><td>${text[i]}</td><td>${JSON.stringify(d).substring(0, 200)}...]</td></tr>`;
+        table.innerHTML += `<tr><td>${i}</td><td>${text[i]}</td><td class="vec">${JSON.stringify(d).split(",").join(", ").substring(0, 200)}...]</td></tr>`;
       });
       if (data.length > 1) {
         const matrix = [];

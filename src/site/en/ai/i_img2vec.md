@@ -16,11 +16,25 @@ eleventyNavigation:
     margin:0;
     text-align:center;
   }
+  #table td{
+    padding-top:1px;
+  }
+  #table, #table table{
+    width: 100%;
+  }
+  #canvas{
+    text-align:center;
+  }
+  canvas{
+    margin: 50px auto;
+  }
 </style>
 
 <div id="input"></div>
 <div id="preview"></div>
 <div id="canvas"></div>
+
+<h2>Vector representation</h2>
 <div id="table"><table></table></div>
 
 
@@ -33,7 +47,7 @@ const t = document.querySelector("#table table");
 function setup() {
   input = createFileInput(handleFile);
   input.parent(document.querySelector("#input"));
-  const canvas = createCanvas(512, 1536);
+  const canvas = createCanvas(512, 1536 + 3 * 50);
   canvas.parent("#canvas");
   noLoop();
 }
@@ -47,6 +61,15 @@ function handleFile(file) {
       imgH = img.height;
 
       const iSize = 64;
+
+      background(255);
+
+      textSize(16);
+      fill("black");
+      noStroke();
+      text("Reformat image dimensions", 0, 40);
+
+      translate(0, 50);
 
       const g = createGraphics(iSize, iSize);
       let ratio = 0;
@@ -67,7 +90,6 @@ function handleFile(file) {
       );
       g.loadPixels();
 
-      background(255);
       stroke("black");
 
       push();
@@ -92,6 +114,14 @@ function handleFile(file) {
       );
 
       translate(0, 512);
+
+      textSize(16);
+      fill("black");
+      noStroke();
+      text("Reduce image size", 1, 40);
+
+      stroke(0);
+      translate(0, 50);
       
       for (let x = 0; x < iSize; x += 1) {
         for (let y = 0; y < iSize; y += 1) {
@@ -102,6 +132,13 @@ function handleFile(file) {
       }
 
       translate(0, 512);
+
+      textSize(16);
+      fill("black");
+      noStroke();
+      text("Reduce colors", 1, 40);
+      stroke(0);
+      translate(0, 50);
 
       for (let x = 0; x < iSize; x += 1) {
         for (let y = 0; y < iSize; y += 1) {
