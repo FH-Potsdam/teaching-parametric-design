@@ -19,6 +19,16 @@
   },
   {
     "category": "recent",
+    "name": "Kéré Architecture",
+    "images":[
+      {
+        "src": "kere",
+        "credit": "TUM Tower, 2019, Munich, kerearchitecture.com"
+      }
+    ]
+  },
+  {
+    "category": "recent",
     "name": "Snowfro",
     "images":[
       {
