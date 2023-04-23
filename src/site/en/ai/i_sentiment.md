@@ -38,7 +38,7 @@ h1 {
 }
 
 .row:nth-of-type(2n) {
-  background: whitesmoke;
+  background: rgba(255,255,255,0.25);
 }
 
 .row .text {
