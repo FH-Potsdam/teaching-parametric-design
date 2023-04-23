@@ -117,7 +117,7 @@ p {
   <p>Enter text below and click 'Classify' to add it to the table.</p>
   <form id="classify-new">
     <input id="classify-new-text-input" placeholder="i.e. 'you suck'" required="">
-    <button id="classify-new-text" type="submit">Classify</div>
+    <button id="classify-new-text">Classify</div>
   </form>
 </div>
 
@@ -189,15 +189,12 @@ const predict = async () => {
   const predictions = await classify(samples.map(d => d.text));
   addPredictions(predictions);
 
-  document.querySelector('#classify-new')
-      .addEventListener('submit', (e) => {
+  document.querySelector('button')
+      .addEventListener('click', () => {
         const text = document.querySelector('#classify-new-text-input').value;
         const predictions = classify([text]).then(d => {
           addPredictions(d);
         });
-
-        // Prevent submitting the form which would cause a page reload.
-        e.preventDefault();
       });
 };
 

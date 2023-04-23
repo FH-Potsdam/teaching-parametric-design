@@ -38,7 +38,8 @@ eleventyNavigation:
       success. Having spent most of his money, Tesla lived in a series of New York hotels, leaving behind unpaid bills.
       He died in New York City in January 1943.[9] Tesla's work fell into relative obscurity following his death, until
       1960, when the General Conference on Weights and Measures named the SI unit of magnetic flux density the tesla in
-      his honor.[10] There has been a resurgence in popular interest in Tesla since the 1990s.[11]</textarea>
+      his honor.[10] There has been a resurgence in popular interest in Tesla since the 1990s.[11]
+</textarea>
       <h3>Question</h3>
       <input type=text id="question"> <button id="search">Search</button>
       <h3>Answers</h3>
