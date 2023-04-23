@@ -115,10 +115,8 @@ p {
   <div class="description">This is a demo of the TensorFlow.js toxicity model, which classifies text according to whether it exhibits offensive attributes (i.e. profanity, sexual explicitness). The samples in the table below were taken from this <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">Kaggle dataset</a>.</div>
   <div id="table-wrapper"></div>
   <p>Enter text below and click 'Classify' to add it to the table.</p>
-  <form id="classify-new">
-    <input id="classify-new-text-input" placeholder="i.e. 'you suck'" required="">
-    <button id="classify-new-text">Classify</div>
-  </form>
+  <input id="classify-new-text-input" placeholder="i.e. 'you suck'" required="">
+  <button id="classify-new-text">Classify</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2/dist/toxicity.min.js"></script>
@@ -189,7 +187,7 @@ const predict = async () => {
   const predictions = await classify(samples.map(d => d.text));
   addPredictions(predictions);
 
-  document.querySelector('button')
+  document.querySelector('#classify-new-text')
       .addEventListener('click', () => {
         const text = document.querySelector('#classify-new-text-input').value;
         const predictions = classify([text]).then(d => {
