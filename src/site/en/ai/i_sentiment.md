@@ -119,6 +119,7 @@ p {
   <button id="classify-new-text">Classify</div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2/dist/toxicity.min.js"></script>
 <script>
 const samples = [
