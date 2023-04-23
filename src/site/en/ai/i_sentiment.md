@@ -122,24 +122,6 @@ p {
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2/dist/toxicity.min.js"></script>
 <script>
-const samples = [
-  {
-    'id': '002261b0415c4f9d',
-    'text':
-        'We\'re dudes on computers, moron.  You are quite astonishingly stupid.'
-  },
-  {
-    'id': '0027160ca62626bc',
-    'text':
-        'Please stop. If you continue to vandalize Wikipedia, as you did to Kmart, you will be blocked from editing.'
-  },
-  {
-    'id': '002fb627b19c4c0b',
-    'text':
-        'I respect your point of view, and when this discussion originated on 8th April I would have tended to agree with you.'
-  }
-];
-
 let model, labels;
 
 const classify = async (inputs) => {
@@ -184,9 +166,6 @@ const predict = async () => {
               return `<div class="label">${label.replace('_', ' ')}</div>`;
             }).join('')}
   </div>`);
-
-  const predictions = await classify(samples.map(d => d.text));
-  addPredictions(predictions);
 
   document.querySelector('#classify-new-text')
       .addEventListener('click', () => {
