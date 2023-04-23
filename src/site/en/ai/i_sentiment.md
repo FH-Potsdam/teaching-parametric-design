@@ -41,10 +41,6 @@ h1 {
   background: rgba(255,255,255,0.25);
 }
 
-.row .text {
-  flex: 1 1 auto;
-}
-
 .row .label {
   border-left: solid 1px #ccc;
   width: 60px;
