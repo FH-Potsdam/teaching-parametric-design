@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_bonus
   order: 6
   parent: dg
-template: "../de/bonus/index.md"
+layout: "../de/bonus/index.md"
 ---

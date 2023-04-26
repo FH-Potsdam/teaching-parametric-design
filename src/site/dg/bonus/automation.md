@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_bonus_automation
   parent: dg_bonus
   order: 2
-template: "../de/bonus/automation.md"
+layout: "../de/bonus/automation.md"
 ---

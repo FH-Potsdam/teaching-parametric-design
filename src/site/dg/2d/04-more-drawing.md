@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_2d_drawing2
   parent: dg_2d
   order: 6
-template: "../de/2d/04-more-drawing.md"
+layout: "../de/2d/04-more-drawing.md"
 ---

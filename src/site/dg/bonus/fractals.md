@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_bonus_fractals
   parent: dg_bonus
   order: 2
-template: "../de/bonus/fractals.md"
+layout: "../de/bonus/fractals.md"
 ---

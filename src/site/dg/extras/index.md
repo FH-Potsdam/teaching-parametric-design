@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_extras
   order: 7
   parent: dg
-template: "../de/extras/index.md"
+layout: "../de/extras/index.md"
 ---

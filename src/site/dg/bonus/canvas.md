@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_bonus_canvas
   parent: dg_bonus
   order: 2
-template: "../de/bonus/canvas.md"
+layout: "../de/bonus/canvas.md"
 ---

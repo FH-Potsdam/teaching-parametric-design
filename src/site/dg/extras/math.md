@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_extras_math
   parent: dg_extras
   order: 1
-template: "../de/extras/math.md"
+layout: "../de/extras/math.md"
 ---

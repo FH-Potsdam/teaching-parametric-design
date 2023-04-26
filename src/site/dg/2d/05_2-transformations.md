@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_2d_more_complexity
   parent: dg_2d
   order: 8
-template: "../de/2d/05_2-transformations.md"
+layout: "../de/2d/05_2-transformations.md"
 ---

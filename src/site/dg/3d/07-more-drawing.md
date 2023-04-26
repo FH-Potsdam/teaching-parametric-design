@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_3d_drawing_2
   parent: dg_3d
   order: 7
-template: "../de/3d/07-more-drawing.md"
+layout: "../de/3d/07-more-drawing.md"
 ---

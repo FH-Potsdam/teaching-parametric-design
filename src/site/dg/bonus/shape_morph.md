@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_bonus_shape_morph
   parent: dg_bonus
   order: 1
-template: "../de/bonus/shape_morph.md"
+layout: "../de/bonus/shape_morph.md"
 ---

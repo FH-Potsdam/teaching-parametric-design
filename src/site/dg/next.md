@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_next
   order: 8
   parent: dg
-template: "../de/next.md"
+layout: "../de/next.md"
 ---

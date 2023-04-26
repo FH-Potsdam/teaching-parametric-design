@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_bonus_3dsvg
   parent: dg_bonus
   order: 2
-template: "../de/bonus/3dsvg.md"
+layout: "../de/bonus/3dsvg.md"
 ---

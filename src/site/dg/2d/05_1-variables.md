@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_2d_variables2
   parent: dg_2d
   order: 7
-template: "../de/2d/05_1-variables.md"
+layout: "../de/2d/05_1-variables.md"
 ---
