@@ -1,5 +1,7 @@
 ---
 title: Canvas
+locale: en
+layout: default
 eleventyNavigation:
   title: Canvas
   key: en_bonus_canvas

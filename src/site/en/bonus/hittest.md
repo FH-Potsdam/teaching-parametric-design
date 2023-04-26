@@ -1,5 +1,7 @@
 ---
 title: HitTest
+locale: en
+layout: default
 eleventyNavigation:
   title: HitTest
   key: en_bonus_hittest

@@ -1,5 +1,7 @@
 ---
 title: Fractals
+locale: en
+layout: default
 eleventyNavigation:
   title: Fractals
   key: en_bonus_fractals

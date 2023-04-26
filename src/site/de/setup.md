@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_setup
   order: 3
   parent: de
+locale: de
+layout: default
 ---
 
 {% from "../_includes/parts/macros.njk" import h2, video, img, download %}
@@ -19,7 +21,7 @@ Falls du auf einem Tablet oder etwas ähnlichem arbeitest, kannst du den p5js [W
 
 {{h2('Code Editor')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od/download/de_setup_code-editor.mp4", "/images/thumbnails/de_setup_editor.png", "de_setup_editor", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/JmNALPKTf4664od/download/de_setup_code-editor.mp4", "/images/thumbnails/de_setup_editor.png", "de_setup_editor", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/K5ZADXCy5SgPq8a/download/de_setup_code-editor.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/K5ZADXCy5SgPq8a
@@ -34,7 +36,7 @@ Falls du nicht VS Code benutzt, stelle bitte sicher das du einen "richtigen" Cod
 #### 1. VS Code und die Live-Server-Erweiterung installieren
 VS Code kann [hier](https://code.visualstudio.com/download) heruntergeladen werden. Abhängig vom Betriebssystem ist VS Code auch über gängige Software-Stores kostenlos verfügbar.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/bbeAtZoYzPN7oPa/download/de_setup_vscode.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/bbeAtZoYzPN7oPa
@@ -44,7 +46,7 @@ en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 
 {{h2('GitHub')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/2NrzijRnERDg6Ht/download/de_setup_git.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/2NrzijRnERDg6Ht
@@ -62,7 +64,7 @@ Es gibt zwei Möglichkeiten das **git**- bzw. GitHub-System zu nutzen: Die GitHu
 
 #### GitHub Desktop App (empfohlen)
 
-{{video("https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo/download/de_setup_github.mp4", "/images/thumbnails/de_setup_github.png", "de_setup_github", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/neWkx2H8RNqg6Eo/download/de_setup_github.mp4", "/images/thumbnails/de_setup_github.png", "de_setup_github", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/n5KPkrfBwsipRi5/download/de_setup_github.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/n5KPkrfBwsipRi5

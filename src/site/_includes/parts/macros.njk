@@ -104,9 +104,9 @@
 </ul>
 {% endmacro %}
 
-{% macro video(url, poster, captionFile, captionLabel, locale) %}
+{% macro video(url, poster, captionFile, captionLabel, locale, dgUrl="") %}
 <video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
-  <source src="{{url}}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
+  <source src="{% if locale == "dg" %}{{dgUrl}}{% else %}{{url}}{% endif %}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
   Your browser does not support the video tag.
 </video>
 {% endmacro %}

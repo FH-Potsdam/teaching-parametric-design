@@ -1,5 +1,7 @@
 ---
 title: OpenCV
+locale: en
+layout: default
 eleventyNavigation:
   title: OpenCV
   key: en_bonus_opencv

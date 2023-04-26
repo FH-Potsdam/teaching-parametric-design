@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_3d_drawing
   parent: de_3d
   order: 3
+layout: default
+locale: de
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, img, task, inspiration %}

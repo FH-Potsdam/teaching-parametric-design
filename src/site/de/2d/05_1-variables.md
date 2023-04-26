@@ -5,13 +5,15 @@ eleventyNavigation:
   key: de_2d_variables2
   parent: de_2d
   order: 7
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, task, inspiration %}
 
 {{h2('Arrays')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH/download/de_2d_variables2_array.mp4", "/images/thumbnails/de_2d_variables2_array.png", "de_2d_variables2_array", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/qWH96q7N4fnGLTH/download/de_2d_variables2_array.mp4", "/images/thumbnails/de_2d_variables2_array.png", "de_2d_variables2_array", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/y6wqaaqsSd3Cj6o/download/de_2d_variables2_array.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/y6wqaaqsSd3Cj6o
@@ -63,7 +65,7 @@ Weitere Informationen zu allem was man mit Arrays anstellen kann, gibt es [hier]
 
 {{h2('Objects')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz/download/de_2d_variables2_objects.mp4", "/images/thumbnails/de_2d_variables2_objects.png", "de_2d_variables2_objects", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/74cqFK4GH2FGKdz/download/de_2d_variables2_objects.mp4", "/images/thumbnails/de_2d_variables2_objects.png", "de_2d_variables2_objects", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/BzjWoaxLcdnqnzc/download/de_2d_variables2_objects.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/BzjWoaxLcdnqnzc
@@ -112,7 +114,7 @@ points[1]['vel'][0] // 1
 
 {{h2('Noise')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq/download/de_2d_variables_noise.mp4", "/images/thumbnails/de_2d_variables_noise.png", "de_2d_variables_noise", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/MNQ3gQzWQyKFpMq/download/de_2d_variables_noise.mp4", "/images/thumbnails/de_2d_variables_noise.png", "de_2d_variables_noise", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/jSjjFwTMnoFXj8r/download/de_2d_variables_noise.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/jSjjFwTMnoFXj8r

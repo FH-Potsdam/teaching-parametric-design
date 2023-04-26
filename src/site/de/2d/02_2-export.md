@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_2d_more_export
   parent: de_2d
   order: 2.1
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video %}
@@ -12,7 +14,7 @@ eleventyNavigation:
 {% from "../../_includes/parts/macros.njk" import definition %}
 {% from '../../_includes/parts/macros.njk' import editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE/download/de_2d_export.mp4", "/images/thumbnails/de_2d_export.png", "de_2d_export", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE/download/de_2d_export.mp4", "/images/thumbnails/de_2d_export.png", "de_2d_export", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/ZJYJYJC7CpRPjwa/download/de_2d_export.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/ZJYJYJC7CpRPjwa
 de: https://fhpcloud.fh-potsdam.de/s/NBKGd2Lg9WXcWNE

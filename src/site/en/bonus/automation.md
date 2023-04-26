@@ -5,6 +5,8 @@ eleventyNavigation:
   key: en_bonus_automation
   parent: en_bonus
   order: 2
+locale: en
+layout: default
 ---
 
 When you want to export a lot of images from your code, for example, to create a video from an animation, just using `save()` is not very efficient. There is a quick solution to overcome this limitation.

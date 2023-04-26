@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_3d
   order: 5
   parent: de
+layout: default
+locale: de
 ---
 
 {% from "../../_includes/parts/macros.njk" import chapter %}

@@ -1,5 +1,7 @@
 ---
 title: Augmented & Virtual Reality
+locale: en
+layout: default
 eleventyNavigation:
   title: AR/VR
   key: en_bonus_arvr

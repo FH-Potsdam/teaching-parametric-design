@@ -5,11 +5,13 @@ eleventyNavigation:
   key: de_2d_more_complexity
   parent: de_2d
   order: 9
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89/download/de_2d_functions.mp4", "/images/thumbnails/de_2d_functions.png", "de_2d_functions", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89/download/de_2d_functions.mp4", "/images/thumbnails/de_2d_functions.png", "de_2d_functions", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/nr9iGgoorqojAon/download/de_2d_functions.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/nr9iGgoorqojAon
 de: https://fhpcloud.fh-potsdam.de/s/J7pfTLNaNKxDW89

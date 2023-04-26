@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_2d_intro
   parent: de_2d
   order: 1
+layout: default
+locale: de
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, task, h2, definition, img %}
@@ -21,7 +23,7 @@ Es gibt viele Frameworks / Libraries / Packages für JavaScript. Diese Werkzeuge
 
 {{h2('Neues Projekt')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4", "/images/thumbnails/de_2d_intro_new.png", "de_2d_intro_new", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4", "/images/thumbnails/de_2d_intro_new.png", "de_2d_intro_new", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/eypa3gfFRqGbm95/download/de_new.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/eypa3gfFRqGbm95
 de:https://fhpcloud.fh-potsdam.de/s/pSgDkqb8yGmeyiP/download/de_new.mp4
@@ -37,7 +39,7 @@ en:https://fhpcloud.fh-potsdam.de/s/geCyAfQbfg4P3Fe/download/de_new.mp4
 
 {{h2('Reference')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4", "/images/thumbnails/de_2d_intro_ref.png", "de_2d_intro_ref", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4", "/images/thumbnails/de_2d_intro_ref.png", "de_2d_intro_ref", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/AKJPcs3EM9m3g6c/download/de_reference.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/AKJPcs3EM9m3g6c
 de:https://fhpcloud.fh-potsdam.de/s/JGYB3Dor9BRRaJ2/download/de_reference.mp4
@@ -54,7 +56,7 @@ Für diejenigen die es interessiert wie die `index.html` Datei aufgebaut ist, ha
 
 ### sketch.js
 
-{{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png", "de_2d_intro_sketch", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4", "/images/thumbnails/de_2d_intro_sketch.png", "de_2d_intro_sketch", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/xcbCJGYNsGpxaKa/download/de_sketch.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/xcbCJGYNsGpxaKa
 de:https://fhpcloud.fh-potsdam.de/s/m6fSyAmSRJoMSRR/download/de_sketch.mp4
@@ -100,7 +102,7 @@ Die **draw** Funktion wird das erste mal nach Setup ausgeführt. Anders als *set
 
 {{h2('Kommentare')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4", "/images/thumbnails/de_2d_intro_comments.png", "de_2d_intro_comments", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4", "/images/thumbnails/de_2d_intro_comments.png", "de_2d_intro_comments", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/6L4cn7H4qNGmp7Y/download/de_comments.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/6L4cn7H4qNGmp7Y
 de:https://fhpcloud.fh-potsdam.de/s/WsxqZSo4zPZkZgH/download/de_comments.mp4
@@ -125,7 +127,7 @@ as we like
 
 {{h2('Einrücken')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4", "/images/thumbnails/de_2d_intro_indent.png", "de_2d_intro_indent", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4", "/images/thumbnails/de_2d_intro_indent.png", "de_2d_intro_indent", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/4LzPBCkFgpyzzQs/download/de_indent.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/4LzPBCkFgpyzzQs
 de:https://fhpcloud.fh-potsdam.de/s/kqDm5WMWY6Q2S2X/download/de_indent.mp4
@@ -148,7 +150,7 @@ function setup() {
 
 {{h2('Debugging')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4", "/images/thumbnails/de_2d_intro_debug.png", "de_2d_intro_debug", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4", "/images/thumbnails/de_2d_intro_debug.png", "de_2d_intro_debug", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/FbxacpMRkcAHGWs/download/de_debug.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/FbxacpMRkcAHGWs
 de:https://fhpcloud.fh-potsdam.de/s/WincbxLqmRB8Hac/download/de_debug.mp4

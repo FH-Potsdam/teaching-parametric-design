@@ -5,13 +5,15 @@ eleventyNavigation:
   key: de_2d_conditions
   parent: de_2d
   order: 5
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
 {{h2('Vergleichen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png", "de_2d_conditions_conditions", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4", "/images/thumbnails/de_2d_conditions_conditions.png", "de_2d_conditions_conditions", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/WD8PxgFdpzP7qY3/download/de_conditions.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/WD8PxgFdpzP7qY3
 de:https://fhpcloud.fh-potsdam.de/s/7857tAkFNXA8Yjb/download/de_conditions.mp4
@@ -100,7 +102,7 @@ Die obige "Condition" `i%2 === 0` überprüft, ob eine Zahl, wenn diese durch 2 
 
 {{h2('Scopes (nochmal)')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png", "de_2d_conditions_scopes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4", "/images/thumbnails/de_2d_conditions_scopes.png", "de_2d_conditions_scopes", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/M3kk5L3qdCXZTM5/download/de_scopes2.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/M3kk5L3qdCXZTM5
 de:https://fhpcloud.fh-potsdam.de/s/BdSbeYGttJnTK2K/download/de_scopes2.mp4

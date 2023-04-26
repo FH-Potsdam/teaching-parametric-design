@@ -1,5 +1,7 @@
 ---
 title: Contours
+locale: en
+layout: default
 eleventyNavigation:
   title: Contours
   key: en_bonus_contours

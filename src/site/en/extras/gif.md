@@ -1,5 +1,7 @@
 ---
 title: GIF-Export
+locale: en
+layout: default
 eleventyNavigation:
   title: GIF
   key: en_extras_gif

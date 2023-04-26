@@ -4,6 +4,7 @@ layout: home
 eleventyNavigation:
   key: de
   order: 0
+locale: de
 ---
 
 {% from "../_includes/parts/macros.njk" import img %}
@@ -11,7 +12,7 @@ eleventyNavigation:
 Dies ist die Website für den "Parametric Design" Kurs am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam ([FHP](https://www.fh-potsdam.de/)). Diese Website öffnet Einsteiger*innen einen Startpunkt für das Gestalten durch Programmierung. Es werden nur kostenlose und quelloffenen Anwendungen gentutzt. Das Seminar ist so konzipiert, dass die Inhalten auf der Website untermauert werden von gemeinsamen Aktivitäten in den Vorlesungen. Die Website stellt aber auch in sich allein einen guten Einstieg in das Thema dar.
 
 <p class="start-button-container">
-  <a href="/de/introduction" class="start-button"><span>Kurs beginnen &raquo;</span></a>
+  <a href="/{{locale}}/introduction" class="start-button"><span>Kurs beginnen &raquo;</span></a>
 </p>
 
 Dieser Kurs richtet sich an alle Designer*innen und Kreative, die Herausfinden wollen, wie man durch Programmierung digitale und physische Artefakte gestalten kann. An der FHP werden die Studiengänge Interface-, Produkt- und Kommunikationsdesign angeboten, welche eine zentrale Rolle in diesem Kurs spielen werden.

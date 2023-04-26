@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_2d_more_complexity
   parent: de_2d
   order: 8
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
@@ -13,7 +15,7 @@ eleventyNavigation:
 
 Wenn man sehr komplexe Layouts erstellt, kann es irgendwann durchaus kompliziert werden, die ganze Offsets und Winkel zu berechnen. Um dieses Problem ein wenig zu umgehen, gibt es in p5js so genannte Transformationen. Mit diesen Transformationen manipuliert man das gesamte Koordinatensystem. Dieses Konzept ist am Anfang ein wenig verwirrend, gibt uns aber großartige Möglichkeiten schnell und einfach Designs zu erstellen. Fangen wir mit der `translate(x, y)` Funktion an. Mit dem `translate()` Kommando, können wir den Nullpunkt/Ursprung (0,0) unseres Koordinatensystems verschieben. 
 
-{{video("https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8/download/de_2d_transformations_translate.mp4", "/images/thumbnails/de_2d_transformations_translate.png", "de_2d_transformations_translate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8/download/de_2d_transformations_translate.mp4", "/images/thumbnails/de_2d_transformations_translate.png", "de_2d_transformations_translate", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/fy5yAbNccMckzwj/download/de_2d_transformations_translate.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/fy5yAbNccMckzwj
 de: https://fhpcloud.fh-potsdam.de/s/9FHm7JK8im2jbp8
@@ -70,7 +72,7 @@ Dies ist z.B. nützlich, wenn man mit dem Polar-Koordinatensystem arbeitet und m
 
 {{h2('Drehen')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa/download/de_2d_transformations_rotate.mp4", "/images/thumbnails/de_2d_transformations_rotate.png", "de_2d_transformations_rotate", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa/download/de_2d_transformations_rotate.mp4", "/images/thumbnails/de_2d_transformations_rotate.png", "de_2d_transformations_rotate", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/45T5nN7EAEWErqH/download/de_2d_transformations_rotate.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/45T5nN7EAEWErqH
 de: https://fhpcloud.fh-potsdam.de/s/Jspak8jQtELyAQa
@@ -86,7 +88,7 @@ rotate(Math.PI / 180 * 45); // take angleMode into acount
 
 {{h2('Skalieren')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf/download/de_2d_transformations_scale.mp4", "/images/thumbnails/de_2d_transformations_scale.png", "de_2d_transformations_scale", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf/download/de_2d_transformations_scale.mp4", "/images/thumbnails/de_2d_transformations_scale.png", "de_2d_transformations_scale", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/EorFrdc5nSXpWFz/download/de_2d_transformations_scale.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/EorFrdc5nSXpWFz
 de: https://fhpcloud.fh-potsdam.de/s/wgSRdgKFSCFgySf

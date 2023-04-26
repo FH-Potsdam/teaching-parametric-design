@@ -5,6 +5,8 @@ eleventyNavigation:
   key: de_inspiration
   order: 2
   parent: de
+locale: de
+layout: default
 ---
 
 Die folgende Seite enthält eine Auswahl von Arbeiten mit Beziehungen zu den Inhalten dieses Seminars. Die Liste der Künstler\*innen und Entwickler\*innen hat keinen Anspruch der Vollständigkeit.

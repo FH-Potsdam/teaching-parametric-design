@@ -1,5 +1,7 @@
 ---
 title: Data
+locale: en
+layout: default
 eleventyNavigation:
   title: Data
   key: en_bonus_data

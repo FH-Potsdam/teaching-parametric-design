@@ -5,13 +5,15 @@ eleventyNavigation:
   key: de_2d_drawing2
   parent: de_2d
   order: 6
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, h2, definition, editor, inspiration, task %}
 
 {{h2('Draw-Schleife')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/SyL8FRKWFsbXGrp/download/de_2d_drawing2_drawloop.mp4", "/images/thumbnails/de_2d_drawing2_drawloop.png", "de_2d_drawing2_drawloop", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/SyL8FRKWFsbXGrp/download/de_2d_drawing2_drawloop.mp4", "/images/thumbnails/de_2d_drawing2_drawloop.png", "de_2d_drawing2_drawloop", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/mkbs7JYdqWdzaE9/download/de_2d_drawing2_drawloop.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/mkbs7JYdqWdzaE9
@@ -47,7 +49,7 @@ function setup() {
 
 {{h2('Polygons')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/CA4eLGXZigSea9T/download/de_2d_drawing2_vertex.mp4", "/images/thumbnails/de_2d_drawing2_vertex.png", "de_2d_drawing2_vertex", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/CA4eLGXZigSea9T/download/de_2d_drawing2_vertex.mp4", "/images/thumbnails/de_2d_drawing2_vertex.png", "de_2d_drawing2_vertex", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/5DwJfJDF9okcT5y/download/de_2d_drawing2_vertex.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/5DwJfJDF9okcT5y
@@ -87,7 +89,7 @@ Mit dem Befehl `beginShape();` sagen wir p5js, dass wir beginnen wollen eine neu
 
 {{h2('Polar Koordinaten')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/DM5BjnxQWjfTT2M/download/de_2d_drawing2_polar.mp4", "/images/thumbnails/de_2d_drawing2_polar.png", "de_2d_drawing2_polar", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/DM5BjnxQWjfTT2M/download/de_2d_drawing2_polar.mp4", "/images/thumbnails/de_2d_drawing2_polar.png", "de_2d_drawing2_polar", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/EqFPLRMepRj8HBn/download/de_2d_drawing2_polar.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/EqFPLRMepRj8HBn
@@ -135,7 +137,7 @@ triangle(0, 0, 40, 0, 40, 20);
 
 {{h2('Kurven')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA/download/de_2d_drawing2_curves.mp4", "/images/thumbnails/de_2d_drawing2_curves.png", "de_2d_drawing2_curves", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA/download/de_2d_drawing2_curves.mp4", "/images/thumbnails/de_2d_drawing2_curves.png", "de_2d_drawing2_curves", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/zN7BJqyjS9KEeQS/download/de_2d_drawing2_curves.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/zN7BJqyjS9KEeQS
 de: https://fhpcloud.fh-potsdam.de/s/e5Cka4Jfj2b4iXA

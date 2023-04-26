@@ -5,13 +5,15 @@ eleventyNavigation:
   key: de_introduction
   order: 0
   parent: de
+locale: de
+layout: default
 ---
 
 {% from "../_includes/parts/macros.njk" import h2, definition, video, img %}
 
 {{h2('Einführung ins Parametric Design')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x/download/de_introduction.mp4", "/images/thumbnails/de_introduction.png", "de_introduction", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x/download/de_introduction.mp4", "/images/thumbnails/de_introduction.png", "de_introduction", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/c2sycB56EWTb5w9/download/de_introduction.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/c2sycB56EWTb5w9

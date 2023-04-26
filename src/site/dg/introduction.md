@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_introduction
   order: 0
   parent: dg
-template: "../de/introduction.md"
+layout: "../de/introduction.md"
 ---

@@ -1,5 +1,7 @@
 ---
 title: Machine Learning
+locale: en
+layout: default
 eleventyNavigation:
   title: Machine Learning
   key: en_bonus_ml

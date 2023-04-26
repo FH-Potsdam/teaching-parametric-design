@@ -1,5 +1,7 @@
 ---
 title: Forces
+locale: en
+layout: default
 eleventyNavigation:
   title: Forces
   key: en_bonus_Forces

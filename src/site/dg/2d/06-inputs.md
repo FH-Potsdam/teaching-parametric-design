@@ -5,5 +5,5 @@ eleventyNavigation:
   key: dg_2d_more_input
   parent: dg_2d
   order: 10
-template: "../de/2d/06-inputs.md"
+layout: "../de/2d/06-inputs.md"
 ---

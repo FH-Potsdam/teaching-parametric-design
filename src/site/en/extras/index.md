@@ -1,5 +1,7 @@
 ---
 title: Extras
+locale: en
+layout: default
 eleventyNavigation:
   title: Extras
   key: en_extras

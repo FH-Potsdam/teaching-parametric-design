@@ -5,11 +5,13 @@ eleventyNavigation:
   key: de_2d_variables
   parent: de_2d
   order: 3
+locale: de
+layout: default
 ---
 
 {% from "../../_includes/parts/macros.njk" import video, task, inspiration, h2, definition, editor %}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png", "de_2d_variables_variables", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4", "/images/thumbnails/de_2d_variables_variables.png", "de_2d_variables_variables", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/Wp2SwcgTBm5Koz7/download/de_variables.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/Wp2SwcgTBm5Koz7
 de:https://fhpcloud.fh-potsdam.de/s/i3XWqysaaJZSqKS/download/de_variables.mp4
@@ -91,7 +93,7 @@ const backgroundColor = color(255, 0, 100, 150);
 
 {{h2('Scopes')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png", "de_2d_variables_scopes", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/eWosHwNS6ZkDxSe/download/de_scopes.mp4", "/images/thumbnails/de_2d_variables_scopes.png", "de_2d_variables_scopes", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/9mtqAwkMRiQwNC7/download/de_scopes.mp4")}}
 
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/9mtqAwkMRiQwNC7
@@ -123,7 +125,7 @@ Wir können nur auf Variablen / Kommandos / etc. zugreifen, wenn diese im selben
 
 {{h2('Zufall')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png", "de_2d_variables_random", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4", "/images/thumbnails/de_2d_variables_random.png", "de_2d_variables_random", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/kX6zRRerQxB89e7/download/de_random.mp4")}}
 <!--
 dg:https://fhpcloud.fh-potsdam.de/s/kX6zRRerQxB89e7
 de:https://fhpcloud.fh-potsdam.de/s/RNgAQseAJQedsFJ/download/de_random.mp4

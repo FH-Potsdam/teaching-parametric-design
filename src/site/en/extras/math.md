@@ -1,5 +1,7 @@
 ---
 title: Math
+locale: en
+layout: default
 eleventyNavigation:
   title: Math
   key: en_extras_math

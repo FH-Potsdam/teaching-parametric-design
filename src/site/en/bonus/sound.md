@@ -1,5 +1,7 @@
 ---
 title: Sound
+locale: en
+layout: default
 eleventyNavigation:
   title: Sound
   key: en_bonus_sound

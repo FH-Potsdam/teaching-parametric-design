@@ -1,5 +1,7 @@
 ---
 title: Input
+locale: de
+layout: default
 eleventyNavigation:
   title: Input
   key: de_2d_more_input
@@ -11,7 +13,7 @@ eleventyNavigation:
 
 Bisher haben wir unsere Parameter immer manuell erstellt oder haben Funktionen wie `random()` genutzt. In dieser nächsten Einheit werden wir uns verscheidene Eingabeverfahren anschauen, um die Parameter unserer Design zu verändern, während diese gezeichnet werden.
 
-{{video("https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi/download/de_2d_input_input.mp4", "/images/thumbnails/de_2d_input_input.png", "de_2d_input_input", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/iadtKNALWYK5ySi/download/de_2d_input_input.mp4", "/images/thumbnails/de_2d_input_input.png", "de_2d_input_input", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/Lzi5tJxL2J6A6Sy/download/de_2d_input_input.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/Lzi5tJxL2J6A6Sy
@@ -81,7 +83,7 @@ Unter den Links gibt es in der Dokumentation weitere Informationen.
 
 ### Slider
 
-{{video("https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/Jb4MfEDS45ZzRmE/download/de_2d_input_slider.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/Jb4MfEDS45ZzRmE
 de: https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn
@@ -114,7 +116,7 @@ function draw() {
 
 {{h2('Maus')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy/download/de_2d_input_mouse.mp4", "/images/thumbnails/de_2d_input_mouse.png", "de_2d_input_mouse", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/KnTnFYsX8gSGCGy/download/de_2d_input_mouse.mp4", "/images/thumbnails/de_2d_input_mouse.png", "de_2d_input_mouse", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/ELzsXtESMKHLZww/download/de_2d_input_mouse.mp4")}}
 
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/ELzsXtESMKHLZww
@@ -154,7 +156,7 @@ Im nächsten Beispiel machen wir etwas ähnliches, hierzu überzeichnen wir aber
 
 {{h2('Tastatur')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob/download/de_2d_input_keyboard.mp4", "/images/thumbnails/de_2d_input_keyboard.png", "de_2d_input_keyboard", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob/download/de_2d_input_keyboard.mp4", "/images/thumbnails/de_2d_input_keyboard.png", "de_2d_input_keyboard", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/iZqjnXyX6JtTtKw/download/de_2d_input_keyboard.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/iZqjnXyX6JtTtKw
 de: https://fhpcloud.fh-potsdam.de/s/5tjrRi5E3t6Akob
@@ -205,7 +207,7 @@ Wenn man die Tastatureingabe nutzt, muss man in der Regel immer erst einmal auf 
 
 {{h2('GUI')}}
 
-{{video("https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG/download/de_2d_input_gui.mp4", "/images/thumbnails/de_2d_input_gui.png", "de_2d_input_gui", translations.subtitles[locale], locale)}}
+{{video("https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG/download/de_2d_input_gui.mp4", "/images/thumbnails/de_2d_input_gui.png", "de_2d_input_gui", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/LXE3sFzJ5jReCyH/download/de_2d_input_gui.mp4")}}
 <!--
 dg: https://fhpcloud.fh-potsdam.de/s/LXE3sFzJ5jReCyH
 de: https://fhpcloud.fh-potsdam.de/s/PQG9LZaK3M5afyG

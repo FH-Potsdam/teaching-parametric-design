@@ -1,5 +1,7 @@
 ---
 title: Particles
+locale: en
+layout: default
 eleventyNavigation:
   title: Particles
   key: en_bonus_particles

@@ -1,5 +1,7 @@
 ---
 title: Images
+locale: en
+layout: default
 eleventyNavigation:
   title: Images
   key: en_bonus_images

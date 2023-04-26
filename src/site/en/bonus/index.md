@@ -1,5 +1,7 @@
 ---
 title: Bonus
+locale: en
+layout: default
 eleventyNavigation:
   title: Bonus
   key: en_bonus

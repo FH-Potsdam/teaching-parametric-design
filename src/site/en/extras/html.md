@@ -1,5 +1,7 @@
 ---
 title: HTML
+locale: en
+layout: default
 eleventyNavigation:
   title: HTML
   key: en_extras_html

@@ -1,5 +1,7 @@
 ---
 title: Shape Morph
+locale: en
+layout: default
 eleventyNavigation:
   title: Shape Morph
   key: en_bonus_shape_morph
