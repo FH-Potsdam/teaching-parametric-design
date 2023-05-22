@@ -77,7 +77,7 @@ for (let st = 1; st <= steps; st += 1) {
   bodystr += `<tr><th>${st}</th>`;
   for (let s = 1; s <= seeds; s += 1) {
     types.forEach(t => {
-      bodystr += `<td><img src="../out/${t+s}_${st}.png" /></td>`;
+      bodystr += `<td><img src="/images/out/${t+s}_${st}.png" /></td>`;
     });
   }
 }
