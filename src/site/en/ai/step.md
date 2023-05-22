@@ -56,7 +56,7 @@ const images = [];
 sel.addEventListener("change", () => {
   for (let s = 1; s <= steps; s += 1) {
     images[s] = new Image();
-    images[s].src = `./out/${sel.value}_${s}.png`;
+    images[s].src = `../out/${sel.value}_${s}.png`;
   }
   image.src = images[1].src;
   range.value = 1;
