@@ -18,3 +18,5 @@ This page contains a list of selected works closely realted to the content of th
 <div id="inspiration-list">
 {{list(inspiration, translations, locale)}}
 </div>
+
+If you want to see more early works of computer art, I recommend [this article](https://www.amygoodchild.com/blog/computer-art-50s-and-60s) by Amy Goodchild.

@@ -19,10 +19,6 @@ function preload () {
   font = loadFont('/fonts/inter/inter-v7-vietnamese_latin-ext-700.ttf');
 }
 
-window.addEventListener('resize', function() {
-  updateSize();
-});
-
 function updateSize () {
   sketchWidth = window.innerWidth;
   resizeCanvas(sketchWidth, sketchHeight);
@@ -40,6 +36,16 @@ function updateSize () {
     colors.push(lerpColor(color1, color2, shapeCount === 1 ? 0 : d / (shapeCount-1)));
   }
 }
+
+function debounce(func, time = 100){
+    var timer;
+    return function(event){
+        if(timer) clearTimeout(timer);
+        timer = setTimeout(func, time, event);
+    };
+}
+
+window.addEventListener("resize", debounce( updateSize, 150 ));
 
 function setup () {
   // blue to green

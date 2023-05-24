@@ -25,7 +25,7 @@ en: https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL
 
 Das Material dieses Seminars wird nicht nur in verschiedenen Sprachen angeboten, sondern bietet auch verschiedene Zugänge, um sich die Inhalte zu erarbeiten. Man kann alle Inhalte erlernen, indem man nur die Texte und Definitionen studiert, sich alternativ die Videos anschaut oder direkt die Code-Beispiele herunterlädt und durch das Experimentieren mit den Beispielen lernt.
 
-Alle Videos in Deutsch und Englisch haben Untertitel. Die meisten Browser bieten unten rechts einen kleinen Button, über den man zusätzliche Optionen aufrufen kann und dort auch die Untertitel aktivieren kann. Wir nutzen kein Video-Hosting-Service, um die Privatsphäre der Studierenden zu schützen, deshalb setzen wir auf den nativen Video-Player des Browsers, Aussehen und Funktionalität können leicht voneinander abweichen.
+Alle Videos in Deutsch und Englisch haben Untertitel. Die meisten Browser bieten unten rechts einen kleinen Button, über den man zusätzliche Optionen aufrufen kann und dort auch die Untertitel aktivieren kann. Wir nutzen kein Video-Hosting-Service, um die Privatsphäre der Studierenden zu schützen, deshalb setzen wir auf den nativen Video-Player des Browsers. Aussehen und Funktionalität können leicht voneinander abweichen.
 
 {{ img('subtitles.png', 'Untertitel aktivieren.') }}
 
@@ -43,13 +43,13 @@ function setup() {
 }
 ```
 
-Die erste Zeile zeigt die Parameter, die eine Funktion akzeptiert. Die Definition erklärt welche Parameter, welche Funktion haben. Wenn ein Parameter mit einem **\*** gekennzeichnet ist, dann handelt es sich bei dem Parameter um einen optionalen Parameter. Die meistgenutzten Parametertypen sind:
+Die erste Zeile zeigt die Parameter, die eine Funktion akzeptiert. Die Definition erklärt, welche Parameter, welche Funktion haben. Wenn ein Parameter mit einem **\*** gekennzeichnet ist, dann handelt es sich bei dem Parameter um einen optionalen Parameter. Die meistgenutzten Parametertypen sind:
 
 - **Zahl (number)**: 1, 2, 0.5, -10.4
 - **Text (string)**: 'Any kind of text'
 - **Boolescher Wert (boolean)**: true, false
 
-> Zusätzliche, nützliche Hinweis werden in blauen Boxen hervorgehoben.
+> Zusätzliche, nützliche Hinweise werden in blauen Boxen hervorgehoben.
 
 ### Editor
 
@@ -61,4 +61,4 @@ Die Vorschau für JSCAD ist wesentlich ressourcenhungriger, deshalb werden die P
 
 ### Extras & Bonus
 
-Unter [Extras](extras/index.md) befindet sich zusätzliches Material, dass hilfreich für die Programmierung ist, aber nicht Pflicht ist. Im [Bonus-Bereich](bonus/index.md) der Seite, gibt es konkrete Beispiele und thematische Vertiefungen, diese gehen meisten zurück auf Diskussionen im Kurs (z.B. wie kann man Audio-Files einbinden und analysieren). Der Bonus-Bereich wird weiter wachsen, deshalb können wir diesen Bereich aktuell nur in Deutsch und Englisch anbieten.
+Unter [Extras](extras/index.md) befindet sich zusätzliches Material, das hilfreich für die Programmierung ist, aber nicht Pflicht ist. Im [Bonus-Bereich](bonus/index.md) der Seite gibt es konkrete Beispiele und thematische Vertiefungen, diese gehen meisten zurück auf Diskussionen im Kurs (z.B. wie kann man Audio-Files einbinden und analysieren). Der Bonus-Bereich wird weiter wachsen, deshalb können wir diesen Bereich aktuell nur in Deutsch und Englisch anbieten.

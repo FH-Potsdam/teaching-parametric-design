@@ -21,7 +21,7 @@ The course targets all designers or creative minds, that want to explore how to 
 
 ## What is this course about?
 
-What makes this course different from other coding classes? This course has a strong focus on the interfaces between the output we generate through code and the possibilities to use this output in various fabrication or design applications (see overview below). We will use JavaScript for the whole course, as its a good language to start with. You will need no prior knowledge of coding. If you want to become a developer or computer scientics, this course might be a gentle introduction, but probably not what you are looking for. For creatives to get into coding, an important part is learning how to transfer ideas into code. In this course we primarily do this through group activities and discussions. This website will provide some excercises to get you started, but the most important part is to keep experimenting and playing with code, until it feels more natural.
+What makes this course different from other coding classes? This course has a strong focus on the interfaces between the output we generate through code and the possibilities to use this output in various fabrication or design applications (see overview below). We will use JavaScript for the whole course, as its a good language to start with. You will need no prior knowledge of coding. If you want to become a developer or computer scientist, this course might be a gentle introduction, but probably not what you are looking for. For creatives to get into coding, an important part is learning how to transfer ideas into code. In this course we primarily do this through group activities and discussions. This website will provide some exercises to get you started, but the most important part is to keep experimenting and playing with code, until it feels more natural.
 
 <figure>
     <picture>
@@ -31,9 +31,36 @@ What makes this course different from other coding classes? This course has a st
     <figcaption><span>Possibilities of code-driven design.</span></figcaption>
 </figure>
 
-## Open Educational Ressources
 
-This course is licensed under CC BY-ND 4.0. This means you can reuse every part of this website, as well as the companion code repositories for your own teaching. You only need to provide attribution. Why not remix? There is a lot of video-material on this website, that we don't want remixed, as well as some of the graphics. If you are interested to remix a particular graphic get in touch. The code examples are under MIT license, so no need for attribution and you can use it for whatever you want.
+## The Team
+
+<div class="col-2">
+  <div>
+    <figure>
+        <picture>
+          <source srcset="/images/material/sebastian.jpg">
+          <img style="width:300px;" src="/images/material/sebastian.jpg" alt="Photo of Sebastian Meier" srcset="/images/material/sebastian@2xjpg 2x" />
+        </picture>
+        <figcaption class="title-caption"><span>Sebastian Meier</span></figcaption>
+    </figure>
+    <p>As a professor for the design of knowledge transfer at the <a href="https://www.fh-potsdam.de/hochschule-netzwerk/personen/sebastian-meier">Potsdam University of Applied Sciences</a>, I teach digital skills for design work with programming and AI tools in the Interface and Product Design courses. Together with my team, we research these topics in the <a href="https://idl.fh-potsdam.de">Interaction Design Lab.</a>.</p>
+  </div>
+  <div>
+    <figure>
+        <picture>
+          <source srcset="/images/material/jolanta.jpg">
+          <img style="width:300px;" src="/images/material/jolanta.jpg" alt="Photo of Jolanta Paliszewska" srcset="/images/material/jolanta@2xjpg 2x" />
+        </picture>
+        <figcaption class="title-caption"><span>Jolanta Paliszewska</span></figcaption>
+    </figure>
+    <p>I am Jolanta Paliszewska, a deaf designer and expert in accessibility, design for all and empowerment design. I currently work as a research assistant at the University of Applied Sciences Bremen and also teach as a lecturer (e.g. at the University of Applied Sciences Potsdam).<br /><a href="http://www.vispal.de">www.vispal.de</a></p>
+  </div>
+</div>
+
+
+## Open Educational Resources
+
+This course is licensed under CC BY-ND 4.0. This means you can reuse every part of this website, as well as the companion code repositories for your own teaching. You only need to provide attribution. Why not remix? There is a lot of video-material on this website, that we don't want remixed, as well as some of the graphics. If you are interested to remix a particular graphic get in touch. The code examples are under MIT licence, so no need for attribution and you can use it for whatever you want.
 
 ## Contribute
 
