@@ -12,6 +12,7 @@ $font__family: 'Inter', sans-serif;
 html {
   text-rendering: optimizeLegibility;
   font-family: $font__family;
+  font-display: fallback;
 }
 
 @mixin font__h1 {
