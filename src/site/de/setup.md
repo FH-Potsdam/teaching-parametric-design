@@ -44,6 +44,73 @@ de: https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg
 en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 -->
 
+{{h2('Coding Assistants - ChatBots')}}
+
+In den letzten Jahren haben verschiedene Organisation und Unternehmen ChatBot-Technologien entwickelt, die einen bei der Softwareentwicklung unterstützen können. Diese Systeme können verschiedene assistive Aufgaben übernehmen, aber **es ist Vorsicht geboten**.
+
+> Achtung! Denk daran, dass die Unternehmen hinter ChatBots großes Interesse haben ihre Systeme zu verbessern und hierfür Daten benötigen. Fast alle AI-Cloud-Services behalten sich das Recht vor alle Eingaben der Nutzer*innen weiterzuverwenden. Gebt nur in ChatBots ein, was Dritte sehen dürfen. Lösungen für private und sichere ChatBots siehe unten.
+
+### Wie funktionieren KI ChatBots?
+
+Die Basis moderner ChatBots sind sogenannte "Large Languange Models" (LLMs). Wie die meisten "generativen KIs", sind LLMs künstliche neuronale Netze, welche mit gigantischen Datenmengen trainiert wurden. Im Fall von LLMs werden die Modelle mit Texten trainiert. Das Training großer und komplexer Modelle braucht nicht nur viele Daten, sondern verbraucht auch sehr viel Zeit und Energie (bzw. CO2). Im Laufe des Trainings lernt das neuronale Netz Muster in Texten, Wortreihenfolgen, Kontexte in denen bestimmte Worte genutzt werden, etc. Diese gelernten Muster werden in einem Modell abgespeichert. Diese noch sehr rohen Modelle werden auch "Foundational Models" genannt, da man diese als Basis für verschiedene Aufgaben (Verfeinerungen) nutzen kann. Für ChatBots werden die LLMs mit spezifischen Anfragen von Nutzer*innen und entsprechenden erwünschten Lösungen verfeinert. Unter anderem wurden so mehrere LLMs speziell für Programmieraufgaben verfeinert (s.u.).
+
+### Möglichkeiten und Probleme
+
+Warum sollte man heute noch Programmieren lernen, wenn ChatBots doch anscheinend alles können? Hier kommen wir zum problematischen Teil der ChatBots. Wenn man mit ChatBots interagiert, kann man schnell das Gefühl bekommen, dass diese "intelligent" sind und uns und die Welt verstehen. Dieser Eindruckt täuscht (<= umstrittene Aussage). LLMs sagen die Wahrscheinlichkeit für Wortreihenfolgen vorher und generieren so Text. Dadurch das die Modelle während des Trainings enorm große Mengen an Texten aus unterschiedlichsten Bereich konsumiert haben, können Sie sehr viele unterschiedliche Formen von Text und Textinhalte generieren. Wissenschaftler*innen streiten darüber, ob diese text-basierten Modelle der Welt einem Verständnis der Welt nahe kommen.
+
+Problematisch sind in diesem Kontext besonders, dass diese Modelle kein validiertes Wissen von sich geben, sondern Wörter basierend auf Wahrscheinlichkeiten aneinanderreihen. Die Antworten können deshalb täuschend echt aussehen, können aber trotzdem völlig falsch sein. Um z.B. Code zu verstehen, der von einem LLM generiert wurde und zu verstehen, ob dieser funktioniert und wie man diesen evtl. funktionstüchtig machen kann, bedarf es Programmiergrundlagen. Ohne dieses Grundlagenwissen können die Antworten eines solchen Modells nicht bewertet werden.
+
+#### Einsatzmöglichkeiten von Coding ChatBots:
+
+- Fehlermeldungen erklären lassen
+- Code mit normaler Sprache erklären lassen
+- Code von einer Programmiersprache in eine andere übersetzen lassen
+- Inspiration für eine Funktionsablauf geben lassen
+
+Ähnlich wie bei anderen Einsätzen von LLMs sollte man besonders den Output von Code/Text, welchen man weiterverwenden möchten, nur als Inspiration sehen, die man prüfen, verbessern und ausbauen kann.
+
+{{ img('chatbots.png', 'Chatbot Systeme (v.l.n.r): ChatGPT, HugginFace und Perplexity') }}
+
+### Werkzeuge
+
+Die einfachste Möglichkeit ChatBots zu nutzen, sind Online-Services:
+
+- [ChatGPT](https://chat.openai.com/)
+- [Meta's Code-LLaMa via HuggingFace](https://huggingface.co/chat)
+- [Meta's Code-LLaMa via PerplexityAI](https://labs.perplexity.ai/)
+
+Daneben gibt es die kostenlose Software [LM Studio](https://lmstudio.ai/). Hiermit könnt ihr euch verschiedene Modelle auf euren Computer laden und dort lokal mit dem Modell kommunizieren. Ich empfehle euch **CodeLllama 7B Instruct**, es funktioniert für seine vergleichbar kleine Größe ziemlich gut.
+
+Wenn ihr noch mehr Kontrolle haben wollt, könnt ihr euch ein komplett eigenes lokales Setup aufsetzen. Hierfür empfehle ich euch die Kombination aus:
+
+- [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
+- [facebookresearch/llama](https://github.com/facebookresearch/llama)
+
+Zugriff zu Code Llama bekommt man bei [Meta](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
+
+
+### Beispiel
+
+Versuche bei deinen Prompts so genau wie möglich zu Beschreiben was du brauchst, um den Kontext möglichst spezifisch zu machen. Um welche Programmiersprache geht es, was gibst du vor, was erwartest du als Ausgabe. Prompts in englisch zu schreiben funktioniert meist besser als auf deutsch.
+
+#### Code
+```console.lg("Hello World")```
+
+#### Nutzereingabe:
+```Explain the following JavaScript Error message to a beginner: Uncaught TypeError: console.lg is not a function <anonymous> debugger eval code:1```
+
+#### ChatGPT Antwort:
+Certainly! This error message is coming from JavaScript, and it's telling you that there's a problem in your code. Let's break down the message step by step:
+
+1. **Uncaught TypeError**: This part of the message indicates that a type of error occurred. In JavaScript, there are different types of errors, and a "TypeError" happens when you try to do something with a value that is not of the expected type.
+
+2. **console.lg is not a function**: This is the specific error message. It's saying that there's a problem with a piece of code that is trying to use something called *console.lg*, but JavaScript doesn't recognize *lg* as a valid function or property of the *console* object.<br />**Explanation**: The console object in JavaScript is used for logging messages to the browser's developer console. The normal function to print a message to the console is *console.log()*. However, in this case, it seems like there's a typo or some mistake in the code, where *lg* is used instead of *log*.
+
+3.<br />**<anonymous> debugger eval code:1**: This part of the message provides additional context about where the error occurred. It's saying that the error happened in some code that was evaluated by a debugger, but it doesn't give a specific file or location. This might happen if you're running code in a browser's developer console or if there's some kind of dynamic evaluation happening.
+
+In summary, the error message is telling you that there's a problem in your code where you're trying to use *console.lg*, which JavaScript doesn't recognize. You should double-check your code to make sure you're using the correct function, which is likely *console.log()*.
+
+
 {{h2('GitHub')}}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/W9QgRiapdEcWT5P/download/de_setup_git.mp4", "/images/thumbnails/de_setup_git.png", "de_setup_git", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/2NrzijRnERDg6Ht/download/de_setup_git.mp4")}}
