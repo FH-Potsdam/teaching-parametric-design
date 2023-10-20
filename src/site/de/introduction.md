@@ -61,4 +61,4 @@ Die Vorschau für JSCAD ist wesentlich ressourcenhungriger, deshalb werden die P
 
 ### Extras & Bonus
 
-Unter [Extras](extras/index.md) befindet sich zusätzliches Material, das hilfreich für die Programmierung ist, aber nicht Pflicht ist. Im [Bonus-Bereich](bonus/index.md) der Seite gibt es konkrete Beispiele und thematische Vertiefungen, diese gehen meisten zurück auf Diskussionen im Kurs (z.B. wie kann man Audio-Files einbinden und analysieren). Der Bonus-Bereich wird weiter wachsen, deshalb können wir diesen Bereich aktuell nur in Deutsch und Englisch anbieten.
+Unter [Extras](/de/extras/) befindet sich zusätzliches Material, das hilfreich für die Programmierung ist, aber nicht Pflicht ist. Im [Bonus-Bereich](/de/bonus/) der Seite gibt es konkrete Beispiele und thematische Vertiefungen, diese gehen meisten zurück auf Diskussionen im Kurs (z.B. wie kann man Audio-Files einbinden und analysieren). Der Bonus-Bereich wird weiter wachsen, deshalb können wir diesen Bereich aktuell nur in Deutsch und Englisch anbieten.

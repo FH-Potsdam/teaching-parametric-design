@@ -37,7 +37,7 @@
     "sharp": "^0.31.2"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
     "cssnano": "^5.0.16",

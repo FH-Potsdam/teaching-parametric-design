@@ -58,4 +58,4 @@ The JSCAD preview is a lot more resource intensive, therefore, we open the JSCAD
 
 ### Extras & Bonus
 
-Under [Extras](extras/index.md) you will find additional material, which might be helpful, but it is not mandatory to finish the course. The [Bonus-section](bonus/index.md) contains thematic deep dives, which were based on discussions or questions, for example how to use audio-files as input. The bonus material will likely increase over time and is only available in written German and English.
+Under [Extras](/en/extras/) you will find additional material, which might be helpful, but it is not mandatory to finish the course. The [Bonus-section](/en/bonus/) contains thematic deep dives, which were based on discussions or questions, for example how to use audio-files as input. The bonus material will likely increase over time and is only available in written German and English.
