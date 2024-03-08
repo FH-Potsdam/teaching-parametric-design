@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00:04.369 --> 00:00:10.429
+Unser "draw"-Loop wird ja als Schleife ausgeführt. 
+Das kann sehr praktisch sein um z.B Animationen  
+
+00:00:10.429 --> 00:00:15.289
+und dergleichen durchzuführen. Aber wenn wir 
+z.B mit zufälligen Werten arbeiten, kann es  
+
+00:00:15.289 --> 00:00:20.749
+auch manchmal störend sein. Ich habe hier ein ganz 
+einfaches Beispiel vorbereitet, wo wir einfach ein  
+
+00:00:20.749 --> 00:00:26.629
+Grid generieren, von Kreisen, die immer 10 
+Pixel Abstand angeordnet sind und die Größe  
+
+00:00:26.629 --> 00:00:33.289
+wird zufällig generiert. Wenn ich das jetzt mal 
+abspeicher, dann sehen wir das die "draw"-Schleife  
+
+00:00:33.289 --> 00:00:37.429
+kontinuierlich läuft und deshalb immer immer neue 
+Bilder generiert werden. Vielleicht wollen wir  
+
+00:00:37.429 --> 00:00:42.289
+das aber nur einmal generieren und dann soll 
+das Ganze stehen bleiben. Dafür gibt es eine  
+
+00:00:42.289 --> 00:00:49.328
+ganz einfache Funktion um das zu erreichen 
+und das ist die sogenannte noLoop-Funktion.
+
+00:00:49.328 --> 00:00:55.628
+Damit wird sobald dieser Befehl ausgeführt wird, 
+die "draw"-Schleife nicht mehr weiter ausgeführt,  
+
+00:00:55.628 --> 00:01:02.048
+sondern bleibt stehen. Sobald ich das jetzt 
+wieder auskommentiere, wird der Loop wieder  
+
+00:01:02.048 --> 00:01:08.348
+korrekt ausgeführt. Also wenn ihr irgendwann 
+mal den Loop nicht dauerhaft haben wollt, das  
+
+00:01:08.348 --> 00:01:12.848
+kann z.B auch sein wenn ihr was ganz kompliziertes 
+zeichnet, was ganz viel Performance frisst. Dann  
+
+00:01:12.848 --> 00:01:16.808
+ist es sinnvoll, dass man das nur einmal zeichnet 
+und nicht ganz ganz ganz häufig zeichnet. Deswegen  
+
+00:01:16.808 --> 00:01:23.528
+ist diese noLoop-Funktion ganz wichtig. Darüber 
+hinaus können wir aber auch die "draw"-Schleife  
+
+00:01:23.528 --> 00:01:30.848
+verlangsamen. Es gibt die frameRate-Funktion. 
+Damit können wir einstellen wie häufig pro  
+
+00:01:30.848 --> 00:01:38.048
+Sekunde das System versucht sozusagen die 
+"draw"-Schleife laufen zu lassen. Und jetzt  
+
+00:01:38.048 --> 00:01:44.948
+sehen wir, dass nur einmal pro Sekunde das Ganze 
+ausgeführt wird. Diese Framerate Funktion muss  
+
+00:01:44.948 --> 00:01:52.132
+man aber ein bisschen vorsichtig betrachten, 
+denn wenn ich jetzt z.B hier 200 eintrage.
+
+00:01:52.132 --> 00:01:55.573
+Dann sieht das Ganze nicht wirklich 
+schneller aus als es vorher aussah.  
+
+00:01:55.573 --> 00:02:00.733
+Und der Grund dafür ist, dass wir aktuell 
+z.B in diesem spezifischen Sketch hier,  
+
+00:02:00.733 --> 00:02:04.813
+ganz ganz ganz viele Kreise zeichnen und es 
+dauert natürlich bis die alle gezeichnet sind  
+
+00:02:04.813 --> 00:02:10.873
+und deswegen ist die Framerate nach oben hin 
+durch die Performance eures Computers limitiert.  
+
+00:02:10.873 --> 00:02:14.653
+Also wenn ihr einen langsamen Computer 
+habt, dann könnt ihr da 200 eintragen,  
+
+00:02:14.653 --> 00:02:19.033
+aber die tatsächliche Framerate die ihr nachher 
+rausbekommt wird wesentlich geringer sein.

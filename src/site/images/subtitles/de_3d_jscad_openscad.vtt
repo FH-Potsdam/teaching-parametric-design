@@ -1,0 +1,117 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.480
+3d Anwendungen die ihr bereits kennt wie Fusion 
+360 oder Blender unterscheiden sich stark von  
+
+00:00:10.480 --> 00:00:14.920
+der Anwendung die ich euch nun zeigen möchte. 
+Denn hier geht es nicht darum besonders schöne  
+
+00:00:14.920 --> 00:00:19.990
+Renderings oder so zu generieren und ein komplexes 
+User-Interface den Nutzer*innen bereitzustellen,  
+
+00:00:19.990 --> 00:00:27.910
+sondern OpenSCAD ist eine offene Software, die 
+dazu entwickelt wurde, durch Code 3D-Objekte zu  
+
+00:00:27.910 --> 00:00:33.640
+generieren. Und nicht wie es zum Beispiel in 
+p5js ist, 3D-Objekte die primär der visuellen  
+
+00:00:33.640 --> 00:00:38.650
+Darstellung dienen. Sondern 3D-Objekte die danach 
+wirklich in Fertigungsverfahren wie 3D-Druck  
+
+00:00:38.650 --> 00:00:46.420
+oder der Fräse weiter genutzt werden können. Also 
+korrekte 3D-Objekte. Ihr könnt das Ganze zum einen  
+
+00:00:46.420 --> 00:00:52.870
+in der OpenSCAD Software machen, die hier euch 
+gerade zeige. Wir werden im Kurs die OpenJSCAD  
+
+00:00:54.100 --> 00:01:00.400
+Variante verwenden. Das ist ein Port in JavaScript 
+derselben Programmiersprache. Wichtig dabei ist,  
+
+00:01:00.400 --> 00:01:05.530
+dass die JavaScript Variante nicht ganz so mächtig 
+ist, weil sie sozusagen auf die Performance eures  
+
+00:01:05.530 --> 00:01:10.960
+Browsers auch angewiesen ist. Aber für einfache 
+Objekte ist sie sehr gut geeignet und vor allem  
+
+00:01:10.960 --> 00:01:15.940
+können wir im Rahmen dieses Kurses in unserer 
+selben Arbeitsumgebung bleiben und müssen nicht  
+
+00:01:15.940 --> 00:01:21.040
+uns noch eine zusätzliche Software aneignen. Ich 
+möchte euch aber trotzdem ganz kurz die OpenSCAD  
+
+00:01:21.610 --> 00:01:26.860
+Software vorstellen, wie die funktioniert 
+und wie man damit arbeiten kann. Wir haben  
+
+00:01:26.860 --> 00:01:31.150
+hier in OpenSCAD auf der linken Seite wenn wir 
+ein neues Projekt öffnen unseren Code Editor  
+
+00:01:31.150 --> 00:01:37.810
+und rechts bekommen wir unsere Vorschau. Und hier 
+können wir jetzt ganz einfache Befehle eingeben,  
+
+00:01:37.810 --> 00:01:43.360
+ähnlich wie wir das aus p5js kennen, um Objekte 
+zu generieren. Zum Beispiel könnten wir ein  
+
+00:01:43.360 --> 00:01:48.370
+Rechteck generieren. Drücken dann nochmal auf die 
+Vorschau. Und jetzt wird hier im Koordinatensystem  
+
+00:01:48.370 --> 00:01:55.480
+für uns ein Rechteck angelegt. Und nun können wir 
+dieses Rechteck mit anderen Befehlen kombinieren,  
+
+00:01:55.480 --> 00:02:02.440
+um daraus sozusagen verschiedene Transformationen 
+und Operationen zu verketten. Wir könnten  
+
+00:02:02.440 --> 00:02:07.810
+zum Beispiel "translate" benutzen. "translate" 
+funktioniert genauso wie wir das aus p5js kennen,  
+
+00:02:07.810 --> 00:02:12.310
+hier könnten wir jetzt zum Beispiel 
+unseren square könnten wir jetzt mal  
+
+00:02:12.310 --> 00:02:20.650
+einfach verschieben. Dann könnten wir zum 
+Beispiel eine extrude Funktion benutzen um  
+
+00:02:20.650 --> 00:02:27.040
+das Ganze noch weiter in eine Richtung zu 
+extrudieren, könnten sagen wir wollen das  
+
+00:02:27.040 --> 00:02:33.550
+noch zwei Einheiten nach oben extrudieren. 
+Sehen dann, dass unser Körper nach oben  
+
+00:02:33.550 --> 00:02:39.070
+wächst. Könnten das noch größer machen. Könnten 
+das ganze zum Beispiel auch noch einfärben und
+
+00:02:39.070 --> 00:02:47.410
+können so ähnlich wie wir das auch aus 
+p5js kennen. Können sozusagen verschiedene  
+
+00:02:47.410 --> 00:02:51.910
+Operationen benutzen, um jetzt unsere Objekte 
+zu generieren und eine ganz ähnliche Syntax  
+
+00:02:51.910 --> 00:02:56.710
+werden wir dann auch gleich in der OpenJSCAD 
+also der JavaScript Variante wiederfinden.

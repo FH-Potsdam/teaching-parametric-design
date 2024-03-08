@@ -1,0 +1,479 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:09.920
+In the last video i introduced you to the basic 
+functionality of GIT. Now we will take a look  
+
+00:00:09.920 --> 00:00:15.440
+at the GitHub platform and how we will use it 
+throughout the semester. So after you have created  
+
+00:00:15.440 --> 00:00:21.440
+an account on GitHub you can start creating your 
+own projects, the repositories. To do so, from  
+
+00:00:21.440 --> 00:00:28.560
+your profile page simply click on the repositories 
+tab and then there is a button to create a new  
+
+00:00:28.560 --> 00:00:35.920
+repository. The first thing we need to provide is 
+a name for our repository. We will just call it a  
+
+00:00:35.920 --> 00:00:41.200
+"test-repo" for now. You will get an immediate 
+response, if this is a valid and available  
+
+00:00:41.200 --> 00:00:48.240
+name for your repository. You can provide a 
+description if you want: "this is a test repo".
+
+00:00:50.640 --> 00:00:55.360
+Then you need to define if your 
+repository should be public or private.  
+
+00:00:55.360 --> 00:01:01.840
+Public repositories: everybody can see your code, 
+can fork your repository and so on. A private  
+
+00:01:01.840 --> 00:01:08.320
+repository is only visible to yourself and you 
+can invite collaborators to see your repository.  
+
+00:01:09.200 --> 00:01:16.000
+Very important, if you fork a repository, the 
+fork of your repository has the same visibility  
+
+00:01:16.000 --> 00:01:23.760
+as the original repository. So in this case 
+probably public. So later when you're cloning  
+
+00:01:23.760 --> 00:01:27.280
+our "learning-parametric-design" 
+repository, which is public.  
+
+00:01:27.920 --> 00:01:32.240
+Your version is also public. If 
+you don't want your code to be  
+
+00:01:32.240 --> 00:01:36.560
+public forever, just completely delete 
+the repository at the end of the semester.  
+
+00:01:38.320 --> 00:01:43.280
+Then we can decide if we want a readme file. A 
+readme file is nice, because when somebody visits  
+
+00:01:43.280 --> 00:01:49.680
+your repository, there's a small information shown 
+below the structure of your repository and this  
+
+00:01:50.320 --> 00:01:57.680
+description is generated based on the content of 
+the readme file. A .gitignore file is also good to  
+
+00:01:57.680 --> 00:02:04.720
+have. A .gitignore file helps you to hide certain 
+things that you only want on your local machine.  
+
+00:02:04.720 --> 00:02:09.840
+So imagine you have some files with passwords 
+or settings or something that you don't want to  
+
+00:02:09.840 --> 00:02:16.800
+push into the cloud version, then you can add 
+those files specifically to a .gitignore file  
+
+00:02:16.800 --> 00:02:21.840
+and thereby they won't be pushed to the online 
+version, but only kept on your local machine.  
+
+00:02:22.640 --> 00:02:26.480
+There are different templates, depending 
+on what coding language you're going to use  
+
+00:02:26.480 --> 00:02:32.240
+inside your repository. Then you can choose 
+a license. Especially for public projects,  
+
+00:02:32.240 --> 00:02:38.160
+it's very important to have a good license. So 
+other people know how they can reuse your code.  
+
+00:02:39.680 --> 00:02:47.840
+All of my projects are always open source, so 
+i usually choose either the GPL-3 license or  
+
+00:02:47.840 --> 00:02:52.880
+the MIT license. Because they're very good for 
+other people to reuse your code for their own  
+
+00:02:52.880 --> 00:02:56.160
+projects. But of course you 
+could also choose a license  
+
+00:02:56.160 --> 00:03:02.080
+that makes the code copyrighted and so nobody 
+can reuse it without getting permission from you.  
+
+00:03:03.760 --> 00:03:10.480
+And then we simply need to create the repository. 
+And now we have our first repository. So here you  
+
+00:03:10.480 --> 00:03:19.040
+see your username and then the repository name. 
+We will now switch to our desktop application  
+
+00:03:19.040 --> 00:03:26.880
+to clone this repository that we created and 
+start editing it on our machine. After you've  
+
+00:03:27.840 --> 00:03:34.880
+authenticated yourself in the desktop app, you 
+can start cloning repositories. To do so, click  
+
+00:03:34.880 --> 00:03:43.120
+on the upper left, then click on add and then 
+"clone repository". I will now type "test-repo"  
+
+00:03:44.160 --> 00:03:51.600
+here. Sometimes you might not immediately see the 
+repo you have just created online, in this list.  
+
+00:03:52.160 --> 00:03:57.360
+If you cannot see it, simply click on the 
+little update arrows in the upper right.  
+
+00:03:57.360 --> 00:04:02.240
+This will load the latest information from your 
+account and you can then select the repository.  
+
+00:04:03.440 --> 00:04:10.000
+After selecting this, you can change the path 
+where this is generated on your computer. This  
+
+00:04:10.000 --> 00:04:15.760
+can be anywhere. Per default, there is a GitHub 
+folder being created and inside the GitHub folder  
+
+00:04:15.760 --> 00:04:20.160
+all your repositories are stored. But you can 
+change it to any location on your machine.  
+
+00:04:21.520 --> 00:04:26.400
+Now we simply need to click the clone button 
+and depending on the size of your repository  
+
+00:04:26.400 --> 00:04:33.200
+this can take a few seconds. And then we now 
+have this repository on our local machine  
+
+00:04:33.760 --> 00:04:37.440
+and we can now work on it offline. We 
+don't need any connection to the cloud,  
+
+00:04:37.440 --> 00:04:41.840
+just to update changes or pull changes from 
+the cloud, we need to be online of course.  
+
+00:04:43.200 --> 00:04:48.800
+There is a nice little trick to open a 
+repository directly in visual studio code.  
+
+00:04:49.520 --> 00:04:54.800
+Simply do a right click on your repository and 
+then there is an open visual studio code button.  
+
+00:04:55.760 --> 00:05:00.480
+Some students have reported that this button 
+does not always show up. So sometimes GitHub  
+
+00:05:00.480 --> 00:05:06.560
+is not able to recognize that there is visual 
+studios code installed on your machine. If  
+
+00:05:06.560 --> 00:05:12.720
+this is not available to you, you have to open it 
+manually with visual studio code. If i click this,  
+
+00:05:14.160 --> 00:05:20.720
+a new window opens and i now have access 
+to the local version of the repository, we  
+
+00:05:20.720 --> 00:05:27.760
+just cloned. We can now see that there are already 
+three files in our repository the .gitignore,  
+
+00:05:28.320 --> 00:05:34.240
+this is all the data that is being ignored and 
+not pushed to the cloud. Then we have the license  
+
+00:05:34.240 --> 00:05:40.320
+we have selected while creating the repository 
+and the readme file. And we can also see the  
+
+00:05:40.320 --> 00:05:45.440
+description that we entered during creation has 
+been added to the readme file. To demonstrate  
+
+00:05:45.440 --> 00:05:49.920
+how the push and commit functionality 
+works, we will just modify our readme  
+
+00:05:49.920 --> 00:05:59.280
+file and add a single line of text here: "hello 
+world". Save this and then we add a new file.
+
+00:06:02.080 --> 00:06:02.320
+"test.txt"
+
+00:06:05.280 --> 00:06:06.640
+Add a little bit of text here  
+
+00:06:08.560 --> 00:06:12.560
+and what is nice about visual studio 
+code is that we can immediately see  
+
+00:06:12.560 --> 00:06:20.400
+the changes in our repository. So the green 
+color here means that this is a new file and  
+
+00:06:20.400 --> 00:06:26.320
+the orange color is a modification of this file. 
+So if we switch back to our desktop application,  
+
+00:06:28.320 --> 00:06:31.200
+we can also see these changes 
+here. We see that there's two  
+
+00:06:32.080 --> 00:06:36.800
+changes in two files and if we 
+click on the files, we can even see  
+
+00:06:36.800 --> 00:06:42.000
+what has changed. In this case, this indicates 
+that there is a new line that has been added here  
+
+00:06:42.000 --> 00:06:50.480
+and some new text. To combine this in one commit 
+and then push it, we need to provide a message  
+
+00:06:50.480 --> 00:06:58.400
+text that identifies this commit, that names this 
+commit. We will just name this "readme update".
+
+00:07:00.800 --> 00:07:04.800
+We could provide a more elaborate description 
+here and then we create our commit.  
+
+00:07:05.920 --> 00:07:12.320
+Now we've created a new version of our repository, 
+that we could later use to switch back to,  
+
+00:07:12.880 --> 00:07:17.600
+but this new version is not yet 
+pushed to the cloud. To do this we  
+
+00:07:17.600 --> 00:07:23.600
+need to use this button up here and 
+now it's being pushed to the cloud.
+
+00:07:26.000 --> 00:07:31.360
+This might take a while, depending on how many 
+changes you've made. And if we switch back to the  
+
+00:07:31.360 --> 00:07:40.160
+online version, update it, we can now see that the 
+update we did to the readme file is now visible  
+
+00:07:40.160 --> 00:07:48.240
+here. We can also see here in this column, the 
+commit message for the last change of each file.  
+
+00:07:48.240 --> 00:07:53.840
+We see when the commit was sent to the 
+cloud and get a nice overview. Here  
+
+00:07:55.040 --> 00:08:00.560
+we can also edit text files directly 
+in GitHub on the web. So i could click  
+
+00:08:00.560 --> 00:08:09.840
+on a little edit icon here and now for example 
+simply add a letter, a character here and then  
+
+00:08:10.640 --> 00:08:17.920
+write a commit message "another readme 
+update" and commit the whole thing.
+
+00:08:20.080 --> 00:08:26.800
+It becomes immediately visible on the web 
+version, but let's take a look back at our desktop  
+
+00:08:26.800 --> 00:08:35.600
+application. Here there is no indicator yet, so we 
+need to update our repository information up here.  
+
+00:08:35.600 --> 00:08:41.520
+And now it's visible that there has been one 
+change online. And now we can pull this change  
+
+00:08:41.520 --> 00:08:49.120
+into our local repository. And if i switch back to 
+the editor and go into the readme file, we can now  
+
+00:08:49.120 --> 00:08:56.720
+see that this has also been updated now. And we 
+have access to the latest version. So you can also  
+
+00:08:56.720 --> 00:09:08.240
+do the same commands directly in visual studio 
+code so let's add another line of text here.
+
+00:09:08.240 --> 00:09:13.200
+Save the whole thing. We can immediately see 
+that there's a modification here and we can  
+
+00:09:13.200 --> 00:09:19.440
+also see in the left bar here that there has 
+been a little one. Edit here and this status  
+
+00:09:19.440 --> 00:09:25.840
+indicator says that there's one change in our 
+GIT infrastructure. And if we click on this, our  
+
+00:09:25.840 --> 00:09:31.360
+source control opens. And this is similar to what 
+we saw in the desktop app. We see all the changes  
+
+00:09:31.360 --> 00:09:36.960
+in this list here and we can now combine them 
+in a commit. We need to provide a message here
+
+00:09:40.560 --> 00:09:49.840
+and then we can press on 
+STRG/CTRL or command enter.
+
+00:09:51.760 --> 00:09:58.480
+And now we need to push it. And we have a little 
+indicator up here, that it's working on the push.  
+
+00:09:59.280 --> 00:10:04.880
+And as soon as it's done, we can see that now 
+everything is updated. We can even switch back  
+
+00:10:04.880 --> 00:10:12.960
+to our desktop app and look into the history and 
+see that there has been another change here. And  
+
+00:10:12.960 --> 00:10:17.520
+it's showing in our commit history. So the 
+commit history is really nice to go through  
+
+00:10:17.520 --> 00:10:24.880
+the different versions that you have committed to 
+the cloud. And of course it's also visible in our  
+
+00:10:24.880 --> 00:10:30.400
+web application. If i update this here we can see 
+that the latest changes are also visible now here  
+
+00:10:31.760 --> 00:10:37.920
+so this is how you create your own repo how you 
+pull and push information back and forth to your  
+
+00:10:37.920 --> 00:10:45.280
+online repository. The last step, that i already 
+mentioned in the last video, is that we can also  
+
+00:10:45.280 --> 00:10:52.480
+fork an existing project of someone else. For 
+this seminar i've created a repository in our  
+
+00:10:53.760 --> 00:11:01.280
+university account the url you see up here. The 
+repository is called "learning-parametric-design".  
+
+00:11:02.000 --> 00:11:05.920
+And to create a copy of this 
+repository in your own account  
+
+00:11:06.480 --> 00:11:14.560
+we use the "fork" button up here. If you click 
+on fork, you now can fork this repository  
+
+00:11:15.360 --> 00:11:19.200
+and because i have a lot of different 
+accounts that i have access to on GitHub,  
+
+00:11:19.200 --> 00:11:24.720
+i have a list of accounts here, i will choose my 
+personal account and fork this repository there.  
+
+00:11:25.840 --> 00:11:30.160
+Again depending on the size of the project 
+this can take a while until it's forked.  
+
+00:11:30.960 --> 00:11:36.880
+But as soon as it's done, you see the same 
+structure as it was in a university account  
+
+00:11:36.880 --> 00:11:42.720
+in your personal account. The nice thing here is, 
+now that you can edit this as much as you like,  
+
+00:11:42.720 --> 00:11:48.400
+you can destroy this as much as you like, and 
+this has no impact on the original version.  
+
+00:11:48.960 --> 00:11:55.360
+If you want it, you could push your changes 
+back to the original account, but in our case  
+
+00:11:55.360 --> 00:12:00.560
+you will just be able to work on this completely 
+standalone and no need to push anything back. So  
+
+00:12:00.560 --> 00:12:06.640
+you don't need to worry about changing anything 
+or destroying anything or breaking anything.  
+
+00:12:06.640 --> 00:12:15.440
+It's all yours now. And this repository we can 
+now clone the same way we did with our original  
+
+00:12:15.440 --> 00:12:24.080
+repository. So we simply say clone repository 
+and then we have "learning-parametric-design",  
+
+00:12:24.080 --> 00:12:31.760
+choose it from the list and in this case i 
+already have a folder called this, so i need to  
+
+00:12:32.480 --> 00:12:40.080
+change the folder name. I clone it, 
+takes a few seconds and if you clone  
+
+00:12:40.080 --> 00:12:46.800
+a fork for the first time, there's a small 
+message popping up after the cloning is complete.
+
+00:12:50.640 --> 00:12:54.160
+And this message asks you, how 
+you're planning to use this fork,  
+
+00:12:54.720 --> 00:13:00.720
+so in big open source projects, you might fork a 
+project, then do some changes and then commit the  
+
+00:13:00.720 --> 00:13:06.720
+changes back to the original project. In our case 
+you will only use it for your own purposes. In  
+
+00:13:06.720 --> 00:13:12.720
+this case just select the second option, click on 
+continue and now you're ready to use your project.  
+
+00:13:12.720 --> 00:13:19.840
+And you will just be able to use the same commands 
+as we used for the new repository that we created.

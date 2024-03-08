@@ -1,0 +1,69 @@
+WEBVTT
+
+00:00:04.630 --> 00:00:12.190
+In den letzten Videos habe ich euch gezeigt, 
+wie ihr 2D und 3D von JSCAD anlegen könnt. Die  
+
+00:00:12.190 --> 00:00:15.670
+Formen könnt ihr natürlich auch einfärben. 
+Hierbei ist allerdings wichtig zu beachten,  
+
+00:00:15.670 --> 00:00:20.980
+wenn ihr das Ganze später zum Beispiel als STL 
+exportiert, das die Farben dann vollständig  
+
+00:00:20.980 --> 00:00:25.090
+verloren gehen. Die Farben sind also eher ein 
+Hilfsmittel für uns im Entwicklungsprozess,  
+
+00:00:25.090 --> 00:00:30.100
+um zum Beispiel unterschiedliche Objekte 
+voneinander unterscheiden zu können. Um ein  
+
+00:00:30.100 --> 00:00:36.160
+Objekt einzufärben gibt es die sogenannte 
+"colorize" Funktion. Diese nimmt ein Array  
+
+00:00:36.160 --> 00:00:45.250
+mit RGB und Alpha werten. Die sind nicht 
+wie wir das bei p5js kennen on 0 bis 255,  
+
+00:00:45.250 --> 00:00:52.330
+sondern von 0 bis .1 Also mache jetzt hier 
+zum Beispiel mal rot, als Wert und als zweiter  
+
+00:00:52.330 --> 00:00:59.170
+Parameter übergebe ich das Objekt, das ich 
+einfärben möchte. Nehme das cube-objekt von  
+
+00:00:59.170 --> 00:01:06.310
+hier oben. Nun ein ganz wichtiger Unterschied. 
+Bei p5js war es ja so, dass wir zum Beispiel eine  
+
+00:01:06.310 --> 00:01:09.940
+Farbe angegeben haben und alles was wir danach 
+gezeichnet haben, hatte dann entsprechend die  
+
+00:01:09.940 --> 00:01:16.540
+Farbe. Hier ist das etwas anders. Wir haben hier 
+unsere cube-Funktion und diese cube-Funktion gibt  
+
+00:01:16.540 --> 00:01:22.660
+uns das cube-Objekt zurück. Das haben wir 
+hier in der cubeObj Variable gespeichert.  
+
+00:01:22.660 --> 00:01:28.180
+Bei der colorize-Funktion ist es ganz ähnlich. 
+Wir geben hier unser Objekt rein und bekommen  
+
+00:01:28.180 --> 00:01:34.510
+dann das eingefärbte Objekt zurück und können 
+uns das nun wieder in eine Variable speichern.  
+
+00:01:34.510 --> 00:01:40.600
+Und nun übergebe ich diese Variable, in der 
+nämlich das eingefärbte Objekt gespeichert ist,  
+
+00:01:40.600 --> 00:01:46.930
+in unserer Array. Was wir dann nachher zurückgeben 
+und schon habe ich hier jetzt einen roten Würfel

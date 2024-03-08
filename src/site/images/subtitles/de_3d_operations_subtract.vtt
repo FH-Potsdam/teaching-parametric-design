@@ -1,0 +1,70 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:07.660
+Im letzten Video haben wir 
+die union-Funktion benutzt,  
+
+00:00:07.660 --> 00:00:15.160
+um zwei Cubes miteinander zu verbinden. Wir werden 
+nun die subtract-Finktion benutzen, um von diesen  
+
+00:00:15.160 --> 00:00:20.860
+zusammengeführten Objekten etwas abzuziehen. 
+Hierfür werden wir uns eine Sphere erstellen.
+
+00:00:20.860 --> 00:00:33.100
+Werden uns die erstmal anschauen.
+
+00:00:33.100 --> 00:00:47.620
+Die ist ein bisschen groß. Machen wir 
+ein bisschen kleiner und verschieben die  
+
+00:00:47.620 --> 00:00:53.380
+schon mal ein wenig. Wenn wir das jetzt machen 
+würden, würden natürlich gar nichts überbleiben.
+
+00:01:01.850 --> 00:01:11.300
+So haben jetzt hier unsere Kugel. Wenn wir jetzt 
+"union" machen würden, könnten wir die auch wieder  
+
+00:01:11.300 --> 00:01:16.520
+miteinander kombinieren. Aber wir wollen hier 
+in unserem Fall jetzt keine "union" machen,  
+
+00:01:16.520 --> 00:01:22.160
+sondern wir wollen von der "union" unsere 
+Sphere abziehen. Und dafür erstelle ich  
+
+00:01:22.160 --> 00:01:29.090
+uns dann ein subtract-object und dann 
+benutzen wir die subtract-Funktionen.
+
+00:01:29.090 --> 00:01:37.970
+Und hier benutzen wir wieder eine Array,  
+
+00:01:37.970 --> 00:01:43.790
+das wir übergeben. Und hier übergeben 
+wir jetzt als allererstes das Objekt  
+
+00:01:43.790 --> 00:01:50.510
+von dem abgezogen wird und alle die danach 
+kommen werden vom ersten Objekt abgezogen.
+
+00:01:50.510 --> 00:01:57.380
+So, dann pushen wir das Ganze in unser objects.
+
+00:01:57.380 --> 00:02:06.770
+Und sehen, dass hier nun unser union-object. Von 
+dem union-object wurde der Kreis entsprechend  
+
+00:02:06.770 --> 00:02:11.510
+abgezogen wurde. Und nun nocheinmal die 
+Wichtigkeit der Reihenfolge zu demonstrieren:  
+
+00:02:11.510 --> 00:02:15.800
+wenn wir das Ganze andersherum schreiben, 
+also erst Sphere-object dann union-object,  
+
+00:02:15.800 --> 00:02:23.930
+dann haben wir entsprechend hier unsere Sphere von 
+der sozusagen unser union-object abgezogen wurde.

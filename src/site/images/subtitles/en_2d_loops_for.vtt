@@ -1,0 +1,80 @@
+WEBVTT
+
+00:00:05.360 --> 00:00:09.920
+In the last video i showed you how to 
+use the WHILE loop. The FOR loop is  
+
+00:00:09.920 --> 00:00:13.920
+very very similar to the WHILE loop. 
+It's just defined a little bit different.  
+
+00:00:15.600 --> 00:00:21.440
+The FOR loop makes it a lot cleaner to 
+define the thing we just defined. For example  
+
+00:00:22.160 --> 00:00:25.280
+we just change WHILE to FOR 
+and what we now need to do,  
+
+00:00:26.880 --> 00:00:33.280
+what we've wrote up here the starting condition, 
+we can now move inside the brackets here.  
+
+00:00:34.400 --> 00:00:39.840
+The first part until the semicolon defines 
+the starting condition, the second part  
+
+00:00:39.840 --> 00:00:48.480
+defines how long our FOR loop should run. 
+And what we did here in the end, add one  
+
+00:00:49.920 --> 00:00:56.640
+to X, we can now also add up here. We have three 
+elements: start condition, how long should it run,  
+
+00:00:57.280 --> 00:01:11.840
+and in the end what happens after the loop is 
+finished. And we can do the same for our Y.
+
+00:01:17.920 --> 00:01:24.480
+And we have the same output. This makes it a lot 
+more cleaner to write this kind of code and less  
+
+00:01:24.480 --> 00:01:32.720
+lines of code and of course the conditions can 
+be anything. So they can be bigger than, smaller  
+
+00:01:32.720 --> 00:01:38.240
+than, equal, whatever you want. Also the part 
+at the end, where you actually change a variable  
+
+00:01:38.240 --> 00:01:44.320
+after each loop, this can also be anything. 
+It could be plus something, minus something,  
+
+00:01:44.320 --> 00:01:48.560
+or for example we don't need an exact number 
+here, we could also use our "random" function  
+
+00:01:49.600 --> 00:01:57.840
+to change the values. Obviously because those 
+values are quite small, let's multiply them by 20.
+
+00:02:04.640 --> 00:02:10.880
+So now the whole grid is completely 
+randomly generated to get a little bit more  
+
+00:02:11.440 --> 00:02:14.560
+elements here, as well two.
+
+00:02:17.200 --> 00:02:21.920
+Obviously, now, because it's generating more 
+dots, sometimes they're very close together,  
+
+00:02:21.920 --> 00:02:25.680
+it takes a little bit longer, but 
+this kind of loops give you a lot of  
+
+00:02:25.680 --> 00:02:35.680
+possibilities on what kind of things 
+you can generate and build in p5.js

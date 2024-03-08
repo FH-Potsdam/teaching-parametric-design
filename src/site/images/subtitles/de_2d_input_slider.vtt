@@ -1,0 +1,57 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.280
+Neben dem textInput gibt es noch eine ganze 
+Reihe an anderen Inputs. Die Links zu den  
+
+00:00:09.280 --> 00:00:13.600
+Referenzen habe ich euch hier unter das Video 
+gepackt. Einen weiteren möchte ich euch aber noch  
+
+00:00:13.600 --> 00:00:19.060
+zeigen. Und das ist der Slider. Dafür erstelle 
+ich mich hier einfach schnell noch eine weitere  
+
+00:00:19.060 --> 00:00:29.440
+Variable die "slider" und erstelle jetzt hier 
+unseren slider der heißt "createSlider". Dann  
+
+00:00:29.440 --> 00:00:36.610
+kann ich mir einfach dieselben Elemente von 
+hier oben mal hier rein kopieren und einfach  
+
+00:00:36.610 --> 00:00:47.770
+sage der Slider soll ein Stück weiter runter und 
+er soll auch ein bisschen größer sein. Für den  
+
+00:00:47.770 --> 00:00:53.710
+Slider kann ich noch zusätzliche Parameter 
+angeben und das ist einmal "min" und "max",  
+
+00:00:53.710 --> 00:00:58.480
+also welche Range kann ich mit meinem Slider 
+abbilden, in unserem Fall wollen jetzt auch von  
+
+00:00:58.480 --> 00:01:04.870
+0 bis 200 und dann kann ich theoretisch 
+sogar noch den aktuellen Wert eingeben,  
+
+00:01:04.870 --> 00:01:11.950
+also den Startwert. Sagen wir der Startwert ist 
+50 und dann könnte ich sogar noch Steps machen,  
+
+00:01:11.950 --> 00:01:17.050
+heißt ich könnte zum Beispiel Zehner-Schritte 
+machen. Dann würde der immer zehn weiterspringen.  
+
+00:01:17.050 --> 00:01:23.140
+Wenn ich das leer lasse, ist es einfach fließend. 
+Wenn ich das jetzt speicher haben wir hier einen  
+
+00:01:23.140 --> 00:01:28.300
+schönen Slider und auch den kann ich wieder 
+hier als Input benutzen. Kann einfach sagen  
+
+00:01:28.300 --> 00:01:35.230
+"slider.value" und nun kann ich sozusagen mit 
+dem Slider die Größe eines Objektes anpassen

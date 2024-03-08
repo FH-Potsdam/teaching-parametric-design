@@ -1,0 +1,149 @@
+WEBVTT
+
+00:00:04.640 --> 00:00:08.450
+Bisher haben wir unsere Objekte immer 
+auf einem ganz normalen klassischen  
+
+00:00:08.450 --> 00:00:14.030
+Koordinatensystem angeordnet, also mit x und 
+y-Achse. Daneben gibt es aber durchaus andere  
+
+00:00:14.030 --> 00:00:17.660
+Möglichkeiten die Objekte positionieren 
+zu können. Ein sehr interessantes System,  
+
+00:00:17.660 --> 00:00:23.150
+ist das sogenannte Polar-Koordinatensystem. 
+Ausgehend von einem Nullpunkt in der Mitte,  
+
+00:00:23.150 --> 00:00:28.340
+werden Punkte auf Kreislinien beschrieben. Diese 
+definieren sich darüber, dass wir einen Radius  
+
+00:00:28.340 --> 00:00:33.830
+haben und wir haben einen Winkel und darüber 
+können wir uns dann sozusagen x/y-Koordinate  
+
+00:00:33.830 --> 00:00:37.880
+auf einer Kreislinie eines Kreises mit 
+dementsprechenden Radius zurückgeben  
+
+00:00:37.880 --> 00:00:42.290
+lassen. Die Formel dafür ist relativ einfach. 
+Die habe ich euch auch hier unter das Video  
+
+00:00:42.290 --> 00:00:50.060
+gesetzt. Also um die X-Koordinate für unseren 
+Kreis zu bekommen, sagen wir einfach Radius mal  
+
+00:00:50.060 --> 00:00:56.870
+Cosinus von Radians des Winkels. Radians hatten 
+wir am Anfang mal. Das ist einfach Math.PI durch  
+
+00:00:56.870 --> 00:01:03.650
+180 und dann mal dem Winkel. Also zwei mal PI 
+sind sozusagen 360 Grad und das sozusagen die  
+
+00:01:03.650 --> 00:01:10.070
+Formel um das einfach umzurechnen. Wenn wir das 
+jetzt mal in einen Code überführen. Wir hatten  
+
+00:01:10.070 --> 00:01:15.920
+ja gerade unsere beginShape, mache jetzt einfach 
+mal FOR-Loop wo wir ganz viele Punkte auf unsere  
+
+00:01:15.920 --> 00:01:22.370
+Kreislinie setzen. Also wir sagen "angle" das 
+ist sozusagen der Winkel mit dem gehen wir jetzt  
+
+00:01:22.370 --> 00:01:32.480
+durch. Und wir wollen eine Runde machen, also 
+angle kleiner gleich 360 und dann wollen wir immer  
+
+00:01:32.480 --> 00:01:41.270
+jeweils 15 Grad das Ganze weiterschieben, 
+also alle 15 Grad einen Punkt setzen.
+
+00:01:44.780 --> 00:01:50.630
+"endShape". Und zu den 
+Radius hier noch definieren.
+
+00:01:51.460 --> 00:02:00.070
+150. Und müssen jetzt hier lediglich 
+noch unsere vertices (vertex) zeichnen.
+
+00:02:00.070 --> 00:02:07.240
+Wenn ich das jetzt abspeichern, dann sehen wir, 
+dass hier der kreis gezeichnet wurde. Weil der  
+
+00:02:07.240 --> 00:02:12.310
+Mittelpunkt in unserem Nullpunkt oben links 
+in der Ecke sitzt, müssen wir einfach noch  
+
+00:02:12.310 --> 00:02:17.530
+die Hälfte der Breite unseres Canvas dazu 
+addieren und die Hälfte der Höhe, also 200,  
+
+00:02:17.530 --> 00:02:22.900
+um das Ganze sozusagen in die Mitte zu schieben. 
+Und damit das Ganze auch geschlossen ist,  
+
+00:02:22.900 --> 00:02:27.550
+setzen ich hier noch CLOSE rein. Und dann 
+jetzt zum Beispiel hier das ganze auf 30  
+
+00:02:27.550 --> 00:02:33.910
+Grad hochdrehen, dann sehen wir, dass die 
+Auflösung geringer wird. Könnten natürlich  
+
+00:02:33.910 --> 00:02:39.190
+das auch kleiner machen, also wir alle zehn 
+Grad. Dann wird es runder. Und natürlich muss  
+
+00:02:39.190 --> 00:02:43.600
+der Radius auch nicht festgesetzt sein, wir 
+könnten theoretisch auch unseren Radius jetzt  
+
+00:02:43.600 --> 00:02:50.020
+hier mit in die Schleife rein nehmen und dann 
+mit "random" zufällige Werte hier generieren.
+
+00:02:55.570 --> 00:03:02.230
+Und haben jetzt sozusagen Punkte die 
+wiederum den Mittelpunkt drumherum  
+
+00:03:02.230 --> 00:03:07.960
+sozusagen mit einem zufälligen Wert generiert 
+werden. Oder wir könnten das zum Beispiel auch
+
+00:03:11.710 --> 00:03:17.020
+mit einem langsam ansteigenden Radius 
+machen und immer fünf dazu addieren.
+
+00:03:17.950 --> 00:03:25.750
+Wir sehen also wie so eine kleine Schnecke 
+generiert wird. Würde ich das mal ein bisschen  
+
+00:03:25.750 --> 00:03:30.100
+kleiner machen. Dann kann man es besser sehen. 
+Wenn man das CLOSE jetzt hier wegnimmt. Und dann  
+
+00:03:30.100 --> 00:03:35.980
+sieht es noch ein bisschen mehr nach Schleife aus. 
+Könnten jetzt hier zum Beispiel auch das Ganze  
+
+00:03:35.980 --> 00:03:44.350
+über mehrere Runden laufen lassen. Bekommen 
+dann halt so eine richtige Schnecke. Dieses  
+
+00:03:44.350 --> 00:03:48.340
+Polar-Koordinatensystem ist relativ einfach zu 
+berechnen, aber man kann echt schöne spannende  
+
+00:03:48.340 --> 00:03:53.110
+Sachen damit bauen. Gerade wenn man solche 
+runden Shapes bauen möchte oder wenn man  
+
+00:03:53.110 --> 00:03:59.080
+sozusagen auf den mittelpunkt konzentriert 
+in einem Layout Objekte positionieren möchte

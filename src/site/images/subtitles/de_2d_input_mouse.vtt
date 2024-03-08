@@ -1,0 +1,132 @@
+WEBVTT
+
+00:00:04.940 --> 00:00:08.720
+Ein weiterer interessanter Input ist 
+die Maus. Von der Maus können wir die  
+
+00:00:08.720 --> 00:00:13.490
+aktuelle x/y Positionen bekommen. Aber wir 
+können zum Beispiel auch Events abfangen,  
+
+00:00:13.490 --> 00:00:18.710
+so etwas wie Klicks und DoubleClick. Dafür 
+können wir in der "draw"-Schleife zum einen  
+
+00:00:18.710 --> 00:00:23.150
+ganz einfach die aktuelle position abfragen, die 
+können wir zum Beispiel hier in das "translate"  
+
+00:00:23.150 --> 00:00:30.590
+einsetzen. Und das ganze läuft über "mouseX" und 
+"mouseY" wenn ich das jetzt abspeicher und meine  
+
+00:00:30.590 --> 00:00:35.180
+Maus hier bewege, dann bekomme ich sozusagen 
+den aktuellen Wert und dementsprechend wird  
+
+00:00:35.180 --> 00:00:39.920
+der Kreis dann dorthin verschoben. Ihr müsst 
+daran denken, dass das Ganze nur funktioniert,  
+
+00:00:39.920 --> 00:00:44.810
+solange ihr mit der Maus auf dem Fenster eures 
+Browsers seid. Sobald ihr rausgeht, funktioniert  
+
+00:00:44.810 --> 00:00:52.580
+das Ganze natürlich nicht mehr. Darüber hinaus 
+können wir zum Beispiel auch den Zustand abrufen,  
+
+00:00:52.580 --> 00:00:56.990
+zum Beispiel ob die Maus gerade gedrückt 
+wird. Hierfür könnten wir zum Beispiel sagen:  
+
+00:00:56.990 --> 00:01:04.550
+wenn die Maus gedrückt wird und dafür gibt es die 
+variable "mouseIsPressed". Das ein booleanscher  
+
+00:01:04.550 --> 00:01:13.550
+Wert der entweder true oder fase ist. Also können 
+sie sagen: if (mouseIsPressed === true) dann soll  
+
+00:01:13.550 --> 00:01:21.290
+unser Radius gleich 200 sein. Speicher das Ganze 
+haben hier also unsere Maus und sobald ich jetzt  
+
+00:01:21.290 --> 00:01:30.650
+drücke, sehen wir, dass entsprechend der Kreis 
+größer wird. Darüber hinaus gibt es noch weitere  
+
+00:01:30.650 --> 00:01:35.540
+Events die wir abfangen können. Ich werde euch 
+jetzt nur eins zeigen, die anderen könnt ihr  
+
+00:01:35.540 --> 00:01:40.610
+euch einfach in der Referenz anschauen, den link 
+habe ich euch dafür unter das Video gepackt. Um  
+
+00:01:40.610 --> 00:01:48.740
+zum Beispiel ein Klick-Event der Maus abzurufen 
+können wir eine mouseClick Funktion schreiben. Und  
+
+00:01:48.740 --> 00:01:57.770
+diese Funktion wird immer ausgeführt wenn ihr die 
+Maus drückt. Und was wir hier z.B. machen könnten,
+
+00:02:00.540 --> 00:02:02.880
+machen wir einfach noch mal unseren Radius hier,  
+
+00:02:02.880 --> 00:02:12.840
+den setzen wir hier auf 1 und dann jedes mal wenn 
+wir klicken, soll unser Radius eins höher gehen.
+
+00:02:12.840 --> 00:02:23.850
+Speichert das Ganze und jetzt sehen wir sehr 
+schön, dass der Kreis immer immer immer größer  
+
+00:02:23.850 --> 00:02:30.930
+wird. Warum haben wir unterschiedliche Wege auf 
+diesen Status zuzugreifen? Wenn wir zum Beispiel  
+
+00:02:30.930 --> 00:02:37.080
+jetzt das machen, was wir vorher gemacht 
+haben, dieses if (mouseIsPressed === true)  
+
+00:02:37.800 --> 00:02:41.970
+und dort jetzt zum Beispiel den Radius 
+vergrößert hätten. Ihr müsst daran denken,  
+
+00:02:41.970 --> 00:02:47.160
+dass die "draw"-Schleife extrem schnell ausgeführt 
+wird. Im Idealfall sowas wie 30 bis 60 Frames pro  
+
+00:02:47.160 --> 00:02:53.130
+Sekunde. Wenn ihr jetzt die Maus drücken würdet. 
+Würde nicht einfach nur eins dazu addiert werden,  
+
+00:02:53.130 --> 00:02:59.220
+sondern weil das ganze ganz schnell läuft, würde 
+möglicherweise 60, 70, 80, 90 dazu addiert werden.  
+
+00:02:59.220 --> 00:03:03.540
+Weil es halt so schnell geht. Deswegen haben 
+wir hier zwei Möglichkeiten. Einmal sozusagen  
+
+00:03:03.540 --> 00:03:11.760
+eine dedizierte Funktion mouseClick die wird dafür 
+nutzen können nur einmalig etwas auszuführen und  
+
+00:03:11.760 --> 00:03:16.530
+die andere Schreibweise die wir direkt in der 
+"draw"-Schleife machen, ist eher dafür gedacht  
+
+00:03:16.530 --> 00:03:22.290
+sozusagen etwas zu ändern was dann auch bleiben 
+soll, also z.B. wenn die Maus gedrückt ist soll  
+
+00:03:22.290 --> 00:03:27.990
+eine bestimmte Farbe angezeigt werden. Aber sowas 
+wie Variablen ändern, sollte man eher sozusagen  
+
+00:03:27.990 --> 00:03:34.290
+über diese speziellen Funktionen machen, die 
+dann getriggert werden wenn das Event eintritt.

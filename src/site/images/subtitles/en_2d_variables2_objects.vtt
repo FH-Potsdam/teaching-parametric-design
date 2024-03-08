@@ -1,0 +1,103 @@
+WEBVTT
+
+00:00:04.322 --> 00:00:09.520
+In the last video i showed you the arrays. 
+And now, the last variable type that i will  
+
+00:00:09.520 --> 00:00:15.840
+introduce you to, are the so-called objects. 
+Objects are somewhat related to arrays,  
+
+00:00:15.840 --> 00:00:21.680
+as you will see in a bit. To define an 
+object we simply use the curly brackets  
+
+00:00:22.640 --> 00:00:27.680
+and now we can define keys and values 
+for those keys. For example you could say  
+
+00:00:28.400 --> 00:00:38.000
+an X key and give it a numeric value and a Y key 
+and another numeric value and maybe a text value.
+
+00:00:41.040 --> 00:00:49.040
+And similar to our arrays, we can also nest arrays 
+and objects inside other objects and arrays. Let's  
+
+00:00:49.040 --> 00:00:56.160
+add an array here, let's call it "list" and then 
+use the other brackets again and inside this list,  
+
+00:00:56.800 --> 00:01:03.600
+we can now also add additional keys and values.
+
+00:01:06.160 --> 00:01:12.320
+And to access the values, that we saved in 
+our object, the notation is quite similar to  
+
+00:01:12.320 --> 00:01:19.360
+how we wrote the access for arrays. We use 
+the brackets again. And now we say, okay,  
+
+00:01:19.360 --> 00:01:26.000
+we want for example x or we want the list and 
+inside the list we want the first item and from  
+
+00:01:26.000 --> 00:01:34.080
+this item we want the X value. This is how you 
+stack/nest these elements inside one another.  
+
+00:01:34.720 --> 00:01:40.240
+And for the objects, if you have a key that is 
+written without any special characters, without  
+
+00:01:40.240 --> 00:01:48.240
+any spaces, you can also use an abbreviation. 
+In this case you can get rid of the quotation  
+
+00:01:48.240 --> 00:01:58.480
+marks and the brackets and simply write dot list, 
+dot x. But be sure to use the brackets and the  
+
+00:01:58.480 --> 00:02:06.240
+numeric indices for the array again. Just to show 
+you how it helps to better structure your code  
+
+00:02:07.200 --> 00:02:13.360
+here, we created our list of elements that 
+contains the x and y value for our little circles.  
+
+00:02:14.480 --> 00:02:24.320
+Instead of pushing an array here, i will now 
+push an object and i will use the x and the y key
+
+00:02:28.560 --> 00:02:33.840
+to store our elements here. And if i 
+save this, obviously this will not work,  
+
+00:02:33.840 --> 00:02:38.960
+because we need to replace the zero 
+and the one, with our x and our y.  
+
+00:02:40.240 --> 00:02:43.840
+And now you can imagine, how this 
+helps you structure your code,  
+
+00:02:43.840 --> 00:02:50.480
+because imagine now we add two other 
+parameters for example we could add the size
+
+00:02:54.800 --> 00:03:03.840
+and we could add a color.
+
+00:03:06.720 --> 00:03:21.360
+Now we can simply copy this code here and say 
+size and then right here we can write color.  
+
+00:03:22.640 --> 00:03:28.960
+So it's very easy to remember where you find the 
+individual keys and attributes that you saved  
+
+00:03:28.960 --> 00:03:38.160
+in the bigger array above and it helps 
+you structure your code a lot better.

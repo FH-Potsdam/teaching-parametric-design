@@ -1,0 +1,195 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:13.440
+We started JSCAD with the 2D shapes. And i already 
+told you then, that there are options to turn our  
+
+00:00:13.440 --> 00:00:20.480
+2D shapes into 3D objects. And these are the 
+extrude functions. I have a simple rectangle  
+
+00:00:20.480 --> 00:00:25.600
+here. We can now use three different types 
+of extrude functions to turn this 2D object  
+
+00:00:25.600 --> 00:00:33.280
+into a 3D object. The first function is the 
+"extrudeLinear". I will create an extrude  
+
+00:00:33.280 --> 00:00:40.480
+variable to store our new object in and then we 
+will start with extrudeLinear. extrudeLinear takes  
+
+00:00:40.480 --> 00:00:45.600
+as a first parameter an object, with different 
+parameters that we will provide in a second.  
+
+00:00:46.720 --> 00:00:52.480
+Then as a second of course the object that we 
+actually want to extrude. And finally we will  
+
+00:00:52.480 --> 00:01:01.280
+push our new extrude object also into our array. 
+So actually linear is the most simple extrusion  
+
+00:01:01.280 --> 00:01:08.240
+function. In this case we have our 2D shape and 
+then we simply pull it up in one direction. And  
+
+00:01:08.240 --> 00:01:16.240
+for this we provide the "height" variable. Save 
+it and now we have a 3D object extruded 40 units  
+
+00:01:16.800 --> 00:01:24.720
+in one direction. But the extrudeLinear command 
+gives us an additional option, to modify how  
+
+00:01:24.720 --> 00:01:33.280
+the whole object is extruded. And we can use the 
+twistAngle and the twistSteps to twist our shape  
+
+00:01:33.280 --> 00:01:40.800
+while it's being pulled up. For this we provide 
+a twistAngle, so the angle at the bottom is zero  
+
+00:01:40.800 --> 00:01:47.600
+and the angle at the top is what we provide as 
+twistAngle. And this is also provided as radians.  
+
+00:01:47.600 --> 00:01:58.880
+So we use a little formula, say we want to rotate 
+it by 90 degrees then we have to twistSteps say 6.
+
+00:02:01.280 --> 00:02:08.800
+And to make it more visible, let's increase 
+the height. So now we can see the object is  
+
+00:02:08.800 --> 00:02:16.560
+rotated and it's using six steps to rotate 
+the object. Again we already saw these kind  
+
+00:02:16.560 --> 00:02:23.760
+of segmentations of objects in the circle or 
+sphere objects. And this is again, to reduce  
+
+00:02:23.760 --> 00:02:29.200
+the number of polygons that you create in your 
+objects, to increase the render performance.  
+
+00:02:29.920 --> 00:02:39.280
+We could also increase our twist steps to create 
+a more smooth surface in our twisted rectangle.  
+
+00:02:40.320 --> 00:02:47.120
+And here you just need to find middle ground 
+between getting the right smoothness on your  
+
+00:02:47.120 --> 00:02:52.960
+object, so that you get a nice object from the 
+3D printer, or whatever you use. But on the other  
+
+00:02:52.960 --> 00:02:59.920
+hand, do not create too much vertices, too much 
+points in your polygons, because otherwise the  
+
+00:02:59.920 --> 00:03:06.960
+performance of the software that you're going 
+to use to process this, will decrease. The next  
+
+00:03:06.960 --> 00:03:14.960
+function is the extrudeRectangular function, we 
+can keep the height and in addition we need a  
+
+00:03:14.960 --> 00:03:22.800
+second parameters for size. Let's use 10. So 
+this one is a bit weird at least i think so.  
+
+00:03:22.800 --> 00:03:29.440
+So what happens here is ,you have to imagine 
+that a rectangle is passing along the outer  
+
+00:03:30.000 --> 00:03:36.960
+line of your object. The rectangle here and the 
+height of this rectangle that goes along the path  
+
+00:03:36.960 --> 00:03:45.840
+of your object is 100 units high and the width of 
+the object is 10. If we for example decrease this,  
+
+00:03:46.400 --> 00:03:54.880
+this border that is kind of created to be 
+extruded is shrinking. And if you reduce height  
+
+00:03:54.880 --> 00:04:01.280
+obviously the height of the object is reduced. 
+You can use this on all kinds of different 2D  
+
+00:04:01.840 --> 00:04:08.320
+objects. And the last function that i 
+want to show you is the extrudeRotate.  
+
+00:04:08.320 --> 00:04:15.920
+So here it gets a little bit more weirder, 
+so here we provide an angle, a start angle.
+
+00:04:18.160 --> 00:04:27.840
+Again in radians. Let's say we start at zero and 
+then we provide the angle which is the endAngle.  
+
+00:04:30.400 --> 00:04:33.920
+Let's start with 90 degrees, so 
+we want a 90 degrees rotation,  
+
+00:04:34.800 --> 00:04:38.720
+and similar to circle and 
+sphere we provide segments.
+
+00:04:41.840 --> 00:04:45.360
+What is happening here now, 
+you have to imagine your shape  
+
+00:04:45.360 --> 00:04:52.080
+is rotated 90 degrees. And then it starts rotating 
+around its own center and through the rotation,  
+
+00:04:52.640 --> 00:04:58.320
+a 3D object is created. If we 
+increase our rotation by 180.  
+
+00:05:20.720 --> 00:05:23.840
+But if we turn it to the 
+side, we can kind of see again  
+
+00:05:24.800 --> 00:05:33.040
+our rectangle. It's best explained if we change 
+this to an ellipse and provide an uneven radius  
+
+00:05:33.680 --> 00:05:43.200
+let's say 150 save it and then go back to 180.
+
+00:05:47.040 --> 00:05:55.280
+If we look from the top, we can see our original 
+shape and if we now go to the side, we can also  
+
+00:05:55.280 --> 00:06:01.760
+see our original shape. And we now imagine that 
+this ellipse is now rotating around its center  
+
+00:06:01.760 --> 00:06:07.920
+and, thereby, creating this kind of object. 
+If we for example reduce the segments,  
+
+00:06:07.920 --> 00:06:15.520
+we can also see the steps that our 
+ellipse is taking and to complete this,
+
+00:06:19.600 --> 00:06:21.680
+so again if you look from the side,  
+
+00:06:22.640 --> 00:06:28.880
+you can kind of still see the ellipse and if you 
+look from the top you can see that our ellipse  
+
+00:06:29.440 --> 00:06:39.280
+has now been rotating six times 
+and thereby creating the 3D object.

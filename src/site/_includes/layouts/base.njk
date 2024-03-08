@@ -1,0 +1,56 @@
+{% from '../parts/macros.njk' import renderNav %}
+{% from '../parts/macros.njk' import renderLang %}
+{% from '../parts/macros.njk' import renderCrumbs %}
+{% from '../parts/macros.njk' import renderPageNav %}
+<!DOCTYPE html>
+<html lang="{% if locale == "de" %}de-DE{% elif locale == "dg" %}sgn-DE{% else %}en-US{% endif %}">
+  {% include 'parts/head.njk' %}
+  <body>
+    <a tabindex="0" id="skip-nav" href="#content-start">{{ translations.skipContent[locale]|safe }}</a>
+    <header id="header" role="banner">
+      <div>
+        <picture id="header-illu">
+          <source srcset="/images/header/{{ [1,2,3,4,5,6] | random }}-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="/images/header/{{ [1,2,3,4,5,6] | random }}.png" alt="Illustration of a parametric shape design" />
+        </picture>
+        <div>
+          <a href="/{{locale}}/">
+            <span class="page-title">Parametric Design</span>
+            <span class="page-subtitle">{{ translations.subtitle[locale]|safe }}</span>
+          </a>
+        </div>
+        <a href="https://www.fh-potsdam.de">
+          <picture id="header-logo">
+            <source srcset="/images/logo-fhp-abbrev-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/images/logo-fhp-abbrev-black.svg" alt="{{ translations.fhp[locale] }}" />
+          </picture>
+        </a>
+      </div>
+    </header>
+    <div id="container">
+      <div id="nav" role="navigation">
+        <nav>
+          {{ renderNav(collections, page, locale, content) }}
+        </nav>
+        <nav>
+          {{ renderLang(page.url) }}
+        </nav>
+      </div>
+      <main role="main">
+        {% if eleventyNavigation %}
+        {{ renderCrumbs(collections, eleventyNavigation.key, locale) }}
+        {% else %}
+        {{ renderCrumbs(collections, null, locale) }}
+        {% endif %}
+        <h1 id="content-start">{{ title }}</h1>
+        {{ content | safe }}
+        {{ renderPageNav(collections, page, locale) }}
+        <p class="backtotop">
+          <a title="{{translations.top[locale]}}" href="#header">{{translations.top[locale]}}</a>
+        </p>
+      </main>
+    </div>
+    {% include 'parts/footer.njk' %}
+    <script src="/js/main.js"></script>
+  </body>
+</html>

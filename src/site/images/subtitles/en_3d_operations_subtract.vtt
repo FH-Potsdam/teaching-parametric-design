@@ -1,0 +1,63 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:08.000
+In the last video we used 
+the union function to combine  
+
+00:00:08.000 --> 00:00:14.000
+multiple cubes. We're now going to use 
+the subtract function, to subtract an  
+
+00:00:14.960 --> 00:00:19.680
+additional object from our union 
+object. So let's create a sphere.
+
+00:00:28.640 --> 00:00:34.000
+Radius 25 and we will move it slightly around.
+
+00:00:38.240 --> 00:00:43.840
+And for inspection, we push 
+it into our objects array.
+
+00:00:44.640 --> 00:00:54.080
+Save it and now we have a little sphere connecting 
+to our union object. And we now want to subtract  
+
+00:00:54.800 --> 00:01:02.800
+it from the union object. We want to cut something 
+out of the union object. Therefore, we don't push  
+
+00:01:02.800 --> 00:01:10.320
+the union object and we don't push our sphere, but 
+we create a new variable to store our subtracted  
+
+00:01:10.880 --> 00:01:20.160
+object. Let's call it subObject and we will use 
+the subtract function. And also the subtract  
+
+00:01:20.160 --> 00:01:25.600
+function also only takes an array. But the 
+order in which we provide the parameters is very  
+
+00:01:25.600 --> 00:01:31.120
+important. Because the first object is the object 
+that we will subtract all the other objects from.  
+
+00:01:31.840 --> 00:01:37.920
+So in this case, we will start with our union 
+object and we will subtract the sphere object.  
+
+00:01:39.840 --> 00:01:45.120
+Then we push the result into our objects array.
+
+00:01:48.560 --> 00:01:58.240
+Save it and now we can see that the sphere has 
+been subtracted from our union shape. And just to  
+
+00:01:58.240 --> 00:02:05.040
+show you the importance of the order of elements 
+in the subtract array. I will just switch them  
+
+00:02:05.040 --> 00:02:17.600
+around and now we can see that this time the 
+union object was subtracted from the sphere.

@@ -1,0 +1,125 @@
+WEBVTT
+
+00:00:09.720 --> 00:00:14.520
+Im letzten Video habe ich euch die Arrays 
+gezeigt. Den letzten Variablentypen den ich  
+
+00:00:14.520 --> 00:00:19.800
+jetzt noch einführen möchte, sind die Objekte. 
+Die Objects, die sind ein wenig verwandt mit den  
+
+00:00:19.800 --> 00:00:27.180
+Arrays. Statt diesen numerischen Indizes können 
+wir hier Texte als Indizes verwenden. Dies ist vor  
+
+00:00:27.180 --> 00:00:31.620
+allem praktisch, wenn wir ganz komplexe Objekte 
+haben. Ich hatte hier gerade dieses Beispiel mit  
+
+00:00:31.620 --> 00:00:36.120
+den X und den Y-Koordinaten gemacht. Und dann 
+muss man halt immer überlegen wenn man dann  
+
+00:00:36.120 --> 00:00:41.400
+später schreibt, okay, war jetzt die Erste der X 
+oder war das Zweite das X. Und wenn wir das Ganze  
+
+00:00:41.400 --> 00:00:47.040
+aber mit tatsächlichen Labels versehen und nicht 
+diese numerischen Indizes benutzen, dann ist es  
+
+00:00:47.040 --> 00:00:54.060
+natürlich wesentlich übersichtlicher. Um Objekte 
+zu definieren, benutzen wir geschweifte Klammern  
+
+00:00:54.060 --> 00:01:03.520
+und können dann darin mit Anführungszeichen 
+Labels vergeben. Z.B sagen das X ist 0 und Y =  
+
+00:01:04.440 --> 00:01:10.200
+100. Und genau wie bei den Arrays können wir 
+auch Objekte verschachteln. Also wir können  
+
+00:01:10.200 --> 00:01:16.560
+sowohl Objekte innerhalb von Objekten machen, 
+also können hier ein weiteres Objekt anlegen.  
+
+00:01:16.560 --> 00:01:28.440
+Aber wir können auch z.B dann solch einem 
+Key hier dann ein Array zuweisen und in dem  
+
+00:01:28.440 --> 00:01:36.540
+Array dann wiederum einzelne Objekte anlegen, 
+die verschiedene Attribute und Werte haben.  
+
+00:01:37.860 --> 00:01:43.380
+Um auf die Objekte zuzugreifen benutzen wir eine 
+ähnliche Syntax wie wir es von den Arrays kennen.  
+
+00:01:43.380 --> 00:01:49.140
+Also wir sagen einfach den Variablennamen 
+und können dann wieder in eckigen Klammern,  
+
+00:01:49.140 --> 00:01:55.440
+statt dem Index der numerisch war, geben wir 
+jetzt einfach den Begriff ein, also z.B "obj"  
+
+00:01:56.400 --> 00:02:04.020
+und dann z.B daran ist dann das Listenelement 
+drin und da ist dann ein Array drin da wollen  
+
+00:02:04.020 --> 00:02:09.300
+wir das erste haben und dann geben wir noch 
+sozusagen an, dass wir das X haben wollen.  
+
+00:02:10.500 --> 00:02:15.120
+So können wir sozusagen auf diesen 
+verschiedenen Ebenen auf die einzelnen  
+
+00:02:15.120 --> 00:02:20.340
+Elemente zugreifen. Und um das mal an 
+einem Anwendungsbeispiel zu zeigen:  
+
+00:02:21.540 --> 00:02:31.860
+wir hatten ja hier unten unser Koordinatenobjekt, 
+wo wir hier die X und Y-Werte einfügen und um das  
+
+00:02:31.860 --> 00:02:36.300
+jetzt übersichtlicher zu machen, fügen wir 
+hier kein Array ein, sondern ein Objekt.  
+
+00:02:37.500 --> 00:02:43.620
+Das wird über diese geschweiften Klammern 
+gemacht und jetzt können wir einfach sagen: X
+
+00:02:46.140 --> 00:02:54.000
+und Y sind jetzt unsere beiden Keys, die 
+Attributennamen sozusagen in diesem Objekt.  
+
+00:02:54.000 --> 00:03:00.120
+Und dann können wir nämlich jetzt hier 
+unten einfach in die eckigen Klammern X
+
+00:03:03.720 --> 00:03:09.720
+und Y schreiben und haben sozusagen dieselbe 
+Funktionalität wie vorher. Nur wir müssen  
+
+00:03:09.720 --> 00:03:14.400
+uns nicht mehr daran erinnern was sozusagen 
+jetzt die einzelnen numerischen Indizes waren,  
+
+00:03:14.400 --> 00:03:19.380
+sondern können es über die Buchstaben machen. 
+Es gibt für das Abrufen auch noch eine kürzere  
+
+00:03:19.380 --> 00:03:25.200
+Schreibweise. Denn wenn wir diese Keys haben und 
+die Kies so definiert sind dass keine Leerzeichen  
+
+00:03:25.200 --> 00:03:31.620
+etc darin sind, dann können wir sozusagen auch 
+einfach nur Punkt X, Punkt Y schreiben und  
+
+00:03:31.620 --> 00:03:35.460
+müssen nicht diese komplizierte Schreibweise mit 
+Anführungszeichen und eckigen Klammern benutzen.

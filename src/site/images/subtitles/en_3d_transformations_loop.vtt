@@ -1,0 +1,74 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:12.320
+What is great about having each new object in its 
+own variable, is that we can reuse them. Imagine  
+
+00:00:12.320 --> 00:00:18.080
+for example we have our cube here and maybe let's 
+rotate the cube, also keep it in the same variable  
+
+00:00:18.880 --> 00:00:29.840
+called cube object and use the rotate function. 
+Use our little formula rotate it by 45 degrees.
+
+00:00:30.880 --> 00:00:32.160
+Use our cube object.
+
+00:00:34.560 --> 00:00:41.280
+Now the cube object is rotated and now let's 
+create a series of same objects that are just  
+
+00:00:41.280 --> 00:00:49.200
+translated and rotated along an axis. 
+We simply need to create a for loop.  
+
+00:00:51.040 --> 00:00:57.840
+Let's create 10 objects.
+
+00:00:59.120 --> 00:01:08.720
+And inside we will create a new instance of our 
+object. Let's call it the rotate object. And so  
+
+00:01:08.720 --> 00:01:16.800
+we use another time our rotate function, but 
+this time we will rotate around another axis.  
+
+00:01:18.000 --> 00:01:28.160
+And we will rotate x times five. So each new cube 
+in the series should be slightly more rotated.  
+
+00:01:29.600 --> 00:01:35.680
+And now we provide our original cube object. So 
+now we have a new instance of the original object,  
+
+00:01:35.680 --> 00:01:43.040
+stored in rotate object. And this rotate object 
+we can now also translate. Let's keep the same  
+
+00:01:43.040 --> 00:01:50.240
+variable name and override it. So 
+translate and move it x times 100.  
+
+00:01:51.680 --> 00:02:00.080
+And use the rotate object to do this and then 
+we push each rotate object that we create  
+
+00:02:00.080 --> 00:02:07.840
+inside the loop into our array. So we will have a 
+series of objects now. And now we can nicely see  
+
+00:02:08.880 --> 00:02:17.520
+that we have a series of objects each is 100 units 
+apart and we can also see that they are slightly  
+
+00:02:17.520 --> 00:02:25.440
+more rotated. If we for example rotate them 
+on the first axis, we get a nice effect.
+
+00:02:28.800 --> 00:02:33.040
+We can see it slightly 
+better. So here now we can see  
+
+00:02:33.040 --> 00:02:42.320
+how they are further rotated around the same axis.

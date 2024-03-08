@@ -1,0 +1,105 @@
+WEBVTT
+
+00:00:10.220 --> 00:00:14.660
+Das wichtigste Werkzeug in unserem Kurs 
+ist ein Code-Editor. Ich empfehle euch an  
+
+00:00:14.660 --> 00:00:17.900
+dieser Stelle Visual Studio Code und werde 
+den auch in allen meinen Videos benutzen,  
+
+00:00:17.900 --> 00:00:23.180
+aber ihr könnt grundsätzlich jeden beliebigen 
+Code Editor benutzen den ihr wollt. Aber es  
+
+00:00:23.180 --> 00:00:29.180
+muss tatsächlich ein Code Editor sein. Ein Code 
+Editor untertscheidet sich in Unterschied zu  
+
+00:00:29.180 --> 00:00:34.460
+anderen Textbearbeitungsprogramm dahingehend, 
+dass wenn wir eine Datei bearbeiten, wir den  
+
+00:00:34.460 --> 00:00:41.420
+tatsächlichen Textinhalt, den rohen Textinhalt 
+einer Datei bearbeiten. Im Unterschied dazu wenn  
+
+00:00:41.420 --> 00:00:48.680
+wir andere Textbearbeitungsprogramme sehen, können 
+wir hier z.B Text formatieren. Und damit diese  
+
+00:00:48.680 --> 00:00:55.040
+Formatierung mit der Textdatei gespeichert werden 
+kann, muss sozusagen eine Zwischenebene eingeführt  
+
+00:00:55.040 --> 00:01:01.100
+werden eine Art "Markup", wodurch sozusagen diese 
+Formatierung abgespeichert werden kann. Deswegen  
+
+00:01:01.100 --> 00:01:06.020
+wenn ihr irgendwo in einem Programm solche 
+Formatierungsoptionen findet: das ihr Sachen Fett  
+
+00:01:06.020 --> 00:01:11.720
+abbilden könnt, kursiv, andere Schriften wählen 
+könnt etc. Dann habt ihr hier keinen Code Editor  
+
+00:01:11.720 --> 00:01:18.140
+sondern ein anderes Textbearbeitungswerkzeug. 
+Wenn ich dieses Dokument jetzt hier z.B als  
+
+00:01:19.460 --> 00:01:28.280
+Word-Datei speicher und da mal reinschauen würde, 
+muss ich erstmal ein paar Hürden übergehen. Was  
+
+00:01:28.280 --> 00:01:32.660
+ich hier jetzt schon bisschen vorbereitet habe: 
+das docx-Format was von Word genutzt wird,  
+
+00:01:32.660 --> 00:01:39.140
+ist wie ganz viele andere Formate von anderen 
+Programmen gar keine echte Textdatei, sondern  
+
+00:01:39.140 --> 00:01:45.680
+es ist eine ZIP-Datei. Das trifft z.B auch auf 
+Programme wie Keynote zu. Also eine .key Datei  
+
+00:01:45.680 --> 00:01:50.660
+ist eigentlich keine einfache Präsentationsdatei 
+sondern es ist eine ZIP-Datei. In der ganz viele  
+
+00:01:50.660 --> 00:01:56.300
+weitere Informationen gespeichert sind. Wenn 
+ich also das Dokument jetzt von docx in zip  
+
+00:01:56.300 --> 00:02:02.300
+umbenenne und dann entpacke. Finde ich in diesem 
+Ordner nun ganz viele zusätzliche Informationen,  
+
+00:02:02.300 --> 00:02:07.940
+die dem Programm nachher helfen die Formatierung 
+die ihr festgelegt habt tatsächlich abzubilden.  
+
+00:02:08.840 --> 00:02:16.760
+Und wenn ich dann in das Dokument reinschaue, 
+dann sehe ich, dass hier nicht einfach nur "Hello  
+
+00:02:16.760 --> 00:02:21.080
+World" drin steht, sondern hier stehen ganz 
+viele Informationen drin. Die Informationen  
+
+00:02:21.080 --> 00:02:26.720
+die die Software braucht, um eure Formatierung 
+abzubilden und dann sehe ich jetzt z.B dass um  
+
+00:02:26.720 --> 00:02:31.820
+das Wort "world" herum was ich ja fett und 
+kursiv gemacht habe, weitere Informationen  
+
+00:02:31.820 --> 00:02:37.400
+abgelegt sind. Es ist also wichtig wenn ihr 
+Code bearbeitet, dass ihr nicht solch einen  
+
+00:02:37.400 --> 00:02:43.100
+Textbearbeitungsprogramm benutzt, sondern einen 
+wirklichen Code Editor wie Visual Studio Code.

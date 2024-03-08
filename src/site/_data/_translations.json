@@ -1,0 +1,94 @@
+{
+  "subtitle": {
+    "de": "Einführung in Code-&#8288;Driven&nbsp;Design",
+    "en": "An introduction to code-&#8288;driven&nbsp;design",
+    "cn": "代码驱动设计简介"
+  },
+  "description": {
+    "de": "Einführung in Code-Driven Design mit Videos, Texten und interaktiven Codebeispielen. Ein Programmierkurs für Designer*innen",
+    "en": "An introduction to code-driven design with videos, texts and interactive code examples. A programming course for designers."
+  },
+  "fhp": {
+    "de": "Fachhochschule Potsdam",
+    "en": "Potsdam University of Applied Scienes",
+    "cn": "Potsdam University of Applied Scienes"
+  },
+  "top": {
+    "de": "Zurück zum Anfang",
+    "en": "Back to top",
+    "cn": "滚动回到顶部"
+  },
+  "subtitles": {
+    "de": "Untertitel",
+    "en": "Subtitles",
+    "cn": "字幕"
+  },
+  "skipContent": {
+    "de": "Zum Inhalt springen",
+    "en": "Skip to main Content"
+  },
+  "inspiration": {
+    "all": {
+      "de": "Alle",
+      "en": "All"
+    },
+    "analog": {
+      "de": "Analog",
+      "en": "Analog"
+    },
+    "recent": {
+      "de": "Aktuelles",
+      "en": "Recent"
+    },
+    "early": {
+      "de": "Frühe Arbeiten",
+      "en": "Early Work"
+    },
+    "physical": {
+      "de": "Physisch",
+      "en": "Physical"
+    }
+  },
+  "footer": {
+    "about": {
+      "de": "Über uns",
+      "en": "About us",
+      "cn": "关于我们"
+    },
+    "contribute": {
+      "de": "Projekt unterstützen",
+      "en": "Contribute",
+      "cn": "合作"
+    },
+    "feedback": {
+      "de": "Feedback",
+      "en": "Feedback",
+      "cn": "回馈"
+    },
+    "legal": {
+      "de": "Impressum",
+      "en": "Legal notice",
+      "cn": "法律声明"
+    },
+    "privacy": {
+      "de": "Datenschutz",
+      "en": "Data protection",
+      "cn": "数据保护"
+    },
+    "study": {
+      "de": "Dieses Seminar ist Teil des Interface- und Produktdesign Studiums an der Fachhochschule Potsdam.",
+      "en": "This lecture is part of the Interface and Product Design curriculum at Potsdam University of Applied Sciences.",
+      "cn": "本讲座是 Potsdam University of Applied Sciences 界面设计和产品设计课程的一部分"
+    },
+    "interface": {
+      "de": "Studiere <strong>Interfacedesign</strong> an der FHP",
+      "en": "Study <strong>Interface Design</strong> at FHP",
+      "cn": "在 FHP 学习界面设计"
+    },
+    "product": {
+      "de": "Studiere <strong>Produktdesign</strong> an der FHP",
+      "en": "Study <strong>Product Design</strong> at FHP",
+      "cn": "在 FHP 学习产品设计"
+    }
+  }
+}

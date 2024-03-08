@@ -1,0 +1,36 @@
+WEBVTT
+
+00:00:06.560 --> 00:00:11.440
+After we've set up our drawing canvas we 
+can now begin with the actual drawing.  
+
+00:00:12.560 --> 00:00:15.280
+The first thing in many cases that we will do,  
+
+00:00:15.280 --> 00:00:20.960
+is set the background color. For this we don't 
+need to tell the command how big our canvas is,  
+
+00:00:20.960 --> 00:00:25.680
+it automatically knows this. But there is in 
+some cases the instance where you actually  
+
+00:00:25.680 --> 00:00:30.880
+don't want a background color. For example if you 
+want to export later on a png with a transparent  
+
+00:00:30.880 --> 00:00:35.360
+background, then of course you don't want to 
+draw a background. But in most cases, drawing a  
+
+00:00:35.360 --> 00:00:41.040
+background as a first command, is a good thing to 
+do. Therefore we call the background command and  
+
+00:00:41.040 --> 00:00:46.800
+then we provide it with the parameter. Tt defines 
+the color. In this case it's just a grayscale  
+
+00:00:47.760 --> 00:00:57.840
+background that goes from 0 for black to 255 
+for white. More on colors in the next video.

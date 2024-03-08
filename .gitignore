@@ -1,5 +1,7 @@
-_legacy
+.DS_Store
 dist
+node_modules
+_legacy
 # Logs
 logs
 *.log
@@ -103,3 +105,4 @@ typings/
 
 # TernJS port file
 .tern-port
+.DS_Store

@@ -1,0 +1,54 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:13.600
+We can also import our p5.js vector graphics, 
+the SVG file, into fusion 360. To go a little bit  
+
+00:00:13.600 --> 00:00:20.800
+further, in this example, we will create a little 
+cube and then we will use our SVG vector paths, to  
+
+00:00:20.800 --> 00:00:29.840
+cut holes into our little cube object. Let's start 
+by adding a simple plain little rectangle here.
+
+00:00:41.040 --> 00:00:43.840
+Finish the sketch.
+
+00:00:46.080 --> 00:00:48.000
+And now extrude.
+
+00:00:54.240 --> 00:01:01.200
+And now we start the actual import. Therefore, 
+we use the insert. Then we select "insert  
+
+00:01:01.200 --> 00:01:10.800
+SVG", "from my computer" in this 
+case and select the curves.svg.  
+
+00:01:12.960 --> 00:01:18.800
+We want to place it on top of our rectangle here.
+
+00:01:21.120 --> 00:01:31.600
+Position it, scale it, so that it fits on our 
+rectangle, on our cube here. Finish the sketch.  
+
+00:01:32.560 --> 00:01:40.800
+And now we can simply select all the individual 
+paths, the polygons, that we created in p5.js.  
+
+00:01:41.520 --> 00:01:49.200
+And, for example, we could now use the extrude 
+function again. We could create an extrusion up,  
+
+00:01:49.200 --> 00:01:55.680
+so that we could use it for example in a 3D 
+printer or we could go the other way and create  
+
+00:01:55.680 --> 00:02:07.840
+a cut into our object. And then for example use a 
+CNC mill to cut into a wooden block or something.  
+
+00:02:09.120 --> 00:02:21.840
+Again another way of using our vector graphics 
+in a 3D software to generate 3D bodies.

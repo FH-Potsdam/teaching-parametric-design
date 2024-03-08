@@ -1,0 +1,21 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:10.880
+There is a really nice extension plugin for 
+p5.js called p5 gui. Graphical user interface.  
+
+00:00:11.440 --> 00:00:17.120
+Through this extension, you can easily create a 
+lot of different input fields. Through an object  
+
+00:00:17.120 --> 00:00:22.480
+that you define initially and then you get this 
+really nice interface that allows you to change  
+
+00:00:22.480 --> 00:00:28.240
+parameters and access them in your code. This 
+is slightly more complex than the elements i  
+
+00:00:28.240 --> 00:00:39.760
+showed you before and so i added an additional 
+tutorial to the bonus section in this website.

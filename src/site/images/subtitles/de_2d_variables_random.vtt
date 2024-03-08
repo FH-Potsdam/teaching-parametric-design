@@ -1,0 +1,120 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.850
+In den letzten Beispielen haben wir die 
+Variablen immer durch Zahlen definiert.  
+
+00:00:09.850 --> 00:00:17.530
+Für interessante parametrische Designs ist es 
+aber häufig interessant sich auch mit zufälligen  
+
+00:00:17.530 --> 00:00:21.880
+Werten zu beschäftigen. Also sich zum Beispiel 
+verschiedene Varianten ein und desselben Layouts  
+
+00:00:21.880 --> 00:00:28.750
+generieren zu lassen. Aber Teile der Parameter 
+durch Zufallszahlen zu generieren. Hierfür gibt  
+
+00:00:28.750 --> 00:00:36.760
+es in p5js die "random" Funktion. Die "random" 
+Funktion, wenn wir keinen Parameter eintragen,  
+
+00:00:36.760 --> 00:00:42.940
+liefert uns einen Wert zwischen 0 und 1. Oder 
+wir können ein "min" und "maximum" für den Zufall  
+
+00:00:42.940 --> 00:00:47.500
+generieren, also in unserem Fall wollen wir eine 
+Farbe, einen Grauwert, haben. Wollen also einen  
+
+00:00:47.500 --> 00:00:54.550
+Werte der zwischen 0 und 255 liegt. Wenn ich das 
+jetzt abspeicher, sehen wir in dem Fall gab es  
+
+00:00:54.550 --> 00:00:58.780
+jetzt gerade ein Grau ich kann es ja nochmal 
+abspeichern. Bekommen jetzt ein helleres Grau.  
+
+00:00:58.780 --> 00:01:05.860
+Also jedesmal wird ein zufälliger Wert generiert. 
+Das selbe könnten wir natürlich auch in unserer  
+
+00:01:05.860 --> 00:01:10.990
+"draw" Schleife machen. Was wahrscheinlich zu 
+einem kleinen Flacker-Effekt gleich führen wird.
+
+00:01:10.990 --> 00:01:18.670
+Und jetzt wird sozusagen bei jeder 
+"draw" Schleife ein neuer Wert generiert.
+
+00:01:18.670 --> 00:01:28.570
+Ein ganz wichtiger Aspekt dazu: Diese "random" 
+Funktion ist eine spezifische p5js Funktion. Wenn  
+
+00:01:28.570 --> 00:01:33.490
+ihr also in anderen JavaScript Systemen arbeitet 
+und in anderen Programmiersprachen arbeitet,  
+
+00:01:33.490 --> 00:01:38.650
+dann habt ihr keinen Zugriff darauf. 
+Ihr habt zum Beispiel auch im "global  
+
+00:01:38.650 --> 00:01:42.760
+scope" noch keinen Zugriff darauf, weil p5js 
+dort noch nicht sozusagen komplett geladen  
+
+00:01:42.760 --> 00:01:48.280
+ist. Also wenn ich zum Beispiel jetzt 
+diese "random" Funktion hier rauskopiere
+
+00:01:50.670 --> 00:01:56.010
+und hier oben einsetze.
+
+00:01:56.010 --> 00:02:07.680
+Dann bleibt unsere Fläche leer und wenn wir 
+uns dann die Konsole anschauen, sehen wir,  
+
+00:02:07.680 --> 00:02:14.070
+dass "random" nicht defined ist. Dies liegt 
+daran, dass sozusagen "random" eine spezifische  
+
+00:02:14.070 --> 00:02:20.910
+p5js Funktion ist und diese ist erst verfügbar 
+sobald sozusagen "setup" und "preload" et cetera  
+
+00:02:20.910 --> 00:02:27.720
+ausgeführt werden. Deswegen gibt es aber auch eine 
+native JavaScript "random" Funktion. Diese könnt  
+
+00:02:27.720 --> 00:02:33.630
+ihr einfach mit "Math.random()" aufrufen. Diese 
+liefert euch immer einen Wert zwischen 0 und 1.  
+
+00:02:33.630 --> 00:02:37.860
+Hier kann man leider keine Parameter mitgeben. 
+Heißt was wir in dem Fall einfach machen müssen,  
+
+00:02:37.860 --> 00:02:44.580
+ist das mit 255 zu multiplizieren. Damit wir 
+sozusagen einen Wert zwischen 0 und 255 bekommen  
+
+00:02:44.580 --> 00:02:51.060
+sollen. Wenn ich das jetzt speicher, sehen 
+wir auch, dass das sofort funktioniert. Also  
+
+00:02:51.060 --> 00:02:56.040
+ganz wichtig, wenn ihr direkt in eurem global 
+scope Variablen mit "random" definieren wollt,  
+
+00:02:56.040 --> 00:03:00.660
+benutzt "Math.random()". Sonst definiert 
+einfach nur die Variable und definiert  
+
+00:03:00.660 --> 00:03:05.730
+das ganze dann in der "setup" Funktion 
+und in der "setup" Funktion könnt ihr  
+
+00:03:05.730 --> 00:03:09.870
+dann auf die p5js Version zugreifen in der 
+ihr dann auch die Parameter eintragen könnt

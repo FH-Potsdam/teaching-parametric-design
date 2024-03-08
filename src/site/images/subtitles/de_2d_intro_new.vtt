@@ -1,0 +1,113 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.130
+In diesem Video zeige ich euch wie ihr neue 
+Projekte anlegt. Hierfür öffnet ihr das Repo  
+
+00:00:09.130 --> 00:00:14.200
+was ihr euch von GitHub heruntergeladen habt: 
+"learning-parametric-design". Hier findet ihr  
+
+00:00:14.200 --> 00:00:19.930
+dann zwei Ordner. Einmal den "code" Ordner und 
+einmal den "lectures" Ordner. Im "lectures" Ordner  
+
+00:00:19.930 --> 00:00:26.410
+findet ihr alle Inhalte wie sie auf der Webseite 
+oder den Videos zu sehen sind. Unter "code" könnt  
+
+00:00:26.410 --> 00:00:33.190
+ihr dann eure eigenen Projekte anlegen. Für 
+die 2D-Beispiel Apps kopiert ihr euch einfach  
+
+00:00:33.190 --> 00:00:40.330
+den "exampel" Ordner, fügt den dann in "code" 
+wieder ein und benennt das ganze dann noch um,  
+
+00:00:40.330 --> 00:00:45.610
+sodass ihr das Ganze später auch entsprechend 
+wiederfindet. Achtet beim Umbenennen darauf,  
+
+00:00:45.610 --> 00:00:50.050
+dass ihr keine Leerzeichen oder sonstigen 
+Sonderzeichen benutzt. Da dies später  
+
+00:00:50.050 --> 00:00:55.180
+möglicherweise nicht im Browser dann korrekt 
+geöffnet werden kann. Wenn wir dann in den  
+
+00:00:55.180 --> 00:01:00.160
+Ordner reingehen, sehen wir, dass hier zwei 
+Dateien drin enthalten sind. Die "index.html"  
+
+00:01:00.160 --> 00:01:07.600
+Datei enthält die Angaben für den Browser, das 
+zum einen die p5js Library geladen werden soll,  
+
+00:01:07.600 --> 00:01:13.060
+dann noch eine zusätzliche Erweiterung, die es 
+uns später erlauben wird SVGs zu exportieren und  
+
+00:01:13.060 --> 00:01:19.420
+dann der wichtigste Teil die skech.js Datei. Das 
+ist nämlich die Datei wo unser eigentlicher Code  
+
+00:01:19.420 --> 00:01:24.670
+liegt, mit dem wir unsere generativen Grafiken 
+generieren werden. Und die öffnen wir jetzt auch.  
+
+00:01:24.670 --> 00:01:30.730
+Die skech.js Datei und hier finden wir jetzt 
+die eigentlichen Kommandos die wir sozusagen  
+
+00:01:30.730 --> 00:01:35.830
+an den Browser schicken, um unsere Grafiken zu 
+generieren. Damit wir uns das Ganze im Browser  
+
+00:01:35.830 --> 00:01:42.040
+anzeigen lassen können, können wir hier auf die 
+index.html Datei nochmal gehen, klicken dann  
+
+00:01:42.040 --> 00:01:47.860
+unten in Visual Studio Code auf "go live", dass 
+ist die Erweiterung die wir uns im vorherigen  
+
+00:01:47.860 --> 00:01:52.630
+Schritt installiert haben und dann sollte 
+sich bei euch im Browser ein neues Tab öffnen,  
+
+00:01:52.630 --> 00:01:58.000
+mit dem entsprechenden Beispiel. Manchmal kann es 
+sein, dass sich der sketch nicht sofort öffnet,  
+
+00:01:58.000 --> 00:02:02.410
+weil ihr zum Beispiel nicht auf die index.html 
+Datei geklickt habt. Dann öffnet sich in der Regel  
+
+00:02:02.410 --> 00:02:06.640
+eine Seite wo ihr ganz viele Ordner darauf 
+seht. Das ist im Grunde die Ordnerstruktur  
+
+00:02:06.640 --> 00:02:10.060
+wie ihr sie in eurem Repo habt. Dann müsst ihr 
+euch einfach so lange durchklicken bis ihr die  
+
+00:02:10.060 --> 00:02:16.520
+entsprechende index.html Datei gefunden habt. 
+Das schöne an der "live-server" Erweiterung ist,  
+
+00:02:16.520 --> 00:02:21.320
+dass wenn wir jetzt anfangen unsere skech.js 
+Dateien zu bearbeiten, dass das System  
+
+00:02:21.320 --> 00:02:27.290
+automatisch merkt wenn wir speichern und dann die 
+Website entsprechend neulädt. Was ich jetzt hier  
+
+00:02:27.290 --> 00:02:32.360
+zum Beispiel gerade gemacht habe, ist einfach die 
+Hintergrundfarbe geändert und in dem Moment wo ich  
+
+00:02:32.360 --> 00:02:38.450
+auf speichern klicke, wird hier auf der rechten 
+Seite die Webseite automatisch aktualisiert.

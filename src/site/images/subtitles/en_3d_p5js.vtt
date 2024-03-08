@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:10.000
+In the next part of this lecture, i will introduce 
+you to a system that will allow you to create  
+
+00:00:10.000 --> 00:00:16.000
+3D objects through code. That are constructed 
+in a way so that you can use them in fabrication  
+
+00:00:16.000 --> 00:00:21.760
+processes like 3D printing. But you 
+can also create 3D objects in p5.js.  
+
+00:00:22.320 --> 00:00:27.920
+But they are only meant for the visual output 
+of 3D objects, like you can see here in this  
+
+00:00:27.920 --> 00:00:33.360
+animation. And they're not meant to be used 
+as an export for 3D printing for example.  
+
+00:00:34.800 --> 00:00:42.160
+I will now quickly guide you through an example, 
+for how to build 3D objects using p5.js.  
+
+00:00:42.160 --> 00:00:46.240
+But we'll not go into depth as this 
+is not the focus of this lecture.  
+
+00:00:48.720 --> 00:00:56.320
+We already know the p5.js standard renderer, which 
+generates pixel data and the SVG vector renderer.  
+
+00:00:56.320 --> 00:01:02.480
+If we want to generate 3D objects, we need to 
+use the WEBGL renderer. We need to add WEBGL to  
+
+00:01:02.480 --> 00:01:11.200
+our createCanvas command. This will allow us 
+to use the WEBGL capabilities of our browser  
+
+00:01:11.200 --> 00:01:17.520
+and thereby the performance of the rendering is 
+increased, as the browser is using your graphics  
+
+00:01:17.520 --> 00:01:26.080
+card to render these 3D objects more quickly. As 
+soon as we add WEBGL to the create canvasCommand,  
+
+00:01:26.080 --> 00:01:34.800
+we can now make use of all the fancy 3D commands 
+that are built into p5.js. If you're interested  
+
+00:01:34.800 --> 00:01:41.440
+in creating more visually interesting objects, 
+that are for example, have reflections like this  
+
+00:01:41.440 --> 00:01:48.080
+example up here, then you need to think about the 
+lighting of your 3D scene. And there are different  
+
+00:01:48.080 --> 00:01:53.840
+commands that allow you to set up different kinds 
+of lights from ambient lights that come from every  
+
+00:01:53.840 --> 00:01:59.680
+direction to point lights that allow you to create 
+different spots and thereby also nice reflections.
+
+00:02:02.080 --> 00:02:08.400
+As we are now in the 3d space all our 
+transformations also work in 3D. Translate,  
+
+00:02:08.400 --> 00:02:13.760
+rotate now have an additional dimension, 
+how we can translate and transform things.  
+
+00:02:15.280 --> 00:02:22.400
+From rotate we now have rotateX, rotateY and 
+rotateZ, to also rotate in different directions.  
+
+00:02:24.160 --> 00:02:30.240
+If we want really nice 3d materials and you will 
+probably know this from other 3d applications,  
+
+00:02:30.240 --> 00:02:36.800
+where you need materials/textures to create 
+good renderings for 3D objects, we cannot use  
+
+00:02:36.800 --> 00:02:40.080
+only the fill color, because if you use only fill,  
+
+00:02:40.080 --> 00:02:45.200
+it will just be plain red, without any 
+kind of reflections or shadows or anything.  
+
+00:02:46.960 --> 00:02:52.800
+There are different kinds of materials already 
+provided by p5.js, like this specularMaterial,  
+
+00:02:52.800 --> 00:02:59.360
+that i've used here. And also our vertex commands 
+that we can use to create more complex shapes, we  
+
+00:02:59.360 --> 00:03:06.400
+can now also use in the third dimension. And this 
+is just a simple square, that i've added here, but  
+
+00:03:06.400 --> 00:03:12.560
+obviously you could use all three dimensions and 
+create really complex 3D shapes and structures.  
+
+00:03:13.600 --> 00:03:18.960
+So this is just a really really small 
+example, trying to give you a first  
+
+00:03:18.960 --> 00:03:26.160
+introduction to building 3D objects in p5.js. I 
+will put a few more links to special functions  
+
+00:03:26.160 --> 00:03:38.400
+below this video so you can explore the reference 
+regarding 3D objects in p5.js a little bit more.

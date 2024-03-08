@@ -1,0 +1,535 @@
+WEBVTT
+
+00:00:04.580 --> 00:00:09.170
+Nachdem ich euch im letzten Video ein 
+bisschen erklärt habe, wie die Grundlagen  
+
+00:00:09.170 --> 00:00:12.920
+von GIT funktionieren, wollen uns nun gemeinsam 
+die GitHub-Plattform anschauen, mit der wir  
+
+00:00:12.920 --> 00:00:17.480
+in diesem Semester arbeiten werden. Nachdem 
+ihr euch registriert habt auf der Plattform,  
+
+00:00:17.480 --> 00:00:22.520
+könnt ihr nun auf der Plattform eure eigenen 
+Projekte durch sogenannte Repositories verwalten.  
+
+00:00:22.520 --> 00:00:29.720
+Hierfür geht ihr einfach auf den Repositories-Tab, 
+wenn ihr auf eurer Profilseite seid. Dort findet  
+
+00:00:29.720 --> 00:00:38.420
+ihr dann rechts oben den Button um ein neues 
+Repository anzulegen. Hier müssen wir nun als  
+
+00:00:38.420 --> 00:00:44.750
+erstes unserem Repository einen Namen geben. Ich 
+nenne das jetzt einfach mal "test-repo", kriege  
+
+00:00:44.750 --> 00:00:50.900
+danach den Hinweis ob der Name so erlaubt ist 
+oder ob es das Ganze schon gibt. Bei Repositories  
+
+00:00:50.900 --> 00:00:56.060
+könnt ihr immer wählen ob ein Repository public 
+oder private ist. Public bedeutet alle können  
+
+00:00:56.060 --> 00:01:02.180
+die Inhalte eures Repos sehen und private nur ihr 
+könnt eure Inhalte sehen. Ganz wichtig, wenn wir  
+
+00:01:02.180 --> 00:01:10.280
+später einen Fork machen, dann muss der "fork" 
+dieselbe public/privat Einstellung haben wie  
+
+00:01:10.280 --> 00:01:14.720
+das Original-Projekt, das wir forken. Da muss man 
+immer so ein bisschen dran denken, dass sozusagen  
+
+00:01:14.720 --> 00:01:20.270
+wenn man dort etwas forkt, dass das möglicherweise 
+nachher auch public ist. Hier unten können wir nun  
+
+00:01:20.270 --> 00:01:25.190
+noch einstellen, ob eine README-Datei generiert 
+werden soll. Die Datei ist ganz praktisch,  
+
+00:01:25.190 --> 00:01:30.500
+weil wenn jemand auf eure Repo-Seite kommt, dann 
+wird unten immer so eine kurze Rrklärung angezeigt  
+
+00:01:30.500 --> 00:01:35.720
+was in diesem Repo eigentlich zu finden ist und 
+diese Erklärung generiert sich dadurch was ihr in  
+
+00:01:35.720 --> 00:01:43.400
+diese README-Datei schreibt. Die .gitignore-Datei, 
+da werde ich später noch mal was zu sagen, in der  
+
+00:01:43.400 --> 00:01:49.010
+.gitignore-Datei kann man Sachen reinschreiben, 
+die nicht in die Cloud hochgeladen werden. Denn  
+
+00:01:49.010 --> 00:01:54.620
+wenn ihr zum Beispiel irgendwo Settings, 
+Passwörter etc. in eurem Repo lokal ablegt  
+
+00:01:54.620 --> 00:01:59.510
+und nicht wollte, dass diese mit in die Cloud 
+hochgeladen werden, dann könnt ihr diese Dateien  
+
+00:01:59.510 --> 00:02:04.940
+in diese .gitignore-Datei reinschreiben und 
+diese werden dann nicht hochgeladen. Dafür gibt  
+
+00:02:04.940 --> 00:02:10.010
+es schon so ein paar Templates, wenn ihr bestimmte 
+Programmiersprachen benutzt, dann hat GitHub schon  
+
+00:02:10.010 --> 00:02:17.580
+vorgefertigte Templates, die ihr benutzen könnt. 
+Die Lizens ist besonders wichtig wenn ihr ein  
+
+00:02:17.580 --> 00:02:23.610
+öffentliches Repository habt. Darüber könnt ihr 
+festlegen wie andere Leute euren Code nachnutzen  
+
+00:02:23.610 --> 00:02:28.890
+können. Die meisten Projekte an denen ich arbeite 
+sind sogenannte Open Source Projekt. Also hier  
+
+00:02:28.890 --> 00:02:34.290
+werden offene Lizenzen genutzt, sodass Personen 
+euren Code ganz einfach nachnutzen können, den  
+
+00:02:34.290 --> 00:02:39.990
+bearbeiten können, für eigene Projekte einsetzen 
+können. Und ich benutze dafür meistens entweder  
+
+00:02:39.990 --> 00:02:48.720
+die General Public License v3, die GPL Lizenz oder 
+die MIT Lizenz. Weil die sehr offen sind, in der  
+
+00:02:48.720 --> 00:02:54.720
+Art und Weise wie andere meinen Code nachnutzen 
+können. So wenn wir das alles gemacht haben,  
+
+00:02:54.720 --> 00:03:04.020
+müssen wir noch ein Template auswählen. Ich will 
+jetzt einfach mal, dass "node"-Template. Dann wird  
+
+00:03:04.020 --> 00:03:10.290
+unser Button hier unten grün. Dann klicken wir auf 
+"create repository", das kann ein klein bisschen  
+
+00:03:10.290 --> 00:03:15.870
+dauern, bis das erstellt ist. So und nun haben wir 
+ein eigenes Repo. Man sieht hier oben jetzt meinen  
+
+00:03:15.870 --> 00:03:21.390
+Account-Namen, dahinter den Repo-Namen. Und dieses 
+Repo können wir nun auf unseren lokalen Rechner  
+
+00:03:21.390 --> 00:03:27.240
+clonen, um dort mit der Arbeit anzufangen. Und 
+an dieser Stelle möchte ich in die GitHub-Desktop  
+
+00:03:27.240 --> 00:03:33.420
+App wechseln, um euch zu zeigen, wie das hier 
+funktioniert. Nachdem ihr euch authentifiziert  
+
+00:03:33.420 --> 00:03:41.520
+habt in der Desktop Ap,p könnt ihr nun mit GitHub 
+kommunizieren. Hier über den Button und dann  
+
+00:03:41.520 --> 00:03:47.550
+"clone repository", können wir nun aus all unseren 
+Repositories die wir online erstellt haben,  
+
+00:03:47.550 --> 00:03:53.940
+welche auf unseren lokalen Rechner clonen. Und 
+wenn ich jetzt hier mal "test-repo" eingebe,  
+
+00:03:53.940 --> 00:04:01.140
+dann findet er nichts. Das liegt daran, dass 
+manchmal hat er noch nicht die aktuellsten  
+
+00:04:01.140 --> 00:04:05.400
+Daten und dann müsst ihr einmal oben auf diesen 
+kleinen Update-Button drücken. Und dann dauert es  
+
+00:04:05.400 --> 00:04:10.260
+einen kleinen Augenblick und dann sollte das Repo 
+was ihr gerade erstellt habt, dann auch auf eurer  
+
+00:04:10.260 --> 00:04:18.960
+lokalen Maschine verfügbar sein. Hier unten könnt 
+ihr gleich auswählen, wo das Repo hingecloned  
+
+00:04:18.960 --> 00:04:24.540
+werden soll. Per default wird das Ganze immer 
+in Dokumente/Documents und dann GitHub-Ordner  
+
+00:04:24.540 --> 00:04:30.520
+und dann dort rein geclined. Aber ihr könnt den 
+Pfad auch beliebig auf eurem Rechner ändern. Wir  
+
+00:04:30.520 --> 00:04:34.720
+sehen jetzt nach dem Update, wird jetzt auch hier 
+das Repo angezeigt, das wir gerade online erstellt  
+
+00:04:34.720 --> 00:04:40.900
+haben. Das wähle ich jetzt aus. Und sehe dann hier 
+unten, könnte jetzt hier zum Beispiel den Pfad  
+
+00:04:40.900 --> 00:04:44.680
+auch ändern, wo das hingecloned wird. Wichtig ist 
+nur, dass das was hier am Ende steht tatsächlich  
+
+00:04:44.680 --> 00:04:50.440
+ein leerer Ordner ist. Andernfalls würdet ihr eine 
+Fehlermeldung bekommen. So drückt dann unten auf  
+
+00:04:50.440 --> 00:04:57.370
+"clone" dann dauert es ganz kurz, bis das ganze 
+auf euren lokalen Rechner heruntergeladen ist.  
+
+00:04:57.370 --> 00:05:02.290
+Und jetzt können wir wenn wir das jetzt hier in 
+unser Repo-Liste filtern. Sehen wir das jetzt  
+
+00:05:02.290 --> 00:05:08.590
+hier das Repo verfügbar ist und können jetzt 
+hier reinwechseln. Und das ist ein bisschen  
+
+00:05:08.590 --> 00:05:13.210
+unser Command-Center, wo wir jetzt diese ganzen 
+push und pull Befehle durchführen können, über  
+
+00:05:13.210 --> 00:05:18.940
+die ich euch vorher berichtet habe. Um das Ganze 
+zu öffnen gibt es einen ganz netten Shortcut.  
+
+00:05:18.940 --> 00:05:23.980
+Mit einem Rechtsklick auf das Projekt in der 
+Liste können wir hier "Öffnen mit Visual Studio  
+
+00:05:23.980 --> 00:05:29.770
+Code" anklicken. Dieser befehl taucht nicht bei 
+allen auf. Ich hatte schon häufiger Studierende,  
+
+00:05:29.770 --> 00:05:34.660
+die gesagt haben, dass das nicht funktioniert hat, 
+das GitHub automatisch erkennt, dass Visual Studio  
+
+00:05:34.660 --> 00:05:39.700
+Code bei euch installiert ist. Dann müsst ihr 
+den Ordner einfach manuell in VS Code öffnen.  
+
+00:05:39.700 --> 00:05:48.190
+Wenn ich jetzt hier draufklicke, sollte sich 
+das Projekt automatisch öffnen und ich habe  
+
+00:05:48.190 --> 00:05:54.040
+jetzt hier sozusagen den leeren Ordner. Ich habe 
+hier eine License-Datei. Das ist die Licence die  
+
+00:05:54.040 --> 00:06:00.430
+ich vorher beim Erstellen des Repos ausgewählt 
+habe. Ich habe die Datei wo ich Informationen  
+
+00:06:00.430 --> 00:06:04.900
+anderen Leuten über mein Repo bereitstellen 
+kann und ich habe diese .gitignore-Datei in  
+
+00:06:04.900 --> 00:06:11.050
+der alle möglichen Dateien drin stehen die nicht 
+auf Github hochgeladen werden sollen. Und um  
+
+00:06:11.050 --> 00:06:18.040
+zu zeigen wie das Ganze funktioniert, werde ich 
+jetzt einfach mal hier die README-Datei ändern.
+
+00:06:21.830 --> 00:06:33.830
+Und hier einfach einen kurzen Text reinschreiben 
+und zusätzlich erstelle ich noch eine neue Datei,
+
+00:06:33.830 --> 00:06:50.210
+Speicher das Ganze. Das schöne an Visual Studio 
+Code ist, das euch in der Seitenleiste Änderungen  
+
+00:06:50.210 --> 00:06:55.550
+für GIT auch direkt angezeigt werden. Also wir 
+sehen jetzt zum Beispiel hier das Grün bedeutet,  
+
+00:06:55.550 --> 00:07:01.460
+dass dies eine neue Datei ist, das Orange hier 
+bedeutet, dass wir hier eine Modification haben.  
+
+00:07:01.460 --> 00:07:08.030
+Und wenn ich jetzt in die GitHub Desktop App 
+wechsel, dann sehen wir auch sofort hier,  
+
+00:07:08.030 --> 00:07:12.290
+dass zwei Dateien geändert wurden. Das 
+grüne sagt wieder: Dateien hinzugefügt,  
+
+00:07:12.290 --> 00:07:18.350
+orange sagt Datei verändert. Und diese beiden 
+Veränderungen kann ich jetzt hier unten in einem  
+
+00:07:18.350 --> 00:07:24.380
+sogenannten "commit" zusammenfassen. Den nenne 
+ich einfach mal "first commit" dann kann man hier,  
+
+00:07:24.380 --> 00:07:29.030
+wenn man will, noch eine Description einfügen 
+und dann drückt man anschließend hier unten auf  
+
+00:07:29.030 --> 00:07:34.700
+"commit". So nun wurde ein neuer "commit" 
+erstellt. Aber ganz ganz ganz wichtig,  
+
+00:07:34.700 --> 00:07:40.370
+dieser "commit" ist bisher nur bei euch lokal. 
+Damit das ganze auch online sichtbar wird,  
+
+00:07:40.370 --> 00:07:46.670
+müsst ihr das ganze noch pushen. Und das macht 
+ihr hier oben, drückt hier auf push und nun  
+
+00:07:46.670 --> 00:07:53.960
+wandert das Ganze in die Cloud und ist auch dort 
+verfügbar. Wenn ich jetzt kurz auf die Webseite  
+
+00:07:53.960 --> 00:08:00.080
+zurrückwechsel und die Seite aktualisiere, 
+sehen wir jetzt dass hier die Dateien da  
+
+00:08:00.080 --> 00:08:05.120
+sind jetzt. Auch schon die neue Datei. Wir 
+sehen hier die letzte "commit"-message,  
+
+00:08:05.120 --> 00:08:10.550
+mit der diese Datei bearbeitet wurde. Sehen wann 
+die bearbeitet wurde und sehen jetzt hier unten  
+
+00:08:10.550 --> 00:08:16.910
+den Inhalt der README-Datei. Die Web-Plattform 
+gibt uns auch die Möglichkeiten Dinge direkt  
+
+00:08:16.910 --> 00:08:22.640
+online zu editieren. Also ich kann zum Beispiel 
+hier jetzt auf den "edit"-Knopf gehen und könnte  
+
+00:08:22.640 --> 00:08:29.090
+zum Beispiel hier jetzt noch ein Ausrufezeichen 
+hinten dransetzen. Scrollen weiter runter,  
+
+00:08:29.090 --> 00:08:37.230
+nennen das Ganze "update readme" und kann 
+das Ganze dann committen. In dem Fall wird  
+
+00:08:37.230 --> 00:08:42.900
+der "commit" dann auch im Grunde virtuell sofort 
+gepusht, also ist sofort verfügbar. Und wenn ich  
+
+00:08:42.900 --> 00:08:52.710
+nun in die GitHub-Desktop App zurückgehe und hier 
+oben auf update kicke. Dann merkt das System das  
+
+00:08:52.710 --> 00:08:57.930
+es eine Änderung der Dateien online gab und ich 
+kann nun über den Button hier oben mir über den  
+
+00:08:57.930 --> 00:09:04.710
+"pull" die aktuellsten Änderungen auf meinen 
+lokalen Rechner laden. Und um so eine kleine  
+
+00:09:04.710 --> 00:09:10.050
+Übersicht zu sehen, gibt es hier dann auch so 
+eine "commit"-Historie, wo man alle "commits"  
+
+00:09:10.050 --> 00:09:16.050
+nochmal sehen kann. Und darüber übrigens dann 
+auch zu verschiedenen Versionen eines commits  
+
+00:09:16.050 --> 00:09:21.840
+wieder zurückkehren kann. Und um das Ganze dann 
+noch mal im Editor sich anzuschauen, sehen wir  
+
+00:09:21.840 --> 00:09:26.520
+das auch hier jetzt das Ausrufezeichen in der 
+README-Datei angekommen ist. Also können hier  
+
+00:09:26.520 --> 00:09:33.720
+dann auf der aktuellsten Version weitermachen. 
+Neben der Desktop App können wir das Ganze aber  
+
+00:09:33.720 --> 00:09:37.680
+auch direkt in Visual Studio Code machen. Dafür 
+mache ich noch mal einen kleinen Change hier.
+
+00:09:37.680 --> 00:09:45.510
+Speicher das Ganze und hier links in der 
+Seitenleiste sehen wir jetzt eine kleine  
+
+00:09:45.510 --> 00:09:52.860
+1. Diese 1 bedeutet, dass einen Veränderung 
+vorliegt und wenn ich jetzt hier draufklicke  
+
+00:09:52.860 --> 00:10:00.810
+komme ich in den GIT-View von unserem 
+Visual Studio. Und ähnlich wie wir es  
+
+00:10:00.810 --> 00:10:04.380
+in der Desktop App gemacht haben, sehe ich 
+jetzt hier eine Liste aller meine Änderung,  
+
+00:10:04.380 --> 00:10:08.310
+kann jetzt hier oben wieder 
+eine "commit"-message eingeben.
+
+00:10:08.310 --> 00:10:21.450
+Dann der commit mini update und kann dann mit 
+Steuerung+Enter oder Command+ Enter das Ganze  
+
+00:10:21.450 --> 00:10:26.160
+committen und muss das dann aber wieder in 
+die Cloud pushen. Dafür kann ich hier oben  
+
+00:10:26.160 --> 00:10:31.500
+auf die drei Punkte klicken und dann hier 
+auf "push" und dann sehen wir hier oben  
+
+00:10:31.500 --> 00:10:36.450
+den Fortschrittsbalken der anzeigt, dass im 
+Hintergrund das Ganze synchronisiert wird.  
+
+00:10:36.450 --> 00:10:42.870
+Und nun ist das Ganze auch online verfügbar. 
+Das ganze ist natürlich parallel auch hier  
+
+00:10:42.870 --> 00:10:47.560
+in der Desktop App aktualisiert. Also auch 
+hier sehen wir jetzt wieder diesen commit,  
+
+00:10:47.560 --> 00:10:53.950
+den wir gerade in Visual Studio Code gemacht 
+haben. Und in der Web-Ansicht sehen wir das  
+
+00:10:53.950 --> 00:10:59.530
+Ganze auch. Also sehen hier jetzt in der README 
+update und sehen hier unten auch in der README,  
+
+00:10:59.530 --> 00:11:06.550
+dass das Ganze aktualisiert wurde. Das sind 
+die Basisfunktion. In diesem Semester habe  
+
+00:11:06.550 --> 00:11:12.550
+ich euch ein Beispiel-Repo schon zur Verfügung 
+gestellt. Das Beispiel-Repo findet ihr unter  
+
+00:11:12.550 --> 00:11:19.150
+der URL fh-potsdam/learning-parametric-design. 
+Und wie ich euch im letzten Video erklärt habe,  
+
+00:11:19.150 --> 00:11:26.170
+kann man solche Repos, die andere Person erstellt 
+haben, in euren eigenen Account "forken". Um das  
+
+00:11:26.170 --> 00:11:30.730
+zu machen geht ihr auf dieser Seite des 
+fh-potsdam Accounts und dann findet ihr  
+
+00:11:30.730 --> 00:11:37.210
+hier oben rechts den "fork"-Button. Wenn ihr da 
+drauf klickt, bekommt ihr hier eine Option. Ich  
+
+00:11:37.210 --> 00:11:42.340
+habe ganz viele Accounts, kann deswegen auswählen 
+in welchen Account ich nun eine Kopie erstellen  
+
+00:11:42.340 --> 00:11:49.660
+möchte. Ich mache das jetzt in meinen privaten 
+Account, klick darauf. Das dauert ein paar  
+
+00:11:49.660 --> 00:11:53.770
+Sekunden. Wir sehen jetzt hier oben schon, dass 
+wir jetzt nicht mehr im fh-potsdam Account sind,  
+
+00:11:53.770 --> 00:11:59.500
+sondern in meinem privaten Account. Und 
+haben jetzt eine Kopie dessen erstellt,  
+
+00:11:59.500 --> 00:12:05.200
+was in dem fh-potsdam Account liegt. Und das 
+Schöne ist jetzt, wir können in diesem Repo,  
+
+00:12:05.200 --> 00:12:11.290
+unserer privaten Kopie nun ganz frei arbeiten, 
+ohne dass wir dadurch irgendwie das Original im  
+
+00:12:11.290 --> 00:12:17.080
+fh-potsdam Account irgendwie kaputt machen können. 
+Also seid völlig frei damit zu arbeiten und das  
+
+00:12:17.080 --> 00:12:23.080
+clonen und bearbeiten funktioniert genauso 
+wie das was ich vorher gezeigt habe. Also  
+
+00:12:23.080 --> 00:12:31.450
+wir können nun hier wieder auf clone Repository 
+gehen. Sagen dann learning-parametric-design.  
+
+00:12:31.450 --> 00:12:35.230
+Das ist jetzt noch die fh-potsdam Version. 
+Muss nochmal hier auf update klicken.
+
+00:12:35.230 --> 00:12:42.850
+Müssen kurz warten bis das Ganze angezeigt wird.
+
+00:12:50.780 --> 00:12:55.700
+Können nun hier das Repo auswählen und 
+jetzt bekomme ich eine Fehlermeldung,  
+
+00:12:55.700 --> 00:12:58.910
+dass dieser Name schon vergeben ist, weil ich  
+
+00:12:58.910 --> 00:13:04.160
+den ja schon von dem offiziellen Account 
+habe. Deswegen nenne ich das jetzt einfach  
+
+00:13:04.160 --> 00:13:09.050
+sebastian-learning-parametric-design. 
+Clone das Ganze da rein. Und
+
+00:13:09.050 --> 00:13:21.590
+kann nun in diesem clone arbeiten. Wenn 
+wir ein anderes Repository forken und  
+
+00:13:21.590 --> 00:13:25.310
+das zum ersten mal auf unseren Rechnern 
+clonen, wird uns eine Frage gestellt:  
+
+00:13:25.310 --> 00:13:29.600
+auf welche Art und Weise ich hier mit arbeiten 
+wollen. Das hat so ein bisschen damit zu tun,  
+
+00:13:29.600 --> 00:13:35.570
+welche Befehle im Hintergrund für euch 
+eingesetzt werden. Ihr wählt in diesem  
+
+00:13:35.570 --> 00:13:41.420
+Fall "For my own purposes", weil es erstmal 
+nicht darum geht, dass ihr eure changes wieder  
+
+00:13:41.420 --> 00:13:47.510
+zu mir zurückschickt. Nachdem er das gemacht hat, 
+drückte einfach auf continue und könnt jetzt ganz  
+
+00:13:47.510 --> 00:13:52.220
+normal mit diesem Repro arbeiten, wie ich das 
+vorher auch mit dem neuen Repo gezeigt habe.

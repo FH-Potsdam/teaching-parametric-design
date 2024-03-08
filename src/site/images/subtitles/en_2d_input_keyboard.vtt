@@ -1,0 +1,128 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:10.640
+The last input i want to introduce you to, is the 
+keyboard input. This is very similar to the mouse  
+
+00:00:10.640 --> 00:00:18.800
+input i previously introduced you to. Similar to 
+the mouse input, we have a variable that tells  
+
+00:00:18.800 --> 00:00:25.520
+us if the keyboard or one key on our keyboard 
+is currently pressed. This variable is called  
+
+00:00:25.520 --> 00:00:32.240
+keyIsPressed. Similar to our mouseIsPressed, 
+this is also a boolean value. So we can make a  
+
+00:00:33.680 --> 00:00:38.240
+simple condition and check if it's true and 
+then we, for example, can change the radius,  
+
+00:00:38.240 --> 00:00:43.840
+make it smaller. Then of course we need to 
+make sure that this is not a constant anymore.  
+
+00:00:44.560 --> 00:00:49.200
+And if you use the keyboard, make sure that you 
+click on your browser window, so that the browser  
+
+00:00:49.200 --> 00:00:55.280
+window is active. Otherwise it cannot receive 
+the events from the keyboard. Now every time, i  
+
+00:00:55.280 --> 00:01:05.680
+press a key on the keyboard, we can see that this 
+is now executed. Similar to the mouse, we also  
+
+00:01:05.680 --> 00:01:11.200
+have several event functions that are triggered, 
+for example, if a key on the keyboard is pressed.  
+
+00:01:12.080 --> 00:01:19.280
+For this event, there is keyPressed. 
+This is similar to the mousePressed  
+
+00:01:19.280 --> 00:01:29.280
+function that we had before. Let's move the 
+radius in the "global scope" and now change the  
+
+00:01:30.800 --> 00:01:36.640
+radius when the key is pressed. But of course when 
+you're receiving events from the keyboard, you're  
+
+00:01:36.640 --> 00:01:42.080
+actually interested which key is pressed. So that 
+you can apply different outputs to different keys.  
+
+00:01:43.520 --> 00:01:50.800
+Therefore, there is a global variable called 
+keyCode. keyCode holds the current number  
+
+00:01:50.800 --> 00:01:57.920
+of the key that is currently pressed. Each key 
+has a certain number. To figure out which key  
+
+00:01:57.920 --> 00:02:05.440
+has which number, we can simply use our console 
+function. So "console.log(keycode)" will show  
+
+00:02:05.440 --> 00:02:11.840
+us the current keyCode in the console window. 
+Again simply click on your browser window. Click  
+
+00:02:11.840 --> 00:02:18.880
+on "inspect" and move to the console. And now if 
+i click, click a key. This is now the space bar,  
+
+00:02:19.600 --> 00:02:25.200
+or this is the left arrow, this is the right 
+arrow. We can see that each key is represented by  
+
+00:02:25.200 --> 00:02:31.760
+a number. Now we simply need to write conditions 
+to match those numbers and then we can create a  
+
+00:02:31.760 --> 00:02:38.080
+function that changes our radius. For example, 
+let's use the left and the right arrows, to  
+
+00:02:38.080 --> 00:02:47.120
+increase or decrease our radius. We write a simple 
+condition and say okay, if keyCode equals 37,  
+
+00:02:47.120 --> 00:02:58.320
+this is the left arrow then radius should be 
+increased by 10 and else if keyCode equals 39 then
+
+00:03:00.480 --> 00:03:11.280
+radius should be decreased by 10. Save this 
+and now we can make our circle shrink and grow.  
+
+00:03:12.880 --> 00:03:17.600
+So it's quite tricky to remember all these 
+different numbers. So most of the time you need to  
+
+00:03:17.600 --> 00:03:26.880
+use the console functions to just output them and 
+get them. But p5.js has a couple of shortcuts for  
+
+00:03:26.880 --> 00:03:34.400
+some of the keys that you will often use, like the 
+arrow keys. For example for left arrow there is  
+
+00:03:37.440 --> 00:03:40.880
+a simple variable called LEFT_ARROW or RIGHT_ARROW
+
+00:03:44.080 --> 00:03:51.440
+which will allow us to write a word instead of 
+a number. But this variable called LEFT_ARROW  
+
+00:03:52.640 --> 00:04:00.240
+is basically the value 37 as right arrow is 
+39. It only makes it easier for you to remember  
+
+00:04:00.240 --> 00:04:11.760
+what to write in these kind of conditions, but 
+it's really just a number, just easier to access.

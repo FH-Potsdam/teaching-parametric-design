@@ -1,0 +1,144 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.930
+Die letzte Funktion die ich euch noch in diesem 
+Abschnitt zeigen möchte ist der "arc". Der  
+
+00:00:10.930 --> 00:00:18.820
+Kreis. Damit können wir ein Teilabschnitt einer 
+Kreislinie zeichnen. Die Funktion hierfür ist ein  
+
+00:00:18.820 --> 00:00:24.640
+klein bisschen komplizierter. Das Kommando heißt 
+erstmal "arc" und dann müssen wir einige Parameter  
+
+00:00:24.640 --> 00:00:33.670
+angeben. Das ist zum einen wie wir das ja schon 
+kennen, erstmal x/y, damit wir wissen wo der Kreis  
+
+00:00:33.670 --> 00:00:39.760
+seinen Mittelpunkt hat, von dem wird dann einen 
+Teilabschnitt zeichnen. Dann können wir Größe,  
+
+00:00:39.760 --> 00:00:45.010
+also Breite und Höhe angeben. Ich mache es jetzt 
+mal, dass es tatsächlich ein Kreis nachher ist.  
+
+00:00:45.010 --> 00:00:50.020
+Es könnte natürlich auch eine Ellipse sein. Und 
+jetzt wird es tatsächlich spannend. Jetzt müssen  
+
+00:00:50.020 --> 00:00:56.020
+wir angeben wo die Linie anfangen soll und wo 
+sie aufhören soll. Das wird jetzt nicht mehr  
+
+00:00:56.020 --> 00:01:02.920
+in x/y angegeben, sondern im Winkel. Und was 
+hier spannend ist, es gibt verschiedene Arten  
+
+00:01:02.920 --> 00:01:11.470
+der Schreibweise, wie wir Winkel definieren in 
+p5js. Die Standard-Variante ist in Radians. Was  
+
+00:01:11.470 --> 00:01:18.670
+wir dafür einfach nur machen müssen, es gibt 
+da "Math.PI" da ist sozusagen der Wert PI mit  
+
+00:01:18.670 --> 00:01:26.530
+abgebildet in JavaScript. Und zweimal PI sind 
+360 Grad, sozusagen einmal komplett um den Kreis  
+
+00:01:26.530 --> 00:01:34.390
+drumherum. Einmal PI ist dann 180 Grad und wenn 
+wir das so schreiben Math.PI durch 180, können wir  
+
+00:01:34.390 --> 00:01:42.340
+jetzt einfach die Winkelzahl angeben. Also wenn 
+wir zum Beispiel bei Winkel 90 anfangen wollen und  
+
+00:01:42.340 --> 00:01:51.370
+dann bis Winkel 180 gehen, also 90 Grad, also ein 
+viertel Kreis. Und das jetzt abspeichern. Sehen  
+
+00:01:51.370 --> 00:01:58.150
+wir, dass hier jetzt ein viertel Kreis gezeichnet 
+wurde. Dabei ist wichtig, dass 0 Grad ist nicht  
+
+00:01:58.150 --> 00:02:03.400
+wie man vielleicht denkt oben in der Mitte, 
+sondern rechts. Also immer daran denken, dass  
+
+00:02:03.400 --> 00:02:09.640
+da ein gewisses Offset drin ist, von dem was man 
+vielleicht normalerweise denken würde. Ich zeige  
+
+00:02:09.640 --> 00:02:16.150
+euch diese Radians-Schreibweise, weil in vielen 
+System müsst ihr die benutzen. Dort gibt es keine  
+
+00:02:16.150 --> 00:02:25.840
+andere Möglichkeit außer sich diese Winkel einfach 
+zu berechnen. In p5js gibt es allerdings den
+
+00:02:25.840 --> 00:02:31.600
+angleMode
+
+00:02:31.600 --> 00:02:38.230
+und hier können wir sagen, dass es 
+nicht in RADIANS angegeben werden soll,  
+
+00:02:38.230 --> 00:02:44.170
+sondern in Grad (DEGREES) und dann können wir uns 
+diesen Quatsch hier sparen und können direkt das  
+
+00:02:44.170 --> 00:02:54.460
+Ganze in Grad hinschreiben, also 0 bis 180 Grad 
+und bekommen dann den selben Kreis. Das erspart  
+
+00:02:54.460 --> 00:03:00.640
+uns einige Zeit, einige Schreibarbeit. Wir können 
+es natürlich auch wieder nach RADIANS wechseln,  
+
+00:03:00.640 --> 00:03:05.830
+dann sehen wir, dass dass ganz natürlich nicht 
+mehr funktioniert, aber das einfach nur um euch  
+
+00:03:05.830 --> 00:03:12.460
+einmal beide Schreibweisen zu zeigen. Und vor 
+allem das wichtige, es ist halt nicht immer so,  
+
+00:03:12.460 --> 00:03:19.090
+dass ihr so einen Switch habt zwischen RADIANS 
+und zwischen DEGREES, sondern manchmal müsst ihr  
+
+00:03:19.090 --> 00:03:23.260
+halt diese RADIANS-Schreibweise benutzen. Deswegen 
+ist es gut diese Formel einmal gesehen zu haben,  
+
+00:03:23.260 --> 00:03:29.170
+damit man weiß wie das Ganze funktioniert. 
+Um das Ganze abzuschließen, gibt es noch  
+
+00:03:29.170 --> 00:03:36.220
+einen zusätzlichen Parametern. Standardmäßig 
+wird der "arc" immer offen gezeichnet. Wir  
+
+00:03:36.220 --> 00:03:40.210
+können das Ganze aber auch ändern und es 
+gibt zwei Varianten. Das ist einmal PIE,  
+
+00:03:40.210 --> 00:03:48.700
+dann ist das ganze wie so ein Pie-Chart oder in 
+dem Fall wird das jetzt noch keinen Unterschied  
+
+00:03:48.700 --> 00:04:03.670
+machen. Wenn wir aber hier jetzt mal 0 bis 
+270, dann sehen wir dass Start- und Endpunkt  
+
+00:04:03.670 --> 00:04:08.290
+direkt miteinander verbunden werden. Und 
+nicht über den Nullpunkt gehen. Wenn ich  
+
+00:04:08.290 --> 00:04:13.180
+das Ganze noch mal zurückwechsel, sehen 
+wir, dass es wieder ein Pie-Chart ist.

@@ -1,0 +1,120 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:09.760
+There is one more complexity about variables 
+that we need to discuss. And this is the scopes  
+
+00:00:09.760 --> 00:00:14.880
+or the scoping of variables. This is all 
+about where are variables being defined  
+
+00:00:14.880 --> 00:00:21.760
+and where can i use them. In our boilerplate we 
+have these three functions. The functions are  
+
+00:00:21.760 --> 00:00:27.520
+defined by everything that is written inside 
+the curly brackets. So these curly brackets  
+
+00:00:27.520 --> 00:00:36.400
+represent a scope. Every function has its 
+own scope, the scope that surrounds our  
+
+00:00:36.400 --> 00:00:45.920
+functions is the so called "global scope". So if 
+i define a variable here: "let backgroundColor"
+
+00:00:48.400 --> 00:00:57.040
+zero. Can now be used in all the scopes, that 
+come after our global scope. So i can for example  
+
+00:00:57.040 --> 00:01:00.640
+go into the background function, down 
+here and use the backgroundColor.  
+
+00:01:01.520 --> 00:01:06.720
+And if i save it now it works. And i can 
+change for example the backgroundColor to 100  
+
+00:01:07.600 --> 00:01:14.480
+and get a gray background. This is all nice, 
+because it's in the "global scope". Now i can  
+
+00:01:14.480 --> 00:01:20.640
+also modify it everywhere, for example in the 
+"setup" function. I could say background color
+
+00:01:23.440 --> 00:01:25.840
+is zero.
+
+00:01:27.920 --> 00:01:32.880
+In the beginning we define it as 100 and 
+then the code starts, running, set it to 0,  
+
+00:01:32.880 --> 00:01:39.280
+so it becomes black. But what happens, if i define 
+the backgroundColor in our "setup" function. let's  
+
+00:01:39.280 --> 00:01:48.640
+do this. So i say "let backgroundColor" and don't 
+do it up here. If i do this and run the sketch,  
+
+00:01:48.640 --> 00:01:54.320
+you will see that there's nothing showing up. So 
+there's probably an error. If i inspect the code  
+
+00:01:54.320 --> 00:01:59.280
+and go to the console, i can immediately see 
+that there is an error message saying "unknown  
+
+00:01:59.280 --> 00:02:05.760
+reference error backgroundColor is not defined" 
+and this is because we defined the backgroundColor  
+
+00:02:05.760 --> 00:02:11.600
+in the scope of the "setup" function. so the 
+"draw" function cannot access the scope of the  
+
+00:02:11.600 --> 00:02:19.600
+setup function. Always imagine you can go up any 
+level to access variables, but you cannot go down  
+
+00:02:19.600 --> 00:02:25.840
+or cannot get up and down again. But there's 
+an easy way to overcome this. For your initial  
+
+00:02:25.840 --> 00:02:32.320
+sketch ideas the easiest thing is to simply 
+define all your variables in the "global scope"  
+
+00:02:33.920 --> 00:02:40.000
+and for example, if you don't know yet what you 
+want to store inside this variable, simply let  
+
+00:02:40.000 --> 00:02:46.880
+it empty. You can just say "let backgroundColor" 
+and then later on, in the "setup" function you can  
+
+00:02:46.880 --> 00:02:53.040
+just say, now i know what backgroundColor should 
+be, so backgroundColor should be zero and then  
+
+00:02:53.760 --> 00:02:59.200
+"draw" can access the backgroundColor, because 
+the backgroundColor exists on the "global scope"  
+
+00:02:59.200 --> 00:03:03.840
+and can now be accessed and modified on 
+any other scope that comes after this.  
+
+00:03:05.760 --> 00:03:12.800
+If i save this, we can see that the sketch renders 
+again nicely. I will show some more in-depth  
+
+00:03:13.360 --> 00:03:19.440
+scoping elements, when we go into the 
+loops, because they represent another scope,  
+
+00:03:19.440 --> 00:03:29.680
+that goes a little further and so i will 
+talk again about scopes in a little bit.

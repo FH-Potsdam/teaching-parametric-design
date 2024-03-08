@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:04.640 --> 00:00:11.030
+Dieser Kurs soll euch einen ersten Einstieg in 
+die Programmierung geben und in die Arbeit mit  
+
+00:00:11.030 --> 00:00:16.910
+p5js. Aber wir können natürlich nicht alle 
+Funktionalitäten von p5js in diesem Seminar  
+
+00:00:16.910 --> 00:00:22.070
+machen. Deswegen eine gute Möglichkeit um zu 
+schauen was es sonst noch an Funktionalitäten  
+
+00:00:22.070 --> 00:00:29.180
+gibt, ist die p5js Reference. Den Link dazu findet 
+ihr unter diesem Video. Die Referenz ist außerdem  
+
+00:00:29.180 --> 00:00:34.220
+gut, wenn ihr mal vergessen habt welche Parameter 
+ihr einer bestimmten Funktion mitgeben müsst. Zum  
+
+00:00:34.220 --> 00:00:39.170
+Beispiel hier die funktion um ein Rechteck zu 
+zeichnen. Was schön an der Reference ist. Ihr  
+
+00:00:39.170 --> 00:00:43.670
+findet hier immer mehrere Beispiele, die euch 
+zeigen wie ihr die Funktion anwenden könnt  
+
+00:00:43.670 --> 00:00:49.280
+und der wichtigste Teil ist hier: die sogenannte 
+syntax. Wo beschrieben wird, wie ihr die Funktion  
+
+00:00:49.280 --> 00:00:55.700
+definiert und ausführen könnt. Die Funktion 
+ist hier immer am Anfang aufgeführt und dann  
+
+00:00:55.700 --> 00:01:00.770
+in Klammern finden wir die Parameter die wir der 
+Funktion mitgeben können. Wichtig hierbei ist:  
+
+00:01:00.770 --> 00:01:06.800
+die Parameter die hier sozusagen am Anfang 
+stehen und keine eckigen Klammern haben  
+
+00:01:06.800 --> 00:01:11.810
+sind Pflichtwerte, die müssen wir mitgeben. 
+Aber es gibt auch Werte die optional sind,  
+
+00:01:11.810 --> 00:01:16.730
+die sind hier in eckigen Klammern gesetzt. 
+Unten drunter finden wir dann noch eine  
+
+00:01:16.730 --> 00:01:23.180
+Erklärung was die verschiedenen Parameter sind 
+und Beschreibungen dazu. Das wichtigste ganz am  
+
+00:01:23.180 --> 00:01:28.310
+Anfang ist vor allem was für ein Typ von Wert 
+hier übergeben werden soll. In diesem Fall zum  
+
+00:01:28.310 --> 00:01:33.170
+Beispiel wird eine Zahl erwartet. Und dann eine 
+Beschreibung was diese Zahl dann tatsächlich  
+
+00:01:33.170 --> 00:01:39.230
+ausmacht. Wenn ihr also mal irgendwas vergessen 
+habt, könnt ihr natürlich auf unserer Webseite  
+
+00:01:39.230 --> 00:01:44.120
+schauen oder direkt in die Referenz und sucht 
+euch dann entsprechend die Erklärung heraus.

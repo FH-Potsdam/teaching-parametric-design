@@ -1,0 +1,159 @@
+{% macro editor(path, github, autoExecute) %}
+<iframe
+  width="100%"
+  height="400"
+  class="responsive-frame"
+  src="{{path}}{% if autoExecute %}?autoexecute=true{% endif %}"></iframe>
+<button class="scroll-btn">Continue scrolling</button>
+{% if github %}
+<span class="folder-btn">{{github | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span><a href="{{github}}" class="github-btn">View&nbsp;on&nbsp;GitHub</a>
+{% endif %}
+{% endmacro %}
+
+{% macro download(link, label) %}
+<a href="{{link}}" class="download-btn">{{label}}</a>
+{% endmacro %}
+
+{% macro link3d(link, label) %}
+<a href="{{link}}" class="link3d-btn">{{label}}</a>
+{% endmacro %}
+
+{% macro github(link) %}
+<a href="{{link}}" class="github-btn">View&nbsp;on&nbsp;GitHub</a><span class="folder-btn">{{link | replace('https://github.com/FH-Potsdam/learning-parametric-design/blob/main', '')}}</span>
+{% endmacro %}
+
+{% macro renderNavListItem(entry, page, content, level) %}
+{% if entry.order != -1 %}
+<li class="level{{level}}{% if entry.url in page.url %} active{% endif %}">
+  <a{% if entry.url == page.url %} class="active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
+  {% if entry.url == page.url and level == 2 %}
+  {{ content | toc | safe }}
+  {% endif %}
+{% if entry.children.length %}
+  <ol>
+  {% for child in entry.children %}
+    {{ renderNavListItem(child, page, content, level + 1) }}
+  {% endfor %}
+  </ol>
+{% endif %}
+</li>
+{% endif %}
+{%- endmacro %}
+
+{% macro renderNav(collections, page, locale, content) %}
+<h5 class="navTitle" tabindex="-999999">Navigation</h5>
+<ol class="mainNav">
+{% for entry in collections.all | eleventyNavigation %}
+  {% if entry.key == locale %}
+  {% for child in entry.children %}{{ renderNavListItem(child, page, content, 1) }}{% endfor %}
+  {% endif %}
+{% endfor %}
+</ol>
+{% endmacro %}
+
+{% macro renderLang(url) -%}
+{% set baseUrl = url.slice(3, -1) %}
+{% set lang = url.slice(1, 3) %}
+
+<h5 class="langTitle" tabindex="-999999">Languages</h5>
+<ul class="langNav">
+  <li><a title="Deutsch"{% if lang == 'de' %} class="active"{% endif %} href="/de/{{ baseUrl }}">DE</a></li>
+  <li><a title="English"{% if lang == 'en' %} class="active"{% endif %} href="/en/{{ baseUrl }}">EN</a></li>
+  <!--<li><a title="中文"{% if lang == 'cn' %} class="active"{% endif %} href="/cn/{{ baseUrl }}">中文</a></li>-->
+  <li class="dgs"><a title="Deutsche Gebärdensprache"{% if lang == 'dg' %} class="active"{% endif %} href="/dg/{{ baseUrl }}">
+  <img >
+    <picture id="header-logo">
+      <source srcset="/images/icons/dgs-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="/images/icons/dgs.svg" alt="Deutsche Gebärdensprache" />
+    </picture><span>DGS</span>
+  </a></li>
+</ul>
+
+{% endmacro %}
+
+{% macro chapter(collections, key, locale) %}
+<ol class="chapterNav">
+{% for entry in collections.all | eleventyNavigation %}
+  {% if entry.key == locale %}
+  {% for child in entry.children %}
+  {% if child.key == key %}
+  {% for page in child.children %}
+  <li>
+    <a href="{{page.url}}">{{page.title}}</a>
+  </li>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+{% endfor %}
+</ol>
+{% endmacro %}
+
+{% macro renderCrumbs(collections, key, locale) %}
+<ul class="breadcrumbs">
+  <li><a href="/{{locale}}/">Parametric Design</a></li>
+  {% if key != null %}
+  {% for entry in collections.all | eleventyNavigationBreadcrumb(key, { includeSelf: true }) %}
+  {% if entry.key != locale %}
+  <li>
+    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+</ul>
+{% endmacro %}
+
+{% macro video(url, poster, captionFile, captionLabel, locale, dgUrl="") %}
+<video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
+  <source src="{% if locale == "dg" %}{{dgUrl}}{% else %}{{url}}{% endif %}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
+  Your browser does not support the video tag.
+</video>
+{% endmacro %}
+
+{% macro h2(headline) %}
+<h2 id="{{headline | slugify}}">{{headline}}</h2>
+{% endmacro %}
+
+{% macro definition(name, params, description) %}
+<div class="definition">
+<strong>{{name}}</strong>({% for param in params %}<strong>{{param.name}}{% if param.required or param.optional %}*{% endif %}</strong>:{{param.type}}{% if loop.index != params.length %}, {% endif %}{% endfor %});
+</div>
+{% endmacro %}
+
+{% macro renderPageNav(collections, page, locale) %}
+{% set nav = collections.all | eleventyNavigation | pageNav(page, locale) %}
+<div id="pageNav">
+{% if nav.back %}
+  <div class="back-link">
+    <a href="{{nav.back.url}}">{{nav.back.title}}</a>
+  </div>
+{% endif %}
+{% if nav.next %}
+  <div class="next-link">
+    <a href="{{nav.next.url}}">{{nav.next.title}}</a>
+  </div>
+{% endif %}
+</div>
+{% endmacro %}
+
+{% macro img(fileName, title, maxWidth) %}
+<figure>
+    <img src="/images/material/{{fileName}}" alt="{{title}}"{% if maxWidth %} style="width:{{maxWidth}};"{% endif %} />
+    <figcaption><span>{{title}}</span></figcaption>
+</figure>
+{% endmacro %}
+
+{% macro task(title, description) %}
+<div class="task">
+  <h3>{{title}}</h3>
+  <p>{{description | safe}}</p>
+</div>
+{% endmacro %}
+
+{% macro inspiration(title, description) %}
+<h3 class="inspiration">Inspiration: {{title}}</h3>
+{% if description %}
+<p>{{description}}</p>
+{% endif %}
+{% endmacro %}

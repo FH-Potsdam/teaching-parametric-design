@@ -1,0 +1,176 @@
+WEBVTT
+
+00:00:04.720 --> 00:00:10.480
+In one of the last videos i introduced you to the 
+polar coordinate system. In this little example  
+
+00:00:10.480 --> 00:00:17.520
+here i've simply written a short loop. Inside this 
+loop i now use our little mathematical formula  
+
+00:00:18.080 --> 00:00:26.480
+to calculate the x and y value inside our 
+circle line and then i use the translate to move  
+
+00:00:26.480 --> 00:00:32.960
+around the circle and then using rotate and 
+rect. I just draw these little rectangles then,  
+
+00:00:32.960 --> 00:00:37.280
+that are rotated to make them look like 
+they are facing the center of a circle.  
+
+00:00:39.440 --> 00:00:43.680
+In this little example here, we already use 
+a couple of commands. We have background,  
+
+00:00:43.680 --> 00:00:51.760
+fill, translate, push, rotate, rect, etc. These 
+functions are specific functions from the p5.js  
+
+00:00:51.760 --> 00:00:57.840
+library. This means that the open source 
+community behind p5.js has written them. And  
+
+00:00:57.840 --> 00:01:05.040
+each function is again a series of commands that 
+then create those shapes for example. It makes  
+
+00:01:05.040 --> 00:01:09.600
+it easier for us, to create shapes, because we 
+don't need to write all these individual commands,  
+
+00:01:09.600 --> 00:01:15.280
+we can just use the functions from p5.js and 
+they then execute the other commands for us.  
+
+00:01:16.560 --> 00:01:23.600
+So functions in general are the idea to combine 
+reusable code. If you're doing something over and  
+
+00:01:23.600 --> 00:01:28.800
+over again in your code, it's not very efficient 
+to write it every time, but instead it's better  
+
+00:01:28.800 --> 00:01:33.280
+to turn it into a function and then reuse the 
+function. So you only need to write the code once.  
+
+00:01:34.560 --> 00:01:39.600
+To explain this, let's imagine that 
+we are using the polar coordinate  
+
+00:01:39.600 --> 00:01:45.600
+equation in a couple of places in our code and it 
+would be a lot of writing if we need to write our  
+
+00:01:45.600 --> 00:01:53.440
+equation every time. So it would be nice if we had 
+a little function let's say polarX, that returns  
+
+00:01:53.440 --> 00:01:58.320
+the x-coordinate when we provide as 
+parameters the radius and the angle.
+
+00:02:03.040 --> 00:02:08.640
+Let's create our first function. To define a 
+function, we simply write "function" and then we  
+
+00:02:08.640 --> 00:02:13.680
+need to give our function a name. And here the 
+same naming convention as for variables apply.  
+
+00:02:14.320 --> 00:02:20.320
+Let's call it polarX. Some brackets and inside 
+the brackets we can now define the parameters,  
+
+00:02:20.320 --> 00:02:27.440
+that need to be provided to our function. 
+Let's call it r for radius and a for angle.
+
+00:02:30.640 --> 00:02:37.200
+Add our little function here. Now we simply need 
+to change the name of our variables that they  
+
+00:02:37.200 --> 00:02:42.640
+match the parameter names and then of course we 
+want to return something after this function is  
+
+00:02:42.640 --> 00:02:47.680
+executed. And in this case we want to return 
+the x value. And you can return anything,  
+
+00:02:47.680 --> 00:02:52.720
+you can return arrays, objects, whatever. But 
+it needs to be one single item that you return  
+
+00:02:53.760 --> 00:02:57.120
+and of course you can do the 
+same for the y-coordinate.
+
+00:02:59.200 --> 00:03:07.120
+Let's just copy this, rename everything 
+and for y we need to use sine function.  
+
+00:03:08.560 --> 00:03:14.800
+And now we can call wherever we need these 
+x/y coordinates, we simply can write polarX,  
+
+00:03:15.760 --> 00:03:21.040
+then we need to provide the radius and 
+the angle, we can simply copy this,
+
+00:03:23.120 --> 00:03:23.920
+change the name,
+
+00:03:26.640 --> 00:03:31.520
+and we get the same outcome. The code is now a 
+lot cleaner. And imagine now you have hundreds  
+
+00:03:31.520 --> 00:03:36.960
+of lines of code and you're calling calling the 
+polarY and polarY coordinate over and over again,  
+
+00:03:36.960 --> 00:03:42.240
+it's a lot less writing, it's a lot more 
+efficient. And also, if you change the function,  
+
+00:03:42.240 --> 00:03:47.440
+you only need to change it in one, in the single 
+place and not all over your code, which is really  
+
+00:03:47.440 --> 00:03:54.000
+nice. And as i said we can return not only a 
+single number, we can for example return objects.  
+
+00:03:54.560 --> 00:04:02.240
+Let's make this a little less code by creating 
+one function that returns both x and y value.  
+
+00:04:04.400 --> 00:04:09.600
+We simply place this inside here and now instead 
+of the individual variable we return an object.  
+
+00:04:10.800 --> 00:04:15.680
+We add the x key and the x 
+value and we do the same for y.
+
+00:04:17.840 --> 00:04:24.320
+And then we can get rid of the other 
+function. Now we could generate a little point  
+
+00:04:25.920 --> 00:04:31.520
+calling the "polar" function and then 
+we can access the y and x parameter  
+
+00:04:33.200 --> 00:04:39.760
+in our object that is returned by the function. 
+So functions allow you to structure your code  
+
+00:04:39.760 --> 00:04:45.440
+more efficiently, make it more reusable. 
+This also allows you for example to  
+
+00:04:45.440 --> 00:04:54.880
+simply copy a function to your next 
+project and reuse it in your next project.

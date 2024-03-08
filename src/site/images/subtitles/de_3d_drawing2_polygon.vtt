@@ -1,0 +1,112 @@
+WEBVTT
+
+00:00:04.740 --> 00:00:09.300
+Genauso wie bei p5js können wir auch in 
+JSCAD unsere eigenen Polygone zeichnen.  
+
+00:00:09.300 --> 00:00:12.420
+Um die dann zum Beispiel als Basis zu 
+benutzen, um daraus dann zum Beispiel  
+
+00:00:12.420 --> 00:00:20.490
+eine Extrusion zu machen. Hierfür haben wir in 
+JSCAD das "polygon"-Command. Das funktioniert  
+
+00:00:20.490 --> 00:00:25.170
+so wie bei unseren anderen Kommandos in JSCAD, 
+heißt es wird wieder ein Objekt zurückgegeben,  
+
+00:00:25.170 --> 00:00:32.340
+was wir dann entsprechend an den Renderer schicken 
+können. Also, das Polygon-Command nimmt ein Objekt  
+
+00:00:32.340 --> 00:00:40.290
+und das hat ein Attribut "points" und darin 
+haben wir jetzt ein ganz einfaches Array mit  
+
+00:00:40.290 --> 00:00:49.920
+x/y-Kkoordinaten. Wo wir die Eckpunkte unseres 
+neuen Objektes übergeben können. In unserem Fall  
+
+00:00:49.920 --> 00:00:55.140
+versuche ich jetzt einmal das Rechteck, wie 
+wir es hier oben sehen, einmal nachzubilden.
+
+00:00:55.140 --> 00:01:07.170
+Heißt, wir brauchen unsere vier Punkte. Nun 
+ist wichtig, dass wir uns um unser Objekt im  
+
+00:01:07.170 --> 00:01:12.930
+Uhrzeigersinn bewegen. Also ich fange jetzt oben 
+links an und gehe dann einmal im Uhrzeigersinn  
+
+00:01:12.930 --> 00:01:21.360
+rum. So kommentiere das Original-Rechteck 
+aus. Speicher das Ganze ab. Und sehe,  
+
+00:01:21.360 --> 00:01:26.400
+dass wir jetzt wieder das Rechteck haben. Warum 
+ist der Uhrzeigersinn wichtig? Wir können an  
+
+00:01:26.400 --> 00:01:32.550
+unsere polygon-Funktionen nicht nur einzelne 
+Pfade übergeben, sondern mehrere Pfade. Die  
+
+00:01:32.550 --> 00:01:38.160
+Pfade die im Uhrzeigersinn sind, werden als 
+volle Flächen gezeichnet und die die gegen  
+
+00:01:38.160 --> 00:01:43.980
+den Uhrzeigersinn sind, die werden als Löcher 
+definiert und von unseren Flächen abgezogen.  
+
+00:01:43.980 --> 00:01:52.140
+Also wenn ich hier ein weiteres Array drum setzte, 
+dann haben wir jetzt hier sozusagen unser erstes  
+
+00:01:52.140 --> 00:01:58.860
+Polygon mit der wir eine Fläche definieren und 
+jetzt werde ich ein zweites Polygon definieren.  
+
+00:01:58.860 --> 00:02:05.520
+Und jetzt aber gegen den Uhrzeigersinn gehen. 
+Werde das jetzt einfach ein bisschen kleiner  
+
+00:02:05.520 --> 00:02:12.870
+machen. Fange auch wieder oben links in der Ecke 
+an, gehe dann aber gegen den Uhrzeigersinn runter.
+
+00:02:14.880 --> 00:02:19.710
+Und danach wieder rauf.
+
+00:02:19.710 --> 00:02:31.230
+Speicher das Ganze ab und jetzt haben wir ein 
+Loch in der Mitte. Und das wird sozusagen dann  
+
+00:02:31.230 --> 00:02:36.600
+von der ersten Fläche abgezogen. Also immer darauf 
+achten, wenn ihr irgendwelche Formen generiert,  
+
+00:02:36.600 --> 00:02:42.390
+das die die ihr tatsächlich als Fläche haben wollt 
+im Uhrzeigersinn sind und die die abgezogen werden  
+
+00:02:42.390 --> 00:02:46.440
+sollen entsprechend gegen den Uhrzeigersinn. 
+Um das vielleicht noch mal zu veranschaulichen,  
+
+00:02:46.440 --> 00:02:54.600
+könnten wir jetzt auch das Ganze nochmal 
+extrudieren, um dann zu sehen wie jetzt  
+
+00:02:54.600 --> 00:03:00.180
+ein Loch in der Mitte ist. Dafür benutze 
+ich einfach unsere extrudeLinear-Funktion.
+
+00:03:00.180 --> 00:03:10.710
+Und übergebe jest "poly". Speicher das 
+Ganze. Und jetzt sehen wir, wie unsere  
+
+00:03:10.710 --> 00:03:16.200
+selbstgezeichnete Fläche extrudiert wird und in 
+der Mitte entsprechend des Loch ausgestanzt wird.

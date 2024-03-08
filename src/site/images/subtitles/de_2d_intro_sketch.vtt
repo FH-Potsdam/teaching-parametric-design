@@ -1,0 +1,77 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.060
+Wenn ihr die sketch.js Datei öffnet, findet ihr 
+darin bereits einige Zeilen Code. Dies nennt man  
+
+00:00:10.060 --> 00:00:14.650
+auch im Fachjargon gerne eine Boilerplate. 
+Also eine Basis auf der man aufbauen kann.  
+
+00:00:14.650 --> 00:00:21.940
+In dieser Boilerplate findet ihr drei spezifische 
+so genannte Funktion. Genau diese Funktion werden  
+
+00:00:21.940 --> 00:00:28.660
+automatisch von der p5js library ausgeführt, 
+sobald euer Programm im Browser geladen wurde.  
+
+00:00:30.610 --> 00:00:35.470
+Die Reihenfolge in der diese Funktion ausgeführt 
+werden ist dabei sehr wichtig. Ich habe das hier  
+
+00:00:35.470 --> 00:00:40.060
+einmal versucht in der Grafik darzustellen. 
+Als allererstes wird die "preload" Funktion  
+
+00:00:40.060 --> 00:00:46.360
+ausgeführt. Die "preload" Funktion erlaubt es 
+uns zum Beispiel zusätzliche Assets zu laden,  
+
+00:00:46.360 --> 00:00:50.380
+wie Schriften, Bilder oder andere Daten. 
+Damit wir diese dann verfügbar haben, sobald  
+
+00:00:50.380 --> 00:00:57.460
+wir unsere eigentlichen Funktionen ausführen. 
+In der "setup" Funktion führen wir einmalige  
+
+00:00:57.460 --> 00:01:02.380
+dinge aus. Hier setzen wir bestimmte Parameter 
+oder wie jetzt hier gerade mit "createCanvas"  
+
+00:01:02.380 --> 00:01:08.890
+erstellen wir unsere eigentliche Zeichenfläche am 
+Anfang. Wichtig ist bei diesen Funktionen damit  
+
+00:01:08.890 --> 00:01:15.370
+sozusagen etwas innerhalb der Funktion ausgeführt 
+wird, muss es innerhalb der geschweiften Klammern  
+
+00:01:15.370 --> 00:01:20.590
+stehen. Alles was innerhalb der geschweiften 
+Klammern steht gehört zu dieser Funktion  
+
+00:01:20.590 --> 00:01:27.880
+und wird dementsprechend mit dieser Funktion 
+ausgeführt. Nachdem alles in "setup" fertig ist,  
+
+00:01:27.880 --> 00:01:32.650
+wird die "draw" Funktionen aufgerufen. Die "draw" 
+Funktion, das Besondere hier ist, dass diese in  
+
+00:01:32.650 --> 00:01:37.810
+einer Schleife ausgeführt wird. Am Anfang mag 
+das noch nicht so interessant sein, weil wir nur  
+
+00:01:37.810 --> 00:01:43.240
+einmal irgendwo bestimmte Formen hinzeichnen. 
+Aber später wenn wir zum Beispiel Animationen  
+
+00:01:43.240 --> 00:01:49.180
+machen oder sich verändernde Objekte gestalten, 
+dann ist das total spannend, weil wir dann  
+
+00:01:49.180 --> 00:01:54.340
+sozusagen Parameter über Zeit verändern können und 
+dadurch dann diese Animationen generieren können.

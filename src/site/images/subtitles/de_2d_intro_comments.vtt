@@ -1,0 +1,105 @@
+WEBVTT
+
+00:00:04.630 --> 00:00:10.690
+Am Anfang sieht unser Code noch relativ einfach 
+und übersichtlich aus. Aber umso weiter wir in  
+
+00:00:10.690 --> 00:00:15.940
+unserem Kurs voranschreiten, umso komplexer wird 
+unser Code und umso unübersichtlicher wird er. Und  
+
+00:00:15.940 --> 00:00:21.580
+gerade wenn ihr den Code euch dann mehrere Monate 
+mal nicht angeschaut habt und später irgendwann  
+
+00:00:21.580 --> 00:00:25.030
+mal vielleicht weitermachen wollt, erinnert 
+ihr euch möglicherweise gar nicht mehr daran,  
+
+00:00:25.030 --> 00:00:30.310
+was ihr euch damals dabei gedacht habt, als ihr 
+das programmiert habt. Deswegen ist es wichtig  
+
+00:00:30.310 --> 00:00:34.900
+manchmal einfach Kommentare im Code hinterlassen 
+zu können. Kommentare sind was Besonderes,  
+
+00:00:34.900 --> 00:00:40.900
+weil alle anderen sachen die wir in diese Datei 
+schreiben werden ja vom Browser später ausgeführt.  
+
+00:00:40.900 --> 00:00:46.450
+Die kommentare sollen allerdings ignoriert werden. 
+Was wir hier in der zweiten Weile bereits sehen  
+
+00:00:46.450 --> 00:00:51.490
+ist ein sogenannter einzeiliger Kommentar. 
+Also einfach nur eine zeile die komplett als  
+
+00:00:51.490 --> 00:00:57.790
+kommentar gilt. Hierfür benutzen wir am Anfang 
+die beiden Slashes. Diese sagen dem Browser,  
+
+00:00:57.790 --> 00:01:03.340
+dass dies sozusagen ein Kommentar ist. Was uns 
+in Visual Studio Code auch direkt als solches  
+
+00:01:03.340 --> 00:01:07.720
+angezeigt wird. Das Ganze wird jetzt grün 
+markiert. Damit sehen wir, dass dies hier ein  
+
+00:01:07.720 --> 00:01:13.450
+Kommentar ist. Wenn wir vielleicht einen längeren 
+Text in unser Dokument reinschreiben möchten,  
+
+00:01:13.450 --> 00:01:17.620
+der über eine einzelne Zeile hinausgeht. 
+Dann gibt es auch sogenannte mehrzeilige  
+
+00:01:17.620 --> 00:01:23.260
+Kommentare. Dies machen wir so in dem wir auch 
+einen Schrägstrich machen, danach ein Asterisk  
+
+00:01:23.260 --> 00:01:30.190
+noch ein Asterisk und in dem Fall hat hier der 
+Editor das Ganze sogar schon auto-completed für  
+
+00:01:30.190 --> 00:01:36.610
+uns und innerhalb dieser Zeichen können wir 
+jetzt beliebig viele Kommentare hinterlassen.
+
+00:01:39.750 --> 00:01:46.980
+Können dann Umbrüche machen und weitere Zeilen 
+hier hinein schreiben. Sobald wir sozusagen hier  
+
+00:01:46.980 --> 00:01:52.170
+diese Anfangszeichen wegnehmen. Sehen wir 
+sofort, dass dies kein Kommentar mehr ist  
+
+00:01:52.170 --> 00:01:58.290
+sondern als echter realer Code interpretiert 
+wird. Das schöne an den Kommentaren ist nicht  
+
+00:01:58.290 --> 00:02:03.720
+nur das wir Kommentare im Quellcode hinterlassen 
+können, sondern dass wir zum Beispiel während  
+
+00:02:03.720 --> 00:02:09.450
+wir entwickeln, einzelnen Sachen auskommentieren 
+können, ohne sie sozusagen immer komplett löschen  
+
+00:02:09.450 --> 00:02:16.800
+zu müssen. Wenn wir zum Beispiel jetzt hier diese 
+"background" Funktion nicht aktuell im Code haben  
+
+00:02:16.800 --> 00:02:22.470
+wollen, können wir einfach 2 Slashes davor machen 
+und das Ganze ist auskommentiert und sobald wir  
+
+00:02:22.470 --> 00:02:26.460
+das ganze wieder im Code haben wollen, können 
+wir das Ganze einfach löschen und haben es dann  
+
+00:02:26.460 --> 00:02:31.110
+wieder als Code dabei und das Ganze funktioniert 
+natürlich auch mit den mehrzeiligen Kommentaren.

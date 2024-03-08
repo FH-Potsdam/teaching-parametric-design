@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00:04.535 --> 00:00:09.800
+In einem der vorherigen Videos habe ich euch 
+das Polar-Koordinatensystemen erklärt. Hier  
+
+00:00:09.800 --> 00:00:16.430
+nochmal zur Erinnerung: hier sind sozusagen zwei 
+Funktionen, die über den Radius und den Winkel,  
+
+00:00:16.430 --> 00:00:21.500
+den Radius habe ich hier oben definiert als 
+100 und den Winkel definiere ich hier in meiner  
+
+00:00:21.500 --> 00:00:28.730
+Schleife, also immer 20 Grad hochgezählt, dann 
+im Loop bis wir 360 Grad erreichen. Berechne  
+
+00:00:28.730 --> 00:00:37.010
+dann immer im Polar-Koordinatensystem über Radius 
+und den Winkel die x/y-Koordinate. Benutze dann  
+
+00:00:37.010 --> 00:00:44.780
+das "translate", um sozusagen den Punkt auf 
+dem Kreis zu identifizieren und über rotate,  
+
+00:00:44.780 --> 00:00:50.150
+das kann ich auch mal kurz ausschalten, drehe ich 
+dann unsere Quadrate noch. Also bisher sind die  
+
+00:00:50.150 --> 00:00:56.300
+Quadrate sozusagen einfach nur einmal außenrum 
+gezeichnet und mit rotate über den Winklel,  
+
+00:00:56.300 --> 00:01:00.080
+drehen die sich sozusagen. Und es sieht so aus, 
+als würden die immer auf den Mittelpunkt zeigen.  
+
+00:01:00.080 --> 00:01:07.610
+Diese ganzen Funktionen/Kommandos, die wir 
+die ganze Zeit benutzen, die von p5js zur  
+
+00:01:07.610 --> 00:01:15.170
+Verfügung gestellt werden, so was wie "translate", 
+"rotate", "rect", "pop" etc, sind Funktionen die  
+
+00:01:15.170 --> 00:01:21.140
+von der open source community in diese p5js 
+library hinein gebaut wurden. Das sind alles  
+
+00:01:21.140 --> 00:01:27.170
+Funktionen die nochmal ganz viele Unterkommandos 
+haben und die dazu führen, dass entsprechend  
+
+00:01:27.170 --> 00:01:32.750
+diese visuellen Artefakte für uns generiert 
+werden. Und die Idee hinter Funktionen ist,  
+
+00:01:32.750 --> 00:01:39.110
+dass man genau solche Angaben also solche Listen 
+von Kommandos sozusagen in einer Funktion bündeln  
+
+00:01:39.110 --> 00:01:44.360
+kann, sodass andere Personen die dann später 
+weiterbenutzen können. Und solche Funktionen  
+
+00:01:44.360 --> 00:01:48.770
+können wir auch selber bauen und uns dadurch die 
+Arbeit erleichtern und Elemente schaffen, die  
+
+00:01:48.770 --> 00:01:55.430
+wiederbenutzbar sind. Stellen wir uns zum Beispiel 
+vor, in unserem Code wollen wir ganz häufig die X-  
+
+00:01:55.430 --> 00:02:00.890
+und Y-Koordinaten für das Polar-Koordinatensystem 
+berechnen. Dann wäre das ja sinnvoll, wenn wir  
+
+00:02:00.890 --> 00:02:06.170
+hierfür einfach nur eine Funktionen hätten, sowas 
+wie polarX. Wo wir als Parameter dann den Radius  
+
+00:02:06.170 --> 00:02:11.360
+und den Winkel reingeben können und bekommen dann 
+einen entsprechenden Wert zurück. Und genau für  
+
+00:02:11.360 --> 00:02:19.180
+sowas sind Funktionen gemacht. Um eine Funktion zu 
+definieren, schreiben wir "function", dann müssen  
+
+00:02:19.180 --> 00:02:23.320
+wir unserer Funktion einen Namen geben. Hier 
+gelten dieselben Regeln wie auch bei Variablen.  
+
+00:02:23.320 --> 00:02:28.960
+Also keine Nummern am Anfang, keine Leerzeichen, 
+keine Sonderzeichen. Und nenne die jetzt einfach  
+
+00:02:28.960 --> 00:02:35.770
+mal "polarX", dann können wir in einer Klammer 
+Parameter definieren. In unserem Fall wollen wir,  
+
+00:02:35.770 --> 00:02:42.220
+dass ein Radius übergeben wird und ein Winkel. 
+Dann geschweifte Klammern und jetzt wie wir das  
+
+00:02:42.220 --> 00:02:47.260
+aus FOR-Schleifen und aus draw und setup kennen 
+könnte innerhalb der geschweiften Klammern  
+
+00:02:47.260 --> 00:02:52.810
+definieren, was in dieser Funktion passieren 
+soll. Also in unserem fall soll jetzt einfach
+
+00:02:52.810 --> 00:02:59.800
+das X berechnet werden und dieses 
+X soll natürlich dann zurückgegeben  
+
+00:02:59.800 --> 00:03:05.020
+werden. Und dafür haben wir das Kommando 
+return. Und hinter return können wir nach  
+
+00:03:05.020 --> 00:03:10.330
+einem Leerzeichen angeben was diese Funktion 
+zurückgeben soll. Also in unserem Fall wollen  
+
+00:03:10.330 --> 00:03:16.000
+wir einfach nur das X zurückgeben. Das selbe 
+können wir natürlich auch für polarY machen.
+
+00:03:16.000 --> 00:03:25.720
+Bei polarY ist dann der Unterschied, dass 
+hier sinus genutzt wird. Und wenn wir  
+
+00:03:25.720 --> 00:03:29.470
+jetzt auf unsere Funktion zugreifen wollen, 
+müssen wir lediglich den Namen schreiben.
+
+00:03:29.470 --> 00:03:38.830
+Also polarX. Können dann hier den Radius 
+übergeben, als erster Parameter und den  
+
+00:03:38.830 --> 00:03:44.170
+Winkel als zweiten Parameter und können 
+dasselbe dann natürlich auch für Y machen.
+
+00:03:51.780 --> 00:03:55.980
+Und wo immer wir jetzt irgendwann in unserem 
+Code und der kann hier durchaus später sehr  
+
+00:03:55.980 --> 00:04:01.440
+komplex werden, auf diese polarX und -Y 
+Funktionen zugreifen wollen. Können wir  
+
+00:04:01.440 --> 00:04:06.000
+einfach das so schreiben. Müssen nicht 
+immer diesen kompletten Satz schreiben,  
+
+00:04:06.000 --> 00:04:11.520
+um das Ganze zu berechnen. Was eine Funktion 
+zurückgibt ist völlig euch überlassen. Ihr  
+
+00:04:11.520 --> 00:04:16.290
+könnt Arrays zurückgeben, ihr können Objekte 
+zurückgeben, was ihr wollt. Wir könnten zum  
+
+00:04:16.290 --> 00:04:22.470
+Beispiel auch eine polar Funktion schreiben, 
+die uns direkt x/y auf einmal zurückgibt.  
+
+00:04:22.470 --> 00:04:28.500
+Dafür setzen wir das einfach beides in eine 
+Funktion und geben dann, statt nur dem X,  
+
+00:04:28.500 --> 00:04:37.350
+geben wir einfach ein Objekt zurück. Sagen, 
+ok, unter dem key X soll dann X liegen und Y.
+
+00:04:37.350 --> 00:04:46.230
+Können dann die Funktion uns schenken und können 
+dann zum Beispiel sagen, okay, hier wird ein  
+
+00:04:46.230 --> 00:04:54.870
+Punkt generiert und der Punkt hat dann gleich x/y 
+und dann können wir jetzt einfach hier Punkt X,  
+
+00:04:54.870 --> 00:05:00.420
+Punkt Y schreiben und können so sozusagen 
+darauf zugreifen. Haben weniger Schreibarbeit,  
+
+00:05:00.420 --> 00:05:05.040
+haben das Ganze übersichtlicher und 
+so kann man sozusagen Dinge die sich  
+
+00:05:05.040 --> 00:05:09.510
+immer immer immer wieder wiederholen in 
+unserem Code in Funktionen zusammenfassen  
+
+00:05:09.510 --> 00:05:13.140
+und spart sich damit Schreibarbeit. Wo man 
+immer wieder auf die Kurzform einfach nur  
+
+00:05:13.140 --> 00:05:18.300
+den Funktionsnamen zugreifen muss und dann 
+entsprechend diese Operation durchzuführen.

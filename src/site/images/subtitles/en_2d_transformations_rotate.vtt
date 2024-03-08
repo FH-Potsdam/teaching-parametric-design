@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:08.960
+In the last video i showed you how 
+to use translate function to move  
+
+00:00:08.960 --> 00:00:13.520
+our coordinate system around and, thereby, 
+make it easier to draw multiple objects.  
+
+00:00:14.240 --> 00:00:19.360
+There's an additional function that allows us to 
+manipulate our coordinate system and that is the  
+
+00:00:19.360 --> 00:00:25.760
+rotate function. The rotate function 
+takes the angle, as usually in radians.  
+
+00:00:27.120 --> 00:00:36.000
+Rotate and then we use our little formula. 
+Let's say 45 degrees and if i save this,  
+
+00:00:37.040 --> 00:00:43.040
+our square rotates. And you might have 
+imagined that the square rotates around  
+
+00:00:43.040 --> 00:00:49.040
+itself, but what is happening here, is that our 
+coordinate system is rotating around the origin,  
+
+00:00:49.040 --> 00:00:55.840
+so the the zero point of our coordinate system. 
+And this is the rotation center of our element.  
+
+00:00:55.840 --> 00:01:00.000
+You might actually know this from graphics editing 
+software. There sometimes you can actually move  
+
+00:01:00.560 --> 00:01:05.040
+the rotation center around and, thereby, 
+change how an object is rotated.  
+
+00:01:06.480 --> 00:01:13.840
+If we want our object to actually rotate around 
+itself, we need to move our objects into the  
+
+00:01:13.840 --> 00:01:21.920
+center of our coordinate system. In this case, 
+it's quite simple, because our rectangle is 100  
+
+00:01:21.920 --> 00:01:29.440
+pixels wide and 100 pixels high, so we simply need 
+to move it 50 pixel to the left and up. And now  
+
+00:01:30.880 --> 00:01:39.680
+it's hard to see. So let's change this and simply 
+move this into the center of our canvas. Now that  
+
+00:01:39.680 --> 00:01:47.440
+we can see that our rectangle has been rotated 45 
+degrees around itself Just to to visualize this,  
+
+00:01:49.280 --> 00:01:58.560
+i will simply add a center point so we can better 
+understand where the rotation is happening.
+
+00:02:04.000 --> 00:02:08.160
+Other way around.
+
+00:02:08.160 --> 00:02:14.160
+Now we can see, the center is exactly in the 
+middle and the rectangle is rotating around the  
+
+00:02:14.160 --> 00:02:21.360
+center. Of course we could also use a variable to 
+add some motion to our graphic here. Let's rotate.  
+
+00:02:21.920 --> 00:02:31.040
+Define the angle, set it to zero in the beginning, 
+use it here and add one after each draw cycle.
+
+00:02:34.080 --> 00:02:37.680
+And now our rectangle is 
+rotating around the center.  
+
+00:02:39.040 --> 00:02:44.960
+Let's make it a little bit more interesting and 
+make the rectangle rotate around the center but  
+
+00:02:44.960 --> 00:02:51.920
+move it a little bit away from the center 
+so that it's flying around the center point.
+
+00:02:55.920 --> 00:03:03.840
+Therefore, we simply add another 
+translate and let's just say 100 100.
+
+00:03:07.360 --> 00:03:15.840
+Now we can see that our square is orbiting the 
+invisible center point. To make it visible again,  
+
+00:03:16.480 --> 00:03:22.640
+we simply visualize the center before we do the 
+translate. Now you can see again we have the  
+
+00:03:22.640 --> 00:03:28.640
+center point and our square is rotating around 
+the center. This might be a bit confusing in  
+
+00:03:28.640 --> 00:03:32.960
+the beginning, but it gives you a lot of 
+different opportunities to create moving  
+
+00:03:32.960 --> 00:03:39.200
+and rotating objects. That are a lot easier to 
+calculate. Otherwise you would need to exactly  
+
+00:03:40.160 --> 00:03:44.880
+calculate where each point is 
+through rotation, through angles  
+
+00:03:44.880 --> 00:03:54.320
+and using the rotate function, 
+it all becomes a lot more easier.

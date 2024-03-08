@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.360
+Im letzten Abschnitt haben wir uns die Schleifen 
+angeschaut. Wir werden uns nun die sogenannten  
+
+00:00:10.360 --> 00:00:15.340
+Conditions anschauen. Und in den Schleifen 
+haben wir schon erste Conditions kennengelernt,  
+
+00:00:15.340 --> 00:00:20.440
+nämlich die Condition die definiert wie lange 
+eine Schleife eigentlich laufen soll. In dieser  
+
+00:00:20.440 --> 00:00:25.300
+schleife hier, haben wir zum Beispiel definiert, 
+dass die Schleife so lange laufen soll, solange  
+
+00:00:25.300 --> 00:00:31.030
+X kleiner gleich zehn ist und der Operator 
+"kleiner gleich" hilft uns sozusagen eine  
+
+00:00:31.030 --> 00:00:38.650
+Kondition zu definieren. Und Konditionen helfen 
+uns dabei bestimmte Teile unseres Codes nur dann  
+
+00:00:38.650 --> 00:00:44.560
+auszuführen, wenn eine bestimmte Kondition 
+gegeben ist. Um solche Checks durchzuführen,  
+
+00:00:44.560 --> 00:00:50.920
+haben wir die sogenannte IF-Funktion mit 
+IF können wir sozusagen etwas definieren,  
+
+00:00:50.920 --> 00:00:56.950
+dass nur dann ausgeführt wird wenn die Kondition 
+stimmt. Also wir können zum Beispiel sagen,  
+
+00:00:56.950 --> 00:01:04.960
+okay wenn X gleich eins ist, dieses 
+definieren wir mit drei Gleichheitszeichen.
+
+00:01:04.960 --> 00:01:12.130
+Dann soll unser Kreis rot werden.
+
+00:01:12.130 --> 00:01:20.830
+Und damit sozusagen die Farbe sonst auf schwarz 
+gesetzt wird, weil wir wissen ja der Code läuft  
+
+00:01:20.830 --> 00:01:25.540
+von oben runter, heißt sobald einmal rot ist, sind 
+danach alle rot und wir wollen ja in dem Fall,  
+
+00:01:25.540 --> 00:01:29.170
+dass nur einer rot ist und alle anderen 
+schwarz sind. Können wir danach sagen,  
+
+00:01:29.170 --> 00:01:37.030
+okay für alle Fälle auf die nicht diese erste 
+Kondition zutrifft, soll ein anderer Befehl  
+
+00:01:37.030 --> 00:01:43.330
+ausgeführt werden und das machen wir mit "else". 
+Was also hier passiert: das System überprüft erst  
+
+00:01:43.330 --> 00:01:48.490
+die erste Kondition, trifft die zu, wird der 
+Code der in den geschweiften Klammern stetht  
+
+00:01:48.490 --> 00:01:55.300
+ausgeführt. Wenn der nicht zutrifft, dann mache 
+Folgendes und das ist in unserem Fall das Ganze  
+
+00:01:55.300 --> 00:02:02.170
+in schwarz zu zeichnen. Und wenn ich das jetzt 
+speicher sehe ich, dass der erste Kreis jetzt  
+
+00:02:02.170 --> 00:02:09.100
+rot wird. Neben gleich gibt es auch noch andere 
+Operatoren. Wir können zum Beispiel sagen kleiner,
+
+00:02:11.210 --> 00:02:19.910
+also alle die kleiner fünf sind. Wir können 
+"kleiner gleich" sagen, dann ist sozusagen 5 noch  
+
+00:02:19.910 --> 00:02:24.620
+mit dabei. Genauso können wir es natürlich auch 
+andersrum sagen, also alles "größer gleich" fünf,  
+
+00:02:24.620 --> 00:02:31.430
+dann sind die anderen rot. Daneben gibt es auch 
+noch einen weiteren Operator der "ungleich",  
+
+00:02:31.430 --> 00:02:38.060
+der sagt sozusagen alle werden gemacht 
+außer der wo es gleich fünf ist.
+
+00:02:38.060 --> 00:02:48.650
+Genau das sind die verschiedenen Ooptionen. 
+Wir können auch verschiedene Cases in einem  
+
+00:02:48.650 --> 00:02:55.910
+Ablauf machen. Also sagen wir, wir wollen zum 
+Beispiel den ersten der soll rot werden. Also  
+
+00:02:55.910 --> 00:03:02.420
+wo X gleich 1 rot und dann wollen wir den 
+der zehn ist grün machen. Dafür können wir  
+
+00:03:02.420 --> 00:03:12.530
+dann statt "else" ein "else if" schreiben. Dann 
+müssen wir wieder so eine geschweifte Klammer.  
+
+00:03:12.530 --> 00:03:21.980
+Hier drinnen definieren wir jetzt X gleich 
+zehn und geben dann hier das kommando grün.
+
+00:03:21.980 --> 00:03:29.840
+Speichern das Ganze und haben jetzt 
+sozusagen zwei Matches gemacht,  
+
+00:03:29.840 --> 00:03:34.520
+mit jeweils zwei spezifischen Befehlen, 
+man könnte das ganze auch so schreiben
+
+00:03:42.150 --> 00:03:47.130
+also das wird zum Beispiel per default 
+sagen: okay machen wir erstmal alles schwarz.
+
+00:03:47.130 --> 00:04:01.050
+Und dann machen wir unsere beiden Tests. Wenn 
+ihr ganz viele Tests habt, ist es aber nicht  
+
+00:04:01.050 --> 00:04:08.250
+so effizient außerdem gibt es manchmal Tests, 
+wo sozusagen auch mehrere Varianten zutreffen.  
+
+00:04:08.250 --> 00:04:13.530
+Wenn ihr das "else if" benutzt, geht das ganze 
+System von oben herunter. Guckt sich sozusagen  
+
+00:04:13.530 --> 00:04:19.890
+den ersten IF an und sobald einer der IFs 
+gematcht wird, werden die anderen nicht mehr  
+
+00:04:19.890 --> 00:04:27.060
+ausgeführt. Was wesentlich effizienter ist 
+und auch sauberer zu strukturieren ist. Um  
+
+00:04:27.060 --> 00:04:33.270
+das Ganze noch eine Stufe weiter zu bringen, 
+hole ich nochmal unseren verschachtelten Loop  
+
+00:04:33.270 --> 00:04:41.460
+zurück. Da hatten wir dann noch die y- Achse 
+als genesteten Loop hier mit reingenommen.
+
+00:04:41.460 --> 00:04:57.990
+Wir sehen auch hier funktioniert das wieder. Was 
+wir jetzt aber zum Beispiel noch machen können,  
+
+00:04:57.990 --> 00:05:03.690
+man kann auch innerhalb einer kondition 
+mehrere konditionen miteinander kombinieren.  
+
+00:05:03.690 --> 00:05:07.200
+Wir könnten zum Beispiel sagen, wir 
+wollen, dass nur die obere linke Ecke  
+
+00:05:07.200 --> 00:05:13.320
+rot gezeichnet wird. Also nur dort wo X 
+gleich eins ist und Y gleich eins ist.
+
+00:05:13.320 --> 00:05:21.480
+Und dann wird sozusagen nur oben gezeichnet. 
+Nneben dem UND- gibt es auch einen ODER-Operator.  
+
+00:05:21.480 --> 00:05:34.260
+Also wir können zum Beispiel hier sagen: dort 
+wo X gleich zehn ist ODER Y gleich zehn und  
+
+00:05:34.260 --> 00:05:39.600
+bekommen dann sozusagen die untere und die ganz 
+rechte Spalte / Zeile entsprechend grün markiert.

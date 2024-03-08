@@ -1,0 +1,49 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:11.760
+The functions for manipulating objects, that we 
+explored so far, are used to move objects around  
+
+00:00:11.760 --> 00:00:19.040
+or change their size or change their color. The 
+next set of functions, the boolean operations are  
+
+00:00:19.040 --> 00:00:25.440
+used to combine multiple objects with one another. 
+With union we can combine multiple objects into  
+
+00:00:25.440 --> 00:00:32.480
+one. This is very important. If we want to use the 
+output of our process in a fabrication process,  
+
+00:00:32.480 --> 00:00:37.840
+like 3D printing, because then you don't 
+want individual loose objects that are not  
+
+00:00:37.840 --> 00:00:45.680
+completely combined, but you need one combined 
+union object, that you can then send to a slicer  
+
+00:00:45.680 --> 00:00:54.080
+software, so that the 3D printing is properly 
+prepared. With substract we can subtract one or  
+
+00:00:54.080 --> 00:01:00.960
+multiple shapes from another shape. Intersect is 
+where multiple shapes overlap. Scission is a bit  
+
+00:01:00.960 --> 00:01:06.640
+tricky, if you did a union before, but actually 
+not all of your objects are touching one another,  
+
+00:01:06.640 --> 00:01:12.880
+or at least have an edge, where they touch 
+each other. Then with scission, after a union,  
+
+00:01:12.880 --> 00:01:20.400
+we can select those objects that are not really 
+touching at any point. We get back, we get  
+
+00:01:20.400 --> 00:01:31.760
+returned an array with all the individual objects 
+that are not in some way linked to one another.

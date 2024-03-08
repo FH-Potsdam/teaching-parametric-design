@@ -1,0 +1,87 @@
+WEBVTT
+
+00:00:04.800 --> 00:00:11.280
+Of course we can also give our shapes different 
+colors. To do so we just need to define it. In  
+
+00:00:11.280 --> 00:00:18.720
+our example, i will just draw a simple circle 
+in the center of our canvas so 200 X, 200 Y  
+
+00:00:18.720 --> 00:00:26.240
+and a diameter of 100. And the default color for 
+all our shapes is always a fill of white and a  
+
+00:00:26.240 --> 00:00:33.120
+stroke of black. And if we want to change the fill 
+we simply use the "fill" command and now we can  
+
+00:00:33.120 --> 00:00:39.520
+use the same color parameters as we used for the 
+"background" function. For example to make it red,  
+
+00:00:40.240 --> 00:00:46.240
+we can simply provide it with RGB values. 
+And if we want to change the stroke color,  
+
+00:00:46.240 --> 00:00:48.080
+we simply use the "stroke" command.  
+
+00:00:49.520 --> 00:00:55.920
+And for example, add a blue stroke which is hard 
+to see so we can also increase the stroke width,  
+
+00:00:56.800 --> 00:01:02.000
+to do so, we use the "strokeWeight" command. 
+And now we can simply define how many pixels  
+
+00:01:02.720 --> 00:01:06.560
+the stroke should be. And now we can 
+clearly see that we have a blue stroke here.  
+
+00:01:07.680 --> 00:01:12.960
+If we want to add another shape here 
+let's add a circle to the right.
+
+00:01:18.960 --> 00:01:24.160
+We can see that the second circle has the 
+same color values than our previous circle.  
+
+00:01:24.160 --> 00:01:29.440
+And this is again because of the order of our 
+code. So again it goes from top to bottom.  
+
+00:01:30.320 --> 00:01:35.760
+Once we define a color at the top, this color 
+is being used for all commands that come  
+
+00:01:35.760 --> 00:01:42.800
+after this. And remember that the draw function 
+is being run in a loop, so if you draw something  
+
+00:01:42.800 --> 00:01:48.480
+before this, remember that once the draw function 
+is finished and it's starting again from the top,  
+
+00:01:49.040 --> 00:01:53.280
+the same settings that we had 
+at the end of the draw function,  
+
+00:01:53.280 --> 00:02:01.680
+are still set, so if for example i add a circle 
+here or simply move our circle to the top.
+
+00:02:08.080 --> 00:02:15.280
+It still has the same colors, because of the 
+draw circle, if we want to change the colors  
+
+00:02:16.160 --> 00:02:22.960
+of our circle, we simply need to call the fill 
+command again and for example make it white.
+
+00:02:25.360 --> 00:02:28.960
+And the color for the stroke 
+stays the same because again  
+
+00:02:29.760 --> 00:02:35.840
+it goes from top to bottom and keeps the settings.

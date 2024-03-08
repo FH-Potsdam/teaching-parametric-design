@@ -1,0 +1,164 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:12.080
+We already had the basic variable types, like 
+numbers or text or boolean values. But sometimes  
+
+00:00:12.080 --> 00:00:17.760
+you need a lot of different variables. I have a 
+very simple example: with an x-variable defined  
+
+00:00:17.760 --> 00:00:24.160
+up here and in the setup-function i generate a 
+random value that is stored inside that variable.  
+
+00:00:24.160 --> 00:00:29.280
+And then i use it in the draw-function to position 
+our circle. But let's say we don't only want to  
+
+00:00:29.280 --> 00:00:36.160
+draw one circle, but we want to draw maybe 10 
+or 100 circles. What we could obviously do,  
+
+00:00:36.160 --> 00:00:42.240
+we could simply generate a lot of more variables 
+that we individually manually assign values to.  
+
+00:00:42.880 --> 00:00:49.280
+But this would be a lot of writing. For these 
+specific cases where you actually need a list  
+
+00:00:49.840 --> 00:00:57.440
+of variables or values, we have the so-called 
+array. An array is simply a list of individual  
+
+00:00:57.440 --> 00:01:04.960
+variables stored in one variable. To define 
+an array, we can simply use these brackets  
+
+00:01:06.080 --> 00:01:13.040
+and now we have an array, an empty array. There's 
+nothing in this array inside. To put something  
+
+00:01:13.040 --> 00:01:19.040
+into our array, to push it into the array, it 
+will be added to the end of the array, there is  
+
+00:01:19.040 --> 00:01:27.520
+the push-function. We can simply write x.push() 
+and now we can add a new value to our list.  
+
+00:01:29.280 --> 00:01:36.720
+After this, there would be only one value 
+in our array and now we need to access  
+
+00:01:37.280 --> 00:01:44.240
+our value inside the list and, therefore, we need 
+to use the index. The index of our individual item  
+
+00:01:44.240 --> 00:01:52.000
+in the list. To do this we put brackets after the 
+variable name and now we write the index. Arrays  
+
+00:01:52.000 --> 00:01:58.800
+have an index that starts at zero, very important, 
+not at one. So our first object has the index  
+
+00:01:58.800 --> 00:02:05.920
+zero. This is the way we can access the first 
+item in our array, in the variable called "x".  
+
+00:02:07.120 --> 00:02:10.560
+If i save this i now have a working sketch again.  
+
+00:02:12.240 --> 00:02:18.320
+Now obviously, we can add more than one item 
+to our list. So let's write a quick for-loop,  
+
+00:02:19.360 --> 00:02:27.040
+define how many objects we want, we want 100 
+objects, and now we write a little for-loop  
+
+00:02:28.160 --> 00:02:37.520
+and start at zero and as long as the 
+counter is smaller than count we add one.
+
+00:02:43.520 --> 00:02:47.840
+After this setup function is 
+run, now we have a hundred items  
+
+00:02:48.400 --> 00:02:55.520
+in our x-array. And now we 
+obviously also need to draw this.
+
+00:03:00.240 --> 00:03:04.240
+Sometimes you might actually not 
+know how many items are in your  
+
+00:03:04.240 --> 00:03:10.960
+array. An easy way to figure that one 
+out is to use x.length. Dot "length"  
+
+00:03:10.960 --> 00:03:15.840
+is the attribute of our array that holds 
+the current number of objects inside.  
+
+00:03:16.960 --> 00:03:24.560
+And remember again the index starts at 
+zero. So if i write c smaller x.length,  
+
+00:03:25.200 --> 00:03:33.120
+it works fine, because if i have five items inside 
+my array and the counter comes to 4 which is the  
+
+00:03:33.120 --> 00:03:40.960
+last item in the array the loop will stop and we 
+are adding 1 to our counter at the end of the loop  
+
+00:03:42.800 --> 00:03:51.680
+and now we can use the variable c as 
+our index to retrieve the current value.  
+
+00:03:52.640 --> 00:03:58.320
+And if i save this we now have a 
+lot of points with random values  
+
+00:03:59.600 --> 00:04:05.280
+and the nice thing about arrays is that we can 
+store anything inside arrays. We can store text,  
+
+00:04:05.280 --> 00:04:12.960
+we can store numbers, we can also store arrays 
+inside arrays. Right now we only have this one  
+
+00:04:12.960 --> 00:04:20.480
+value inside our array. So let's actually 
+push another array into our array here.
+
+00:04:22.960 --> 00:04:30.000
+Inside this array, we will have two values, 
+one for x ,one for y. Now we are pushing  
+
+00:04:30.000 --> 00:04:39.280
+another array into the array. And then of 
+course we need to access them down here.  
+
+00:04:40.160 --> 00:04:47.200
+And now we can simply add another set of brackets 
+here and now we want the first item in our  
+
+00:04:47.200 --> 00:04:56.720
+nested array and the second item. We use zero and 
+one. And if i save this now, i now get 100 points  
+
+00:04:56.720 --> 00:05:04.080
+with random values. Arrays are really nice to 
+store lots of data inside and generate random  
+
+00:05:04.080 --> 00:05:12.000
+data and put them inside. This helps you build 
+more complex visualizations, more complex designs,  
+
+00:05:12.560 --> 00:05:21.760
+using different kinds of values 
+that you can store in these lists.

@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:04.610 --> 00:00:11.240
+Durch Extrusion können wir 2D-Objekte in 
+eine Richtung extrudieren. Es gibt noch  
+
+00:00:11.240 --> 00:00:17.630
+eine weitere Transformationsmöglichkeit, 
+um 2D-Objekte zu manipulieren. Ich hab  
+
+00:00:17.630 --> 00:00:24.260
+hier wieder ein ganz normales Rechteck. 
+Das ist die offset-Funktion. Wichtig:  
+
+00:00:24.260 --> 00:00:31.220
+offset funktioniert nur für 2D-Objekte. 
+Also generieren uns ein neues Objekt,  
+
+00:00:31.220 --> 00:00:38.180
+eine Variable in die wir unser Objekt 
+reinspeichern können: offObject. Offset:  
+
+00:00:38.180 --> 00:00:47.660
+als zweiter Parameter dann unser Rectangle-Object. 
+Pushen das Ganze in unsere objects rein.
+
+00:00:47.660 --> 00:00:57.560
+So und hier können wir nun als Parameter 
+ein "delta" angeben. Das "delta" ist  
+
+00:00:57.560 --> 00:01:04.310
+wieviel die Linie verändert werden soll. 
+Also nach plus/positive Werte nach außen,  
+
+00:01:04.310 --> 00:01:13.070
+negative nach innen. Also machen wir mal 
+"delta":20. Speichern das Ganze und sehen nun,  
+
+00:01:13.070 --> 00:01:19.100
+dass wir ein größeres Objekt bekommen. 
+Könnte auch -20 machen. Sehen dann ein  
+
+00:01:19.100 --> 00:01:24.800
+entsprechend kleineres Objekt. Wir können hier 
+noch einen zusätzlichen Parameter angeben und  
+
+00:01:24.800 --> 00:01:34.100
+das sind die "corners". Wie wir jetzt gerade sehen 
+konnten, dass ist eins zu eins gleich geblieben,  
+
+00:01:34.100 --> 00:01:40.430
+die Form. Wir können es aber verändern, was wird 
+gerade gesehen haben war die "edge"-Variante.  
+
+00:01:40.430 --> 00:01:51.800
+Nochmal zum Zeigen. Alternativ dazu gibt es auch 
+"chamfer", dann haben wir sozusagen abgeschrägten  
+
+00:01:51.800 --> 00:01:59.900
+Ecken und es gibt auch die "round"-Variante. Bei 
+"round" sieht es erst mal ähnlich aus wie bei  
+
+00:01:59.900 --> 00:02:03.530
+der vorherigen Variante, aber wir können 
+jetzt hier wie bei allen runden Sachen,  
+
+00:02:03.530 --> 00:02:07.520
+zusätzlich noch "segments" angeben 
+und dann werden wir gleich sehen,  
+
+00:02:07.520 --> 00:02:12.890
+dass nun mehr Segmente für den Kreis genutzt 
+werden und dadurch eine rundere Form entsteht.

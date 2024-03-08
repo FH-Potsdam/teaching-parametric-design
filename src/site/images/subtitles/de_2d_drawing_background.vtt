@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:04.620 --> 00:00:09.210
+Nachdem wir unseren Canvas erstellt haben, 
+fangen wir nun an mit dem tatsächlichen  
+
+00:00:09.210 --> 00:00:15.660
+Zeichnen. Das erste was wir machen ist den 
+Hintergrund unseres Canvas mit einer Farbe  
+
+00:00:15.660 --> 00:00:20.100
+füllen. Hierfür gibt es das "background" Command. 
+Es gibt auch manchmal Fälle in denen wir keinen  
+
+00:00:20.100 --> 00:00:24.930
+Hintergrund wollen. Wenn wir zum Beispiel später 
+ein transparentes PNG exportieren wollen. Dann  
+
+00:00:24.930 --> 00:00:28.770
+wollen wir natürlich keine Hintergrundfarbe 
+haben. In vielen Fällen brauchen wir aber  
+
+00:00:28.770 --> 00:00:33.660
+eine Hintergrundfarbe als ersten schritt. 
+Hierfür gibt es das sogenannte "background"  
+
+00:00:33.660 --> 00:00:39.510
+Command den wir dann einen Wert mitgeben können. 
+In diesem Fall haben wir hier 0 für schwarz oder  
+
+00:00:39.510 --> 00:00:44.970
+ich könnte zum Beispiel auch für weiß 255 
+eintragen und bekomme das dann entsprechend  
+
+00:00:44.970 --> 00:00:50.340
+vollflächig als Hintergrund angelegt. Mehr 
+zur Eingabe der Farben im nächsten Video.

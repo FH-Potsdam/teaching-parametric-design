@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:09.520
+If you look at the sketch.js file, you might 
+have noticed that the lines are differently  
+
+00:00:09.520 --> 00:00:15.360
+indented. The idea behind indenting code, is to 
+make it more organized and neat. So you can more  
+
+00:00:15.360 --> 00:00:21.280
+easily navigate your code later on. In JavaScript, 
+this does not have an effect on the output of your  
+
+00:00:21.280 --> 00:00:25.840
+code. But there's other coding languages, like 
+python for example, where it's extremely important  
+
+00:00:25.840 --> 00:00:32.640
+to correctly indent your code. So i strongly 
+advise you to also use this feature, to structure  
+
+00:00:32.640 --> 00:00:39.680
+your code. The idea behind indenting code is that 
+every time, something is nested inside something  
+
+00:00:39.680 --> 00:00:46.320
+else, you indent it one level. In this case for 
+example, you have the drawing function and the  
+
+00:00:46.320 --> 00:00:53.760
+background command is inside the drawing function, 
+so you indent it once. If you would have a loop  
+
+00:00:53.760 --> 00:01:04.480
+for example inside the draw function and another 
+command inside the loop you would indent it again.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>code preview</title>
+    <link rel="stylesheet" href="/css/editor.css" />
+  </head>
+  <body>
+  <div id="container">
+    <iframe 
+      width="400"
+      height="400"
+      sandbox="allow-downloads allow-scripts allow-same-origin"
+      id="frame"
+      src="about:blank">
+    </iframe>
+    <div id="editor"></div>
+  </div>
+  <button id="updateBtn">Run Code</button>
+  <button id="copyBtn">Copy</button>
+  <script src="/js/editor.bundle.js"></script>
+  <script>
+    const getCode = () => {
+      if ('text' in codemirror.editor.state.doc && codemirror.editor.state.doc.text) {
+        return codemirror.editor.state.doc.text.join('\n');
+      } else {
+        return codemirror.editor.state.doc.children.map(child => child.text.join('\n')).join('\n');
+      }      
+    };
+
+    document.querySelector('#updateBtn').addEventListener('click', () => {
+      document.getElementById('frame').contentWindow.postMessage(getCode(), '/');
+    });
+
+    document.querySelector('#copyBtn').addEventListener('click', () => {
+      navigator.clipboard.writeText(getCode());
+      const btn = document.getElementById('#copyBtn');
+      const classes = btn.classList.split(' ');
+      classes = classes.filter(c => c.trim() !== 'activated');
+      btn.classList = classes.join(' ');
+      btn.classList += ' activated';
+    });
+
+    codemirror.editor.dispatch({
+      changes: {
+        from: 0,
+        to: codemirror.editor.state.doc.length,
+        insert: `{{ content | strip_html }}`
+      }
+    });
+
+    const iframe = document.querySelector('#frame');
+    iframe.srcdoc = `{% include 'parts/editor-iframe.liquid' %}`;
+
+    if (window.location.href.indexOf('autoexecute=true') > -1) {
+      setTimeout(() => document.getElementById('frame').contentWindow.postMessage(getCode(), '/'), 1000);
+      
+    }
+  </script>
+  </body>
+</html>

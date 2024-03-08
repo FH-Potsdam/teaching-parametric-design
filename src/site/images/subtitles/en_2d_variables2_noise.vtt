@@ -1,0 +1,161 @@
+WEBVTT
+
+00:00:04.800 --> 00:00:09.040
+In one of the previous videos, i already 
+introduced the random function. The random  
+
+00:00:09.040 --> 00:00:13.680
+function allows us to generate values between the 
+min and the max, that is provided as parameters.  
+
+00:00:14.480 --> 00:00:18.800
+I have built a very simple example here, of 
+circles one pixel apart on the x-axis and on  
+
+00:00:18.800 --> 00:00:26.000
+the y-axis we generate as a random value between 
+0 and 400. There's another function that allows us  
+
+00:00:26.000 --> 00:00:31.120
+to generate random values with a little bit more 
+system behind it: the so-called "noise" function.  
+
+00:00:32.320 --> 00:00:38.880
+The "noise" function first off generates a value 
+between 0 and 1, different to our random function.  
+
+00:00:38.880 --> 00:00:46.080
+So if we want to achieve the same, like we did 
+here, we need to multiply the result times 400,  
+
+00:00:46.080 --> 00:00:52.400
+to again get from 0 to 400 with the 
+returned noise value. The big difference,  
+
+00:00:52.400 --> 00:00:57.840
+between noise and random is first of all, 
+in the beginning when our sketch is started,  
+
+00:00:58.640 --> 00:01:05.200
+there is a noise field being generated and we can 
+then later on pick values from this pre-generated  
+
+00:01:05.200 --> 00:01:10.720
+noise field. And this noise field, unlike the 
+random function, is not completely random, but  
+
+00:01:10.720 --> 00:01:17.360
+it rather provides us with smooth values between 
+different steps within this big noise field.  
+
+00:01:19.120 --> 00:01:24.720
+To pick a value from this noise field, we need 
+to provide coordinates from this noise field.  
+
+00:01:24.720 --> 00:01:31.280
+And we can provide one to three coordinates. If 
+you for example, simply want to draw a random  
+
+00:01:31.280 --> 00:01:40.240
+smooth curve, we provide one parameter. Let's do 
+this now. We simply provide x here and if i save:  
+
+00:01:40.240 --> 00:01:48.160
+Now we pick a random value at each X step here and 
+this looks still quite chaotic and the reason is  
+
+00:01:48.160 --> 00:01:57.920
+that we're quite far zoomed out. So if i simply 
+divide X by 100, so make it smaller and, thereby,  
+
+00:01:57.920 --> 00:02:03.760
+zoom into the noise field. We now see the actual 
+smooth noise field being generated for us here  
+
+00:02:05.200 --> 00:02:11.840
+and this noise field is really really big, so 
+we can get a lot of random numbers from this.  
+
+00:02:11.840 --> 00:02:18.400
+Just to demonstrate this, let's add a little 
+offset, to walk through our noise field.  
+
+00:02:19.680 --> 00:02:33.280
+And we simply add the offset to the X here. 
+Remove the noLoop and then add 0.01 to our offset.  
+
+00:02:35.280 --> 00:02:41.120
+And if i save this, now we can see: through the 
+offset, we are wandering through the noise field  
+
+00:02:41.840 --> 00:02:49.440
+and picking these nice smooth random values. 
+And as you saw, as i saved this, it's generating  
+
+00:02:49.440 --> 00:02:55.840
+new random values every time i save the sketch. 
+But we can also generate new random data  
+
+00:02:55.840 --> 00:03:02.560
+on the fly. For example imagine you want to change 
+something and you don't want to the page to be  
+
+00:03:02.560 --> 00:03:11.520
+reloaded, therefore, we can provide this noise 
+function with a so-called seed. And to do this,  
+
+00:03:12.880 --> 00:03:19.440
+there is the so-called noiseSeed function, 
+where we add our seed. And to change this,  
+
+00:03:19.440 --> 00:03:27.360
+every time we just add one and now we get a 
+new noise every time the draw loops is running.
+
+00:03:32.320 --> 00:03:37.120
+This gives us a lot of different 
+possibilities, how to work with this.  
+
+00:03:39.280 --> 00:03:45.520
+This was the one-dimensional 
+smooth curve, but we can get two  
+
+00:03:45.520 --> 00:03:51.440
+up to three dimensions of noise field 
+data. To demonstrate this, i will simply  
+
+00:03:52.400 --> 00:04:01.040
+create a little grid so that we can get 
+x and y parameters. Change this to y.
+
+00:04:03.120 --> 00:04:11.280
+And so we don't actually need to render 400 times 
+400 pixels we will just increase the size here.  
+
+00:04:11.280 --> 00:04:19.520
+And we will use rectangles instead of the circles. 
+And now we will use the noise to generate the fill  
+
+00:04:19.520 --> 00:04:24.480
+for our rectangles. So that we can actually 
+see the noise field and the smoothness  
+
+00:04:24.480 --> 00:04:32.880
+of the noise field. We are adding the second 
+coordinate in our noise field, the y parameter  
+
+00:04:33.760 --> 00:04:40.080
+and multiply it times 255, because 
+we want the grayscale from 0 to 255.  
+
+00:04:43.760 --> 00:04:46.880
+And if i save this now. And 
+maybe add a noStroke here.
+
+00:04:49.920 --> 00:04:55.280
+We can now actually see the noise field, how 
+it's generated we can see that there are no  
+
+00:04:55.280 --> 00:05:03.520
+sharp edges but we actually 
+get this really smooth surface.

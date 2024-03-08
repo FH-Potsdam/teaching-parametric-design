@@ -1,0 +1,121 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:09.360
+Many of you have probably already used some 
+kind of 3D design application, like blender  
+
+00:00:09.360 --> 00:00:17.600
+or fusion 360. The software i'm going to show you 
+now, OpenSCAD a free and open software, is quite  
+
+00:00:17.600 --> 00:00:22.560
+different to these kind of applications. Because 
+this is not built to create great renderings of  
+
+00:00:22.560 --> 00:00:30.240
+3D objects, but in contrast, this one is built to 
+allow you to generate 3D objects through code. You  
+
+00:00:30.240 --> 00:00:38.160
+can write text to generate 3D objects. And this 
+is really nice to create reusable code to generate  
+
+00:00:38.160 --> 00:00:44.480
+objects. And the objects that we are generating 
+here they are really well constructed 3D objects  
+
+00:00:44.480 --> 00:00:50.560
+that we can for example use in fabrication 
+processes like 3D printing or CNC machines.  
+
+00:00:52.240 --> 00:00:59.040
+So how do we do it in this application. We have on 
+the left side an editor and on the right side we  
+
+00:00:59.040 --> 00:01:04.720
+get a preview of the 3D objects we construct. 
+And the coding is very very similar to how we  
+
+00:01:04.720 --> 00:01:11.840
+developed our objects in p5.js. I will show you 
+this application now and then we will switch to  
+
+00:01:11.840 --> 00:01:20.160
+OpenJSCAD a JS port of the OpenSCAD language. You 
+have to keep in mind if you're creating really  
+
+00:01:20.160 --> 00:01:26.480
+really really complex 3D objects, you might 
+want to switch to the OpenSCAD application,  
+
+00:01:26.480 --> 00:01:32.320
+because it's a lot more powerful, because the 
+JavaScript variant relies on the performance  
+
+00:01:32.320 --> 00:01:38.000
+of your browser and is thereby a little bit 
+limited to how complex your objects can become.  
+
+00:01:38.560 --> 00:01:43.840
+But for now, we will use the JavaScript version. 
+As we can use our same development environment  
+
+00:01:43.840 --> 00:01:49.280
+and we don't need to learn anything new. 
+I will just show you a very quick example  
+
+00:01:49.280 --> 00:01:59.680
+of how to use the OpenSCAD software. Here in 
+the code editor we can now create objects. For  
+
+00:01:59.680 --> 00:02:06.240
+example i could create a simple square. Click on 
+the preview button and immediately get a preview  
+
+00:02:06.880 --> 00:02:14.720
+of a square. And now similar to how we use p5.js 
+we can chain different commands to one another,  
+
+00:02:14.720 --> 00:02:23.120
+to modify the objects we create. For example we 
+could use a translate function to move our object,  
+
+00:02:24.640 --> 00:02:30.960
+similar to how we did it in p5.js. You can now see 
+how it's moving around in the coordinate system.  
+
+00:02:31.680 --> 00:02:35.840
+We could use an extrude 
+function, to extrude our object.  
+
+00:02:36.400 --> 00:02:42.560
+Let's say we want to extrude it to the 
+height 3, get a preview and see now,  
+
+00:02:42.560 --> 00:02:49.840
+how it's being extruded in one direction. Or give 
+it a different color by using the color command.
+
+00:02:52.800 --> 00:02:59.200
+It's actually quite similar from the command 
+structure to p5.js. The only difference is  
+
+00:02:59.200 --> 00:03:04.080
+that we're kind of, at least from my 
+perspective, we're chaining commands in  
+
+00:03:04.080 --> 00:03:11.120
+reverse. We start at the end, we have the actual 
+object and then we're going kind of backwards,  
+
+00:03:12.000 --> 00:03:16.880
+applying different other commands to the 
+initial object that we created. We have  
+
+00:03:16.880 --> 00:03:21.760
+the square, then we translate it, then we 
+extrude it and then we give it a color,  
+
+00:03:21.760 --> 00:03:31.040
+which is kind of the other way around 
+of how you would might think about it.

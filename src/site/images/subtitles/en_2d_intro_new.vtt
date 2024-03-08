@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:05.280 --> 00:00:11.040
+In this video i will explain you how to set up 
+a new project. To do so, open the repository you  
+
+00:00:11.040 --> 00:00:16.080
+downloaded from github: "learning parametric 
+design". Inside you will find two folders:  
+
+00:00:16.080 --> 00:00:22.640
+"code" and "lectures". "lectures" holds all the 
+code examples from these videos, as well as the  
+
+00:00:22.640 --> 00:00:29.120
+website. Inside "code" you can set up your own 
+projects. To do so, simply copy the "example"  
+
+00:00:29.120 --> 00:00:38.880
+folder, paste it inside the "code" folder, give it 
+a nice name. Don't use any special letters or any  
+
+00:00:38.880 --> 00:00:44.080
+spaces inside your names, otherwise you might run 
+into trouble opening it in the browser later on.
+
+00:00:46.640 --> 00:00:52.640
+And if you go inside your new project folder, you 
+will find two files. The first file index.html.  
+
+00:00:53.280 --> 00:01:00.240
+This is the HTML file we will open in the browser. 
+This holds the commands to load the p5.js library,  
+
+00:01:00.240 --> 00:01:05.920
+to load an additional plugin for p5.js, which 
+allows us to export vector graphics later on,  
+
+00:01:06.480 --> 00:01:12.000
+as well as the sketch.js file. And the sketch.js 
+file is the file we are going to write our own  
+
+00:01:12.000 --> 00:01:18.560
+code in. And this is the second file 
+in the folder, the sketch.js file.  
+
+00:01:18.560 --> 00:01:26.320
+And here we will write our own commands to create 
+our graphics. To get a preview of how this looks  
+
+00:01:26.320 --> 00:01:32.480
+in the browser, we can simply click on the HTML 
+file again, then click on the "go live". "go live"  
+
+00:01:32.480 --> 00:01:39.760
+is the extension we installed in the last video. 
+And now you should get a new tab in your browser,  
+
+00:01:39.760 --> 00:01:46.080
+with the result from the sketch.js file. And 
+the nice thing about the live extension is,  
+
+00:01:46.080 --> 00:01:52.080
+that this extension is monitoring our files 
+and as soon as we save a file, it recognizes  
+
+00:01:52.080 --> 00:01:57.120
+this and reloads the website for us. So if i 
+change the background color here. for example
+
+00:01:59.440 --> 00:02:07.840
+and save the file. We see that the 
+website is automatically updated.

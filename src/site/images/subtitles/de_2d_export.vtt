@@ -1,0 +1,125 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:08.230
+Nachdem wir unsere schönen Grafiken generiert 
+haben, wollen wir diese natürlich auch  
+
+00:00:08.230 --> 00:00:12.370
+exportieren. Damit wir sie z.B. in einer 
+anderen Software weiternutzen können oder  
+
+00:00:12.370 --> 00:00:18.520
+mit einem Fertigungsverfahren wie im Laser oder 
+einem 3D-Drucker weiternutzen können. Hierfür gibt  
+
+00:00:18.520 --> 00:00:25.840
+es eine ganz einfache Funktionen. Diese Funktion 
+nennt sich "save" und innerhalb von "save" können  
+
+00:00:25.840 --> 00:00:34.300
+wir dann noch einen Dateinamen reinschreiben, z.B. 
+"bild.png". Wenn ich das jetzt ausführen würde,  
+
+00:00:34.300 --> 00:00:39.130
+wir erinnern uns die "draw"-Schleife läuft ja 
+immer fort, würden jetzt ganz ganz viele Bilder  
+
+00:00:39.130 --> 00:00:45.130
+versucht werden zu speichern, deswegen, 
+wenn ihr die "save" Funktion benutzt,  
+
+00:00:45.130 --> 00:00:52.630
+vergesst auf keinen Fall die noLoop Funktionen 
+hinzuzufügen. Wenn wir das jetzt abspeichern,
+
+00:00:52.630 --> 00:01:00.880
+sehen wir, dass ich hier sozusagen 
+ein Speicher-Dialog sich öffnet,  
+
+00:01:00.880 --> 00:01:07.960
+um sozusagen unsere Datei abzuspeichern. 
+Eine andere Variante, um sozusagen dieses  
+
+00:01:07.960 --> 00:01:14.020
+"noLoop" zu umgehen ist das wir das Ganze zum 
+Beispiel in eine Funktion reinpacken. Hier  
+
+00:01:14.020 --> 00:01:20.050
+können wir zum Beispiel unsere "keyPressed" 
+nehmen. Das sozusagen erst gespeichert wird,  
+
+00:01:20.050 --> 00:01:25.330
+sobald auf eine Taste gedrückt wird. Dann 
+einfach unsere "save" Funktion hier rein.
+
+00:01:25.330 --> 00:01:35.830
+Speichern das Ganze und erst wenn ich jetzt 
+eine Taste drücke wird sozusagen das speichern  
+
+00:01:35.830 --> 00:01:45.970
+ausgelöst. Und sonst läuft der "draw"-Zyklus 
+einfach weiter. Der normale Renderer von p5js  
+
+00:01:45.970 --> 00:01:51.760
+generiert uns Pixelbilder, heißt wir können 
+PNGs und JPEGs exportieren. Aber gerade wenn  
+
+00:01:51.760 --> 00:01:56.290
+wir mit einem Vektor-Bearbeitungsprogramm oder wir 
+später zum Beispiel mit dem Laser arbeiten wollen,  
+
+00:01:56.290 --> 00:01:59.920
+dann brauchen wir Vektordaten. Wie ich 
+euch ganz am Anfang schon erzählt habe,  
+
+00:01:59.920 --> 00:02:04.960
+können wir den Render-Modus hier oben bei 
+createCanvas umstellen, indem wir hier einfach  
+
+00:02:04.960 --> 00:02:13.360
+SVG reinschreiben und nun werden keine Pixel 
+mehr generiertm sondern es werden SVGs generiert,  
+
+00:02:13.360 --> 00:02:19.440
+Vektordaten. Und deswegen kann ich dann 
+auch hier unten bei "bild" als Extension  
+
+00:02:19.440 --> 00:02:24.810
+SVG reinschreiben. Und sobald ich jetzt auf 
+speichern drücke und dann eine Taste drücke,  
+
+00:02:24.810 --> 00:02:32.130
+öffnet sich wieder der speichern-Dialog. 
+Ganz wichtig wenn ihr den SVG-Modus benutzt,  
+
+00:02:32.130 --> 00:02:39.270
+gibt es ein paar Limitations. Zum Beispiel das 
+umso mehr Punkte ihr zeichnet, umso größer wird  
+
+00:02:39.270 --> 00:02:45.690
+eure Vektordatei. Was bei Pixelbildern nicht 
+das große Problem ist, aber bei Vektordaten ist  
+
+00:02:45.690 --> 00:02:51.300
+es irgendwann ein Problem. Wenn ihr z.B. Linien 
+zeichnet und die Linien extrem komplex sind und  
+
+00:02:51.300 --> 00:02:56.520
+ganz viele Punkte entlang der Linien haben, gibt 
+es irgendwann ein Limit bei mehreren 10.000,  
+
+00:02:56.520 --> 00:03:02.400
+wo zum Beispiel Vektorprogramme wie Illustrator 
+oder Sketch oder selbst Adobe Acrobat Reader,  
+
+00:03:02.400 --> 00:03:07.590
+das nicht mehr anzeigen können. Deswegen wenn 
+ihr mit SVG arbeitet, achtet ein bisschen auf  
+
+00:03:07.590 --> 00:03:11.400
+die Ressourcen. Achtet ein bisschen darauf, 
+wieviel Shapes ihr generiert, weil das durchaus  
+
+00:03:11.400 --> 00:03:15.540
+später einen Einfluss auf die Performance 
+eures Grafik-Bearbeitungsprogramms hat.

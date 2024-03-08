@@ -1,0 +1,84 @@
+WEBVTT
+
+00:00:04.630 --> 00:00:08.470
+Unseren verschiedenen Shapes können wir 
+natürlich auch unterschiedliche Farben  
+
+00:00:08.470 --> 00:00:13.570
+geben. Wenn wir zum Beispiel hier jetzt mal 
+einen Kreis einfach in die Mitte unserer  
+
+00:00:13.570 --> 00:00:21.970
+Canvas zeichnen. Also x/y Koordinate 200. 
+Durchmesser 100. Und wenn wir dem jetzt zum  
+
+00:00:21.970 --> 00:00:27.520
+Beispiel eine andere Füllung geben wollen. 
+Die standardmäßige Füllung ist immer weiß  
+
+00:00:27.520 --> 00:00:31.720
+und der standard Strich ist immer schwarz. 
+Dann können wir hier jetzt einen "fill",  
+
+00:00:31.720 --> 00:00:36.610
+die "fill" Funktion nehmen. Die nimmt dieselben 
+Parameter wie unsere "background" Funktion. Können  
+
+00:00:36.610 --> 00:00:42.280
+also genau dieselben Farbangaben hier machen 
+und können jetzt hier zum Beispiel eine rote  
+
+00:00:42.280 --> 00:00:48.160
+Füllung machen. Für den Strich funktioniert es 
+genauso dafür benutzen wir die "stroke" Funktion.
+
+00:00:48.160 --> 00:00:56.650
+Auch hier können wir natürlich Transparenzen 
+et cetera nutzen. Haben jetzt hier einen blauen  
+
+00:00:56.650 --> 00:01:03.100
+Strich außenrum. Den blauen Strich können wir auch 
+dicker machen. Dafür gibt es die "strokeWeight"  
+
+00:01:03.100 --> 00:01:09.160
+Funktion. Hier können wir auch eine einfache Zahl 
+übergeben, und bekommen dann entsprechend einen  
+
+00:01:09.160 --> 00:01:15.760
+dickeren Strich gezeichnet wenn wir jetzt weitere 
+Shapes zeichen wollen, zum Beispiel sagen wir,  
+
+00:01:15.760 --> 00:01:19.210
+wir wollen noch einen weiteren Kreis 
+zeichnen. Den setzen wir unten drunter.
+
+00:01:19.210 --> 00:01:22.990
+Etwas kleiner.
+
+00:01:22.990 --> 00:01:31.960
+Dann sehen wir, dass der dieselben Farben bekommt. 
+Und auch hier wieder, ist es ganz wichtig, die  
+
+00:01:31.960 --> 00:01:36.850
+Reihenfolge in dem ihr euren Code strukturiert. 
+Ihr müsst es euch so vorstellen, wenn ihr einmal  
+
+00:01:36.850 --> 00:01:42.910
+eine Farbe für Füllung oder Strich angebt, gilt 
+dies für alles was danach kommt. Und weil wir uns  
+
+00:01:42.910 --> 00:01:48.070
+ja in einem Loop befinden, gilt es auch noch 
+für alles was dann sozusagen im nächsten Loop  
+
+00:01:48.070 --> 00:01:53.710
+gezeichnet wird. Wenn wir jetzt wollen, dass unser 
+zweiter Kreis z.B. eine andere Füllung bekommt.  
+
+00:01:53.710 --> 00:02:01.420
+Machen wir es zum Beispiel mal wieder weiß, müssen 
+wir sozusagen danach eine neue Füllung definieren  
+
+00:02:01.420 --> 00:02:06.850
+nehmen den Stroke und Weight von davor und 
+lassen das dann entsprechend einfach durchlaufen

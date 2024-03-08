@@ -1,0 +1,90 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.400
+Die ganzen Modifikations-Funktionen, 
+Transformations-Funktion geben uns immer  
+
+00:00:09.400 --> 00:00:17.200
+neue Objekte zurück. Das tolle daran ist, dass wir 
+das zum Beispiel nutzen können, um in Schleifen  
+
+00:00:17.200 --> 00:00:22.960
+immer wieder ein selbes Objekt als Grundlage zu 
+benutzen und dies dann zu transformieren. Also  
+
+00:00:22.960 --> 00:00:26.080
+stellen wir uns vor, wir wollen einfach 
+so eine serie von Würfeln generieren.
+
+00:00:26.080 --> 00:00:33.760
+Generieren uns hier eine einfache Schleife: 
+sagen wir zehn Stück wollen wir generieren.
+
+00:00:33.760 --> 00:00:37.060
+Und dann
+
+00:00:37.060 --> 00:00:51.250
+machen wir uns hier ein translate-object. 
+Translate und dann sagen wir x mal 100.  
+
+00:00:51.250 --> 00:01:01.750
+Geben dann immer unser cube-object von oben 
+rein und pushen dann das Ganze hier ins Array  
+
+00:01:01.750 --> 00:01:10.930
+rein. Und sehen jetzt, dass wir hier ganz 
+einfach, ganz viele Objekte generiert haben.  
+
+00:01:10.930 --> 00:01:16.720
+Wir könnten zum Beispiel auch vorher 
+noch unser cube-object zum Beispiel
+
+00:01:23.210 --> 00:01:23.840
+drehen.
+
+00:01:23.840 --> 00:01:27.860
+Machen wir  
+
+00:01:31.700 --> 00:01:39.680
+mal 45 Grad. Geben unser cube-object rein. 
+Speichern es wieder in der cube-objekt  
+
+00:01:39.680 --> 00:01:46.070
+Variable. Sparen uns hier eine neue Variable extra 
+anzulegen und sehen jetzt zum Beispiel, wie die  
+
+00:01:46.070 --> 00:01:52.520
+alle gedreht sind. Und darüber hinaus könnten wir 
+natürlich sogar noch jedes einzelne auch drehen.
+
+00:01:52.520 --> 00:02:00.590
+Dafür müssen wir daran denken, dass wir 
+das erst drehen und dann verschieben.  
+
+00:02:00.590 --> 00:02:07.850
+Also translate-object machen nochmal das 
+rotate, benutzen dann unsere x-Variable,
+
+00:02:07.850 --> 00:02:22.190
+als Gradzahl machen wir mal 5, die anderen 
+Achsen lassen wir in Ruhe. Und geben hier  
+
+00:02:22.190 --> 00:02:30.380
+unsere cube-object rein und dann hier unten das 
+translate-object. Also, erstellen uns hier ein  
+
+00:02:30.380 --> 00:02:36.350
+Objekt, des original Würfels, drehen den, während 
+er noch am Nullpunkt ist und danach verschieben  
+
+00:02:36.350 --> 00:02:41.870
+wird das Ganze. Sspeichern das in dieselbe 
+Variable und pushen das dann in unser Array, das  
+
+00:02:41.870 --> 00:02:50.000
+wir schlussendlich zurückgeben. Und bekommen jetzt 
+hier eine Reihe an Würfeln die initial gedreht  
+
+00:02:50.000 --> 00:02:54.590
+sind und dann noch zusätzlich ein Stück weiter 
+gedreht werden, mit jeder Schleifen-Iteration

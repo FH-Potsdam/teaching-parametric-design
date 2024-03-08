@@ -1,0 +1,43 @@
+{% from '../parts/macros.njk' import renderNav %}
+{% from '../parts/macros.njk' import renderLang %}
+{% from '../parts/macros.njk' import renderCrumbs %}
+{% from '../parts/macros.njk' import renderPageNav %}
+<!DOCTYPE html>
+<html lang="en-US">
+  {% include 'parts/head.njk' %}
+  <body>
+    <header id="header">
+      <div id="home-header">
+        <h1>Parametric Design</h1>
+        <h2>{{ translations.subtitle[locale] | safe }}</h2>
+        <a href="https://www.fh-potsdam.de">
+          <picture id="header-logo">
+            <source srcset="/images/logo-fhp-abbrev-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/images/logo-fhp-abbrev-black.svg" alt="{{ translations.fhp[locale] }}" />
+          </picture>
+        </a>
+      </div>
+      <div id="header-sketch"></div>
+    </header>
+    <div id="container">
+      <div id="nav">
+        <nav>
+          {{ renderNav(collections, page, locale, content) }}
+        </nav>
+        <nav>
+          {{ renderLang(page.url) }}
+        </nav>
+      </div>
+      <main>
+        {{ content | safe }}
+        <p class="backtotop">
+          <a title="{{translations.top[locale]}}" href="#header">{{translations.top[locale]}}</a>
+        </p>
+      </main>
+    </div>
+    {% include 'parts/footer.njk' %}
+    <script src="/js/main.js"></script>
+    <script src="/js/p5.min.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

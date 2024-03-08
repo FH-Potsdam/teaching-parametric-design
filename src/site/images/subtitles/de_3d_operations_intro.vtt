@@ -1,0 +1,57 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:10.420
+Mit den bisherigen Manipulationen konnten 
+wir Objekte bewegen oder die Originalform  
+
+00:00:10.420 --> 00:00:15.670
+verändern. Mit den folgenden Transformationen, 
+den sogenannten booleanschen-Operationen  
+
+00:00:15.670 --> 00:00:21.190
+können wir mehrere Objekte kombinieren oder 
+voneinander abziehen. Die dahinter liegenden  
+
+00:00:21.190 --> 00:00:25.690
+Befehle kennt ihr wahrscheinlich schon von 
+Grafikbearbeitungsprogrammen oder 3D-Software.  
+
+00:00:25.690 --> 00:00:32.020
+Mit "union" können wir mehrere Objekte miteinander 
+kombinieren. Das ist besonders dann wichtig, wenn  
+
+00:00:32.020 --> 00:00:37.660
+wir später beispielsweise etwas 3D-drucken wollen. 
+Denn dann wollen wir keine einzelnen Shapes haben,  
+
+00:00:37.660 --> 00:00:43.570
+die nicht miteinander verbunden sind, sondern 
+wir wollen eine solide Form haben, die dann von  
+
+00:00:43.570 --> 00:00:49.300
+einer Software zum Beispiel so bearbeitet werden 
+kann, dass dann ein korrekter 3D-Druck daraus  
+
+00:00:49.300 --> 00:00:54.760
+generiert werden kann. Über "subtract" wird 
+eine Form oder mehrere Formen von einer Form  
+
+00:00:54.760 --> 00:01:00.970
+abgezogen. "Intersect" ist die Überschneidung 
+von mehreren Shapes und mit "scission",  
+
+00:01:00.970 --> 00:01:06.280
+das ist etwas komplizierter: wenn wir eine "union" 
+gemacht haben und es aber einzelne Objekte gibt,  
+
+00:01:06.280 --> 00:01:11.230
+die sich gar nicht berühren, also wo nicht 
+mindestens eine edge sich berührt. Dann  
+
+00:01:11.230 --> 00:01:16.240
+können mit scission nach einer union 
+die, die sich nicht berühren wieder  
+
+00:01:16.240 --> 00:01:20.440
+voneinander trennen und wir bekommen ein Array 
+zurück wo die einzelnen Objekte drinliegen.

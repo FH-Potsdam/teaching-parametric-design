@@ -1,0 +1,63 @@
+WEBVTT
+
+00:00:05.200 --> 00:00:08.800
+First up is the union function 
+for combining multiple objects.  
+
+00:00:09.680 --> 00:00:15.920
+Let's create a rotated instance of our 
+original cube object, let's call it rotObj,  
+
+00:00:16.640 --> 00:00:24.160
+use our rotate function and 
+rotate it by 45 degrees.
+
+00:00:26.240 --> 00:00:29.840
+And do the whole thing with our cube object.  
+
+00:00:30.800 --> 00:00:35.280
+And then push our rotated 
+object into our objects array.
+
+00:00:39.520 --> 00:00:45.920
+So we now have a rotate. Two cubes. One rotated 
+by 45 degrees and it already looks like they are  
+
+00:00:45.920 --> 00:00:53.440
+combined, but if you would export this version 
+right now and open it in another 3D software  
+
+00:00:53.440 --> 00:00:58.960
+you would see that those are still two completely 
+separate 3D objects and not a combined one.  
+
+00:00:59.680 --> 00:01:05.440
+To actually combine them, we will not 
+push the individual objects into our array  
+
+00:01:06.240 --> 00:01:08.880
+but instead create a union object  
+
+00:01:09.760 --> 00:01:15.200
+and use the union command. And the union command 
+is very simple. We simply have an array here and  
+
+00:01:15.200 --> 00:01:19.600
+in this array we can add all the different 
+objects that we want to combine into one  
+
+00:01:20.960 --> 00:01:32.160
+union object. In our case we want the cube object 
+and the rotate object and then we push our union  
+
+00:01:32.160 --> 00:01:40.560
+object into our objects list. And what looks 
+like the same as before, is now actually only  
+
+00:01:40.560 --> 00:01:48.560
+one geometry so there are distinct paths along 
+the edges where those two connect to one another  
+
+00:01:49.120 --> 00:02:01.120
+and we could use this for example in a slicer 
+software to create a 3D print of this exact object

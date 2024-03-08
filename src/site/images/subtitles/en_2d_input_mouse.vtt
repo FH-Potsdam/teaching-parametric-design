@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00:04.960 --> 00:00:10.640
+Another interesting input is our mouse. Through 
+the mouse we can get the x and y coordinate of  
+
+00:00:10.640 --> 00:00:15.680
+the current position of our mouse. But we can also 
+get the state, so is it currently click/pressed  
+
+00:00:15.680 --> 00:00:21.280
+and, thereby, trigger certain events and 
+functions. Let's start with the position.  
+
+00:00:22.240 --> 00:00:27.840
+I already showed this in the curve function. 
+Inside our draw function we can get access to  
+
+00:00:27.840 --> 00:00:35.360
+the current position through x and y parameters. 
+We can remove the translate then and now we have  
+
+00:00:35.360 --> 00:00:41.600
+this circle following our mouse. And as we move 
+the mouse the position of the circle changes.  
+
+00:00:42.400 --> 00:00:47.440
+Obviously you can only get the position of 
+the mouse as long as the mouse is over the  
+
+00:00:47.440 --> 00:00:51.920
+active browser window. As soon as you move out 
+of the browser you cannot access the position.  
+
+00:00:53.920 --> 00:00:59.440
+In addition to the current position, we can 
+also get the state. So let's imagine we want to,  
+
+00:00:59.440 --> 00:01:05.200
+say, change the radius depending on if 
+the mouse is currently pressed or not.  
+
+00:01:06.160 --> 00:01:11.840
+For this there is a parameter called, 
+or a variable called mouseIsPressed.  
+
+00:01:12.800 --> 00:01:22.560
+This is a boolean variable. To check if the mouse 
+is currently pressed, we can make the condition  
+
+00:01:22.560 --> 00:01:27.840
+mouseIsPressed ===true. If the mouse is 
+pressed, then the radius should change. And  
+
+00:01:27.840 --> 00:01:35.920
+let's change the radius to 50 when the mouse 
+is clicked. Now as soon as i press my mouse,  
+
+00:01:37.920 --> 00:01:47.280
+the size changes and if i release the mouse again 
+it's 100 again. In addition, there is also certain  
+
+00:01:47.280 --> 00:01:55.600
+functions that are triggered when certain events 
+are happening. Let's say every time somebody  
+
+00:01:55.600 --> 00:02:03.520
+clicks the mouse, the circle size should increase. 
+Let's define our radius here. Let's start with 10.  
+
+00:02:05.120 --> 00:02:10.800
+Remove this chunk here and now there 
+is a function called mouseClicked.  
+
+00:02:12.240 --> 00:02:18.800
+And this function is triggered every time the 
+mouse is clicked down and released. There are a  
+
+00:02:18.800 --> 00:02:25.680
+couple of other functions like, doubleClick 
+and mouseMove. I've added links to those  
+
+00:02:25.680 --> 00:02:30.000
+other functions in the description below 
+the video. But you can use them similar  
+
+00:02:30.000 --> 00:02:36.240
+to how we're using the mouseClick now. Inside the 
+mouseClick, inside the curly brackets we will now  
+
+00:02:36.240 --> 00:02:42.960
+increase the radius by 5 every time the 
+mouse is clicked. I save this again.  
+
+00:02:43.520 --> 00:02:56.960
+We start with 10 and every time i now click 
+the mouse, the radius is increased by five.

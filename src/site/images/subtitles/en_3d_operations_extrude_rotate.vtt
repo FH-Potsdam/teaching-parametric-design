@@ -1,0 +1,66 @@
+WEBVTT
+
+00:00:05.040 --> 00:00:11.840
+There's one thing i forgot about extrudeRotate. 
+So far we had the variant where we had a 2D shape,  
+
+00:00:11.840 --> 00:00:18.400
+it was flipped 90 degrees on its side and 
+then it was rotating around its center point.  
+
+00:00:19.360 --> 00:00:25.040
+But if you remember when we were defining 
+our 2D shapes we can also define the center,  
+
+00:00:25.040 --> 00:00:34.320
+where our 2D shape is located. If i add 
+an offset here, let's say 75 and i save it  
+
+00:00:35.520 --> 00:00:42.000
+and we now look at the outcome of our 
+extrudeRotate. It is still the same thing  
+
+00:00:42.000 --> 00:00:48.640
+happening. So we have our flipped object and it's 
+now rotating with an offset around the center.  
+
+00:00:50.000 --> 00:00:58.000
+If i for example switch this now from 90 degrees 
+to 360 degrees, we can now nicely see how our  
+
+00:00:58.000 --> 00:01:05.120
+rectangle is in 12 segments rotating around 
+the center. And if i decrease this, let's say  
+
+00:01:05.120 --> 00:01:13.200
+six steps, we can nicely see now the six steps 
+our rectangle is taking. Or we can increase it,  
+
+00:01:14.080 --> 00:01:20.160
+to make it more round and of course we can 
+use all other shapes that we had before.  
+
+00:01:20.160 --> 00:01:25.840
+Let's use the circle quickly. This one 
+uses the radius instead of the size.
+
+00:01:28.640 --> 00:01:29.280
+Save this.
+
+00:01:34.480 --> 00:01:36.800
+Oh we need to write circle correctly.
+
+00:01:38.880 --> 00:01:42.960
+And now we get a nice little 
+donut here and we could  
+
+00:01:42.960 --> 00:01:47.520
+decrease the radius a bit and increase our offset.
+
+00:01:51.840 --> 00:01:58.000
+So now you can take any 2D shape you 
+have and use it with an offset to  
+
+00:01:58.000 --> 00:02:07.520
+create even more interesting shapes 
+through the rotate functionality.

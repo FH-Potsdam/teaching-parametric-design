@@ -1,0 +1,57 @@
+/* IBM PLEX MONO */
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.eot'); /* IE9 Compat Modes */
+  src: local('IBM Plex Mono'),
+      local('IBMPlexMono'),
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/IBM-Plex-Mono/IBMPlexMono-Italic.eot'); /* IE9 Compat Modes */
+  src: local('IBM Plex Mono Italic'),
+      local('IBMPlexMono-Italic'),
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Italic.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/IBM-Plex-Mono/IBMPlexMono-Bold.eot'); /* IE9 Compat Modes */
+  src: local('IBM Plex Mono Bold'),
+      local('IBMPlexMono-Bold'),
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Bold.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: local('IBM Plex Mono Bold Italic'),
+      local('IBMPlexMono-BoldItalic'),
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.otf') format('opentype');
+}

@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:04.610 --> 00:00:11.630
+Visual Studio Code ist umsonst und open source, 
+was es zu einem großartigen Code Editor macht.  
+
+00:00:11.630 --> 00:00:16.130
+Darüber hinaus gibt es eine ganz breite 
+Community, die ganz viele Erweiterung für  
+
+00:00:16.130 --> 00:00:20.300
+Visual Studio Code bereitstellt. Ich werde 
+euch nun ein paar Grundfunktionalitäten  
+
+00:00:20.300 --> 00:00:25.160
+von Visual Studio Code zeigen. Das Erste, 
+wenn ihr Visual Studio Code installiert,  
+
+00:00:25.160 --> 00:00:29.360
+sieht es vielleicht anders aus als bei mir. 
+Das liegt daran, dass wir in Visual Studio  
+
+00:00:29.360 --> 00:00:35.810
+Code unter den Einstellungen verschiedene 
+sogenannte Color-Themes wählen können,  
+
+00:00:35.810 --> 00:00:44.270
+um unseren Editor so zu gestalten, wie wir 
+ihn gerne haben wollen. Darüber hinaus sehen  
+
+00:00:44.270 --> 00:00:49.400
+wir hier auf der linken Seite verschiedene 
+Erweiterungen, verschiedene Elemente die uns  
+
+00:00:49.400 --> 00:00:55.160
+Einblicke in unser Projekt geben. Auch dies sieht 
+vielleicht bei euch anders aus. Das Erste ist,  
+
+00:00:55.160 --> 00:01:00.320
+das manchmal diese Zeile per default gar nicht 
+angezeigt wird. Dann müsst ihr auf View gehen,  
+
+00:01:00.320 --> 00:01:09.320
+auf Appearance und dann habt ihr hier unten 
+die "Activity Bar" und das ist diese Leiste,  
+
+00:01:09.320 --> 00:01:16.130
+die ihr hier links noch seht. Die könnt ihr hier 
+einschalten. Wenn ihr hier oben, der oberste  
+
+00:01:16.130 --> 00:01:20.600
+Reiter ist der wichtigste, der Explorer, damit 
+sehen wir den tatsächlichen Inhalt eines Ordners,  
+
+00:01:20.600 --> 00:01:26.510
+den wir gerade ausgewählt haben. Den können wir 
+einfach mit Klick aktivieren und deaktivieren wenn  
+
+00:01:26.510 --> 00:01:31.820
+wir mehr Platz auf unserer Fläche brauchen zum 
+Editieren. Wenn wir dann eine Datei auswählen,  
+
+00:01:31.820 --> 00:01:38.780
+wird die uns hier im Editor angezeigt. Wenn 
+wir z.B. zwei Dateien parallel bearbeiten,  
+
+00:01:38.780 --> 00:01:44.840
+könnt ihr euch auch den Arbeitsraum nochmal teilen 
+und sogar mehrere Spalten nebeneinander aufmachen.
+
+00:01:44.840 --> 00:01:54.530
+Dann gibt es, wie schon erwähnt, ganz viele 
+Erweiterung für Visual Studio Code. Wir werden  
+
+00:01:54.530 --> 00:01:59.960
+in diesem Seminar eine Erweiterung auf jeden 
+Fall brauchen und das ist der "live server".  
+
+00:01:59.960 --> 00:02:10.670
+Hier oben einfach eingeben was ihr sucht, 
+dann drauf klicken und dann findet ihr hier  
+
+00:02:10.670 --> 00:02:16.090
+den Button um das Ganze zu installieren. 
+Wenn ihr selber nach Erweiterungen sucht,  
+
+00:02:16.090 --> 00:02:22.990
+eine kleine Empfehlung: Schaut ein wenig danach 
+wie viele Leute die Erweiterung bereits benutzten.  
+
+00:02:22.990 --> 00:02:28.630
+Denn in solch einer Erweiterung könnte natürlich 
+theoretisch auch Schadcode stecken. Deswegen,  
+
+00:02:28.630 --> 00:02:33.580
+wenn sehr viele Leute eine Erweiterung bereits 
+nutzen, ist die Wahrscheinlichkeit hoch,  
+
+00:02:33.580 --> 00:02:39.640
+dass die Extension auch in Ordnung ist. Ihr könnt 
+darüber hinaus bei vielen Extensions auch direkt  
+
+00:02:39.640 --> 00:02:44.140
+auf Github euch den Source Code anschauen, um zu 
+schauen was diese Extension tatsächlich auf eurem  
+
+00:02:44.140 --> 00:02:49.810
+Rechner macht. Nachdem ihr den "live server" 
+installiert habt, könnt ihr mit diesem "live  
+
+00:02:49.810 --> 00:02:55.780
+server" HTML-Dateien direkt auf eurem Rechner 
+starten. Es wird im grunde ein kleiner Webserver  
+
+00:02:55.780 --> 00:03:02.080
+für euch gestartet, mit dem ihr dann euch Dateien 
+anzeigen lassen könnt. Dazu sage ich euch gleich  
+
+00:03:02.080 --> 00:03:09.340
+im nächsten Video noch mal was, wo ich erkläre wie 
+ihr eure einzelnen Projekte aufsetzen. Das sind so  
+
+00:03:09.340 --> 00:03:14.560
+die wichtigsten Funktionalitäten auch schon, wenn 
+es um Visual Studio Code geht. Schaut euch ruhig  
+
+00:03:14.560 --> 00:03:19.000
+mal in den Erweiterung um, es gibt auch ganz viele 
+Color-Themes, die man noch zusätzlich installieren  
+
+00:03:19.000 --> 00:03:23.920
+kann, sodass ihr den Editor so gestalten könnt, 
+wie ihr ihn tatsächlich gerne haben wollt.

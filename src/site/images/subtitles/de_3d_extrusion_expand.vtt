@@ -1,0 +1,33 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:08.110
+Was wir im zweidimensionalen mit offset erreicht 
+haben, können wir auch im dreidimensionalen  
+
+00:00:08.110 --> 00:00:14.260
+durchführen und zwar mit der expand-Funktion. 
+Hierfür erstellen wir uns ein neues Objekt,  
+
+00:00:14.260 --> 00:00:23.110
+wo wir jetzt unser expanded Objekt reinpacken. 
+Geben hier wieder ein "delta" an. Übergeben  
+
+00:00:23.110 --> 00:00:31.840
+dann noch unser cube-object und pushen dann 
+unser neues Objekt in unsere objects-Liste.
+
+00:00:31.840 --> 00:00:41.560
+Und haben nun ein vergrößertes Objekt. 
+Das Vergrößern je nach Komplexität des  
+
+00:00:41.560 --> 00:00:44.740
+Objektes kann durchaus etwas länger 
+dauern. Deswegen muss man besonders  
+
+00:00:44.740 --> 00:00:50.020
+hier darauf achten wie viele Segmente 
+man einfordert. Denn umso mehr Segmente  
+
+00:00:50.020 --> 00:00:53.890
+ihr haben wollt, umso länger dauert 
+das prozessieren eurer Expansion.

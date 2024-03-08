@@ -1,0 +1,117 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:09.920
+Visual studio code is open source and free to use, 
+which makes it a great tool to use in a seminar  
+
+00:00:09.920 --> 00:00:14.560
+like this. But there's also a big community 
+behind visual studio code, that is developing  
+
+00:00:14.560 --> 00:00:20.880
+new extensions that we can use inside visual 
+studio. The first thing you might notice is,  
+
+00:00:20.880 --> 00:00:26.000
+after installing visual studio code, it might 
+not look like the editor i'm using here. And  
+
+00:00:26.000 --> 00:00:33.680
+this is because we can use different themes to 
+style our editor for us. Through the preferences  
+
+00:00:33.680 --> 00:00:40.960
+you can select different styles, so that it 
+fits your preference and it is to your liking.  
+
+00:00:42.960 --> 00:00:48.320
+Next up, the activity bar here. This is a 
+really nice tool to give you quick access to  
+
+00:00:48.320 --> 00:00:54.880
+different views and tools inside visual studio. 
+Sometimes it does not initially show up. To  
+
+00:00:55.600 --> 00:01:03.360
+make it show up, go to view, appearance 
+and then then select the show activity bar.  
+
+00:01:03.360 --> 00:01:08.000
+This will give you the bar on the left, so 
+you have quick access to different views.  
+
+00:01:08.640 --> 00:01:14.720
+The most important one is the one on the top 
+here. The explorer. This will show you the actual  
+
+00:01:14.720 --> 00:01:20.800
+content of your currently open folder, so you 
+can actually access different files in the folder  
+
+00:01:21.680 --> 00:01:27.280
+on the right side. You now get the 
+actual text editor and what is nice,  
+
+00:01:27.280 --> 00:01:32.720
+you can also open multiple files in parallel. 
+So you can open multiple panes here and,  
+
+00:01:32.720 --> 00:01:39.840
+thereby, for example, compare two files or copy 
+paste certain things from one file to another.  
+
+00:01:41.440 --> 00:01:48.080
+In addition there are other options like the the 
+git tool, that i will show you in the next video  
+
+00:01:48.640 --> 00:01:55.440
+and there is the extensions. One extension that 
+we are using in the seminar is the so-called live  
+
+00:01:55.440 --> 00:02:02.560
+server. If you enter live server in the search 
+bar up here, it should show you the live server  
+
+00:02:02.560 --> 00:02:09.360
+extension. And once you click on it. It should 
+show an install button, right here. So after  
+
+00:02:09.360 --> 00:02:13.520
+installing it you get immediate access to it. 
+You don't need to restart visual studio code to  
+
+00:02:13.520 --> 00:02:20.800
+use it. And if you're looking on your own for 
+other extensions that might be helpful, always  
+
+00:02:20.800 --> 00:02:26.560
+have in mind that these extensions are developed 
+by the open source community and some might be  
+
+00:02:26.560 --> 00:02:32.160
+experimental. So if you're not sure, always make 
+sure that the amount of people that have already  
+
+00:02:32.160 --> 00:02:37.200
+installed this extension is quite big, this makes 
+sure that there's already a lot of people using  
+
+00:02:37.200 --> 00:02:43.680
+it and so it's probably stable and safe to use. 
+For most extensions you can also check on GitHub  
+
+00:02:43.680 --> 00:02:48.160
+the actual source code, if you're interested 
+what this extension is doing on your machine.  
+
+00:02:49.280 --> 00:02:53.760
+So in the next video, when i show you how to set 
+up a new project, i will also show you how to  
+
+00:02:53.760 --> 00:03:00.480
+use the live server extension. This is a 
+rough overview of the most important features  
+
+00:03:00.480 --> 00:03:10.320
+of visual studio code and we will now 
+start creating our own projects and files.

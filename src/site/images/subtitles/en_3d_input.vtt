@@ -1,0 +1,92 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:10.800
+Like in p5.js, in JSCAD we also want to work 
+with parameters, to change our designs as  
+
+00:00:10.800 --> 00:00:18.320
+it's already rendering. And for this we need 
+different input systems. In JSCAD we have a  
+
+00:00:18.320 --> 00:00:24.560
+very convenient way of defining input forms, 
+so that we can change certain parameters and  
+
+00:00:25.200 --> 00:00:31.600
+re-trigger the rendering process. To do so, we 
+need to modify our boilerplate. I've also provided  
+
+00:00:31.600 --> 00:00:36.720
+you with an additional boilerplate, that already 
+includes all these parameter functionalities.  
+
+00:00:37.680 --> 00:00:42.560
+First of all, we need to add a new function. 
+The get parameterDefinitions function,  
+
+00:00:43.840 --> 00:00:49.440
+this function returns an array of 
+objects and each object defines one input  
+
+00:00:50.720 --> 00:00:58.320
+form element. In this case it's a float number, 
+with a default value of five, size is the label  
+
+00:00:58.320 --> 00:01:04.720
+that's going to be displayed next to the input 
+element and "size" the name attribute. This is  
+
+00:01:04.720 --> 00:01:11.840
+the name of the variable that we can later call 
+to get us the current value of the size element.  
+
+00:01:13.280 --> 00:01:20.320
+Then we also need to export our new function, so 
+that the system actually knows that it's there.  
+
+00:01:20.880 --> 00:01:28.320
+And if i save this now, we will see that there is 
+now a new little form widget module in the lower  
+
+00:01:28.320 --> 00:01:34.800
+left, where we can see our new input element. 
+And i've added a list of all the possible input  
+
+00:01:34.800 --> 00:01:39.840
+elements below the video. You can add as many 
+as you want in this little element and it will  
+
+00:01:39.840 --> 00:01:46.960
+just increase in size as you add more elements 
+to it. But now, we of course want to access all  
+
+00:01:46.960 --> 00:01:55.680
+the current variables that we produce through our 
+input form. Therefore, we need to send a variable  
+
+00:02:00.080 --> 00:02:07.120
+to our main function. And through this variable, 
+that we are sending as a parameter to the  
+
+00:02:07.120 --> 00:02:13.920
+main function, we can now access all the elements 
+from our definitions, in the function before.  
+
+00:02:15.120 --> 00:02:25.200
+For example, "parameters.size", this is now the 
+current value of the size element, created above.  
+
+00:02:26.560 --> 00:02:32.080
+The name that you provide here is the name that 
+you can later on use for the parameters object.  
+
+00:02:32.640 --> 00:02:41.600
+To get the current value of this parameter. Let's 
+save this and see what happens. Now we can see  
+
+00:02:41.600 --> 00:02:47.600
+the cube is very small because the current 
+size is set to five, so let's change this to 50  
+
+00:02:48.800 --> 00:02:55.760
+and it's immediately redrawn for us.

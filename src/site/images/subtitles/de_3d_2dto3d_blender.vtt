@@ -1,0 +1,64 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.460
+Um in Blender SVGs in 3D-Objekte umzuwandeln,  
+
+00:00:09.460 --> 00:00:16.090
+müssen wir diese zuerst importieren. Über 
+das Datei-Menü können hier die "scalable  
+
+00:00:16.090 --> 00:00:22.270
+vector graphics" auswählen. 
+Können unsere svg importieren.
+
+00:00:22.270 --> 00:00:35.650
+Und sehen jetzt hier die Linien die ich vorher 
+in p5js generiert habe. Um diese jetzt in  
+
+00:00:35.650 --> 00:00:45.160
+dreidimensionale Shapes zu überführen, müssen 
+wir diese zuerst in solide Körper umwandeln.  
+
+00:00:45.160 --> 00:00:53.380
+Dafür gibt's einen "modifier" bei Blender. Der 
+nennt sich "solidify". Wenn wir den auswählen,  
+
+00:00:53.380 --> 00:01:00.190
+sehen wir auch sofort, dass jetzt unsere 
+zweidimensionalen Flächen hier sofort dimensional  
+
+00:01:00.190 --> 00:01:11.800
+werden und können jetzt hier in den Properties 
+auswählen wie groß das Ganze werden soll. Und  
+
+00:01:11.800 --> 00:01:18.370
+wenn wir zum Beispiel ganz viele Shapes haben und 
+die nicht alle einzeln die Höhe einstellen wollen.  
+
+00:01:18.370 --> 00:01:22.090
+Weil die alle die selbe Höhe nachher bekommen 
+sollen. Können wir die auch gemeinsam auswählen.  
+
+00:01:22.090 --> 00:01:27.940
+Gehen dann hier oben über das objekt-Menü 
+und dann gibt es hier die Join-Funktion,  
+
+00:01:27.940 --> 00:01:35.140
+wo wir die dann alle, man sieht dass hier 
+in der Seite im Layer-Baumzeite, zu einem  
+
+00:01:35.140 --> 00:01:41.790
+neuen Objekt zusammengefügt werden. Können 
+dann wieder unseren solidify hinzufügen und  
+
+00:01:41.790 --> 00:01:50.790
+können jetzt hier genauso unsere Objekte in 
+dreidimensionale Körper überführen und könnte  
+
+00:01:50.790 --> 00:01:57.120
+dann das Ganze zum Beispiel auch wieder über 
+Export in entsprechende Formate zum Beispiel  
+
+00:01:57.120 --> 00:02:03.120
+STL exportieren und damit dann zb mit einem 
+3D Programm oder dem 3D-Drucker weiterarbeiten

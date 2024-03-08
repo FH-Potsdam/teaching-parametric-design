@@ -1,0 +1,200 @@
+WEBVTT
+
+00:00:04.750 --> 00:00:09.910
+Wenn wir anfangen komplexere Arrangements 
+aufzusetzen, kann es irgendwann sehr kompliziert  
+
+00:00:09.910 --> 00:00:14.530
+werden, die ganzen Positionen im Auge zu 
+behalten. Stellen wir uns zum beispiel hier vor,  
+
+00:00:14.530 --> 00:00:18.520
+wir haben hier so ein kleines Muster und 
+wollen dieses Muster jetzt mehrere Male  
+
+00:00:18.520 --> 00:00:22.630
+wiederholen. Dann müssen wir sozusagen für alle 
+einzelnen Elemente immer wieder ausrechnen, ok,  
+
+00:00:22.630 --> 00:00:27.610
+jetzt müssen wir hier 20 dazu addieren und 20 
+nach rechts zu schieben und müssen so für alle  
+
+00:00:27.610 --> 00:00:33.280
+einzelnen Elemente das neuberechnen. Hier gibt es 
+einen schönen Satz an Funktionen die uns helfen  
+
+00:00:33.280 --> 00:00:39.670
+solche Prozesse zu vereinfachen, indem wir nämlich 
+einfach den Nullpunkt unseres Koordinatensystems  
+
+00:00:39.670 --> 00:00:43.750
+verschieben. Also wenn wir uns vorstellen 
+wir haben jetzt hier dieses kleine Muster  
+
+00:00:43.750 --> 00:00:48.520
+aus vier Objekten und wollen dies jetzt mehrere 
+Male hintereinander zeichnen, aber wollen nicht  
+
+00:00:48.520 --> 00:00:53.170
+für jedes Objekt genau ausrechnen wie viele 
+Pixel dies jetzt genau verschoben werden muss,  
+
+00:00:53.170 --> 00:01:02.620
+dann machen wir erstmal eine Schleife außen 
+rum und zeichnen das jetzt einfach mal 10 mal.
+
+00:01:02.620 --> 00:01:13.450
+Jetzt sollen sozusagen unsere kreise und 
+rechtecke gezeichnet werden und um sozusagen  
+
+00:01:13.450 --> 00:01:19.750
+jetzt unseren Nullpunkt zu verschieben, gibt 
+es die sogenannte "translate" Funktion. Hier  
+
+00:01:19.750 --> 00:01:24.520
+kann man jetzt bis zu drei Koordinaten eingeben. 
+Wir können sozusagen auf der x, y und z-Achse,  
+
+00:01:24.520 --> 00:01:29.830
+also auf der Tiefe, den Ursprung unseres 
+Koordinatensystems verschieben. In unserem  
+
+00:01:29.830 --> 00:01:36.190
+Fall wollen wir das ganze jetzt um 40 pixel 
+nach rechts verschieben und auf der y-Achse  
+
+00:01:36.190 --> 00:01:42.100
+lassen wir das ganze so. Wenn ich das 
+jetzt abspeicher. Sehen wir sozusagen,  
+
+00:01:42.100 --> 00:01:49.930
+dass mit jedem Intervall der Ursprung unseres 
+Koordinatensystems um 40 nach links verschoben  
+
+00:01:49.930 --> 00:01:55.390
+wird. Ganz wichtig ist, wenn ihr sozusagen 
+mehrfach translate hintereinander benutzt,  
+
+00:01:55.390 --> 00:02:01.000
+verschiebt ihr nicht sozusagen vom Ursprung 
+das Ganze, sondern vom letzten Zustand. Ganz  
+
+00:02:01.000 --> 00:02:07.540
+wichtig wenn wir sozusagen zurück auf den Ursprung 
+gehen wollen, also das ganze zurücksetzen wollen,  
+
+00:02:07.540 --> 00:02:15.400
+gibt es auch eine Funktion. Dafür müssen 
+wir sozusagen den aktuellen Zustand unseres  
+
+00:02:15.400 --> 00:02:21.740
+Koordinatensystems speichern. Dafür gibt es die 
+sogenannte "push"-Funktion damit wird sozusagen  
+
+00:02:21.740 --> 00:02:28.550
+der aktuelle Zustand gespeichert und wenn ich dann 
+am Ende, wenn ich fertig bin, das ganze wieder auf  
+
+00:02:28.550 --> 00:02:35.690
+den Ursprung zurücksetzen will, gibt es die "pop" 
+Funktion. Damit geht man sozusagen zu dem zurück,  
+
+00:02:35.690 --> 00:02:40.670
+was man zuletzt unter "push" gespeichert hat. Ihr 
+könnt auch mehrfach push und mehrfach pop machen,  
+
+00:02:40.670 --> 00:02:46.310
+um sozusagen verschiedene Zustände nacheinander 
+zu speichern. Wenn ich das jetzt ausführen würde,  
+
+00:02:46.310 --> 00:02:50.210
+haben wir nur noch ein Objekt, beziehungsweise 
+bleiben immer noch zehn, aber die liegen halt  
+
+00:02:50.210 --> 00:02:54.830
+direkt aufeinander, weil: wir gehen nach 
+jedem translate wieder auf Null zurück.  
+
+00:02:54.830 --> 00:03:00.410
+Was wir jetzt machen müssten, ist zum Beispiel 
+hier das Ganze mit unserem X zu multiplizieren,  
+
+00:03:00.410 --> 00:03:05.030
+also das sozusagen beim ersten Mal wird 
+das Ganze um 0 verschoben dann um 40,  
+
+00:03:05.030 --> 00:03:12.950
+80 und so weiter. Und bekommen dann jetzt hier 
+sozusagen die Reihe und können das natürlich auch  
+
+00:03:12.950 --> 00:03:19.520
+auf der y-Achse zum Beispiel machen wir uns jetzt 
+hier noch eine zweite Schleife für den y-Wert.
+
+00:03:20.360 --> 00:03:30.860
+Und jetzt auch noch den y-Wert manipulieren.
+
+00:03:30.860 --> 00:03:40.850
+Das Ganze abspeichern. Können wir uns sozusagen 
+ein ganzes Grid hier aufbauen. Und das Schöne ist,  
+
+00:03:40.850 --> 00:03:47.570
+dass wir sozusagen nur einmal hier sozusagen den 
+Ursprung also den Nullpunkt definieren müssen und  
+
+00:03:47.570 --> 00:03:52.940
+dann können wir einfach immer wieder dieselben 
+Muster zeichnen, ohne dass wir genau berechnen  
+
+00:03:52.940 --> 00:04:00.350
+müssen an welcher Stelle jetzt tatsächlich welches 
+Objekt auftauchen muss. Für welche Shape das  
+
+00:04:00.350 --> 00:04:07.730
+besonders interessantes ist, ist zum Beispiel auch 
+das "triangle", das Dreieck. Beim Triangle müssen  
+
+00:04:07.730 --> 00:04:13.850
+wir ja sozusagen drei Punkte definieren und das 
+jetzt sozusagen quer und kreuz über unseren canvas  
+
+00:04:13.850 --> 00:04:19.040
+zu machen ist gar nicht so einfach. Deswegen finde 
+ich am einfachsten wenn man zum beispiel das dann  
+
+00:04:19.040 --> 00:04:29.250
+auf 0/0 setzt den zweiten Punkt setzen wir auf 15 
+und den dritten Punkt auf minus 15. Wenn ich das  
+
+00:04:29.250 --> 00:04:33.480
+jetzt abspeicher habe ich sozusagen das Dreieck 
+muss mir keine Gedanken machen wo jetzt genau  
+
+00:04:33.480 --> 00:04:43.230
+diese Punkte sind und wenn ich zum Beispiel 
+jetzt ersetzen wir hier das letzte Rechteck
+
+00:04:43.230 --> 00:04:48.540
+durch unser Dreieck. wenn ich jetzt zum beispiel 
+hier das Dreieck an die richtige Position  
+
+00:04:48.540 --> 00:04:58.320
+innerhalb des Musters schieben will, kann ich ganz 
+einfach hier ein weiteres "translate" benutzen
+
+00:04:58.320 --> 00:05:08.880
+und das ganze jetzt in die linke Ecke 
+schieben, also 10/10. Gucken wir. Das passt
+
+00:05:08.880 --> 00:05:16.230
+und habe sozusagen jetzt zwei 
+"translate" hintereinander  
+
+00:05:16.230 --> 00:05:19.770
+genutzt und durch das "pop" wird 
+das ganze trotzdem wieder auf den  
+
+00:05:19.770 --> 00:05:23.310
+letzten Zustand zurückgesetzt den 
+ich über "push" gespeichert haben

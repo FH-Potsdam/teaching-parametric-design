@@ -1,0 +1,122 @@
+@import '_variables.scss';
+
+/* customization of codemirror */
+.cm-editor { height: 400px; }
+.cm-scroller { overflow: auto; overflow-y:scroll; }
+
+iframe {
+  border: none;
+  width:400px;
+  max-height:400px;
+}
+
+#editor{
+  height: 400px;
+  width: calc(100vh - 400px);
+  flex-grow:1;
+}
+
+#container {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  align-content:stretch;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+button{
+  position: fixed;
+  top:8px;
+  right:23px;
+  background:rgba(255,255,255,0.8);
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius:5px;
+  padding: 5px 7px 5px 29px;
+  background-image:url('/images/icons/refresh-double.svg');
+  background-repeat: no-repeat;
+  background-position: 8px 5.5px;
+  background-size: 14px 14px;
+  cursor:pointer;
+  &#copyBtn{
+    background-image:url('/images/icons/copy.svg');
+    background-position: 7px 5.5px;
+    padding-left: 21px;
+    text-indent: -2999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    &:hover{
+      border-left: 2px solid black;
+    }
+    &:focus{
+      animation: 1s multicolor;
+    }
+  }
+  &#updateBtn{
+    right: 53px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+button:hover {
+  background-color: rgba(5, 139, 209, 0.3);
+  border: 2px solid rgba(0,0,0,1);
+}
+
+@keyframes multicolor {
+  0% {
+      background-color: rgba(5, 139, 209, 1);
+  }
+  100% {
+      background-color: rgba(255,255,255,0.8);
+  }
+}
+
+@media screen and (max-width: 735px) {
+  #container {
+    flex-direction:column;
+    height: 100vh;
+  }
+  iframe {
+    height: 400px;
+    width: 100%;
+    max-height: 50vh;
+    border-bottom: 1px solid rgba(200, 200, 200, 1);
+  }
+  #editor{
+    width: 100%;
+  }
+  .cm-editor {
+    height: 100%; 
+  }
+
+  button{
+    position: fixed;
+    top:auto;
+    bottom: 8px;
+    right:73px;
+    &#updateBtn{
+      right: 103px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #c8c8c8;
+    color: #000;
+  }
+  button:hover {
+    background-color: rgba(255,255,255,0.4);
+    border: 2px solid black;
+  }
+  button#copyBtn:hover{
+    border-left: 2px solid black;
+  }
+}

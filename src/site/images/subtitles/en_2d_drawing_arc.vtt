@@ -1,0 +1,117 @@
+WEBVTT
+
+00:00:06.000 --> 00:00:09.840
+One last shape that i would like 
+to introduce to you, is the arc  
+
+00:00:09.840 --> 00:00:15.680
+shape. It's just a segment of a circle, of the 
+circle line that we can draw and this one is a  
+
+00:00:15.680 --> 00:00:22.240
+little bit more complicated than the other 
+ones. We have the arc command and now we have  
+
+00:00:22.240 --> 00:00:27.920
+a couple of parameters. First of course the x 
+and the y value, so where should our circle,  
+
+00:00:27.920 --> 00:00:34.000
+the center of our circle, be located. Then we 
+define the width and the height of our circle.  
+
+00:00:35.120 --> 00:00:39.200
+Obviously you could also use different parameters 
+to create an ellipse instead of a circle.  
+
+00:00:40.800 --> 00:00:47.200
+And now it gets interesting, because now we need 
+to define what the start and the end angle is of  
+
+00:00:47.200 --> 00:00:55.920
+the line that we want to draw. There's two ways 
+of defining this so the default values of defining  
+
+00:00:55.920 --> 00:01:02.960
+angles in p5.js is radians and radians is also 
+the default value for most other applications.  
+
+00:01:03.920 --> 00:01:15.200
+To do this, we have a little helper Math.PI, this 
+holds the PI value and 2 times PI is 360 degrees,  
+
+00:01:15.200 --> 00:01:23.680
+so one full circle, so one PI is 180 degrees. To 
+convert this into degrees, we can simply divide  
+
+00:01:23.680 --> 00:01:31.280
+it by 180 and multiply it by the angle that we 
+want as an outcome. This is now the start angle  
+
+00:01:32.320 --> 00:01:38.000
+and now we need the end angle, so we make 
+it 180 so we have 90 degrees, a quarter  
+
+00:01:38.000 --> 00:01:44.240
+circle. And if i save this now, we have a 
+quarter circle and what you will notice is,  
+
+00:01:44.240 --> 00:01:51.600
+most people think that zero degrees is at the top, 
+but it's actually not at the top but it is at the  
+
+00:01:51.600 --> 00:01:57.280
+right side, so if i change this to zero you will 
+see that the circle actually starts on the right.  
+
+00:01:58.720 --> 00:02:05.920
+okay. so in p5.js we have an option to 
+switch from radians to degrees to make  
+
+00:02:05.920 --> 00:02:11.200
+it a little bit easier and we have to write 
+less code which is nice. For this there is the  
+
+00:02:11.200 --> 00:02:15.760
+angleMode command and here we can 
+say we want to work in DEGREES
+
+00:02:18.880 --> 00:02:28.480
+And now if i would save it, now it would look not 
+right, so what we can do now is we can change,  
+
+00:02:29.120 --> 00:02:35.840
+we can remove the first bit and just use angle 
+in degrees directly. Now we have the same  
+
+00:02:36.480 --> 00:02:45.920
+arc again. And there is one last option. An 
+optional one, by default the arc function  
+
+00:02:45.920 --> 00:02:53.200
+uses an open arc. The end and start point are 
+not connected. There are two different ways of  
+
+00:02:53.200 --> 00:03:01.440
+doing this. There's a PIE version which creates 
+a pie chart. If i change the second angle to 90  
+
+00:03:02.960 --> 00:03:08.640
+we can now see that we have kind of a pie chart 
+and we now could do multiple PI elements and  
+
+00:03:08.640 --> 00:03:19.440
+arcs and create a pie chart from it. There's 
+also a last one which is called the CHORD
+
+00:03:22.800 --> 00:03:27.040
+And here what simply is happening, 
+the start and the end point are simply  
+
+00:03:27.040 --> 00:03:31.840
+being connected. That's it. If i 
+change for example the 90 to 270  
+
+00:03:33.440 --> 00:03:42.160
+we can see that now the upper and 
+the right corner are being connected

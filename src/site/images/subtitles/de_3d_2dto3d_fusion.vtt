@@ -1,0 +1,53 @@
+WEBVTT
+
+00:00:04.279 --> 00:00:14.030
+In Fusion 360 können wir auch SVGs importieren 
+und in 3D-Objekte umwandeln. Hier als Beispiel  
+
+00:00:14.030 --> 00:00:18.710
+mal der Fall, dass wir vielleicht etwas 
+fräsen wollen. Dafür lege ich jetzt hier  
+
+00:00:18.710 --> 00:00:29.819
+erst mal unseren Grundkörper an. Aus dem 
+wir dann später unser SVG rausfräsen wollen.
+
+00:00:29.819 --> 00:00:45.020
+Lege also jetzt hier mal ein Quadrat an und 
+werde das mal 10 mm hoch machen. Und jetzt  
+
+00:00:45.020 --> 00:00:53.510
+sozusagen unser Holzblock. Und jetzt kann 
+ich hier oben über "Insert" SVG einfügen.
+
+00:00:53.510 --> 00:01:01.340
+Mein SVG auswählen. Kann jetzt hier direkt 
+sagen, dass ich es hier auf die Fläche drauf  
+
+00:01:01.340 --> 00:01:11.510
+haben möchte. Kann das ganze dann auch hier auf 
+unserem Block ausrichten. Packe das jetzt mal  
+
+00:01:11.510 --> 00:01:20.390
+grob in die Mitte. Sage danach, dass ich fertig 
+bin. Man kann jetzt hier einfach unsere Flächen,  
+
+00:01:20.390 --> 00:01:27.890
+die wir vorher in p5js gezeichnet haben, einfach 
+auswählen. Gehe auf das Extrusion-Tool und gehe  
+
+00:01:27.890 --> 00:01:36.500
+jetzt 5 mm nach unten, das ist sozusagen fünf 
+Millimeter ins Material reinfräsen. Llick auf ok.
+
+00:01:36.500 --> 00:01:42.500
+Und haben jetzt hier unsere 
+Fläche ich könnte natürlich  
+
+00:01:42.500 --> 00:01:53.330
+auch genauso gut nach oben gehen und 
+hier aus dem Material rausgehen. Und  
+
+00:01:53.330 --> 00:01:59.510
+haben hier mit wenigen Klicks unser 
+SVG in ein 3D-Objekt umgewandelt.

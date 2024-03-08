@@ -1,0 +1,89 @@
+WEBVTT
+
+00:00:04.600 --> 00:00:09.160
+Bisher haben wir unsere Variablen und 
+Parameter immer manuell im Code definiert,  
+
+00:00:09.160 --> 00:00:13.960
+wie zum Beispiel hier, unseren Radius den 
+wir auf 100 setzen und dann weiter unten  
+
+00:00:14.470 --> 00:00:20.440
+beim "circle" command dann wieder einsetzen. 
+Wenn wir generative Designs entwickeln ist es  
+
+00:00:20.440 --> 00:00:26.080
+aber häufig sinnvoll, dass man während der 
+Code schon läuft Parameter leicht anpassen  
+
+00:00:26.080 --> 00:00:31.150
+kann, um z.B. verschiedene Variationen 
+ausprobieren zu können. Und hier haben  
+
+00:00:31.150 --> 00:00:34.600
+wir verschiedene Möglichkeiten. Ich möchte 
+euch jetzt in diesem ersten Video zeigen,  
+
+00:00:34.600 --> 00:00:39.910
+wie ihr eigene Input-Felder generieren könnt. 
+Das sind im Grunde ganz einfach HTML-Inputs,  
+
+00:00:39.910 --> 00:00:44.410
+über die ihr dann Werte generieren könnt, 
+die dann direkt in eurem Code genutzt werden  
+
+00:00:44.410 --> 00:00:51.040
+können. Die einfachste Form ist das sogenannte 
+Text-Input. Dafür müssen wir uns einmal eine  
+
+00:00:51.040 --> 00:00:58.180
+"globale" Variable generieren, in die wir dann 
+gleich sozusagen unser Objekt hineinspeichern.  
+
+00:00:58.180 --> 00:01:03.820
+Und das können wir in der "setup" Funktion 
+machen. Da sagen wird dann createInput und
+
+00:01:03.820 --> 00:01:13.570
+das ist jetzt im Grunde unser Input-Feld, über die 
+wir jetzt sozusagen Werte generieren können. Für  
+
+00:01:13.570 --> 00:01:19.810
+diesen Input können wir jetzt noch definieren, wo 
+die genau positioniert sein soll, also "position"  
+
+00:01:19.810 --> 00:01:25.840
+und können z.B. mal sagen, unser Canvas ist 
+ja 400 groß, also sagen das soll untendrunter  
+
+00:01:25.840 --> 00:01:35.050
+also 10 nach rechts und 410 nach unten und 
+dann können wir noch die Feldgröße angeben:
+
+00:01:35.050 --> 00:01:42.940
+50. Wenn ich das jetzt speicher, bekommen wir 
+hier unten ein kleines Textfeld in das man  
+
+00:01:42.940 --> 00:01:50.140
+jetzt Werte eintragen kann. Und weil das Ganze 
+über diese Funktion hier in unsere Variable  
+
+00:01:50.140 --> 00:01:56.500
+"textInput" reingespeichert wird, können wir 
+später in unserem Code darauf wieder zugreifen  
+
+00:01:56.500 --> 00:02:03.730
+und können dann einfach sagen textInput.value 
+und bekommen dann sozusagen den Wert zurück,  
+
+00:02:03.730 --> 00:02:09.280
+der in diesem Textfeld eingegeben wurde. Wenn 
+ich das jetzt mal speicher verschwindet unser  
+
+00:02:09.280 --> 00:02:13.570
+kreis weil bisher ja nichts drinsteht. Da 
+kann ich zum Beispiel eine 5 reinschreiben  
+
+00:02:13.570 --> 00:02:18.820
+und sehen sofort, dass das direkt 
+in unseren Code übernommen wird.

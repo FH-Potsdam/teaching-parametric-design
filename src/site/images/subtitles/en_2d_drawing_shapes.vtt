@@ -1,0 +1,132 @@
+WEBVTT
+
+00:00:05.280 --> 00:00:12.400
+p5.js has a couple of functions that help us 
+easily draw some primitive shapes. The most  
+
+00:00:13.040 --> 00:00:19.040
+simple one is the so-called "point" and therefore 
+we have the "point" command and inside the "point"  
+
+00:00:19.040 --> 00:00:26.800
+command, we need to provide two parameters we 
+need to provide the X value and the Y value, where  
+
+00:00:26.800 --> 00:00:33.440
+our "point" should be positioned in our coordinate 
+system. In this case i will just say 100/100.
+
+00:00:36.800 --> 00:00:41.440
+Now we see a small black dot here. And the 
+point command is a little bit weird, because  
+
+00:00:42.080 --> 00:00:46.000
+you would probably think, that you would get 
+something like a circle, with a width and a  
+
+00:00:46.000 --> 00:00:53.680
+height, but instead the point is more like a one 
+pixel wide line. So in order to increase the size  
+
+00:00:54.240 --> 00:00:58.080
+of our point, we need to increase the 
+strokeWeight ,which i will show you  
+
+00:00:58.080 --> 00:01:03.520
+in the next video. As an extension of the 
+point, we can also draw a proper line.  
+
+00:01:04.320 --> 00:01:08.960
+For a line, it works the same. We need to 
+provide coordinates, in this case we need  
+
+00:01:08.960 --> 00:01:15.760
+to provide a start- and an end-coordinate. 
+We start with the x and y-coordinate where  
+
+00:01:15.760 --> 00:01:22.480
+our line should start and then the coordinates 
+where our line should end. And if we save this,  
+
+00:01:22.480 --> 00:01:29.600
+we now have a line drawn here. Now the bit 
+more complex shapes. We will start with the  
+
+00:01:30.480 --> 00:01:38.000
+ellipse. The "ellipse" is something that allows us 
+to draw a proper circle or ellipse. Again we start  
+
+00:01:38.000 --> 00:01:44.640
+with the x and the y value, where our ellipse 
+or circle should be positioned on our canvas.  
+
+00:01:45.280 --> 00:01:50.080
+And then we can provide additional parameters 
+for the width and the height of our ellipse.  
+
+00:01:51.200 --> 00:01:57.760
+And now we have a circle. So of course if you want 
+to draw a circle, it's a little bit redundant,  
+
+00:01:57.760 --> 00:02:04.480
+to provide width and height, which is the same 
+in this case. To make this more efficient,  
+
+00:02:04.480 --> 00:02:12.400
+we have also a circle function, which needs 
+obviously an x and y parameter, to know where  
+
+00:02:12.400 --> 00:02:18.560
+to position a circle, but then we only need one 
+parameter to define the diameter of our circle.  
+
+00:02:20.720 --> 00:02:25.920
+Very important: two things about circle 
+and ellipse. First off, the x and the y  
+
+00:02:25.920 --> 00:02:32.000
+coordinate define the center of a circle not the 
+upper left corner, like for the rectangle. This  
+
+00:02:32.000 --> 00:02:37.360
+is very important, this is the default mode 
+for ellipse and circle drawing. In addition,  
+
+00:02:37.920 --> 00:02:43.440
+the radius and width and height we defined, are 
+actually not the radius but the diameter, so  
+
+00:02:44.080 --> 00:02:48.640
+they are the distance from the left side of 
+the circle to the right side of the circle,  
+
+00:02:48.640 --> 00:02:54.400
+not from the center to the circle. It's not the 
+radius, but the diameter of our ellipse or circle.  
+
+00:02:56.320 --> 00:03:03.440
+Next up, obviously we also need a "rectangle" 
+command, to draw rectangles. Again we start  
+
+00:03:03.440 --> 00:03:10.400
+with the x and the y parameter and then we can 
+define the width and the height of our rectangle.  
+
+00:03:11.200 --> 00:03:16.480
+And there we have a rectangle. Similar to the 
+circle command, there's also a square command,  
+
+00:03:17.200 --> 00:03:25.520
+which makes it easier to write squares. In 
+this case we only need to provide one parameter  
+
+00:03:27.040 --> 00:03:34.080
+and we get a little square. There's a couple 
+more simple shapes, but this should be it for now  
+
+00:03:34.640 --> 00:03:38.240
+and you can explore more shapes in the reference.  
+
+00:03:38.240 --> 00:03:45.840
+And we will start working with those 
+simple shapes in the beginning.

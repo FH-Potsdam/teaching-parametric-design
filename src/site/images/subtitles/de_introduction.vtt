@@ -1,0 +1,685 @@
+WEBVTT
+
+00:00:04.820 --> 00:00:09.680
+Willkommen zur Einführung ins Parametric Design. 
+Bevor wir mit dem parametrischen Design beginnen,  
+
+00:00:09.680 --> 00:00:14.990
+wollen wir gemeinsam uns noch den modernen 
+Designprozess anschauen. Dieser ist mittlerweile  
+
+00:00:14.990 --> 00:00:19.790
+eigentlich komplett durchdigitalisiert. Es werden 
+verschiedenste Werkzeuge in den verschiedenen  
+
+00:00:19.790 --> 00:00:26.060
+Abschnitten der Gestaltung eingesetzt, die uns 
+die Aufgaben abnehmen, erleichtern und uns helfen  
+
+00:00:26.060 --> 00:00:31.550
+unsere Ideen zu realisieren und dann noch in die 
+Produktion zu überführen. Die Hersteller solcher  
+
+00:00:31.550 --> 00:00:38.330
+Software ob es Adobe ist, ob es Sketch ist oder 
+Figma ist, versprechen alle mit ihren Lösungen  
+
+00:00:38.330 --> 00:00:44.090
+nicht nur einen effizienten Designprozess, sondern 
+vor allem, dass wir all unsere Ideen durch diese  
+
+00:00:44.090 --> 00:00:50.360
+Werkzeuge realisieren können. Aber ist dies 
+tatsächlich so? Wenn wir uns die Lösungen,  
+
+00:00:50.360 --> 00:00:55.550
+die Softwarelösungen genauer anschauen, haben 
+wir natürlich eine Menge Möglichkeiten in  
+
+00:00:55.550 --> 00:01:00.860
+diesen Lösungen, aber wir müssen uns auch 
+den verschiedenen Gestaltungsparadigmen,  
+
+00:01:00.860 --> 00:01:07.190
+den verschiedenen Interfaceparadigmen unterwerfen 
+und sind natürlich schon eingeschränkt in der Art  
+
+00:01:07.190 --> 00:01:11.420
+und Weise wie wir hier drinnen arbeiten, was 
+wir damit erstellen können und was wir auch  
+
+00:01:11.420 --> 00:01:16.790
+nicht erstellen können. Und damit will ich nicht 
+sagen, dass das in anderen Medien anders ist.  
+
+00:01:16.790 --> 00:01:22.100
+Jedes Medium das wir benutzen, ob wir mit der Hand 
+zeichnen oder am Rechner arbeiten, hat natürlich  
+
+00:01:22.100 --> 00:01:28.730
+bestimmte Einschränkungen. Beim digitalen 
+Gestalten hat es einen wesentlich größeren  
+
+00:01:28.730 --> 00:01:35.090
+Einfluss auf unsere Arbeit. Denn während wir beim 
+analogen Arbeiten vielleicht durch die Werkzeuge  
+
+00:01:35.090 --> 00:01:40.040
+die uns zur Verfügung stehen eingeschränkt 
+sind, können wir natürlich aber ganz andere  
+
+00:01:40.040 --> 00:01:44.720
+Entscheidung treffen. Wenn ich eine Entscheidung 
+treffe zum Beispiel mein Papier zusammenzuknüllen,  
+
+00:01:44.720 --> 00:01:49.730
+das anzuzünden und danach in Farbe zu tauchen, 
+dann kann ich das machen. Wenn ich solch eine  
+
+00:01:49.730 --> 00:01:55.550
+Idee im Digitalen habe, etwas ganz verrücktes 
+zu machen, bin ich trotzdem durch die Werkzeuge  
+
+00:01:55.550 --> 00:01:59.960
+die mir zur Verfügung stehen eingeschränkt. 
+Und diese Werkzeuge werden von Unternehmen  
+
+00:01:59.960 --> 00:02:05.690
+gebaut. Werden von anderen Menschen gebaut und ich 
+muss mich sozusagen in meiner Art der Gestaltung  
+
+00:02:05.690 --> 00:02:12.470
+den Prinzipien die diese anderen Menschen sich 
+überlegt haben und implementiert haben unterwerfen  
+
+00:02:12.470 --> 00:02:19.040
+und darin einen Weg finden wie ich meine Ideen 
+umsetzen kann. Wir werden uns im Rahmen dieses  
+
+00:02:19.040 --> 00:02:24.260
+Kurses speziell mit den Raster-Informationen und 
+den Vektor-Informationen beschäftigen. Weniger  
+
+00:02:24.260 --> 00:02:30.680
+mit Text und Layout von Texten. Auch das kann man 
+durch Code machen zum Beispiel fürs Web mit HTML  
+
+00:02:30.680 --> 00:02:36.320
+und CSS. Wir konzentrieren uns aber stärker auf 
+diese Output-Formate, die man dann auch in anderen  
+
+00:02:36.320 --> 00:02:43.430
+Anwendungen weiternutzen kann. Hierfür sozusagen 
+noch mal eine Ebene weiter runter, wir haben diese  
+
+00:02:43.430 --> 00:02:49.490
+Daten die wir im Rahmen dieses Kurses generieren 
+und diese Dateien in denen unsere Informationen  
+
+00:02:49.490 --> 00:02:54.590
+abgelegt werden. Wenn wir diese in unserem 
+normalen Designprozess bearbeiten, dann haben  
+
+00:02:54.590 --> 00:03:00.320
+wir immer eine App die ist der Interpreter, 
+die schaut sich diese Datei an, stellt diese  
+
+00:03:00.320 --> 00:03:05.570
+informationen dann so dar, dass wir sie dann durch 
+verschiedene Interaktionsformen manipulieren und  
+
+00:03:05.570 --> 00:03:11.720
+bearbeiten können. Und dabei sind wir dann auf die 
+Interaktionsmöglichkeiten angewiesen, die uns über  
+
+00:03:11.720 --> 00:03:17.180
+die App zur Verfügung gestellt werden. Weil nur 
+das sind die einzigen für uns nutzbaren, möglichen  
+
+00:03:17.180 --> 00:03:24.410
+Wege diese Daten zu bearbeiten. Bei diesen daten, 
+die dann durch die App generiert werden, gibt es  
+
+00:03:24.410 --> 00:03:28.370
+verschiedenste Formate. Was hier noch mal wichtig 
+ist zu unterscheiden, ist dass es sogenannte  
+
+00:03:28.370 --> 00:03:34.580
+proprietäre Formate gibt. Das sind Formate die 
+nur für ganz spezielle Anwendungen funktionieren  
+
+00:03:34.580 --> 00:03:38.990
+und die wir mit keinen anderen Anwendungen 
+öffnen können. Diese sind nicht besonders  
+
+00:03:38.990 --> 00:03:44.810
+ideal, wenn wir zum Beispiel über Grenzen von 
+Anwendungen hinweg arbeiten wollen. Daneben gibt  
+
+00:03:44.810 --> 00:03:49.100
+es mittlerweile auch eine Menge offene Formate 
+die von verschiedensten Anwendungen unterstützt  
+
+00:03:49.100 --> 00:03:54.890
+werden. Im 2D-Vector-Bereich ist es zum Beispiel 
+die SVG-Grafik. Die können wir in allen beliebigen  
+
+00:03:54.890 --> 00:04:02.210
+Programmen eigentlich öffnen und können auch die 
+rohe Datei direkt bearbeiten. Und hier noch mal  
+
+00:04:02.210 --> 00:04:08.900
+wichtig, die SVG-Datei ist zum Beispiel eine Datei 
+die stark standardisiert ist. Hier gibt es eine  
+
+00:04:08.900 --> 00:04:15.470
+offene, große Community, die gemeinsam definiert 
+wie diese Dateien aufgebaut sein müssen, damit wir  
+
+00:04:15.470 --> 00:04:23.520
+sie über Anwendungsgrenzen hinweg einfach nutzen 
+können. Was wir im Rahmen dieses kurses machen  
+
+00:04:23.520 --> 00:04:28.470
+ist nun zu schauen, was ist wenn wir Ideen haben, 
+die wir nicht mit irgendeiner Anwendung umsetzen  
+
+00:04:28.470 --> 00:04:34.020
+können. Wie können wir dann trotzdem unsere Idee 
+möglicherweise umsetzen. Und dafür werden wir  
+
+00:04:34.020 --> 00:04:39.900
+eigene Anwendung bauen. Wir werden selber Code 
+schreiben und damit versuchen neue Werkzeuge,  
+
+00:04:39.900 --> 00:04:45.060
+neue Lösungen zu generieren, die über die 
+existierenden Lösungen der standardisierten  
+
+00:04:45.060 --> 00:04:52.230
+Anwendung hinausgehen. Und uns dadurch ganz neue 
+Möglichkeiten eröffnen. Wir werden dies im 3D-Raum  
+
+00:04:52.230 --> 00:04:58.140
+machen und wir werden dies im 2D-Raum machen und 
+werden uns da ganz unterschiedliche Techniken  
+
+00:04:58.140 --> 00:05:03.150
+anschauen wie wir unsere eigenen Output-Dateien 
+generieren können, um diese dann weiter zu  
+
+00:05:03.150 --> 00:05:10.080
+bearbeiten. Wie gesagt, wir werden zum einen 
+Raster generieren. Raster kann natürlich sowohl  
+
+00:05:10.080 --> 00:05:15.990
+2D- als auch 3D-Körper sein, die dann in ein Bild 
+hinein gerendert werden. Daneben aber auch die  
+
+00:05:15.990 --> 00:05:20.490
+rohen Vektor-Information. Wo wir sozusagen immer 
+noch die einzelnen Vektoren bearbeiten können und  
+
+00:05:20.490 --> 00:05:28.410
+das auf 2D- und auf 3D-Ebene. Das ist zum einen 
+interessant wenn wir dann die nächste Stufe gehen,  
+
+00:05:28.410 --> 00:05:34.290
+wie wir die Daten weiternutzen können, wenn es 
+dann in die Produktion geht. Da werden wir uns  
+
+00:05:34.290 --> 00:05:40.140
+Sachen wie 3D-Druck anschauen oder die CNS-Fräse 
+anschauen, den Laser. Natürlich können wir  
+
+00:05:40.140 --> 00:05:44.700
+solche Sachen auch drucken, also in klassische 
+Druckmaschine überführen. Wir können sie aber  
+
+00:05:44.700 --> 00:05:50.700
+auch mit z.B. Stoffen mit einer Stickmaschine 
+weiterbearbeiten oder mit einem Cutter-Plotter,  
+
+00:05:50.700 --> 00:05:56.760
+um Sachen zum Beispiel auszuschneiden. Auf der 
+rein digitalen Ebene eröffnen sich natürlich  
+
+00:05:56.760 --> 00:06:01.710
+auch diverse Möglichkeiten, wie wir unsere 
+generierten Dateien weiter nutzen können. Ob es in  
+
+00:06:01.710 --> 00:06:08.070
+der Web-Eentwicklung ist, in AR- und VR-Anwendung, 
+wo wir zum Beispiel 3D-Körper im Raum darstellen  
+
+00:06:08.070 --> 00:06:12.630
+können, oder ob es Videos sind, wo wir zum 
+Beispiel die Sequenzen die wir durch unseren Code  
+
+00:06:12.630 --> 00:06:17.820
+generieren dann in Videos umwandeln können oder 
+später als Ausblick dann die Datenvisualisierung,  
+
+00:06:17.820 --> 00:06:23.880
+wo wir Daten nehmen und daraus dann visuelle 
+Formen generieren. Und natürlich auch in anderen  
+
+00:06:23.880 --> 00:06:27.780
+3D-Anwendungen. Dort können wir unsere Objekte 
+laden. Dort können wir Bilder laden die wir als  
+
+00:06:27.780 --> 00:06:34.860
+Texturen benutzen und so ganz neue Möglichkeiten 
+Daten und Informationen und Objekte zu generieren  
+
+00:06:34.860 --> 00:06:40.620
+und unsere Design Ideen Wirklichkeit werden 
+zu lassen. Doch was ist Parametrisches Design  
+
+00:06:40.620 --> 00:06:45.270
+eigentlich? Es gibt verschiedenste Definitionen 
+aus verschiedenen Arbeitsgruppen, die versuchen  
+
+00:06:45.270 --> 00:06:50.550
+dies zu beschreiben. Zum Beispiel gibt es von Zaha 
+Hadid und ihren Kolleg*innen ein Manifest, das  
+
+00:06:50.550 --> 00:06:56.220
+versucht Parametrisches Design in der Architektur 
+zu definieren. Genauso gibt es auch aus anderen  
+
+00:06:56.220 --> 00:07:01.290
+Bereichen des Designs Texte die versuchen 
+zu beschreiben worum es im Parametric Design  
+
+00:07:01.290 --> 00:07:09.480
+eigentlich geht. Auf der ganz rudimentären Basis 
+geht es darum, dass im klassischen Design: bewegen  
+
+00:07:09.480 --> 00:07:17.640
+wir einzelne Objekte, einzelne Gestaltungsobjekte, 
+Linien, Flächen, Polygone einzeln, manuell in  
+
+00:07:17.640 --> 00:07:24.030
+unserem 2D- oder 3D-Raum hin und her, verbinden 
+sie miteinander und erstellen so unsere Artefakte.  
+
+00:07:24.030 --> 00:07:30.930
+Im Parametrischen Design geht es darum, dass wir 
+diese manuelle Arbeit, dieses manuelle Gestalten,  
+
+00:07:30.930 --> 00:07:38.880
+über Parameter leisten, heisst Positionen, Größen 
+etc. werden über sogenannte Parameter definiert  
+
+00:07:38.880 --> 00:07:44.700
+und nicht mehr manuell eingestellt. Darüber 
+können wir zum Beispiel dann auch Abhängigkeiten  
+
+00:07:44.700 --> 00:07:50.160
+verschiedener Objekte zueinander generieren. Wir 
+können zum Beispiel bestimmen, dass ein 3D-Körper  
+
+00:07:50.160 --> 00:07:56.340
+eine bestimmte Ratio hat, also das Breite und Höhe 
+in einem bestimmten Verhältnis zueinander stehen.  
+
+00:07:56.340 --> 00:08:01.980
+Wenn wir verschiedene Radii haben zum Beispiel 
+einen Außen- und einen Innen-Radius, wie hier in  
+
+00:08:01.980 --> 00:08:09.690
+diesem Beispiel. Könnten wir definieren, dass der 
+Innenradius 90% vom Außenradius ist. Und so können  
+
+00:08:09.690 --> 00:08:15.870
+wir über eine manuelle Gestaltung hinausgehen und 
+in eine wirklich systematischen Gestaltung von  
+
+00:08:15.870 --> 00:08:21.420
+Objekten das Ganze überführen. Dies hilft uns zum 
+Beispiel dabei komplexere Muster und Pattern zu  
+
+00:08:21.420 --> 00:08:29.190
+generieren oder größere, komplexere Designsysteme 
+zu entwickeln. Was dafür wichtig ist, dass wir von  
+
+00:08:29.190 --> 00:08:35.580
+dieser klassischen Arbeit, wo wir uns wirklich 
+auf einzelne Design-Objekte konzentrieren, hin  
+
+00:08:35.580 --> 00:08:41.640
+zu einer systematischeren Arbeit im Design gehen. 
+Also wo es mehr um Systeme, um das Gestalten von  
+
+00:08:41.640 --> 00:08:48.640
+Systemen geht. Ein ganz schönes aktuelles Beispiel 
+dazu ist das aktuellste Android-Betriebssystem. Wo  
+
+00:08:48.640 --> 00:08:55.750
+Benutzer*innen ein Bild auswählen können, das 
+Gintergrundbild des Startbildschirms. Und aus  
+
+00:08:55.750 --> 00:09:01.600
+diesem Bild werden prägnante Farben extrahiert. 
+Und aus diesen Farben wird dann ein Farbsystem  
+
+00:09:01.600 --> 00:09:07.540
+für das komplette Betriebssystem generiert. 
+Also wird gleichzeitig auf Kontraste geachtet,  
+
+00:09:07.540 --> 00:09:13.720
+also es gibt bestimmte Systeme, Algorithmen die 
+entwickelt wurden, die basierend auf diesem Bild  
+
+00:09:13.720 --> 00:09:18.820
+dann ein ganzes Farbsystem entwickeln, 
+aber natürlich wurden von vornherein von  
+
+00:09:18.820 --> 00:09:24.760
+den Gestalter*innen Regeln definiert. Regeln 
+wie dieses Farbsysteme angewandt werden soll,  
+
+00:09:24.760 --> 00:09:30.640
+es geht also weg an dieser Stelle davon, dass 
+man zum Beispiel sagt, okay, dieses Design hat  
+
+00:09:30.640 --> 00:09:35.560
+jetzt genau diese Farbe und dieses Icon hat eine 
+andere Farbe, sondern es geht darum, dass man zum  
+
+00:09:35.560 --> 00:09:40.510
+Beispiel eine Palette definiert und dann für diese 
+Palette, unabhängig davon was es jetzt für eine  
+
+00:09:40.510 --> 00:09:46.030
+konkrete Farbe ist, ob es ein Rot- und Blauton 
+ist, diese verschiedenen Töne in verschiedenen  
+
+00:09:46.030 --> 00:09:52.900
+Kontraststufen unterschiedlich eingesetzt werden. 
+Also müssen ganz anders über unsere Designs,  
+
+00:09:52.900 --> 00:09:59.470
+über unsere Artefakte nachdenken, als wir das bei 
+unserer normalen gestalterischen Arbeit tun. Ich  
+
+00:09:59.470 --> 00:10:05.020
+möchte euch nun einfach ein paar Beispiele zeigen, 
+wie Parametrisches Design in unterschiedlichen  
+
+00:10:05.020 --> 00:10:10.810
+Designrichtungen einfließen kann. Hier ein schon 
+etwas älteres Beispiel von Boris Müller, bei uns  
+
+00:10:10.810 --> 00:10:18.010
+am Interface Design. Das ist jetzt mittlerweile 
+schon gut zehn Jahre alt, eine Plakatserie für  
+
+00:10:18.010 --> 00:10:27.520
+ein Poetry Festival entwickelt und hat hierfür, 
+in Bremen war das damals, hat dafür für jedes  
+
+00:10:27.520 --> 00:10:34.720
+Jahr ein neues parametrische Design entwickelt, 
+was hier dann im Hintergrund dieser Posterserie,  
+
+00:10:34.720 --> 00:10:40.540
+dann immer genutzt wurde. Die sachen die wir über 
+unser parametrisches Design generieren, können  
+
+00:10:40.540 --> 00:10:48.670
+wir dann zum Beispiel als Bilder auch wieder in 
+Druckprojekten benutzen. Wir sind hier nicht im  
+
+00:10:48.670 --> 00:10:53.540
+Digitalen verhaftet, sondern können das Ganze 
+natürlich auch ins Analoge wieder überführen.  
+
+00:10:53.540 --> 00:11:02.150
+Es gibt diverse Beispiele wo es ums Branding geht. 
+Wo generative Grafiken generiert werden, um ein  
+
+00:11:02.150 --> 00:11:09.170
+variables Corporate Design zu generieren. Hier 
+ein sehr schönes Beispiel, was fürs MIT generiert  
+
+00:11:09.170 --> 00:11:16.700
+wurde. Dann über Parameter ganz viele Variationen 
+ein und desselben Systems zum Beispiel generiert  
+
+00:11:16.700 --> 00:11:23.660
+werden. Wir können das Ganze im Internet natürlich 
+in Webseiten nutzen, um dort generative Grafiken  
+
+00:11:23.660 --> 00:11:28.820
+einzubinden, in Header-Grafiken zum Beispiel. 
+Wie hier bei der Information+ Conference, die  
+
+00:11:28.820 --> 00:11:34.640
+das UCLab mit organisiert hat. Wir können es auch 
+zum Experimentieren benutzen, um über Parameter,  
+
+00:11:34.640 --> 00:11:40.490
+über Zufallswerte unterschiedliche Variationen 
+ein und derselben Konzeptes zu generieren. Und  
+
+00:11:40.490 --> 00:11:47.630
+darüber auszuprobieren und uns langsam an unsere 
+Wunschidee, an unser Wunschkonzept heranzugehen.  
+
+00:11:47.630 --> 00:11:53.120
+Was normalerweise über ein manuelles Design 
+extrem aufwändig wäre, Wwenn wir hunderte  
+
+00:11:53.120 --> 00:11:57.980
+verschiedene varianten machen wollen, wir alles 
+einzeln in einem Grafikbearbeitungsprogramm  
+
+00:11:57.980 --> 00:12:04.460
+erstellen müssten. Oder als Alternative, wir 
+einen Code schreiben, der über Parameter das  
+
+00:12:04.460 --> 00:12:09.620
+für uns generiert. Und das funktioniert 
+natürlich nicht nur um zweidimensionalen,  
+
+00:12:09.620 --> 00:12:15.470
+sondern auch im dreidimensionalen. Hier ein sehr 
+schönes Beispiel wo verschiedene Raumkonzepte  
+
+00:12:15.470 --> 00:12:20.720
+entwickelt wurden. Auch wieder über Parameter 
+und darüber verschiedene Varianten, die man dann  
+
+00:12:20.720 --> 00:12:28.730
+visuell explorieren kann. Und da gibt es ganz 
+viele Beispiele die auch wieder hier zeigen,  
+
+00:12:28.730 --> 00:12:35.930
+wie dieses parametrische Arbeiten uns wirklich 
+neue Möglichkeiten erschafft. Wenn wir solch  
+
+00:12:35.930 --> 00:12:40.850
+ein Objekt hier über klassische manuelle Arbeit 
+machen wollen würden, wird das extrem viel Arbeit,  
+
+00:12:40.850 --> 00:12:47.810
+diese einzelnen Verstrebungen alle manuell in 
+einem 3D-Programm anzulegen. Oder alternativ,  
+
+00:12:47.810 --> 00:12:54.620
+das Ganze parametrische zu machen und sich über 
+Code generieren zu lassen. Ein weiteres Beispiel  
+
+00:12:54.620 --> 00:13:03.500
+auch wieder aus dem Produktdesign. Und gerade wenn 
+es um das Generieren von 3D-Formen geht, gibt es  
+
+00:13:03.500 --> 00:13:11.070
+extrem spannende Ansätze aus der Mathematik, wo 
+über Formeln, über Geometrien ganz interessante  
+
+00:13:11.070 --> 00:13:18.690
+Körper generieren kann. Nur dadurch, dass man über 
+Code, neue 3D-Vektoren sich generieren lässt. In  
+
+00:13:18.690 --> 00:13:24.660
+der Architektur gibt es ganz viele Beispiele dafür 
+wie parametrisches Design genutzt werden kann. Zum  
+
+00:13:24.660 --> 00:13:29.670
+einen auch wieder um Varianten zu erstellen, 
+aber auch um ganz neue Form zu generieren.  
+
+00:13:29.670 --> 00:13:35.100
+Formen die über klassische Architektur-Software 
+gar nicht erreicht werden kann, sondern die  
+
+00:13:35.100 --> 00:13:41.940
+nur über Algorithmen, über Code überhaupt erst 
+berechenbar werden und die manuell viel viel zu  
+
+00:13:41.940 --> 00:13:48.540
+aufwändig wären umzusetzen. Zum Beispiel auch die 
+Fassade der Elbphilharmonie in Hamburg ist auch  
+
+00:13:48.540 --> 00:13:54.900
+über solche Algorithmen berechnet worden, um die 
+Formen und diese Ästhetik dieses Erscheinungsbild  
+
+00:13:54.900 --> 00:14:01.560
+der Fenster zum Beispiel zu berechnen. Wie sie 
+dann schlussendlich implementiert wurden. Und  
+
+00:14:01.560 --> 00:14:06.990
+auch hier wieder Beispiele, was natürlich auch im 
+zweidimensionalen Muster sich generieren, die man  
+
+00:14:06.990 --> 00:14:11.610
+dann sozusagen extrudieren kann. Das Ganze kann 
+natürlich sogar noch einen Schritt weiter gehen,  
+
+00:14:11.610 --> 00:14:18.330
+also dass wir kinetische Fassaden haben, die sich 
+sogar verändern. Die auf Einflüsse der Außenwelt  
+
+00:14:18.330 --> 00:14:23.040
+reagieren zum Beispiel, so zu einer Bestattung 
+oder weniger Beschattung führen. Wo wir auch  
+
+00:14:23.040 --> 00:14:27.900
+hier wieder zum einen eine parametrische 
+Fassade haben, wir haben Muster die in die  
+
+00:14:27.900 --> 00:14:32.910
+Fassade integriert sind, aber gleichzeitig 
+das Ganze noch einen Schritt weiter gedacht,  
+
+00:14:32.910 --> 00:14:39.690
+dass das Ganze darüber hinaus auch noch sozusagen 
+durch Daten verändert wird und sich sozusagen den  
+
+00:14:39.690 --> 00:14:45.930
+Tagesbedingungen anpassen kann. Auch hierfür gibt 
+es diverse Beispiele. Fassaden müssen natürlich  
+
+00:14:45.930 --> 00:14:49.950
+nicht nur physisch sich verändern, es gibt 
+natürlich auch Beispiele wie dies über Displays  
+
+00:14:49.950 --> 00:14:57.690
+möglich ist. Und Fassaden so interaktiv werden. 
+Und so gibt es mittlerweile einen riesengroße  
+
+00:14:57.690 --> 00:15:01.620
+Bandbreite an Beispielen, wie man das Ganze 
+einsetzen kann. Es gibt ein wunderbares Buch:  
+
+00:15:01.620 --> 00:15:08.730
+Generative Gestaltung, das ganz viel Inspiration 
+bietet und gerade für den Einstieg wunderbar ist,  
+
+00:15:08.730 --> 00:15:14.760
+weil es auch neben den visuellen Beispielen 
+dazu immer gleich Code liefert, den man sich  
+
+00:15:14.760 --> 00:15:18.920
+auch online herunterladen kann. Das buch gibt es 
+auch in unserer Bibliothek zum Ausleihen. Darüber  
+
+00:15:18.920 --> 00:15:26.330
+als zwei letzte Beispiel aus meiner eigenen 
+Arbeit. Ich finde es besonders interessant,  
+
+00:15:26.330 --> 00:15:31.370
+dann sozusagen bisschen auch schon als Ausblick, 
+wenn man dann sogar noch Daten in die Arbeit mit  
+
+00:15:31.370 --> 00:15:37.340
+Parametern hier reineinbringt. Dies ist ein 
+Beispiel wo wir physische Karten von Berlin  
+
+00:15:37.340 --> 00:15:41.930
+generiert haben. Haben dafür den Laser-Cutter 
+benutzt. In dem Fall haben wir zum einen  
+
+00:15:41.930 --> 00:15:47.510
+Wasserflächen graviert und dann aber auch die 
+Grünflächen ausgeschnitten und haben diese dann im  
+
+00:15:47.510 --> 00:15:54.140
+nächsten Schnitt dann wirklich mit Moos bepflanzt, 
+um sozusagen eine physische Visualisierung von  
+
+00:15:54.140 --> 00:16:00.260
+Grünflächen für das Land Berlin zu machen. Und 
+dann noch weiter in die dritte Dimension zu gehen,  
+
+00:16:00.260 --> 00:16:06.500
+hier ein physisches Stadtmodell, wo verschiedene 
+Elemente der Stadt physisch visualisiert wurden.  
+
+00:16:06.500 --> 00:16:13.040
+Auch das eine Möglichkeit wie man Daten in 
+Visualisierung im zweidimensionalen aber  
+
+00:16:13.040 --> 00:16:20.600
+auch dreidimensionalen nutzen kann, um innovative 
+parametrische Designs zu generieren. Weitergehend  
+
+00:16:20.600 --> 00:16:27.410
+als Ausblick, wir werden uns wie gesagt im 
+Kurs speziell damit beschäftigen wie wir Code
+
+00:16:27.410 --> 00:16:35.480
+nutzen können um Artefakte zu generieren, 
+Vektordaten, Rasterdaten, um diese dann in  
+
+00:16:35.480 --> 00:16:41.000
+anderen Anwendungen weiter zu nutzen oder in 
+Produktionsprozessen weiter zu nutzen. Aber  
+
+00:16:41.000 --> 00:16:48.230
+in Programmen wie Rhino3D gibt es zum Beispiel 
+auch parametrische Konzepte, wie man durch Code,  
+
+00:16:48.230 --> 00:16:54.410
+durch Parameter 3D-Objekte generieren kann. 
+Und ähnliche Konzepte nutzen kann wie wir  
+
+00:16:54.410 --> 00:17:00.140
+das auch in diesem Kurs machen werden. Das 
+als erster Überblick, als erster Einstieg,  
+
+00:17:00.140 --> 00:17:05.300
+als erste Inspiration für das Thema 
+Parametrisches Design und in den nächsten  
+
+00:17:05.300 --> 00:17:10.130
+Einheiten werden wir uns nun ganz langsam 
+diesem Thema von Grund auf nähern und die  
+
+00:17:10.130 --> 00:17:15.200
+verschiedenen Tools und Prozesse kennenlernen, 
+um selber eigene Tools durch Code zu schreiben

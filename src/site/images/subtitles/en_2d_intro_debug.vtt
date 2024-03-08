@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:10.320
+An important part of coding is debugging. Figuring 
+out what is not working in your code. And there's  
+
+00:00:10.320 --> 00:00:15.600
+a really nice tool, that helps you do this: the 
+Web Developer Tools. If you have your sketch  
+
+00:00:15.600 --> 00:00:22.160
+open in your browser, simply do a right-click on 
+the website and click on the "inspect" button. If  
+
+00:00:22.160 --> 00:00:27.760
+you're using Safari, you might need to activate 
+the developer tools first. I've added a link in  
+
+00:00:27.760 --> 00:00:34.640
+the description below the video how to do this. By 
+default, the developer tools open as part of your  
+
+00:00:34.640 --> 00:00:38.960
+browser window, which makes it hard to actually 
+see the original content that you're working on.  
+
+00:00:40.320 --> 00:00:45.840
+If you click on the three dots in the upper 
+right, you can switch to the window-mode,  
+
+00:00:45.840 --> 00:00:51.200
+where you get a separate window for the developer 
+tools. The developer tools give you a lot of  
+
+00:00:51.200 --> 00:00:56.560
+different insights into how your website is 
+performing and how it works. From "elements",  
+
+00:00:56.560 --> 00:01:01.920
+which show you the HTML and CSS structure of your 
+websites, to "network", which shows you which  
+
+00:01:01.920 --> 00:01:06.560
+files are being loaded by your website, to the 
+"console". And the "console" is the most important  
+
+00:01:06.560 --> 00:01:12.480
+part for us inspecting our JavaScript. In the 
+"console" you will see any errors coming up,  
+
+00:01:13.600 --> 00:01:19.680
+to demonstrate this, i will quickly switch back to 
+the code and change the name of the "background"  
+
+00:01:19.680 --> 00:01:26.560
+command and just delete the D. So that it's 
+the wrong command name. And if i save this,  
+
+00:01:26.560 --> 00:01:32.000
+we can immediately see that the background is not 
+drawn anymore and if i switch to the developer  
+
+00:01:32.000 --> 00:01:38.160
+tools we now see an error here. The error is 
+marked as red and we can see that there is an  
+
+00:01:38.160 --> 00:01:45.040
+"unknown reference error" and "backgroun is not 
+defined", because the p5.js library in JavaScript  
+
+00:01:45.040 --> 00:01:51.120
+doesn't know the command "backgroun" without a D. 
+And we get some further insights, we see that the  
+
+00:01:51.120 --> 00:01:58.720
+error is coming from the sketch.js file from 
+line 10. If we switch back to our code and see  
+
+00:01:58.720 --> 00:02:05.200
+in line 10, we have written the "background" 
+command in a wrong way. If i add the D again,  
+
+00:02:07.200 --> 00:02:14.240
+the error message disappears. Sometimes you will 
+come up with errors that you might not know how  
+
+00:02:14.240 --> 00:02:22.160
+to solve. A very good way to solve a problem, is 
+to first google it. So copy the complete error  
+
+00:02:22.160 --> 00:02:26.800
+message and just paste it in google or another 
+search engine and see what's coming up. There's  
+
+00:02:26.800 --> 00:02:31.200
+a lot of different platforms on the web, where 
+people post the errors and other people reply to  
+
+00:02:31.200 --> 00:02:36.640
+those errors. And it's very likely, that the error 
+you came up with, already somebody else solved  
+
+00:02:36.640 --> 00:02:43.680
+this. So try to google or search for your error 
+and see if somebody else has a solution for this.  
+
+00:02:45.040 --> 00:02:52.240
+But we can use the console tool for much 
+more. For example if you have a really long  
+
+00:02:52.240 --> 00:02:57.920
+and complex code written, sometimes it's good 
+to figure out where your code stops working.  
+
+00:02:58.720 --> 00:03:04.080
+To do this, you can simply add comments to your 
+code that are output into the console. To do this,  
+
+00:03:04.080 --> 00:03:10.640
+there is a simple command called "console.log()". 
+And then inside the brackets we can now define  
+
+00:03:10.640 --> 00:03:17.840
+something that is output to the console. 
+For example we say here "draw complete".
+
+00:03:18.720 --> 00:03:27.360
+And i save this and now i can see here that 
+this text, this string, that i sent to the  
+
+00:03:27.360 --> 00:03:33.440
+"console.log" command, is now being output in 
+the "console". So we know our draw function works  
+
+00:03:33.440 --> 00:03:38.400
+until the end. And if there would be an error 
+before it wouldn't output the "draw complete".  
+
+00:03:39.120 --> 00:03:44.080
+Because the draw is a loop that is running 
+over and over again we can see here the  
+
+00:03:44.080 --> 00:03:51.040
+the numbers in front are telling us that the same 
+string is output multiple times and for example  
+
+00:03:51.040 --> 00:03:59.840
+if we do the same in our setup function add a 
+"console.log()" here and say "setup complete".
+
+00:04:01.200 --> 00:04:06.480
+This should only come up once, because setup 
+is only run once in the beginning and we can  
+
+00:04:06.480 --> 00:04:12.080
+see here "setup complete" is called once and 
+then "draw complete" is called multiple times.  
+
+00:04:12.800 --> 00:04:15.680
+You can also see a little 
+warning here. In this case  
+
+00:04:16.480 --> 00:04:21.280
+JavaScript or the HTML in the browser is looking 
+for a certain file that it couldn't find,  
+
+00:04:21.280 --> 00:04:27.840
+but it's just a warning so it's nothing 
+serious and you can ignore this for now.
+
+00:04:30.880 --> 00:04:30.960
+you

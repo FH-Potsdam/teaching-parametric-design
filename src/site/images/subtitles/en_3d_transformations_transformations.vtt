@@ -1,0 +1,131 @@
+WEBVTT
+
+00:00:05.120 --> 00:00:11.280
+Similar to the colorize function, we can also 
+use transformations to move our objects around.  
+
+00:00:11.920 --> 00:00:18.000
+These transformations are a little bit different 
+to the p5.js transformations. In p5.js we moved  
+
+00:00:18.000 --> 00:00:23.680
+and rotated the whole coordinate system. In this 
+case we are just transforming individual objects.  
+
+00:00:24.400 --> 00:00:32.000
+And similar to the colorize function, with every 
+transformation we get a new object as a return,  
+
+00:00:32.000 --> 00:00:36.480
+and can store this in a variable and 
+then return it for the render function.  
+
+00:00:38.160 --> 00:00:44.720
+Let's start with the translate, to move 
+objects around. Generate a new variable.  
+
+00:00:45.760 --> 00:00:52.160
+Call it translate object and then use the 
+translate function. Translate takes also an  
+
+00:00:52.160 --> 00:00:59.120
+array as a first input. And this array has now the 
+x, y and z coordinates, to move our object around.  
+
+00:01:01.040 --> 00:01:06.080
+Move it on one axis, then provide 
+let's take our color object.
+
+00:01:08.240 --> 00:01:13.360
+And push it also into our render array.
+
+00:01:15.600 --> 00:01:18.640
+Translate object, save it.
+
+00:01:20.800 --> 00:01:28.080
+And now we have a second cube and the nice 
+thing is so we used the initial color object  
+
+00:01:28.640 --> 00:01:34.000
+inside the translate, but without 
+modifying the original color object.  
+
+00:01:34.000 --> 00:01:41.040
+So now we can use the color object over and over 
+again. So now let's use the rotate function.
+
+00:01:48.960 --> 00:01:57.360
+And i will just edit this out, so you 
+can actually see it. And we return it.
+
+00:02:02.480 --> 00:02:10.480
+The rotate function takes radians, so we 
+use a little formula, let's say 45 degrees.
+
+00:02:13.520 --> 00:02:21.920
+And now we see, on the origin we have a rotated 
+cube and this is similar to the problems in p5.js.  
+
+00:02:21.920 --> 00:02:29.120
+So the rotation works around the center so 0/0/0. 
+So if you translate something and then rotate it,  
+
+00:02:29.120 --> 00:02:34.400
+it will rotate still around the center point in 
+the middle. So if you want to rotate something  
+
+00:02:34.400 --> 00:02:41.680
+around itself. First rotate and then translate. 
+For example if we want to move this cube.  
+
+00:02:43.040 --> 00:02:51.520
+Also let's call it translate rotate 
+object, use the translate function  
+
+00:02:53.440 --> 00:03:01.680
+and move it in the other direction so 
+-100 and give it the rotate object. And  
+
+00:03:01.680 --> 00:03:10.560
+then we return the new translated rotated object. 
+Now we see, we first rotate then we translate  
+
+00:03:10.560 --> 00:03:18.160
+and then we return it. So this can turn 
+into a lot of writing, if you need to create  
+
+00:03:18.160 --> 00:03:23.440
+all these different variables. These variables 
+are in the beginning, nice to structure your code  
+
+00:03:24.080 --> 00:03:28.880
+and they are also nice because you can easily 
+reuse the same objects over and over again.  
+
+00:03:28.880 --> 00:03:33.760
+But if you know that you're going to do this once 
+and there is no need to create a new variable to  
+
+00:03:33.760 --> 00:03:41.360
+store each individual transformation. You can also 
+do it like this: instead of a constant you create  
+
+00:03:41.360 --> 00:03:48.960
+a new variable, let's leave it at rotate object 
+and then for the next transformation you simply  
+
+00:03:48.960 --> 00:03:54.480
+store the new object in the same variable, so 
+you overwrite the original object. And now you  
+
+00:03:54.480 --> 00:04:02.640
+have the new object inside this variable. 
+So if we save this, we get the same result.  
+
+00:04:03.280 --> 00:04:08.640
+So if you don't want to create tons of variables. 
+Simply use the same variable and overwrite it with  
+
+00:04:08.640 --> 00:04:13.840
+each transformation and then push it into 
+the array to send it back to the renderer.
