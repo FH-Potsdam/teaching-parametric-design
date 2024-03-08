@@ -43,7 +43,7 @@ You can also define the name of the saved file:
 save("myImage.png");
 ```
 
-If you wan to export a series of images:
+If you wan to export a series of images its best to properly number them. In the following we will use a variable to number the images. You will learn more about those variables in the [next sections](../03_1-variables):
 ```js
 let counter = 1;
 function draw() {

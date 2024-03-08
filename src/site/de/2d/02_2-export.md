@@ -46,7 +46,7 @@ Wir können auch den Dateinamen unserer Datei angeben:
 save("myImage.png");
 ```
 
-Wenn man eine Serie von Bilder exportieren möchte, sollte man diese am besten durchnummerieren:
+Wenn man eine Serie von Bilder exportieren möchte, sollte man diese am besten durchnummerieren. Im folgenden Code nutzen wir eine Variable `let counter = 1;`, hierüber erfährst du mehr in den [nächsten Abschnitten](../03_1-variables):
 ```js
 let counter = 1;
 function draw() {
