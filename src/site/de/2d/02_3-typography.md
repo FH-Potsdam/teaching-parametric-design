@@ -132,3 +132,5 @@ function draw() {
   rect(0, 0, textBreite, 10);
 }
 ```
+
+{{editor('/code/typo', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/typography/typo/sketch.js', true)}}
