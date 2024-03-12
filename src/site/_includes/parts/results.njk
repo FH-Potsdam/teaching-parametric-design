@@ -1,0 +1,13 @@
+{% macro list(results, translations, locale) %}
+<ul>
+{% for r in results | sort(false, true, 'id') %}
+<li style="background-image:url(/images/results/{{r.image}});">
+<div>
+<h5>{{ r.student }}, {{r.year}}</h5><br />
+<h4>{{ r.name }}</h4><br />
+<p class="credit"><a href="{{r.link}}">{{translations.more[locale]}} &raquo;</a></p>
+</div>
+</li>
+{% endfor %}
+</ul>
+{% endmacro %}

@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: de
+
+00:00:04.320 --> 00:00:08.600
+In den vorherigen Abschnitten haben wir uns&nbsp;
+angeschaut wie wir einzelne Formen zeichnen&nbsp;&nbsp;
+
+00:00:08.600 --> 00:00:15.720
+können. Genauso einfach können wir auch Text&nbsp;
+zeichnen. Hierfür gibt es das "text" Command. Als&nbsp;&nbsp;
+
+00:00:15.720 --> 00:00:22.120
+ersten Parameter geben wir den Text ein, den wir&nbsp;
+zeichnen wollen und danach geben wir die Position&nbsp;&nbsp;
+
+00:00:22.120 --> 00:00:28.800
+an wo es hingezeichnet werden soll und zwar&nbsp;
+erst den X- und dann den Y-Wert. Wenn wir das&nbsp;&nbsp;
+
+00:00:28.800 --> 00:00:34.440
+Ganze abspeichern, sehen wir dass jetzt hier der&nbsp;
+entsprechende Text auftaucht. Ähnlich wie bei den&nbsp;&nbsp;
+
+00:00:34.440 --> 00:00:40.720
+Formen und den Farben werden auch beim Text alle&nbsp;
+Parameter von oben nach unten abgearbeitet und&nbsp;&nbsp;
+
+00:00:40.720 --> 00:00:46.600
+bleiben so lange erhalten bis wir sie ändern. Also&nbsp;
+wenn wir jetzt hier z.B. mal einen grünen statt&nbsp;&nbsp;
+
+00:00:46.600 --> 00:00:52.640
+einen schwarzen Text haben wollen. Dann können wir&nbsp;
+einfach vor dem "text" Command die Farbe wechseln.&nbsp;&nbsp;
+
+00:00:52.640 --> 00:00:59.920
+Genauso können wir auch die Schriftgröße ändern&nbsp;
+oder den Schriftschnitt, das geht mit "textStyle".&nbsp;&nbsp;
+
+00:00:59.920 --> 00:01:06.440
+Hier können wir z.B auf ITALIC wechseln und sehen,&nbsp;
+dass das ganze hier jetzt entsprechend angepasst&nbsp;&nbsp;
+
+00:01:06.440 --> 00:01:13.400
+wurde. Eine Kleinigkeit muss man beachten&nbsp;
+wenn man den Text positioniert. Wir haben&nbsp;&nbsp;
+
+00:01:13.400 --> 00:01:19.080
+das ganze jetzt bei 50px/50px positioniert.&nbsp;
+Und ich zeichne jetzt hier mal einen kleinen&nbsp;&nbsp;
+
+00:01:19.080 --> 00:01:25.680
+Kreis und setze den ebenfalls auf 50px/50px. Und&nbsp;
+jetzt sehen wir, dass der Kreis unten links in&nbsp;&nbsp;
+
+00:01:25.680 --> 00:01:29.840
+der Ecke ist. Viele würden wahrscheinlich&nbsp;
+erwarten, dass der Kreis oben links ist.&nbsp;&nbsp;
+
+00:01:31.160 --> 00:01:36.600
+Wenn wir die Textausrichtung nun ändern. Das&nbsp;
+können wir mit "textAlign" machen und das&nbsp;&nbsp;
+
+00:01:36.600 --> 00:01:43.960
+ganze auf rechtsbündig machen. Sehen wir, dass&nbsp;
+der Text nun seinen Ursprung auf der rechten&nbsp;&nbsp;
+
+00:01:43.960 --> 00:01:51.000
+Seite hat. Das muss man sozusagen bedenken,&nbsp;
+dass je nachdem wie der Text ausgerichtet ist&nbsp;&nbsp;
+
+00:01:51.000 --> 00:01:59.840
+der Ursprung immer relativ zur Textausrichtung&nbsp;
+ist. Wenn wir ganz viel Text einfügen wollen,&nbsp;&nbsp;
+
+00:02:00.360 --> 00:02:07.720
+haben wir vielleicht das Problem, dass das&nbsp;
+Ganze aus unserem Canvas rausläuft. Da gibt's&nbsp;&nbsp;
+
+00:02:07.720 --> 00:02:12.720
+eine ganz einfache Lösung: wir können nämlich&nbsp;
+hier noch einen weiteren Parameter mitgeben und&nbsp;&nbsp;
+
+00:02:12.720 --> 00:02:19.800
+dieser Parameter bestimmt die Breite unseres&nbsp;
+Textfeldes und jetzt sehen wir dass das Ganze&nbsp;&nbsp;
+
+00:02:19.800 --> 00:02:26.640
+nach 200 Pixeln automatisch umgebrochen wird und&nbsp;
+in eine neue Zeile kommt. Aber ganz ganz wichtig:&nbsp;&nbsp;
+
+00:02:26.640 --> 00:02:35.880
+wir sehen auch, dass der Ursprung nicht mehr&nbsp;
+hier unten an der linken unteren Ecke ist,&nbsp;&nbsp;
+
+00:02:35.880 --> 00:02:41.000
+sondern jetzt auf einmal oben links in der&nbsp;
+Ecke ist. Bisschen verwirrend. Da muss man&nbsp;&nbsp;
+
+00:02:41.000 --> 00:02:46.480
+sich dran erinnern, wenn man mal mit größeren&nbsp;
+Texten arbeitet. Und als letztes Command&nbsp;&nbsp;
+
+00:02:46.480 --> 00:02:59.760
+können wir natürlich auch noch den Zeilenabstand&nbsp;
+definieren und so z.B. den Zeilenabstand erhöhen.
+
+00:02:59.760 --> 00:03:00.760
+erhöhen
+

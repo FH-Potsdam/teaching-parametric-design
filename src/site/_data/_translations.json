@@ -27,6 +27,24 @@
     "de": "Zum Inhalt springen",
     "en": "Skip to main Content"
   },
+  "more": {
+    "de": "Mehr erfahren",
+    "en": "Learn more"
+  },
+  "books":{
+    "book": {
+      "de": "Bücher",
+      "en": "Books"
+    },
+    "archive": {
+      "de": "Sammlungen",
+      "en": "Collections"
+    },
+    "article": {
+      "de": "Artikel",
+      "en": "Articles"
+    }
+  },
   "inspiration": {
     "all": {
       "de": "Alle",

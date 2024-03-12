@@ -62,3 +62,18 @@
 {% endfor %}
 </ul>
 {% endmacro %}
+
+{% macro bookList(books, translations, locale) %}
+{% set lastBookType = "nn" %}
+<ul>
+{% for b in books | sort(false, true, 'type') %}
+{% if b.type != lastBookType %}
+<h3>{{translations.books[b.type][locale]}}</h3>
+{% set lastBookType = b.type %}
+{% endif %}
+<li>
+<a href="{{b.url}}"><strong>{{b.title}}</strong></a>
+</li>
+{% endfor %}
+</ul>
+{% endmacro %}

@@ -1,0 +1,63 @@
+WEBVTT
+Kind: captions
+Language: de
+
+00:00:05.440 --> 00:00:10.160
+Im letzten Block haben wir uns angeschaut, wie man&nbsp;
+Schrift setzt. Jetzt wollt ihr wahrscheinlich auch&nbsp;&nbsp;
+
+00:00:10.160 --> 00:00:19.880
+noch die eigentliche Schrift wechseln die ihr&nbsp;
+benutzt. Dafür gibt's das Kommando "textFont"
+
+00:00:19.880 --> 00:00:24.440
+In die "textFont" kann man allerdings nur ein&nbsp;
+paar Standardschriften eingeben. Ich habe euch&nbsp;&nbsp;
+
+00:00:24.440 --> 00:00:29.960
+da oben eine Liste an beispielhaften&nbsp;
+Fronts reingesetzt. Wir können z.B&nbsp;&nbsp;
+
+00:00:30.680 --> 00:00:38.920
+die Times New Roman nutzen, weil man weiß, dass&nbsp;
+die auf allen Systemen verfügbar ist. Wenn ihr&nbsp;&nbsp;
+
+00:00:38.920 --> 00:00:46.200
+spezielle Schriften nutzen wollt, müsst ihr diese&nbsp;
+vorher laden. Das Ganze machen wir hier oben in&nbsp;&nbsp;
+
+00:00:46.200 --> 00:00:52.880
+der "preload" Funktion. Vorher erstellen wir uns&nbsp;
+eine Variable in die unsere Schrift reingeladen&nbsp;&nbsp;
+
+00:00:52.880 --> 00:01:00.240
+wird. Und jetzt können wir das Kommando&nbsp;
+"loadFont" nutzen und damit unsere Schrift&nbsp;&nbsp;
+
+00:01:00.240 --> 00:01:06.680
+laden. Ihr müsst nun den korrekten Pfad zu eurer&nbsp;
+Schrift setzen. Wenn ihr euch nicht sicher seid,&nbsp;&nbsp;
+
+00:01:06.680 --> 00:01:13.920
+werft einfach die Schriftdatei in den Ordner&nbsp;
+in dem auch eure Index HTML Datei liegt und&nbsp;&nbsp;
+
+00:01:13.920 --> 00:01:22.560
+dann könnt ihr euch nämlich einfach den&nbsp;
+Namen kopieren und setzt den hier wieder.
+
+00:01:27.640 --> 00:01:34.520
+Speichert das Ganze. Und hier unten, wo wir&nbsp;
+vorher Times New Roman eingesetzt haben,&nbsp;&nbsp;
+
+00:01:34.520 --> 00:01:44.360
+schreiben wir nun den Variablennamen den wir hier&nbsp;
+oben definiert haben rein. Und jetzt sehen wir,&nbsp;&nbsp;
+
+00:01:44.360 --> 00:01:50.000
+dass jetzt sozusagen die korrekte Schrift&nbsp;
+genutzt wird die wir aus unserer Datei geladen
+
+00:01:50.000 --> 00:01:55.800
+haben.
+

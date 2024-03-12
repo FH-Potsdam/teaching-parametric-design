@@ -9,7 +9,8 @@ eleventyNavigation:
 
 This page contains a list of selected works closely realted to the content of this seminar. The following list of artists and developers does not claim to be complete, but merely a window into this world:
 
-{% from "../_includes/parts/inspiration.njk" import filter, list %}
+{% from "../_includes/parts/macros.njk" import h2 %}
+{% from "../_includes/parts/inspiration.njk" import filter, list, bookList %}
 
 <div id="inspiration-filter">
 {{filter(inspiration, translations, locale)}}
@@ -19,4 +20,8 @@ This page contains a list of selected works closely realted to the content of th
 {{list(inspiration, translations, locale)}}
 </div>
 
-If you want to see more early works of computer art, I recommend [this article](https://www.amygoodchild.com/blog/computer-art-50s-and-60s) by Amy Goodchild.
+{{h2("Continue reading")}}
+
+<div id="book-list">
+{{bookList(books, translations, locale)}}
+</div>

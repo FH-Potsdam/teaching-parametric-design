@@ -18,7 +18,9 @@ layout: default
 
 Genauso wie wir in unserem Koordinatensystem [Formen zeichnen](../02_1-drawing) können, ist es auch möglich Schrift zu setzen. Die Positionierung basiert auf den selben Pixelangaben, wie sie bei [Formen](../02_1-drawing) wie Kreisen und Quadraten genutzt wurden. Neben dem Nullpunkt unseres Textes (x/y), können wir mit dem dritten Parameter angeben, wie breit der Text maximal laufen darf, bis es zu einem Umbruch kommt:
 
-VIDEO COMING SOON
+{{video("https://fhpcloud.fh-potsdam.de/s/nQt9fdnTZQA2BsN/download/de_2d_typography_intro.mp4", "/images/thumbnails/de_2d_typography_intro.png", "de_2d_typography", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/nQt9fdnTZQA2BsN/download/de_2d_typography_intro.mp4")}}
+
+<!-- DG MISSING! -->
 
 {{ definition('text', [
   { name: 'Text', type: 'Text' },
@@ -92,6 +94,10 @@ function draw() {
   text("Hello World", 50, 50);
 }
 ```
+
+{{video("https://fhpcloud.fh-potsdam.de/s/DzSm9CWCaDt8Pnt/download/de_2d_typography_fonts.mp4", "/images/thumbnails/de_2d_typography_fonts.png", "de_2d_typography", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/nQt9fdnTZQA2BsN/download/de_2d_typography_fonts.mp4")}}
+
+<!-- DG MISSING! -->
 
 Andere Schriften müssen erst geladen werden, damit diese genutzt werden können. Dies muss in der `preload` Funktion passieren:
 
