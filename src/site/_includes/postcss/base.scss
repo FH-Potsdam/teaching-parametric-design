@@ -522,10 +522,10 @@ ol.mainNav>li, ol.mainNav>li>ol>li {
         &.langTitle{
           margin-top:5px;
         }
-        &:focus+ul {
+        &.open+ul {
           display:flex;
         }
-        &:focus+ol {
+        &.open+ol {
           display:block;
         }
       }
@@ -538,12 +538,10 @@ ol.mainNav>li, ol.mainNav>li>ol>li {
         display:none;
         margin-left: 12px;
       }
-      &:focus>ul,
-      &:focus-within>ul{
+      &.open>ul{
         display:flex;
       }
-      &:focus>ol,
-      &:focus-within>ol{
+      &.open>ol{
         display:block;
       }
     }
