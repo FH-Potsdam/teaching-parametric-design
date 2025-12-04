@@ -1,0 +1,43 @@
+{% macro renderVideoLibrary(videos, locale) %}
+{% set watchedLabel = "Watched" %}
+{% set notWatchedLabel = "Not watched yet" %}
+{% set openPageLabel = "Open page" %}
+{% set emptyLabel = "No videos found for this language." %}
+
+{% if locale == "de" or locale == "dg" %}
+  {% set watchedLabel = "Angesehen" %}
+  {% set notWatchedLabel = "Noch nicht angesehen" %}
+  {% set openPageLabel = "Seite öffnen" %}
+  {% set emptyLabel = "Keine Videos für diese Sprache gefunden." %}
+{% endif %}
+  <div class="video-library">
+  {% if not videos or videos.length == 0 %}
+  <p class="video-library__loading">{{ emptyLabel }}</p>
+  {% else %}
+  <section class="video-library__locale">
+    <h2>{{ locale | upper }}</h2>
+    <div class="video-library__grid">
+      {% for video in videos %}
+      <article class="video-library__card" data-video-id="{{ video.videoId }}">
+        <div class="video-library__thumb">
+          {% if video.poster %}
+            <img src="{{ video.poster }}" alt="{{ video.pageTitle }} preview">
+          {% else %}
+            <div class="video-library__placeholder">No preview available</div>
+          {% endif %}
+        </div>
+        <div class="video-library__body">
+          <h3>{{ video.pageTitle }}</h3>
+          <span class="video-library__status" data-video-status data-watched-label="{{ watchedLabel }}" data-not-watched-label="{{ notWatchedLabel }}">{{ notWatchedLabel }}</span>
+          {% if video.videoSrc %}
+          <p class="video-library__source">{{ video.videoSrc }}</p>
+          {% endif %}
+          <a href="{{ video.pageUrl }}">{{ openPageLabel }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endmacro %}

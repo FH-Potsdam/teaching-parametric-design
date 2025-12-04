@@ -9,10 +9,11 @@ eleventyNavigation:
 locale: dg
 ---
 
+{% from "../_includes/parts/video-library.njk" import renderVideoLibrary %}
+{% set videos = collections.videoLibrary | videosByLocale(locale) %}
+
 <p>This page collects every embedded video from the site so you can quickly see what is available and which clips you have already watched.</p>
 
-<script id="nav-data" type="application/json">{{ collections.all | eleventyNavigation | dump | safe }}</script>
-<div class="video-library" data-video-library>
-  <p class="video-library__loading">Collecting videos…</p>
-</div>
+{{ renderVideoLibrary(videos, locale) }}
+
 <script src="/js/video-library.js"></script>
