@@ -49,7 +49,10 @@ module.exports = function(config) {
 
       for (const match of content.matchAll(tokenRegex)) {
         const [, macroName, args] = match;
-        const stringArgs = Array.from(args.matchAll(/"([^"]*)"/g), arg => arg[1]);
+        const stringArgs = Array.from(
+          args.matchAll(/['"]([^'"\\]*(?:\\.[^'"\\]*)*)['"]/g),
+          arg => arg[1].replace(/\\(['"])/g, '$1')
+        );
 
         if (!stringArgs.length) continue;
 
