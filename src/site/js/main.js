@@ -51,9 +51,21 @@ document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
     wrapper.classList.add('video-watched');
   }
 
-  videoElement.addEventListener('ended', () => {
+  let isMarkedWatched = watchedVideos.has(videoId);
+
+  const markWatched = () => {
+    if (isMarkedWatched) return;
+    isMarkedWatched = true;
     watchedVideos.add(videoId);
     saveWatchedVideos();
     wrapper.classList.add('video-watched');
+  };
+
+  videoElement.addEventListener('timeupdate', () => {
+    if (videoElement.duration && videoElement.currentTime >= videoElement.duration - 10) {
+      markWatched();
+    }
   });
+
+  videoElement.addEventListener('ended', markWatched);
 });
