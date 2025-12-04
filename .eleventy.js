@@ -61,7 +61,7 @@ module.exports = function(config) {
 
         const [url = "", poster = "", captionFile = "", captionLabel = "", localeArg = "", dgUrl = ""] = stringArgs;
         const source = locale === "dg" && dgUrl ? dgUrl : url;
-        const anchorId = makeVideoAnchor(source, pageMeta.url);
+        const anchorId = makeVideoAnchor(source);
 
         videos.push({
           locale,
