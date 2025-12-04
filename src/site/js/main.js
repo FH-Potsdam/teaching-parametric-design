@@ -27,8 +27,22 @@ const getStoredVideos = () => {
 
 const watchedVideos = new Set(getStoredVideos());
 
+const hasWatchedVideo = videoId => watchedVideos.has(videoId);
+
 const saveWatchedVideos = () => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...watchedVideos]));
+};
+
+const markVideoIdWatched = videoId => {
+  if (!videoId || watchedVideos.has(videoId)) return;
+  watchedVideos.add(videoId);
+  saveWatchedVideos();
+};
+
+window.videoProgress = {
+  hasWatched: hasWatchedVideo,
+  markWatched: markVideoIdWatched,
+  getWatchedIds: () => [...watchedVideos],
 };
 
 document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
@@ -47,17 +61,16 @@ document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
     wrapper.appendChild(badge);
   }
 
-  if (watchedVideos.has(videoId)) {
+  if (hasWatchedVideo(videoId)) {
     wrapper.classList.add('video-watched');
   }
 
-  let isMarkedWatched = watchedVideos.has(videoId);
+  let isMarkedWatched = hasWatchedVideo(videoId);
 
   const markWatched = () => {
     if (isMarkedWatched) return;
     isMarkedWatched = true;
-    watchedVideos.add(videoId);
-    saveWatchedVideos();
+    markVideoIdWatched(videoId);
     wrapper.classList.add('video-watched');
   };
 
