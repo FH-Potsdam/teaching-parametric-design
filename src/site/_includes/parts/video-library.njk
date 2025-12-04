@@ -18,7 +18,7 @@
     <h2>{{ locale | upper }}</h2>
     <div class="video-library__grid">
       {% for video in videos %}
-      <article class="video-library__card" data-video-id="{{ video.videoId }}">
+      <article class="video-library__card" data-video-id="{{ video.videoId }}"{% if video.anchorId %} data-video-anchor="{{ video.anchorId }}"{% endif %}>
         <div class="video-library__thumb">
           {% if video.poster %}
             <img src="{{ video.poster }}" alt="{{ video.pageTitle }} preview">
@@ -32,7 +32,7 @@
           {% if video.videoSrc %}
           <p class="video-library__source">{{ video.videoSrc }}</p>
           {% endif %}
-          <a href="{{ video.pageUrl }}">{{ openPageLabel }}</a>
+          <a href="{{ video.pageUrl }}{% if video.anchorId %}#{{ video.anchorId }}{% endif %}">{{ openPageLabel }}</a>
         </div>
       </article>
       {% endfor %}

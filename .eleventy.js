@@ -7,6 +7,19 @@ const { findNavigationEntries } = require('@11ty/eleventy-navigation/eleventy-na
 
 const moment = require('moment');
 
+const slugifyValue = (value = '') => value
+  .toString()
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/(^-|-$)/g, '');
+
+const makeVideoAnchor = (videoSource, pageUrl = '') => {
+  const pagePart = slugifyValue(pageUrl);
+  const sourcePart = slugifyValue(videoSource);
+  const parts = [pagePart, sourcePart].filter(Boolean);
+  return parts.length ? `video-${parts.join('-')}` : '';
+};
+
 module.exports = function(config) {
 
   // A useful way to reference the context we are runing eleventy in
@@ -39,6 +52,7 @@ module.exports = function(config) {
 
         const [url = "", poster = "", captionFile = "", dgUrl = ""] = stringArgs;
         const source = locale === "dg" && dgUrl ? dgUrl : url;
+        const anchorId = makeVideoAnchor(source, pageMeta.url);
 
         videos.push({
           locale,
@@ -46,6 +60,7 @@ module.exports = function(config) {
           pageTitle: pageMeta.title,
           videoId: source,
           videoSrc: source,
+          anchorId,
           poster,
           captionFile,
         });
@@ -87,6 +102,7 @@ module.exports = function(config) {
   config.addPlugin(eleventyNavigationPlugin);
 
   config.addFilter('videosByLocale', (videos, locale) => (videos || []).filter(video => video.locale === locale));
+  config.addFilter('videoAnchor', (videoSource, pageUrl = '') => makeVideoAnchor(videoSource, pageUrl));
 
   config.addPlugin(pluginTOC, {
     tags: ['h2'],
