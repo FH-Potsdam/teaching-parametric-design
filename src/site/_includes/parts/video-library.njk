@@ -30,9 +30,6 @@
           <h3>{{ video.videoTitle }}</h3>
           <p class="video-library__page">{{ video.pageTitle }}</p>
           <span class="video-library__status" data-video-status data-watched-label="{{ watchedLabel }}" data-not-watched-label="{{ notWatchedLabel }}">{{ notWatchedLabel }}</span>
-          {% if video.videoSrc %}
-          <p class="video-library__source">{{ video.videoSrc }}</p>
-          {% endif %}
           <a href="{{ video.pageUrl }}{% if video.anchorId %}#{{ video.anchorId }}{% endif %}">{{ openPageLabel }}</a>
         </div>
       </article>

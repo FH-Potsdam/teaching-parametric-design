@@ -349,14 +349,6 @@ video {
   color: #1b7a40;
 }
 
-.video-library__source {
-  font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.7);
-  margin: 0 0 8px;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
 .video-library__loading {
   font-style: italic;
 }
@@ -1188,7 +1180,4 @@ h3.inspiration {
     color: $dark-font;
   }
 
-  .video-library__source {
-    color: rgba(255, 255, 255, 0.8);
-  }
 }
