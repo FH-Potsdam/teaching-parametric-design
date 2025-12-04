@@ -14,3 +14,46 @@ document.querySelectorAll('#nav nav h5').forEach(header => {
     }
   });
 });
+
+const STORAGE_KEY = 'watchedVideos';
+
+const getStoredVideos = () => {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+  } catch (error) {
+    return [];
+  }
+};
+
+const watchedVideos = new Set(getStoredVideos());
+
+const saveWatchedVideos = () => {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...watchedVideos]));
+};
+
+document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
+  const videoId = wrapper.dataset.videoId;
+  const videoElement = wrapper.querySelector('video');
+
+  if (!videoId || !videoElement) {
+    return;
+  }
+
+  let badge = wrapper.querySelector('.video-status');
+  if (!badge) {
+    badge = document.createElement('div');
+    badge.className = 'video-status';
+    badge.textContent = 'Watched';
+    wrapper.appendChild(badge);
+  }
+
+  if (watchedVideos.has(videoId)) {
+    wrapper.classList.add('video-watched');
+  }
+
+  videoElement.addEventListener('ended', () => {
+    watchedVideos.add(videoId);
+    saveWatchedVideos();
+    wrapper.classList.add('video-watched');
+  });
+});

@@ -241,6 +241,34 @@ video {
   margin-bottom:15px;
 }
 
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.video-wrapper video {
+  display: block;
+  width: 100%;
+}
+
+.video-status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  display: none;
+}
+
+.video-wrapper.video-watched .video-status {
+  display: inline-block;
+}
+
 /* CONTENT FORMATTING */
 
 main .col-2{
