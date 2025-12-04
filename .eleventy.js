@@ -44,13 +44,22 @@ module.exports = function(config) {
     const videos = [];
 
     const extractVideos = (content, locale, pageMeta) => {
-      const matches = content.matchAll(/{{\s*video\((.*?)\)\s*}}/gs);
+      let currentHeading = "";
+      const tokenRegex = /{{\s*(h2|video)\((.*?)\)\s*}}/gs;
 
-      for (const match of matches) {
-        const stringArgs = Array.from(match[1].matchAll(/"([^"]*)"/g), arg => arg[1]);
+      for (const match of content.matchAll(tokenRegex)) {
+        const [, macroName, args] = match;
+        const stringArgs = Array.from(args.matchAll(/"([^"]*)"/g), arg => arg[1]);
+
         if (!stringArgs.length) continue;
 
-        const [url = "", poster = "", captionFile = "", dgUrl = ""] = stringArgs;
+        if (macroName === "h2") {
+          const [heading = ""] = stringArgs;
+          currentHeading = heading || currentHeading;
+          continue;
+        }
+
+        const [url = "", poster = "", captionFile = "", captionLabel = "", localeArg = "", dgUrl = ""] = stringArgs;
         const source = locale === "dg" && dgUrl ? dgUrl : url;
         const anchorId = makeVideoAnchor(source, pageMeta.url);
 
@@ -58,11 +67,14 @@ module.exports = function(config) {
           locale,
           pageUrl: pageMeta.url,
           pageTitle: pageMeta.title,
+          videoTitle: currentHeading || pageMeta.title,
           videoId: source,
           videoSrc: source,
           anchorId,
           poster,
           captionFile,
+          captionLabel,
+          localeArg,
         });
       }
     };

@@ -21,13 +21,14 @@
       <article class="video-library__card" data-video-id="{{ video.videoId }}"{% if video.anchorId %} data-video-anchor="{{ video.anchorId }}"{% endif %}>
         <div class="video-library__thumb">
           {% if video.poster %}
-            <img src="{{ video.poster }}" alt="{{ video.pageTitle }} preview">
+            <img src="{{ video.poster }}" alt="{{ video.videoTitle }} preview">
           {% else %}
             <div class="video-library__placeholder">No preview available</div>
           {% endif %}
         </div>
         <div class="video-library__body">
-          <h3>{{ video.pageTitle }}</h3>
+          <h3>{{ video.videoTitle }}</h3>
+          <p class="video-library__page">{{ video.pageTitle }}</p>
           <span class="video-library__status" data-video-status data-watched-label="{{ watchedLabel }}" data-not-watched-label="{{ notWatchedLabel }}">{{ notWatchedLabel }}</span>
           {% if video.videoSrc %}
           <p class="video-library__source">{{ video.videoSrc }}</p>
