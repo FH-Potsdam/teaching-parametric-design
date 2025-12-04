@@ -275,6 +275,36 @@ video {
   gap: 32px;
 }
 
+.video-library__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.video-library__view-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-library__view-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.03);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.video-library__view-btn.is-active {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.3);
+  color: #0f4332;
+}
+
 .video-library__locale {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 12px;
@@ -296,6 +326,46 @@ video {
   padding: 12px;
   background: rgba(0, 0, 0, 0.02);
   height: 100%;
+}
+
+.video-library--list .video-library__grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-library--list .video-library__card {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+.video-library--list .video-library__thumb {
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  aspect-ratio: 16/9;
+}
+
+.video-library--list .video-library__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: center;
+  gap: 6px 16px;
+  width: 100%;
+}
+
+.video-library--list .video-library__body h3 {
+  margin-bottom: 0;
+}
+
+.video-library--list .video-library__page {
+  margin-bottom: 0;
+}
+
+.video-library--list .video-library__status {
+  margin-bottom: 0;
+  justify-self: start;
 }
 
 .video-library__card--watched {
@@ -1151,6 +1221,18 @@ h3.inspiration {
   .video-library__card {
     border-color: rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.04);
+  }
+
+  .video-library__view-btn {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    color: $dark-font;
+  }
+
+  .video-library__view-btn.is-active {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: $dark-font;
   }
 
   .video-library__card--watched {

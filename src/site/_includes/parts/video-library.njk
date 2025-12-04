@@ -3,19 +3,29 @@
 {% set notWatchedLabel = "Not watched yet" %}
 {% set openPageLabel = "Open page" %}
 {% set emptyLabel = "No videos found for this language." %}
+{% set gridLabel = "Grid view" %}
+{% set listLabel = "List view" %}
 
 {% if locale == "de" or locale == "dg" %}
   {% set watchedLabel = "Angesehen" %}
   {% set notWatchedLabel = "Noch nicht angesehen" %}
   {% set openPageLabel = "Seite öffnen" %}
   {% set emptyLabel = "Keine Videos für diese Sprache gefunden." %}
+  {% set gridLabel = "Kachelansicht" %}
+  {% set listLabel = "Listenansicht" %}
 {% endif %}
-  <div class="video-library">
+  <div class="video-library video-library--grid" data-locale="{{ locale }}">
   {% if not videos or videos.length == 0 %}
   <p class="video-library__loading">{{ emptyLabel }}</p>
   {% else %}
   <section class="video-library__locale">
-    <h2>{{ locale | upper }}</h2>
+    <div class="video-library__header">
+      <h2>{{ locale | upper }}</h2>
+      <div class="video-library__view-toggle" role="group" aria-label="{{ gridLabel }}/{{ listLabel }}">
+        <button type="button" class="video-library__view-btn is-active" data-view="grid">{{ gridLabel }}</button>
+        <button type="button" class="video-library__view-btn" data-view="list">{{ listLabel }}</button>
+      </div>
+    </div>
     <div class="video-library__grid">
       {% for video in videos %}
       <article class="video-library__card" data-video-id="{{ video.videoId }}"{% if video.anchorId %} data-video-anchor="{{ video.anchorId }}"{% endif %}>
