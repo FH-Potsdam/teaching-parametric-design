@@ -105,7 +105,11 @@
 {% endmacro %}
 
 {% macro video(url, poster, captionFile, captionLabel, locale, dgUrl="") %}
-{% set videoSource = locale == "dg" and dgUrl ? dgUrl : url %}
+{% if locale == "dg" and dgUrl %}
+  {% set videoSource = dgUrl %}
+{% else %}
+  {% set videoSource = url %}
+{% endif %}
 <div class="video-wrapper" data-video-id="{{videoSource}}">
   <video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
     <source src="{{videoSource}}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
