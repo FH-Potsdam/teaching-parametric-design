@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="{% if locale == "de" %}de-DE{% elif locale == "dg" %}sgn-DE{% else %}en-US{% endif %}">
   {% include 'parts/head.njk' %}
-  <body>
+  <body class="{% if page.fileSlug == 'videos' %}video-library-page{% endif %}">
     <a tabindex="0" id="skip-nav" href="#content-start">{{ translations.skipContent[locale]|safe }}</a>
     <header id="header" role="banner">
       <div>
