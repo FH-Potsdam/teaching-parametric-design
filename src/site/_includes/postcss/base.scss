@@ -1149,4 +1149,44 @@ h3.inspiration {
       background-color: rgba(170, 170, 170, 1);
     }
   }
+
+  .video-library__locale {
+    border-top-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .video-library__card {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .video-library__card--watched {
+    border-color: rgba(20, 168, 115, 0.65);
+    box-shadow: 0 0 0 1px rgba(20, 168, 115, 0.35);
+  }
+
+  .video-library__thumb {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .video-library__placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .video-library__page {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .video-library__status {
+    background: rgba(255, 255, 255, 0.1);
+    color: $dark-font;
+  }
+
+  .video-library__status--watched {
+    background: rgba(20, 168, 115, 0.18);
+    color: $dark-font;
+  }
+
+  .video-library__source {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
