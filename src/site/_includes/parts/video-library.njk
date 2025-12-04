@@ -1,0 +1,51 @@
+{% macro renderVideoLibrary(videos, locale) %}
+{% set watchedLabel = "Watched" %}
+{% set notWatchedLabel = "Not watched yet" %}
+{% set openPageLabel = "Open page" %}
+{% set emptyLabel = "No videos found for this language." %}
+{% set gridLabel = "Grid view" %}
+{% set listLabel = "List view" %}
+
+{% if locale == "de" or locale == "dg" %}
+  {% set watchedLabel = "Angesehen" %}
+  {% set notWatchedLabel = "Noch nicht angesehen" %}
+  {% set openPageLabel = "Seite öffnen" %}
+  {% set emptyLabel = "Keine Videos für diese Sprache gefunden." %}
+  {% set gridLabel = "Kachelansicht" %}
+  {% set listLabel = "Listenansicht" %}
+{% endif %}
+  <div class="video-library video-library--grid" data-locale="{{ locale }}">
+  {% if not videos or videos.length == 0 %}
+  <p class="video-library__loading">{{ emptyLabel }}</p>
+  {% else %}
+  <section class="video-library__locale">
+    <div class="video-library__header">
+      <h2>{{ locale | upper }}</h2>
+      <div class="video-library__view-toggle" role="group" aria-label="{{ gridLabel }}/{{ listLabel }}">
+        <button type="button" class="video-library__view-btn is-active" data-view="grid">{{ gridLabel }}</button>
+        <button type="button" class="video-library__view-btn" data-view="list">{{ listLabel }}</button>
+      </div>
+    </div>
+    <div class="video-library__grid">
+      {% for video in videos %}
+      <article class="video-library__card" data-video-id="{{ video.videoId }}"{% if video.anchorId %} data-video-anchor="{{ video.anchorId }}"{% endif %}>
+        <div class="video-library__thumb">
+          {% if video.poster %}
+            <img src="{{ video.poster }}" alt="{{ video.videoTitle }} preview">
+          {% else %}
+            <div class="video-library__placeholder">No preview available</div>
+          {% endif %}
+        </div>
+        <div class="video-library__body">
+          <h3>{{ video.videoTitle }}</h3>
+          <p class="video-library__page">{{ video.pageTitle }}</p>
+          <span class="video-library__status" data-video-status data-watched-label="{{ watchedLabel }}" data-not-watched-label="{{ notWatchedLabel }}">{{ notWatchedLabel }}</span>
+          <a href="{{ video.pageUrl }}{% if video.anchorId %}#{{ video.anchorId }}{% endif %}">{{ openPageLabel }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endmacro %}

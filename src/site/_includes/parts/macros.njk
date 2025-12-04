@@ -105,10 +105,18 @@
 {% endmacro %}
 
 {% macro video(url, poster, captionFile, captionLabel, locale, dgUrl="") %}
-<video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
-  <source src="{% if locale == "dg" %}{{dgUrl}}{% else %}{{url}}{% endif %}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
-  Your browser does not support the video tag.
-</video>
+{% if locale == "dg" and dgUrl %}
+  {% set videoSource = dgUrl %}
+{% else %}
+  {% set videoSource = url %}
+{% endif %}
+{% set videoAnchorId = videoSource | videoAnchor(page.url) %}
+<div class="video-wrapper"{% if videoAnchorId %} id="{{ videoAnchorId }}"{% endif %} data-video-id="{{videoSource}}">
+  <video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
+    <source src="{{videoSource}}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
+    Your browser does not support the video tag.
+  </video>
+</div>
 {% endmacro %}
 
 {% macro h2(headline) %}
