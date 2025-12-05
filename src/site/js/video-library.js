@@ -6,18 +6,19 @@ const updateCardStatus = (card) => {
   const videoId = card.dataset.videoId;
   const status = card.querySelector('[data-video-status]');
   const watched = window.videoProgress?.hasWatched?.(videoId) ?? false;
-  const watchedLabel = status?.dataset?.watchedLabel || 'Watched';
-  const notWatchedLabel = status?.dataset?.notWatchedLabel || 'Not watched yet';
 
   if (watched) {
     card.classList.add('video-library__card--watched');
     if (status) {
-      status.classList.add('video-library__status--watched');
-      status.textContent = watchedLabel;
+      status.classList.add('video-library__watch-indicator--visible');
+      status.removeAttribute('hidden');
     }
-  } else if (status) {
-    status.classList.remove('video-library__status--watched');
-    status.textContent = notWatchedLabel;
+  } else {
+    card.classList.remove('video-library__card--watched');
+    if (status) {
+      status.classList.remove('video-library__watch-indicator--visible');
+      status.setAttribute('hidden', 'hidden');
+    }
   }
 };
 
