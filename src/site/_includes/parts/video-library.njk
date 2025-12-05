@@ -23,23 +23,18 @@
         <button type="button" class="video-library__view-btn" data-view="list">{{ listLabel }}</button>
       </div>
     </div>
-    <div class="video-library__grid">
-      {% for video in videos %}
+    <div class="video-library__grid">{% for video in videos %}
       <a class="video-library__card" href="{{ video.pageUrl }}{% if video.anchorId %}#{{ video.anchorId }}{% endif %}" data-video-id="{{ video.videoId }}"{% if video.anchorId %} data-video-anchor="{{ video.anchorId }}"{% endif %}>
-        <div class="video-library__thumb">
-          {% if video.poster %}
-            <img src="{{ video.poster }}" alt="{{ video.videoTitle }} preview">
-          {% else %}
-            <div class="video-library__placeholder">No preview available</div>
-          {% endif %}
+        <div class="video-library__thumb">{% if video.poster %}
+            <img src="{{ video.poster }}" alt="{{ video.videoTitle }} preview">{% else %}
+            <div class="video-library__placeholder">No preview available</div>{% endif %}
         </div>
         <div class="video-library__body">
           <p class="video-library__page">{{ video.pageTitle }}</p>
           <h3>{{ video.videoTitle }}</h3>
           <span class="video-library__status" data-video-status data-watched-label="{{ watchedLabel }}" data-not-watched-label="{{ notWatchedLabel }}">{{ notWatchedLabel }}</span>
         </div>
-      </a>
-      {% endfor %}
+      </a>{% endfor %}
     </div>
   </section>
   {% endif %}
