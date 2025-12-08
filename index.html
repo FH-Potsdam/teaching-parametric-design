@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Countdown Timer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      color: #fff;
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    #timer {
+      font-size: min(70vw, 70vh);
+      line-height: 0.9;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-rendering: optimizeLegibility;
+      user-select: none;
+    }
+
+    .controls {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1.5rem;
+      flex-wrap: wrap;
+      background: transparent;
+    }
+
+    .controls label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    input[type="text"] {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+      padding: 0.8rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      min-width: 10rem;
+    }
+
+    input[type="text"]::placeholder {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 0.85rem 1.4rem;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="timer" aria-live="polite">00:00</div>
+  </main>
+  <form class="controls" id="controls" aria-label="Timer controls">
+    <label for="timeInput">Set timer duration (minutes or mm:ss)</label>
+    <input id="timeInput" name="time" type="text" inputmode="numeric" autocomplete="off" placeholder="Minutes or mm:ss">
+    <button type="submit">Restart</button>
+  </form>
+
+  <script>
+    (() => {
+      const timerElement = document.getElementById('timer');
+      const form = document.getElementById('controls');
+      const timeInput = document.getElementById('timeInput');
+      const body = document.body;
+      const DEFAULT_SECONDS = 300; // 5 minutes
+      let remainingSeconds = DEFAULT_SECONDS;
+      let timerId = null;
+
+      const formatTime = (totalSeconds) => {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      };
+
+      const formatParamValue = (totalSeconds) => {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        return seconds === 0 ? `${minutes}` : `${minutes}:${String(seconds).padStart(2, '0')}`;
+      };
+
+      const parseInput = (value) => {
+        if (!value) return null;
+        const trimmed = value.trim();
+        if (!trimmed) return null;
+
+        if (/^\d+$/.test(trimmed)) {
+          return Math.max(0, parseInt(trimmed, 10) * 60);
+        }
+
+        const parts = trimmed.split(':');
+        if (parts.length === 2 && /^\d+$/.test(parts[0]) && /^\d+$/.test(parts[1])) {
+          const minutes = parseInt(parts[0], 10);
+          const seconds = parseInt(parts[1], 10);
+          if (seconds >= 60) {
+            return (minutes * 60) + seconds; // allow overflow to keep intent
+          }
+          return Math.max(0, (minutes * 60) + seconds);
+        }
+
+        return null;
+      };
+
+      const updateBackground = (secondsLeft) => {
+        if (secondsLeft <= 60) {
+          body.style.backgroundColor = '#4b0000';
+        } else if (secondsLeft <= 120) {
+          body.style.backgroundColor = '#5c2d00';
+        } else {
+          body.style.backgroundColor = '#000000';
+        }
+      };
+
+      const updateDisplay = () => {
+        timerElement.textContent = formatTime(remainingSeconds);
+        updateBackground(remainingSeconds);
+      };
+
+      const setUrlParam = (seconds) => {
+        const params = new URLSearchParams(window.location.search);
+        params.set('time', formatParamValue(seconds));
+        const newUrl = `${window.location.pathname}?${params.toString()}`;
+        window.history.replaceState({}, '', newUrl);
+      };
+
+      const startTimer = (seconds) => {
+        clearInterval(timerId);
+        remainingSeconds = Math.max(0, Math.round(seconds));
+        updateDisplay();
+
+        if (remainingSeconds === 0) {
+          return;
+        }
+
+        timerId = setInterval(() => {
+          remainingSeconds -= 1;
+          if (remainingSeconds <= 0) {
+            remainingSeconds = 0;
+            updateDisplay();
+            clearInterval(timerId);
+            return;
+          }
+          updateDisplay();
+        }, 1000);
+      };
+
+      const initializeFromUrl = () => {
+        const params = new URLSearchParams(window.location.search);
+        const timeParam = params.get('time');
+        const parsed = parseInput(timeParam);
+        return parsed !== null ? parsed : DEFAULT_SECONDS;
+      };
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const parsed = parseInput(timeInput.value);
+        const safeSeconds = parsed !== null ? parsed : DEFAULT_SECONDS;
+        startTimer(safeSeconds);
+        setUrlParam(safeSeconds);
+        timeInput.value = formatParamValue(safeSeconds);
+      });
+
+      const startingSeconds = initializeFromUrl();
+      timeInput.value = formatParamValue(startingSeconds);
+      startTimer(startingSeconds);
+    })();
+  </script>
+</body>
+</html>
