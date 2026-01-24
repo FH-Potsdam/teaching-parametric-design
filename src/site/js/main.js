@@ -82,3 +82,43 @@ document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
 
   videoElement.addEventListener('ended', markWatched);
 });
+
+const API_STATUS_KEY = 'apiAvailability';
+const API_CHECK_KEY = 'apiLastCheck';
+const API_CHECK_INTERVAL_MS = 60 * 60 * 1000;
+const API_PING_URL = 'https://mlapi.de/api/ping';
+
+const shouldCheckApiAvailability = () => {
+  try {
+    const lastCheck = Number(localStorage.getItem(API_CHECK_KEY));
+    if (!lastCheck || Number.isNaN(lastCheck)) return true;
+    return Date.now() - lastCheck > API_CHECK_INTERVAL_MS;
+  } catch (error) {
+    return true;
+  }
+};
+
+const checkApiAvailability = async () => {
+  let isAvailable = false;
+
+  try {
+    const response = await fetch(API_PING_URL, { cache: 'no-store' });
+    if (response.ok) {
+      const text = await response.text();
+      isAvailable = text.trim() === 'pong';
+    }
+  } catch (error) {
+    isAvailable = false;
+  }
+
+  try {
+    localStorage.setItem(API_STATUS_KEY, String(isAvailable));
+    localStorage.setItem(API_CHECK_KEY, String(Date.now()));
+  } catch (error) {
+    // Ignore storage failures (private mode, quota, etc.)
+  }
+};
+
+if (shouldCheckApiAvailability()) {
+  checkApiAvailability();
+}
