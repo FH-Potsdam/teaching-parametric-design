@@ -28,11 +28,11 @@
         <div class="video-library__thumb">{% if video.poster %}
             <img src="{{ video.poster }}" alt="{{ video.videoTitle }} preview">{% else %}
             <div class="video-library__placeholder">No preview available</div>{% endif %}
+          <span class="video-library__watch-indicator" data-video-status role="img" aria-label="You have watched this video" hidden>✓</span>
         </div>
         <div class="video-library__body">
           <p class="video-library__page">{{ video.pageTitle }}</p>
           <h3>{{ video.videoTitle }}</h3>
-          <span class="video-library__status" data-video-status data-watched-label="{{ watchedLabel }}" data-not-watched-label="{{ notWatchedLabel }}">{{ notWatchedLabel }}</span>
         </div>
       </a>{% endfor %}
     </div>
