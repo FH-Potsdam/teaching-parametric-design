@@ -5,7 +5,7 @@
 {% set filterObjs = [] %}
 
 {% for f in inspiration %}
-{% if not f.category in filters %}
+{% if f.show != false and not f.category in filters %}
 {% set filters = (filters.push(f.category), filters) %}
 {% endif %}
 {% endfor %}
@@ -48,6 +48,7 @@
 {% macro list(inspiration, translations, locale) %}
 <ul>
 {% for i in inspiration | sort(false, true, 'name') %}
+{% if i.show != false %}
 {% for ii in i.images %}
 <li class="inspiration-item inspiration-{{i.category}}" style="background-image:url(/images/inspiration/{{ ii.src }}.jpg);">
 <div>
@@ -59,6 +60,7 @@
 </div>
 </li>
 {% endfor %}
+{% endif %}
 {% endfor %}
 </ul>
 {% endmacro %}
