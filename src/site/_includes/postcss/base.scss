@@ -1372,7 +1372,7 @@ h3.inspiration {
   textarea {
     width: 100%;
     resize: vertical;
-    border-radius: 16px;
+    border-radius: 0;
     border: 1px solid var(--assistant-border);
     padding: 16px;
     font-size: 1rem;
@@ -1408,34 +1408,33 @@ h3.inspiration {
   }
 
   button {
-    border: none;
-    padding: 12px 20px;
-    border-radius: 999px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    background: var(--assistant-accent);
-    color: #fff;
+    border: 1px solid rgba(200, 200, 200, 1);
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    color: black;
     cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.25);
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    box-shadow: none;
   }
 
   button:hover {
-    transform: translateY(-1px);
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgba(220, 220, 220, 1);
   }
 
   button:disabled {
-    cursor: wait;
+    cursor: not-allowed;
     opacity: 0.6;
-    transform: none;
-    box-shadow: none;
   }
 
   button.ghost {
-    background: transparent;
-    color: var(--assistant-accent-dark);
-    border: 1px solid var(--assistant-accent);
-    box-shadow: none;
+    background: #fff;
+    color: black;
+    border: 1px solid rgba(200, 200, 200, 1);
   }
 
   .assistant-status {
