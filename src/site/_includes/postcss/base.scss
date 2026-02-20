@@ -680,7 +680,8 @@ ol.mainNav>li, ol.mainNav>li>ol>li {
 .mainNav a{
   color: black;
   text-decoration: none;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
+  line-height: 0.75em;
   &:hover {
     text-decoration: underline;
     text-underline-offset: 1px;
