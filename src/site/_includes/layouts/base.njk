@@ -32,6 +32,9 @@
         <nav>
           {{ renderNav(collections, page, locale, content) }}
         </nav>
+        <div id="assistBtn">
+          <a id="assistBtnTrigger" class="assist-btn" href="/{{locale}}/assistant" hidden>Assist</a>
+        </div>
         <nav>
           {{ renderLang(page.url) }}
         </nav>

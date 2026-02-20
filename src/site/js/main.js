@@ -87,6 +87,26 @@ const API_STATUS_KEY = 'apiAvailability';
 const API_CHECK_KEY = 'apiLastCheck';
 const API_CHECK_INTERVAL_MS = 60 * 60 * 1000;
 const API_PING_URL = 'https://mlapi.de/api/ping';
+const assistButton = document.querySelector('#assistBtnTrigger');
+
+const setAssistButtonVisibility = isAvailable => {
+  if (!assistButton) return;
+  if (isAvailable) {
+    assistButton.removeAttribute('hidden');
+  } else {
+    assistButton.setAttribute('hidden', '');
+  }
+};
+
+const getStoredApiAvailability = () => {
+  try {
+    const storedValue = localStorage.getItem(API_STATUS_KEY);
+    if (storedValue === null) return null;
+    return storedValue === 'true';
+  } catch (error) {
+    return null;
+  }
+};
 
 const shouldCheckApiAvailability = () => {
   try {
@@ -117,8 +137,18 @@ const checkApiAvailability = async () => {
   } catch (error) {
     // Ignore storage failures (private mode, quota, etc.)
   }
+
+  setAssistButtonVisibility(isAvailable);
 };
 
-if (shouldCheckApiAvailability()) {
+const cachedAvailability = getStoredApiAvailability();
+const needsApiCheck = shouldCheckApiAvailability();
+
+if (!needsApiCheck && cachedAvailability !== null) {
+  setAssistButtonVisibility(cachedAvailability);
+}
+
+if (needsApiCheck) {
+  setAssistButtonVisibility(false);
   checkApiAvailability();
 }

@@ -637,6 +637,34 @@ h5.navTitle{
   padding-top: 85px;
 }
 
+#assistBtn {
+  margin: 16px 0 20px;
+}
+
+#assistBtn .assist-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+#assistBtn .assist-btn:hover {
+  background-color: rgba(220, 220, 220, 1);
+  border-color: #000;
+}
+
+#assistBtn .assist-btn[hidden] {
+  display: none;
+}
+
 .mainNav, .mainNav ol, .mainNav ul, .mainNav li{
   list-style:none;
   margin:0;
