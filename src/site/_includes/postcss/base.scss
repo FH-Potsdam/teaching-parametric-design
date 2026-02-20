@@ -1486,6 +1486,27 @@ h3.inspiration {
     font-size: 0.95rem;
   }
 
+  .assistant-output .hljs {
+    color: #1c1a17;
+  }
+
+  .assistant-output .hljs-keyword,
+  .assistant-output .hljs-selector-tag,
+  .assistant-output .hljs-literal {
+    color: #c24a1a;
+    font-weight: 600;
+  }
+
+  .assistant-output .hljs-string,
+  .assistant-output .hljs-title {
+    color: #1e6b5a;
+  }
+
+  .assistant-output .hljs-number,
+  .assistant-output .hljs-symbol {
+    color: #7a4b8f;
+  }
+
   .assistant-output .hljs a {
     color: inherit;
     text-decoration: underline;
