@@ -24,6 +24,97 @@
 
   const copyDefaultLabel = copyBtn.dataset.labelDefault || copyBtn.textContent || 'Copy';
   let latestRawCode = '';
+
+  const getLinkType = url => {
+    try {
+      const parsed = new URL(url);
+      if (parsed.hostname.includes('parametric-design.fh-potsdam.de')) return 'course';
+      if (parsed.hostname.includes('p5js.org')) return 'p5js';
+      if (parsed.hostname.includes('developer.mozilla.org')) return 'mdn';
+      return 'external';
+    } catch (error) {
+      return 'external';
+    }
+  };
+
+  const getCourseThumbnail = url => {
+    const normalizedLocale = locale === 'dg' ? 'de' : locale;
+    const fallback = `/images/thumbnails/${normalizedLocale}_introduction.png`;
+
+    try {
+      const parsed = new URL(url);
+      const path = parsed.pathname;
+      const hash = (parsed.hash || '').replace('#', '').toLowerCase();
+
+      const pathMap = {
+        '/de/2d/01-intro/': 'de_2d_intro',
+        '/de/2d/02_1-drawing/': 'de_2d_drawing',
+        '/de/2d/02_3-typography/': 'de_2d_typography',
+        '/de/2d/03_1-variables/': 'de_2d_variables',
+        '/de/2d/03_2-loops/': 'de_2d_loops',
+        '/de/2d/03_3-conditions/': 'de_2d_conditions',
+        '/de/2d/05_1-variables/': 'de_2d_variables2',
+        '/de/2d/05_2-transformations/': 'de_2d_transformations',
+        '/de/2d/05_3-functions/': 'de_2d',
+        '/de/2d/06-inputs/': 'de_2d_input',
+        '/en/2d/01-intro/': 'en_2d_intro',
+        '/en/2d/02_1-drawing/': 'en_2d_drawing',
+        '/en/2d/02_3-typography/': 'en_2d_typography',
+        '/en/2d/03_1-variables/': 'en_2d_variables',
+        '/en/2d/03_2-loops/': 'en_2d_loops',
+        '/en/2d/03_3-conditions/': 'en_2d_conditions',
+        '/en/2d/05_1-variables/': 'en_2d_variables2',
+        '/en/2d/05_2-transformations/': 'en_2d_transformations',
+        '/en/2d/05_3-functions/': 'en_2d',
+        '/en/2d/06-inputs/': 'en_2d_input',
+      };
+
+      const hashMap = {
+        sketch: 'sketch',
+        debugging: 'debug',
+        canvas: 'canvas',
+        background: 'background',
+        random: 'random',
+        'for-loop': 'for',
+        text: 'typography_intro',
+      };
+
+      const base = pathMap[path];
+      if (!base) return fallback;
+
+      const suffix = hashMap[hash] || hash;
+      if (!suffix) return fallback;
+
+      return `/images/thumbnails/${base}_${suffix}.png`;
+    } catch (error) {
+      return fallback;
+    }
+  };
+
+  const createExternalSvg = (name, source) => {
+    const escapeXml = value =>
+      String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&apos;');
+    const safeName = escapeXml((name || 'function').slice(0, 22));
+    const safeSource = escapeXml(source.slice(0, 22));
+    return `
+      <svg viewBox="0 0 320 160" role="img" aria-label="${safeName} (${safeSource})" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff2db"/>
+            <stop offset="100%" stop-color="#efe4d5"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="320" height="160" fill="url(#g)" stroke="#d9ccb7"/>
+        <text x="16" y="78" fill="#1a1a1a" font-size="30" font-family="IBM Plex Mono, monospace">${safeName}</text>
+        <text x="16" y="130" fill="#67615b" font-size="20" font-family="IBM Plex Mono, monospace">${safeSource}</text>
+      </svg>
+    `.trim();
+  };
   const translations = {
     en: {
       idle: 'Idle',
@@ -80,10 +171,44 @@
     functionCalls.forEach(func => {
       const item = document.createElement('li');
       const link = document.createElement('a');
-      link.textContent = func.name || 'function';
+      const linkType = getLinkType(func.url);
+      link.className = `assistant-function-link assistant-function-link--${linkType}`;
       link.href = func.url || '#';
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
+      if (linkType === 'course') {
+        const thumb = document.createElement('div');
+        thumb.className = 'assistant-function-thumb';
+        const img = document.createElement('img');
+        const thumbSrc = getCourseThumbnail(func.url || '');
+        img.src = thumbSrc;
+        img.alt = `${func.name || 'function'} thumbnail`;
+        img.addEventListener('error', () => {
+          img.src = `/images/thumbnails/${normalizedLocale}_introduction.png`;
+        }, { once: true });
+        thumb.appendChild(img);
+
+        const meta = document.createElement('div');
+        meta.className = 'assistant-function-meta';
+        const title = document.createElement('strong');
+        title.textContent = func.name || 'function';
+        const source = document.createElement('span');
+        source.textContent = 'parametric-design.fh-potsdam.de';
+        meta.appendChild(title);
+        meta.appendChild(source);
+
+        link.appendChild(thumb);
+        link.appendChild(meta);
+      } else if (linkType === 'p5js' || linkType === 'mdn') {
+        const sourceLabel = linkType === 'p5js' ? 'p5js.org' : 'developer.mozilla.org';
+        const icon = document.createElement('div');
+        icon.className = 'assistant-function-svg';
+        icon.innerHTML = createExternalSvg(func.name || 'function', sourceLabel);
+        link.appendChild(icon);
+      } else {
+        link.textContent = func.name || 'function';
+      }
+
       item.appendChild(link);
       functionList.appendChild(item);
     });
