@@ -24,6 +24,10 @@ eleventyNavigation:
         placeholder="Describe the JavaScript you want..."
         required
       ></textarea>
+      <label class="assistant-checkbox">
+        <input id="includeCode" type="checkbox" />
+        Include current code in request
+      </label>
       <div class="assistant-actions">
         <button type="submit" id="submitBtn">Generate</button>
         <span class="assistant-status" id="status">Idle</span>

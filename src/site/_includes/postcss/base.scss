@@ -1407,6 +1407,14 @@ h3.inspiration {
     gap: 16px;
   }
 
+  .assistant-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--assistant-muted);
+  }
+
   button {
     border: 1px solid rgba(200, 200, 200, 1);
     padding: 6px 10px;

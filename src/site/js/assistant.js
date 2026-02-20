@@ -10,6 +10,7 @@
 
   const form = document.getElementById('promptForm');
   const questionInput = document.getElementById('question');
+  const includeCodeInput = document.getElementById('includeCode');
   const output = document.getElementById('output');
   const functionList = document.getElementById('functionList');
   const statusEl = document.getElementById('status');
@@ -108,10 +109,15 @@
     setStatus(t.sending, true);
 
     try {
+      const payload = { question, language: requestLanguage };
+      if (includeCodeInput && includeCodeInput.checked) {
+        payload.code = latestRawCode || '';
+      }
+
       const response = await fetch(apiGenerateUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, language: requestLanguage }),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
