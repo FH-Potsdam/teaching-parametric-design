@@ -7,6 +7,7 @@
   const apiBase = (root.dataset.apiBase || 'http://192.168.7.224:3000').replace(/\/$/, '');
   const apiGenerateUrl = `${apiBase}/api/generate`;
   const requestLanguage = normalizedLocale === 'de' ? 'de' : 'en';
+  const videoIndexEl = document.getElementById('assistantVideoIndex');
 
   const form = document.getElementById('promptForm');
   const questionInput = document.getElementById('question');
@@ -24,6 +25,31 @@
 
   const copyDefaultLabel = copyBtn.dataset.labelDefault || copyBtn.textContent || 'Copy';
   let latestRawCode = '';
+  let assistantVideos = [];
+
+  if (videoIndexEl?.textContent) {
+    try {
+      assistantVideos = JSON.parse(videoIndexEl.textContent);
+    } catch (error) {
+      assistantVideos = [];
+    }
+  }
+
+  const videoByPageAndHeading = new Map();
+  const firstVideoByPage = new Map();
+  assistantVideos.forEach(video => {
+    if (!video?.pageUrl || !video?.videoId) return;
+    const headingSlug = (video.headingSlug || '').toLowerCase();
+    if (headingSlug) {
+      const key = `${video.pageUrl}|${headingSlug}`;
+      if (!videoByPageAndHeading.has(key)) {
+        videoByPageAndHeading.set(key, video);
+      }
+    }
+    if (!firstVideoByPage.has(video.pageUrl)) {
+      firstVideoByPage.set(video.pageUrl, video);
+    }
+  });
 
   const getLinkType = url => {
     try {
@@ -91,6 +117,21 @@
     }
   };
 
+  const getCourseVideoMatch = url => {
+    try {
+      const parsed = new URL(url);
+      const pageUrl = parsed.pathname.endsWith('/') ? parsed.pathname : `${parsed.pathname}/`;
+      const headingSlug = parsed.hash ? parsed.hash.replace('#', '').toLowerCase() : '';
+      if (headingSlug) {
+        const matched = videoByPageAndHeading.get(`${pageUrl}|${headingSlug}`);
+        if (matched) return matched;
+      }
+      return firstVideoByPage.get(pageUrl) || null;
+    } catch (error) {
+      return null;
+    }
+  };
+
   const createExternalSvg = (name, source) => {
     const escapeXml = value =>
       String(value)
@@ -133,6 +174,7 @@
       noCodeReturned: 'No code returned.',
       noHtmlReturned: 'No HTML returned.',
       copyDoneLabel: 'Copied',
+      watchedLabel: 'Watched',
     },
     de: {
       idle: 'Bereit',
@@ -151,6 +193,7 @@
       noCodeReturned: 'Kein Code zurückgegeben.',
       noHtmlReturned: 'Kein HTML zurückgegeben.',
       copyDoneLabel: 'Kopiert',
+      watchedLabel: 'Angesehen',
     },
   };
 
@@ -194,8 +237,17 @@
         title.textContent = func.name || 'function';
         const source = document.createElement('span');
         source.textContent = 'parametric-design.fh-potsdam.de';
+        const videoMatch = getCourseVideoMatch(func.url || '');
+        const isWatched = !!(videoMatch && window.videoProgress?.hasWatched?.(videoMatch.videoId));
         meta.appendChild(title);
         meta.appendChild(source);
+        if (isWatched) {
+          const watched = document.createElement('span');
+          watched.className = 'assistant-function-watched';
+          watched.textContent = `✓ ${t.watchedLabel}`;
+          meta.appendChild(watched);
+          link.classList.add('assistant-function-link--watched');
+        }
 
         link.appendChild(thumb);
         link.appendChild(meta);

@@ -1594,6 +1594,23 @@ h3.inspiration {
     background-color: rgba(220, 220, 220, 1);
   }
 
+  .assistant-function-list a.assistant-function-link--watched {
+    border-color: rgba(20, 168, 115, 0.65);
+    box-shadow: 0 0 0 1px rgba(20, 168, 115, 0.25);
+  }
+
+  .assistant-function-watched {
+    display: inline-flex;
+    width: fit-content;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #0f7a53;
+    background: rgba(20, 168, 115, 0.12);
+    border: 1px solid rgba(20, 168, 115, 0.4);
+    padding: 1px 6px;
+    border-radius: 10px;
+  }
+
   .assistant-function-list a.assistant-function-link--p5js,
   .assistant-function-list a.assistant-function-link--mdn {
     padding: 0;

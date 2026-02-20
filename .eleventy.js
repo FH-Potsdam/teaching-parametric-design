@@ -65,12 +65,14 @@ module.exports = function(config) {
         const [url = "", poster = "", captionFile = "", captionLabel = "", localeArg = "", dgUrl = ""] = stringArgs;
         const source = locale === "dg" && dgUrl ? dgUrl : url;
         const anchorId = makeVideoAnchor(source);
+        const heading = currentHeading || pageMeta.title;
 
         videos.push({
           locale,
           pageUrl: pageMeta.url,
           pageTitle: pageMeta.title,
-          videoTitle: currentHeading || pageMeta.title,
+          videoTitle: heading,
+          headingSlug: slugifyValue(heading),
           videoId: source,
           videoSrc: source,
           anchorId,
@@ -116,6 +118,7 @@ module.exports = function(config) {
   // add navigation data object
   config.addPlugin(eleventyNavigationPlugin);
 
+  config.addFilter('json', value => JSON.stringify(value));
   config.addFilter('videosByLocale', (videos, locale) => (videos || []).filter(video => video.locale === locale));
   config.addFilter('videoAnchor', (videoSource, pageUrl = '') => makeVideoAnchor(videoSource, pageUrl));
 

@@ -55,4 +55,5 @@ Hier steht ein kurzes Intro zum Assistant
   </section>
 </div>
 
+<script id="assistantVideoIndex" type="application/json">{{ collections.videoLibrary | json | safe }}</script>
 <script src="/js/assistant.js"></script>
