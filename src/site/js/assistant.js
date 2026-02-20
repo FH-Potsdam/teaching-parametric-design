@@ -12,17 +12,17 @@
   const questionInput = document.getElementById('question');
   const output = document.getElementById('output');
   const functionList = document.getElementById('functionList');
-  const rawOutput = document.getElementById('rawOutput');
   const statusEl = document.getElementById('status');
   const submitBtn = document.getElementById('submitBtn');
   const clearBtn = document.getElementById('clearBtn');
   const copyBtn = document.getElementById('copyBtn');
 
-  if (!form || !questionInput || !output || !functionList || !rawOutput || !statusEl || !submitBtn || !clearBtn || !copyBtn) {
+  if (!form || !questionInput || !output || !functionList || !statusEl || !submitBtn || !clearBtn || !copyBtn) {
     return;
   }
 
   const copyDefaultLabel = copyBtn.dataset.labelDefault || copyBtn.textContent || 'Copy';
+  let latestRawCode = '';
   const translations = {
     en: {
       idle: 'Idle',
@@ -91,7 +91,7 @@
   const renderEmpty = () => {
     output.innerHTML = `<p class="empty">${t.noResponseYet}</p>`;
     functionList.innerHTML = `<li class="empty">${t.noFunctionsYet}</li>`;
-    rawOutput.textContent = t.noCodeYet;
+    latestRawCode = '';
     copyBtn.disabled = true;
     copyBtn.textContent = copyDefaultLabel;
   };
@@ -123,14 +123,14 @@
       const data = await response.json();
       output.innerHTML = data.html || `<p class="empty">${t.noHtmlReturned}</p>`;
       renderFunctions(data.functionCalls);
-      rawOutput.textContent = data.raw || t.noCodeReturned;
-      copyBtn.disabled = !data.raw;
+      latestRawCode = data.raw || '';
+      copyBtn.disabled = !latestRawCode;
       copyBtn.textContent = copyDefaultLabel;
       setStatus(t.done, false);
     } catch (error) {
       output.innerHTML = `<p class="empty">${error.message || t.requestFailed}</p>`;
       renderFunctions([]);
-      rawOutput.textContent = t.noCodeReturned;
+      latestRawCode = '';
       copyBtn.disabled = true;
       copyBtn.textContent = copyDefaultLabel;
       setStatus(t.error, false);
@@ -146,14 +146,13 @@
   });
 
   copyBtn.addEventListener('click', async () => {
-    const text = rawOutput.textContent;
-    if (!text || text === t.noCodeYet || text === t.noCodeReturned) {
+    if (!latestRawCode) {
       setStatus(t.nothingToCopy, false);
       return;
     }
 
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(latestRawCode);
       copyBtn.textContent = t.copyDoneLabel;
       setStatus(t.copied, false);
       setTimeout(() => {

@@ -34,6 +34,7 @@ eleventyNavigation:
   <section class="assistant-panel">
     <div class="assistant-output-header">
       <h3>Output</h3>
+      <button class="ghost" id="copyBtn" type="button" data-label-default="Copy">Copy</button>
       <button class="ghost" id="clearBtn" type="button">Clear</button>
     </div>
     <div class="assistant-output-grid">
@@ -48,13 +49,6 @@ eleventyNavigation:
         <ul id="functionList" class="assistant-function-list">
           <li class="empty">No functions yet.</li>
         </ul>
-      </div>
-      <div class="assistant-output-block">
-        <div class="assistant-output-title">
-          <h4>Raw code</h4>
-          <button class="ghost" id="copyBtn" type="button" data-label-default="Copy">Copy</button>
-        </div>
-        <pre id="rawOutput" class="assistant-raw-output">No code yet.</pre>
       </div>
     </div>
   </section>
