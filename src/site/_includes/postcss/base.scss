@@ -1351,11 +1351,7 @@ h3.inspiration {
   }
 
   .assistant-panel {
-    background: var(--assistant-panel);
-    border: 1px solid var(--assistant-border);
-    border-radius: 20px;
-    padding: 24px;
-    box-shadow: var(--assistant-shadow);
+    padding: 0;
   }
 
   .assistant-form {
@@ -1559,7 +1555,7 @@ h3.inspiration {
 @media (max-width: 720px) {
   .assistant-page {
     .assistant-panel {
-      padding: 20px;
+      padding: 0;
     }
 
     .assistant-actions {
