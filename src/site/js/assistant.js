@@ -6,10 +6,10 @@
   const normalizedLocale = locale === 'dg' ? 'de' : locale;
   const apiBase = (root.dataset.apiBase || 'http://192.168.7.224:3000').replace(/\/$/, '');
   const apiGenerateUrl = `${apiBase}/api/generate`;
+  const requestLanguage = normalizedLocale === 'de' ? 'de' : 'en';
 
   const form = document.getElementById('promptForm');
   const questionInput = document.getElementById('question');
-  const languageInput = document.getElementById('language');
   const output = document.getElementById('output');
   const functionList = document.getElementById('functionList');
   const rawOutput = document.getElementById('rawOutput');
@@ -18,7 +18,7 @@
   const clearBtn = document.getElementById('clearBtn');
   const copyBtn = document.getElementById('copyBtn');
 
-  if (!form || !questionInput || !languageInput || !output || !functionList || !rawOutput || !statusEl || !submitBtn || !clearBtn || !copyBtn) {
+  if (!form || !questionInput || !output || !functionList || !rawOutput || !statusEl || !submitBtn || !clearBtn || !copyBtn) {
     return;
   }
 
@@ -64,10 +64,6 @@
 
   const t = translations[normalizedLocale] || translations.en;
 
-  if (!languageInput.value) {
-    languageInput.value = normalizedLocale === 'de' ? 'de' : 'en';
-  }
-
   const setStatus = (message, isBusy) => {
     statusEl.textContent = message;
     submitBtn.disabled = isBusy;
@@ -103,7 +99,6 @@
   const handleSubmit = async event => {
     event.preventDefault();
     const question = questionInput.value.trim();
-    const language = languageInput.value;
 
     if (!question) {
       setStatus(t.enterPrompt, false);
@@ -116,7 +111,7 @@
       const response = await fetch(apiGenerateUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, language }),
+        body: JSON.stringify({ question, language: requestLanguage }),
       });
 
       if (!response.ok) {

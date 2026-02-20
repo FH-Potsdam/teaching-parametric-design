@@ -24,13 +24,6 @@ eleventyNavigation:
         placeholder="Describe the JavaScript you want..."
         required
       ></textarea>
-      <div class="assistant-field">
-        <label for="language" class="assistant-label">Language</label>
-        <select id="language" name="language">
-          <option value="en" selected>English (en)</option>
-          <option value="de">Deutsch (de)</option>
-        </select>
-      </div>
       <div class="assistant-actions">
         <button type="submit" id="submitBtn">Generate</button>
         <span class="assistant-status" id="status">Idle</span>
