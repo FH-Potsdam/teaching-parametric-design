@@ -78,7 +78,7 @@ We can add as many text fields as we want. There are a few other input elements,
   
 Check the corresponding documentation in the reference for more info. 
 
-### Slider
+{{h2('Slider')}}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/FtaXGCfyZXbFt9M/download/en_2d_input_slider.mp4", "/images/thumbnails/en_2d_input_slider.png", "en_2d_input_slider", translations.subtitles[locale], locale)}}
 <!--

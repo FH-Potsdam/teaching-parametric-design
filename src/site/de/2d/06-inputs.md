@@ -81,7 +81,7 @@ Man kann so viele Textfelder hinzufügen wie man möchtet. Neben Textfeldern gib
   
 Unter den Links gibt es in der Dokumentation weitere Informationen. 
 
-### Slider
+{{h2('Slider')}}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/D6aWPfik6JqriHn/download/de_2d_input_slider.mp4", "/images/thumbnails/de_2d_input_slider.png", "de_2d_input_slider", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/Jb4MfEDS45ZzRmE/download/de_2d_input_slider.mp4")}}
 <!--
