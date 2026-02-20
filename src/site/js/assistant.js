@@ -63,58 +63,13 @@
     }
   };
 
-  const getCourseThumbnail = url => {
-    const normalizedLocale = locale === 'dg' ? 'de' : locale;
-    const fallback = `/images/thumbnails/${normalizedLocale}_introduction.png`;
-
-    try {
-      const parsed = new URL(url);
-      const path = parsed.pathname;
-      const hash = (parsed.hash || '').replace('#', '').toLowerCase();
-
-      const pathMap = {
-        '/de/2d/01-intro/': 'de_2d_intro',
-        '/de/2d/02_1-drawing/': 'de_2d_drawing',
-        '/de/2d/02_3-typography/': 'de_2d_typography',
-        '/de/2d/03_1-variables/': 'de_2d_variables',
-        '/de/2d/03_2-loops/': 'de_2d_loops',
-        '/de/2d/03_3-conditions/': 'de_2d_conditions',
-        '/de/2d/05_1-variables/': 'de_2d_variables2',
-        '/de/2d/05_2-transformations/': 'de_2d_transformations',
-        '/de/2d/05_3-functions/': 'de_2d',
-        '/de/2d/06-inputs/': 'de_2d_input',
-        '/en/2d/01-intro/': 'en_2d_intro',
-        '/en/2d/02_1-drawing/': 'en_2d_drawing',
-        '/en/2d/02_3-typography/': 'en_2d_typography',
-        '/en/2d/03_1-variables/': 'en_2d_variables',
-        '/en/2d/03_2-loops/': 'en_2d_loops',
-        '/en/2d/03_3-conditions/': 'en_2d_conditions',
-        '/en/2d/05_1-variables/': 'en_2d_variables2',
-        '/en/2d/05_2-transformations/': 'en_2d_transformations',
-        '/en/2d/05_3-functions/': 'en_2d',
-        '/en/2d/06-inputs/': 'en_2d_input',
-      };
-
-      const hashMap = {
-        sketch: 'sketch',
-        debugging: 'debug',
-        canvas: 'canvas',
-        background: 'background',
-        random: 'random',
-        'for-loop': 'for',
-        text: 'typography_intro',
-      };
-
-      const base = pathMap[path];
-      if (!base) return fallback;
-
-      const suffix = hashMap[hash] || hash;
-      if (!suffix) return fallback;
-
-      return `/images/thumbnails/${base}_${suffix}.png`;
-    } catch (error) {
-      return fallback;
-    }
+  const getApiThumbnail = func => {
+    const value = func?.thumbnail;
+    if (typeof value !== 'string') return '';
+    const trimmed = value.trim();
+    if (!trimmed) return '';
+    if (trimmed.startsWith('/')) return trimmed;
+    return `/${trimmed.replace(/^\/+/, '')}`;
   };
 
   const getCourseVideoMatch = url => {
@@ -155,6 +110,13 @@
         <text x="16" y="130" fill="#67615b" font-size="20" font-family="IBM Plex Mono, monospace">${safeSource}</text>
       </svg>
     `.trim();
+  };
+
+  const appendGeneratedThumbnail = (container, functionName, sourceLabel) => {
+    const icon = document.createElement('div');
+    icon.className = 'assistant-function-svg';
+    icon.innerHTML = createExternalSvg(functionName || 'function', sourceLabel);
+    container.appendChild(icon);
   };
   const translations = {
     en: {
@@ -222,14 +184,19 @@
       if (linkType === 'course') {
         const thumb = document.createElement('div');
         thumb.className = 'assistant-function-thumb';
-        const img = document.createElement('img');
-        const thumbSrc = getCourseThumbnail(func.url || '');
-        img.src = thumbSrc;
-        img.alt = `${func.name || 'function'} thumbnail`;
-        img.addEventListener('error', () => {
-          img.src = `/images/thumbnails/${normalizedLocale}_introduction.png`;
-        }, { once: true });
-        thumb.appendChild(img);
+        const thumbSrc = getApiThumbnail(func);
+        if (thumbSrc) {
+          const img = document.createElement('img');
+          img.src = thumbSrc;
+          img.alt = `${func.name || 'function'} thumbnail`;
+          img.addEventListener('error', () => {
+            thumb.innerHTML = '';
+            appendGeneratedThumbnail(thumb, func.name || 'function', 'parametric-design.fh-potsdam.de');
+          }, { once: true });
+          thumb.appendChild(img);
+        } else {
+          appendGeneratedThumbnail(thumb, func.name || 'function', 'parametric-design.fh-potsdam.de');
+        }
 
         const meta = document.createElement('div');
         meta.className = 'assistant-function-meta';
