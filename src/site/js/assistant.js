@@ -25,6 +25,7 @@
 
   const copyDefaultLabel = copyBtn.dataset.labelDefault || copyBtn.textContent || 'Copy';
   let latestRawCode = '';
+  let previewByUrl = new Map();
   let assistantVideos = [];
 
   if (videoIndexEl?.textContent) {
@@ -60,6 +61,14 @@
       return 'external';
     } catch (error) {
       return 'external';
+    }
+  };
+
+  const normalizeUrlKey = url => {
+    try {
+      return new URL(url, window.location.origin).href;
+    } catch (error) {
+      return String(url || '');
     }
   };
 
@@ -118,6 +127,105 @@
     icon.innerHTML = createExternalSvg(functionName || 'function', sourceLabel);
     container.appendChild(icon);
   };
+
+  const getSourceLabel = linkType => {
+    if (linkType === 'course') return 'parametric-design.fh-potsdam.de';
+    if (linkType === 'p5js') return 'p5js.org';
+    if (linkType === 'mdn') return 'developer.mozilla.org';
+    return 'external';
+  };
+
+  const buildPreviewMap = functionCalls => {
+    const map = new Map();
+    if (!Array.isArray(functionCalls)) return map;
+
+    functionCalls.forEach(func => {
+      const url = func?.url;
+      if (!url) return;
+      const key = normalizeUrlKey(url);
+      const linkType = getLinkType(url);
+      const sourceLabel = getSourceLabel(linkType);
+      const thumbnail = linkType === 'course' ? getApiThumbnail(func) : '';
+
+      map.set(key, {
+        name: func?.name || 'function',
+        sourceLabel,
+        thumbnail,
+      });
+    });
+
+    return map;
+  };
+
+  const previewEl = document.createElement('div');
+  previewEl.className = 'assistant-link-preview';
+  previewEl.hidden = true;
+  document.body.appendChild(previewEl);
+
+  const positionPreview = (x, y) => {
+    const gap = 14;
+    const rect = previewEl.getBoundingClientRect();
+    let left = x + gap;
+    let top = y + gap;
+
+    if (left + rect.width > window.innerWidth - 8) {
+      left = x - rect.width - gap;
+    }
+    if (top + rect.height > window.innerHeight - 8) {
+      top = y - rect.height - gap;
+    }
+
+    previewEl.style.left = `${Math.max(8, left)}px`;
+    previewEl.style.top = `${Math.max(8, top)}px`;
+  };
+
+  const hidePreview = () => {
+    previewEl.hidden = true;
+    previewEl.innerHTML = '';
+  };
+
+  const getPreviewForAnchor = anchor => {
+    const key = normalizeUrlKey(anchor.href);
+    const mappedPreview = previewByUrl.get(key);
+    if (mappedPreview) return mappedPreview;
+
+    const linkType = getLinkType(anchor.href);
+    return {
+      name: (anchor.textContent || 'link').trim() || 'link',
+      sourceLabel: getSourceLabel(linkType),
+      thumbnail: '',
+    };
+  };
+
+  const showPreviewForLink = (anchor, x, y) => {
+    const key = normalizeUrlKey(anchor.href);
+    const preview = getPreviewForAnchor(anchor);
+    if (!preview) {
+      hidePreview();
+      return;
+    }
+
+    previewEl.innerHTML = '';
+    if (preview.thumbnail) {
+      const img = document.createElement('img');
+      img.src = preview.thumbnail;
+      img.alt = `${preview.name} thumbnail`;
+      img.addEventListener('error', () => {
+        preview.thumbnail = '';
+        previewByUrl.set(key, preview);
+        showPreviewForLink(anchor, x, y);
+      }, { once: true });
+      previewEl.appendChild(img);
+    } else {
+      const svgWrap = document.createElement('div');
+      svgWrap.className = 'assistant-link-preview-svg';
+      svgWrap.innerHTML = createExternalSvg(preview.name, preview.sourceLabel);
+      previewEl.appendChild(svgWrap);
+    }
+
+    previewEl.hidden = false;
+    positionPreview(x, y);
+  };
   const translations = {
     en: {
       idle: 'Idle',
@@ -167,6 +275,7 @@
   };
 
   const renderFunctions = functionCalls => {
+    previewByUrl = buildPreviewMap(functionCalls);
     functionList.innerHTML = '';
     if (!Array.isArray(functionCalls) || functionCalls.length === 0) {
       functionList.innerHTML = `<li class="empty">${t.noFunctionsFound}</li>`;
@@ -288,6 +397,36 @@
   };
 
   form.addEventListener('submit', handleSubmit);
+
+  output.addEventListener('mouseover', event => {
+    const anchor = event.target.closest('a[href]');
+    if (!anchor || !output.contains(anchor)) return;
+    showPreviewForLink(anchor, event.clientX, event.clientY);
+  });
+
+  output.addEventListener('mousemove', event => {
+    if (previewEl.hidden) return;
+    positionPreview(event.clientX, event.clientY);
+  });
+
+  output.addEventListener('mouseout', event => {
+    const fromAnchor = event.target.closest('a[href]');
+    if (!fromAnchor || !output.contains(fromAnchor)) return;
+    const toElement = event.relatedTarget;
+    if (toElement && fromAnchor.contains(toElement)) return;
+    hidePreview();
+  });
+
+  output.addEventListener('focusin', event => {
+    const anchor = event.target.closest('a[href]');
+    if (!anchor || !output.contains(anchor)) return;
+    const rect = anchor.getBoundingClientRect();
+    showPreviewForLink(anchor, rect.right, rect.top);
+  });
+
+  output.addEventListener('focusout', () => {
+    hidePreview();
+  });
 
   clearBtn.addEventListener('click', () => {
     questionInput.value = '';

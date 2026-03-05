@@ -1644,6 +1644,28 @@ h3.inspiration {
   }
 }
 
+.assistant-link-preview {
+  position: fixed;
+  z-index: 2000;
+  width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
+  pointer-events: none;
+}
+
+.assistant-link-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.assistant-link-preview-svg svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 720px) {
   .assistant-page {
     .assistant-panel {
