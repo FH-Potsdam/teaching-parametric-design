@@ -4,7 +4,7 @@
 
   const locale = root.dataset.locale || 'en';
   const normalizedLocale = locale === 'dg' ? 'de' : locale;
-  const apiBase = (root.dataset.apiBase || 'https://192.168.7.224:3000').replace(/\/$/, '');
+  const apiBase = (root.dataset.apiBase || 'https://10.104.30.34:3000').replace(/\/$/, '');
   const apiGenerateUrl = `${apiBase}/api/generate`;
   const requestLanguage = normalizedLocale === 'de' ? 'de' : 'en';
   const videoIndexEl = document.getElementById('assistantVideoIndex');
