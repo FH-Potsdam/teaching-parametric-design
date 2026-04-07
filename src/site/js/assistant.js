@@ -4,7 +4,7 @@
 
   const locale = root.dataset.locale || 'en';
   const normalizedLocale = locale === 'dg' ? 'de' : locale;
-  const apiBase = (root.dataset.apiBase || 'https://10.104.30.34').replace(/\/$/, '');
+  const apiBase = (root.dataset.apiBase || 'https://fb4-meier-ml.fh-potsdam.de').replace(/\/$/, '');
   const apiGenerateUrl = `${apiBase}/api/generate`;
   const requestLanguage = normalizedLocale === 'de' ? 'de' : 'en';
   const videoIndexEl = document.getElementById('assistantVideoIndex');
