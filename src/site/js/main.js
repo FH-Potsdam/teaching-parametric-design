@@ -86,7 +86,7 @@ document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
 const API_STATUS_KEY = 'apiAvailability';
 const API_CHECK_KEY = 'apiLastCheck';
 const API_CHECK_INTERVAL_MS = 5 * 60 * 1000;
-const API_PING_URL = 'http://192.168.7.224:3000/api/ping';
+const API_PING_URL = 'https://fb4-meier-ml.fh-potsdam.de/api/ping';
 const assistButton = document.querySelector('#assistBtnTrigger');
 
 const setAssistButtonVisibility = isAvailable => {

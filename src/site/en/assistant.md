@@ -7,7 +7,7 @@ eleventyNavigation:
   parent: en
 ---
 
-<div class="assistant-page" data-locale="{{ locale }}" data-api-base="http://192.168.7.224:3000">
+<div class="assistant-page" data-locale="{{ locale }}" data-api-base="https://fb4-meier-ml.fh-potsdam.de">
   <header class="assistant-header">
     <p class="assistant-kicker">Assistant</p>
     <h2>Parametric Design Generator</h2>

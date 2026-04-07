@@ -11,7 +11,7 @@ Hier steht ein kurzes Intro zum Assistant
 
 > Und eine Warnung zum Datenschutz
 
-<div class="assistant-page" data-locale="{{ locale }}" data-api-base="http://192.168.7.224:3000">
+<div class="assistant-page" data-locale="{{ locale }}" data-api-base="https://fb4-meier-ml.fh-potsdam.de">
   <section class="assistant-panel">
     <form id="promptForm" class="assistant-form">
       <label for="question" class="assistant-label">Prompt</label>
