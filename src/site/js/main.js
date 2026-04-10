@@ -29,6 +29,19 @@ const watchedVideos = new Set(getStoredVideos());
 
 const hasWatchedVideo = videoId => watchedVideos.has(videoId);
 
+const getBadgeLocale = () => {
+  const lang = (document.documentElement.lang || '').toLowerCase();
+  if (lang.startsWith('de') || lang.startsWith('sgn-de')) return 'de';
+  return 'en';
+};
+
+const watchedBadgeByLocale = {
+  en: 'Watched',
+  de: 'Angesehen',
+};
+
+const watchedBadgeLabel = watchedBadgeByLocale[getBadgeLocale()] || watchedBadgeByLocale.en;
+
 const saveWatchedVideos = () => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...watchedVideos]));
 };
@@ -57,9 +70,9 @@ document.querySelectorAll('.video-wrapper[data-video-id]').forEach(wrapper => {
   if (!badge) {
     badge = document.createElement('div');
     badge.className = 'video-status';
-    badge.textContent = 'Watched';
     wrapper.appendChild(badge);
   }
+  badge.textContent = `✓ ${watchedBadgeLabel}`;
 
   if (hasWatchedVideo(videoId)) {
     wrapper.classList.add('video-watched');
