@@ -2,6 +2,8 @@ const initVideoLibrary = () => {
   const cards = document.querySelectorAll('.video-library__card[data-video-id]');
   const library = document.querySelector('.video-library');
   const viewButtons = document.querySelectorAll('.video-library__view-btn[data-view]');
+  const progressWatched = document.querySelector('[data-video-progress-watched]');
+  const progressRemaining = document.querySelector('[data-video-progress-remaining]');
 
   const updateCardStatus = (card) => {
     const videoId = card.dataset.videoId;
@@ -59,6 +61,20 @@ const initVideoLibrary = () => {
     }
   };
 
+  const updateProgressStatus = () => {
+    const totalVideos = cards.length;
+    const watchedVideos = Array.from(cards).filter(card =>
+      card.classList.contains('video-library__card--watched')).length;
+    const remainingVideos = Math.max(totalVideos - watchedVideos, 0);
+
+    if (progressWatched) {
+      progressWatched.textContent = String(watchedVideos);
+    }
+    if (progressRemaining) {
+      progressRemaining.textContent = String(remainingVideos);
+    }
+  };
+
   if (viewButtons.length && library) {
     viewButtons.forEach((btn) => {
       btn.addEventListener('click', () => setView(btn.dataset.view));
@@ -69,6 +85,7 @@ const initVideoLibrary = () => {
   if (cards.length) {
     cards.forEach(updateCardStatus);
   }
+  updateProgressStatus();
 };
 
 if (document.readyState === 'loading') {

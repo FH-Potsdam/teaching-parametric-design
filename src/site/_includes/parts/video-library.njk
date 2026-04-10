@@ -4,6 +4,8 @@
 {% set emptyLabel = "No videos found for this language." %}
 {% set gridLabel = "Grid view" %}
 {% set listLabel = "List view" %}
+{% set watchedCountLabel = "watched" %}
+{% set remainingCountLabel = "remaining" %}
 
 {% if locale == "de" or locale == "dg" %}
   {% set watchedLabel = "Angesehen" %}
@@ -11,13 +13,21 @@
   {% set emptyLabel = "Keine Videos für diese Sprache gefunden." %}
   {% set gridLabel = "Kachelansicht" %}
   {% set listLabel = "Listenansicht" %}
+  {% set watchedCountLabel = "angesehen" %}
+  {% set remainingCountLabel = "offen" %}
 {% endif %}
+
   <div class="video-library video-library--grid" data-locale="{{ locale }}">
   {% if not videos or videos.length == 0 %}
   <p class="video-library__loading">{{ emptyLabel }}</p>
   {% else %}
   <section class="video-library__locale">
     <div class="video-library__header">
+      <div class="video-library__progress" aria-live="polite">
+        <span class="video-library__progress-item"><span class="video-library__progress-value" data-video-progress-watched>0</span><span class="video-library__progress-label">{{ watchedCountLabel }}</span></span>
+        <span class="video-library__progress-separator" aria-hidden="true">/</span>
+        <span class="video-library__progress-item"><span class="video-library__progress-value" data-video-progress-remaining>{{ videos.length }}</span><span class="video-library__progress-label">{{ remainingCountLabel }}</span></span>
+      </div>
       <div class="video-library__view-toggle" role="group" aria-label="{{ gridLabel }}/{{ listLabel }}">
         <button type="button" class="video-library__view-btn is-active" data-view="grid">{{ gridLabel }}</button>
         <button type="button" class="video-library__view-btn" data-view="list">{{ listLabel }}</button>
@@ -28,7 +38,7 @@
         <div class="video-library__thumb">{% if video.poster %}
             <img src="{{ video.poster }}" alt="{{ video.videoTitle }} preview">{% else %}
             <div class="video-library__placeholder">No preview available</div>{% endif %}
-          <span class="video-library__watch-indicator" data-video-status role="img" aria-label="You have watched this video" hidden>✓</span>
+          <span class="video-library__watch-indicator" data-video-status role="img" aria-label="{{ watchedLabel }}" hidden>✓</span>
         </div>
         <div class="video-library__body">
           <p class="video-library__page">{{ video.pageTitle }}</p>

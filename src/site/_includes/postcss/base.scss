@@ -278,9 +278,35 @@ video {
 .video-library__header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.video-library__progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.85);
+  padding: 6px 10px;
+  font-size: 0.95rem;
+}
+
+.video-library__progress-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.video-library__progress-value {
+  font-weight: 700;
+}
+
+.video-library__progress-separator {
+  opacity: 0.6;
 }
 
 .video-library__view-toggle {
@@ -431,6 +457,13 @@ video {
 
 .video-library__watch-indicator--visible {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .video-library__progress {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 .video-library__loading {
@@ -1275,6 +1308,12 @@ h3.inspiration {
   }
 
   .video-library__view-btn {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    color: $dark-font;
+  }
+
+  .video-library__progress {
     border-color: rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.08);
     color: $dark-font;
