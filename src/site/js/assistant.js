@@ -129,7 +129,7 @@
   };
 
   const getSourceLabel = linkType => {
-    if (linkType === 'course') return 'parametric-design.fh-potsdam.de';
+    if (linkType === 'course') return 'Parametric Design';
     if (linkType === 'p5js') return 'p5js.org';
     if (linkType === 'mdn') return 'developer.mozilla.org';
     return 'external';
@@ -300,28 +300,25 @@
           img.alt = `${func.name || 'function'} thumbnail`;
           img.addEventListener('error', () => {
             thumb.innerHTML = '';
-            appendGeneratedThumbnail(thumb, func.name || 'function', 'parametric-design.fh-potsdam.de');
+            appendGeneratedThumbnail(thumb, func.name || 'function', 'Parametric Design');
           }, { once: true });
           thumb.appendChild(img);
         } else {
-          appendGeneratedThumbnail(thumb, func.name || 'function', 'parametric-design.fh-potsdam.de');
+          appendGeneratedThumbnail(thumb, func.name || 'function', 'Parametric Design');
         }
 
         const meta = document.createElement('div');
         meta.className = 'assistant-function-meta';
         const title = document.createElement('strong');
         title.textContent = func.name || 'function';
-        const source = document.createElement('span');
-        source.textContent = 'parametric-design.fh-potsdam.de';
         const videoMatch = getCourseVideoMatch(func.url || '');
         const isWatched = !!(videoMatch && window.videoProgress?.hasWatched?.(videoMatch.videoId));
         meta.appendChild(title);
-        meta.appendChild(source);
         if (isWatched) {
           const watched = document.createElement('span');
           watched.className = 'assistant-function-watched';
           watched.textContent = `✓ ${t.watchedLabel}`;
-          meta.appendChild(watched);
+          thumb.appendChild(watched);
           link.classList.add('assistant-function-link--watched');
         }
 

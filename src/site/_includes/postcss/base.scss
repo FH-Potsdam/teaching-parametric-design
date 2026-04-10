@@ -1590,6 +1590,8 @@ h3.inspiration {
   }
 
   .assistant-function-thumb {
+    position: relative;
+    overflow: hidden;
     border-bottom: 1px solid var(--assistant-border);
     background: #fff;
     height: 110px;
@@ -1649,6 +1651,15 @@ h3.inspiration {
     border: 1px solid rgba(20, 168, 115, 0.4);
     padding: 1px 6px;
     border-radius: 10px;
+  }
+
+  .assistant-function-thumb .assistant-function-watched {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 1;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.92);
   }
 
   .assistant-function-list a.assistant-function-link--p5js,
