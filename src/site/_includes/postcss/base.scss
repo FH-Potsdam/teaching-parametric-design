@@ -316,6 +316,9 @@ video {
 }
 
 .video-library__view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: rgba(0, 0, 0, 0.03);
   padding: 6px 10px;
@@ -329,6 +332,17 @@ video {
   background: rgba(0, 0, 0, 0.08);
   border-color: rgba(0, 0, 0, 0.3);
   color: #0f4332;
+}
+
+.video-library__view-icon {
+  width: 16px;
+  height: 10px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.video-library__view-icon--dark {
+  display: none;
 }
 
 .video-library__grid {
@@ -1311,6 +1325,14 @@ h3.inspiration {
     border-color: rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.08);
     color: $dark-font;
+  }
+
+  .video-library__view-icon--light {
+    display: none;
+  }
+
+  .video-library__view-icon--dark {
+    display: block;
   }
 
   .video-library__progress {

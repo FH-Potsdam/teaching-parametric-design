@@ -29,8 +29,16 @@
         <span class="video-library__progress-item"><span class="video-library__progress-value" data-video-progress-remaining>{{ videos.length }}</span><span class="video-library__progress-label">{{ remainingCountLabel }}</span></span>
       </div>
       <div class="video-library__view-toggle" role="group" aria-label="{{ gridLabel }}/{{ listLabel }}">
-        <button type="button" class="video-library__view-btn is-active" data-view="grid">{{ gridLabel }}</button>
-        <button type="button" class="video-library__view-btn" data-view="list">{{ listLabel }}</button>
+        <button type="button" class="video-library__view-btn is-active" data-view="grid">
+          <img class="video-library__view-icon video-library__view-icon--light" src="/images/icons/toggle-icon-tile-dark.svg" alt="" aria-hidden="true">
+          <img class="video-library__view-icon video-library__view-icon--dark" src="/images/icons/toggle-icon-tile-white.svg" alt="" aria-hidden="true">
+          <span>{{ gridLabel }}</span>
+        </button>
+        <button type="button" class="video-library__view-btn" data-view="list">
+          <img class="video-library__view-icon video-library__view-icon--light" src="/images/icons/toggle-icon-list-dark.svg" alt="" aria-hidden="true">
+          <img class="video-library__view-icon video-library__view-icon--dark" src="/images/icons/toggle-icon-list-white.svg" alt="" aria-hidden="true">
+          <span>{{ listLabel }}</span>
+        </button>
       </div>
     </div>
     <div class="video-library__grid">{% for video in videos %}
