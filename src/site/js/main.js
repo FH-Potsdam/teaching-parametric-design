@@ -148,7 +148,7 @@ if (!needsApiCheck && cachedAvailability !== null) {
   setAssistButtonVisibility(cachedAvailability);
 }
 
-if (needsApiCheck) {
+if ((cachedAvailability === null || !cachedAvailability) || needsApiCheck) {
   setAssistButtonVisibility(false);
   checkApiAvailability();
 }

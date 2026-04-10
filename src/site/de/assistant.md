@@ -9,7 +9,7 @@ eleventyNavigation:
 
 Hier steht ein kurzes Intro zum Assistant
 
-> Und eine Warnung zum Datenschutz
+> Die Anfragen an die Code-API werden zu Sicherheits- und Forschungszwecken anonym gespeichert. Bitte keine persönlichen Informationen an die API schicken.
 
 <div class="assistant-page" data-locale="{{ locale }}" data-api-base="https://fb4-meier-ml.fh-potsdam.de">
   <section class="assistant-panel">
