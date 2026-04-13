@@ -21,11 +21,11 @@ If you want to show people what you build, one of the easiest way to publish you
 
 {{ img('github-3.jpg', 'Wait for upload to complete') }}
 
-{{ img('github-4.jpg', 'Make sure all files are here and edit index.html if neccessary') }}
+{{ img('github-4.jpg', 'Make sure all files are here and edit index.html if necessary') }}
 
 {{ img('github-5.jpg', 'Check if the paths to the libraries are correct') }}
 
-{{ img('github-6.jpg', 'Edit if neccessary') }}
+{{ img('github-6.jpg', 'Edit if necessary') }}
 
 {{ img('github-7.jpg', 'Go to settings > pages') }}
 

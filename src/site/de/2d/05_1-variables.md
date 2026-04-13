@@ -1,7 +1,7 @@
 ---
 title: Variablen II
 eleventyNavigation:
-  title: Variablen I
+  title: Variablen II
   key: de_2d_variables2
   parent: de_2d
   order: 7

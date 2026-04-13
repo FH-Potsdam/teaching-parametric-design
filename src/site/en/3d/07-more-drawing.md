@@ -36,7 +36,7 @@ const poly = polygon({
 });
 ```
 
-As the `points` attribute we pass an array of points. If you later wanto to extrude the polygon, it is important, that the points are provided in **clockwise** order.
+As the `points` attribute we pass an array of points. If you later want to extrude the polygon, it is important, that the points are provided in **clockwise** order.
 
 You can also add holes to your polygon. Add the original shape to an array and then add the holes. Important: The holes are **counter-clockwise**:
 
@@ -116,7 +116,7 @@ A rectangle:
 }
 ```
 
-Notice that the above faces use the points multiple times. So instead of having 6 points, 3 for each of the two triangles in the points array. We only provide the really neccessary points and than reuse them. This is not a requirement, the following would create the same shape:
+Notice that the above faces use the points multiple times. So instead of having 6 points, 3 for each of the two triangles in the points array. We only provide the really necessary points and than reuse them. This is not a requirement, the following would create the same shape:
 
 ```json
 {

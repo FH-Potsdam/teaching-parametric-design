@@ -68,7 +68,7 @@ You like this project and would like to contribute? If you find an error, [repor
 
 ## Thank You!
 
-I have never studied computer sciences (even though i have a CS PhD now). More than two decades ago the internet thought my teenage self how to code (particularly [SELFHTML](https://wiki.selfhtml.org)). So i am very grateful for all the great open educational resources out there. More recently i have been particularly been inspired to work on OERs by the works of [Tamara Munzner (Data Vis)](https://www.cs.ubc.ca/~tmm/) and [Daniel Shiffman (Creative Coding)](https://shiffman.net/). Thank you all open source and open educational resource contributors!!!
+I have never studied computer sciences (even though i have a CS PhD now). More than two decades ago the internet taught my teenage self how to code (particularly [SELFHTML](https://wiki.selfhtml.org)). So i am very grateful for all the great open educational resources out there. More recently i have been particularly been inspired to work on OERs by the works of [Tamara Munzner (Data Vis)](https://www.cs.ubc.ca/~tmm/) and [Daniel Shiffman (Creative Coding)](https://shiffman.net/). Thank you all open source and open educational resource contributors!!!
 
 ## Privacy first!
 

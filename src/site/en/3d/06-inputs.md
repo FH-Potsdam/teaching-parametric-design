@@ -18,7 +18,7 @@ de: https://fhpcloud.fh-potsdam.de/s/5FLGs8gDXWneTE6
 en: https://fhpcloud.fh-potsdam.de/s/qwwk7jico9Ek9Ew
 -->
 
-Similar to the various inputs in p5js, we can also create a list of inputs to helps us build parametric designs, that we can modify while rendering. To get started with inputs, we need to extend our boilerplat:
+Similar to the various inputs in p5js, we can also create a list of inputs to helps us build parametric designs, that we can modify while rendering. To get started with inputs, we need to extend our boilerplate:
 
 ```js
 const jscad = require('@jscad/modeling');
