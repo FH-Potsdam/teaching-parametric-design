@@ -161,7 +161,18 @@ circle(20, 20, 5);
   { name: 'x', type: 'number' },
   { name: 'y', type: 'number' },
   { name: 'width', type: 'number' },
-  { name: 'height', type: 'number' }
+  { name: 'height', type: 'number' },
+  { name: 'corner-radius*', type: 'number' }
+]) }}
+{{ definition('rect', [
+  { name: 'x', type: 'number' },
+  { name: 'y', type: 'number' },
+  { name: 'width', type: 'number' },
+  { name: 'height', type: 'number' },
+  { name: 'corner-radius-top-left', type: 'number' },
+  { name: 'corner-radius-top-right', type: 'number' },
+  { name: 'corner-radius-bottom-right', type: 'number' },
+  { name: 'corner-radius-bottom-left', type: 'number' }
 ]) }}
 ```js
 rect(10, 10, 40, 20);
