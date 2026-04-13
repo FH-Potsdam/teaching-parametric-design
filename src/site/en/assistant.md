@@ -7,6 +7,10 @@ eleventyNavigation:
   parent: en
 ---
 
+This interface allows you to generate code for our p5js boilerplate. This interface can only return code optimized for p5js; this is due to a special [system prompt](https://github.com/FH-Potsdam/teaching-parametric-design-backend/blob/main/src/requestCode.ts) that is sent with your request. This is not a generic chatbot or a coding tool. Please try to formulate your requests as precisely as possible. If you are not entirely satisfied with the result, you can also send the code again with an improved request (see checkbox).
+
+> Requests to the code API are stored anonymously for security and research purposes. Please do not send any personal information to the API.
+
 <div class="assistant-page" data-locale="{{ locale }}" data-api-base="https://fb4-meier-ml.fh-potsdam.de">
   <header class="assistant-header">
     <p class="assistant-kicker">Assistant</p>

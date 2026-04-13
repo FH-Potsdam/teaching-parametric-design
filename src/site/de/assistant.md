@@ -7,7 +7,7 @@ eleventyNavigation:
   parent: de
 ---
 
-Hier steht ein kurzes Intro zum Assistant
+Über dieses Interface kannst du dir für unsere p5js-boilerplate Code generieren lassen. Dieses Interface kann nur für p5js optimierten Code zurückgeben, dies liegt an einem speziellen [System-Prompt](https://github.com/FH-Potsdam/teaching-parametric-design-backend/blob/main/src/requestCode.ts), welchen mit deiner Anfrage verschicken. Dies ist kein generischer Chatbot oder ein Coding-Werkzeug. Versuche deine Anfragen möglichst präzise zu formulieren. Wenn du mit dem Ergebnis nicht ganz zufrieden bist, kannst du den Code auch nochmal mit einer verbesserten Anfrage mitschicken (siehe Checkbox).
 
 > Die Anfragen an die Code-API werden zu Sicherheits- und Forschungszwecken anonym gespeichert. Bitte keine persönlichen Informationen an die API schicken.
 
