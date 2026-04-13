@@ -1604,6 +1604,10 @@ h3.inspiration {
     display: block;
   }
 
+  .assistant-function-list li a[href*="http"]::after{
+    display:none;
+  }
+
   .assistant-function-list a.assistant-function-link {
     display: block;
     min-height: 100%;

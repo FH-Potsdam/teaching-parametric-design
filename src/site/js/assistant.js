@@ -115,8 +115,8 @@
           </linearGradient>
         </defs>
         <rect x="0" y="0" width="320" height="160" fill="url(#g)" stroke="#d9ccb7"/>
-        <text x="16" y="78" fill="#1a1a1a" font-size="30" font-family="IBM Plex Mono, monospace">${safeName}</text>
-        <text x="16" y="130" fill="#67615b" font-size="20" font-family="IBM Plex Mono, monospace">${safeSource}</text>
+        <text x="16" y="40" fill="#1a1a1a" font-size="24" font-family="IBM Plex Mono, monospace">${safeName}</text>
+        <text x="16" y="100" fill="#67615b" font-size="16" font-family="IBM Plex Mono, monospace">${safeSource}</text>
       </svg>
     `.trim();
   };
@@ -310,6 +310,7 @@
         const meta = document.createElement('div');
         meta.className = 'assistant-function-meta';
         const title = document.createElement('strong');
+        
         title.textContent = func.name || 'function';
         const videoMatch = getCourseVideoMatch(func.url || '');
         const isWatched = !!(videoMatch && window.videoProgress?.hasWatched?.(videoMatch.videoId));
