@@ -3,7 +3,8 @@ title: Inspiration
 eleventyNavigation:
   title: Inspiration
   key: de_inspiration
-  order: 2
+  # order: 2
+  order: -1
   parent: de
 locale: de
 layout: default
