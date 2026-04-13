@@ -12,12 +12,6 @@ This interface allows you to generate code for our p5js boilerplate. This interf
 > Requests to the code API are stored anonymously for security and research purposes. Please do not send any personal information to the API.
 
 <div class="assistant-page" data-locale="{{ locale }}" data-api-base="https://fb4-meier-ml.fh-potsdam.de">
-  <header class="assistant-header">
-    <p class="assistant-kicker">Assistant</p>
-    <h2>Parametric Design Generator</h2>
-    <p class="assistant-subhead">Send a prompt to the backend and preview the highlighted JavaScript response.</p>
-  </header>
-
   <section class="assistant-panel">
     <form id="promptForm" class="assistant-form">
       <label for="question" class="assistant-label">Prompt</label>
