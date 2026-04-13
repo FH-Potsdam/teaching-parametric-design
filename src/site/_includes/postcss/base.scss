@@ -261,11 +261,10 @@ video {
   width: fit-content;
   font-size: 0.72rem;
   font-weight: 600;
-  line-height: 1.2;
   color: #0f7a53;
-  background: rgba(255, 255, 255, 0.92);
+  background: hsla(0,0%,100%,.92);
   border: 1px solid rgba(20, 168, 115, 0.4);
-  padding: 1px 6px;
+  padding: 6px 9px 7px 9px;
   border-radius: 10px;
   display: none;
 }
