@@ -215,6 +215,15 @@ Besides colors we can also modify the stroke width of the shapes we draw:
 strokeWeight(5);
 ```
 
+You can also draw without a fill or stroke, use: **noFill** or **noStroke**:
+
+{{ definition('noFill') }}
+{{ definition('noStroke') }}
+```js
+noFill();
+noStroke();
+```
+
 {{editor('/code/fill', '[https://...](https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/fill/sketch.js)')}}
 
 {{h2('Arcs')}}

@@ -220,6 +220,15 @@ Neben den Farben können wir auch die Linienstärke verändern:
 strokeWeight(5);
 ```
 
+Wenn ihr keine Füllung oder Linie haben wollt, dann nutzt **noFill** bzw. **noStroke**:
+
+{{ definition('noFill') }}
+{{ definition('noStroke') }}
+```js
+noFill();
+noStroke();
+```
+
 {{editor('/code/fill', '[https://...](https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/fill/sketch.js)')}}
 
 {{h2('Kreisbögen')}}
