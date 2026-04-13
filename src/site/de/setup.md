@@ -46,47 +46,104 @@ en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 
 {{h2('Coding Assistants - ChatBots')}}
 
-In den letzten Jahren haben verschiedene Organisation und Unternehmen ChatBot-Technologien entwickelt, die einen bei der Softwareentwicklung unterstützen können. Diese Systeme können verschiedene assistive Aufgaben übernehmen, aber **es ist Vorsicht geboten**.
+In den letzten Jahren haben sich KI-gestützte Coding Assistants rasant weiterentwickelt. Moderne Systeme gehen deutlich über einfache ChatBots hinaus und fungieren zunehmend als **aktive Entwicklungsassistenten (Agents)**, die Code schreiben, testen, debuggen und sogar ganze Projekte strukturieren können.
 
-> Achtung! Denk daran, dass die Unternehmen hinter ChatBots großes Interesse haben ihre Systeme zu verbessern und hierfür Daten benötigen. Fast alle AI-Cloud-Services behalten sich das Recht vor alle Eingaben der Nutzer*innen weiterzuverwenden. Gebt nur in ChatBots ein, was Dritte sehen dürfen. Lösungen für private und sichere ChatBots siehe unten.
+Zu den heute verbreiteten Formen gehören:
 
-### Wie funktionieren KI ChatBots?
+- **Chatbasierte Systeme** (z. B. [ChatGPT](https://chat.openai.com/), [Claude](https://claude.ai/))
+- **IDE-integrierte Assistants** (z. B. [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/))
+- **Agent-basierte Systeme**, die eigenständig Aufgaben ausführen können
 
-Die Basis moderner ChatBots sind sogenannte "Large Languange Models" (LLMs). Wie die meisten "generativen KIs", sind LLMs künstliche neuronale Netze, welche mit gigantischen Datenmengen trainiert wurden. Im Fall von LLMs werden die Modelle mit Texten trainiert. Das Training großer und komplexer Modelle braucht nicht nur viele Daten, sondern verbraucht auch sehr viel Zeit und Energie (bzw. CO2). Im Laufe des Trainings lernt das neuronale Netz Muster in Texten, Wortreihenfolgen, Kontexte in denen bestimmte Worte genutzt werden, etc. Diese gelernten Muster werden in einem Modell abgespeichert. Diese noch sehr rohen Modelle werden auch "Foundational Models" genannt, da man diese als Basis für verschiedene Aufgaben (Verfeinerungen) nutzen kann. Für ChatBots werden die LLMs mit spezifischen Anfragen von Nutzer*innen und entsprechenden erwünschten Lösungen verfeinert. Unter anderem wurden so mehrere LLMs speziell für Programmieraufgaben verfeinert (s.u.).
+Diese Systeme können viele assistive Aufgaben übernehmen – aber **es ist weiterhin Vorsicht geboten**.
 
-### Möglichkeiten und Probleme
+> **Datenschutz & Sicherheit**: Viele cloudbasierte KI-Dienste verarbeiten Eingaben serverseitig. Je nach Anbieter können Prompts und Code zur Modellverbesserung genutzt werden oder in Logs gespeichert bleiben. **Gebt keine sensiblen Daten, Zugangsdaten oder proprietären Code ein**, sofern keine klare Datenschutzvereinbarung besteht. Für sensible Kontexte empfiehlt sich der Einsatz **lokaler Modelle oder dedizierter Enterprise-Lösungen**.
 
-Warum sollte man heute noch Programmieren lernen, wenn ChatBots doch anscheinend alles können? Hier kommen wir zum problematischen Teil der ChatBots. Wenn man mit ChatBots interagiert, kann man schnell das Gefühl bekommen, dass diese "intelligent" sind und uns und die Welt verstehen. Dieser Eindruckt täuscht (<= umstrittene Aussage). LLMs sagen die Wahrscheinlichkeit für Wortreihenfolgen vorher und generieren so Text. Dadurch das die Modelle während des Trainings enorm große Mengen an Texten aus unterschiedlichsten Bereich konsumiert haben, können Sie sehr viele unterschiedliche Formen von Text und Textinhalte generieren. Wissenschaftler*innen streiten darüber, ob diese text-basierten Modelle der Welt einem Verständnis der Welt nahe kommen.
+### Wie funktionieren moderne KI-Assistants?
 
-Problematisch sind in diesem Kontext besonders, dass diese Modelle kein validiertes Wissen von sich geben, sondern Wörter basierend auf Wahrscheinlichkeiten aneinanderreihen. Die Antworten können deshalb täuschend echt aussehen, können aber trotzdem völlig falsch sein. Um z.B. Code zu verstehen, der von einem LLM generiert wurde und zu verstehen, ob dieser funktioniert und wie man diesen evtl. funktionstüchtig machen kann, bedarf es Programmiergrundlagen. Ohne dieses Grundlagenwissen können die Antworten eines solchen Modells nicht bewertet werden.
+Die Basis aktueller Systeme sind sogenannte **Large Language Models (LLMs)** bzw. zunehmend auch **multimodale Foundation Models**.
 
-#### Einsatzmöglichkeiten von Coding ChatBots:
+Diese Modelle:
 
-- Fehlermeldungen erklären lassen
-- Code mit normaler Sprache erklären lassen
-- Code von einer Programmiersprache in eine andere übersetzen lassen
-- Inspiration für eine Funktionsablauf geben lassen
+- basieren auf neuronalen Netzarchitekturen (meist Transformer)
+- werden mit **extrem großen Text- und Code-Datensätzen** trainiert
+- können Sprache, Code und zunehmend auch Bilder, Audio und strukturierte Daten verarbeiten
 
-Ähnlich wie bei anderen Einsätzen von LLMs sollte man besonders den Output von Code/Text, welchen man weiterverwenden möchten, nur als Inspiration sehen, die man prüfen, verbessern und ausbauen kann.
+Während des Trainings lernen sie statistische Zusammenhänge in Daten (Syntax, Semantik, typische Muster). Das Ergebnis ist ein **Foundation Model**, das anschließend weiter angepasst wird, z. B. durch:
+
+- **Instruction Tuning** (Anweisungen verstehen)
+- **Reinforcement Learning (RLHF/RLAIF)** (Antwortqualität verbessern)
+- **Tool Use / Function Calling** (externe Systeme nutzen, z. B. Compiler, APIs)
+
+Für Programmieraufgaben wurden viele Modelle gezielt auf Code optimiert (z. B. durch Trainingsdaten aus Open-Source-Repositories).
+
+
+### Möglichkeiten und Grenzen
+
+Die Leistungsfähigkeit aktueller Systeme ist hoch – aber nicht unbegrenzt. Ein häufiges Missverständnis ist, dass diese Systeme „verstehen“, was sie tun.  
+Tatsächlich kombinieren sie **statistische Muster, Trainingswissen und Kontextverarbeitung** – ob das als „Verstehen“ gilt, ist wissenschaftlich umstritten.
+
+#### Zentrale Risiken:
+
+- **Halluzinationen**: plausibel klingende, aber falsche Antworten oder Code
+- **Veraltetes Wissen** (ohne Zugriff auf aktuelle Datenquellen)
+- **Fehlende Laufzeitprüfung**, wenn Code nicht ausgeführt wird
+- **Sicherheitsprobleme** (unsicherer Code, z. B. Injection-Vulnerabilities)
+- **Overreliance**: Nutzer*innen vertrauen Ergebnissen zu stark
+
+LLMs generieren Code probabilistisch – nicht deterministisch korrekt.
+
+**Fazit:**  
+Grundlegende Programmierkenntnisse bleiben essenziell, um:
+
+- gute Prompts zu schreiben
+- generierten Code zu verstehen
+- Fehler zu erkennen
+- Qualität und Sicherheit zu beurteilen
+
+### Beispielhafte Einsatzmöglichkeiten
+
+- Fehlermeldungen analysieren und erklären
+- Code generieren und bearbeiten
+- Unit Tests erstellen
+- Dokumentation schreiben
+- ...
+
+> Ergebnisse **immer prüfen und testen**.
 
 {{ img('chatbots.png', 'Chatbot Systeme (v.l.n.r): ChatGPT, HugginFace und Perplexity') }}
 
 ### Werkzeuge
 
-Die einfachste Möglichkeit ChatBots zu nutzen, sind Online-Services:
+#### Cloud-basierte Systeme
 
 - [ChatGPT](https://chat.openai.com/)
-- [Meta's Code-LLaMa via HuggingFace](https://huggingface.co/chat)
-- [Meta's Code-LLaMa via PerplexityAI](https://labs.perplexity.ai/)
+- [Claude](https://claude.ai/)
+- [Gemini](https://gemini.google.com/)
+- [Perplexity AI](https://www.perplexity.ai/)
 
-Daneben gibt es die kostenlose Software [LM Studio](https://lmstudio.ai/). Hiermit könnt ihr euch verschiedene Modelle auf euren Computer laden und dort lokal mit dem Modell kommunizieren. Ich empfehle euch **CodeLllama 7B Instruct**, es funktioniert für seine vergleichbar kleine Größe ziemlich gut.
+#### IDE-Integration / Coding Assistants
 
-Wenn ihr noch mehr Kontrolle haben wollt, könnt ihr euch ein komplett eigenes lokales Setup aufsetzen. Hierfür empfehle ich euch die Kombination aus:
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Cursor](https://cursor.sh/)
+- [JetBrains AI Assistant](https://www.jetbrains.com/ai/)
+- [Codeium](https://codeium.com/)
 
-- [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
-- [facebookresearch/llama](https://github.com/facebookresearch/llama)
+#### Lokale Modelle & Tools
 
-Zugriff zu Code Llama bekommt man bei [Meta](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
+Lokale Nutzung ist deutlich besser geworden und erlaubt mehr Kontrolle über Daten:
+
+- [LM Studio](https://lmstudio.ai/)
+- [Ollama](https://ollama.com/)
+- [llama.cpp](https://github.com/ggerganov/llama.cpp)
+
+Beliebte lokale Modelle (je nach Hardware):
+
+- LLaMA 3 (Meta)
+- Mistral / Mixtral
+- DeepSeek Coder
+- verschiedene Open-Source Code-LLMs
+
+> Lokale Modelle sind datenschutzfreundlicher, aber oft weniger leistungsfähig als große Cloud-Modelle.
 
 
 ### Beispiel
