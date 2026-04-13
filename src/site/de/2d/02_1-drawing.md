@@ -56,7 +56,7 @@ function draw() {
 }
 ```
 
-Die `background` Funktion unterscheides sich dahingehend von der `createCanvas` Funktion, dass wir unterschiedliche Werte als *Farbe* angeben können (siehe nächster Abschnitt).
+Die `background` Funktion unterscheidet sich dahingehend von der `createCanvas` Funktion, dass wir unterschiedliche Werte als *Farbe* angeben können (siehe nächster Abschnitt).
 
 {{h2('Farben')}}
 
@@ -83,7 +83,7 @@ background(255, 0, 0);
 ```js
 background('red');
 ```
-> JavaScript geht bei allem Text den wir schreiben immer davon aus, dass es sich hierbei um Kommandos handelt. Damit wir z.B. der `background` Funktionen einen wirklichen *Text* (string) übergeben können, müssen wir den *Text* in Anführungszeichen setzen. Ihr könnt dafür dopplte oder einfach Anführungszeichen nutzen, wichtig ist nur, dass am Anfang und Ende die selben Anführungszeichen stehen.
+> JavaScript geht bei allem Text den wir schreiben immer davon aus, dass es sich hierbei um Kommandos handelt. Damit wir z.B. der `background` Funktionen einen wirklichen *Text* (string) übergeben können, müssen wir den *Text* in Anführungszeichen setzen. Ihr könnt dafür doppelte oder einfache Anführungszeichen nutzen, wichtig ist nur, dass am Anfang und Ende die selben Anführungszeichen stehen.
 
 4. Hexadezimal RGB: HEX-Text
 ```js
@@ -95,7 +95,7 @@ background('#ff0000');
 background('rgba(255,0,0,0.5)');
 ```
 
-> JavaScript nutze Englische Zahlen, deshalb müssen wir einen Punkt und kein Komma nutzen.<br />Deutsch: 0,5 > Englisch: 0.5
+> JavaScript nutzt Englische Zahlen, deshalb müssen wir einen Punkt und kein Komma nutzen.<br />Deutsch: 0,5 > Englisch: 0.5
 
 Dies sind die wichtigsten Farbangaben, welche wir nutzen werden. Darüber hinaus gibt es aber noch weitere Möglichkeiten, die ihr in der [Dokumentation](https://p5js.org/reference/#/p5/background) findet.
 
@@ -231,7 +231,7 @@ de:https://fhpcloud.fh-potsdam.de/s/HSkH336q6pXXP3b/download/de_arc.mp4
 en:https://fhpcloud.fh-potsdam.de/s/3erXfj7WFcyF27t/download/de_arc.mp4
 -->
 
-Eine etwas kompliziertes Kommando ist der Kreisbogen (arc):
+Ein etwas kompliziertes Kommando ist der Kreisbogen (arc):
 
 {{ definition('arc', [
   { name: 'x', type: 'Zahl' },
