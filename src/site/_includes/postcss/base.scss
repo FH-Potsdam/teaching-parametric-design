@@ -1378,7 +1378,8 @@ h3.inspiration {
 
 /* ASSISTANT */
 
-.assistant-page {
+.assistant-page,
+.enhance-page {
   --assistant-bg: #f7f2ea;
   --assistant-panel: #ffffff;
   --assistant-ink: #1a1a1a;
@@ -1747,7 +1748,8 @@ h3.inspiration {
 }
 
 @media (max-width: 720px) {
-  .assistant-page {
+  .assistant-page,
+  .enhance-page {
     .assistant-panel {
       padding: 0;
     }
