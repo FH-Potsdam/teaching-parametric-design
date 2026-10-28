@@ -34,7 +34,7 @@ Du kannst jeden beliebigen Code-Editor nutzen. In den Tutorial-Videos wirst du d
 Falls du nicht VS Code benutzt, stelle bitte sicher das du einen "richtigen" Code-Editor nutzt. Microsoft Word, Apples TextEdit oder Windows Wordpad sind keine Code-Editoren. Diese Anwendunge erlauben ihren Nutzer*innen Text zu "stylen". Diese Styling-Parameter müssen in sogenannten Markup-Dokumenten abgespeichert werden und können nur mit bestimmten Anwendungen geöffnet werden. Mit einem Code-Editor kann man den "rohen" Inhalt einer Datei sehen und bearbeiten. Deshalb können wir auch beliebige Editoren nutzen, weil nur der "rohe" Inhalt bearbeitet wird, ohne eine zusätzliche Ebene der Interpretation und Verschachtelung.
 
 #### 1. VS Code und die Live-Server-Erweiterung installieren
-VS Code kann [hier](https://code.visualstudio.com/download) heruntergeladen werden. Abhängig vom Betriebssystem ist VS Code auch über gängige Software-Stores kostenlos verfügbar.
+VS Code kann [hier](https://code.visualstudio.com/download) heruntergeladen werden. Abhängig vom Betriebssystem ist VS Code auch über gängige Software-Stores kostenlos verfügbar. Nachdem ihr VS Code installiert habt, installiert noch die [Live Server Erweiterung](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 {{video("https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg/download/de_setup_vscode.mp4", "/images/thumbnails/de_setup_vscode.png", "de_setup_vscode", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/bbeAtZoYzPN7oPa/download/de_setup_vscode.mp4")}}
 
