@@ -165,3 +165,56 @@ if ((cachedAvailability === null || !cachedAvailability) || needsApiCheck) {
   setAssistButtonVisibility(false);
   checkApiAvailability();
 }
+
+// copy button on code blocks
+(() => {
+  const labels = {
+    en: { copy: 'Copy', done: 'Copied!' },
+    de: { copy: 'Kopieren', done: 'Kopiert!' },
+  };
+  const lang = (document.documentElement.lang || '').toLowerCase().startsWith('de') ? 'de' : 'en';
+  const t = labels[lang];
+
+  const copyText = async text => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (error) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+  };
+
+  document.querySelectorAll('main pre[class*="language-"]').forEach(pre => {
+    // single-line blocks don't need a copy button
+    if (!pre.textContent.trim().includes('\n')) return;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'code-wrap';
+    pre.parentNode.insertBefore(wrap, pre);
+    wrap.appendChild(pre);
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'code-copy-btn';
+    btn.textContent = t.copy;
+    wrap.appendChild(btn);
+
+    let timer;
+    btn.addEventListener('click', async () => {
+      await copyText(pre.innerText.replace(/\n$/, ''));
+      btn.textContent = t.done;
+      btn.classList.add('copied');
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        btn.textContent = t.copy;
+        btn.classList.remove('copied');
+      }, 1800);
+    });
+  });
+})();
