@@ -1,7 +1,7 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const buildTOC = require('eleventy-plugin-toc/src/BuildTOC');
+// const buildTOC = require('eleventy-plugin-toc/src/BuildTOC');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const { findNavigationEntries } = require('@11ty/eleventy-navigation/eleventy-navigation');
@@ -142,7 +142,7 @@ module.exports = function(config) {
     $('h2[data-short]').each((i, el) => {
       $(el).text($(el).attr('data-short'));
     });
-    return buildTOC($.html(), { tags: ['h2'], wrapper: '', ul: true });
+    //return buildTOC($.html(), { tags: ['h2'], wrapper: '', ul: true });
   });
 
   config.addFilter("pageNav", function(navigation, page, locale) {
