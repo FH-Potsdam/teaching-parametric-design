@@ -31,6 +31,29 @@ Was unterscheidet diesen Kurs von anderen Einführungen in die Programmierung? D
     <figcaption><span>Die Möglichkeiten von Code-driven Design.</span></figcaption>
 </figure>
 
+## Algorithmisches Denken und Parametrisierung von Design
+
+Dieser Kurs ist mehr als eine Einführung ins Programmieren. Code ist hier vor allem ein Werkzeug, um Gestaltung aus einer systematischen, algorithmischen Perspektive zu betrachten: Statt ein einzelnes Objekt, ein einzelnes Layout oder eine einzelne Grafik zu zeichnen, beschreiben wir die Regeln, Beziehungen und Variablen, aus denen sie entstehen.
+
+Wer ein 3D-Objekt parametrisch entwirft, definiert nicht nur eine Form, sondern eine ganze Familie von Formen. Durch das Verändern weniger Parameter (Größe, Anzahl, Abstand, Winkel, Rundung) lassen sich mühelos Varianten erzeugen, anpassen und für unterschiedliche Anforderungen optimieren. Dasselbe Prinzip trägt auch über einzelne Objekte hinaus: Gut strukturierte Designsysteme mit klar benannten Variablen, Abhängigkeiten und Regeln können sowohl von Menschen verstanden und weiterentwickelt als auch von Maschinen verarbeitet, erweitert und automatisch angewendet werden.
+
+{{ img('parametric-intro.jpg', 'Beispiel für Dekonstruktion einer parametrischen Fassade (Corbussier, Wohnmaschine, Berlin). Quelle: Matthias Süßen, Lizenz: CC BY-SA via <a href="https://commons.wikimedia.org/wiki/File:Corbusierhaus,_Berlin-msu-2021-2259-.jpg">Wikimedia Commons</a>') }}
+
+Die vielleicht wichtigste Fähigkeit dabei ist das Dekonstruieren: Objekte, Interfaces, Layouts und Prozesse in ihre zugrunde liegenden Systeme und Strukturen zu zerlegen. Diese Denkweise hilft in vielen Situationen, auch weit über den Code hinaus:
+
+- **Arbeit im Team:** Ein klar beschriebenes System (z.B. Raster, Komponenten, Namenskonventionen) schafft eine gemeinsame Sprache und macht Entscheidungen nachvollziehbar und übergabefähig.
+- **Informationshierarchien:** Inhalte lassen sich in Ebenen, Gruppen und Beziehungen gliedern, etwa bei der Struktur einer Website, einer Navigation, eines Dokuments oder einer Ausstellung.
+- **Typografie und Layout:** Schriftgrößen, Abstände und Raster folgen einer Skala oder einem Rhythmus, statt Werte einzeln zu schätzen.
+- **UI- und Designsysteme:** Farben, Abstände und Komponenten werden als Tokens und Varianten definiert, eine Änderung wirkt sich dann konsistent auf das gesamte Produkt aus.
+- **Corporate Design und Identitäten:** Ein flexibles System aus Regeln erzeugt viele Anwendungen, ohne jede einzeln gestalten zu müssen.
+- **Daten und Visualisierung:** Dieselbe Gestaltungsregel kann auf tausend Datensätze angewendet werden, und das Ergebnis bleibt lesbar und vergleichbar.
+- **Produktion und Fertigung:** Parametrische Modelle lassen sich für 3D-Druck, Laserschnitt oder CNC anpassen, ohne jedes Mal von vorn zu beginnen.
+- **Customisation und Personalisierung:** Ob Möbel, Kleidung oder Grafikdesign, ein parametrisches System erlaubt es, Produkte an Körpermaße, Räume, Vorlieben oder Inhalte anzupassen, sodass aus einem Entwurf viele individuelle Varianten entstehen.
+- **Prozesse und Abläufe:** Auch Arbeitsabläufe, User-Journeys oder Workshops lassen sich als Abfolge von Schritten, Bedingungen und Wiederholungen beschreiben und verbessern.
+
+Wer Gestaltung auf diese Weise denkt, kann nicht nur schneller Varianten erzeugen, sondern auch bewusster entscheiden, welche Elemente eines Entwurfs fest und welche veränderbar sein sollen.
+
+
 ## Das Team
 
 <div class="col-2">

@@ -270,7 +270,7 @@ arc(100, 100, 50, 50, 0, Math.PI, OPEN);
 
 {{editor('/code/arc', 'https://github.com/FH-Potsdam/learning-parametric-design/blob/main/lectures/2d/drawing/arc/sketch.js')}}
 
-{{task("Aufgabe: Abstrakte Kunst", "Nutze nur die Kommandos die wir bisher gelernt haben, um ein abstraktes Kunstwerk zu erstellen. Siehe das Beispiel unten als Inspiration. Schaue dir auch die Inspirationsseite an für weitere Künstler*innen <a href='/de/inspiration'>page</a>.")}}
+{{task("Aufgabe: Abstrakte Kunst", "Nutze nur die Kommandos die wir bisher gelernt haben, um ein abstraktes Kunstwerk zu erstellen. Siehe das Beispiel unten als Inspiration. Schaue dir auch die Inspirationsseite an für weitere Künstler*innen <a href='/de/inspiration'>page</a>.", "Plane ca. 20 Minuten für die Aufgabe ein. Gehe herum und achte darauf, dass die Studierenden ihr Werk aus mehreren einfachen Formen aufbauen und Farben bewusst einsetzen. Typische Fehler: fehlendes Semikolon, falsche Reihenfolge von <code>fill</code> und Form. Zum Abschluss können einige Ergebnisse gemeinsam besprochen werden.", "Studierende", "Lehrende")}}
 
 {{inspiration('Hilma af Klint')}}
 

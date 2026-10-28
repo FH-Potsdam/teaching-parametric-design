@@ -32,6 +32,28 @@ What makes this course different from other coding classes? This course has a st
 </figure>
 
 
+## Algorithmic Thinking and Parameterization of Design
+
+This course is more than an introduction to programming. Here, code is above all a tool for looking at design from a systematic, algorithmic perspective: instead of drawing a single object, a single layout or a single graphic, we describe the rules, relationships and variables from which they emerge.
+
+Anyone who designs a 3D object parametrically defines not just one shape, but a whole family of shapes. By changing a few parameters (size, count, spacing, angle, rounding), variants can be generated, adapted and optimized for different requirements with ease. The same principle extends beyond individual objects: well-structured design systems with clearly named variables, dependencies and rules can be understood and further developed by humans, and at the same time processed, extended and applied automatically by machines.
+
+{{ img('parametric-intro.jpg', 'Example for the deconstruction of a parametric fassade (Corbussier, Wohnmaschine, Berlin). Source: Matthias Süßen, License: CC BY-SA via <a href="https://commons.wikimedia.org/wiki/File:Corbusierhaus,_Berlin-msu-2021-2259-.jpg">Wikimedia Commons</a>') }}
+
+Perhaps the most important skill here is deconstruction: breaking objects, interfaces, layouts and processes down into their underlying systems and structures. This way of thinking helps in many situations, far beyond code:
+
+- **Teamwork:** A clearly described system (e.g. grid, components, naming conventions) creates a shared language and makes decisions traceable and easy to hand over.
+- **Information hierarchies:** Content can be organized into levels, groups and relationships, for example in the structure of a website, a navigation, a document or an exhibition.
+- **Typography and layout:** Font sizes, spacing and grids follow a scale or a rhythm, instead of values being guessed one by one.
+- **UI and design systems:** Colors, spacing and components are defined as tokens and variants, so a single change applies consistently across the entire product.
+- **Corporate design and identities:** A flexible system of rules produces many applications without having to design each one individually.
+- **Data and visualization:** The same design rule can be applied to a thousand data points, and the result remains legible and comparable.
+- **Production and fabrication:** Parametric models can be adapted for 3D printing, laser cutting or CNC without starting from scratch each time.
+- **Customization and personalization:** Whether furniture, clothing or graphic design, a parametric system makes it possible to adapt products to body measurements, spaces, preferences or content, so that one design yields many individual variants.
+- **Processes and workflows:** Even workflows, user journeys or workshops can be described and improved as a sequence of steps, conditions and repetitions.
+
+Thinking about design in this way not only allows you to generate variants faster, but also to decide more consciously which elements of a design should be fixed and which should be changeable.
+
 ## The Team
 
 <div class="col-2">

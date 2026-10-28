@@ -1,7 +1,8 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginTOC = require('eleventy-plugin-toc');
+const buildTOC = require('eleventy-plugin-toc/src/BuildTOC');
+const cheerio = require('cheerio');
 const fs = require('fs');
 const { findNavigationEntries } = require('@11ty/eleventy-navigation/eleventy-navigation');
 
@@ -118,14 +119,30 @@ module.exports = function(config) {
   // add navigation data object
   config.addPlugin(eleventyNavigationPlugin);
 
+  // mark a <strong> that opens a list item (no text or element before it), so it can be underlined
+  config.addTransform('listLead', function(content) {
+    if (!(this.page.outputPath || '').endsWith('.html') || !content.includes('<li')) return content;
+    const $ = cheerio.load(content);
+    $('main ul:not([class]) > li').each((i, el) => {
+      const first = $(el).contents().filter((j, n) => !(n.type === 'text' && !n.data.trim())).first();
+      if (first.length && first[0].type === 'tag' && first[0].name === 'strong') {
+        first.addClass('list-lead');
+      }
+    });
+    return $.html();
+  });
+
   config.addFilter('json', value => JSON.stringify(value));
   config.addFilter('videosByLocale', (videos, locale) => (videos || []).filter(video => video.locale === locale));
   config.addFilter('videoAnchor', (videoSource, pageUrl = '') => makeVideoAnchor(videoSource, pageUrl));
 
-  config.addPlugin(pluginTOC, {
-    tags: ['h2'],
-    wrapper: '',
-    ul: true
+  // use the data-short attribute of h2 elements as navigation label
+  config.addFilter('toc', (content) => {
+    const $ = cheerio.load(content);
+    $('h2[data-short]').each((i, el) => {
+      $(el).text($(el).attr('data-short'));
+    });
+    return buildTOC($.html(), { tags: ['h2'], wrapper: '', ul: true });
   });
 
   config.addFilter("pageNav", function(navigation, page, locale) {

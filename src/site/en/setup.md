@@ -40,128 +40,6 @@ de: https://fhpcloud.fh-potsdam.de/s/mMdW8q9JZgpe5Pg
 en: https://fhpcloud.fh-potsdam.de/s/3tG6BwCi2DP9Bg4
 -->
 
-{{h2('Coding Assistants - ChatBots')}}
-
-In recent years, AI-powered coding assistants have evolved rapidly. Modern systems go far beyond simple chatbots and increasingly act as **active development assistants (agents)** that can write, test, debug, and even structure entire projects.
-
-Common forms today include:
-
-- **Chat-based systems** (e.g. [ChatGPT](https://chat.openai.com/), [Claude](https://claude.ai/))
-- **IDE-integrated assistants** (e.g. [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/))
-- **Agent-based systems** capable of executing tasks autonomously
-
-These systems can support many development tasks — but **caution is still required**.
-
-> ⚠️ **Privacy & Security**: Many cloud-based AI services process inputs on remote servers. Depending on the provider, prompts and code may be stored or used to improve models. **Do not enter sensitive data, credentials, or proprietary code** unless you have a clear data protection agreement. For sensitive use cases, consider **local models or enterprise-grade solutions**.
-
-### How do modern AI assistants work?
-
-Modern systems are based on **Large Language Models (LLMs)** and increasingly **multimodal foundation models**.
-
-These models:
-
-- are built on neural network architectures (typically transformers)
-- are trained on **massive datasets of text and code**
-- can process language, code, and increasingly images, audio, and structured data
-
-During training, they learn statistical patterns in data (syntax, semantics, common structures). The result is a **foundation model**, which is further adapted using:
-
-- **Instruction tuning** (to follow user requests)
-- **Reinforcement learning (RLHF/RLAIF)** (to improve output quality)
-- **Tool use / function calling** (to interact with APIs, compilers, etc.)
-
-For programming tasks, many models are specifically optimized using code datasets (e.g. open-source repositories).
-
-
-### Capabilities and limitations
-
-Current systems are highly capable — but not infallible. A common misconception is that these systems truly “understand” what they are doing. In reality, they combine **statistical inference, learned patterns, and contextual reasoning**. Whether this constitutes “understanding” is still debated in research.
-
-#### Key risks:
-
-- **Hallucinations**: plausible but incorrect answers or code
-- **Outdated knowledge** (without access to live data)
-- **Lack of execution validation** if code is not run
-- **Security issues** (e.g. generating vulnerable code)
-- **Overreliance**: users trusting outputs too much
-
-LLMs generate code probabilistically — not deterministically correct.
-
-**Conclusion:**  
-Basic programming knowledge remains essential to:
-
-- write precise prompts
-- understand generated code
-- detect errors
-- evaluate quality and security
-
-### Typical use cases (as of 2026)
-
-- Explaining error messages
-- Generating and modifying code
-- Creating documentation
-- ...
-
-> Best practice: Always **review, test, and iteratively refine** generated outputs.
-
-{{ img('chatbots.png', 'Chatbot Systems (v.l.n.r): ChatGPT, HugginFace and Perplexity') }}
-
-### Tools
-
-#### Cloud-based systems
-
-- [ChatGPT](https://chat.openai.com/)
-- [Claude](https://claude.ai/)
-- [Gemini](https://gemini.google.com/)
-- [Perplexity AI](https://www.perplexity.ai/)
-
-#### IDE integrations / coding assistants
-
-- [GitHub Copilot](https://github.com/features/copilot)
-- [Cursor](https://cursor.sh/)
-- [JetBrains AI Assistant](https://www.jetbrains.com/ai/)
-- [Codeium](https://codeium.com/)
-
-#### Local models & tools
-
-Local usage has improved significantly and allows better data control:
-
-- [LM Studio](https://lmstudio.ai/)
-- [Ollama](https://ollama.com/)
-- [llama.cpp](https://github.com/ggerganov/llama.cpp)
-
-Popular local models (depending on hardware):
-
-- LLaMA 3 (Meta)
-- Mistral / Mixtral
-- DeepSeek Coder
-- various open-source code LLMs
-
-> Note: Local models are more privacy-friendly but often less powerful than large cloud models.
-
-
-### Example
-
-In your prompts, try to describe what you need as precisely as possible to make the context as specific as possible. What programming language is it, what do you need specifically, what do you expect as the output.
-
-#### Code
-```console.lg("Hello World")```
-
-#### User input:
-```Explain the following JavaScript Error message to a beginner: Uncaught TypeError: console.lg is not a function <anonymous> debugger eval code:1```
-
-#### ChatGPT response:
-Certainly! This error message is coming from JavaScript, and it's telling you that there's a problem in your code. Let's break down the message step by step:
-
-1. **Uncaught TypeError**: This part of the message indicates that a type of error occurred. In JavaScript, there are different types of errors, and a "TypeError" happens when you try to do something with a value that is not of the expected type.
-
-2. **console.lg is not a function**: This is the specific error message. It's saying that there's a problem with a piece of code that is trying to use something called *console.lg*, but JavaScript doesn't recognize *lg* as a valid function or property of the *console* object.<br />**Explanation**: The console object in JavaScript is used for logging messages to the browser's developer console. The normal function to print a message to the console is *console.log()*. However, in this case, it seems like there's a typo or some mistake in the code, where *lg* is used instead of *log*.
-
-3.<br />**<anonymous> debugger eval code:1**: This part of the message provides additional context about where the error occurred. It's saying that the error happened in some code that was evaluated by a debugger, but it doesn't give a specific file or location. This might happen if you're running code in a browser's developer console or if there's some kind of dynamic evaluation happening.
-
-In summary, the error message is telling you that there's a problem in your code where you're trying to use *console.lg*, which JavaScript doesn't recognize. You should double-check your code to make sure you're using the correct function, which is likely *console.log()*.
-
-
 {{h2('GitHub')}}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE/download/en_setup_git.mp4", "/images/thumbnails/en_setup_git.png", "en_setup_git", translations.subtitles[locale], locale)}}
@@ -174,8 +52,6 @@ en: https://fhpcloud.fh-potsdam.de/s/BBMqcBicJ6QLaeE
 {{download('/images/downloads/git.pdf', 'GIT Introduction (PDF)')}}
 
 GitHub is the largest plattform for collaboratively working on code. It's build on top of the version control system [git](https://git-scm.com/). Alternative plattforms that make use of git are for example [bitbucket](https://bitbucket.org/product) and [GitLab](https://about.gitlab.com/). Many of you will know tools like Google Docs. The big difference is, that your are not editing files at the same time. Instead everybody downloads a copy of the file and when you are done editing you send it back into the cloud and **git** will make sure that your changes are being synchronized with the changes other people have been applying in the meantime. This can sometimes lead to so called *merge conflicts*. Then you have to help git to figure out what to keep and what to change. Each project is managed in a so called *repository* or short *repo*, In this class we use **git** primarily so that you have a copy of this repo in your own account. So you can change everything, without in fear of breaking this original repo. In addition you can still get any updates from this repo synchronized with your copy.
-
-*LINKLIST*
 
 There are two ways of using GitHub (git): the desktop app and the command line.
 
@@ -208,7 +84,7 @@ The fork you created under your own account is public, which means everybody can
 
 #### Updating the fork
 
-**It's highly likely you won't need the following for this seminar.**
+> It's highly likely you won't need the following for this seminar.
 
 If there should be any changes to the original repo that you want to include in your personal copy, we need to use the command line. Sadly this cannot be done with the GitHub Desktop App. Open the repo in VS Code. If you are using the desktop app, you can right click on the repo to do this. Then open a new terminal in VS Code (Menu > Terminal > New Terminal). Now type the following commands (press enter after every line):
 
@@ -219,9 +95,104 @@ git merge upstream/main
 git push
 ```
 
+<br/>
+
 It can happen, that after line 3 you will receive a merge conflict. Switch back to the github desktop app and the app will let you know what files to review.
 
 **Note**: If you are doing something similar on an older repo you will notice that line 2 and 3 will produce errors, because *main* does not exist. A while ago [Github changed](https://github.com/github/renaming) the default name of the primary branch from *master* to *main*. But older repos still use the old name.
+
+{{h2('GitLab at the University of Potsdam (only for students of FH Potsdam and Uni Potsdam)', 'GitLab Potsdam')}}
+
+> **Important**: This section is **only for students of the University of Applied Sciences Potsdam (FH Potsdam) and the University of Potsdam**. You can only sign in to the GitLab instance at [gitup.uni-potsdam.de](https://gitup.uni-potsdam.de) with a university account. If you are not enrolled at one of these institutions, skip this section and use the GitHub route (see above).
+
+Besides GitHub we also use the GitLab instance of the University of Potsdam. The workflow is similar to GitHub: you create a local copy of the *learning-parametric-design* repo, work on it locally and then push your changes back to the cloud. You need the [GitHub Desktop App](https://desktop.github.com/) (see above). It works with GitLab too, since both are based on **git**.
+
+#### 1. First sign-in (Single Sign-On)
+
+Open [gitup.uni-potsdam.de](https://gitup.uni-potsdam.de) in your browser. You do not need to create a new account. Instead you sign in with the single sign-on (SSO) service of your university. Your account is created automatically on your first sign-in.
+
+1. On the start page choose the SSO / university login.
+2. Select your institution (FH Potsdam or University of Potsdam) and sign in with your usual university credentials.
+3. If asked, confirm that your data may be shared with GitLab.
+
+{{ img('gitlab-01-login.png', 'Step 1: Start page of gitup.uni-potsdam.de with the SSO login') }}
+
+{{ img('gitlab-02-sso.png', 'Step 2: Select your institution and sign in with your university credentials') }}
+
+{{ img('gitlab-03-dashboard.png', 'Step 3: The GitLab dashboard after a successful sign-in') }}
+
+Make a note of your GitLab **username** (under your avatar > *Edit profile* or in the URL of your profile). You will need it later in the GitHub Desktop App.
+
+#### 2. Find the learning-parametric-design repository
+
+Open the [*learning-parametric-design*](https://gitup.uni-potsdam.de/x_sebastian-meier/learning-parametric-design) repository. On the project page you will find the **Fork** button at the top right.
+
+#### 3. Fork the repository
+
+The original repository belongs to me, so you cannot push your own changes to it. Instead you create a **fork**: a personal copy of the repository in your own GitLab account. The fork stays connected to the original, but you can work freely in it and push changes without breaking anything. You then clone your fork (not the original) to your computer.
+
+1. On the project page click **Fork**.
+2. Under *Project URL* select your own namespace (your username). You can keep the project name.
+3. Set *Visibility level* to **Public**.
+4. Click **Fork project**.
+5. You now land on the page of your fork. Click the blue **Code** (or *Clone*) button and copy the URL under **Clone with HTTPS**.
+
+> **Important: your fork must be public.** This is the only way for me to see your code and help you with your projects, and it lets participants learn from one another. It also means everybody can see what you push to the fork, so don't put anything secret in it (passwords, tokens, personal data). If you don't like that, simply delete the fork after the semester.
+
+{{ img('gitlab-04-fork.png', 'Step 4: Create the fork with visibility level "Public" (blue highlighted button)') }}
+
+{{ img('gitlab-05-clone.png', 'Step 5: Copy the HTTPS URL of your fork') }}
+
+#### 4. Clone the fork with GitHub Desktop
+
+1. Open the GitHub Desktop App.
+2. Choose **File > Clone Repository...**.
+3. Switch to the **URL** tab, paste the copied HTTPS URL and choose a local folder where the copy should be stored.
+4. Click **Clone**.
+
+If you are asked for a username and password (e.g. because the repo is not public), first create the access token (next step) and then come back here. As username enter your GitLab username, as password the token.
+
+{{ img('gitlab-06-github-desktop-clone.png', 'Step 6: Cloning via the URL tab in GitHub Desktop') }}
+
+Then open the local folder in VS Code as usual. To get new changes from the cloud, click **Fetch origin** or **Pull origin** in GitHub Desktop.
+
+#### 5. Create an access token
+
+To upload changes to GitLab (*push*), your university password is not enough, because you sign in via SSO. Instead you create a **personal access token** that you use in place of a password in GitHub Desktop.
+
+1. In GitLab click your avatar and choose **Edit profile**.
+2. In the left navigation choose **Access** > **Access Tokens** (or *Personal access tokens*).
+3. Click **Generate Token** and **Generate legacy token**.
+4. Enter a name (e.g. *github-desktop*) and an expiration date (e.g. the end of the semester).
+5. Select the scopes **read_repository** and **write_repository**.
+6. Click **Create personal access token**.
+7. **Copy the token immediately.** It is only shown once. Store it, e.g., in a password manager.
+
+> **Security**: Treat the token like a password. Do not share it, do not store it in your code and do not commit it to a repository. If you lose the token or it becomes public, revoke it in GitLab (*Revoke*) and create a new one.
+
+{{ img('gitlab-08-profile.png', 'Step 7: The profile menu') }}
+
+{{ img('gitlab-09-access-tokens.png', 'Step 8: The access token overview') }}
+
+{{ img('gitlab-10-token-form.png', 'Step 9: Set name, expiration date and scopes of the token') }}
+
+{{ img('gitlab-11-token-created.png', 'Step 10: The token is only shown once and must be copied') }}
+
+#### 6. Use the token in GitHub Desktop
+
+1. Make a small change in the local repo, e.g. in a file, and save it. GitHub Desktop shows the change in the *Changes* tab.
+2. Enter a short description at the bottom left and click **Commit to main**.
+3. Click **Push origin** at the top.
+4. GitHub Desktop now asks for your credentials. Enter your GitLab username as **username** and the copied access token as **password**.
+5. Confirm. GitHub Desktop remembers the credentials, so you will not need to enter them again until the token expires.
+
+{{ img('gitlab-12-commit.png', 'Step 11: Commit a change') }}
+
+{{ img('gitlab-13-credentials.png', 'Step 12: Push commit') }}
+
+{{ img('gitlab-14-push-success.png', 'Step 13: Username & password (access token)') }}
+
+If the push fails with an authentication error, the token has usually expired, the scopes are missing or the username is wrong. In that case create a new token with the scopes listed above.
 
 ### Let's go
 Sorry, for this rather boring start. From here on, its going to be a lot more fun.

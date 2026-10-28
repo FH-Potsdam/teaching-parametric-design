@@ -26,7 +26,7 @@
 {% if entry.order != -1 %}
 <li class="level{{level}}{% if entry.url in page.url %} active{% endif %}">
   <a{% if entry.url == page.url %} class="active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
-  {% if entry.url == page.url and level == 2 %}
+  {% if entry.url == page.url %}
   {{ content | toc | safe }}
   {% endif %}
 {% if entry.children.length %}
@@ -119,8 +119,8 @@
 </div>
 {% endmacro %}
 
-{% macro h2(headline) %}
-<h2 id="{{headline | slugify}}">{{headline}}</h2>
+{% macro h2(headline, short) %}
+<h2 id="{{headline | slugify}}" data-short="{% if short %}{{short}}{% else %}{{headline}}{% endif %}">{{headline}}</h2>
 {% endmacro %}
 
 {% macro definition(name, params, description) %}
@@ -148,14 +148,23 @@
 {% macro img(fileName, title, maxWidth) %}
 <figure>
     <img src="/images/material/{{fileName}}" alt="{{title}}"{% if maxWidth %} style="width:{{maxWidth}};"{% endif %} />
-    <figcaption><span>{{title}}</span></figcaption>
+    <figcaption><span>{{title | safe}}</span></figcaption>
 </figure>
 {% endmacro %}
 
-{% macro task(title, description) %}
+{% macro task(title, description, teacher="", studentLabel="Students", teacherLabel="Teachers") %}
 <div class="task">
   <h3>{{title}}</h3>
-  <p>{{description | safe}}</p>
+  <div class="task-students">
+    <h4>{{studentLabel}}</h4>
+    <p>{{description | safe}}</p>
+  </div>
+  {% if teacher %}
+  <div class="task-teachers">
+    <h4>{{teacherLabel}}</h4>
+    <p>{{teacher | safe}}</p>
+  </div>
+  {% endif %}
 </div>
 {% endmacro %}
 

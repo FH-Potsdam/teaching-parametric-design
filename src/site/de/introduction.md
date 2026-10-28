@@ -11,7 +11,7 @@ layout: default
 
 {% from "../_includes/parts/macros.njk" import h2, definition, video, img %}
 
-{{h2('Einführung ins Parametric Design')}}
+{{h2('Einführung ins Parametric Design', 'Einführung')}}
 
 {{video("https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x/download/de_introduction.mp4", "/images/thumbnails/de_introduction.png", "de_introduction", translations.subtitles[locale], locale, "https://fhpcloud.fh-potsdam.de/s/c2sycB56EWTb5w9/download/de_introduction.mp4")}}
 
@@ -21,7 +21,7 @@ de: https://fhpcloud.fh-potsdam.de/s/GGGf4jo8z927c9x
 en: https://fhpcloud.fh-potsdam.de/s/soZc2mA9kSpRxxL
 -->
 
-{{h2('Wie funktioniert diese Website')}}
+## Wie funktioniert diese Website
 
 Das Material dieses Seminars wird nicht nur in verschiedenen Sprachen angeboten, sondern bietet auch verschiedene Zugänge, um sich die Inhalte zu erarbeiten. Man kann alle Inhalte erlernen, indem man nur die Texte und Definitionen studiert, sich alternativ die Videos anschaut oder direkt die Code-Beispiele herunterlädt und durch das Experimentieren mit den Beispielen lernt.
 
