@@ -48,7 +48,7 @@ The first line shows the parameters this function accepts. This definition expla
 
 > Additional useful coding advice is highlighted in these blue boxes.
 
-### Editor
+{{h2('Editor', 'Editor')}}
 
 For p5js an inline editor allows you to quickly experiment with code directly in the website. To execute the code, click the left button in the upper right corner. To copy the code and use it in your own project, use the button in the upper right. A link to the source code is provided below the editor. 
 
@@ -59,3 +59,16 @@ The JSCAD preview is a lot more resource intensive, therefore, we open the JSCAD
 ### Extras & Bonus
 
 Under [Extras](/en/extras/) you will find additional material, which might be helpful, but it is not mandatory to finish the course. The [Bonus-section](/en/bonus/) contains thematic deep dives, which were based on discussions or questions, for example how to use audio-files as input. The bonus material will likely increase over time and is only available in written German and English.
+
+{{h2('Understanding Code', 'Understanding Code')}}
+
+The [CodeBot](/en/enhance/) helps you read and understand p5js code, whether it is an example from this course, a sketch you found online or your own project. Paste your code into the text field and click **Enhance**. Every p5js function in your code is then turned into a link:
+
+- If a function is covered in this course, the link leads directly to the matching chapter and video on this website.
+- All other functions link to the official [p5js reference](https://p5js.org/reference/) and the [Mozilla reference](https://developer.mozilla.org).
+
+Hover over a link to see a small preview of the video. Next to the code, a list collects all the functions used in your sketch, so you can work through them one by one. The **Copy** button copies the code to your clipboard.
+
+> The list also shows you which videos you have already watched.
+
+{{ img('enhance.jpg', 'Code enriched with links to the course material and the p5js reference.', '75%') }}

@@ -51,7 +51,7 @@ Die erste Zeile zeigt die Parameter, die eine Funktion akzeptiert. Die Definitio
 
 > Zusätzliche, nützliche Hinweise werden in blauen Boxen hervorgehoben.
 
-### Editor
+{{h2('Editor', 'Editor')}}
 
 Für die p5js Beispiele gibt es einen Editor, der es erlaubt Code-Beispiele direkt im Browser zu verändern. Um den Code auszuführen, muss der rechte Knopf oben links im Editor gedrückt werden. Um den Code zu kopieren und im eigenen Code-Editor weiterzunutzen, einfach den rechten Knopf oben rechts drücken. Ein Link zum Quellcode steht unter dem Editor zur Verfügung.
 
@@ -62,3 +62,16 @@ Die Vorschau für JSCAD ist wesentlich ressourcenhungriger, deshalb werden die P
 ### Extras & Bonus
 
 Unter [Extras](/de/extras/) befindet sich zusätzliches Material, das hilfreich für die Programmierung ist, aber nicht Pflicht ist. Im [Bonus-Bereich](/de/bonus/) der Seite gibt es konkrete Beispiele und thematische Vertiefungen, diese gehen meisten zurück auf Diskussionen im Kurs (z.B. wie kann man Audio-Files einbinden und analysieren). Der Bonus-Bereich wird weiter wachsen, deshalb können wir diesen Bereich aktuell nur in Deutsch und Englisch anbieten.
+
+{{h2('Code verstehen', 'Code verstehen')}}
+
+Der [CodeBot](/de/enhance/) hilft dabei, p5js-Code zu lesen und zu verstehen, egal ob es sich um ein Beispiel aus dem Kurs, einen Sketch aus dem Internet oder um das eigene Projekt handelt. Einfach den Code in das Textfeld einfügen und auf **Anreichern** klicken. Anschließend wird jede p5js-Funktion im Code in einen Link umgewandelt:
+
+- Wird eine Funktion in diesem Kurs behandelt, führt der Link direkt zum passenden Kapitel und Video auf dieser Website.
+- Alle anderen Funktionen verlinken auf die offizielle [p5js-Referenz](https://p5js.org/reference/) und die [Mozilla Referenz](https://developer.mozilla.org).
+
+Fährt man mit der Maus über einen Link, erscheint eine kleine Vorschau des Videos. Neben dem Code werden alle im Sketch verwendeten Funktionen in einer Liste gesammelt, so dass man sie Schritt für Schritt durcharbeiten kann. Über den Button **Kopieren** lässt sich der Code in die Zwischenablage kopieren.
+
+> In der List wird euch auch angezeigt, wenn ihr ein Video schon geschaut habt.
+
+{{ img('enhance.jpg', 'Code angereichert mit Links zum Kursmaterial und zur p5js-Referenz.', '75%') }}
