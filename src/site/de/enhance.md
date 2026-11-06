@@ -7,9 +7,9 @@ eleventyNavigation:
   parent: de
 ---
 
-Über dieses Interface kannst du bestehenden p5js-Code mit Links anreichern lassen. Schicke deinen Code an die API und erhalte ihn zurück mit verlinkten Funktionsnamen und einer Liste der verwendeten Funktionen.
+Über dieses Interface kannst du bestehenden p5js-Code mit Links anreichern lassen. Dein Code wird direkt in deinem Browser verarbeitet und mit verlinkten Funktionsnamen und einer Liste der verwendeten Funktionen zurückgegeben.
 
-<div class="enhance-page" data-locale="{{ locale }}" data-api-base="https://fb4-meier-ml.fh-potsdam.de">
+<div class="enhance-page" data-locale="{{ locale }}">
   <section class="assistant-panel">
     <form id="promptForm" class="assistant-form">
       <label for="code" class="assistant-label">Code</label>
@@ -50,4 +50,5 @@ eleventyNavigation:
 </div>
 
 <script id="assistantVideoIndex" type="application/json">{{ collections.videoLibrary | json | safe }}</script>
+<script src="/js/linkify.js"></script>
 <script src="/js/enhance.js"></script>

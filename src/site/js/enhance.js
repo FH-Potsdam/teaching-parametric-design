@@ -4,8 +4,7 @@
 
   const locale = root.dataset.locale || 'en';
   const normalizedLocale = locale === 'dg' ? 'de' : locale;
-  const apiBase = (root.dataset.apiBase || 'https://fb4-meier-ml.fh-potsdam.de').replace(/\/$/, '');
-  const apiLinkifyUrl = `${apiBase}/api/linkify`;
+  const linkifyFn = window.linkify || window.ParametricLinkify?.linkify;
   const requestLanguage = normalizedLocale === 'de' ? 'de' : 'en';
   const videoIndexEl = document.getElementById('assistantVideoIndex');
 
@@ -230,10 +229,11 @@
     en: {
       idle: 'Idle',
       enterCode: 'Enter code to continue',
-      sending: 'Sending request...',
+      processing: 'Processing...',
       done: 'Done',
       error: 'Error',
-      requestFailed: 'Request failed',
+      requestFailed: 'Processing failed',
+      linkifyMissing: 'Linkify library could not be loaded.',
       copied: 'Copied',
       copyFailed: 'Copy failed',
       nothingToCopy: 'Nothing to copy',
@@ -247,10 +247,11 @@
     de: {
       idle: 'Bereit',
       enterCode: 'Bitte gib Code ein',
-      sending: 'Sende Anfrage...',
+      processing: 'Verarbeite...',
       done: 'Fertig',
       error: 'Fehler',
-      requestFailed: 'Anfrage fehlgeschlagen',
+      requestFailed: 'Verarbeitung fehlgeschlagen',
+      linkifyMissing: 'Linkify-Bibliothek konnte nicht geladen werden.',
       copied: 'Kopiert',
       copyFailed: 'Kopieren fehlgeschlagen',
       nothingToCopy: 'Nichts zum Kopieren',
@@ -344,7 +345,7 @@
     copyBtn.textContent = copyDefaultLabel;
   };
 
-  const handleSubmit = async event => {
+  const handleSubmit = event => {
     event.preventDefault();
     const code = codeInput.value.trim();
 
@@ -353,24 +354,14 @@
       return;
     }
 
-    setStatus(t.sending, true);
+    setStatus(t.processing, true);
 
     try {
-      const payload = { code, language: requestLanguage };
-
-      const response = await fetch(apiLinkifyUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        const errorBody = await response.json().catch(() => ({}));
-        const message = errorBody.error || t.requestFailed;
-        throw new Error(message);
+      if (typeof linkifyFn !== 'function') {
+        throw new Error(t.linkifyMissing);
       }
 
-      const data = await response.json();
+      const data = linkifyFn(code, requestLanguage);
       output.innerHTML = data.html || `<p class="empty">${t.noHtmlReturned}</p>`;
       renderFunctions(data.functionCalls);
       latestRawCode = data.raw || '';
