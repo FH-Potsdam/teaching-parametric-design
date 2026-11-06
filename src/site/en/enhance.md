@@ -1,13 +1,13 @@
 ---
-title: Enhance
+title: Understanding Code
 eleventyNavigation:
-  title: Enhance
+  title: Explain
   key: en_enhance
   order: -1
   parent: en
 ---
 
-This interface allows you to enrich existing p5js code with links. Your code is processed directly in your browser and returned with linked function names and a list of the functions used.
+This interface allows you to enrich existing p5js code with links. Through the videos on this page and external documentation, you learn to read and understand your code:
 
 <div class="enhance-page" data-locale="{{ locale }}">
   <section class="assistant-panel">

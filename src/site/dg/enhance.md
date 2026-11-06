@@ -1,7 +1,7 @@
 ---
-title: Enhance
+title: Code Verstehen
 eleventyNavigation:
-  title: Enhance
+  title: Explain
   key: dg_enhance
   order: -1
   parent: dg

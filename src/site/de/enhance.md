@@ -1,13 +1,13 @@
 ---
-title: Enhance
+title: Code Verstehen
 eleventyNavigation:
-  title: Enhance
+  title: Explain
   key: de_enhance
   order: -1
   parent: de
 ---
 
-Über dieses Interface kannst du bestehenden p5js-Code mit Links anreichern lassen. Dein Code wird direkt in deinem Browser verarbeitet und mit verlinkten Funktionsnamen und einer Liste der verwendeten Funktionen zurückgegeben.
+Über dieses Interface kannst du bestehenden p5js-Code mit Links anreichern lassen. Über die Videos auf dieser Seite und externe Dokumentationen lernst du deinen Code lesen und verstehen:
 
 <div class="enhance-page" data-locale="{{ locale }}">
   <section class="assistant-panel">
