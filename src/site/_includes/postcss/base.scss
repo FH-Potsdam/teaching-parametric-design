@@ -1550,9 +1550,8 @@ h3.inspiration {
 
 }
 
-/* ASSISTANT */
+/* ENHANCE */
 
-.assistant-page,
 .enhance-page {
   --assistant-bg: #f7f2ea;
   --assistant-panel: #ffffff;
@@ -1567,30 +1566,10 @@ h3.inspiration {
   gap: 28px;
   padding: 10px 0 20px;
 
-  .assistant-header {
-    display: grid;
-    gap: 12px;
-  }
-
-  .assistant-kicker {
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--assistant-accent-dark);
-  }
-
   h2 {
     margin: 0;
     font-size: clamp(2rem, 5vw, 3.2rem);
     line-height: 1.05;
-  }
-
-  .assistant-subhead {
-    margin: 0;
-    color: var(--assistant-muted);
-    font-size: 1.05rem;
   }
 
   .assistant-panel {
@@ -1600,11 +1579,6 @@ h3.inspiration {
   .assistant-form {
     display: grid;
     gap: 16px;
-  }
-
-  .assistant-field {
-    display: grid;
-    gap: 8px;
   }
 
   .assistant-label {
@@ -1648,14 +1622,6 @@ h3.inspiration {
     display: flex;
     align-items: center;
     gap: 16px;
-  }
-
-  .assistant-checkbox {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    color: var(--assistant-muted);
   }
 
   button {
@@ -1715,15 +1681,7 @@ h3.inspiration {
     gap: 10px;
   }
 
-  .assistant-output-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .assistant-output,
-  .assistant-raw-output {
+  .assistant-output {
     min-height: 160px;
     border-radius: 0;
     border: 1px dashed var(--assistant-border);
@@ -1887,12 +1845,6 @@ h3.inspiration {
     color: var(--assistant-muted);
   }
 
-  .assistant-raw-output {
-    white-space: pre-wrap;
-    margin: 0;
-    font-size: 0.95rem;
-  }
-
   .empty {
     margin: 0;
     color: var(--assistant-muted);
@@ -1922,7 +1874,6 @@ h3.inspiration {
 }
 
 @media (max-width: 720px) {
-  .assistant-page,
   .enhance-page {
     .assistant-panel {
       padding: 0;
